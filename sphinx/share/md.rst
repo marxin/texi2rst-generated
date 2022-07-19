@@ -636,2508 +636,2544 @@ the meanings of that architecture's constraints.
 .. Please keep this table alphabetized by target!
 
 AArch64 family---:samp:`{config/aarch64/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``k``
-    The stack pointer register (``SP``)
+``k``
+  The stack pointer register (``SP``)
 
-  ``w``
-    Floating point register, Advanced SIMD vector register or SVE vector register
+``w``
+  Floating point register, Advanced SIMD vector register or SVE vector register
 
-  ``x``
-    Like ``w``, but restricted to registers 0 to 15 inclusive.
+``x``
+  Like ``w``, but restricted to registers 0 to 15 inclusive.
 
-  ``y``
-    Like ``w``, but restricted to registers 0 to 7 inclusive.
+``y``
+  Like ``w``, but restricted to registers 0 to 7 inclusive.
 
-  ``Upl``
-    One of the low eight SVE predicate registers (``P0`` to ``P7``)
+``Upl``
+  One of the low eight SVE predicate registers (``P0`` to ``P7``)
 
-  ``Upa``
-    Any of the SVE predicate registers (``P0`` to ``P15``)
+``Upa``
+  Any of the SVE predicate registers (``P0`` to ``P15``)
 
-  ``I``
-    Integer constant that is valid as an immediate operand in an ``ADD``
-    instruction
+``I``
+  Integer constant that is valid as an immediate operand in an ``ADD``
+  instruction
 
-  ``J``
-    Integer constant that is valid as an immediate operand in a ``SUB``
-    instruction (once negated)
+``J``
+  Integer constant that is valid as an immediate operand in a ``SUB``
+  instruction (once negated)
 
-  ``K``
-    Integer constant that can be used with a 32-bit logical instruction
+``K``
+  Integer constant that can be used with a 32-bit logical instruction
 
-  ``L``
-    Integer constant that can be used with a 64-bit logical instruction
+``L``
+  Integer constant that can be used with a 64-bit logical instruction
 
-  ``M``
-    Integer constant that is valid as an immediate operand in a 32-bit ``MOV``
-    pseudo instruction. The ``MOV`` may be assembled to one of several different
-    machine instructions depending on the value
+``M``
+  Integer constant that is valid as an immediate operand in a 32-bit ``MOV``
+  pseudo instruction. The ``MOV`` may be assembled to one of several different
+  machine instructions depending on the value
 
-  ``N``
-    Integer constant that is valid as an immediate operand in a 64-bit ``MOV``
-    pseudo instruction
+``N``
+  Integer constant that is valid as an immediate operand in a 64-bit ``MOV``
+  pseudo instruction
 
-  ``S``
-    An absolute symbolic address or a label reference
+``S``
+  An absolute symbolic address or a label reference
 
-  ``Y``
-    Floating point constant zero
+``Y``
+  Floating point constant zero
 
-  ``Z``
-    Integer constant zero
+``Z``
+  Integer constant zero
 
-  ``Ush``
-    The high part (bits 12 and upwards) of the pc-relative address of a symbol
-    within 4GB of the instruction
+``Ush``
+  The high part (bits 12 and upwards) of the pc-relative address of a symbol
+  within 4GB of the instruction
 
-  ``Q``
-    A memory address which uses a single base register with no offset
+``Q``
+  A memory address which uses a single base register with no offset
 
-  ``Ump``
-    A memory address suitable for a load/store pair instruction in SI, DI, SF and
-    DF modes
+``Ump``
+  A memory address suitable for a load/store pair instruction in SI, DI, SF and
+  DF modes
 
 AMD GCN ---:samp:`{config/gcn/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``I``
-    Immediate integer in the range -16 to 64
+``I``
+  Immediate integer in the range -16 to 64
 
-  ``J``
-    Immediate 16-bit signed integer
+``J``
+  Immediate 16-bit signed integer
 
-  ``Kf``
-    Immediate constant -1
+``Kf``
+  Immediate constant -1
 
-  ``L``
-    Immediate 15-bit unsigned integer
+``L``
+  Immediate 15-bit unsigned integer
 
-  ``A``
-    Immediate constant that can be inlined in an instruction encoding: integer
-    -16..64, or float 0.0, +/-0.5, +/-1.0, +/-2.0,
-    +/-4.0, 1.0/(2.0\*PI)
+``A``
+  Immediate constant that can be inlined in an instruction encoding: integer
+  -16..64, or float 0.0, +/-0.5, +/-1.0, +/-2.0,
+  +/-4.0, 1.0/(2.0\*PI)
 
-  ``B``
-    Immediate 32-bit signed integer that can be attached to an instruction encoding
+``B``
+  Immediate 32-bit signed integer that can be attached to an instruction encoding
 
-  ``C``
-    Immediate 32-bit integer in range -16..4294967295 (i.e. 32-bit unsigned
-    integer or :samp:`A` constraint)
+``C``
+  Immediate 32-bit integer in range -16..4294967295 (i.e. 32-bit unsigned
+  integer or :samp:`A` constraint)
 
-  ``DA``
-    Immediate 64-bit constant that can be split into two :samp:`A` constants
+``DA``
+  Immediate 64-bit constant that can be split into two :samp:`A` constants
 
-  ``DB``
-    Immediate 64-bit constant that can be split into two :samp:`B` constants
+``DB``
+  Immediate 64-bit constant that can be split into two :samp:`B` constants
 
-  ``U``
-    Any ``unspec``
+``U``
+  Any ``unspec``
 
-  ``Y``
-    Any ``symbol_ref`` or ``label_ref``
+``Y``
+  Any ``symbol_ref`` or ``label_ref``
 
-  ``v``
-    VGPR register
+``v``
+  VGPR register
 
-  ``Sg``
-    SGPR register
+``Sg``
+  SGPR register
 
-  ``SD``
-    SGPR registers valid for instruction destinations, including VCC, M0 and EXEC
+``SD``
+  SGPR registers valid for instruction destinations, including VCC, M0 and EXEC
 
-  ``SS``
-    SGPR registers valid for instruction sources, including VCC, M0, EXEC and SCC
+``SS``
+  SGPR registers valid for instruction sources, including VCC, M0, EXEC and SCC
 
-  ``Sm``
-    SGPR registers valid as a source for scalar memory instructions (excludes M0
-    and EXEC)
+``Sm``
+  SGPR registers valid as a source for scalar memory instructions (excludes M0
+  and EXEC)
 
-  ``Sv``
-    SGPR registers valid as a source or destination for vector instructions
-    (excludes EXEC)
+``Sv``
+  SGPR registers valid as a source or destination for vector instructions
+  (excludes EXEC)
 
-  ``ca``
-    All condition registers: SCC, VCCZ, EXECZ
+``ca``
+  All condition registers: SCC, VCCZ, EXECZ
 
-  ``cs``
-    Scalar condition register: SCC
+``cs``
+  Scalar condition register: SCC
 
-  ``cV``
-    Vector condition register: VCC, VCC_LO, VCC_HI
+``cV``
+  Vector condition register: VCC, VCC_LO, VCC_HI
 
-  ``e``
-    EXEC register (EXEC_LO and EXEC_HI)
+``e``
+  EXEC register (EXEC_LO and EXEC_HI)
 
-  ``RB``
-    Memory operand with address space suitable for ``buffer_*`` instructions
+``RB``
+  Memory operand with address space suitable for ``buffer_*`` instructions
 
-  ``RF``
-    Memory operand with address space suitable for ``flat_*`` instructions
+``RF``
+  Memory operand with address space suitable for ``flat_*`` instructions
 
-  ``RS``
-    Memory operand with address space suitable for ``s_*`` instructions
+``RS``
+  Memory operand with address space suitable for ``s_*`` instructions
 
-  ``RL``
-    Memory operand with address space suitable for ``ds_*`` LDS instructions
+``RL``
+  Memory operand with address space suitable for ``ds_*`` LDS instructions
 
-  ``RG``
-    Memory operand with address space suitable for ``ds_*`` GDS instructions
+``RG``
+  Memory operand with address space suitable for ``ds_*`` GDS instructions
 
-  ``RD``
-    Memory operand with address space suitable for any ``ds_*`` instructions
+``RD``
+  Memory operand with address space suitable for any ``ds_*`` instructions
 
-  ``RM``
-    Memory operand with address space suitable for ``global_*`` instructions
+``RM``
+  Memory operand with address space suitable for ``global_*`` instructions
 
 ARC ---:samp:`{config/arc/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``q``
-    Registers usable in ARCompact 16-bit instructions: ``r0`` - ``r3``,
-    ``r12`` - ``r15``.  This constraint can only match when the :option:`-mq`
-    option is in effect.
+``q``
+  Registers usable in ARCompact 16-bit instructions: ``r0`` - ``r3``,
+  ``r12`` - ``r15``.  This constraint can only match when the :option:`-mq`
+  option is in effect.
 
-  ``e``
-    Registers usable as base-regs of memory addresses in ARCompact 16-bit memory
-    instructions: ``r0`` - ``r3``, ``r12`` - ``r15``, ``sp``.
-    This constraint can only match when the :option:`-mq`
-    option is in effect.
+``e``
+  Registers usable as base-regs of memory addresses in ARCompact 16-bit memory
+  instructions: ``r0`` - ``r3``, ``r12`` - ``r15``, ``sp``.
+  This constraint can only match when the :option:`-mq`
+  option is in effect.
 
-  ``D``
-    ARC FPX (dpfp) 64-bit registers. ``D0``, ``D1``.
+``D``
+  ARC FPX (dpfp) 64-bit registers. ``D0``, ``D1``.
 
-  ``I``
-    A signed 12-bit integer constant.
+``I``
+  A signed 12-bit integer constant.
 
-  ``Cal``
-    constant for arithmetic/logical operations.  This might be any constant
-    that can be put into a long immediate by the assmbler or linker without
-    involving a PIC relocation.
+``Cal``
+  constant for arithmetic/logical operations.  This might be any constant
+  that can be put into a long immediate by the assmbler or linker without
+  involving a PIC relocation.
 
-  ``K``
-    A 3-bit unsigned integer constant.
+``K``
+  A 3-bit unsigned integer constant.
 
-  ``L``
-    A 6-bit unsigned integer constant.
+``L``
+  A 6-bit unsigned integer constant.
 
-  ``CnL``
-    One's complement of a 6-bit unsigned integer constant.
+``CnL``
+  One's complement of a 6-bit unsigned integer constant.
 
-  ``CmL``
-    Two's complement of a 6-bit unsigned integer constant.
+``CmL``
+  Two's complement of a 6-bit unsigned integer constant.
 
-  ``M``
-    A 5-bit unsigned integer constant.
+``M``
+  A 5-bit unsigned integer constant.
 
-  ``O``
-    A 7-bit unsigned integer constant.
+``O``
+  A 7-bit unsigned integer constant.
 
-  ``P``
-    A 8-bit unsigned integer constant.
+``P``
+  A 8-bit unsigned integer constant.
 
-  ``H``
-    Any const_double value.
+``H``
+  Any const_double value.
 
 ARM family---:samp:`{config/arm/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``h``
-    In Thumb state, the core registers ``r8`` - ``r15``.
+``h``
+  In Thumb state, the core registers ``r8`` - ``r15``.
 
-  ``k``
-    The stack pointer register.
+``k``
+  The stack pointer register.
 
-  ``l``
-    In Thumb State the core registers ``r0`` - ``r7``.  In ARM state this
-    is an alias for the ``r`` constraint.
+``l``
+  In Thumb State the core registers ``r0`` - ``r7``.  In ARM state this
+  is an alias for the ``r`` constraint.
 
-  ``t``
-    VFP floating-point registers ``s0`` - ``s31``.  Used for 32 bit values.
+``t``
+  VFP floating-point registers ``s0`` - ``s31``.  Used for 32 bit values.
 
-  ``w``
-    VFP floating-point registers ``d0`` - ``d31`` and the appropriate
-    subset ``d0`` - ``d15`` based on command line options.
-    Used for 64 bit values only.  Not valid for Thumb1.
+``w``
+  VFP floating-point registers ``d0`` - ``d31`` and the appropriate
+  subset ``d0`` - ``d15`` based on command line options.
+  Used for 64 bit values only.  Not valid for Thumb1.
 
-  ``y``
-    The iWMMX co-processor registers.
+``y``
+  The iWMMX co-processor registers.
 
-  ``z``
-    The iWMMX GR registers.
+``z``
+  The iWMMX GR registers.
 
-  ``G``
-    The floating-point constant 0.0
+``G``
+  The floating-point constant 0.0
 
-  ``I``
-    Integer that is valid as an immediate operand in a data processing
-    instruction.  That is, an integer in the range 0 to 255 rotated by a
-    multiple of 2
+``I``
+  Integer that is valid as an immediate operand in a data processing
+  instruction.  That is, an integer in the range 0 to 255 rotated by a
+  multiple of 2
 
-  ``J``
-    Integer in the range -4095 to 4095
+``J``
+  Integer in the range -4095 to 4095
 
-  ``K``
-    Integer that satisfies constraint :samp:`I` when inverted (ones complement)
+``K``
+  Integer that satisfies constraint :samp:`I` when inverted (ones complement)
 
-  ``L``
-    Integer that satisfies constraint :samp:`I` when negated (twos complement)
+``L``
+  Integer that satisfies constraint :samp:`I` when negated (twos complement)
 
-  ``M``
-    Integer in the range 0 to 32
+``M``
+  Integer in the range 0 to 32
 
-  ``Q``
-    A memory reference where the exact address is in a single register
-    (':samp:`m`' is preferable for ``asm`` statements)
+``Q``
+  A memory reference where the exact address is in a single register
+  (':samp:`m`' is preferable for ``asm`` statements)
 
-  ``R``
-    An item in the constant pool
+``R``
+  An item in the constant pool
 
-  ``S``
-    A symbol in the text segment of the current file
+``S``
+  A symbol in the text segment of the current file
 
-  ``Uv``
-    A memory reference suitable for VFP load/store insns (reg+constant offset)
+``Uv``
+  A memory reference suitable for VFP load/store insns (reg+constant offset)
 
-  ``Uy``
-    A memory reference suitable for iWMMXt load/store instructions.
+``Uy``
+  A memory reference suitable for iWMMXt load/store instructions.
 
-  ``Uq``
-    A memory reference suitable for the ARMv4 ldrsb instruction.
+``Uq``
+  A memory reference suitable for the ARMv4 ldrsb instruction.
 
 AVR family---:samp:`{config/avr/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``l``
-    Registers from r0 to r15
+``l``
+  Registers from r0 to r15
 
-  ``a``
-    Registers from r16 to r23
+``a``
+  Registers from r16 to r23
 
-  ``d``
-    Registers from r16 to r31
+``d``
+  Registers from r16 to r31
 
-  ``w``
-    Registers from r24 to r31.  These registers can be used in :samp:`adiw` command
+``w``
+  Registers from r24 to r31.  These registers can be used in :samp:`adiw` command
 
-  ``e``
-    Pointer register (r26--r31)
+``e``
+  Pointer register (r26--r31)
 
-  ``b``
-    Base pointer register (r28--r31)
+``b``
+  Base pointer register (r28--r31)
 
-  ``q``
-    Stack pointer register (SPH:SPL)
+``q``
+  Stack pointer register (SPH:SPL)
 
-  ``t``
-    Temporary register r0
+``t``
+  Temporary register r0
 
-  ``x``
-    Register pair X (r27:r26)
+``x``
+  Register pair X (r27:r26)
 
-  ``y``
-    Register pair Y (r29:r28)
+``y``
+  Register pair Y (r29:r28)
 
-  ``z``
-    Register pair Z (r31:r30)
+``z``
+  Register pair Z (r31:r30)
 
-  ``I``
-    Constant greater than -1, less than 64
+``I``
+  Constant greater than -1, less than 64
 
-  ``J``
-    Constant greater than -64, less than 1
+``J``
+  Constant greater than -64, less than 1
 
-  ``K``
-    Constant integer 2
+``K``
+  Constant integer 2
 
-  ``L``
-    Constant integer 0
+``L``
+  Constant integer 0
 
-  ``M``
-    Constant that fits in 8 bits
+``M``
+  Constant that fits in 8 bits
 
-  ``N``
-    Constant integer -1
+``N``
+  Constant integer -1
 
-  ``O``
-    Constant integer 8, 16, or 24
+``O``
+  Constant integer 8, 16, or 24
 
-  ``P``
-    Constant integer 1
+``P``
+  Constant integer 1
 
-  ``G``
-    A floating point constant 0.0
+``G``
+  A floating point constant 0.0
 
-  ``Q``
-    A memory address based on Y or Z pointer with displacement.
+``Q``
+  A memory address based on Y or Z pointer with displacement.
 
 Blackfin family---:samp:`{config/bfin/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``a``
-    P register
+``a``
+  P register
 
-  ``d``
-    D register
+``d``
+  D register
 
-  ``z``
-    A call clobbered P register.
+``z``
+  A call clobbered P register.
 
-  :samp:`q{n}`
-    A single register.  If :samp:`{n}` is in the range 0 to 7, the corresponding D
-    register.  If it is ``A``, then the register P0.
+:samp:`q{n}`
+  A single register.  If :samp:`{n}` is in the range 0 to 7, the corresponding D
+  register.  If it is ``A``, then the register P0.
 
-  ``D``
-    Even-numbered D register
+``D``
+  Even-numbered D register
 
-  ``W``
-    Odd-numbered D register
+``W``
+  Odd-numbered D register
 
-  ``e``
-    Accumulator register.
+``e``
+  Accumulator register.
 
-  ``A``
-    Even-numbered accumulator register.
+``A``
+  Even-numbered accumulator register.
 
-  ``B``
-    Odd-numbered accumulator register.
+``B``
+  Odd-numbered accumulator register.
 
-  ``b``
-    I register
+``b``
+  I register
 
-  ``v``
-    B register
+``v``
+  B register
 
-  ``f``
-    M register
+``f``
+  M register
 
-  ``c``
-    Registers used for circular buffering, i.e. I, B, or L registers.
+``c``
+  Registers used for circular buffering, i.e. I, B, or L registers.
 
-  ``C``
-    The CC register.
+``C``
+  The CC register.
 
-  ``t``
-    LT0 or LT1.
+``t``
+  LT0 or LT1.
 
-  ``k``
-    LC0 or LC1.
+``k``
+  LC0 or LC1.
 
-  ``u``
-    LB0 or LB1.
+``u``
+  LB0 or LB1.
 
-  ``x``
-    Any D, P, B, M, I or L register.
+``x``
+  Any D, P, B, M, I or L register.
 
-  ``y``
-    Additional registers typically used only in prologues and epilogues: RETS,
-    RETN, RETI, RETX, RETE, ASTAT, SEQSTAT and USP.
+``y``
+  Additional registers typically used only in prologues and epilogues: RETS,
+  RETN, RETI, RETX, RETE, ASTAT, SEQSTAT and USP.
 
-  ``w``
-    Any register except accumulators or CC.
+``w``
+  Any register except accumulators or CC.
 
-  ``Ksh``
-    Signed 16 bit integer (in the range -32768 to 32767)
+``Ksh``
+  Signed 16 bit integer (in the range -32768 to 32767)
 
-  ``Kuh``
-    Unsigned 16 bit integer (in the range 0 to 65535)
+``Kuh``
+  Unsigned 16 bit integer (in the range 0 to 65535)
 
-  ``Ks7``
-    Signed 7 bit integer (in the range -64 to 63)
+``Ks7``
+  Signed 7 bit integer (in the range -64 to 63)
 
-  ``Ku7``
-    Unsigned 7 bit integer (in the range 0 to 127)
+``Ku7``
+  Unsigned 7 bit integer (in the range 0 to 127)
 
-  ``Ku5``
-    Unsigned 5 bit integer (in the range 0 to 31)
+``Ku5``
+  Unsigned 5 bit integer (in the range 0 to 31)
 
-  ``Ks4``
-    Signed 4 bit integer (in the range -8 to 7)
+``Ks4``
+  Signed 4 bit integer (in the range -8 to 7)
 
-  ``Ks3``
-    Signed 3 bit integer (in the range -3 to 4)
+``Ks3``
+  Signed 3 bit integer (in the range -3 to 4)
 
-  ``Ku3``
-    Unsigned 3 bit integer (in the range 0 to 7)
+``Ku3``
+  Unsigned 3 bit integer (in the range 0 to 7)
 
-  :samp:`P{n}`
-    Constant :samp:`{n}`, where :samp:`{n}` is a single-digit constant in the range 0 to 4.
+:samp:`P{n}`
+  Constant :samp:`{n}`, where :samp:`{n}` is a single-digit constant in the range 0 to 4.
 
-  ``PA``
-    An integer equal to one of the MACFLAG_XXX constants that is suitable for
-    use with either accumulator.
+``PA``
+  An integer equal to one of the MACFLAG_XXX constants that is suitable for
+  use with either accumulator.
 
-  ``PB``
-    An integer equal to one of the MACFLAG_XXX constants that is suitable for
-    use only with accumulator A1.
+``PB``
+  An integer equal to one of the MACFLAG_XXX constants that is suitable for
+  use only with accumulator A1.
 
-  ``M1``
-    Constant 255.
+``M1``
+  Constant 255.
 
-  ``M2``
-    Constant 65535.
+``M2``
+  Constant 65535.
 
-  ``J``
-    An integer constant with exactly a single bit set.
+``J``
+  An integer constant with exactly a single bit set.
 
-  ``L``
-    An integer constant with all bits set except exactly one.
+``L``
+  An integer constant with all bits set except exactly one.
 
-  ``H``, ``Q``
+``H``, ``Q``
 
-    Any SYMBOL_REF.
+  Any SYMBOL_REF.
 
 CR16 Architecture---:samp:`{config/cr16/cr16.h}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``b``
-    Registers from r0 to r14 (registers without stack pointer)
+``b``
+  Registers from r0 to r14 (registers without stack pointer)
 
-  ``t``
-    Register from r0 to r11 (all 16-bit registers)
+``t``
+  Register from r0 to r11 (all 16-bit registers)
 
-  ``p``
-    Register from r12 to r15 (all 32-bit registers)
+``p``
+  Register from r12 to r15 (all 32-bit registers)
 
-  ``I``
-    Signed constant that fits in 4 bits
+``I``
+  Signed constant that fits in 4 bits
 
-  ``J``
-    Signed constant that fits in 5 bits
+``J``
+  Signed constant that fits in 5 bits
 
-  ``K``
-    Signed constant that fits in 6 bits
+``K``
+  Signed constant that fits in 6 bits
 
-  ``L``
-    Unsigned constant that fits in 4 bits
+``L``
+  Unsigned constant that fits in 4 bits
 
-  ``M``
-    Signed constant that fits in 32 bits
+``M``
+  Signed constant that fits in 32 bits
 
-  ``N``
-    Check for 64 bits wide constants for add/sub instructions
+``N``
+  Check for 64 bits wide constants for add/sub instructions
 
-  ``G``
-    Floating point constant that is legal for store immediate
+``G``
+  Floating point constant that is legal for store immediate
 
 C-SKY---:samp:`{config/csky/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``a``
-    The mini registers r0 - r7.
+``a``
+  The mini registers r0 - r7.
 
-  ``b``
-    The low registers r0 - r15.
+``b``
+  The low registers r0 - r15.
 
-  ``c``
-    C register.
+``c``
+  C register.
 
-  ``y``
-    HI and LO registers.
+``y``
+  HI and LO registers.
 
-  ``l``
-    LO register.
+``l``
+  LO register.
 
-  ``h``
-    HI register.
+``h``
+  HI register.
 
-  ``v``
-    Vector registers.
+``v``
+  Vector registers.
 
-  ``z``
-    Stack pointer register (SP).
+``z``
+  Stack pointer register (SP).
 
-  ``Q``
-    A memory address which uses a base register with a short offset
-    or with a index register with its scale.
+``Q``
+  A memory address which uses a base register with a short offset
+  or with a index register with its scale.
 
-  ``W``
-    A memory address which uses a base register with a index register
-    with its scale.
+``W``
+  A memory address which uses a base register with a index register
+  with its scale.
 
-  .. only:: gccint
+.. only:: gccint
 
-    The C-SKY back end supports a large set of additional constraints
-    that are only useful for instruction selection or splitting rather
-    than inline asm, such as constraints representing constant integer
-    ranges accepted by particular instruction encodings.
-    Refer to the source code for details.
+  The C-SKY back end supports a large set of additional constraints
+  that are only useful for instruction selection or splitting rather
+  than inline asm, such as constraints representing constant integer
+  ranges accepted by particular instruction encodings.
+  Refer to the source code for details.
 
 Epiphany---:samp:`{config/epiphany/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``U16``
-    An unsigned 16-bit constant.
+``U16``
+  An unsigned 16-bit constant.
 
-  ``K``
-    An unsigned 5-bit constant.
+``K``
+  An unsigned 5-bit constant.
 
-  ``L``
-    A signed 11-bit constant.
+``L``
+  A signed 11-bit constant.
 
-  ``Cm1``
-    A signed 11-bit constant added to -1.
-    Can only match when the :option:`-m1reg-`:samp:`{reg}` option is active.
+``Cm1``
+  A signed 11-bit constant added to -1.
+  Can only match when the :option:`-m1reg-`:samp:`{reg}` option is active.
 
-  ``Cl1``
-    Left-shift of -1, i.e., a bit mask with a block of leading ones, the rest
-    being a block of trailing zeroes.
-    Can only match when the :option:`-m1reg-`:samp:`{reg}` option is active.
+``Cl1``
+  Left-shift of -1, i.e., a bit mask with a block of leading ones, the rest
+  being a block of trailing zeroes.
+  Can only match when the :option:`-m1reg-`:samp:`{reg}` option is active.
 
-  ``Cr1``
-    Right-shift of -1, i.e., a bit mask with a trailing block of ones, the
-    rest being zeroes.  Or to put it another way, one less than a power of two.
-    Can only match when the :option:`-m1reg-`:samp:`{reg}` option is active.
+``Cr1``
+  Right-shift of -1, i.e., a bit mask with a trailing block of ones, the
+  rest being zeroes.  Or to put it another way, one less than a power of two.
+  Can only match when the :option:`-m1reg-`:samp:`{reg}` option is active.
 
-  ``Cal``
-    Constant for arithmetic/logical operations.
-    This is like ``i``, except that for position independent code,
-    no symbols / expressions needing relocations are allowed.
+``Cal``
+  Constant for arithmetic/logical operations.
+  This is like ``i``, except that for position independent code,
+  no symbols / expressions needing relocations are allowed.
 
-  ``Csy``
-    Symbolic constant for call/jump instruction.
+``Csy``
+  Symbolic constant for call/jump instruction.
 
-  ``Rcs``
-    The register class usable in short insns.  This is a register class
-    constraint, and can thus drive register allocation.
-    This constraint won't match unless :option:`-mprefer-short-insn-regs` is
-    in effect.
+``Rcs``
+  The register class usable in short insns.  This is a register class
+  constraint, and can thus drive register allocation.
+  This constraint won't match unless :option:`-mprefer-short-insn-regs` is
+  in effect.
 
-  ``Rsc``
-    The the register class of registers that can be used to hold a
-    sibcall call address.  I.e., a caller-saved register.
+``Rsc``
+  The the register class of registers that can be used to hold a
+  sibcall call address.  I.e., a caller-saved register.
 
-  ``Rct``
-    Core control register class.
+``Rct``
+  Core control register class.
 
-  ``Rgs``
-    The register group usable in short insns.
-    This constraint does not use a register class, so that it only
-    passively matches suitable registers, and doesn't drive register allocation.
+``Rgs``
+  The register group usable in short insns.
+  This constraint does not use a register class, so that it only
+  passively matches suitable registers, and doesn't drive register allocation.
 
-  .. only:: gccint
+.. only:: gccint
 
-    ``Car``
-      Constant suitable for the addsi3_r pattern.  This is a valid offset
-      For byte, halfword, or word addressing.
+  ``Car``
+    Constant suitable for the addsi3_r pattern.  This is a valid offset
+    For byte, halfword, or word addressing.
 
-  ``Rra``
-    Matches the return address if it can be replaced with the link register.
+``Rra``
+  Matches the return address if it can be replaced with the link register.
 
-  ``Rcc``
-    Matches the integer condition code register.
+``Rcc``
+  Matches the integer condition code register.
 
-  ``Sra``
-    Matches the return address if it is in a stack slot.
+``Sra``
+  Matches the return address if it is in a stack slot.
 
-  ``Cfm``
-    Matches control register values to switch fp mode, which are encapsulated in
-    ``UNSPEC_FP_MODE``.
+``Cfm``
+  Matches control register values to switch fp mode, which are encapsulated in
+  ``UNSPEC_FP_MODE``.
 
 FRV---:samp:`{config/frv/frv.h}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``a``
-    Register in the class ``ACC_REGS`` (``acc0`` to ``acc7``).
+``a``
+  Register in the class ``ACC_REGS`` (``acc0`` to ``acc7``).
 
-  ``b``
-    Register in the class ``EVEN_ACC_REGS`` (``acc0`` to ``acc7``).
+``b``
+  Register in the class ``EVEN_ACC_REGS`` (``acc0`` to ``acc7``).
 
-  ``c``
-    Register in the class ``CC_REGS`` (``fcc0`` to ``fcc3`` and
-    ``icc0`` to ``icc3``).
+``c``
+  Register in the class ``CC_REGS`` (``fcc0`` to ``fcc3`` and
+  ``icc0`` to ``icc3``).
 
-  ``d``
-    Register in the class ``GPR_REGS`` (``gr0`` to ``gr63``).
+``d``
+  Register in the class ``GPR_REGS`` (``gr0`` to ``gr63``).
 
-  ``e``
-    Register in the class ``EVEN_REGS`` (``gr0`` to ``gr63``).
-    Odd registers are excluded not in the class but through the use of a machine
-    mode larger than 4 bytes.
+``e``
+  Register in the class ``EVEN_REGS`` (``gr0`` to ``gr63``).
+  Odd registers are excluded not in the class but through the use of a machine
+  mode larger than 4 bytes.
 
-  ``f``
-    Register in the class ``FPR_REGS`` (``fr0`` to ``fr63``).
+``f``
+  Register in the class ``FPR_REGS`` (``fr0`` to ``fr63``).
 
-  ``h``
-    Register in the class ``FEVEN_REGS`` (``fr0`` to ``fr63``).
-    Odd registers are excluded not in the class but through the use of a machine
-    mode larger than 4 bytes.
+``h``
+  Register in the class ``FEVEN_REGS`` (``fr0`` to ``fr63``).
+  Odd registers are excluded not in the class but through the use of a machine
+  mode larger than 4 bytes.
 
-  ``l``
-    Register in the class ``LR_REG`` (the ``lr`` register).
+``l``
+  Register in the class ``LR_REG`` (the ``lr`` register).
 
-  ``q``
-    Register in the class ``QUAD_REGS`` (``gr2`` to ``gr63``).
-    Register numbers not divisible by 4 are excluded not in the class but through
-    the use of a machine mode larger than 8 bytes.
+``q``
+  Register in the class ``QUAD_REGS`` (``gr2`` to ``gr63``).
+  Register numbers not divisible by 4 are excluded not in the class but through
+  the use of a machine mode larger than 8 bytes.
 
-  ``t``
-    Register in the class ``ICC_REGS`` (``icc0`` to ``icc3``).
+``t``
+  Register in the class ``ICC_REGS`` (``icc0`` to ``icc3``).
 
-  ``u``
-    Register in the class ``FCC_REGS`` (``fcc0`` to ``fcc3``).
+``u``
+  Register in the class ``FCC_REGS`` (``fcc0`` to ``fcc3``).
 
-  ``v``
-    Register in the class ``ICR_REGS`` (``cc4`` to ``cc7``).
+``v``
+  Register in the class ``ICR_REGS`` (``cc4`` to ``cc7``).
 
-  ``w``
-    Register in the class ``FCR_REGS`` (``cc0`` to ``cc3``).
+``w``
+  Register in the class ``FCR_REGS`` (``cc0`` to ``cc3``).
 
-  ``x``
-    Register in the class ``QUAD_FPR_REGS`` (``fr0`` to ``fr63``).
-    Register numbers not divisible by 4 are excluded not in the class but through
-    the use of a machine mode larger than 8 bytes.
+``x``
+  Register in the class ``QUAD_FPR_REGS`` (``fr0`` to ``fr63``).
+  Register numbers not divisible by 4 are excluded not in the class but through
+  the use of a machine mode larger than 8 bytes.
 
-  ``z``
-    Register in the class ``SPR_REGS`` (``lcr`` and ``lr``).
+``z``
+  Register in the class ``SPR_REGS`` (``lcr`` and ``lr``).
 
-  ``A``
-    Register in the class ``QUAD_ACC_REGS`` (``acc0`` to ``acc7``).
+``A``
+  Register in the class ``QUAD_ACC_REGS`` (``acc0`` to ``acc7``).
 
-  ``B``
-    Register in the class ``ACCG_REGS`` (``accg0`` to ``accg7``).
+``B``
+  Register in the class ``ACCG_REGS`` (``accg0`` to ``accg7``).
 
-  ``C``
-    Register in the class ``CR_REGS`` (``cc0`` to ``cc7``).
+``C``
+  Register in the class ``CR_REGS`` (``cc0`` to ``cc7``).
 
-  ``G``
-    Floating point constant zero
+``G``
+  Floating point constant zero
 
-  ``I``
-    6-bit signed integer constant
+``I``
+  6-bit signed integer constant
 
-  ``J``
-    10-bit signed integer constant
+``J``
+  10-bit signed integer constant
 
-  ``L``
-    16-bit signed integer constant
+``L``
+  16-bit signed integer constant
 
-  ``M``
-    16-bit unsigned integer constant
+``M``
+  16-bit unsigned integer constant
 
-  ``N``
-    12-bit signed integer constant that is negative---i.e. in the
-    range of -2048 to -1
+``N``
+  12-bit signed integer constant that is negative---i.e. in the
+  range of -2048 to -1
 
-  ``O``
-    Constant zero
+``O``
+  Constant zero
 
-  ``P``
-    12-bit signed integer constant that is greater than zero---i.e. in the
-    range of 1 to 2047.
+``P``
+  12-bit signed integer constant that is greater than zero---i.e. in the
+  range of 1 to 2047.
 
 FT32---:samp:`{config/ft32/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``A``
-    An absolute address
+``A``
+  An absolute address
 
-  ``B``
-    An offset address
+``B``
+  An offset address
 
-  ``W``
-    A register indirect memory operand
+``W``
+  A register indirect memory operand
 
-  ``e``
-    An offset address.
+``e``
+  An offset address.
 
-  ``f``
-    An offset address.
+``f``
+  An offset address.
 
-  ``O``
-    The constant zero or one
+``O``
+  The constant zero or one
 
-  ``I``
-    A 16-bit signed constant (-32768 ... 32767)
+``I``
+  A 16-bit signed constant (-32768 ... 32767)
 
-  ``w``
-    A bitfield mask suitable for bext or bins
+``w``
+  A bitfield mask suitable for bext or bins
 
-  ``x``
-    An inverted bitfield mask suitable for bext or bins
+``x``
+  An inverted bitfield mask suitable for bext or bins
 
-  ``L``
-    A 16-bit unsigned constant, multiple of 4 (0 ... 65532)
+``L``
+  A 16-bit unsigned constant, multiple of 4 (0 ... 65532)
 
-  ``S``
-    A 20-bit signed constant (-524288 ... 524287)
+``S``
+  A 20-bit signed constant (-524288 ... 524287)
 
-  ``b``
-    A constant for a bitfield width (1 ... 16)
+``b``
+  A constant for a bitfield width (1 ... 16)
 
-  ``KA``
-    A 10-bit signed constant (-512 ... 511)
+``KA``
+  A 10-bit signed constant (-512 ... 511)
 
 Hewlett-Packard PA-RISC---:samp:`{config/pa/pa.h}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``a``
-    General register 1
+``a``
+  General register 1
 
-  ``f``
-    Floating point register
+``f``
+  Floating point register
 
-  ``q``
-    Shift amount register
+``q``
+  Shift amount register
 
-  ``x``
-    Floating point register (deprecated)
+``x``
+  Floating point register (deprecated)
 
-  ``y``
-    Upper floating point register (32-bit), floating point register (64-bit)
+``y``
+  Upper floating point register (32-bit), floating point register (64-bit)
 
-  ``Z``
-    Any register
+``Z``
+  Any register
 
-  ``I``
-    Signed 11-bit integer constant
+``I``
+  Signed 11-bit integer constant
 
-  ``J``
-    Signed 14-bit integer constant
+``J``
+  Signed 14-bit integer constant
 
-  ``K``
-    Integer constant that can be deposited with a ``zdepi`` instruction
+``K``
+  Integer constant that can be deposited with a ``zdepi`` instruction
 
-  ``L``
-    Signed 5-bit integer constant
+``L``
+  Signed 5-bit integer constant
 
-  ``M``
-    Integer constant 0
+``M``
+  Integer constant 0
 
-  ``N``
-    Integer constant that can be loaded with a ``ldil`` instruction
+``N``
+  Integer constant that can be loaded with a ``ldil`` instruction
 
-  ``O``
-    Integer constant whose value plus one is a power of 2
+``O``
+  Integer constant whose value plus one is a power of 2
 
-  ``P``
-    Integer constant that can be used for ``and`` operations in ``depi``
-    and ``extru`` instructions
+``P``
+  Integer constant that can be used for ``and`` operations in ``depi``
+  and ``extru`` instructions
 
-  ``S``
-    Integer constant 31
+``S``
+  Integer constant 31
 
-  ``U``
-    Integer constant 63
+``U``
+  Integer constant 63
 
-  ``G``
-    Floating-point constant 0.0
+``G``
+  Floating-point constant 0.0
 
-  ``A``
-    A ``lo_sum`` data-linkage-table memory operand
+``A``
+  A ``lo_sum`` data-linkage-table memory operand
 
-  ``Q``
-    A memory operand that can be used as the destination operand of an
-    integer store instruction
+``Q``
+  A memory operand that can be used as the destination operand of an
+  integer store instruction
 
-  ``R``
-    A scaled or unscaled indexed memory operand
+``R``
+  A scaled or unscaled indexed memory operand
 
-  ``T``
-    A memory operand for floating-point loads and stores
+``T``
+  A memory operand for floating-point loads and stores
 
-  ``W``
-    A register indirect memory operand
+``W``
+  A register indirect memory operand
 
 Intel IA-64---:samp:`{config/ia64/ia64.h}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``a``
-    General register ``r0`` to ``r3`` for ``addl`` instruction
+``a``
+  General register ``r0`` to ``r3`` for ``addl`` instruction
 
-  ``b``
-    Branch register
+``b``
+  Branch register
 
-  ``c``
-    Predicate register (:samp:`c` as in 'conditional')
+``c``
+  Predicate register (:samp:`c` as in 'conditional')
 
-  ``d``
-    Application register residing in M-unit
+``d``
+  Application register residing in M-unit
 
-  ``e``
-    Application register residing in I-unit
+``e``
+  Application register residing in I-unit
 
-  ``f``
-    Floating-point register
+``f``
+  Floating-point register
 
-  ``m``
-    Memory operand.  If used together with :samp:`<` or :samp:`>`,
-    the operand can have postincrement and postdecrement which
-    require printing with :samp:`%Pn` on IA-64.
+``m``
+  Memory operand.  If used together with :samp:`<` or :samp:`>`,
+  the operand can have postincrement and postdecrement which
+  require printing with :samp:`%Pn` on IA-64.
 
-  ``G``
-    Floating-point constant 0.0 or 1.0
+``G``
+  Floating-point constant 0.0 or 1.0
 
-  ``I``
-    14-bit signed integer constant
+``I``
+  14-bit signed integer constant
 
-  ``J``
-    22-bit signed integer constant
+``J``
+  22-bit signed integer constant
 
-  ``K``
-    8-bit signed integer constant for logical instructions
+``K``
+  8-bit signed integer constant for logical instructions
 
-  ``L``
-    8-bit adjusted signed integer constant for compare pseudo-ops
+``L``
+  8-bit adjusted signed integer constant for compare pseudo-ops
 
-  ``M``
-    6-bit unsigned integer constant for shift counts
+``M``
+  6-bit unsigned integer constant for shift counts
 
-  ``N``
-    9-bit signed integer constant for load and store postincrements
+``N``
+  9-bit signed integer constant for load and store postincrements
 
-  ``O``
-    The constant zero
+``O``
+  The constant zero
 
-  ``P``
-    0 or -1 for ``dep`` instruction
+``P``
+  0 or -1 for ``dep`` instruction
 
-  ``Q``
-    Non-volatile memory for floating-point loads and stores
+``Q``
+  Non-volatile memory for floating-point loads and stores
 
-  ``R``
-    Integer constant in the range 1 to 4 for ``shladd`` instruction
+``R``
+  Integer constant in the range 1 to 4 for ``shladd`` instruction
 
-  ``S``
-    Memory operand except postincrement and postdecrement.  This is
-    now roughly the same as :samp:`m` when not used together with :samp:`<`
-    or :samp:`>`.
+``S``
+  Memory operand except postincrement and postdecrement.  This is
+  now roughly the same as :samp:`m` when not used together with :samp:`<`
+  or :samp:`>`.
 
 M32C---:samp:`{config/m32c/m32c.cc}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``Rsp`` ``Rfb`` ``Rsb``
-    :samp:`$sp`, :samp:`$fb`, :samp:`$sb`.
+``Rsp`` ``Rfb`` ``Rsb``
+  :samp:`$sp`, :samp:`$fb`, :samp:`$sb`.
 
-  ``Rcr``
-    Any control register, when they're 16 bits wide (nothing if control
-    registers are 24 bits wide)
+``Rcr``
+  Any control register, when they're 16 bits wide (nothing if control
+  registers are 24 bits wide)
 
-  ``Rcl``
-    Any control register, when they're 24 bits wide.
+``Rcl``
+  Any control register, when they're 24 bits wide.
 
-  ``R0w`` ``R1w`` ``R2w`` ``R3w``
-    $r0, $r1, $r2, $r3.
+``R0w`` ``R1w`` ``R2w`` ``R3w``
+  $r0, $r1, $r2, $r3.
 
-  ``R02``
-    $r0 or $r2, or $r2r0 for 32 bit values.
+``R02``
+  $r0 or $r2, or $r2r0 for 32 bit values.
 
-  ``R13``
-    $r1 or $r3, or $r3r1 for 32 bit values.
+``R13``
+  $r1 or $r3, or $r3r1 for 32 bit values.
 
-  ``Rdi``
-    A register that can hold a 64 bit value.
+``Rdi``
+  A register that can hold a 64 bit value.
 
-  ``Rhl``
-    $r0 or $r1 (registers with addressable high/low bytes)
+``Rhl``
+  $r0 or $r1 (registers with addressable high/low bytes)
 
-  ``R23``
-    $r2 or $r3
+``R23``
+  $r2 or $r3
 
-  ``Raa``
-    Address registers
+``Raa``
+  Address registers
 
-  ``Raw``
-    Address registers when they're 16 bits wide.
+``Raw``
+  Address registers when they're 16 bits wide.
 
-  ``Ral``
-    Address registers when they're 24 bits wide.
+``Ral``
+  Address registers when they're 24 bits wide.
 
-  ``Rqi``
-    Registers that can hold QI values.
+``Rqi``
+  Registers that can hold QI values.
 
-  ``Rad``
-    Registers that can be used with displacements ($a0, $a1, $sb).
+``Rad``
+  Registers that can be used with displacements ($a0, $a1, $sb).
 
-  ``Rsi``
-    Registers that can hold 32 bit values.
+``Rsi``
+  Registers that can hold 32 bit values.
 
-  ``Rhi``
-    Registers that can hold 16 bit values.
+``Rhi``
+  Registers that can hold 16 bit values.
 
-  ``Rhc``
-    Registers chat can hold 16 bit values, including all control
-    registers.
+``Rhc``
+  Registers chat can hold 16 bit values, including all control
+  registers.
 
-  ``Rra``
-    $r0 through R1, plus $a0 and $a1.
+``Rra``
+  $r0 through R1, plus $a0 and $a1.
 
-  ``Rfl``
-    The flags register.
+``Rfl``
+  The flags register.
 
-  ``Rmm``
-    The memory-based pseudo-registers $mem0 through $mem15.
+``Rmm``
+  The memory-based pseudo-registers $mem0 through $mem15.
 
-  ``Rpi``
-    Registers that can hold pointers (16 bit registers for r8c, m16c; 24
-    bit registers for m32cm, m32c).
+``Rpi``
+  Registers that can hold pointers (16 bit registers for r8c, m16c; 24
+  bit registers for m32cm, m32c).
 
-  ``Rpa``
-    Matches multiple registers in a PARALLEL to form a larger register.
-    Used to match function return values.
+``Rpa``
+  Matches multiple registers in a PARALLEL to form a larger register.
+  Used to match function return values.
 
-  ``Is3``
-    -8 ... 7
+``Is3``
+  -8 ... 7
 
-  ``IS1``
-    -128 ... 127
+``IS1``
+  -128 ... 127
 
-  ``IS2``
-    -32768 ... 32767
+``IS2``
+  -32768 ... 32767
 
-  ``IU2``
-    0 ... 65535
+``IU2``
+  0 ... 65535
 
-  ``In4``
-    -8 ... -1 or 1 ... 8
+``In4``
+  -8 ... -1 or 1 ... 8
 
-  ``In5``
-    -16 ... -1 or 1 ... 16
+``In5``
+  -16 ... -1 or 1 ... 16
 
-  ``In6``
-    -32 ... -1 or 1 ... 32
+``In6``
+  -32 ... -1 or 1 ... 32
 
-  ``IM2``
-    -65536 ... -1
+``IM2``
+  -65536 ... -1
 
-  ``Ilb``
-    An 8 bit value with exactly one bit set.
+``Ilb``
+  An 8 bit value with exactly one bit set.
 
-  ``Ilw``
-    A 16 bit value with exactly one bit set.
+``Ilw``
+  A 16 bit value with exactly one bit set.
 
-  ``Sd``
-    The common src/dest memory addressing modes.
+``Sd``
+  The common src/dest memory addressing modes.
 
-  ``Sa``
-    Memory addressed using $a0 or $a1.
+``Sa``
+  Memory addressed using $a0 or $a1.
 
-  ``Si``
-    Memory addressed with immediate addresses.
+``Si``
+  Memory addressed with immediate addresses.
 
-  ``Ss``
-    Memory addressed using the stack pointer ($sp).
+``Ss``
+  Memory addressed using the stack pointer ($sp).
 
-  ``Sf``
-    Memory addressed using the frame base register ($fb).
+``Sf``
+  Memory addressed using the frame base register ($fb).
 
-  ``Ss``
-    Memory addressed using the small base register ($sb).
+``Ss``
+  Memory addressed using the small base register ($sb).
 
-  ``S1``
-    $r1h
+``S1``
+  $r1h
 
-LoongArch---samp:`{config/loongarch/constraints.md}`
+LoongArch---:samp:`{config/loongarch/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``f``
-    A floating-point register (if available).
+``f``
+  A floating-point register (if available).
 
-  ``k``
-    A memory operand whose address is formed by a base register and
-    (optionally scaled) index register.
+``k``
+  A memory operand whose address is formed by a base register and
+  (optionally scaled) index register.
 
-  ``l``
-    A signed 16-bit constant.
+``l``
+  A signed 16-bit constant.
 
-  ``m``
-    A memory operand whose address is formed by a base register and offset
-    that is suitable for use in instructions with the same addressing mode
-    as ``st.w`` and ``ld.w``.
+``m``
+  A memory operand whose address is formed by a base register and offset
+  that is suitable for use in instructions with the same addressing mode
+  as ``st.w`` and ``ld.w``.
 
-  ``I``
-    A signed 12-bit constant (for arithmetic instructions).
+``I``
+  A signed 12-bit constant (for arithmetic instructions).
 
-  ``K``
-    An unsigned 12-bit constant (for logic instructions).
+``K``
+  An unsigned 12-bit constant (for logic instructions).
 
-  ``ZB``
-    An address that is held in a general-purpose register.
-    The offset is zero.
+``ZB``
+  An address that is held in a general-purpose register.
+  The offset is zero.
 
-  ``ZC``
-    A memory operand whose address is formed by a base register and offset
-    that is suitable for use in instructions with the same addressing mode
-    as ``ll.w`` and ``sc.w``.
+``ZC``
+  A memory operand whose address is formed by a base register and offset
+  that is suitable for use in instructions with the same addressing mode
+  as ``ll.w`` and ``sc.w``.
 
 MicroBlaze---:samp:`{config/microblaze/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``d``
-    A general register (``r0`` to ``r31``).
+``d``
+  A general register (``r0`` to ``r31``).
 
-  ``z``
-    A status register (``rmsr``, ``$fcc1`` to ``$fcc7``).
+``z``
+  A status register (``rmsr``, ``$fcc1`` to ``$fcc7``).
 
 MIPS---:samp:`{config/mips/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``d``
-    A general-purpose register.  This is equivalent to ``r`` unless
-    generating MIPS16 code, in which case the MIPS16 register set is used.
+``d``
+  A general-purpose register.  This is equivalent to ``r`` unless
+  generating MIPS16 code, in which case the MIPS16 register set is used.
 
-  ``f``
-    A floating-point register (if available).
+``f``
+  A floating-point register (if available).
 
-  ``h``
-    Formerly the ``hi`` register.  This constraint is no longer supported.
+``h``
+  Formerly the ``hi`` register.  This constraint is no longer supported.
 
-  ``l``
-    The ``lo`` register.  Use this register to store values that are
-    no bigger than a word.
+``l``
+  The ``lo`` register.  Use this register to store values that are
+  no bigger than a word.
 
-  ``x``
-    The concatenated ``hi`` and ``lo`` registers.  Use this register
-    to store doubleword values.
+``x``
+  The concatenated ``hi`` and ``lo`` registers.  Use this register
+  to store doubleword values.
 
-  ``c``
-    A register suitable for use in an indirect jump.  This will always be
-    ``$25`` for :option:`-mabicalls`.
+``c``
+  A register suitable for use in an indirect jump.  This will always be
+  ``$25`` for :option:`-mabicalls`.
 
-  ``v``
-    Register ``$3``.  Do not use this constraint in new code;
-    it is retained only for compatibility with glibc.
+``v``
+  Register ``$3``.  Do not use this constraint in new code;
+  it is retained only for compatibility with glibc.
 
-  ``y``
-    Equivalent to ``r`` ; retained for backwards compatibility.
+``y``
+  Equivalent to ``r`` ; retained for backwards compatibility.
 
-  ``z``
-    A floating-point condition code register.
+``z``
+  A floating-point condition code register.
 
-  ``I``
-    A signed 16-bit constant (for arithmetic instructions).
+``I``
+  A signed 16-bit constant (for arithmetic instructions).
 
-  ``J``
-    Integer zero.
+``J``
+  Integer zero.
 
-  ``K``
-    An unsigned 16-bit constant (for logic instructions).
+``K``
+  An unsigned 16-bit constant (for logic instructions).
 
-  ``L``
-    A signed 32-bit constant in which the lower 16 bits are zero.
-    Such constants can be loaded using ``lui``.
+``L``
+  A signed 32-bit constant in which the lower 16 bits are zero.
+  Such constants can be loaded using ``lui``.
 
-  ``M``
-    A constant that cannot be loaded using ``lui``, ``addiu``
-    or ``ori``.
+``M``
+  A constant that cannot be loaded using ``lui``, ``addiu``
+  or ``ori``.
 
-  ``N``
-    A constant in the range -65535 to -1 (inclusive).
+``N``
+  A constant in the range -65535 to -1 (inclusive).
 
-  ``O``
-    A signed 15-bit constant.
+``O``
+  A signed 15-bit constant.
 
-  ``P``
-    A constant in the range 1 to 65535 (inclusive).
+``P``
+  A constant in the range 1 to 65535 (inclusive).
 
-  ``G``
-    Floating-point zero.
+``G``
+  Floating-point zero.
 
-  ``R``
-    An address that can be used in a non-macro load or store.
+``R``
+  An address that can be used in a non-macro load or store.
 
-  ``ZC``
-    A memory operand whose address is formed by a base register and offset
-    that is suitable for use in instructions with the same addressing mode
-    as ``ll`` and ``sc``.
+``ZC``
+  A memory operand whose address is formed by a base register and offset
+  that is suitable for use in instructions with the same addressing mode
+  as ``ll`` and ``sc``.
 
-  ``ZD``
-    An address suitable for a ``prefetch`` instruction, or for any other
-    instruction with the same addressing mode as ``prefetch``.
+``ZD``
+  An address suitable for a ``prefetch`` instruction, or for any other
+  instruction with the same addressing mode as ``prefetch``.
 
 Motorola 680x0---:samp:`{config/m68k/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``a``
-    Address register
+``a``
+  Address register
 
-  ``d``
-    Data register
+``d``
+  Data register
 
-  ``f``
-    68881 floating-point register, if available
+``f``
+  68881 floating-point register, if available
 
-  ``I``
-    Integer in the range 1 to 8
+``I``
+  Integer in the range 1 to 8
 
-  ``J``
-    16-bit signed number
+``J``
+  16-bit signed number
 
-  ``K``
-    Signed number whose magnitude is greater than 0x80
+``K``
+  Signed number whose magnitude is greater than 0x80
 
-  ``L``
-    Integer in the range -8 to -1
+``L``
+  Integer in the range -8 to -1
 
-  ``M``
-    Signed number whose magnitude is greater than 0x100
+``M``
+  Signed number whose magnitude is greater than 0x100
 
-  ``N``
-    Range 24 to 31, rotatert:SI 8 to 1 expressed as rotate
+``N``
+  Range 24 to 31, rotatert:SI 8 to 1 expressed as rotate
 
-  ``O``
-    16 (for rotate using swap)
+``O``
+  16 (for rotate using swap)
 
-  ``P``
-    Range 8 to 15, rotatert:HI 8 to 1 expressed as rotate
+``P``
+  Range 8 to 15, rotatert:HI 8 to 1 expressed as rotate
 
-  ``R``
-    Numbers that mov3q can handle
+``R``
+  Numbers that mov3q can handle
 
-  ``G``
-    Floating point constant that is not a 68881 constant
+``G``
+  Floating point constant that is not a 68881 constant
 
-  ``S``
-    Operands that satisfy 'm' when -mpcrel is in effect
+``S``
+  Operands that satisfy 'm' when -mpcrel is in effect
 
-  ``T``
-    Operands that satisfy 's' when -mpcrel is not in effect
+``T``
+  Operands that satisfy 's' when -mpcrel is not in effect
 
-  ``Q``
-    Address register indirect addressing mode
+``Q``
+  Address register indirect addressing mode
 
-  ``U``
-    Register offset addressing
+``U``
+  Register offset addressing
 
-  ``W``
-    const_call_operand
+``W``
+  const_call_operand
 
-  ``Cs``
-    symbol_ref or const
+``Cs``
+  symbol_ref or const
 
-  ``Ci``
-    const_int
+``Ci``
+  const_int
 
-  ``C0``
-    const_int 0
+``C0``
+  const_int 0
 
-  ``Cj``
-    Range of signed numbers that don't fit in 16 bits
+``Cj``
+  Range of signed numbers that don't fit in 16 bits
 
-  ``Cmvq``
-    Integers valid for mvq
+``Cmvq``
+  Integers valid for mvq
 
-  ``Capsw``
-    Integers valid for a moveq followed by a swap
+``Capsw``
+  Integers valid for a moveq followed by a swap
 
-  ``Cmvz``
-    Integers valid for mvz
+``Cmvz``
+  Integers valid for mvz
 
-  ``Cmvs``
-    Integers valid for mvs
+``Cmvs``
+  Integers valid for mvs
 
-  ``Ap``
-    push_operand
+``Ap``
+  push_operand
 
-  ``Ac``
-    Non-register operands allowed in clr
+``Ac``
+  Non-register operands allowed in clr
 
 Moxie---:samp:`{config/moxie/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``A``
-    An absolute address
+``A``
+  An absolute address
 
-  ``B``
-    An offset address
+``B``
+  An offset address
 
-  ``W``
-    A register indirect memory operand
+``W``
+  A register indirect memory operand
 
-  ``I``
-    A constant in the range of 0 to 255.
+``I``
+  A constant in the range of 0 to 255.
 
-  ``N``
-    A constant in the range of 0 to -255.
+``N``
+  A constant in the range of 0 to -255.
 
 MSP430---:samp:`{config/msp430/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``R12``
-    Register R12.
+``R12``
+  Register R12.
 
-  ``R13``
-    Register R13.
+``R13``
+  Register R13.
 
-  ``K``
-    Integer constant 1.
+``K``
+  Integer constant 1.
 
-  ``L``
-    Integer constant -1^20..1^19.
+``L``
+  Integer constant -1^20..1^19.
 
-  ``M``
-    Integer constant 1-4.
+``M``
+  Integer constant 1-4.
 
-  ``Ya``
-    Memory references which do not require an extended MOVX instruction.
+``Ya``
+  Memory references which do not require an extended MOVX instruction.
 
-  ``Yl``
-    Memory reference, labels only.
+``Yl``
+  Memory reference, labels only.
 
-  ``Ys``
-    Memory reference, stack only.
+``Ys``
+  Memory reference, stack only.
 
 NDS32---:samp:`{config/nds32/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``w``
-    LOW register class $r0 to $r7 constraint for V3/V3M ISA.
+``w``
+  LOW register class $r0 to $r7 constraint for V3/V3M ISA.
 
-  ``l``
-    LOW register class $r0 to $r7.
+``l``
+  LOW register class $r0 to $r7.
 
-  ``d``
-    MIDDLE register class $r0 to $r11, $r16 to $r19.
+``d``
+  MIDDLE register class $r0 to $r11, $r16 to $r19.
 
-  ``h``
-    HIGH register class $r12 to $r14, $r20 to $r31.
+``h``
+  HIGH register class $r12 to $r14, $r20 to $r31.
 
-  ``t``
-    Temporary assist register $ta (i.e. $r15).
+``t``
+  Temporary assist register $ta (i.e. $r15).
 
-  ``k``
-    Stack register $sp.
+``k``
+  Stack register $sp.
 
-  ``Iu03``
-    Unsigned immediate 3-bit value.
+``Iu03``
+  Unsigned immediate 3-bit value.
 
-  ``In03``
-    Negative immediate 3-bit value in the range of -7--0.
+``In03``
+  Negative immediate 3-bit value in the range of -7--0.
 
-  ``Iu04``
-    Unsigned immediate 4-bit value.
+``Iu04``
+  Unsigned immediate 4-bit value.
 
-  ``Is05``
-    Signed immediate 5-bit value.
+``Is05``
+  Signed immediate 5-bit value.
 
-  ``Iu05``
-    Unsigned immediate 5-bit value.
+``Iu05``
+  Unsigned immediate 5-bit value.
 
-  ``In05``
-    Negative immediate 5-bit value in the range of -31--0.
+``In05``
+  Negative immediate 5-bit value in the range of -31--0.
 
-  ``Ip05``
-    Unsigned immediate 5-bit value for movpi45 instruction with range 16--47.
+``Ip05``
+  Unsigned immediate 5-bit value for movpi45 instruction with range 16--47.
 
-  ``Iu06``
-    Unsigned immediate 6-bit value constraint for addri36.sp instruction.
+``Iu06``
+  Unsigned immediate 6-bit value constraint for addri36.sp instruction.
 
-  ``Iu08``
-    Unsigned immediate 8-bit value.
+``Iu08``
+  Unsigned immediate 8-bit value.
 
-  ``Iu09``
-    Unsigned immediate 9-bit value.
+``Iu09``
+  Unsigned immediate 9-bit value.
 
-  ``Is10``
-    Signed immediate 10-bit value.
+``Is10``
+  Signed immediate 10-bit value.
 
-  ``Is11``
-    Signed immediate 11-bit value.
+``Is11``
+  Signed immediate 11-bit value.
 
-  ``Is15``
-    Signed immediate 15-bit value.
+``Is15``
+  Signed immediate 15-bit value.
 
-  ``Iu15``
-    Unsigned immediate 15-bit value.
+``Iu15``
+  Unsigned immediate 15-bit value.
 
-  ``Ic15``
-    A constant which is not in the range of imm15u but ok for bclr instruction.
+``Ic15``
+  A constant which is not in the range of imm15u but ok for bclr instruction.
 
-  ``Ie15``
-    A constant which is not in the range of imm15u but ok for bset instruction.
+``Ie15``
+  A constant which is not in the range of imm15u but ok for bset instruction.
 
-  ``It15``
-    A constant which is not in the range of imm15u but ok for btgl instruction.
+``It15``
+  A constant which is not in the range of imm15u but ok for btgl instruction.
 
-  ``Ii15``
-    A constant whose compliment value is in the range of imm15u
-    and ok for bitci instruction.
+``Ii15``
+  A constant whose compliment value is in the range of imm15u
+  and ok for bitci instruction.
 
-  ``Is16``
-    Signed immediate 16-bit value.
+``Is16``
+  Signed immediate 16-bit value.
 
-  ``Is17``
-    Signed immediate 17-bit value.
+``Is17``
+  Signed immediate 17-bit value.
 
-  ``Is19``
-    Signed immediate 19-bit value.
+``Is19``
+  Signed immediate 19-bit value.
 
-  ``Is20``
-    Signed immediate 20-bit value.
+``Is20``
+  Signed immediate 20-bit value.
 
-  ``Ihig``
-    The immediate value that can be simply set high 20-bit.
+``Ihig``
+  The immediate value that can be simply set high 20-bit.
 
-  ``Izeb``
-    The immediate value 0xff.
+``Izeb``
+  The immediate value 0xff.
 
-  ``Izeh``
-    The immediate value 0xffff.
+``Izeh``
+  The immediate value 0xffff.
 
-  ``Ixls``
-    The immediate value 0x01.
+``Ixls``
+  The immediate value 0x01.
 
-  ``Ix11``
-    The immediate value 0x7ff.
+``Ix11``
+  The immediate value 0x7ff.
 
-  ``Ibms``
-    The immediate value with power of 2.
+``Ibms``
+  The immediate value with power of 2.
 
-  ``Ifex``
-    The immediate value with power of 2 minus 1.
+``Ifex``
+  The immediate value with power of 2 minus 1.
 
-  ``U33``
-    Memory constraint for 333 format.
+``U33``
+  Memory constraint for 333 format.
 
-  ``U45``
-    Memory constraint for 45 format.
+``U45``
+  Memory constraint for 45 format.
 
-  ``U37``
-    Memory constraint for 37 format.
+``U37``
+  Memory constraint for 37 format.
 
 Nios II family---:samp:`{config/nios2/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``I``
-    Integer that is valid as an immediate operand in an
-    instruction taking a signed 16-bit number. Range
-    -32768 to 32767.
+``I``
+  Integer that is valid as an immediate operand in an
+  instruction taking a signed 16-bit number. Range
+  -32768 to 32767.
 
-  ``J``
-    Integer that is valid as an immediate operand in an
-    instruction taking an unsigned 16-bit number. Range
-    0 to 65535.
+``J``
+  Integer that is valid as an immediate operand in an
+  instruction taking an unsigned 16-bit number. Range
+  0 to 65535.
 
-  ``K``
-    Integer that is valid as an immediate operand in an
-    instruction taking only the upper 16-bits of a
-    32-bit number. Range 32-bit numbers with the lower
-    16-bits being 0.
+``K``
+  Integer that is valid as an immediate operand in an
+  instruction taking only the upper 16-bits of a
+  32-bit number. Range 32-bit numbers with the lower
+  16-bits being 0.
 
-  ``L``
-    Integer that is valid as an immediate operand for a 
-    shift instruction. Range 0 to 31.
+``L``
+  Integer that is valid as an immediate operand for a 
+  shift instruction. Range 0 to 31.
 
-  ``M``
-    Integer that is valid as an immediate operand for
-    only the value 0. Can be used in conjunction with
-    the format modifier ``z`` to use ``r0``
-    instead of ``0`` in the assembly output.
+``M``
+  Integer that is valid as an immediate operand for
+  only the value 0. Can be used in conjunction with
+  the format modifier ``z`` to use ``r0``
+  instead of ``0`` in the assembly output.
 
-  ``N``
-    Integer that is valid as an immediate operand for
-    a custom instruction opcode. Range 0 to 255.
+``N``
+  Integer that is valid as an immediate operand for
+  a custom instruction opcode. Range 0 to 255.
 
-  ``P``
-    An immediate operand for R2 andchi/andci instructions.
+``P``
+  An immediate operand for R2 andchi/andci instructions.
 
-  ``S``
-    Matches immediates which are addresses in the small
-    data section and therefore can be added to ``gp``
-    as a 16-bit immediate to re-create their 32-bit value.
+``S``
+  Matches immediates which are addresses in the small
+  data section and therefore can be added to ``gp``
+  as a 16-bit immediate to re-create their 32-bit value.
 
-  ``U``
-    Matches constants suitable as an operand for the rdprs and
-    cache instructions.
+``U``
+  Matches constants suitable as an operand for the rdprs and
+  cache instructions.
 
-  ``v``
-    A memory operand suitable for Nios II R2 load/store
-    exclusive instructions.
+``v``
+  A memory operand suitable for Nios II R2 load/store
+  exclusive instructions.
 
-  ``w``
-    A memory operand suitable for load/store IO and cache
-    instructions.
+``w``
+  A memory operand suitable for load/store IO and cache
+  instructions.
 
-  .. only:: gccint
+.. only:: gccint
 
-    ``T``
-      A ``const`` wrapped ``UNSPEC`` expression,
-      representing a supported PIC or TLS relocation.
+  ``T``
+    A ``const`` wrapped ``UNSPEC`` expression,
+    representing a supported PIC or TLS relocation.
 
 OpenRISC---:samp:`{config/or1k/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``I``
-    Integer that is valid as an immediate operand in an
-    instruction taking a signed 16-bit number. Range
-    -32768 to 32767.
+``I``
+  Integer that is valid as an immediate operand in an
+  instruction taking a signed 16-bit number. Range
+  -32768 to 32767.
 
-  ``K``
-    Integer that is valid as an immediate operand in an
-    instruction taking an unsigned 16-bit number. Range
-    0 to 65535.
+``K``
+  Integer that is valid as an immediate operand in an
+  instruction taking an unsigned 16-bit number. Range
+  0 to 65535.
 
-  ``M``
-    Signed 16-bit constant shifted left 16 bits. (Used with ``l.movhi``)
+``M``
+  Signed 16-bit constant shifted left 16 bits. (Used with ``l.movhi``)
 
-  ``O``
-    Zero
+``O``
+  Zero
 
-  .. only:: gccint
+.. only:: gccint
 
-    ``c``
-      Register usable for sibcalls.
+  ``c``
+    Register usable for sibcalls.
 
 PDP-11---:samp:`{config/pdp11/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``a``
-    Floating point registers AC0 through AC3.  These can be loaded from/to
-    memory with a single instruction.
+``a``
+  Floating point registers AC0 through AC3.  These can be loaded from/to
+  memory with a single instruction.
 
-  ``d``
-    Odd numbered general registers (R1, R3, R5).  These are used for
-    16-bit multiply operations.
+``d``
+  Odd numbered general registers (R1, R3, R5).  These are used for
+  16-bit multiply operations.
 
-  ``D``
-    A memory reference that is encoded within the opcode, but not
-    auto-increment or auto-decrement.
+``D``
+  A memory reference that is encoded within the opcode, but not
+  auto-increment or auto-decrement.
 
-  ``f``
-    Any of the floating point registers (AC0 through AC5).
+``f``
+  Any of the floating point registers (AC0 through AC5).
 
-  ``G``
-    Floating point constant 0.
+``G``
+  Floating point constant 0.
 
-  ``h``
-    Floating point registers AC4 and AC5.  These cannot be loaded from/to
-    memory with a single instruction.
+``h``
+  Floating point registers AC4 and AC5.  These cannot be loaded from/to
+  memory with a single instruction.
 
-  ``I``
-    An integer constant that fits in 16 bits.
+``I``
+  An integer constant that fits in 16 bits.
 
-  ``J``
-    An integer constant whose low order 16 bits are zero.
+``J``
+  An integer constant whose low order 16 bits are zero.
 
-  ``K``
-    An integer constant that does not meet the constraints for codes
-    :samp:`I` or :samp:`J`.
+``K``
+  An integer constant that does not meet the constraints for codes
+  :samp:`I` or :samp:`J`.
 
-  ``L``
-    The integer constant 1.
+``L``
+  The integer constant 1.
 
-  ``M``
-    The integer constant -1.
+``M``
+  The integer constant -1.
 
-  ``N``
-    The integer constant 0.
+``N``
+  The integer constant 0.
 
-  ``O``
-    Integer constants 0 through 3; shifts by these
-    amounts are handled as multiple single-bit shifts rather than a single
-    variable-length shift.
+``O``
+  Integer constants 0 through 3; shifts by these
+  amounts are handled as multiple single-bit shifts rather than a single
+  variable-length shift.
 
-  ``Q``
-    A memory reference which requires an additional word (address or
-    offset) after the opcode.
+``Q``
+  A memory reference which requires an additional word (address or
+  offset) after the opcode.
 
-  ``R``
-    A memory reference that is encoded within the opcode.
+``R``
+  A memory reference that is encoded within the opcode.
 
 PowerPC and IBM RS6000---:samp:`{config/rs6000/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``r``
-    A general purpose register (GPR), ``r0``... ``r31``.
+``r``
+  A general purpose register (GPR), ``r0``... ``r31``.
 
-  ``b``
-    A base register.  Like ``r``, but ``r0`` is not allowed, so
-    ``r1``... ``r31``.
+``b``
+  A base register.  Like ``r``, but ``r0`` is not allowed, so
+  ``r1``... ``r31``.
 
-  ``f``
-    A floating point register (FPR), ``f0``... ``f31``.
+``f``
+  A floating point register (FPR), ``f0``... ``f31``.
 
-  ``d``
-    A floating point register.  This is the same as ``f`` nowadays;
-    historically ``f`` was for single-precision and ``d`` was for
-    double-precision floating point.
+``d``
+  A floating point register.  This is the same as ``f`` nowadays;
+  historically ``f`` was for single-precision and ``d`` was for
+  double-precision floating point.
 
-  ``v``
-    An Altivec vector register (VR), ``v0``... ``v31``.
+``v``
+  An Altivec vector register (VR), ``v0``... ``v31``.
 
-  ``wa``
-    A VSX register (VSR), ``vs0``... ``vs63``.  This is either an
-    FPR (``vs0``... ``vs31`` are ``f0``... ``f31``) or a VR
-    (``vs32``... ``vs63`` are ``v0``... ``v31``).
+``wa``
+  A VSX register (VSR), ``vs0``... ``vs63``.  This is either an
+  FPR (``vs0``... ``vs31`` are ``f0``... ``f31``) or a VR
+  (``vs32``... ``vs63`` are ``v0``... ``v31``).
 
-    When using ``wa``, you should use the ``%x`` output modifier, so that
-    the correct register number is printed.  For example:
+  When using ``wa``, you should use the ``%x`` output modifier, so that
+  the correct register number is printed.  For example:
 
-    .. code-block:: c++
+  .. code-block:: c++
 
-      asm ("xvadddp %x0,%x1,%x2"
-           : "=wa" (v1)
-           : "wa" (v2), "wa" (v3));
+    asm ("xvadddp %x0,%x1,%x2"
+         : "=wa" (v1)
+         : "wa" (v2), "wa" (v3));
 
-    You should not use ``%x`` for ``v`` operands:
+  You should not use ``%x`` for ``v`` operands:
 
-    .. code-block:: c++
+  .. code-block:: c++
 
-      asm ("xsaddqp %0,%1,%2"
-           : "=v" (v1)
-           : "v" (v2), "v" (v3));
+    asm ("xsaddqp %0,%1,%2"
+         : "=v" (v1)
+         : "v" (v2), "v" (v3));
 
-  .. only:: gccint
-
-    ``h``
-      A special register (``vrsave``, ``ctr``, or ``lr``).
-
-  ``c``
-    The count register, ``ctr``.
-
-  ``l``
-    The link register, ``lr``.
-
-  ``x``
-    Condition register field 0, ``cr0``.
-
-  ``y``
-    Any condition register field, ``cr0``... ``cr7``.
-
-  .. only:: gccint
-
-    ``z``
-      The carry bit, ``XER[CA]``.
-
-    ``we``
-      Like ``wa``, if :option:`-mpower9-vector` and :option:`-m64` are used;
-      otherwise, ``NO_REGS``.
-
-    ``wn``
-      No register (``NO_REGS``).
-
-    ``wr``
-      Like ``r``, if :option:`-mpowerpc64` is used; otherwise, ``NO_REGS``.
-
-    ``wx``
-      Like ``d``, if :option:`-mpowerpc-gfxopt` is used; otherwise, ``NO_REGS``.
-
-    ``wA``
-      Like ``b``, if :option:`-mpowerpc64` is used; otherwise, ``NO_REGS``.
-
-    ``wB``
-      Signed 5-bit constant integer that can be loaded into an Altivec register.
-
-    ``wD``
-      Int constant that is the element number of the 64-bit scalar in a vector.
-
-    ``wE``
-      Vector constant that can be loaded with the XXSPLTIB instruction.
-
-    ``wF``
-      Memory operand suitable for power8 GPR load fusion.
-
-    ``wL``
-      Int constant that is the element number mfvsrld accesses in a vector.
-
-    ``wM``
-      Match vector constant with all 1's if the XXLORC instruction is available.
-
-    ``wO``
-      Memory operand suitable for the ISA 3.0 vector d-form instructions.
-
-    ``wQ``
-      Memory operand suitable for the load/store quad instructions.
-
-    ``wS``
-      Vector constant that can be loaded with XXSPLTIB & sign extension.
-
-    ``wY``
-      A memory operand for a DS-form instruction.
-
-    ``wZ``
-      An indexed or indirect memory operand, ignoring the bottom 4 bits.
-
-  ``I``
-    A signed 16-bit constant.
-
-  ``J``
-    An unsigned 16-bit constant shifted left 16 bits (use ``L`` instead
-    for ``SImode`` constants).
-
-  ``K``
-    An unsigned 16-bit constant.
-
-  ``L``
-    A signed 16-bit constant shifted left 16 bits.
-
-  .. only:: gccint
-
-    ``M``
-      An integer constant greater than 31.
-
-    ``N``
-      An exact power of 2.
-
-    ``O``
-      The integer constant zero.
-
-    ``P``
-      A constant whose negation is a signed 16-bit constant.
-
-  ``eI``
-    A signed 34-bit integer constant if prefixed instructions are supported.
-
-  ``eQ``
-    An IEEE 128-bit constant that can be loaded into a VSX register with
-    the ``lxvkq`` instruction.
-
-  .. only:: gccint
-
-    ``G``
-      A floating point constant that can be loaded into a register with one
-      instruction per word.
-
-    ``H``
-      A floating point constant that can be loaded into a register using
-      three instructions.
-
-  ``m``
-    A memory operand.
-    Normally, ``m`` does not allow addresses that update the base register.
-    If the ``<`` or ``>`` constraint is also used, they are allowed and
-    therefore on PowerPC targets in that case it is only safe
-    to use ``m<>`` in an ``asm`` statement if that ``asm`` statement
-    accesses the operand exactly once.  The ``asm`` statement must also
-    use ``%U<opno>`` as a placeholder for the 'update' flag in the
-    corresponding load or store instruction.  For example:
-
-    .. code-block:: c++
-
-      asm ("st%U0 %1,%0" : "=m<>" (mem) : "r" (val));
-
-    is correct but:
-
-    .. code-block:: c++
-
-      asm ("st %1,%0" : "=m<>" (mem) : "r" (val));
-
-    is not.
-
-  .. only:: gccint
-
-    ``es``
-      A 'stable' memory operand; that is, one which does not include any
-      automodification of the base register.  This used to be useful when
-      ``m`` allowed automodification of the base register, but as those
-      are now only allowed when ``<`` or ``>`` is used, ``es`` is
-      basically the same as ``m`` without ``<`` and ``>``.
-
-  ``Q``
-    A memory operand addressed by just a base register.
-
-  .. only:: gccint
-
-    ``Y``
-      A memory operand for a DQ-form instruction.
-
-  ``Z``
-    A memory operand accessed with indexed or indirect addressing.
-
-  .. only:: gccint
-
-    ``R``
-      An AIX TOC entry.
-
-  ``a``
-    An indexed or indirect address.
-
-  .. only:: gccint
-
-    ``U``
-      A V.4 small data reference.
-
-    ``W``
-      A vector constant that does not require memory.
-
-    ``j``
-      The zero vector constant.
-
-PRU---:samp:`{config/pru/constraints.md}`
-
-  ``I``
-    An unsigned 8-bit integer constant.
-
-  ``J``
-    An unsigned 16-bit integer constant.
-
-  ``L``
-    An unsigned 5-bit integer constant (for shift counts).
-
-  ``T``
-    A text segment (program memory) constant label.
-
-  ``Z``
-    Integer constant zero.
-
-RL78---:samp:`{config/rl78/constraints.md}`
-
-  ``Int3``
-    An integer constant in the range 1 ... 7.
-
-  ``Int8``
-    An integer constant in the range 0 ... 255.
-
-  ``J``
-    An integer constant in the range -255 ... 0
-
-  ``K``
-    The integer constant 1.
-
-  ``L``
-    The integer constant -1.
-
-  ``M``
-    The integer constant 0.
-
-  ``N``
-    The integer constant 2.
-
-  ``O``
-    The integer constant -2.
-
-  ``P``
-    An integer constant in the range 1 ... 15.
-
-  ``Qbi``
-    The built-in compare types--eq, ne, gtu, ltu, geu, and leu.
-
-  ``Qsc``
-    The synthetic compare types--gt, lt, ge, and le.
-
-  ``Wab``
-    A memory reference with an absolute address.
-
-  ``Wbc``
-    A memory reference using ``BC`` as a base register, with an optional offset.
-
-  ``Wca``
-    A memory reference using ``AX``, ``BC``, ``DE``, or ``HL`` for the address, for calls.
-
-  ``Wcv``
-    A memory reference using any 16-bit register pair for the address, for calls.
-
-  ``Wd2``
-    A memory reference using ``DE`` as a base register, with an optional offset.
-
-  ``Wde``
-    A memory reference using ``DE`` as a base register, without any offset.
-
-  ``Wfr``
-    Any memory reference to an address in the far address space.
-
-  ``Wh1``
-    A memory reference using ``HL`` as a base register, with an optional one-byte offset.
-
-  ``Whb``
-    A memory reference using ``HL`` as a base register, with ``B`` or ``C`` as the index register.
-
-  ``Whl``
-    A memory reference using ``HL`` as a base register, without any offset.
-
-  ``Ws1``
-    A memory reference using ``SP`` as a base register, with an optional one-byte offset.
-
-  ``Y``
-    Any memory reference to an address in the near address space.
-
-  ``A``
-    The ``AX`` register.
-
-  ``B``
-    The ``BC`` register.
-
-  ``D``
-    The ``DE`` register.
-
-  ``R``
-    ``A`` through ``L`` registers.
-
-  ``S``
-    The ``SP`` register.
-
-  ``T``
-    The ``HL`` register.
-
-  ``Z08W``
-    The 16-bit ``R8`` register.
-
-  ``Z10W``
-    The 16-bit ``R10`` register.
-
-  ``Zint``
-    The registers reserved for interrupts (``R24`` to ``R31``).
-
-  ``a``
-    The ``A`` register.
-
-  ``b``
-    The ``B`` register.
-
-  ``c``
-    The ``C`` register.
-
-  ``d``
-    The ``D`` register.
-
-  ``e``
-    The ``E`` register.
+.. only:: gccint
 
   ``h``
-    The ``H`` register.
+    A special register (``vrsave``, ``ctr``, or ``lr``).
 
-  ``l``
-    The ``L`` register.
+``c``
+  The count register, ``ctr``.
 
-  ``v``
-    The virtual registers.
+``l``
+  The link register, ``lr``.
 
-  ``w``
-    The ``PSW`` register.
+``x``
+  Condition register field 0, ``cr0``.
 
-  ``x``
-    The ``X`` register.
+``y``
+  Any condition register field, ``cr0``... ``cr7``.
 
-RISC-V---:samp:`{config/riscv/constraints.md}`
-
-  ``f``
-    A floating-point register (if available).
-
-  ``I``
-    An I-type 12-bit signed immediate.
-
-  ``J``
-    Integer zero.
-
-  ``K``
-    A 5-bit unsigned immediate for CSR access instructions.
-
-  ``A``
-    An address that is held in a general-purpose register.
-
-  ``S``
-    A constraint that matches an absolute symbolic address.
-
-RX---:samp:`{config/rx/constraints.md}`
-
-  ``Q``
-    An address which does not involve register indirect addressing or
-    pre/post increment/decrement addressing.
-
-  ``Symbol``
-    A symbol reference.
-
-  ``Int08``
-    A constant in the range -256 to 255, inclusive.
-
-  ``Sint08``
-    A constant in the range -128 to 127, inclusive.
-
-  ``Sint16``
-    A constant in the range -32768 to 32767, inclusive.
-
-  ``Sint24``
-    A constant in the range -8388608 to 8388607, inclusive.
-
-  ``Uint04``
-    A constant in the range 0 to 15, inclusive.
-
-S/390 and zSeries---:samp:`{config/s390/s390.h}`
-
-  ``a``
-    Address register (general purpose register except r0)
-
-  ``c``
-    Condition code register
-
-  ``d``
-    Data register (arbitrary general purpose register)
-
-  ``f``
-    Floating-point register
-
-  ``I``
-    Unsigned 8-bit constant (0--255)
-
-  ``J``
-    Unsigned 12-bit constant (0--4095)
-
-  ``K``
-    Signed 16-bit constant (-32768--32767)
-
-  ``L``
-    Value appropriate as displacement.
-
-    ``(0..4095)``
-      for short displacement
-
-    ``(-524288..524287)``
-      for long displacement
-
-  ``M``
-    Constant integer with a value of 0x7fffffff.
-
-  ``N``
-    Multiple letter constraint followed by 4 parameter letters.
-
-    ``0..9:``
-      number of the part counting from most to least significant
-
-    ``H,Q:``
-      mode of the part
-
-    ``D,S,H:``
-      mode of the containing operand
-
-    ``0,F:``
-      value of the other parts (F---all bits set)
-
-    The constraint matches if the specified part of a constant
-    has a value different from its other parts.
-
-  ``Q``
-    Memory reference without index register and with short displacement.
-
-  ``R``
-    Memory reference with index register and short displacement.
-
-  ``S``
-    Memory reference without index register but with long displacement.
-
-  ``T``
-    Memory reference with index register and long displacement.
-
-  ``U``
-    Pointer with short displacement.
-
-  ``W``
-    Pointer with long displacement.
-
-  ``Y``
-    Shift count operand.
-
-SPARC---:samp:`{config/sparc/sparc.h}`
-
-  ``f``
-    Floating-point register on the SPARC-V8 architecture and
-    lower floating-point register on the SPARC-V9 architecture.
-
-  ``e``
-    Floating-point register.  It is equivalent to :samp:`f` on the
-    SPARC-V8 architecture and contains both lower and upper
-    floating-point registers on the SPARC-V9 architecture.
-
-  ``c``
-    Floating-point condition code register.
-
-  ``d``
-    Lower floating-point register.  It is only valid on the SPARC-V9
-    architecture when the Visual Instruction Set is available.
-
-  ``b``
-    Floating-point register.  It is only valid on the SPARC-V9 architecture
-    when the Visual Instruction Set is available.
-
-  ``h``
-    64-bit global or out register for the SPARC-V8+ architecture.
-
-  ``C``
-    The constant all-ones, for floating-point.
-
-  ``A``
-    Signed 5-bit constant
-
-  ``D``
-    A vector constant
-
-  ``I``
-    Signed 13-bit constant
-
-  ``J``
-    Zero
-
-  ``K``
-    32-bit constant with the low 12 bits clear (a constant that can be
-    loaded with the ``sethi`` instruction)
-
-  ``L``
-    A constant in the range supported by ``movcc`` instructions (11-bit
-    signed immediate)
-
-  ``M``
-    A constant in the range supported by ``movrcc`` instructions (10-bit
-    signed immediate)
-
-  ``N``
-    Same as :samp:`K`, except that it verifies that bits that are not in the
-    lower 32-bit range are all zero.  Must be used instead of :samp:`K` for
-    modes wider than ``SImode``
-
-  ``O``
-    The constant 4096
-
-  ``G``
-    Floating-point zero
-
-  ``H``
-    Signed 13-bit constant, sign-extended to 32 or 64 bits
-
-  ``P``
-    The constant -1
-
-  ``Q``
-    Floating-point constant whose integral representation can
-    be moved into an integer register using a single sethi
-    instruction
-
-  ``R``
-    Floating-point constant whose integral representation can
-    be moved into an integer register using a single mov
-    instruction
-
-  ``S``
-    Floating-point constant whose integral representation can
-    be moved into an integer register using a high/lo_sum
-    instruction sequence
-
-  ``T``
-    Memory address aligned to an 8-byte boundary
-
-  ``U``
-    Even register
-
-  ``W``
-    Memory address for :samp:`e` constraint registers
-
-  ``w``
-    Memory address with only a base register
-
-  ``Y``
-    Vector zero
-
-TI C6X family---:samp:`{config/c6x/constraints.md}`
-
-  ``a``
-    Register file A (A0--A31).
-
-  ``b``
-    Register file B (B0--B31).
-
-  ``A``
-    Predicate registers in register file A (A0--A2 on C64X and
-    higher, A1 and A2 otherwise).
-
-  ``B``
-    Predicate registers in register file B (B0--B2).
-
-  ``C``
-    A call-used register in register file B (B0--B9, B16--B31).
-
-  ``Da``
-    Register file A, excluding predicate registers (A3--A31,
-    plus A0 if not C64X or higher).
-
-  ``Db``
-    Register file B, excluding predicate registers (B3--B31).
-
-  ``Iu4``
-    Integer constant in the range 0 ... 15.
-
-  ``Iu5``
-    Integer constant in the range 0 ... 31.
-
-  ``In5``
-    Integer constant in the range -31 ... 0.
-
-  ``Is5``
-    Integer constant in the range -16 ... 15.
-
-  ``I5x``
-    Integer constant that can be the operand of an ADDA or a SUBA insn.
-
-  ``IuB``
-    Integer constant in the range 0 ... 65535.
-
-  ``IsB``
-    Integer constant in the range -32768 ... 32767.
-
-  ``IsC``
-    Integer constant in the range -2^{20} ... 2^{20} - 1.
-
-  ``Jc``
-    Integer constant that is a valid mask for the clr instruction.
-
-  ``Js``
-    Integer constant that is a valid mask for the set instruction.
-
-  ``Q``
-    Memory location with A base register.
-
-  ``R``
-    Memory location with B base register.
-
-  .. only:: gccint
-
-    ``S0``
-      On C64x+ targets, a GP-relative small data reference.
-
-    ``S1``
-      Any kind of ``SYMBOL_REF``, for use in a call address.
-
-    ``Si``
-      Any kind of immediate operand, unless it matches the S0 constraint.
-
-    ``T``
-      Memory location with B base register, but not using a long offset.
-
-    ``W``
-      A memory operand with an address that cannot be used in an unaligned access.
-
-  ``Z``
-    Register B14 (aka DP).
-
-Visium---:samp:`{config/visium/constraints.md}`
-
-  ``b``
-    EAM register ``mdb``
-
-  ``c``
-    EAM register ``mdc``
-
-  ``f``
-    Floating point register
-
-  .. only:: gccint
-
-    ``k``
-      Register for sibcall optimization
-
-  ``l``
-    General register, but not ``r29``, ``r30`` and ``r31``
-
-  ``t``
-    Register ``r1``
-
-  ``u``
-    Register ``r2``
-
-  ``v``
-    Register ``r3``
-
-  ``G``
-    Floating-point constant 0.0
-
-  ``J``
-    Integer constant in the range 0 .. 65535 (16-bit immediate)
-
-  ``K``
-    Integer constant in the range 1 .. 31 (5-bit immediate)
-
-  ``L``
-    Integer constant in the range -65535 .. -1 (16-bit negative immediate)
-
-  ``M``
-    Integer constant -1
-
-  ``O``
-    Integer constant 0
-
-  ``P``
-    Integer constant 32
-
-x86 family---:samp:`{config/i386/constraints.md}`
-
-  ``R``
-    Legacy register---the eight integer registers available on all
-    i386 processors (``a``, ``b``, ``c``, ``d``,
-    ``si``, ``di``, ``bp``, ``sp``).
-
-  ``q``
-    Any register accessible as ``rl``.  In 32-bit mode, ``a``,
-    ``b``, ``c``, and ``d`` ; in 64-bit mode, any integer register.
-
-  ``Q``
-    Any register accessible as ``rh`` : ``a``, ``b``,
-    ``c``, and ``d``.
-
-  .. only:: gccint
-
-    ``l``
-      Any register that can be used as the index in a base+index memory
-      access: that is, any general register except the stack pointer.
-
-  ``a``
-    The ``a`` register.
-
-  ``b``
-    The ``b`` register.
-
-  ``c``
-    The ``c`` register.
-
-  ``d``
-    The ``d`` register.
-
-  ``S``
-    The ``si`` register.
-
-  ``D``
-    The ``di`` register.
-
-  ``A``
-    The ``a`` and ``d`` registers.  This class is used for instructions
-    that return double word results in the ``ax:dx`` register pair.  Single
-    word values will be allocated either in ``ax`` or ``dx``.
-    For example on i386 the following implements ``rdtsc`` :
-
-    .. code-block:: c++
-
-      unsigned long long rdtsc (void)
-      {
-        unsigned long long tick;
-        __asm__ __volatile__("rdtsc":"=A"(tick));
-        return tick;
-      }
-
-    This is not correct on x86-64 as it would allocate tick in either ``ax``
-    or ``dx``.  You have to use the following variant instead:
-
-    .. code-block:: c++
-
-      unsigned long long rdtsc (void)
-      {
-        unsigned int tickl, tickh;
-        __asm__ __volatile__("rdtsc":"=a"(tickl),"=d"(tickh));
-        return ((unsigned long long)tickh << 32)|tickl;
-      }
-
-  ``U``
-    The call-clobbered integer registers.
-
-  ``f``
-    Any 80387 floating-point (stack) register.
-
-  ``t``
-    Top of 80387 floating-point stack (``%st(0)``).
-
-  ``u``
-    Second from top of 80387 floating-point stack (``%st(1)``).
-
-  .. only:: gccint
-
-    ``Yk``
-      Any mask register that can be used as a predicate, i.e. ``k1-k7``.
-
-    ``k``
-      Any mask register.
-
-  ``y``
-    Any MMX register.
-
-  ``x``
-    Any SSE register.
-
-  ``v``
-    Any EVEX encodable SSE register (``%xmm0-%xmm31``).
-
-  .. only:: gccint
-
-    ``w``
-      Any bound register.
-
-  ``Yz``
-    First SSE register (``%xmm0``).
-
-  .. only:: gccint
-
-    ``Yi``
-      Any SSE register, when SSE2 and inter-unit moves are enabled.
-
-    ``Yj``
-      Any SSE register, when SSE2 and inter-unit moves from vector registers are enabled.
-
-    ``Ym``
-      Any MMX register, when inter-unit moves are enabled.
-
-    ``Yn``
-      Any MMX register, when inter-unit moves from vector registers are enabled.
-
-    ``Yp``
-      Any integer register when ``TARGET_PARTIAL_REG_STALL`` is disabled.
-
-    ``Ya``
-      Any integer register when zero extensions with ``AND`` are disabled.
-
-    ``Yb``
-      Any register that can be used as the GOT base when calling
-
-      ``___tls_get_addr`` : that is, any general register except ``a``
-      and ``sp`` registers, for :option:`-fno-plt` if linker supports it.
-      Otherwise, ``b`` register.
-
-    ``Yf``
-      Any x87 register when 80387 floating-point arithmetic is enabled.
-
-    ``Yr``
-      Lower SSE register when avoiding REX prefix and all SSE registers otherwise.
-
-    ``Yv``
-      For AVX512VL, any EVEX-encodable SSE register (``%xmm0-%xmm31``),
-      otherwise any SSE register.
-
-    ``Yh``
-      Any EVEX-encodable SSE register, that has number factor of four.
-
-    ``Bf``
-      Flags register operand.
-
-    ``Bg``
-      GOT memory operand.
-
-    ``Bm``
-      Vector memory operand.
-
-    ``Bc``
-      Constant memory operand.
-
-  ``Bn``
-    Memory operand without REX prefix.
-
-  ``Bs``
-    Sibcall memory operand.
-
-  ``Bw``
-    Call memory operand.
-
-  ``Bz``
-    Constant call address operand.
-
-  ``BC``
-    SSE constant -1 operand.
-
-  ``I``
-    Integer constant in the range 0 ... 31, for 32-bit shifts.
-
-  ``J``
-    Integer constant in the range 0 ... 63, for 64-bit shifts.
-
-  ``K``
-    Signed 8-bit integer constant.
-
-  ``L``
-    ``0xFF`` or ``0xFFFF``, for andsi as a zero-extending move.
-
-  ``M``
-    0, 1, 2, or 3 (shifts for the ``lea`` instruction).
-
-  ``N``
-    Unsigned 8-bit integer constant (for ``in`` and ``out``
-    instructions).
-
-  .. only:: gccint
-
-    ``O``
-      Integer constant in the range 0 ... 127, for 128-bit shifts.
-
-  ``G``
-    Standard 80387 floating point constant.
-
-  ``C``
-    SSE constant zero operand.
-
-  ``e``
-    32-bit signed integer constant, or a symbolic reference known
-    to fit that range (for immediate operands in sign-extending x86-64
-    instructions).
-
-  ``We``
-    32-bit signed integer constant, or a symbolic reference known
-    to fit that range (for sign-extending conversion operations that
-    require non- ``VOIDmode`` immediate operands).
-
-  ``Wz``
-    32-bit unsigned integer constant, or a symbolic reference known
-    to fit that range (for zero-extending conversion operations that
-    require non- ``VOIDmode`` immediate operands).
-
-  ``Wd``
-    128-bit integer constant where both the high and low 64-bit word
-    satisfy the ``e`` constraint.
-
-  ``Z``
-    32-bit unsigned integer constant, or a symbolic reference known
-    to fit that range (for immediate operands in zero-extending x86-64
-    instructions).
-
-  ``Tv``
-    VSIB address operand.
-
-  ``Ts``
-    Address operand without segment register.
-
-Xstormy16---:samp:`{config/stormy16/stormy16.h}`
-
-  ``a``
-    Register r0.
-
-  ``b``
-    Register r1.
-
-  ``c``
-    Register r2.
-
-  ``d``
-    Register r8.
-
-  ``e``
-    Registers r0 through r7.
-
-  ``t``
-    Registers r0 and r1.
-
-  ``y``
-    The carry register.
+.. only:: gccint
 
   ``z``
-    Registers r8 and r9.
+    The carry bit, ``XER[CA]``.
 
-  ``I``
-    A constant between 0 and 3 inclusive.
+  ``we``
+    Like ``wa``, if :option:`-mpower9-vector` and :option:`-m64` are used;
+    otherwise, ``NO_REGS``.
 
-  ``J``
-    A constant that has exactly one bit set.
+  ``wn``
+    No register (``NO_REGS``).
 
-  ``K``
-    A constant that has exactly one bit clear.
+  ``wr``
+    Like ``r``, if :option:`-mpowerpc64` is used; otherwise, ``NO_REGS``.
 
-  ``L``
-    A constant between 0 and 255 inclusive.
+  ``wx``
+    Like ``d``, if :option:`-mpowerpc-gfxopt` is used; otherwise, ``NO_REGS``.
+
+  ``wA``
+    Like ``b``, if :option:`-mpowerpc64` is used; otherwise, ``NO_REGS``.
+
+  ``wB``
+    Signed 5-bit constant integer that can be loaded into an Altivec register.
+
+  ``wD``
+    Int constant that is the element number of the 64-bit scalar in a vector.
+
+  ``wE``
+    Vector constant that can be loaded with the XXSPLTIB instruction.
+
+  ``wF``
+    Memory operand suitable for power8 GPR load fusion.
+
+  ``wL``
+    Int constant that is the element number mfvsrld accesses in a vector.
+
+  ``wM``
+    Match vector constant with all 1's if the XXLORC instruction is available.
+
+  ``wO``
+    Memory operand suitable for the ISA 3.0 vector d-form instructions.
+
+  ``wQ``
+    Memory operand suitable for the load/store quad instructions.
+
+  ``wS``
+    Vector constant that can be loaded with XXSPLTIB & sign extension.
+
+  ``wY``
+    A memory operand for a DS-form instruction.
+
+  ``wZ``
+    An indexed or indirect memory operand, ignoring the bottom 4 bits.
+
+``I``
+  A signed 16-bit constant.
+
+``J``
+  An unsigned 16-bit constant shifted left 16 bits (use ``L`` instead
+  for ``SImode`` constants).
+
+``K``
+  An unsigned 16-bit constant.
+
+``L``
+  A signed 16-bit constant shifted left 16 bits.
+
+.. only:: gccint
 
   ``M``
-    A constant between -255 and 0 inclusive.
+    An integer constant greater than 31.
 
   ``N``
-    A constant between -3 and 0 inclusive.
+    An exact power of 2.
 
   ``O``
-    A constant between 1 and 4 inclusive.
+    The integer constant zero.
 
   ``P``
-    A constant between -4 and -1 inclusive.
+    A constant whose negation is a signed 16-bit constant.
 
-  ``Q``
-    A memory reference that is a stack push.
+``eI``
+  A signed 34-bit integer constant if prefixed instructions are supported.
+
+``eQ``
+  An IEEE 128-bit constant that can be loaded into a VSX register with
+  the ``lxvkq`` instruction.
+
+.. only:: gccint
+
+  ``G``
+    A floating point constant that can be loaded into a register with one
+    instruction per word.
+
+  ``H``
+    A floating point constant that can be loaded into a register using
+    three instructions.
+
+``m``
+  A memory operand.
+  Normally, ``m`` does not allow addresses that update the base register.
+  If the ``<`` or ``>`` constraint is also used, they are allowed and
+  therefore on PowerPC targets in that case it is only safe
+  to use ``m<>`` in an ``asm`` statement if that ``asm`` statement
+  accesses the operand exactly once.  The ``asm`` statement must also
+  use ``%U<opno>`` as a placeholder for the 'update' flag in the
+  corresponding load or store instruction.  For example:
+
+  .. code-block:: c++
+
+    asm ("st%U0 %1,%0" : "=m<>" (mem) : "r" (val));
+
+  is correct but:
+
+  .. code-block:: c++
+
+    asm ("st %1,%0" : "=m<>" (mem) : "r" (val));
+
+  is not.
+
+.. only:: gccint
+
+  ``es``
+    A 'stable' memory operand; that is, one which does not include any
+    automodification of the base register.  This used to be useful when
+    ``m`` allowed automodification of the base register, but as those
+    are now only allowed when ``<`` or ``>`` is used, ``es`` is
+    basically the same as ``m`` without ``<`` and ``>``.
+
+``Q``
+  A memory operand addressed by just a base register.
+
+.. only:: gccint
+
+  ``Y``
+    A memory operand for a DQ-form instruction.
+
+``Z``
+  A memory operand accessed with indexed or indirect addressing.
+
+.. only:: gccint
 
   ``R``
-    A memory reference that is a stack pop.
+    An AIX TOC entry.
 
-  ``S``
-    A memory reference that refers to a constant address of known value.
+``a``
+  An indexed or indirect address.
 
-  ``T``
-    The register indicated by Rx (not implemented yet).
+.. only:: gccint
 
   ``U``
-    A constant that is not between 2 and 15 inclusive.
+    A V.4 small data reference.
 
-  ``Z``
-    The constant 0.
+  ``W``
+    A vector constant that does not require memory.
+
+  ``j``
+    The zero vector constant.
+
+PRU---:samp:`{config/pru/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``I``
+  An unsigned 8-bit integer constant.
+
+``J``
+  An unsigned 16-bit integer constant.
+
+``L``
+  An unsigned 5-bit integer constant (for shift counts).
+
+``T``
+  A text segment (program memory) constant label.
+
+``Z``
+  Integer constant zero.
+
+RL78---:samp:`{config/rl78/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``Int3``
+  An integer constant in the range 1 ... 7.
+
+``Int8``
+  An integer constant in the range 0 ... 255.
+
+``J``
+  An integer constant in the range -255 ... 0
+
+``K``
+  The integer constant 1.
+
+``L``
+  The integer constant -1.
+
+``M``
+  The integer constant 0.
+
+``N``
+  The integer constant 2.
+
+``O``
+  The integer constant -2.
+
+``P``
+  An integer constant in the range 1 ... 15.
+
+``Qbi``
+  The built-in compare types--eq, ne, gtu, ltu, geu, and leu.
+
+``Qsc``
+  The synthetic compare types--gt, lt, ge, and le.
+
+``Wab``
+  A memory reference with an absolute address.
+
+``Wbc``
+  A memory reference using ``BC`` as a base register, with an optional offset.
+
+``Wca``
+  A memory reference using ``AX``, ``BC``, ``DE``, or ``HL`` for the address, for calls.
+
+``Wcv``
+  A memory reference using any 16-bit register pair for the address, for calls.
+
+``Wd2``
+  A memory reference using ``DE`` as a base register, with an optional offset.
+
+``Wde``
+  A memory reference using ``DE`` as a base register, without any offset.
+
+``Wfr``
+  Any memory reference to an address in the far address space.
+
+``Wh1``
+  A memory reference using ``HL`` as a base register, with an optional one-byte offset.
+
+``Whb``
+  A memory reference using ``HL`` as a base register, with ``B`` or ``C`` as the index register.
+
+``Whl``
+  A memory reference using ``HL`` as a base register, without any offset.
+
+``Ws1``
+  A memory reference using ``SP`` as a base register, with an optional one-byte offset.
+
+``Y``
+  Any memory reference to an address in the near address space.
+
+``A``
+  The ``AX`` register.
+
+``B``
+  The ``BC`` register.
+
+``D``
+  The ``DE`` register.
+
+``R``
+  ``A`` through ``L`` registers.
+
+``S``
+  The ``SP`` register.
+
+``T``
+  The ``HL`` register.
+
+``Z08W``
+  The 16-bit ``R8`` register.
+
+``Z10W``
+  The 16-bit ``R10`` register.
+
+``Zint``
+  The registers reserved for interrupts (``R24`` to ``R31``).
+
+``a``
+  The ``A`` register.
+
+``b``
+  The ``B`` register.
+
+``c``
+  The ``C`` register.
+
+``d``
+  The ``D`` register.
+
+``e``
+  The ``E`` register.
+
+``h``
+  The ``H`` register.
+
+``l``
+  The ``L`` register.
+
+``v``
+  The virtual registers.
+
+``w``
+  The ``PSW`` register.
+
+``x``
+  The ``X`` register.
+
+RISC-V---:samp:`{config/riscv/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``f``
+  A floating-point register (if available).
+
+``I``
+  An I-type 12-bit signed immediate.
+
+``J``
+  Integer zero.
+
+``K``
+  A 5-bit unsigned immediate for CSR access instructions.
+
+``A``
+  An address that is held in a general-purpose register.
+
+``S``
+  A constraint that matches an absolute symbolic address.
+
+RX---:samp:`{config/rx/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``Q``
+  An address which does not involve register indirect addressing or
+  pre/post increment/decrement addressing.
+
+``Symbol``
+  A symbol reference.
+
+``Int08``
+  A constant in the range -256 to 255, inclusive.
+
+``Sint08``
+  A constant in the range -128 to 127, inclusive.
+
+``Sint16``
+  A constant in the range -32768 to 32767, inclusive.
+
+``Sint24``
+  A constant in the range -8388608 to 8388607, inclusive.
+
+``Uint04``
+  A constant in the range 0 to 15, inclusive.
+
+S/390 and zSeries---:samp:`{config/s390/s390.h}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``a``
+  Address register (general purpose register except r0)
+
+``c``
+  Condition code register
+
+``d``
+  Data register (arbitrary general purpose register)
+
+``f``
+  Floating-point register
+
+``I``
+  Unsigned 8-bit constant (0--255)
+
+``J``
+  Unsigned 12-bit constant (0--4095)
+
+``K``
+  Signed 16-bit constant (-32768--32767)
+
+``L``
+  Value appropriate as displacement.
+
+  ``(0..4095)``
+    for short displacement
+
+  ``(-524288..524287)``
+    for long displacement
+
+``M``
+  Constant integer with a value of 0x7fffffff.
+
+``N``
+  Multiple letter constraint followed by 4 parameter letters.
+
+  ``0..9:``
+    number of the part counting from most to least significant
+
+  ``H,Q:``
+    mode of the part
+
+  ``D,S,H:``
+    mode of the containing operand
+
+  ``0,F:``
+    value of the other parts (F---all bits set)
+
+  The constraint matches if the specified part of a constant
+  has a value different from its other parts.
+
+``Q``
+  Memory reference without index register and with short displacement.
+
+``R``
+  Memory reference with index register and short displacement.
+
+``S``
+  Memory reference without index register but with long displacement.
+
+``T``
+  Memory reference with index register and long displacement.
+
+``U``
+  Pointer with short displacement.
+
+``W``
+  Pointer with long displacement.
+
+``Y``
+  Shift count operand.
+
+SPARC---:samp:`{config/sparc/sparc.h}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``f``
+  Floating-point register on the SPARC-V8 architecture and
+  lower floating-point register on the SPARC-V9 architecture.
+
+``e``
+  Floating-point register.  It is equivalent to :samp:`f` on the
+  SPARC-V8 architecture and contains both lower and upper
+  floating-point registers on the SPARC-V9 architecture.
+
+``c``
+  Floating-point condition code register.
+
+``d``
+  Lower floating-point register.  It is only valid on the SPARC-V9
+  architecture when the Visual Instruction Set is available.
+
+``b``
+  Floating-point register.  It is only valid on the SPARC-V9 architecture
+  when the Visual Instruction Set is available.
+
+``h``
+  64-bit global or out register for the SPARC-V8+ architecture.
+
+``C``
+  The constant all-ones, for floating-point.
+
+``A``
+  Signed 5-bit constant
+
+``D``
+  A vector constant
+
+``I``
+  Signed 13-bit constant
+
+``J``
+  Zero
+
+``K``
+  32-bit constant with the low 12 bits clear (a constant that can be
+  loaded with the ``sethi`` instruction)
+
+``L``
+  A constant in the range supported by ``movcc`` instructions (11-bit
+  signed immediate)
+
+``M``
+  A constant in the range supported by ``movrcc`` instructions (10-bit
+  signed immediate)
+
+``N``
+  Same as :samp:`K`, except that it verifies that bits that are not in the
+  lower 32-bit range are all zero.  Must be used instead of :samp:`K` for
+  modes wider than ``SImode``
+
+``O``
+  The constant 4096
+
+``G``
+  Floating-point zero
+
+``H``
+  Signed 13-bit constant, sign-extended to 32 or 64 bits
+
+``P``
+  The constant -1
+
+``Q``
+  Floating-point constant whose integral representation can
+  be moved into an integer register using a single sethi
+  instruction
+
+``R``
+  Floating-point constant whose integral representation can
+  be moved into an integer register using a single mov
+  instruction
+
+``S``
+  Floating-point constant whose integral representation can
+  be moved into an integer register using a high/lo_sum
+  instruction sequence
+
+``T``
+  Memory address aligned to an 8-byte boundary
+
+``U``
+  Even register
+
+``W``
+  Memory address for :samp:`e` constraint registers
+
+``w``
+  Memory address with only a base register
+
+``Y``
+  Vector zero
+
+TI C6X family---:samp:`{config/c6x/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``a``
+  Register file A (A0--A31).
+
+``b``
+  Register file B (B0--B31).
+
+``A``
+  Predicate registers in register file A (A0--A2 on C64X and
+  higher, A1 and A2 otherwise).
+
+``B``
+  Predicate registers in register file B (B0--B2).
+
+``C``
+  A call-used register in register file B (B0--B9, B16--B31).
+
+``Da``
+  Register file A, excluding predicate registers (A3--A31,
+  plus A0 if not C64X or higher).
+
+``Db``
+  Register file B, excluding predicate registers (B3--B31).
+
+``Iu4``
+  Integer constant in the range 0 ... 15.
+
+``Iu5``
+  Integer constant in the range 0 ... 31.
+
+``In5``
+  Integer constant in the range -31 ... 0.
+
+``Is5``
+  Integer constant in the range -16 ... 15.
+
+``I5x``
+  Integer constant that can be the operand of an ADDA or a SUBA insn.
+
+``IuB``
+  Integer constant in the range 0 ... 65535.
+
+``IsB``
+  Integer constant in the range -32768 ... 32767.
+
+``IsC``
+  Integer constant in the range -2^{20} ... 2^{20} - 1.
+
+``Jc``
+  Integer constant that is a valid mask for the clr instruction.
+
+``Js``
+  Integer constant that is a valid mask for the set instruction.
+
+``Q``
+  Memory location with A base register.
+
+``R``
+  Memory location with B base register.
+
+.. only:: gccint
+
+  ``S0``
+    On C64x+ targets, a GP-relative small data reference.
+
+  ``S1``
+    Any kind of ``SYMBOL_REF``, for use in a call address.
+
+  ``Si``
+    Any kind of immediate operand, unless it matches the S0 constraint.
+
+  ``T``
+    Memory location with B base register, but not using a long offset.
+
+  ``W``
+    A memory operand with an address that cannot be used in an unaligned access.
+
+``Z``
+  Register B14 (aka DP).
+
+Visium---:samp:`{config/visium/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``b``
+  EAM register ``mdb``
+
+``c``
+  EAM register ``mdc``
+
+``f``
+  Floating point register
+
+.. only:: gccint
+
+  ``k``
+    Register for sibcall optimization
+
+``l``
+  General register, but not ``r29``, ``r30`` and ``r31``
+
+``t``
+  Register ``r1``
+
+``u``
+  Register ``r2``
+
+``v``
+  Register ``r3``
+
+``G``
+  Floating-point constant 0.0
+
+``J``
+  Integer constant in the range 0 .. 65535 (16-bit immediate)
+
+``K``
+  Integer constant in the range 1 .. 31 (5-bit immediate)
+
+``L``
+  Integer constant in the range -65535 .. -1 (16-bit negative immediate)
+
+``M``
+  Integer constant -1
+
+``O``
+  Integer constant 0
+
+``P``
+  Integer constant 32
+
+x86 family---:samp:`{config/i386/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``R``
+  Legacy register---the eight integer registers available on all
+  i386 processors (``a``, ``b``, ``c``, ``d``,
+  ``si``, ``di``, ``bp``, ``sp``).
+
+``q``
+  Any register accessible as ``rl``.  In 32-bit mode, ``a``,
+  ``b``, ``c``, and ``d`` ; in 64-bit mode, any integer register.
+
+``Q``
+  Any register accessible as ``rh`` : ``a``, ``b``,
+  ``c``, and ``d``.
+
+.. only:: gccint
+
+  ``l``
+    Any register that can be used as the index in a base+index memory
+    access: that is, any general register except the stack pointer.
+
+``a``
+  The ``a`` register.
+
+``b``
+  The ``b`` register.
+
+``c``
+  The ``c`` register.
+
+``d``
+  The ``d`` register.
+
+``S``
+  The ``si`` register.
+
+``D``
+  The ``di`` register.
+
+``A``
+  The ``a`` and ``d`` registers.  This class is used for instructions
+  that return double word results in the ``ax:dx`` register pair.  Single
+  word values will be allocated either in ``ax`` or ``dx``.
+  For example on i386 the following implements ``rdtsc`` :
+
+  .. code-block:: c++
+
+    unsigned long long rdtsc (void)
+    {
+      unsigned long long tick;
+      __asm__ __volatile__("rdtsc":"=A"(tick));
+      return tick;
+    }
+
+  This is not correct on x86-64 as it would allocate tick in either ``ax``
+  or ``dx``.  You have to use the following variant instead:
+
+  .. code-block:: c++
+
+    unsigned long long rdtsc (void)
+    {
+      unsigned int tickl, tickh;
+      __asm__ __volatile__("rdtsc":"=a"(tickl),"=d"(tickh));
+      return ((unsigned long long)tickh << 32)|tickl;
+    }
+
+``U``
+  The call-clobbered integer registers.
+
+``f``
+  Any 80387 floating-point (stack) register.
+
+``t``
+  Top of 80387 floating-point stack (``%st(0)``).
+
+``u``
+  Second from top of 80387 floating-point stack (``%st(1)``).
+
+.. only:: gccint
+
+  ``Yk``
+    Any mask register that can be used as a predicate, i.e. ``k1-k7``.
+
+  ``k``
+    Any mask register.
+
+``y``
+  Any MMX register.
+
+``x``
+  Any SSE register.
+
+``v``
+  Any EVEX encodable SSE register (``%xmm0-%xmm31``).
+
+.. only:: gccint
+
+  ``w``
+    Any bound register.
+
+``Yz``
+  First SSE register (``%xmm0``).
+
+.. only:: gccint
+
+  ``Yi``
+    Any SSE register, when SSE2 and inter-unit moves are enabled.
+
+  ``Yj``
+    Any SSE register, when SSE2 and inter-unit moves from vector registers are enabled.
+
+  ``Ym``
+    Any MMX register, when inter-unit moves are enabled.
+
+  ``Yn``
+    Any MMX register, when inter-unit moves from vector registers are enabled.
+
+  ``Yp``
+    Any integer register when ``TARGET_PARTIAL_REG_STALL`` is disabled.
+
+  ``Ya``
+    Any integer register when zero extensions with ``AND`` are disabled.
+
+  ``Yb``
+    Any register that can be used as the GOT base when calling
+
+    ``___tls_get_addr`` : that is, any general register except ``a``
+    and ``sp`` registers, for :option:`-fno-plt` if linker supports it.
+    Otherwise, ``b`` register.
+
+  ``Yf``
+    Any x87 register when 80387 floating-point arithmetic is enabled.
+
+  ``Yr``
+    Lower SSE register when avoiding REX prefix and all SSE registers otherwise.
+
+  ``Yv``
+    For AVX512VL, any EVEX-encodable SSE register (``%xmm0-%xmm31``),
+    otherwise any SSE register.
+
+  ``Yh``
+    Any EVEX-encodable SSE register, that has number factor of four.
+
+  ``Bf``
+    Flags register operand.
+
+  ``Bg``
+    GOT memory operand.
+
+  ``Bm``
+    Vector memory operand.
+
+  ``Bc``
+    Constant memory operand.
+
+``Bn``
+  Memory operand without REX prefix.
+
+``Bs``
+  Sibcall memory operand.
+
+``Bw``
+  Call memory operand.
+
+``Bz``
+  Constant call address operand.
+
+``BC``
+  SSE constant -1 operand.
+
+``I``
+  Integer constant in the range 0 ... 31, for 32-bit shifts.
+
+``J``
+  Integer constant in the range 0 ... 63, for 64-bit shifts.
+
+``K``
+  Signed 8-bit integer constant.
+
+``L``
+  ``0xFF`` or ``0xFFFF``, for andsi as a zero-extending move.
+
+``M``
+  0, 1, 2, or 3 (shifts for the ``lea`` instruction).
+
+``N``
+  Unsigned 8-bit integer constant (for ``in`` and ``out``
+  instructions).
+
+.. only:: gccint
+
+  ``O``
+    Integer constant in the range 0 ... 127, for 128-bit shifts.
+
+``G``
+  Standard 80387 floating point constant.
+
+``C``
+  SSE constant zero operand.
+
+``e``
+  32-bit signed integer constant, or a symbolic reference known
+  to fit that range (for immediate operands in sign-extending x86-64
+  instructions).
+
+``We``
+  32-bit signed integer constant, or a symbolic reference known
+  to fit that range (for sign-extending conversion operations that
+  require non- ``VOIDmode`` immediate operands).
+
+``Wz``
+  32-bit unsigned integer constant, or a symbolic reference known
+  to fit that range (for zero-extending conversion operations that
+  require non- ``VOIDmode`` immediate operands).
+
+``Wd``
+  128-bit integer constant where both the high and low 64-bit word
+  satisfy the ``e`` constraint.
+
+``Z``
+  32-bit unsigned integer constant, or a symbolic reference known
+  to fit that range (for immediate operands in zero-extending x86-64
+  instructions).
+
+``Tv``
+  VSIB address operand.
+
+``Ts``
+  Address operand without segment register.
+
+Xstormy16---:samp:`{config/stormy16/stormy16.h}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``a``
+  Register r0.
+
+``b``
+  Register r1.
+
+``c``
+  Register r2.
+
+``d``
+  Register r8.
+
+``e``
+  Registers r0 through r7.
+
+``t``
+  Registers r0 and r1.
+
+``y``
+  The carry register.
+
+``z``
+  Registers r8 and r9.
+
+``I``
+  A constant between 0 and 3 inclusive.
+
+``J``
+  A constant that has exactly one bit set.
+
+``K``
+  A constant that has exactly one bit clear.
+
+``L``
+  A constant between 0 and 255 inclusive.
+
+``M``
+  A constant between -255 and 0 inclusive.
+
+``N``
+  A constant between -3 and 0 inclusive.
+
+``O``
+  A constant between 1 and 4 inclusive.
+
+``P``
+  A constant between -4 and -1 inclusive.
+
+``Q``
+  A memory reference that is a stack push.
+
+``R``
+  A memory reference that is a stack pop.
+
+``S``
+  A memory reference that refers to a constant address of known value.
+
+``T``
+  The register indicated by Rx (not implemented yet).
+
+``U``
+  A constant that is not between 2 and 15 inclusive.
+
+``Z``
+  The constant 0.
 
 Xtensa---:samp:`{config/xtensa/constraints.md}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  ``a``
-    General-purpose 32-bit register
+``a``
+  General-purpose 32-bit register
 
-  ``b``
-    One-bit boolean register
+``b``
+  One-bit boolean register
 
-  ``A``
-    MAC16 40-bit accumulator register
+``A``
+  MAC16 40-bit accumulator register
 
-  ``I``
-    Signed 12-bit integer constant, for use in MOVI instructions
+``I``
+  Signed 12-bit integer constant, for use in MOVI instructions
 
-  ``J``
-    Signed 8-bit integer constant, for use in ADDI instructions
+``J``
+  Signed 8-bit integer constant, for use in ADDI instructions
 
-  ``K``
-    Integer constant valid for BccI instructions
+``K``
+  Integer constant valid for BccI instructions
 
-  ``L``
-    Unsigned constant valid for BccUI instructions
+``L``
+  Unsigned constant valid for BccUI instructions
