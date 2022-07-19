@@ -169,12 +169,14 @@ These command-line options are defined for RISC-V targets:
   addresses.  The alternative is to use assembler macros instead, which may
   limit optimization.
 
-``-mrelax`` ``-mno-relax``
+.. option:: -mrelax, -mno-relax
+
   Take advantage of linker relaxations to reduce the number of instructions
   required to materialize symbol addresses. The default is to take advantage of
   linker relaxations.
 
-``-memit-attribute`` ``-mno-emit-attribute``
+.. option:: -mriscv-attribute, -mno-riscv-attribute
+
   Emit (do not emit) RISC-V attribute to record extra information into ELF
   objects.  This feature requires at least binutils 2.32.
 

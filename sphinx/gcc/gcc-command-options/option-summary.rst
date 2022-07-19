@@ -1192,10 +1192,10 @@ in the following sections.
   :option:`-mcmodel`:samp:`=medlow`  :option:`-mcmodel`:samp:`=medany` 
   :option:`-mexplicit-relocs`  :option:`-mno-explicit-relocs` 
   :option:`-mrelax`  :option:`-mno-relax` 
-  :option:`-mriscv-attribute`  :option:`-mmo-riscv-attribute` 
+  :option:`-mriscv-attribute`  :option:`-mno-riscv-attribute` 
   :option:`-malign-data`:samp:`={type}` 
   :option:`-mbig-endian`  :option:`-mlittle-endian` 
-  :option:`-mstack-protector-guard`:samp:`={guard}` :option:`-mstack-protector-guard-reg`:samp:`={reg}` 
+  :option:`-mstack-protector-guard`:samp:`={guard}`  :option:`-mstack-protector-guard-reg`:samp:`={reg}` 
   :option:`-mstack-protector-guard-offset`:samp:`={offset}`
 
   *RL78 Options*

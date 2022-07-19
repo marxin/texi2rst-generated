@@ -86,6 +86,15 @@ is being compiled:
   :samp:`hs38_linux`
     Compile for ARC HS38 CPU with all hardware extensions on.
 
+  :samp:`hs4x`
+    Compile for ARC HS4x CPU.
+
+  :samp:`hs4xd`
+    Compile for ARC HS4xD CPU.
+
+  :samp:`hs4x_rel31`
+    Compile for ARC HS4x CPU release 3.10a.
+
   :samp:`arc600_norm`
     Compile for ARC 600 CPU with ``norm`` instructions enabled.
 
@@ -671,6 +680,13 @@ The following options fine tune code generation:
 
   :samp:`ARC750D`
     Tune for ARC750D CPU.
+
+  :samp:`core3`
+    Tune for ARCv2 core3 type CPU.  This option enable usage of
+    ``dbnz`` instruction.
+
+  :samp:`release31a`
+    Tune for ARC4x release 3.10a.
 
 .. option:: -mmultcost={num}
 
