@@ -1523,8 +1523,8 @@ keyword after the declarator.
 It is up to you to make sure that the assembler names you choose do not
 conflict with any other assembler symbols, or reference registers.
 
-Assembler names for data:
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Assembler names for data
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 This sample shows how to specify the assembler name for data:
 
@@ -1545,8 +1545,8 @@ since such variables do not have assembler names.  If you are
 trying to put the variable in a particular register, see 
 :ref:`explicit-register-variables`.
 
-Assembler names for functions:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Assembler names for functions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To specify the assembler name for functions, write a declaration for the 
 function before its definition and put ``asm`` there, like this:

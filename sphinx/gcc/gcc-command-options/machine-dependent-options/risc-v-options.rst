@@ -174,7 +174,7 @@ These command-line options are defined for RISC-V targets:
   required to materialize symbol addresses. The default is to take advantage of
   linker relaxations.
 
-.. option:: -memit-attribute, -mno-emit-attribute
+.. option:: -mriscv-attribute, -mno-riscv-attribute
 
   Emit (do not emit) RISC-V attribute to record extra information into ELF
   objects.  This feature requires at least binutils 2.32.

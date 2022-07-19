@@ -1210,7 +1210,7 @@ in the following sections.
   :option:`-mriscv-attribute`  :option:`-mmo-riscv-attribute` |gol|
   :option:`-malign-data`:samp:`={type}` |gol|
   :option:`-mbig-endian`  :option:`-mlittle-endian` |gol|
-  :option:`-mstack-protector-guard`:samp:`={guard}` :option:`-mstack-protector-guard-reg`:samp:`={reg}` |gol|
+  :option:`-mstack-protector-guard`:samp:`={guard}`  :option:`-mstack-protector-guard-reg`:samp:`={reg}` |gol|
   :option:`-mstack-protector-guard-offset`:samp:`={offset}`
 
   *RL78 Options*
