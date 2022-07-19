@@ -228,7 +228,7 @@ install the libraries.
   Alternatively, the :option:`--with-zstd` configure option should be used.
 
 Tools/packages necessary for modifying GCC
-==========================================
+******************************************
 
 * autoconf version 2.69
 * GNU m4 version 1.4.6 (or later)
