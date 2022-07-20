@@ -57,15 +57,35 @@ COSD --- Cosine function, degrees
       end program test_cosd
 
   :samp:`{Specific names}:`
-    =============  ================  ==============  =============
-    Name           Argument          Return type     Standard
-    =============  ================  ==============  =============
-    ``COSD(X)``    ``REAL(4) X``     ``REAL(4)``     GNU extension
-    ``DCOSD(X)``   ``REAL(8) X``     ``REAL(8)``     GNU extension
-    ``CCOSD(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  GNU extension
-    ``ZCOSD(X)``   ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-    ``CDCOSD(X)``  ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-    =============  ================  ==============  =============
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``COSD(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - GNU extension
+       * - ``DCOSD(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - GNU extension
+       * - ``CCOSD(X)``
+         - ``COMPLEX(4) X``
+         - ``COMPLEX(4)``
+         - GNU extension
+       * - ``ZCOSD(X)``
+         - ``COMPLEX(8) X``
+         - ``COMPLEX(8)``
+         - GNU extension
+       * - ``CDCOSD(X)``
+         - ``COMPLEX(8) X``
+         - ``COMPLEX(8)``
+         - GNU extension
 
   :samp:`{See also}:`
     Inverse function: 

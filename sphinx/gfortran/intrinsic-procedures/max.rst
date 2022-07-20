@@ -52,15 +52,35 @@ MAX --- Maximum value of an argument list
       RESULT = MAX(A1, A2 [, A3 [, ...]])
 
   :samp:`{Specific names}:`
-    =============  =================  ================  ====================
-    Name           Argument           Return type       Standard
-    =============  =================  ================  ====================
-    ``MAX0(A1)``   ``INTEGER(4) A1``  ``INTEGER(4)``    Fortran 77 and later
-    ``AMAX0(A1)``  ``INTEGER(4) A1``  ``REAL(MAX(X))``  Fortran 77 and later
-    ``MAX1(A1)``   ``REAL A1``        ``INT(MAX(X))``   Fortran 77 and later
-    ``AMAX1(A1)``  ``REAL(4) A1``     ``REAL(4)``       Fortran 77 and later
-    ``DMAX1(A1)``  ``REAL(8) A1``     ``REAL(8)``       Fortran 77 and later
-    =============  =================  ================  ====================
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``MAX0(A1)``
+         - ``INTEGER(4) A1``
+         - ``INTEGER(4)``
+         - Fortran 77 and later
+       * - ``AMAX0(A1)``
+         - ``INTEGER(4) A1``
+         - ``REAL(MAX(X))``
+         - Fortran 77 and later
+       * - ``MAX1(A1)``
+         - ``REAL A1``
+         - ``INT(MAX(X))``
+         - Fortran 77 and later
+       * - ``AMAX1(A1)``
+         - ``REAL(4) A1``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DMAX1(A1)``
+         - ``REAL(8) A1``
+         - ``REAL(8)``
+         - Fortran 77 and later
 
   :samp:`{See also}:`
     :ref:`MAXLOC` 

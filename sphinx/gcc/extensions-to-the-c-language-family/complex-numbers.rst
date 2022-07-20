@@ -65,22 +65,37 @@ which might get prompoted to a complex type from a scalar type.
 E.g. ``__real__ (int)x`` is the same as casting to
 ``_Complex int`` before ``__real__`` is done.
 
-================  ============================================
-Expression        Description
-================  ============================================
-``__real__ exp``  Extract the real part of :samp:`{exp}`.
-``__imag__ exp``  Extract the imaginary part of :samp:`{exp}`.
-================  ============================================
+.. list-table::
+   :header-rows: 1
+
+   * - Expression
+     - Description
+
+   * - ``__real__ exp``
+     - Extract the real part of :samp:`{exp}`.
+   * - ``__imag__ exp``
+     - Extract the imaginary part of :samp:`{exp}`.
+
 For values of floating point, you should use the ISO C99
 functions, declared in ``<complex.h>`` and also provided as
 built-in functions by GCC.
 
-================  ==========  =========  ===========
-Expression        float       double     long double
-================  ==========  =========  ===========
-``__real__ exp``  ``crealf``  ``creal``  ``creall``
-``__imag__ exp``  ``cimagf``  ``cimag``  ``cimagl``
-================  ==========  =========  ===========
+.. list-table::
+   :header-rows: 1
+
+   * - Expression
+     - float
+     - double
+     - long double
+
+   * - ``__real__ exp``
+     - ``crealf``
+     - ``creal``
+     - ``creall``
+   * - ``__imag__ exp``
+     - ``cimagf``
+     - ``cimag``
+     - ``cimagl``
 
 .. index:: complex conjugation
 

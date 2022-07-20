@@ -55,11 +55,19 @@ INDEX --- Position of a substring within a string
       RESULT = INDEX(STRING, SUBSTRING [, BACK [, KIND]])
 
   :samp:`{Specific names}:`
-    ===========================  =============  ==============  ====================
-    Name                         Argument       Return type     Standard
-    ===========================  =============  ==============  ====================
-    ``INDEX(STRING,SUBSTRING)``  ``CHARACTER``  ``INTEGER(4)``  Fortran 77 and later
-    ===========================  =============  ==============  ====================
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``INDEX(STRING,SUBSTRING)``
+         - ``CHARACTER``
+         - ``INTEGER(4)``
+         - Fortran 77 and later
 
   :samp:`{See also}:`
     :ref:`SCAN`, 

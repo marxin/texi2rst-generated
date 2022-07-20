@@ -14,16 +14,19 @@ omp_init_lock -- Initialize simple lock
 
 :samp:`{C/C++}:`
 
-  ============  =========================================
-  *Prototype*:  ``void omp_init_lock(omp_lock_t *lock);``
-  ============  =========================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void omp_init_lock(omp_lock_t *lock);``
 
 :samp:`{Fortran}:`
 
-  ============  ===============================================
-  *Interface*:  ``subroutine omp_init_lock(svar)``
-                ``integer(omp_lock_kind), intent(out) :: svar``
-  ============  ===============================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine omp_init_lock(svar)``
+     * -
+       - ``integer(omp_lock_kind), intent(out) :: svar``
 
 :samp:`{See also}:`
   :ref:`omp_destroy_lock`

@@ -52,9 +52,17 @@ BESSEL_J0 --- Bessel function of the first kind of order 0
       end program test_besj0
 
   :samp:`{Specific names}:`
-    =============  =============  ===========  =============
-    Name           Argument       Return type  Standard
-    =============  =============  ===========  =============
-    ``DBESJ0(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
-    =============  =============  ===========  =============
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``DBESJ0(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - GNU extension
 

@@ -15,15 +15,17 @@ omp_is_initial_device -- Whether executing on the host device
 
 :samp:`{C/C++}:`
 
-  ============  ====================================
-  *Prototype*:  ``int omp_is_initial_device(void);``
-  ============  ====================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_is_initial_device(void);``
 
 :samp:`{Fortran}:`
 
-  ============  ============================================
-  *Interface*:  ``logical function omp_is_initial_device()``
-  ============  ============================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``logical function omp_is_initial_device()``
 
 :samp:`{Reference}:`
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.34.

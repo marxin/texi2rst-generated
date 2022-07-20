@@ -626,39 +626,23 @@ corresponding :option:`--without` option.
     profile.  The union of these options is considered when specifying both
     ``aprofile`` and ``rmprofile``.
 
-    ===================  =========================  =======================
-    Option               aprofile                   rmprofile
-    ISAs                 ``-marm`` and ``-mthumb``  ``-mthumb``
-    Architectures        default architecture       default architecture
+    .. list-table::
 
-                         ``-march=armv7-a``         ``-march=armv6s-m``
-
-                         ``-march=armv7ve``         ``-march=armv7-m``
-
-                         ``-march=armv8-a``         ``-march=armv7e-m``
-
-                                                    ``-march=armv8-m.base``
-
-                                                    ``-march=armv8-m.main``
-
-                                                    ``-march=armv7``
-    FPUs                 none                       none
-
-                         ``-mfpu=vfpv3-d16``        ``-mfpu=vfpv3-d16``
-
-                         ``-mfpu=neon``             ``-mfpu=fpv4-sp-d16``
-
-                         ``-mfpu=vfpv4-d16``        ``-mfpu=fpv5-sp-d16``
-
-                         ``-mfpu=neon-vfpv4``       ``-mfpu=fpv5-d16``
-
-                         ``-mfpu=neon-fp-armv8``
-    floating-point ABIs  ``-mfloat-abi=soft``       ``-mfloat-abi=soft``
-
-                         ``-mfloat-abi=softfp``     ``-mfloat-abi=softfp``
-
-                         ``-mfloat-abi=hard``       ``-mfloat-abi=hard``
-    ===================  =========================  =======================
+       * - Option
+         - aprofile
+         - rmprofile
+       * - ISAs
+         - ``-marm`` and ``-mthumb``
+         - ``-mthumb``
+       * - Architectures
+         - default architecture  ``-march=armv7-a``  ``-march=armv7ve``  ``-march=armv8-a``
+         - default architecture  ``-march=armv6s-m``  ``-march=armv7-m``  ``-march=armv7e-m``  ``-march=armv8-m.base``  ``-march=armv8-m.main``  ``-march=armv7``
+       * - FPUs
+         - none  ``-mfpu=vfpv3-d16``  ``-mfpu=neon``  ``-mfpu=vfpv4-d16``  ``-mfpu=neon-vfpv4``  ``-mfpu=neon-fp-armv8``
+         - none  ``-mfpu=vfpv3-d16``  ``-mfpu=fpv4-sp-d16``  ``-mfpu=fpv5-sp-d16``  ``-mfpu=fpv5-d16``
+       * - floating-point ABIs
+         - ``-mfloat-abi=soft``  ``-mfloat-abi=softfp``  ``-mfloat-abi=hard``
+         - ``-mfloat-abi=soft``  ``-mfloat-abi=softfp``  ``-mfloat-abi=hard``
 
   ``loongarch*-*-*``
     :samp:`{list}` is a comma-separated list of the following ABI identifiers:

@@ -52,12 +52,23 @@ ASIND --- Arcsine function, degrees
       end program test_asind
 
   :samp:`{Specific names}:`
-    =============  =============  ===========  =============
-    Name           Argument       Return type  Standard
-    =============  =============  ===========  =============
-    ``ASIND(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
-    ``DASIND(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
-    =============  =============  ===========  =============
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``ASIND(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - GNU extension
+       * - ``DASIND(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - GNU extension
 
   :samp:`{See also}:`
     Inverse function: 

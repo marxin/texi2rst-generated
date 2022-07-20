@@ -76,23 +76,34 @@ The table below lists the ``v4i8`` and ``v2q15`` operations for which
 hardware support exists.  ``a`` and ``b`` are ``v4i8`` values,
 and ``c`` and ``d`` are ``v2q15`` values.
 
-=========  ================
-C code     MIPS instruction
-=========  ================
-``a + b``  ``addu.qb``
-``c + d``  ``addq.ph``
-``a - b``  ``subu.qb``
-``c - d``  ``subq.ph``
-=========  ================
+.. list-table::
+   :header-rows: 1
+
+   * - C code
+     - MIPS instruction
+
+   * - ``a + b``
+     - ``addu.qb``
+   * - ``c + d``
+     - ``addq.ph``
+   * - ``a - b``
+     - ``subu.qb``
+   * - ``c - d``
+     - ``subq.ph``
+
 The table below lists the ``v2i16`` operation for which
 hardware support exists for the DSP ASE REV 2.  ``e`` and ``f`` are
 ``v2i16`` values.
 
-=========  ================
-C code     MIPS instruction
-=========  ================
-``e * f``  ``mul.ph``
-=========  ================
+.. list-table::
+   :header-rows: 1
+
+   * - C code
+     - MIPS instruction
+
+   * - ``e * f``
+     - ``mul.ph``
+
 It is easier to describe the DSP built-in functions if we first define
 the following types:
 

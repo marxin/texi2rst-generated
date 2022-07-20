@@ -17,17 +17,21 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  ================================
-  *Prototype*:  ``int acc_async_test(int arg);``
-  ============  ================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int acc_async_test(int arg);``
 
 :samp:`{Fortran}:`
 
-  ============  =====================================
-  *Interface*:  ``function acc_async_test(arg)``
-                ``integer(kind=acc_handle_kind) arg``
-                ``logical acc_async_test``
-  ============  =====================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``function acc_async_test(arg)``
+     * -
+       - ``integer(kind=acc_handle_kind) arg``
+     * -
+       - ``logical acc_async_test``
 
 :samp:`{Reference}:`
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section

@@ -52,11 +52,19 @@ ICHAR --- Character-to-integer conversion function
       end program test_ichar
 
   :samp:`{Specific names}:`
-    ============  ===============  ==============  ====================
-    Name          Argument         Return type     Standard
-    ============  ===============  ==============  ====================
-    ``ICHAR(C)``  ``CHARACTER C``  ``INTEGER(4)``  Fortran 77 and later
-    ============  ===============  ==============  ====================
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``ICHAR(C)``
+         - ``CHARACTER C``
+         - ``INTEGER(4)``
+         - Fortran 77 and later
 
   :samp:`{Note}:`
     No intrinsic exists to convert between a numeric value and a formatted

@@ -165,21 +165,47 @@ These options are defined for AArch64 implementations:
   The table below summarizes the permissible values for :samp:`{arch}`
   and the features that they enable by default:
 
-  ====================  ============  =====================================================================
-  :samp:`{arch}` value  Architecture  Includes by default
-  ====================  ============  =====================================================================
-  :samp:`armv8-a`       Armv8-A       :samp:`+fp`, :samp:`+simd`
-  :samp:`armv8.1-a`     Armv8.1-A     :samp:`armv8-a`, :samp:`+crc`, :samp:`+lse`, :samp:`+rdma`
-  :samp:`armv8.2-a`     Armv8.2-A     :samp:`armv8.1-a`
-  :samp:`armv8.3-a`     Armv8.3-A     :samp:`armv8.2-a`, :samp:`+pauth`
-  :samp:`armv8.4-a`     Armv8.4-A     :samp:`armv8.3-a`, :samp:`+flagm`, :samp:`+fp16fml`, :samp:`+dotprod`
-  :samp:`armv8.5-a`     Armv8.5-A     :samp:`armv8.4-a`, :samp:`+sb`, :samp:`+ssbs`, :samp:`+predres`
-  :samp:`armv8.6-a`     Armv8.6-A     :samp:`armv8.5-a`, :samp:`+bf16`, :samp:`+i8mm`
-  :samp:`armv8.7-a`     Armv8.7-A     :samp:`armv8.6-a`, :samp:`+ls64`
-  :samp:`armv8.8-a`     Armv8.8-a     :samp:`armv8.7-a`, :samp:`+mops`
-  :samp:`armv9-a`       Armv9-A       :samp:`armv8.5-a`, :samp:`+sve`, :samp:`+sve2`
-  :samp:`armv8-r`       Armv8-R       :samp:`armv8-r`
-  ====================  ============  =====================================================================
+  .. list-table::
+     :header-rows: 1
+
+     * - :samp:`{arch}` value
+       - Architecture
+       - Includes by default
+
+     * - :samp:`armv8-a`
+       - Armv8-A
+       - :samp:`+fp`, :samp:`+simd`
+     * - :samp:`armv8.1-a`
+       - Armv8.1-A
+       - :samp:`armv8-a`, :samp:`+crc`, :samp:`+lse`, :samp:`+rdma`
+     * - :samp:`armv8.2-a`
+       - Armv8.2-A
+       - :samp:`armv8.1-a`
+     * - :samp:`armv8.3-a`
+       - Armv8.3-A
+       - :samp:`armv8.2-a`, :samp:`+pauth`
+     * - :samp:`armv8.4-a`
+       - Armv8.4-A
+       - :samp:`armv8.3-a`, :samp:`+flagm`, :samp:`+fp16fml`, :samp:`+dotprod`
+     * - :samp:`armv8.5-a`
+       - Armv8.5-A
+       - :samp:`armv8.4-a`, :samp:`+sb`, :samp:`+ssbs`, :samp:`+predres`
+     * - :samp:`armv8.6-a`
+       - Armv8.6-A
+       - :samp:`armv8.5-a`, :samp:`+bf16`, :samp:`+i8mm`
+     * - :samp:`armv8.7-a`
+       - Armv8.7-A
+       - :samp:`armv8.6-a`, :samp:`+ls64`
+     * - :samp:`armv8.8-a`
+       - Armv8.8-a
+       - :samp:`armv8.7-a`, :samp:`+mops`
+     * - :samp:`armv9-a`
+       - Armv9-A
+       - :samp:`armv8.5-a`, :samp:`+sve`, :samp:`+sve2`
+     * - :samp:`armv8-r`
+       - Armv8-R
+       - :samp:`armv8-r`
+
   The value :samp:`native` is available on native AArch64 GNU/Linux and
   causes the compiler to pick the architecture of the host system.  This
   option has no effect if the compiler is unable to recognize the

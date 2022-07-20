@@ -69,18 +69,53 @@ ABS --- Absolute value
       end program test_abs
 
   :samp:`{Specific names}:`
-    ============  ================  ==============  ====================
-    Name          Argument          Return type     Standard
-    ============  ================  ==============  ====================
-    ``ABS(A)``    ``REAL(4) A``     ``REAL(4)``     Fortran 77 and later
-    ``CABS(A)``   ``COMPLEX(4) A``  ``REAL(4)``     Fortran 77 and later
-    ``DABS(A)``   ``REAL(8) A``     ``REAL(8)``     Fortran 77 and later
-    ``IABS(A)``   ``INTEGER(4) A``  ``INTEGER(4)``  Fortran 77 and later
-    ``BABS(A)``   ``INTEGER(1) A``  ``INTEGER(1)``  GNU extension
-    ``IIABS(A)``  ``INTEGER(2) A``  ``INTEGER(2)``  GNU extension
-    ``JIABS(A)``  ``INTEGER(4) A``  ``INTEGER(4)``  GNU extension
-    ``KIABS(A)``  ``INTEGER(8) A``  ``INTEGER(8)``  GNU extension
-    ``ZABS(A)``   ``COMPLEX(8) A``  ``REAL(8)``     GNU extension
-    ``CDABS(A)``  ``COMPLEX(8) A``  ``REAL(8)``     GNU extension
-    ============  ================  ==============  ====================
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``ABS(A)``
+         - ``REAL(4) A``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``CABS(A)``
+         - ``COMPLEX(4) A``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DABS(A)``
+         - ``REAL(8) A``
+         - ``REAL(8)``
+         - Fortran 77 and later
+       * - ``IABS(A)``
+         - ``INTEGER(4) A``
+         - ``INTEGER(4)``
+         - Fortran 77 and later
+       * - ``BABS(A)``
+         - ``INTEGER(1) A``
+         - ``INTEGER(1)``
+         - GNU extension
+       * - ``IIABS(A)``
+         - ``INTEGER(2) A``
+         - ``INTEGER(2)``
+         - GNU extension
+       * - ``JIABS(A)``
+         - ``INTEGER(4) A``
+         - ``INTEGER(4)``
+         - GNU extension
+       * - ``KIABS(A)``
+         - ``INTEGER(8) A``
+         - ``INTEGER(8)``
+         - GNU extension
+       * - ``ZABS(A)``
+         - ``COMPLEX(8) A``
+         - ``REAL(8)``
+         - GNU extension
+       * - ``CDABS(A)``
+         - ``COMPLEX(8) A``
+         - ``REAL(8)``
+         - GNU extension
 

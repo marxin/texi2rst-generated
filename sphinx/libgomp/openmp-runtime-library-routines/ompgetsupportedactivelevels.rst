@@ -14,15 +14,17 @@ omp_get_supported_active_levels -- Maximum number of active regions supported
 
 C/C++
 
-  ============  ==============================================
-  *Prototype*:  ``int omp_get_supported_active_levels(void);``
-  ============  ==============================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_get_supported_active_levels(void);``
 
 :samp:`{Fortran}:`
 
-  ============  ======================================================
-  *Interface*:  ``integer function omp_get_supported_active_levels()``
-  ============  ======================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``integer function omp_get_supported_active_levels()``
 
 :samp:`{See also}:`
   :ref:`omp_get_max_active_levels`, :ref:`omp_set_max_active_levels`

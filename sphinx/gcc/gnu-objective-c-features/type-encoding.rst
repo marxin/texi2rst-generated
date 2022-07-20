@@ -20,32 +20,54 @@ The types are encoded in the following way:
 
 .. @sp 1
 
-======================  ====================================================================================================================================================================================================
-``_Bool``               ``B``
-``char``                ``c``
-``unsigned char``       ``C``
-``short``               ``s``
-``unsigned short``      ``S``
-``int``                 ``i``
-``unsigned int``        ``I``
-``long``                ``l``
-``unsigned long``       ``L``
-``long long``           ``q``
-``unsigned long long``  ``Q``
-``float``               ``f``
-``double``              ``d``
-``long double``         ``D``
-``void``                ``v``
-``id``                  ``@``
-``Class``               ``#``
-``SEL``                 ``:``
-``char*``               ``*``
-``enum``                an ``enum`` is encoded exactly as the integer type that the compiler uses for it, which depends on the enumeration
-                        values.  Often the compiler users ``unsigned int``, which is then encoded as ``I``.
-unknown type            ``?``
-Complex types           ``j`` followed by the inner type.  For example ``_Complex double`` is encoded as "jd".
-bit-fields              ``b`` followed by the starting position of the bit-field, the type of the bit-field and the size of the bit-field (the bit-fields encoding was changed from the NeXT's compiler encoding, see below)
-======================  ====================================================================================================================================================================================================
+.. list-table::
+
+   * - ``_Bool``
+     - ``B``
+   * - ``char``
+     - ``c``
+   * - ``unsigned char``
+     - ``C``
+   * - ``short``
+     - ``s``
+   * - ``unsigned short``
+     - ``S``
+   * - ``int``
+     - ``i``
+   * - ``unsigned int``
+     - ``I``
+   * - ``long``
+     - ``l``
+   * - ``unsigned long``
+     - ``L``
+   * - ``long long``
+     - ``q``
+   * - ``unsigned long long``
+     - ``Q``
+   * - ``float``
+     - ``f``
+   * - ``double``
+     - ``d``
+   * - ``long double``
+     - ``D``
+   * - ``void``
+     - ``v``
+   * - ``id``
+     - ``@``
+   * - ``Class``
+     - ``#``
+   * - ``SEL``
+     - ``:``
+   * - ``char*``
+     - ``*``
+   * - ``enum``
+     - an ``enum`` is encoded exactly as the integer type that the compiler uses for it, which depends on the enumeration values.  Often the compiler users ``unsigned int``, which is then encoded as ``I``.
+   * - unknown type
+     - ``?``
+   * - Complex types
+     - ``j`` followed by the inner type.  For example ``_Complex double`` is encoded as "jd".
+   * - bit-fields
+     - ``b`` followed by the starting position of the bit-field, the type of the bit-field and the size of the bit-field (the bit-fields encoding was changed from the NeXT's compiler encoding, see below)
 
 .. @sp 1
 
@@ -67,13 +89,18 @@ The non-atomic types are encoded as follows:
 
 .. @sp 1
 
-==========  =====================================================================================================================================================================================================================
-pointers    :samp:`^` followed by the pointed type.
-arrays      :samp:`[` followed by the number of elements in the array followed by the type of the elements followed by :samp:`]`
-structures  :samp:`{` followed by the name of the structure (or :samp:`?` if the structure is unnamed), the :samp:`=` sign, the type of the members and by :samp:`}`
-unions      :samp:`(` followed by the name of the structure (or :samp:`?` if the union is unnamed), the :samp:`=` sign, the type of the members followed by :samp:`)`
-vectors     :samp:`![` followed by the vector_size (the number of bytes composing the vector) followed by a comma, followed by the alignment (in bytes) of the vector, followed by the type of the elements followed by :samp:`]`
-==========  =====================================================================================================================================================================================================================
+.. list-table::
+
+   * - pointers
+     - :samp:`^` followed by the pointed type.
+   * - arrays
+     - :samp:`[` followed by the number of elements in the array followed by the type of the elements followed by :samp:`]`
+   * - structures
+     - :samp:`{` followed by the name of the structure (or :samp:`?` if the structure is unnamed), the :samp:`=` sign, the type of the members and by :samp:`}`
+   * - unions
+     - :samp:`(` followed by the name of the structure (or :samp:`?` if the union is unnamed), the :samp:`=` sign, the type of the members followed by :samp:`)`
+   * - vectors
+     - :samp:`![` followed by the vector_size (the number of bytes composing the vector) followed by a comma, followed by the alignment (in bytes) of the vector, followed by the type of the elements followed by :samp:`]`
 
 Here are some types and their encodings, as they are generated by the
 compiler on an i386 machine:
@@ -103,17 +130,27 @@ In addition to the types the compiler also encodes the type
 specifiers.  The table below describes the encoding of the current
 Objective-C type specifiers:
 
-==========  ========
-Specifier   Encoding
-==========  ========
-``const``   ``r``
-``in``      ``n``
-``inout``   ``N``
-``out``     ``o``
-``bycopy``  ``O``
-``byref``   ``R``
-``oneway``  ``V``
-==========  ========
+.. list-table::
+   :header-rows: 1
+
+   * - Specifier
+     - Encoding
+
+   * - ``const``
+     - ``r``
+   * - ``in``
+     - ``n``
+   * - ``inout``
+     - ``N``
+   * - ``out``
+     - ``o``
+   * - ``bycopy``
+     - ``O``
+   * - ``byref``
+     - ``R``
+   * - ``oneway``
+     - ``V``
+
 The type specifiers are encoded just before the type.  Unlike types
 however, the type specifiers are only encoded when they appear in method
 argument types.

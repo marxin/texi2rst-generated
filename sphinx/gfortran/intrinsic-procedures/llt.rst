@@ -45,11 +45,19 @@ LLT --- Lexical less than
       RESULT = LLT(STRING_A, STRING_B)
 
   :samp:`{Specific names}:`
-    ==========================  =============  ===========  ====================
-    Name                        Argument       Return type  Standard
-    ==========================  =============  ===========  ====================
-    ``LLT(STRING_A,STRING_B)``  ``CHARACTER``  ``LOGICAL``  Fortran 77 and later
-    ==========================  =============  ===========  ====================
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``LLT(STRING_A,STRING_B)``
+         - ``CHARACTER``
+         - ``LOGICAL``
+         - Fortran 77 and later
 
   :samp:`{See also}:`
     :ref:`LGE`, 

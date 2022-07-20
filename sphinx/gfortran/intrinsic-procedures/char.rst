@@ -50,11 +50,19 @@ CHAR --- Character conversion function
       end program test_char
 
   :samp:`{Specific names}:`
-    ===========  =============  ====================  ====================
-    Name         Argument       Return type           Standard
-    ===========  =============  ====================  ====================
-    ``CHAR(I)``  ``INTEGER I``  ``CHARACTER(LEN=1)``  Fortran 77 and later
-    ===========  =============  ====================  ====================
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``CHAR(I)``
+         - ``INTEGER I``
+         - ``CHARACTER(LEN=1)``
+         - Fortran 77 and later
 
   :samp:`{Note}:`
     See :ref:`ICHAR` for a discussion of converting between numerical values

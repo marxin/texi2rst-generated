@@ -14,9 +14,10 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  ===================================
-  *Prototype*:  ``d_void* acc_malloc(size_t len);``
-  ============  ===================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``d_void* acc_malloc(size_t len);``
 
 :samp:`{Reference}:`
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section

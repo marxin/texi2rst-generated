@@ -52,12 +52,23 @@ COTAND --- Cotangent function, degrees
       end program test_cotand
 
   :samp:`{Specific names}:`
-    ==============  =============  ===========  =============
-    Name            Argument       Return type  Standard
-    ==============  =============  ===========  =============
-    ``COTAND(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
-    ``DCOTAND(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
-    ==============  =============  ===========  =============
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``COTAND(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - GNU extension
+       * - ``DCOTAND(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - GNU extension
 
   :samp:`{See also}:`
     Converse function: 
