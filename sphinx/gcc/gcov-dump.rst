@@ -10,12 +10,6 @@
 gcov-dump---an Offline Gcda and Gcno Profile Dump Tool
 ------------------------------------------------------
 
-Description
-^^^^^^^^^^^
-
-:command:`gcov-dump` is a tool you can use in conjunction with GCC to
-dump content of gcda and gcno profile files offline.
-
 .. only:: man
 
   Synopsis
@@ -28,6 +22,18 @@ dump content of gcda and gcno profile files offline.
        [ :option:`-p` | :option:`--positions` ]
        [ :option:`-r` | :option:`--raw` ]
        [ :samp:`{gcovfiles}` ]
+
+.. only:: not man
+
+  .. code-block::
+
+    gcov-dump [OPTION] ... gcovfiles
+
+Description
+^^^^^^^^^^^
+
+:command:`gcov-dump` is a tool you can use in conjunction with GCC to
+dump content of gcda and gcno profile files offline.
 
 Options
 ^^^^^^^

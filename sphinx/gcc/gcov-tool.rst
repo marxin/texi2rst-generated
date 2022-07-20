@@ -15,32 +15,36 @@ gcov-tool---an Offline Gcda Profile Processing Tool
   Synopsis
   ^^^^^^^^
 
-  gcov-tool [global-options] SUB_COMMAND [sub_command-options] profile_dir
+  gcov-tool [ :option:`-v` | :option:`--version` ] [ :option:`-h` | :option:`--help` ]
 
-gcov-tool [ :option:`-v` | :option:`--version` ] [ :option:`-h` | :option:`--help` ]
+  gcov-tool merge [merge-options] :samp:`{directory1}` :samp:`{directory2}`
+        [ :option:`-o` | :option:`--output` :samp:`{directory}` ]
+        [ :option:`-v` | :option:`--verbose` ]
+        [ :option:`-w` | :option:`--weight` :samp:`{w1,w2}` ]
 
-gcov-tool merge [merge-options] :samp:`{directory1}` :samp:`{directory2}`
-      [ :option:`-o` | :option:`--output` :samp:`{directory}` ]
+  gcov-tool merge-stream [merge-stream-options] [ :samp:`{file}` ]
       [ :option:`-v` | :option:`--verbose` ]
       [ :option:`-w` | :option:`--weight` :samp:`{w1,w2}` ]
 
-gcov-tool merge-stream [merge-stream-options] [ :samp:`{file}` ]
-    [ :option:`-v` | :option:`--verbose` ]
-    [ :option:`-w` | :option:`--weight` :samp:`{w1,w2}` ]
+  gcov-tool rewrite [rewrite-options] :samp:`{directory}`
+        [ :option:`-n` | :option:`--normalize` :samp:`{long_long_value}` ]
+        [ :option:`-o` | :option:`--output` :samp:`{directory}` ]
+        [ :option:`-s` | :option:`--scale` :samp:`{float_or_simple-frac_value}` ]
+        [ :option:`-v` | :option:`--verbose` ]
 
-gcov-tool rewrite [rewrite-options] :samp:`{directory}`
-      [ :option:`-n` | :option:`--normalize` :samp:`{long_long_value}` ]
-      [ :option:`-o` | :option:`--output` :samp:`{directory}` ]
-      [ :option:`-s` | :option:`--scale` :samp:`{float_or_simple-frac_value}` ]
-      [ :option:`-v` | :option:`--verbose` ]
+  gcov-tool overlap [overlap-options] :samp:`{directory1}` :samp:`{directory2}`
+        [ :option:`-f` | :option:`--function` ]
+        [ :option:`-F` | :option:`--fullname` ]
+        [ :option:`-h` | :option:`--hotonly` ]
+        [ :option:`-o` | :option:`--object` ]
+        [ :option:`-t` | :option:`--hot_threshold` ] :samp:`{float}`
+        [ :option:`-v` | :option:`--verbose` ]
 
-gcov-tool overlap [overlap-options] :samp:`{directory1}` :samp:`{directory2}`
-      [ :option:`-f` | :option:`--function` ]
-      [ :option:`-F` | :option:`--fullname` ]
-      [ :option:`-h` | :option:`--hotonly` ]
-      [ :option:`-o` | :option:`--object` ]
-      [ :option:`-t` | :option:`--hot_threshold` ] :samp:`{float}`
-      [ :option:`-v` | :option:`--verbose` ]
+.. only:: not man
+
+  .. code-block::
+
+    gcov-tool [global-options] SUB_COMMAND [sub_command-options] profile_dir
 
 Description
 ^^^^^^^^^^^

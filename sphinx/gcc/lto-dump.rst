@@ -10,32 +10,40 @@
 lto-dump---Tool for dumping LTO object files.
 ---------------------------------------------
 
+.. only:: man
+
+  Synopsis
+  ^^^^^^^^
+
+  lto-dump
+      [ :option:`-list` ]
+      [ :option:`-demangle` ]
+      [ :option:`-defined-only` ]
+      [ :option:`-print-value` ]
+      [ :option:`-name-sort` ]
+      [ :option:`-size-sort` ]
+      [ :option:`-reverse-sort` ]
+      [ :option:`-no-sort` ]
+      [ :option:`-symbol` =]
+      [ :option:`-objects` ]
+      [ :option:`-type-stats` ]
+      [ :option:`-tree-stats` ]
+      [ :option:`-gimple-stats` ]
+      [ :option:`-dump-level` =]
+      [ :option:`-dump-body` =]
+      [ :option:`-help` ] :samp:`{lto-dump}`
+
+.. only:: not man
+
+  .. code-block::
+
+    Usage: lto-dump [OPTION] ... objfiles
+
 Description
 ^^^^^^^^^^^
 
 :command:`lto-dump` is a tool you can use in conjunction with GCC to
 dump link time optimization object files.
-
-Synopsis
-^^^^^^^^
-
-lto-dump
-     [ :option:`-list` ]
-     [ :option:`-demangle` ]
-     [ :option:`-defined-only` ]
-     [ :option:`-print-value` ]
-     [ :option:`-name-sort` ]
-     [ :option:`-size-sort` ]
-     [ :option:`-reverse-sort` ]
-     [ :option:`-no-sort` ]
-     [ :option:`-symbol` =]
-     [ :option:`-objects` ]
-     [ :option:`-type-stats` ]
-     [ :option:`-tree-stats` ]
-     [ :option:`-gimple-stats` ]
-     [ :option:`-dump-level` =]
-     [ :option:`-dump-body` =]
-     [ :option:`-help` ] :samp:`{lto-dump}`
 
 Options
 ^^^^^^^
