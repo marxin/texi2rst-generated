@@ -13,7 +13,7 @@ New features listed in Appendix B of the OpenMP specification
 
 .. list-table::
    :header-rows: 1
-   :widths: 50 5 25
+   :widths: 50 10 25
 
    * - Description
      - Status
@@ -151,7 +151,7 @@ Other new OpenMP 5.1 features
 
 .. list-table::
    :header-rows: 1
-   :widths: 50 5 25
+   :widths: 50 10 25
 
    * - Description
      - Status
