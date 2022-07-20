@@ -247,7 +247,7 @@ name in your environment) and destructor (``_sub_D_00100_1``) is used to
 register and dump the gcov information, respectively.  We also see undefined
 references to ``__gcov_init`` and ``__gcov_exit`` :
 
-.. code-block::
+.. code-block:: shell-session
 
   $ gcc --coverage -c app.c
   $ nm app.o
