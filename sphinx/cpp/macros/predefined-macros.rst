@@ -664,18 +664,30 @@ macro expanding to the appropriate punctuator.
 
 These are the named operators and their corresponding punctuators:
 
-==============  ==========
-Named Operator  Punctuator
-``and``         ``&&``
-``and_eq``      ``&=``
-``bitand``      ``&``
-``bitor``       ``|``
-``compl``       ``~``
-``not``         ``!``
-``not_eq``      ``!=``
-``or``          ``||``
-``or_eq``       ``|=``
-``xor``         ``^``
-``xor_eq``      ``^=``
-==============  ==========
+.. list-table::
+
+   * - Named Operator
+     - Punctuator
+   * - ``and``
+     - ``&&``
+   * - ``and_eq``
+     - ``&=``
+   * - ``bitand``
+     - ``&``
+   * - ``bitor``
+     - ``|``
+   * - ``compl``
+     - ``~``
+   * - ``not``
+     - ``!``
+   * - ``not_eq``
+     - ``!=``
+   * - ``or``
+     - ``||``
+   * - ``or_eq``
+     - ``|=``
+   * - ``xor``
+     - ``^``
+   * - ``xor_eq``
+     - ``^=``
 

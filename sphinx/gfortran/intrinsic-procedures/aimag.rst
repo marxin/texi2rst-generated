@@ -57,12 +57,29 @@ AIMAG --- Imaginary part of complex number
       end program test_aimag
 
   :samp:`{Specific names}:`
-    ===============  ================  ===========  ====================
-    Name             Argument          Return type  Standard
-    ===============  ================  ===========  ====================
-    ``AIMAG(Z)``     ``COMPLEX Z``     ``REAL``     Fortran 77 and later
-    ``DIMAG(Z)``     ``COMPLEX(8) Z``  ``REAL(8)``  GNU extension
-    ``IMAG(Z)``      ``COMPLEX Z``     ``REAL``     GNU extension
-    ``IMAGPART(Z)``  ``COMPLEX Z``     ``REAL``     GNU extension
-    ===============  ================  ===========  ====================
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``AIMAG(Z)``
+         - ``COMPLEX Z``
+         - ``REAL``
+         - Fortran 77 and later
+       * - ``DIMAG(Z)``
+         - ``COMPLEX(8) Z``
+         - ``REAL(8)``
+         - GNU extension
+       * - ``IMAG(Z)``
+         - ``COMPLEX Z``
+         - ``REAL``
+         - GNU extension
+       * - ``IMAGPART(Z)``
+         - ``COMPLEX Z``
+         - ``REAL``
+         - GNU extension
 

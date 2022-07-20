@@ -14,15 +14,17 @@ omp_get_wtick -- Get timer precision
 
 :samp:`{C/C++}:`
 
-  ============  ===============================
-  *Prototype*:  ``double omp_get_wtick(void);``
-  ============  ===============================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``double omp_get_wtick(void);``
 
 :samp:`{Fortran}:`
 
-  ============  =============================================
-  *Interface*:  ``double precision function omp_get_wtick()``
-  ============  =============================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``double precision function omp_get_wtick()``
 
 :samp:`{See also}:`
   :ref:`omp_get_wtime`

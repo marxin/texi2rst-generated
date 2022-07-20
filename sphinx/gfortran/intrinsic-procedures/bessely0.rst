@@ -50,9 +50,17 @@ BESSEL_Y0 --- Bessel function of the second kind of order 0
       end program test_besy0
 
   :samp:`{Specific names}:`
-    =============  =============  ===========  =============
-    Name           Argument       Return type  Standard
-    =============  =============  ===========  =============
-    ``DBESY0(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
-    =============  =============  ===========  =============
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``DBESY0(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - GNU extension
 

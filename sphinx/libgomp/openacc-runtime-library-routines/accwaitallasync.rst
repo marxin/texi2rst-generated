@@ -15,16 +15,19 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  ==================================
-  *Prototype*:  ``acc_wait_all_async(int async);``
-  ============  ==================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``acc_wait_all_async(int async);``
 
 :samp:`{Fortran}:`
 
-  ============  ========================================
-  *Interface*:  ``subroutine acc_wait_all_async(async)``
-                ``integer(acc_handle_kind) async``
-  ============  ========================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine acc_wait_all_async(async)``
+     * -
+       - ``integer(acc_handle_kind) async``
 
 :samp:`{Reference}:`
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section

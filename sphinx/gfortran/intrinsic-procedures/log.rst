@@ -65,13 +65,33 @@ LOG --- Natural logarithm function
       end program test_log
 
   :samp:`{Specific names}:`
-    ============  ================  ==============  ===================
-    Name          Argument          Return type     Standard
-    ============  ================  ==============  ===================
-    ``ALOG(X)``   ``REAL(4) X``     ``REAL(4)``     Fortran 77 or later
-    ``DLOG(X)``   ``REAL(8) X``     ``REAL(8)``     Fortran 77 or later
-    ``CLOG(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  Fortran 77 or later
-    ``ZLOG(X)``   ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-    ``CDLOG(X)``  ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-    ============  ================  ==============  ===================
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``ALOG(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - Fortran 77 or later
+       * - ``DLOG(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - Fortran 77 or later
+       * - ``CLOG(X)``
+         - ``COMPLEX(4) X``
+         - ``COMPLEX(4)``
+         - Fortran 77 or later
+       * - ``ZLOG(X)``
+         - ``COMPLEX(8) X``
+         - ``COMPLEX(8)``
+         - GNU extension
+       * - ``CDLOG(X)``
+         - ``COMPLEX(8) X``
+         - ``COMPLEX(8)``
+         - GNU extension
 

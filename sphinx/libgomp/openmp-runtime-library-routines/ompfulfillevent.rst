@@ -20,16 +20,19 @@ omp_fulfill_event -- Fulfill and destroy an OpenMP event
 
 :samp:`{C/C++}:`
 
-  ============  =====================================================
-  *Prototype*:  ``void omp_fulfill_event(omp_event_handle_t event);``
-  ============  =====================================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void omp_fulfill_event(omp_event_handle_t event);``
 
 :samp:`{Fortran}:`
 
-  ============  =================================================
-  *Interface*:  ``subroutine omp_fulfill_event(event)``
-                ``integer (kind=omp_event_handle_kind) :: event``
-  ============  =================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine omp_fulfill_event(event)``
+     * -
+       - ``integer (kind=omp_event_handle_kind) :: event``
 
 :samp:`{Reference}:`
   `OpenMP specification v5.0 <https://www.openmp.org>`_, Section 3.5.1.

@@ -45,9 +45,17 @@ ERF --- Error function
       end program test_erf
 
   :samp:`{Specific names}:`
-    ===========  =============  ===========  =============
-    Name         Argument       Return type  Standard
-    ===========  =============  ===========  =============
-    ``DERF(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
-    ===========  =============  ===========  =============
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``DERF(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - GNU extension
 

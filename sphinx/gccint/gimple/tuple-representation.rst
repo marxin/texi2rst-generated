@@ -27,24 +27,40 @@ moved into the base structure to take advantage of holes left by
 other fields (thus making the structure more compact).  The
 structure takes 4 words (32 bytes) on 64 bit hosts:
 
-=======================  ===========
-Field                    Size (bits)
-``code``                 8
-``subcode``              16
-``no_warning``           1
-``visited``              1
-``nontemporal_move``     1
-``plf``                  2
-``modified``             1
-``has_volatile_ops``     1
-``references_memory_p``  1
-``uid``                  32
-``location``             32
-``num_ops``              32
-``bb``                   64
-``block``                63
-Total size               32 bytes
-=======================  ===========
+.. list-table::
+
+   * - Field
+     - Size (bits)
+   * - ``code``
+     - 8
+   * - ``subcode``
+     - 16
+   * - ``no_warning``
+     - 1
+   * - ``visited``
+     - 1
+   * - ``nontemporal_move``
+     - 1
+   * - ``plf``
+     - 2
+   * - ``modified``
+     - 1
+   * - ``has_volatile_ops``
+     - 1
+   * - ``references_memory_p``
+     - 1
+   * - ``uid``
+     - 32
+   * - ``location``
+     - 32
+   * - ``num_ops``
+     - 32
+   * - ``bb``
+     - 64
+   * - ``block``
+     - 63
+   * - Total size
+     - 32 bytes
 
 * ``code``
   Main identifier for a GIMPLE instruction.
@@ -137,13 +153,18 @@ with the ``gimple_statement_with_memory_ops`` tuple. So, these
 common fields are placed in ``gimple_statement_with_ops_base`` which
 is then inherited from the other two tuples.
 
-===========  ===========================
-``gsbase``   256
-``def_ops``  64
-``use_ops``  64
-``op``       ``num_ops`` \* 64
-Total size   48 + 8 \* ``num_ops`` bytes
-===========  ===========================
+.. list-table::
+
+   * - ``gsbase``
+     - 256
+   * - ``def_ops``
+     - 64
+   * - ``use_ops``
+     - 64
+   * - ``op``
+     - ``num_ops`` \* 64
+   * - Total size
+     - 48 + 8 \* ``num_ops`` bytes
 
 * ``gsbase``
   Inherited from ``struct gimple``.
@@ -171,18 +192,28 @@ the structure is split in two to accommodate for the operand
 vector (``gimple_statement_with_memory_ops_base`` and
 ``gimple_statement_with_memory_ops``).
 
-============  ===========================
-Field         Size (bits)
-``gsbase``    256
-``def_ops``   64
-``use_ops``   64
-``vdef_ops``  64
-``vuse_ops``  64
-``stores``    64
-``loads``     64
-``op``        ``num_ops`` \* 64
-Total size    80 + 8 \* ``num_ops`` bytes
-============  ===========================
+.. list-table::
+
+   * - Field
+     - Size (bits)
+   * - ``gsbase``
+     - 256
+   * - ``def_ops``
+     - 64
+   * - ``use_ops``
+     - 64
+   * - ``vdef_ops``
+     - 64
+   * - ``vuse_ops``
+     - 64
+   * - ``stores``
+     - 64
+   * - ``loads``
+     - 64
+   * - ``op``
+     - ``num_ops`` \* 64
+   * - Total size
+     - 80 + 8 \* ``num_ops`` bytes
 
 * ``vdef_ops``
   Similar to ``def_ops`` but for ``VDEF`` operators. There is

@@ -31,23 +31,33 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  ================================================================================================================
-  *Prototype*:  ``size_t acc_get_property(int devicenum, acc_device_t devicetype, acc_device_property_t property);``
-  *Prototype*:  ``const char *acc_get_property_string(int devicenum, acc_device_t devicetype, acc_device_property_t property);``
-  ============  ================================================================================================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``size_t acc_get_property(int devicenum, acc_device_t devicetype, acc_device_property_t property);``
+     * - *Prototype*:
+       - ``const char *acc_get_property_string(int devicenum, acc_device_t devicetype, acc_device_property_t property);``
 
 :samp:`{Fortran}:`
 
-  ============  ===============================================================================
-  *Interface*:  ``function acc_get_property(devicenum, devicetype, property)``
-  *Interface*:  ``subroutine acc_get_property_string(devicenum, devicetype, property, string)``
-                ``use ISO_C_Binding, only: c_size_t``
-                ``integer devicenum``
-                ``integer(kind=acc_device_kind) devicetype``
-                ``integer(kind=acc_device_property_kind) property``
-                ``integer(kind=c_size_t) acc_get_property``
-                ``character(*) string``
-  ============  ===============================================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``function acc_get_property(devicenum, devicetype, property)``
+     * - *Interface*:
+       - ``subroutine acc_get_property_string(devicenum, devicetype, property, string)``
+     * -
+       - ``use ISO_C_Binding, only: c_size_t``
+     * -
+       - ``integer devicenum``
+     * -
+       - ``integer(kind=acc_device_kind) devicetype``
+     * -
+       - ``integer(kind=acc_device_property_kind) property``
+     * -
+       - ``integer(kind=c_size_t) acc_get_property``
+     * -
+       - ``character(*) string``
 
 :samp:`{Reference}:`
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section

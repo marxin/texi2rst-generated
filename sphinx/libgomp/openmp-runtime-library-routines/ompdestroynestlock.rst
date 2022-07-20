@@ -14,16 +14,19 @@ omp_destroy_nest_lock -- Destroy nested lock
 
 :samp:`{C/C++}:`
 
-  ============  ==================================================
-  *Prototype*:  ``void omp_destroy_nest_lock(omp_nest_lock_t *);``
-  ============  ==================================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void omp_destroy_nest_lock(omp_nest_lock_t *);``
 
 :samp:`{Fortran}:`
 
-  ============  ======================================================
-  *Interface*:  ``subroutine omp_destroy_nest_lock(nvar)``
-                ``integer(omp_nest_lock_kind), intent(inout) :: nvar``
-  ============  ======================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine omp_destroy_nest_lock(nvar)``
+     * -
+       - ``integer(omp_nest_lock_kind), intent(inout) :: nvar``
 
 :samp:`{See also}:`
   :ref:`omp_init_lock`

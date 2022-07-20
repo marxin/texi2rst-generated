@@ -14,15 +14,17 @@ omp_get_max_teams -- Maximum number of teams of teams region
 
 :samp:`{C/C++}:`
 
-  ============  ================================
-  *Prototype*:  ``int omp_get_max_teams(void);``
-  ============  ================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_get_max_teams(void);``
 
 :samp:`{Fortran}:`
 
-  ============  ========================================
-  *Interface*:  ``integer function omp_get_max_teams()``
-  ============  ========================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``integer function omp_get_max_teams()``
 
 :samp:`{See also}:`
   :ref:`omp_set_num_teams`, :ref:`omp_get_num_teams`

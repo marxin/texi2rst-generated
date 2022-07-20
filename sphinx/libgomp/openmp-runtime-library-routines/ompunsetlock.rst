@@ -17,16 +17,19 @@ omp_unset_lock -- Unset simple lock
 
 :samp:`{C/C++}:`
 
-  ============  ==========================================
-  *Prototype*:  ``void omp_unset_lock(omp_lock_t *lock);``
-  ============  ==========================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void omp_unset_lock(omp_lock_t *lock);``
 
 :samp:`{Fortran}:`
 
-  ============  =================================================
-  *Interface*:  ``subroutine omp_unset_lock(svar)``
-                ``integer(omp_lock_kind), intent(inout) :: svar``
-  ============  =================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine omp_unset_lock(svar)``
+     * -
+       - ``integer(omp_lock_kind), intent(inout) :: svar``
 
 :samp:`{See also}:`
   :ref:`omp_set_lock`, :ref:`omp_test_lock`

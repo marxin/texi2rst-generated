@@ -55,12 +55,23 @@ NINT --- Nearest whole number
       end program test_nint
 
   :samp:`{Specific names}:`
-    =============  =============  ===========  ====================
-    Name           Argument       Return Type  Standard
-    =============  =============  ===========  ====================
-    ``NINT(A)``    ``REAL(4) A``  ``INTEGER``  Fortran 77 and later
-    ``IDNINT(A)``  ``REAL(8) A``  ``INTEGER``  Fortran 77 and later
-    =============  =============  ===========  ====================
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return Type
+         - Standard
+
+       * - ``NINT(A)``
+         - ``REAL(4) A``
+         - ``INTEGER``
+         - Fortran 77 and later
+       * - ``IDNINT(A)``
+         - ``REAL(8) A``
+         - ``INTEGER``
+         - Fortran 77 and later
 
   :samp:`{See also}:`
     :ref:`CEILING`, 

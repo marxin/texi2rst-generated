@@ -15,16 +15,19 @@ omp_set_num_teams -- Set upper teams limit for teams construct
 
 :samp:`{C/C++}:`
 
-  ============  ==========================================
-  *Prototype*:  ``void omp_set_num_teams(int num_teams);``
-  ============  ==========================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void omp_set_num_teams(int num_teams);``
 
 :samp:`{Fortran}:`
 
-  ============  ===========================================
-  *Interface*:  ``subroutine omp_set_num_teams(num_teams)``
-                ``integer, intent(in) :: num_teams``
-  ============  ===========================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine omp_set_num_teams(num_teams)``
+     * -
+       - ``integer, intent(in) :: num_teams``
 
 :samp:`{See also}:`
   :ref:`OMP_NUM_TEAMS`, :ref:`omp_get_num_teams`, :ref:`omp_get_max_teams`

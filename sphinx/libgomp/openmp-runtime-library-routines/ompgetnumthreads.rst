@@ -21,15 +21,17 @@ omp_get_num_threads -- Size of the active team
 
 :samp:`{C/C++}:`
 
-  ============  ==================================
-  *Prototype*:  ``int omp_get_num_threads(void);``
-  ============  ==================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_get_num_threads(void);``
 
 :samp:`{Fortran}:`
 
-  ============  ==========================================
-  *Interface*:  ``integer function omp_get_num_threads()``
-  ============  ==========================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``integer function omp_get_num_threads()``
 
 :samp:`{See also}:`
   :ref:`omp_get_max_threads`, :ref:`omp_set_num_threads`, :ref:`OMP_NUM_THREADS`

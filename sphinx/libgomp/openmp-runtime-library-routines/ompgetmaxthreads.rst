@@ -14,15 +14,17 @@ omp_get_max_threads -- Maximum number of threads of parallel region
 
 :samp:`{C/C++}:`
 
-  ============  ==================================
-  *Prototype*:  ``int omp_get_max_threads(void);``
-  ============  ==================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_get_max_threads(void);``
 
 :samp:`{Fortran}:`
 
-  ============  ==========================================
-  *Interface*:  ``integer function omp_get_max_threads()``
-  ============  ==========================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``integer function omp_get_max_threads()``
 
 :samp:`{See also}:`
   :ref:`omp_set_num_threads`, :ref:`omp_set_dynamic`, :ref:`omp_get_thread_limit`

@@ -14,16 +14,19 @@ omp_destroy_lock -- Destroy simple lock
 
 :samp:`{C/C++}:`
 
-  ============  ============================================
-  *Prototype*:  ``void omp_destroy_lock(omp_lock_t *lock);``
-  ============  ============================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void omp_destroy_lock(omp_lock_t *lock);``
 
 :samp:`{Fortran}:`
 
-  ============  =================================================
-  *Interface*:  ``subroutine omp_destroy_lock(svar)``
-                ``integer(omp_lock_kind), intent(inout) :: svar``
-  ============  =================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine omp_destroy_lock(svar)``
+     * -
+       - ``integer(omp_lock_kind), intent(inout) :: svar``
 
 :samp:`{See also}:`
   :ref:`omp_init_lock`
