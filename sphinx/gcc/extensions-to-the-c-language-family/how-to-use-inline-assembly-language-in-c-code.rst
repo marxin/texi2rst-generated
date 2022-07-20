@@ -1326,6 +1326,7 @@ The table below shows the list of supported modifiers and their effects.
 
 .. list-table::
    :header-rows: 1
+   :widths: 10 50 10 10 10
 
    * - Modifier
      - Description
@@ -1579,6 +1580,7 @@ The list below describes the supported modifiers and their effects for MSP430.
 
 .. list-table::
    :header-rows: 1
+   :widths: 10 90
 
    * - Modifier
      - Description
