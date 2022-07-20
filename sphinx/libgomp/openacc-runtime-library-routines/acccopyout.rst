@@ -18,41 +18,69 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  =================================================================
-  *Prototype*:  ``acc_copyout(h_void *a, size_t len);``
-  *Prototype*:  ``acc_copyout_async(h_void *a, size_t len, int async);``
-  *Prototype*:  ``acc_copyout_finalize(h_void *a, size_t len);``
-  *Prototype*:  ``acc_copyout_finalize_async(h_void *a, size_t len, int async);``
-  ============  =================================================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``acc_copyout(h_void *a, size_t len);``
+     * - *Prototype*:
+       - ``acc_copyout_async(h_void *a, size_t len, int async);``
+     * - *Prototype*:
+       - ``acc_copyout_finalize(h_void *a, size_t len);``
+     * - *Prototype*:
+       - ``acc_copyout_finalize_async(h_void *a, size_t len, int async);``
 
 :samp:`{Fortran}:`
 
-  ============  ========================================================
-  *Interface*:  ``subroutine acc_copyout(a)``
-                ``type, dimension(:[,:]...) :: a``
-  *Interface*:  ``subroutine acc_copyout(a, len)``
-                ``type, dimension(:[,:]...) :: a``
-                ``integer len``
-  *Interface*:  ``subroutine acc_copyout_async(a, async)``
-                ``type, dimension(:[,:]...) :: a``
-                ``integer(acc_handle_kind) :: async``
-  *Interface*:  ``subroutine acc_copyout_async(a, len, async)``
-                ``type, dimension(:[,:]...) :: a``
-                ``integer len``
-                ``integer(acc_handle_kind) :: async``
-  *Interface*:  ``subroutine acc_copyout_finalize(a)``
-                ``type, dimension(:[,:]...) :: a``
-  *Interface*:  ``subroutine acc_copyout_finalize(a, len)``
-                ``type, dimension(:[,:]...) :: a``
-                ``integer len``
-  *Interface*:  ``subroutine acc_copyout_finalize_async(a, async)``
-                ``type, dimension(:[,:]...) :: a``
-                ``integer(acc_handle_kind) :: async``
-  *Interface*:  ``subroutine acc_copyout_finalize_async(a, len, async)``
-                ``type, dimension(:[,:]...) :: a``
-                ``integer len``
-                ``integer(acc_handle_kind) :: async``
-  ============  ========================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine acc_copyout(a)``
+     * -
+       - ``type, dimension(:[,:]...) :: a``
+     * - *Interface*:
+       - ``subroutine acc_copyout(a, len)``
+     * -
+       - ``type, dimension(:[,:]...) :: a``
+     * -
+       - ``integer len``
+     * - *Interface*:
+       - ``subroutine acc_copyout_async(a, async)``
+     * -
+       - ``type, dimension(:[,:]...) :: a``
+     * -
+       - ``integer(acc_handle_kind) :: async``
+     * - *Interface*:
+       - ``subroutine acc_copyout_async(a, len, async)``
+     * -
+       - ``type, dimension(:[,:]...) :: a``
+     * -
+       - ``integer len``
+     * -
+       - ``integer(acc_handle_kind) :: async``
+     * - *Interface*:
+       - ``subroutine acc_copyout_finalize(a)``
+     * -
+       - ``type, dimension(:[,:]...) :: a``
+     * - *Interface*:
+       - ``subroutine acc_copyout_finalize(a, len)``
+     * -
+       - ``type, dimension(:[,:]...) :: a``
+     * -
+       - ``integer len``
+     * - *Interface*:
+       - ``subroutine acc_copyout_finalize_async(a, async)``
+     * -
+       - ``type, dimension(:[,:]...) :: a``
+     * -
+       - ``integer(acc_handle_kind) :: async``
+     * - *Interface*:
+       - ``subroutine acc_copyout_finalize_async(a, len, async)``
+     * -
+       - ``type, dimension(:[,:]...) :: a``
+     * -
+       - ``integer len``
+     * -
+       - ``integer(acc_handle_kind) :: async``
 
 :samp:`{Reference}:`
 

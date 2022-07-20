@@ -5,12 +5,24 @@
 
 .. _ieor:
 
+.. index:: IEOR
+
+.. index:: BIEOR
+
+.. index:: IIEOR
+
+.. index:: JIEOR
+
+.. index:: KIEOR
+
+.. index:: bitwise logical exclusive or
+
+.. index:: logical exclusive or, bitwise
+
 IEOR --- Bitwise logical exclusive or
 *************************************
 
-.. index:: IEOR, BIEOR, IIEOR, JIEOR, KIEOR, bitwise logical exclusive or, logical exclusive or, bitwise
-
-.. function:: IEOR(I, J)
+.. function:: IEOR
 
   ``IEOR`` returns the bitwise Boolean exclusive-OR of :samp:`{I}` and
   :samp:`{J}`.
@@ -30,11 +42,9 @@ IEOR --- Bitwise logical exclusive or
     type parameter of the other argument as-if a call to :ref:`INT` occurred.
 
   :samp:`{Standard}:`
-
     Fortran 90 and later, with boz-literal-constant Fortran 2008 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -45,21 +55,40 @@ IEOR --- Bitwise logical exclusive or
 
   :samp:`{Specific names}:`
 
-    ============  ================  ==============  ====================
-    Name          Argument          Return type     Standard
-    ============  ================  ==============  ====================
-    ``IEOR(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later
-    ``BIEOR(A)``  ``INTEGER(1) A``  ``INTEGER(1)``  GNU extension
-    ``IIEOR(A)``  ``INTEGER(2) A``  ``INTEGER(2)``  GNU extension
-    ``JIEOR(A)``  ``INTEGER(4) A``  ``INTEGER(4)``  GNU extension
-    ``KIEOR(A)``  ``INTEGER(8) A``  ``INTEGER(8)``  GNU extension
-    ============  ================  ==============  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``IEOR(A)``
+         - ``INTEGER A``
+         - ``INTEGER``
+         - Fortran 90 and later
+       * - ``BIEOR(A)``
+         - ``INTEGER(1) A``
+         - ``INTEGER(1)``
+         - GNU extension
+       * - ``IIEOR(A)``
+         - ``INTEGER(2) A``
+         - ``INTEGER(2)``
+         - GNU extension
+       * - ``JIEOR(A)``
+         - ``INTEGER(4) A``
+         - ``INTEGER(4)``
+         - GNU extension
+       * - ``KIEOR(A)``
+         - ``INTEGER(8) A``
+         - ``INTEGER(8)``
+         - GNU extension
 
   :samp:`{See also}:`
-
     :ref:`IOR`, 
     :ref:`IAND`, 
     :ref:`IBITS`, 
     :ref:`IBSET`, 
     :ref:`IBCLR`, 
     :ref:`NOT`
+

@@ -3,9 +3,15 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: BESSEL_Y1, BESY1, DBESY1, Bessel function, second kind
-
 .. _bessel_y1:
+
+.. index:: BESSEL_Y1
+
+.. index:: BESY1
+
+.. index:: DBESY1
+
+.. index:: Bessel function, second kind
 
 BESSEL_Y1 --- Bessel function of the second kind of order 1
 ***********************************************************
@@ -23,11 +29,9 @@ BESSEL_Y1 --- Bessel function of the second kind of order 1
     The return value is of type ``REAL``. It has the same kind as :samp:`{X}`.
 
   :samp:`{Standard}:`
-
     Fortran 2008 and later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -47,8 +51,16 @@ BESSEL_Y1 --- Bessel function of the second kind of order 1
 
   :samp:`{Specific names}:`
 
-    =============  =============  ===========  =============
-    Name           Argument       Return type  Standard
-    =============  =============  ===========  =============
-    ``DBESY1(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
-    =============  =============  ===========  =============
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``DBESY1(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - GNU extension
+

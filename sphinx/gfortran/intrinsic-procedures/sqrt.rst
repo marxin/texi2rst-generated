@@ -3,9 +3,21 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: SQRT, DSQRT, CSQRT, ZSQRT, CDSQRT, root, square-root
-
 .. _sqrt:
+
+.. index:: SQRT
+
+.. index:: DSQRT
+
+.. index:: CSQRT
+
+.. index:: ZSQRT
+
+.. index:: CDSQRT
+
+.. index:: root
+
+.. index:: square-root
 
 SQRT --- Square-root function
 *****************************
@@ -23,11 +35,9 @@ SQRT --- Square-root function
     The kind type parameter is the same as :samp:`{X}`.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -49,12 +59,32 @@ SQRT --- Square-root function
 
   :samp:`{Specific names}:`
 
-    =============  ================  ==============  ====================
-    Name           Argument          Return type     Standard
-    =============  ================  ==============  ====================
-    ``SQRT(X)``    ``REAL(4) X``     ``REAL(4)``     Fortran 77 and later
-    ``DSQRT(X)``   ``REAL(8) X``     ``REAL(8)``     Fortran 77 and later
-    ``CSQRT(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  Fortran 77 and later
-    ``ZSQRT(X)``   ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-    ``CDSQRT(X)``  ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-    =============  ================  ==============  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``SQRT(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DSQRT(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - Fortran 77 and later
+       * - ``CSQRT(X)``
+         - ``COMPLEX(4) X``
+         - ``COMPLEX(4)``
+         - Fortran 77 and later
+       * - ``ZSQRT(X)``
+         - ``COMPLEX(8) X``
+         - ``COMPLEX(8)``
+         - GNU extension
+       * - ``CDSQRT(X)``
+         - ``COMPLEX(8) X``
+         - ``COMPLEX(8)``
+         - GNU extension
+

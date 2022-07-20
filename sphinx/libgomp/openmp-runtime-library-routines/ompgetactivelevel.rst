@@ -15,15 +15,17 @@ omp_get_active_level -- Number of parallel regions
 
 :samp:`{C/C++}:`
 
-  ============  ===================================
-  *Prototype*:  ``int omp_get_active_level(void);``
-  ============  ===================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_get_active_level(void);``
 
 :samp:`{Fortran}:`
 
-  ============  ===========================================
-  *Interface*:  ``integer function omp_get_active_level()``
-  ============  ===========================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``integer function omp_get_active_level()``
 
 :samp:`{See also}:`
 

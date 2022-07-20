@@ -3,9 +3,21 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: EXP, DEXP, CEXP, ZEXP, CDEXP, exponential function, logarithm function, inverse
-
 .. _exp:
+
+.. index:: EXP
+
+.. index:: DEXP
+
+.. index:: CEXP
+
+.. index:: ZEXP
+
+.. index:: CDEXP
+
+.. index:: exponential function
+
+.. index:: logarithm function, inverse
 
 EXP --- Exponential function 
 *****************************
@@ -22,11 +34,9 @@ EXP --- Exponential function
     The return value has same type and kind as :samp:`{X}`.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -46,12 +56,32 @@ EXP --- Exponential function
 
   :samp:`{Specific names}:`
 
-    ============  ================  ==============  ====================
-    Name          Argument          Return type     Standard
-    ============  ================  ==============  ====================
-    ``EXP(X)``    ``REAL(4) X``     ``REAL(4)``     Fortran 77 and later
-    ``DEXP(X)``   ``REAL(8) X``     ``REAL(8)``     Fortran 77 and later
-    ``CEXP(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  Fortran 77 and later
-    ``ZEXP(X)``   ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-    ``CDEXP(X)``  ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-    ============  ================  ==============  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``EXP(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DEXP(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - Fortran 77 and later
+       * - ``CEXP(X)``
+         - ``COMPLEX(4) X``
+         - ``COMPLEX(4)``
+         - Fortran 77 and later
+       * - ``ZEXP(X)``
+         - ``COMPLEX(8) X``
+         - ``COMPLEX(8)``
+         - GNU extension
+       * - ``CDEXP(X)``
+         - ``COMPLEX(8) X``
+         - ``COMPLEX(8)``
+         - GNU extension
+

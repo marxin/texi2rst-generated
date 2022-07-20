@@ -3,9 +3,21 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: COS, DCOS, CCOS, ZCOS, CDCOS, trigonometric function, cosine, cosine
-
 .. _cos:
+
+.. index:: COS
+
+.. index:: DCOS
+
+.. index:: CCOS
+
+.. index:: ZCOS
+
+.. index:: CDCOS
+
+.. index:: trigonometric function, cosine
+
+.. index:: cosine
 
 COS --- Cosine function
 ***********************
@@ -24,11 +36,9 @@ COS --- Cosine function
     the return value lies in the range -1 \leq \cos (x) \leq 1.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -48,19 +58,38 @@ COS --- Cosine function
 
   :samp:`{Specific names}:`
 
-    ============  ================  ==============  ====================
-    Name          Argument          Return type     Standard
-    ============  ================  ==============  ====================
-    ``COS(X)``    ``REAL(4) X``     ``REAL(4)``     Fortran 77 and later
-    ``DCOS(X)``   ``REAL(8) X``     ``REAL(8)``     Fortran 77 and later
-    ``CCOS(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  Fortran 77 and later
-    ``ZCOS(X)``   ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-    ``CDCOS(X)``  ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-    ============  ================  ==============  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``COS(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DCOS(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - Fortran 77 and later
+       * - ``CCOS(X)``
+         - ``COMPLEX(4) X``
+         - ``COMPLEX(4)``
+         - Fortran 77 and later
+       * - ``ZCOS(X)``
+         - ``COMPLEX(8) X``
+         - ``COMPLEX(8)``
+         - GNU extension
+       * - ``CDCOS(X)``
+         - ``COMPLEX(8) X``
+         - ``COMPLEX(8)``
+         - GNU extension
 
   :samp:`{See also}:`
-
     Inverse function: 
     :ref:`ACOS` 
     Degrees function: 
     :ref:`COSD`
+

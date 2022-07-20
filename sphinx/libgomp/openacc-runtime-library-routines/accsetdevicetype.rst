@@ -14,16 +14,19 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  =================================================
-  *Prototype*:  ``acc_set_device_type(acc_device_t devicetype);``
-  ============  =================================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``acc_set_device_type(acc_device_t devicetype);``
 
 :samp:`{Fortran}:`
 
-  ============  ==============================================
-  *Interface*:  ``subroutine acc_set_device_type(devicetype)``
-                ``integer(kind=acc_device_kind) devicetype``
-  ============  ==============================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine acc_set_device_type(devicetype)``
+     * -
+       - ``integer(kind=acc_device_kind) devicetype``
 
 :samp:`{Reference}:`
 

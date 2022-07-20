@@ -19,9 +19,10 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  =====================================================
-  *Prototype*:  ``int acc_set_cuda_stream(int async, void *stream);``
-  ============  =====================================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int acc_set_cuda_stream(int async, void *stream);``
 
 :samp:`{Reference}:`
 

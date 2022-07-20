@@ -15,15 +15,17 @@ omp_get_level -- Obtain the current nesting level
 
 :samp:`{C/C++}:`
 
-  ============  ============================
-  *Prototype*:  ``int omp_get_level(void);``
-  ============  ============================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_get_level(void);``
 
 :samp:`{Fortran}:`
 
-  ============  ================================
-  *Interface*:  ``integer function omp_level()``
-  ============  ================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``integer function omp_level()``
 
 :samp:`{See also}:`
 

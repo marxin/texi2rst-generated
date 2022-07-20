@@ -5,12 +5,22 @@
 
 .. _ishft:
 
+.. index:: ISHFT
+
+.. index:: BSHFT
+
+.. index:: IISHFT
+
+.. index:: JISHFT
+
+.. index:: KISHFT
+
+.. index:: bits, shift
+
 ISHFT --- Shift bits
 ********************
 
-.. index:: ISHFT, BSHFT, IISHFT, JISHFT, KISHFT, bits, shift
-
-.. function:: ISHFT(I, SHIFT)
+.. function:: ISHFT
 
   ``ISHFT`` returns a value corresponding to :samp:`{I}` with all of the
   bits shifted :samp:`{SHIFT}` places.  A value of :samp:`{SHIFT}` greater than
@@ -31,11 +41,9 @@ ISHFT --- Shift bits
     :samp:`{I}`.
 
   :samp:`{Standard}:`
-
     Fortran 90 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -46,16 +54,35 @@ ISHFT --- Shift bits
 
   :samp:`{Specific names}:`
 
-    =============  ================  ==============  ====================
-    Name           Argument          Return type     Standard
-    =============  ================  ==============  ====================
-    ``ISHFT(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later
-    ``BSHFT(A)``   ``INTEGER(1) A``  ``INTEGER(1)``  GNU extension
-    ``IISHFT(A)``  ``INTEGER(2) A``  ``INTEGER(2)``  GNU extension
-    ``JISHFT(A)``  ``INTEGER(4) A``  ``INTEGER(4)``  GNU extension
-    ``KISHFT(A)``  ``INTEGER(8) A``  ``INTEGER(8)``  GNU extension
-    =============  ================  ==============  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``ISHFT(A)``
+         - ``INTEGER A``
+         - ``INTEGER``
+         - Fortran 90 and later
+       * - ``BSHFT(A)``
+         - ``INTEGER(1) A``
+         - ``INTEGER(1)``
+         - GNU extension
+       * - ``IISHFT(A)``
+         - ``INTEGER(2) A``
+         - ``INTEGER(2)``
+         - GNU extension
+       * - ``JISHFT(A)``
+         - ``INTEGER(4) A``
+         - ``INTEGER(4)``
+         - GNU extension
+       * - ``KISHFT(A)``
+         - ``INTEGER(8) A``
+         - ``INTEGER(8)``
+         - GNU extension
 
   :samp:`{See also}:`
-
     :ref:`ISHFTC`
+

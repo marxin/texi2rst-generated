@@ -19,27 +19,41 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  ====================================================
-  *Prototype*:  ``acc_update_device(h_void *a, size_t len);``
-  *Prototype*:  ``acc_update_device(h_void *a, size_t len, async);``
-  ============  ====================================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``acc_update_device(h_void *a, size_t len);``
+     * - *Prototype*:
+       - ``acc_update_device(h_void *a, size_t len, async);``
 
 :samp:`{Fortran}:`
 
-  ============  =====================================================
-  *Interface*:  ``subroutine acc_update_device(a)``
-                ``type, dimension(:[,:]...) :: a``
-  *Interface*:  ``subroutine acc_update_device(a, len)``
-                ``type, dimension(:[,:]...) :: a``
-                ``integer len``
-  *Interface*:  ``subroutine acc_update_device_async(a, async)``
-                ``type, dimension(:[,:]...) :: a``
-                ``integer(acc_handle_kind) :: async``
-  *Interface*:  ``subroutine acc_update_device_async(a, len, async)``
-                ``type, dimension(:[,:]...) :: a``
-                ``integer len``
-                ``integer(acc_handle_kind) :: async``
-  ============  =====================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine acc_update_device(a)``
+     * -
+       - ``type, dimension(:[,:]...) :: a``
+     * - *Interface*:
+       - ``subroutine acc_update_device(a, len)``
+     * -
+       - ``type, dimension(:[,:]...) :: a``
+     * -
+       - ``integer len``
+     * - *Interface*:
+       - ``subroutine acc_update_device_async(a, async)``
+     * -
+       - ``type, dimension(:[,:]...) :: a``
+     * -
+       - ``integer(acc_handle_kind) :: async``
+     * - *Interface*:
+       - ``subroutine acc_update_device_async(a, len, async)``
+     * -
+       - ``type, dimension(:[,:]...) :: a``
+     * -
+       - ``integer len``
+     * -
+       - ``integer(acc_handle_kind) :: async``
 
 :samp:`{Reference}:`
 

@@ -16,15 +16,17 @@ omp_in_final -- Whether in final or included task region
 
 :samp:`{C/C++}:`
 
-  ============  ===========================
-  *Prototype*:  ``int omp_in_final(void);``
-  ============  ===========================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_in_final(void);``
 
 :samp:`{Fortran}:`
 
-  ============  ===================================
-  *Interface*:  ``logical function omp_in_final()``
-  ============  ===================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``logical function omp_in_final()``
 
 :samp:`{Reference}:`
 

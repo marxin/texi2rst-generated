@@ -3,9 +3,17 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: AIMAG, DIMAG, IMAG, IMAGPART, complex numbers, imaginary part
-
 .. _aimag:
+
+.. index:: AIMAG
+
+.. index:: DIMAG
+
+.. index:: IMAG
+
+.. index:: IMAGPART
+
+.. index:: complex numbers, imaginary part
 
 AIMAG --- Imaginary part of complex number  
 ********************************************
@@ -25,11 +33,9 @@ AIMAG --- Imaginary part of complex number
     kind type parameter of the argument.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -52,11 +58,28 @@ AIMAG --- Imaginary part of complex number
 
   :samp:`{Specific names}:`
 
-    ===============  ================  ===========  ====================
-    Name             Argument          Return type  Standard
-    ===============  ================  ===========  ====================
-    ``AIMAG(Z)``     ``COMPLEX Z``     ``REAL``     Fortran 77 and later
-    ``DIMAG(Z)``     ``COMPLEX(8) Z``  ``REAL(8)``  GNU extension
-    ``IMAG(Z)``      ``COMPLEX Z``     ``REAL``     GNU extension
-    ``IMAGPART(Z)``  ``COMPLEX Z``     ``REAL``     GNU extension
-    ===============  ================  ===========  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``AIMAG(Z)``
+         - ``COMPLEX Z``
+         - ``REAL``
+         - Fortran 77 and later
+       * - ``DIMAG(Z)``
+         - ``COMPLEX(8) Z``
+         - ``REAL(8)``
+         - GNU extension
+       * - ``IMAG(Z)``
+         - ``COMPLEX Z``
+         - ``REAL``
+         - GNU extension
+       * - ``IMAGPART(Z)``
+         - ``COMPLEX Z``
+         - ``REAL``
+         - GNU extension
+

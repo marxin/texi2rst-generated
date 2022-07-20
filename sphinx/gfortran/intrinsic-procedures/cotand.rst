@@ -3,9 +3,15 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: COTAND, DCOTAND, trigonometric function, cotangent, degrees, cotangent, degrees
-
 .. _cotand:
+
+.. index:: COTAND
+
+.. index:: DCOTAND
+
+.. index:: trigonometric function, cotangent, degrees
+
+.. index:: cotangent, degrees
 
 COTAND --- Cotangent function, degrees
 **************************************
@@ -22,14 +28,12 @@ COTAND --- Cotangent function, degrees
     The return value has same type and kind as :samp:`{X}`, and its value is in degrees.
 
   :samp:`{Standard}:`
-
     GNU extension, enabled with :option:`-fdec-math`.
 
     This function is for compatibility only and should be avoided in favor of
     standard constructs wherever possible.
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -49,16 +53,26 @@ COTAND --- Cotangent function, degrees
 
   :samp:`{Specific names}:`
 
-    ==============  =============  ===========  =============
-    Name            Argument       Return type  Standard
-    ==============  =============  ===========  =============
-    ``COTAND(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
-    ``DCOTAND(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
-    ==============  =============  ===========  =============
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``COTAND(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - GNU extension
+       * - ``DCOTAND(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - GNU extension
 
   :samp:`{See also}:`
-
     Converse function: 
     :ref:`TAND` 
     Radians function: 
     :ref:`COTAN`
+

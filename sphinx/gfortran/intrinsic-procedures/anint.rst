@@ -5,12 +5,18 @@
 
 .. _anint:
 
+.. index:: ANINT
+
+.. index:: DNINT
+
+.. index:: ceiling
+
+.. index:: rounding, ceiling
+
 ANINT --- Nearest whole number
 ******************************
 
-.. index:: ANINT, DNINT, ceiling, rounding, ceiling
-
-.. function:: ANINT(A, KIND)
+.. function:: ANINT(A [, KIND])
 
   ``ANINT(A [, KIND])`` rounds its argument to the nearest whole number.
 
@@ -29,11 +35,9 @@ ANINT --- Nearest whole number
     less than or equal to zero then it returns ``AINT(X-0.5)``.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -57,9 +61,20 @@ ANINT --- Nearest whole number
 
   :samp:`{Specific names}:`
 
-    ============  =============  ===========  ====================
-    Name          Argument       Return type  Standard
-    ============  =============  ===========  ====================
-    ``ANINT(A)``  ``REAL(4) A``  ``REAL(4)``  Fortran 77 and later
-    ``DNINT(A)``  ``REAL(8) A``  ``REAL(8)``  Fortran 77 and later
-    ============  =============  ===========  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``ANINT(A)``
+         - ``REAL(4) A``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DNINT(A)``
+         - ``REAL(8) A``
+         - ``REAL(8)``
+         - Fortran 77 and later
+

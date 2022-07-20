@@ -17,15 +17,17 @@ omp_get_cancellation -- Whether cancellation support is enabled
 
 :samp:`{C/C++}:`
 
-  ============  ===================================
-  *Prototype*:  ``int omp_get_cancellation(void);``
-  ============  ===================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_get_cancellation(void);``
 
 :samp:`{Fortran}:`
 
-  ============  ===========================================
-  *Interface*:  ``logical function omp_get_cancellation()``
-  ============  ===========================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``logical function omp_get_cancellation()``
 
 :samp:`{See also}:`
 

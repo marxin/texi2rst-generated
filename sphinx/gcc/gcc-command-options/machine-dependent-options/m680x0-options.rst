@@ -43,33 +43,58 @@ are given below.
   and :samp:`cpu32`.  The ColdFire :samp:`{cpu}` s are given by the table
   below, which also classifies the CPUs into families:
 
-  =============  ========================================================================================================================================================================
-  Family         :samp:`-mcpu` arguments
-  =============  ========================================================================================================================================================================
-  :samp:`51`     :samp:`51` :samp:`51ac` :samp:`51ag` :samp:`51cn` :samp:`51em` :samp:`51je` :samp:`51jf` :samp:`51jg` :samp:`51jm` :samp:`51mm` :samp:`51qe` :samp:`51qm`
-  :samp:`5206`   :samp:`5202` :samp:`5204` :samp:`5206`
-  :samp:`5206e`  :samp:`5206e`
-  :samp:`5208`   :samp:`5207` :samp:`5208`
-  :samp:`5211a`  :samp:`5210a` :samp:`5211a`
-  :samp:`5213`   :samp:`5211` :samp:`5212` :samp:`5213`
-  :samp:`5216`   :samp:`5214` :samp:`5216`
-  :samp:`52235`  :samp:`52230` :samp:`52231` :samp:`52232` :samp:`52233` :samp:`52234` :samp:`52235`
-  :samp:`5225`   :samp:`5224` :samp:`5225`
-  :samp:`52259`  :samp:`52252` :samp:`52254` :samp:`52255` :samp:`52256` :samp:`52258` :samp:`52259`
-  :samp:`5235`   :samp:`5232` :samp:`5233` :samp:`5234` :samp:`5235` :samp:`523x`
-  :samp:`5249`   :samp:`5249`
-  :samp:`5250`   :samp:`5250`
-  :samp:`5271`   :samp:`5270` :samp:`5271`
-  :samp:`5272`   :samp:`5272`
-  :samp:`5275`   :samp:`5274` :samp:`5275`
-  :samp:`5282`   :samp:`5280` :samp:`5281` :samp:`5282` :samp:`528x`
-  :samp:`53017`  :samp:`53011` :samp:`53012` :samp:`53013` :samp:`53014` :samp:`53015` :samp:`53016` :samp:`53017`
-  :samp:`5307`   :samp:`5307`
-  :samp:`5329`   :samp:`5327` :samp:`5328` :samp:`5329` :samp:`532x`
-  :samp:`5373`   :samp:`5372` :samp:`5373` :samp:`537x`
-  :samp:`5407`   :samp:`5407`
-  :samp:`5475`   :samp:`5470` :samp:`5471` :samp:`5472` :samp:`5473` :samp:`5474` :samp:`5475` :samp:`547x` :samp:`5480` :samp:`5481` :samp:`5482` :samp:`5483` :samp:`5484` :samp:`5485`
-  =============  ========================================================================================================================================================================
+  .. list-table::
+     :header-rows: 1
+
+     * - **Family**
+       - **:samp:`-mcpu` arguments**
+
+     * - :samp:`51`
+       - :samp:`51` :samp:`51ac` :samp:`51ag` :samp:`51cn` :samp:`51em` :samp:`51je` :samp:`51jf` :samp:`51jg` :samp:`51jm` :samp:`51mm` :samp:`51qe` :samp:`51qm`
+     * - :samp:`5206`
+       - :samp:`5202` :samp:`5204` :samp:`5206`
+     * - :samp:`5206e`
+       - :samp:`5206e`
+     * - :samp:`5208`
+       - :samp:`5207` :samp:`5208`
+     * - :samp:`5211a`
+       - :samp:`5210a` :samp:`5211a`
+     * - :samp:`5213`
+       - :samp:`5211` :samp:`5212` :samp:`5213`
+     * - :samp:`5216`
+       - :samp:`5214` :samp:`5216`
+     * - :samp:`52235`
+       - :samp:`52230` :samp:`52231` :samp:`52232` :samp:`52233` :samp:`52234` :samp:`52235`
+     * - :samp:`5225`
+       - :samp:`5224` :samp:`5225`
+     * - :samp:`52259`
+       - :samp:`52252` :samp:`52254` :samp:`52255` :samp:`52256` :samp:`52258` :samp:`52259`
+     * - :samp:`5235`
+       - :samp:`5232` :samp:`5233` :samp:`5234` :samp:`5235` :samp:`523x`
+     * - :samp:`5249`
+       - :samp:`5249`
+     * - :samp:`5250`
+       - :samp:`5250`
+     * - :samp:`5271`
+       - :samp:`5270` :samp:`5271`
+     * - :samp:`5272`
+       - :samp:`5272`
+     * - :samp:`5275`
+       - :samp:`5274` :samp:`5275`
+     * - :samp:`5282`
+       - :samp:`5280` :samp:`5281` :samp:`5282` :samp:`528x`
+     * - :samp:`53017`
+       - :samp:`53011` :samp:`53012` :samp:`53013` :samp:`53014` :samp:`53015` :samp:`53016` :samp:`53017`
+     * - :samp:`5307`
+       - :samp:`5307`
+     * - :samp:`5329`
+       - :samp:`5327` :samp:`5328` :samp:`5329` :samp:`532x`
+     * - :samp:`5373`
+       - :samp:`5372` :samp:`5373` :samp:`537x`
+     * - :samp:`5407`
+       - :samp:`5407`
+     * - :samp:`5475`
+       - :samp:`5470` :samp:`5471` :samp:`5472` :samp:`5473` :samp:`5474` :samp:`5475` :samp:`547x` :samp:`5480` :samp:`5481` :samp:`5482` :samp:`5483` :samp:`5484` :samp:`5485`
 
   :option:`-mcpu`:samp:`={cpu}` overrides :option:`-march`:samp:`={arch}` if
   :samp:`{arch}` is compatible with :samp:`{cpu}`.  Other combinations of

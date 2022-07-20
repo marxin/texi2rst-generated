@@ -5,12 +5,18 @@
 
 .. _aint:
 
+.. index:: AINT
+
+.. index:: DINT
+
+.. index:: floor
+
+.. index:: rounding, floor
+
 AINT --- Truncate to a whole number
 ***********************************
 
-.. index:: AINT, DINT, floor, rounding, floor
-
-.. function:: AINT(A, KIND)
+.. function:: AINT(A [, KIND])
 
   ``AINT(A [, KIND])`` truncates its argument to a whole number.
 
@@ -31,11 +37,9 @@ AINT --- Truncate to a whole number
     as the sign of :samp:`{X}`. 
 
   :samp:`{Standard}:`
-
     Fortran 77 and later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -59,9 +63,20 @@ AINT --- Truncate to a whole number
 
   :samp:`{Specific names}:`
 
-    ===========  =============  ===========  ====================
-    Name         Argument       Return type  Standard
-    ===========  =============  ===========  ====================
-    ``AINT(A)``  ``REAL(4) A``  ``REAL(4)``  Fortran 77 and later
-    ``DINT(A)``  ``REAL(8) A``  ``REAL(8)``  Fortran 77 and later
-    ===========  =============  ===========  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``AINT(A)``
+         - ``REAL(4) A``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DINT(A)``
+         - ``REAL(8) A``
+         - ``REAL(8)``
+         - Fortran 77 and later
+

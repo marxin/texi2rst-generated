@@ -3,9 +3,13 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: NINT, IDNINT, rounding, nearest whole number
-
 .. _nint:
+
+.. index:: NINT
+
+.. index:: IDNINT
+
+.. index:: rounding, nearest whole number
 
 NINT --- Nearest whole number
 *****************************
@@ -27,11 +31,9 @@ NINT --- Nearest whole number
     converted to an ``INTEGER`` of the default kind.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later, with :samp:`{KIND}` argument Fortran 90 and later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -54,14 +56,24 @@ NINT --- Nearest whole number
 
   :samp:`{Specific names}:`
 
-    =============  =============  ===========  ====================
-    Name           Argument       Return Type  Standard
-    =============  =============  ===========  ====================
-    ``NINT(A)``    ``REAL(4) A``  ``INTEGER``  Fortran 77 and later
-    ``IDNINT(A)``  ``REAL(8) A``  ``INTEGER``  Fortran 77 and later
-    =============  =============  ===========  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return Type
+         - Standard
+
+       * - ``NINT(A)``
+         - ``REAL(4) A``
+         - ``INTEGER``
+         - Fortran 77 and later
+       * - ``IDNINT(A)``
+         - ``REAL(8) A``
+         - ``INTEGER``
+         - Fortran 77 and later
 
   :samp:`{See also}:`
-
     :ref:`CEILING`, 
     :ref:`FLOOR`
+

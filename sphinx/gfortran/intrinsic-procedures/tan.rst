@@ -3,9 +3,15 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: TAN, DTAN, trigonometric function, tangent, tangent
-
 .. _tan:
+
+.. index:: TAN
+
+.. index:: DTAN
+
+.. index:: trigonometric function, tangent
+
+.. index:: tangent
 
 TAN --- Tangent function
 ************************
@@ -21,11 +27,9 @@ TAN --- Tangent function
     The return value has same type and kind as :samp:`{X}`, and its value is in radians.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later, for a complex argument Fortran 2008 or later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -45,16 +49,26 @@ TAN --- Tangent function
 
   :samp:`{Specific names}:`
 
-    ===========  =============  ===========  ====================
-    Name         Argument       Return type  Standard
-    ===========  =============  ===========  ====================
-    ``TAN(X)``   ``REAL(4) X``  ``REAL(4)``  Fortran 77 and later
-    ``DTAN(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 77 and later
-    ===========  =============  ===========  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``TAN(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DTAN(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - Fortran 77 and later
 
   :samp:`{See also}:`
-
     Inverse function: 
     :ref:`ATAN` 
     Degrees function: 
     :ref:`TAND`
+

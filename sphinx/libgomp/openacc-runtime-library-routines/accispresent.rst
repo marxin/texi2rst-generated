@@ -23,21 +23,29 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  ==============================================
-  *Prototype*:  ``int acc_is_present(h_void *a, size_t len);``
-  ============  ==============================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int acc_is_present(h_void *a, size_t len);``
 
 :samp:`{Fortran}:`
 
-  ============  ===================================
-  *Interface*:  ``function acc_is_present(a)``
-                ``type, dimension(:[,:]...) :: a``
-                ``logical acc_is_present``
-  *Interface*:  ``function acc_is_present(a, len)``
-                ``type, dimension(:[,:]...) :: a``
-                ``integer len``
-                ``logical acc_is_present``
-  ============  ===================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``function acc_is_present(a)``
+     * -
+       - ``type, dimension(:[,:]...) :: a``
+     * -
+       - ``logical acc_is_present``
+     * - *Interface*:
+       - ``function acc_is_present(a, len)``
+     * -
+       - ``type, dimension(:[,:]...) :: a``
+     * -
+       - ``integer len``
+     * -
+       - ``logical acc_is_present``
 
 :samp:`{Reference}:`
 

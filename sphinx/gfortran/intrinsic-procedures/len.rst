@@ -3,9 +3,11 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: LEN, string, length
-
 .. _len:
+
+.. index:: LEN
+
+.. index:: string, length
 
 LEN --- Length of a character entity
 ************************************
@@ -30,11 +32,9 @@ LEN --- Length of a character entity
     :samp:`{KIND}` is absent, the return value is of default integer kind.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
   :samp:`{Class}:`
-
     Inquiry function
 
   :samp:`{Syntax}:`
@@ -45,14 +45,21 @@ LEN --- Length of a character entity
 
   :samp:`{Specific names}:`
 
-    ===============  =============  ===========  ====================
-    Name             Argument       Return type  Standard
-    ===============  =============  ===========  ====================
-    ``LEN(STRING)``  ``CHARACTER``  ``INTEGER``  Fortran 77 and later
-    ===============  =============  ===========  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``LEN(STRING)``
+         - ``CHARACTER``
+         - ``INTEGER``
+         - Fortran 77 and later
 
   :samp:`{See also}:`
-
     :ref:`LEN_TRIM`, 
     :ref:`ADJUSTL`, 
     :ref:`ADJUSTR`
+

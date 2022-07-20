@@ -3,9 +3,17 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: COSH, DCOSH, hyperbolic cosine, hyperbolic function, cosine, cosine, hyperbolic
-
 .. _cosh:
+
+.. index:: COSH
+
+.. index:: DCOSH
+
+.. index:: hyperbolic cosine
+
+.. index:: hyperbolic function, cosine
+
+.. index:: cosine, hyperbolic
 
 COSH --- Hyperbolic cosine function
 ***********************************
@@ -24,11 +32,9 @@ COSH --- Hyperbolic cosine function
     \cosh (x) \geq 1.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later, for a complex argument Fortran 2008 or later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -48,14 +54,24 @@ COSH --- Hyperbolic cosine function
 
   :samp:`{Specific names}:`
 
-    ============  =============  ===========  ====================
-    Name          Argument       Return type  Standard
-    ============  =============  ===========  ====================
-    ``COSH(X)``   ``REAL(4) X``  ``REAL(4)``  Fortran 77 and later
-    ``DCOSH(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 77 and later
-    ============  =============  ===========  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``COSH(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DCOSH(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - Fortran 77 and later
 
   :samp:`{See also}:`
-
     Inverse function: 
     :ref:`ACOSH`
+

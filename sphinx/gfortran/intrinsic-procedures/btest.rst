@@ -3,9 +3,19 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: BTEST, BBTEST, BITEST, BJTEST, BKTEST, bits, testing
-
 .. _btest:
+
+.. index:: BTEST
+
+.. index:: BBTEST
+
+.. index:: BITEST
+
+.. index:: BJTEST
+
+.. index:: BKTEST
+
+.. index:: bits, testing
 
 BTEST --- Bit test function
 ***************************
@@ -25,11 +35,9 @@ BTEST --- Bit test function
     The return value is of type ``LOGICAL``
 
   :samp:`{Standard}:`
-
     Fortran 90 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -54,12 +62,32 @@ BTEST --- Bit test function
 
   :samp:`{Specific names}:`
 
-    =================  ====================  ==============  ====================
-    Name               Argument              Return type     Standard
-    =================  ====================  ==============  ====================
-    ``BTEST(I,POS)``   ``INTEGER I,POS``     ``LOGICAL``     Fortran 95 and later
-    ``BBTEST(I,POS)``  ``INTEGER(1) I,POS``  ``LOGICAL(1)``  GNU extension
-    ``BITEST(I,POS)``  ``INTEGER(2) I,POS``  ``LOGICAL(2)``  GNU extension
-    ``BJTEST(I,POS)``  ``INTEGER(4) I,POS``  ``LOGICAL(4)``  GNU extension
-    ``BKTEST(I,POS)``  ``INTEGER(8) I,POS``  ``LOGICAL(8)``  GNU extension
-    =================  ====================  ==============  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``BTEST(I,POS)``
+         - ``INTEGER I,POS``
+         - ``LOGICAL``
+         - Fortran 95 and later
+       * - ``BBTEST(I,POS)``
+         - ``INTEGER(1) I,POS``
+         - ``LOGICAL(1)``
+         - GNU extension
+       * - ``BITEST(I,POS)``
+         - ``INTEGER(2) I,POS``
+         - ``LOGICAL(2)``
+         - GNU extension
+       * - ``BJTEST(I,POS)``
+         - ``INTEGER(4) I,POS``
+         - ``LOGICAL(4)``
+         - GNU extension
+       * - ``BKTEST(I,POS)``
+         - ``INTEGER(8) I,POS``
+         - ``LOGICAL(8)``
+         - GNU extension
+

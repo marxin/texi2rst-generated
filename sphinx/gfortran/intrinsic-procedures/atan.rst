@@ -3,9 +3,15 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: ATAN, DATAN, trigonometric function, tangent, inverse, tangent, inverse
-
 .. _atan:
+
+.. index:: ATAN
+
+.. index:: DATAN
+
+.. index:: trigonometric function, tangent, inverse
+
+.. index:: tangent, inverse
 
 ATAN --- Arctangent function 
 *****************************
@@ -29,12 +35,10 @@ ATAN --- Arctangent function
     -\pi/2 \leq \Re \atan(x) \leq \pi/2.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later, for a complex argument and for two arguments
     Fortran 2008 or later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -55,16 +59,26 @@ ATAN --- Arctangent function
 
   :samp:`{Specific names}:`
 
-    ============  =============  ===========  ====================
-    Name          Argument       Return type  Standard
-    ============  =============  ===========  ====================
-    ``ATAN(X)``   ``REAL(4) X``  ``REAL(4)``  Fortran 77 and later
-    ``DATAN(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 77 and later
-    ============  =============  ===========  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``ATAN(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DATAN(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - Fortran 77 and later
 
   :samp:`{See also}:`
-
     Inverse function: 
     :ref:`TAN` 
     Degrees function: 
     :ref:`ATAND`
+

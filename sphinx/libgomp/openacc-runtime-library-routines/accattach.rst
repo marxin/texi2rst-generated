@@ -14,10 +14,12 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  ==============================================
-  *Prototype*:  ``acc_attach(h_void **ptr);``
-  *Prototype*:  ``acc_attach_async(h_void **ptr, int async);``
-  ============  ==============================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``acc_attach(h_void **ptr);``
+     * - *Prototype*:
+       - ``acc_attach_async(h_void **ptr, int async);``
 
 :samp:`{Reference}:`
 

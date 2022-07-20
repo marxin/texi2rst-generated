@@ -3,9 +3,15 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: ATAN2, DATAN2, trigonometric function, tangent, inverse, tangent, inverse
-
 .. _atan2:
+
+.. index:: ATAN2
+
+.. index:: DATAN2
+
+.. index:: trigonometric function, tangent, inverse
+
+.. index:: tangent, inverse
 
 ATAN2 --- Arctangent function 
 ******************************
@@ -36,11 +42,9 @@ ATAN2 --- Arctangent function
     magnitude of the result is \pi/2.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -60,16 +64,26 @@ ATAN2 --- Arctangent function
 
   :samp:`{Specific names}:`
 
-    ================  ================  ===========  ====================
-    Name              Argument          Return type  Standard
-    ================  ================  ===========  ====================
-    ``ATAN2(X, Y)``   ``REAL(4) X, Y``  ``REAL(4)``  Fortran 77 and later
-    ``DATAN2(X, Y)``  ``REAL(8) X, Y``  ``REAL(8)``  Fortran 77 and later
-    ================  ================  ===========  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``ATAN2(X, Y)``
+         - ``REAL(4) X, Y``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DATAN2(X, Y)``
+         - ``REAL(8) X, Y``
+         - ``REAL(8)``
+         - Fortran 77 and later
 
   :samp:`{See also}:`
-
     Alias: 
     :ref:`ATAN` 
     Degrees function: 
     :ref:`ATAN2D`
+

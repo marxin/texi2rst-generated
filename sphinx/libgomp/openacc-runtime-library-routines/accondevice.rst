@@ -19,17 +19,21 @@ acc_on_device -- Whether executing on a particular device
 
 :samp:`{C/C++}:`
 
-  ============  ===========================================
-  *Prototype*:  ``acc_on_device(acc_device_t devicetype);``
-  ============  ===========================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``acc_on_device(acc_device_t devicetype);``
 
 :samp:`{Fortran}:`
 
-  ============  =======================================
-  *Interface*:  ``function acc_on_device(devicetype)``
-                ``integer(acc_device_kind) devicetype``
-                ``logical acc_on_device``
-  ============  =======================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``function acc_on_device(devicetype)``
+     * -
+       - ``integer(acc_device_kind) devicetype``
+     * -
+       - ``logical acc_on_device``
 
 :samp:`{Reference}:`
 

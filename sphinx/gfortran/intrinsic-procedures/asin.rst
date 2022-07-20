@@ -3,9 +3,15 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: ASIN, DASIN, trigonometric function, sine, inverse, sine, inverse
-
 .. _asin:
+
+.. index:: ASIN
+
+.. index:: DASIN
+
+.. index:: trigonometric function, sine, inverse
+
+.. index:: sine, inverse
 
 ASIN --- Arcsine function 
 **************************
@@ -24,11 +30,9 @@ ASIN --- Arcsine function
     -\pi/2 \leq \Re \asin(x) \leq \pi/2.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later, for a complex argument Fortran 2008 or later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -48,16 +52,26 @@ ASIN --- Arcsine function
 
   :samp:`{Specific names}:`
 
-    ============  =============  ===========  ====================
-    Name          Argument       Return type  Standard
-    ============  =============  ===========  ====================
-    ``ASIN(X)``   ``REAL(4) X``  ``REAL(4)``  Fortran 77 and later
-    ``DASIN(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 77 and later
-    ============  =============  ===========  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``ASIN(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DASIN(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - Fortran 77 and later
 
   :samp:`{See also}:`
-
     Inverse function: 
     :ref:`SIN` 
     Degrees function: 
     :ref:`ASIND`
+

@@ -14,9 +14,10 @@ acc_prof_register -- Register callbacks.
 
 :samp:`{C/C++}:`
 
-  ============  ============================================================================
-  *Prototype*:  ``void acc_prof_register (acc_event_t, acc_prof_callback, acc_register_t);``
-  ============  ============================================================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void acc_prof_register (acc_event_t, acc_prof_callback, acc_register_t);``
 
 :samp:`{See also}:`
 

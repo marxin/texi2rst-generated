@@ -22,11 +22,14 @@ Syntax:
 
 Arguments:
 
-  ================  ===============================================
-  :samp:`{s}`       output string
-  :samp:`{size}`    byte size of the string, including trailing NUL
-  :samp:`{format}`  conversion specifier string
-  ================  ===============================================
+  .. list-table::
+
+     * - :samp:`{s}`
+       - output string
+     * - :samp:`{size}`
+       - byte size of the string, including trailing NUL
+     * - :samp:`{format}`
+       - conversion specifier string
 
 .. note::
 

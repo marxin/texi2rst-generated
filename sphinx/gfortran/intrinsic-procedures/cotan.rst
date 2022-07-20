@@ -3,9 +3,15 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: COTAN, DCOTAN, trigonometric function, cotangent, cotangent
-
 .. _cotan:
+
+.. index:: COTAN
+
+.. index:: DCOTAN
+
+.. index:: trigonometric function, cotangent
+
+.. index:: cotangent
 
 COTAN --- Cotangent function
 ****************************
@@ -22,11 +28,9 @@ COTAN --- Cotangent function
     The return value has same type and kind as :samp:`{X}`, and its value is in radians.
 
   :samp:`{Standard}:`
-
     GNU extension, enabled with :option:`-fdec-math`.
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -46,16 +50,26 @@ COTAN --- Cotangent function
 
   :samp:`{Specific names}:`
 
-    =============  =============  ===========  =============
-    Name           Argument       Return type  Standard
-    =============  =============  ===========  =============
-    ``COTAN(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
-    ``DCOTAN(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
-    =============  =============  ===========  =============
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``COTAN(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - GNU extension
+       * - ``DCOTAN(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - GNU extension
 
   :samp:`{See also}:`
-
     Converse function: 
     :ref:`TAN` 
     Degrees function: 
     :ref:`COTAND`
+

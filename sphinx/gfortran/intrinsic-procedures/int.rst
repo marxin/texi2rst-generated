@@ -5,12 +5,18 @@
 
 .. _int:
 
+.. index:: INT
+
+.. index:: IFIX
+
+.. index:: IDINT
+
+.. index:: conversion, to integer
+
 INT --- Convert to integer type
 *******************************
 
-.. index:: INT, IFIX, IDINT, conversion, to integer
-
-.. function:: INT(A, KIND)
+.. function:: INT(A , KIND))
 
   Convert to integer type
 
@@ -27,11 +33,9 @@ INT --- Convert to integer type
     the following rules: 
 
   :samp:`{Standard}:`
-
     Fortran 77 and later, with boz-literal-constant Fortran 2008 and later.
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -53,10 +57,24 @@ INT --- Convert to integer type
 
   :samp:`{Specific names}:`
 
-    ============  =============  ===========  ====================
-    Name          Argument       Return type  Standard
-    ============  =============  ===========  ====================
-    ``INT(A)``    ``REAL(4) A``  ``INTEGER``  Fortran 77 and later
-    ``IFIX(A)``   ``REAL(4) A``  ``INTEGER``  Fortran 77 and later
-    ``IDINT(A)``  ``REAL(8) A``  ``INTEGER``  Fortran 77 and later
-    ============  =============  ===========  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``INT(A)``
+         - ``REAL(4) A``
+         - ``INTEGER``
+         - Fortran 77 and later
+       * - ``IFIX(A)``
+         - ``REAL(4) A``
+         - ``INTEGER``
+         - Fortran 77 and later
+       * - ``IDINT(A)``
+         - ``REAL(8) A``
+         - ``INTEGER``
+         - Fortran 77 and later
+

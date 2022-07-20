@@ -3,9 +3,21 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: COSD, DCOSD, CCOSD, ZCOSD, CDCOSD, trigonometric function, cosine, degrees, cosine, degrees
-
 .. _cosd:
+
+.. index:: COSD
+
+.. index:: DCOSD
+
+.. index:: CCOSD
+
+.. index:: ZCOSD
+
+.. index:: CDCOSD
+
+.. index:: trigonometric function, cosine, degrees
+
+.. index:: cosine, degrees
 
 COSD --- Cosine function, degrees
 *********************************
@@ -24,11 +36,9 @@ COSD --- Cosine function, degrees
     the return value lies in the range -1 \leq \cosd (x) \leq 1.
 
   :samp:`{Standard}:`
-
     GNU extension, enabled with :option:`-fdec-math`.
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -48,19 +58,38 @@ COSD --- Cosine function, degrees
 
   :samp:`{Specific names}:`
 
-    =============  ================  ==============  =============
-    Name           Argument          Return type     Standard
-    =============  ================  ==============  =============
-    ``COSD(X)``    ``REAL(4) X``     ``REAL(4)``     GNU extension
-    ``DCOSD(X)``   ``REAL(8) X``     ``REAL(8)``     GNU extension
-    ``CCOSD(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  GNU extension
-    ``ZCOSD(X)``   ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-    ``CDCOSD(X)``  ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-    =============  ================  ==============  =============
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``COSD(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - GNU extension
+       * - ``DCOSD(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - GNU extension
+       * - ``CCOSD(X)``
+         - ``COMPLEX(4) X``
+         - ``COMPLEX(4)``
+         - GNU extension
+       * - ``ZCOSD(X)``
+         - ``COMPLEX(8) X``
+         - ``COMPLEX(8)``
+         - GNU extension
+       * - ``CDCOSD(X)``
+         - ``COMPLEX(8) X``
+         - ``COMPLEX(8)``
+         - GNU extension
 
   :samp:`{See also}:`
-
     Inverse function: 
     :ref:`ACOSD` 
     Radians function: 
     :ref:`COS`
+

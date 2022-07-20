@@ -3,9 +3,19 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: LOG10, ALOG10, DLOG10, exponential function, inverse, logarithm function with base 10, base 10 logarithm function
-
 .. _log10:
+
+.. index:: LOG10
+
+.. index:: ALOG10
+
+.. index:: DLOG10
+
+.. index:: exponential function, inverse
+
+.. index:: logarithm function with base 10
+
+.. index:: base 10 logarithm function
 
 LOG10 --- Base 10 logarithm function
 ************************************
@@ -22,11 +32,9 @@ LOG10 --- Base 10 logarithm function
     The kind type parameter is the same as :samp:`{X}`.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -46,9 +54,20 @@ LOG10 --- Base 10 logarithm function
 
   :samp:`{Specific names}:`
 
-    =============  =============  ===========  ====================
-    Name           Argument       Return type  Standard
-    =============  =============  ===========  ====================
-    ``ALOG10(X)``  ``REAL(4) X``  ``REAL(4)``  Fortran 77 and later
-    ``DLOG10(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 77 and later
-    =============  =============  ===========  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``ALOG10(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DLOG10(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - Fortran 77 and later
+

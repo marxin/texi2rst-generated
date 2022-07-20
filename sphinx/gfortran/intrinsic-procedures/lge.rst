@@ -3,9 +3,13 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: LGE, lexical comparison of strings, string, comparison
-
 .. _lge:
+
+.. index:: LGE
+
+.. index:: lexical comparison of strings
+
+.. index:: string, comparison
 
 LGE --- Lexical greater than or equal
 *************************************
@@ -29,11 +33,9 @@ LGE --- Lexical greater than or equal
     otherwise, based on the ASCII ordering.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -44,14 +46,21 @@ LGE --- Lexical greater than or equal
 
   :samp:`{Specific names}:`
 
-    ==========================  =============  ===========  ====================
-    Name                        Argument       Return type  Standard
-    ==========================  =============  ===========  ====================
-    ``LGE(STRING_A,STRING_B)``  ``CHARACTER``  ``LOGICAL``  Fortran 77 and later
-    ==========================  =============  ===========  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``LGE(STRING_A,STRING_B)``
+         - ``CHARACTER``
+         - ``LOGICAL``
+         - Fortran 77 and later
 
   :samp:`{See also}:`
-
     :ref:`LGT`, 
     :ref:`LLE`, 
     :ref:`LLT`
+

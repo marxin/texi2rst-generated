@@ -14,15 +14,17 @@ omp_get_num_procs -- Number of processors online
 
 :samp:`{C/C++}:`
 
-  ============  ================================
-  *Prototype*:  ``int omp_get_num_procs(void);``
-  ============  ================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_get_num_procs(void);``
 
 :samp:`{Fortran}:`
 
-  ============  ========================================
-  *Interface*:  ``integer function omp_get_num_procs()``
-  ============  ========================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``integer function omp_get_num_procs()``
 
 :samp:`{Reference}:`
 

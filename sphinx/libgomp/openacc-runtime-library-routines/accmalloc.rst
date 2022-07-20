@@ -14,9 +14,10 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  ===================================
-  *Prototype*:  ``d_void* acc_malloc(size_t len);``
-  ============  ===================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``d_void* acc_malloc(size_t len);``
 
 :samp:`{Reference}:`
 

@@ -5,12 +5,30 @@
 
 .. _real:
 
+.. index:: REAL
+
+.. index:: REALPART
+
+.. index:: FLOAT
+
+.. index:: DFLOAT
+
+.. index:: FLOATI
+
+.. index:: FLOATJ
+
+.. index:: FLOATK
+
+.. index:: SNGL
+
+.. index:: conversion, to real
+
+.. index:: complex numbers, real part
+
 REAL --- Convert to real type 
 ******************************
 
-.. index:: REAL, REALPART, FLOAT, DFLOAT, FLOATI, FLOATJ, FLOATK, SNGL, conversion, to real, complex numbers, real part
-
-.. function:: REAL(A, KIND)
+.. function:: REAL(A [, KIND])
 
   ``REAL(A [, KIND])`` converts its argument :samp:`{A}` to a real type.  The
   ``REALPART`` function is provided for compatibility with :command:`g77`,
@@ -29,11 +47,9 @@ REAL --- Convert to real type
     the following rules: 
 
   :samp:`{Standard}:`
-
     Fortran 77 and later, with :samp:`{KIND}` argument Fortran 90 and later, has GNU extensions
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -54,17 +70,39 @@ REAL --- Convert to real type
 
   :samp:`{Specific names}:`
 
-    =============  ==============  ===========  =====================
-    Name           Argument        Return type  Standard
-    =============  ==============  ===========  =====================
-    ``FLOAT(A)``   ``INTEGER(4)``  ``REAL(4)``  Fortran 77 and later
-    ``DFLOAT(A)``  ``INTEGER(4)``  ``REAL(8)``  GNU extension
-    ``FLOATI(A)``  ``INTEGER(2)``  ``REAL(4)``  GNU extension (-fdec)
-    ``FLOATJ(A)``  ``INTEGER(4)``  ``REAL(4)``  GNU extension (-fdec)
-    ``FLOATK(A)``  ``INTEGER(8)``  ``REAL(4)``  GNU extension (-fdec)
-    ``SNGL(A)``    ``REAL(8)``     ``REAL(4)``  Fortran 77 and later
-    =============  ==============  ===========  =====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``FLOAT(A)``
+         - ``INTEGER(4)``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DFLOAT(A)``
+         - ``INTEGER(4)``
+         - ``REAL(8)``
+         - GNU extension
+       * - ``FLOATI(A)``
+         - ``INTEGER(2)``
+         - ``REAL(4)``
+         - GNU extension (-fdec)
+       * - ``FLOATJ(A)``
+         - ``INTEGER(4)``
+         - ``REAL(4)``
+         - GNU extension (-fdec)
+       * - ``FLOATK(A)``
+         - ``INTEGER(8)``
+         - ``REAL(4)``
+         - GNU extension (-fdec)
+       * - ``SNGL(A)``
+         - ``REAL(8)``
+         - ``REAL(4)``
+         - Fortran 77 and later
 
   :samp:`{See also}:`
-
     :ref:`DBLE`
+

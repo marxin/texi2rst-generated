@@ -5,12 +5,24 @@
 
 .. _ior:
 
+.. index:: IOR
+
+.. index:: BIOR
+
+.. index:: IIOR
+
+.. index:: JIOR
+
+.. index:: KIOR
+
+.. index:: bitwise logical or
+
+.. index:: logical or, bitwise
+
 IOR --- Bitwise logical or
 **************************
 
-.. index:: IOR, BIOR, IIOR, JIOR, KIOR, bitwise logical or, logical or, bitwise
-
-.. function:: IOR(I, J)
+.. function:: IOR
 
   ``IOR`` returns the bitwise Boolean inclusive-OR of :samp:`{I}` and
   :samp:`{J}`.
@@ -30,11 +42,9 @@ IOR --- Bitwise logical or
     type parameter of the other argument as-if a call to :ref:`INT` occurred.
 
   :samp:`{Standard}:`
-
     Fortran 90 and later, with boz-literal-constant Fortran 2008 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -45,21 +55,40 @@ IOR --- Bitwise logical or
 
   :samp:`{Specific names}:`
 
-    ===========  ================  ==============  ====================
-    Name         Argument          Return type     Standard
-    ===========  ================  ==============  ====================
-    ``IOR(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later
-    ``BIOR(A)``  ``INTEGER(1) A``  ``INTEGER(1)``  GNU extension
-    ``IIOR(A)``  ``INTEGER(2) A``  ``INTEGER(2)``  GNU extension
-    ``JIOR(A)``  ``INTEGER(4) A``  ``INTEGER(4)``  GNU extension
-    ``KIOR(A)``  ``INTEGER(8) A``  ``INTEGER(8)``  GNU extension
-    ===========  ================  ==============  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``IOR(A)``
+         - ``INTEGER A``
+         - ``INTEGER``
+         - Fortran 90 and later
+       * - ``BIOR(A)``
+         - ``INTEGER(1) A``
+         - ``INTEGER(1)``
+         - GNU extension
+       * - ``IIOR(A)``
+         - ``INTEGER(2) A``
+         - ``INTEGER(2)``
+         - GNU extension
+       * - ``JIOR(A)``
+         - ``INTEGER(4) A``
+         - ``INTEGER(4)``
+         - GNU extension
+       * - ``KIOR(A)``
+         - ``INTEGER(8) A``
+         - ``INTEGER(8)``
+         - GNU extension
 
   :samp:`{See also}:`
-
     :ref:`IEOR`, 
     :ref:`IAND`, 
     :ref:`IBITS`, 
     :ref:`IBSET`, 
     :ref:`IBCLR`, 
     :ref:`NOT`
+

@@ -3,9 +3,25 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: MOD, AMOD, DMOD, BMOD, IMOD, JMOD, KMOD, remainder, division, remainder
-
 .. _mod:
+
+.. index:: MOD
+
+.. index:: AMOD
+
+.. index:: DMOD
+
+.. index:: BMOD
+
+.. index:: IMOD
+
+.. index:: JMOD
+
+.. index:: KMOD
+
+.. index:: remainder
+
+.. index:: division, remainder
 
 MOD --- Remainder function
 **************************
@@ -30,11 +46,9 @@ MOD --- Remainder function
     arguments.)
 
   :samp:`{Standard}:`
-
     Fortran 77 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -66,18 +80,43 @@ MOD --- Remainder function
 
   :samp:`{Specific names}:`
 
-    =============  ==================  ==============  ====================
-    Name           Arguments           Return type     Standard
-    =============  ==================  ==============  ====================
-    ``MOD(A,P)``   ``INTEGER A,P``     ``INTEGER``     Fortran 77 and later
-    ``AMOD(A,P)``  ``REAL(4) A,P``     ``REAL(4)``     Fortran 77 and later
-    ``DMOD(A,P)``  ``REAL(8) A,P``     ``REAL(8)``     Fortran 77 and later
-    ``BMOD(A,P)``  ``INTEGER(1) A,P``  ``INTEGER(1)``  GNU extension
-    ``IMOD(A,P)``  ``INTEGER(2) A,P``  ``INTEGER(2)``  GNU extension
-    ``JMOD(A,P)``  ``INTEGER(4) A,P``  ``INTEGER(4)``  GNU extension
-    ``KMOD(A,P)``  ``INTEGER(8) A,P``  ``INTEGER(8)``  GNU extension
-    =============  ==================  ==============  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Arguments
+         - Return type
+         - Standard
+
+       * - ``MOD(A,P)``
+         - ``INTEGER A,P``
+         - ``INTEGER``
+         - Fortran 77 and later
+       * - ``AMOD(A,P)``
+         - ``REAL(4) A,P``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DMOD(A,P)``
+         - ``REAL(8) A,P``
+         - ``REAL(8)``
+         - Fortran 77 and later
+       * - ``BMOD(A,P)``
+         - ``INTEGER(1) A,P``
+         - ``INTEGER(1)``
+         - GNU extension
+       * - ``IMOD(A,P)``
+         - ``INTEGER(2) A,P``
+         - ``INTEGER(2)``
+         - GNU extension
+       * - ``JMOD(A,P)``
+         - ``INTEGER(4) A,P``
+         - ``INTEGER(4)``
+         - GNU extension
+       * - ``KMOD(A,P)``
+         - ``INTEGER(8) A,P``
+         - ``INTEGER(8)``
+         - GNU extension
 
   :samp:`{See also}:`
-
     :ref:`MODULO`
+

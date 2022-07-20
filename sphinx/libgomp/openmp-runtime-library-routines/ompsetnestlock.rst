@@ -17,16 +17,19 @@ omp_set_nest_lock -- Wait for and set nested lock
 
 :samp:`{C/C++}:`
 
-  ============  ==================================================
-  *Prototype*:  ``void omp_set_nest_lock(omp_nest_lock_t *lock);``
-  ============  ==================================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void omp_set_nest_lock(omp_nest_lock_t *lock);``
 
 :samp:`{Fortran}:`
 
-  ============  ======================================================
-  *Interface*:  ``subroutine omp_set_nest_lock(nvar)``
-                ``integer(omp_nest_lock_kind), intent(inout) :: nvar``
-  ============  ======================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine omp_set_nest_lock(nvar)``
+     * -
+       - ``integer(omp_nest_lock_kind), intent(inout) :: nvar``
 
 :samp:`{See also}:`
 

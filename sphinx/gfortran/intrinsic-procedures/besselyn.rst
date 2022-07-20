@@ -3,9 +3,15 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: BESSEL_YN, BESYN, DBESYN, Bessel function, second kind
-
 .. _bessel_yn:
+
+.. index:: BESSEL_YN
+
+.. index:: BESYN
+
+.. index:: DBESYN
+
+.. index:: Bessel function, second kind
 
 BESSEL_YN --- Bessel function of the second kind
 ************************************************
@@ -35,11 +41,9 @@ BESSEL_YN --- Bessel function of the second kind
     kind as :samp:`{X}`.
 
   :samp:`{Standard}:`
-
     Fortran 2008 and later, negative :samp:`{N}` is allowed as GNU extension
 
   :samp:`{Class}:`
-
     Elemental function, except for the transformational function
     ``BESSEL_YN(N1, N2, X)``
 
@@ -51,7 +55,6 @@ BESSEL_YN --- Bessel function of the second kind
       RESULT = BESSEL_YN(N1, N2, X)
 
   :samp:`{Note}:`
-
     The transformational function uses a recurrence algorithm which might,
     for some values of :samp:`{X}`, lead to different results than calls to
     the elemental function.
@@ -67,9 +70,20 @@ BESSEL_YN --- Bessel function of the second kind
 
   :samp:`{Specific names}:`
 
-    ===============  =============  ===========  =============
-    Name             Argument       Return type  Standard
-    ===============  =============  ===========  =============
-    ``DBESYN(N,X)``  ``INTEGER N``  ``REAL(8)``  GNU extension
-                     ``REAL(8) X``
-    ===============  =============  ===========  =============
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``DBESYN(N,X)``
+         - ``INTEGER N``
+         - ``REAL(8)``
+         - GNU extension
+       * -
+         - ``REAL(8) X``
+         -
+         -
+

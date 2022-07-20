@@ -17,16 +17,19 @@ omp_set_teams_thread_limit -- Set upper thread limit for teams construct
 
 :samp:`{C/C++}:`
 
-  ============  ======================================================
-  *Prototype*:  ``void omp_set_teams_thread_limit(int thread_limit);``
-  ============  ======================================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void omp_set_teams_thread_limit(int thread_limit);``
 
 :samp:`{Fortran}:`
 
-  ============  =======================================================
-  *Interface*:  ``subroutine omp_set_teams_thread_limit(thread_limit)``
-                ``integer, intent(in) :: thread_limit``
-  ============  =======================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine omp_set_teams_thread_limit(thread_limit)``
+     * -
+       - ``integer, intent(in) :: thread_limit``
 
 :samp:`{See also}:`
 

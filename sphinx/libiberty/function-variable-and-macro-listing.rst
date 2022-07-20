@@ -587,20 +587,32 @@ those provided by :samp:`ctype.h`:
 * These macros ignore the current locale; they are true for these
   fixed sets of characters:
 
-  ==========  =================================
-  ``ALPHA``   A-Za-z
-  ``ALNUM``   A-Za-z0-9
-  ``BLANK``   space tab
-  ``CNTRL``   ``!PRINT``
-  ``DIGIT``   0-9
-  ``GRAPH``   ``ALNUM || PUNCT``
-  ``LOWER``   a-z
-  ``PRINT``   ``GRAPH ||`` space
-  ``PUNCT``   \`~!@#$%^&\*()_-=+[{]}\|;:'",<.>/?
-  ``SPACE``   space tab \n \r \f \v
-  ``UPPER``   A-Z
-  ``XDIGIT``  0-9A-Fa-f
-  ==========  =================================
+  .. list-table::
+
+     * - ``ALPHA``
+       - A-Za-z
+     * - ``ALNUM``
+       - A-Za-z0-9
+     * - ``BLANK``
+       - space tab
+     * - ``CNTRL``
+       - ``!PRINT``
+     * - ``DIGIT``
+       - 0-9
+     * - ``GRAPH``
+       - ``ALNUM || PUNCT``
+     * - ``LOWER``
+       - a-z
+     * - ``PRINT``
+       - ``GRAPH ||`` space
+     * - ``PUNCT``
+       - `~!@#$%^&\*()_-=+[{]}\|;:'",<.>/?
+     * - ``SPACE``
+       - space tab \n \r \f \v
+     * - ``UPPER``
+       - A-Z
+     * - ``XDIGIT``
+       - 0-9A-Fa-f
 
   Note that, if the host character set is ASCII or a superset thereof,
   all these macros will return false for all values of ``char`` outside
@@ -621,14 +633,20 @@ additional character classes which are useful when doing lexical
 analysis of C or similar languages.  They are true for the following
 sets of characters:
 
-================  ==============================
-``IDNUM``         A-Za-z0-9\_
-``IDST``          A-Za-z\_
-``VSPACE``        \r \n
-``NVSPACE``       space tab \f \v \0
-``SPACE_OR_NUL``  ``VSPACE || NVSPACE``
-``ISOBASIC``      ``VSPACE || NVSPACE || PRINT``
-================  ==============================
+.. list-table::
+
+   * - ``IDNUM``
+     - A-Za-z0-9\_
+   * - ``IDST``
+     - A-Za-z\_
+   * - ``VSPACE``
+     - \r \n
+   * - ``NVSPACE``
+     - space tab \f \v \0
+   * - ``SPACE_OR_NUL``
+     - ``VSPACE || NVSPACE``
+   * - ``ISOBASIC``
+     - ``VSPACE || NVSPACE || PRINT``
 
 .. lbasename.c:23
 

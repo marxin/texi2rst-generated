@@ -14,9 +14,10 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  ============================================
-  *Prototype*:  ``void *acc_get_current_cuda_device(void);``
-  ============  ============================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void *acc_get_current_cuda_device(void);``
 
 :samp:`{Reference}:`
 

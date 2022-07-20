@@ -3,9 +3,17 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: TANH, DTANH, hyperbolic tangent, hyperbolic function, tangent, tangent, hyperbolic
-
 .. _tanh:
+
+.. index:: TANH
+
+.. index:: DTANH
+
+.. index:: hyperbolic tangent
+
+.. index:: hyperbolic function, tangent
+
+.. index:: tangent, hyperbolic
 
 TANH --- Hyperbolic tangent function 
 *************************************
@@ -24,11 +32,9 @@ TANH --- Hyperbolic tangent function
     - 1 \leq tanh(x) \leq 1 .
 
   :samp:`{Standard}:`
-
     Fortran 77 and later, for a complex argument Fortran 2008 or later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -48,13 +54,23 @@ TANH --- Hyperbolic tangent function
 
   :samp:`{Specific names}:`
 
-    ============  =============  ===========  ====================
-    Name          Argument       Return type  Standard
-    ============  =============  ===========  ====================
-    ``TANH(X)``   ``REAL(4) X``  ``REAL(4)``  Fortran 77 and later
-    ``DTANH(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 77 and later
-    ============  =============  ===========  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``TANH(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DTANH(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - Fortran 77 and later
 
   :samp:`{See also}:`
-
     :ref:`ATANH`
+

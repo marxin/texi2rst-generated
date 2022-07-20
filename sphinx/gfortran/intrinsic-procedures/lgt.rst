@@ -3,9 +3,13 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: LGT, lexical comparison of strings, string, comparison
-
 .. _lgt:
+
+.. index:: LGT
+
+.. index:: lexical comparison of strings
+
+.. index:: string, comparison
 
 LGT --- Lexical greater than
 ****************************
@@ -29,11 +33,9 @@ LGT --- Lexical greater than
     otherwise, based on the ASCII ordering.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -44,14 +46,21 @@ LGT --- Lexical greater than
 
   :samp:`{Specific names}:`
 
-    ==========================  =============  ===========  ====================
-    Name                        Argument       Return type  Standard
-    ==========================  =============  ===========  ====================
-    ``LGT(STRING_A,STRING_B)``  ``CHARACTER``  ``LOGICAL``  Fortran 77 and later
-    ==========================  =============  ===========  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``LGT(STRING_A,STRING_B)``
+         - ``CHARACTER``
+         - ``LOGICAL``
+         - Fortran 77 and later
 
   :samp:`{See also}:`
-
     :ref:`LGE`, 
     :ref:`LLE`, 
     :ref:`LLT`
+

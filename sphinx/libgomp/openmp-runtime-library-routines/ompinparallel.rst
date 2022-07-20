@@ -16,15 +16,17 @@ omp_in_parallel -- Whether a parallel region is active
 
 :samp:`{C/C++}:`
 
-  ============  ==============================
-  *Prototype*:  ``int omp_in_parallel(void);``
-  ============  ==============================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_in_parallel(void);``
 
 :samp:`{Fortran}:`
 
-  ============  ======================================
-  *Interface*:  ``logical function omp_in_parallel()``
-  ============  ======================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``logical function omp_in_parallel()``
 
 :samp:`{Reference}:`
 

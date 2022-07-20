@@ -21,15 +21,17 @@ omp_get_dynamic -- Dynamic teams setting
 
 :samp:`{C/C++}:`
 
-  ============  ==============================
-  *Prototype*:  ``int omp_get_dynamic(void);``
-  ============  ==============================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_get_dynamic(void);``
 
 :samp:`{Fortran}:`
 
-  ============  ======================================
-  *Interface*:  ``logical function omp_get_dynamic()``
-  ============  ======================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``logical function omp_get_dynamic()``
 
 :samp:`{See also}:`
 

@@ -3,9 +3,15 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: BESSEL_J0, BESJ0, DBESJ0, Bessel function, first kind
-
 .. _bessel_j0:
+
+.. index:: BESSEL_J0
+
+.. index:: BESJ0
+
+.. index:: DBESJ0
+
+.. index:: Bessel function, first kind
 
 BESSEL_J0 --- Bessel function of the first kind of order 0
 **********************************************************
@@ -25,11 +31,9 @@ BESSEL_J0 --- Bessel function of the first kind of order 0
     kind as :samp:`{X}`.
 
   :samp:`{Standard}:`
-
     Fortran 2008 and later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -49,8 +53,16 @@ BESSEL_J0 --- Bessel function of the first kind of order 0
 
   :samp:`{Specific names}:`
 
-    =============  =============  ===========  =============
-    Name           Argument       Return type  Standard
-    =============  =============  ===========  =============
-    ``DBESJ0(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
-    =============  =============  ===========  =============
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``DBESJ0(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - GNU extension
+

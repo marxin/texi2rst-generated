@@ -13,9 +13,10 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  ========================
-  *Prototype*:  ``acc_free(d_void *a);``
-  ============  ========================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``acc_free(d_void *a);``
 
 :samp:`{Reference}:`
 

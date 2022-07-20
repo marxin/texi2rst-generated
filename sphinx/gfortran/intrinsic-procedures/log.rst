@@ -3,9 +3,25 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: LOG, ALOG, DLOG, CLOG, ZLOG, CDLOG, exponential function, inverse, logarithm function, natural logarithm function
-
 .. _log:
+
+.. index:: LOG
+
+.. index:: ALOG
+
+.. index:: DLOG
+
+.. index:: CLOG
+
+.. index:: ZLOG
+
+.. index:: CDLOG
+
+.. index:: exponential function, inverse
+
+.. index:: logarithm function
+
+.. index:: natural logarithm function
 
 LOG --- Natural logarithm function
 **********************************
@@ -26,11 +42,9 @@ LOG --- Natural logarithm function
     -\pi < \omega \leq \pi.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later, has GNU extensions
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -52,12 +66,32 @@ LOG --- Natural logarithm function
 
   :samp:`{Specific names}:`
 
-    ============  ================  ==============  ===================
-    Name          Argument          Return type     Standard
-    ============  ================  ==============  ===================
-    ``ALOG(X)``   ``REAL(4) X``     ``REAL(4)``     Fortran 77 or later
-    ``DLOG(X)``   ``REAL(8) X``     ``REAL(8)``     Fortran 77 or later
-    ``CLOG(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  Fortran 77 or later
-    ``ZLOG(X)``   ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-    ``CDLOG(X)``  ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-    ============  ================  ==============  ===================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``ALOG(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - Fortran 77 or later
+       * - ``DLOG(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - Fortran 77 or later
+       * - ``CLOG(X)``
+         - ``COMPLEX(4) X``
+         - ``COMPLEX(4)``
+         - Fortran 77 or later
+       * - ``ZLOG(X)``
+         - ``COMPLEX(8) X``
+         - ``COMPLEX(8)``
+         - GNU extension
+       * - ``CDLOG(X)``
+         - ``COMPLEX(8) X``
+         - ``COMPLEX(8)``
+         - GNU extension
+

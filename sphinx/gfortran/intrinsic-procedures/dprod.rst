@@ -3,9 +3,11 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: DPROD, product, double-precision
-
 .. _dprod:
+
+.. index:: DPROD
+
+.. index:: product, double-precision
 
 DPROD --- Double product function
 *********************************
@@ -24,11 +26,9 @@ DPROD --- Double product function
     The return value is of type ``REAL(8)``.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -51,8 +51,16 @@ DPROD --- Double product function
 
   :samp:`{Specific names}:`
 
-    ==============  ================  ===========  ====================
-    Name            Argument          Return type  Standard
-    ==============  ================  ===========  ====================
-    ``DPROD(X,Y)``  ``REAL(4) X, Y``  ``REAL(8)``  Fortran 77 and later
-    ==============  ================  ===========  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``DPROD(X,Y)``
+         - ``REAL(4) X, Y``
+         - ``REAL(8)``
+         - Fortran 77 and later
+

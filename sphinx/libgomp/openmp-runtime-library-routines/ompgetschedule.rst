@@ -17,17 +17,21 @@ omp_get_schedule -- Obtain the runtime scheduling method
 
 :samp:`{C/C++}:`
 
-  ============  ==============================================================
-  *Prototype*:  ``void omp_get_schedule(omp_sched_t *kind, int *chunk_size);``
-  ============  ==============================================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void omp_get_schedule(omp_sched_t *kind, int *chunk_size);``
 
 :samp:`{Fortran}:`
 
-  ============  =================================================
-  *Interface*:  ``subroutine omp_get_schedule(kind, chunk_size)``
-                ``integer(kind=omp_sched_kind) kind``
-                ``integer chunk_size``
-  ============  =================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine omp_get_schedule(kind, chunk_size)``
+     * -
+       - ``integer(kind=omp_sched_kind) kind``
+     * -
+       - ``integer chunk_size``
 
 :samp:`{See also}:`
 

@@ -3,9 +3,15 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: TAND, DTAND, trigonometric function, tangent, degrees, tangent, degrees
-
 .. _tand:
+
+.. index:: TAND
+
+.. index:: DTAND
+
+.. index:: trigonometric function, tangent, degrees
+
+.. index:: tangent, degrees
 
 TAND --- Tangent function, degrees
 **********************************
@@ -21,11 +27,9 @@ TAND --- Tangent function, degrees
     The return value has same type and kind as :samp:`{X}`, and its value is in degrees.
 
   :samp:`{Standard}:`
-
     GNU extension, enabled with :option:`-fdec-math`.
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -45,16 +49,26 @@ TAND --- Tangent function, degrees
 
   :samp:`{Specific names}:`
 
-    ============  =============  ===========  =============
-    Name          Argument       Return type  Standard
-    ============  =============  ===========  =============
-    ``TAND(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
-    ``DTAND(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
-    ============  =============  ===========  =============
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``TAND(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - GNU extension
+       * - ``DTAND(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - GNU extension
 
   :samp:`{See also}:`
-
     Inverse function: 
     :ref:`ATAND` 
     Radians function: 
     :ref:`TAN`
+

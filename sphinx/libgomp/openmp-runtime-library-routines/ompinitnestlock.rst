@@ -15,16 +15,19 @@ omp_init_nest_lock -- Initialize nested lock
 
 :samp:`{C/C++}:`
 
-  ============  ===================================================
-  *Prototype*:  ``void omp_init_nest_lock(omp_nest_lock_t *lock);``
-  ============  ===================================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void omp_init_nest_lock(omp_nest_lock_t *lock);``
 
 :samp:`{Fortran}:`
 
-  ============  ====================================================
-  *Interface*:  ``subroutine omp_init_nest_lock(nvar)``
-                ``integer(omp_nest_lock_kind), intent(out) :: nvar``
-  ============  ====================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine omp_init_nest_lock(nvar)``
+     * -
+       - ``integer(omp_nest_lock_kind), intent(out) :: nvar``
 
 :samp:`{See also}:`
 

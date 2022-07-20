@@ -14,15 +14,17 @@ omp_get_team_num -- Get team number
 
 :samp:`{C/C++}:`
 
-  ============  ===============================
-  *Prototype*:  ``int omp_get_team_num(void);``
-  ============  ===============================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_get_team_num(void);``
 
 :samp:`{Fortran}:`
 
-  ============  =======================================
-  *Interface*:  ``integer function omp_get_team_num()``
-  ============  =======================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``integer function omp_get_team_num()``
 
 :samp:`{Reference}:`
 

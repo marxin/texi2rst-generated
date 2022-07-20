@@ -17,16 +17,19 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  =================================
-  *Prototype*:  ``int acc_async_test_all(void);``
-  ============  =================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int acc_async_test_all(void);``
 
 :samp:`{Fortran}:`
 
-  ============  ==============================
-  *Interface*:  ``function acc_async_test()``
-                ``logical acc_get_device_num``
-  ============  ==============================
+  .. list-table::
+
+     * - *Interface*:
+       - ``function acc_async_test()``
+     * -
+       - ``logical acc_get_device_num``
 
 :samp:`{Reference}:`
 

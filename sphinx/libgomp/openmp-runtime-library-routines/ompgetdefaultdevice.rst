@@ -14,15 +14,17 @@ omp_get_default_device -- Get the default device for target regions
 
 :samp:`{C/C++}:`
 
-  ============  =====================================
-  *Prototype*:  ``int omp_get_default_device(void);``
-  ============  =====================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_get_default_device(void);``
 
 :samp:`{Fortran}:`
 
-  ============  =============================================
-  *Interface*:  ``integer function omp_get_default_device()``
-  ============  =============================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``integer function omp_get_default_device()``
 
 :samp:`{See also}:`
 

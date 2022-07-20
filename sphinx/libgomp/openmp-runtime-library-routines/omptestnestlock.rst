@@ -18,16 +18,19 @@ omp_test_nest_lock -- Test and set nested lock if available
 
 :samp:`{C/C++}:`
 
-  ============  ==================================================
-  *Prototype*:  ``int omp_test_nest_lock(omp_nest_lock_t *lock);``
-  ============  ==================================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_test_nest_lock(omp_nest_lock_t *lock);``
 
 :samp:`{Fortran}:`
 
-  ============  ======================================================
-  *Interface*:  ``logical function omp_test_nest_lock(nvar)``
-                ``integer(omp_nest_lock_kind), intent(inout) :: nvar``
-  ============  ======================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``logical function omp_test_nest_lock(nvar)``
+     * -
+       - ``integer(omp_nest_lock_kind), intent(inout) :: nvar``
 
 :samp:`{See also}:`
 

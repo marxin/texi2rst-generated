@@ -3,9 +3,15 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: DIM, IDIM, DDIM, positive difference
-
 .. _dim:
+
+.. index:: DIM
+
+.. index:: IDIM
+
+.. index:: DDIM
+
+.. index:: positive difference
 
 DIM --- Positive difference
 ***************************
@@ -27,11 +33,9 @@ DIM --- Positive difference
     extension, kind is the largest kind of the actual arguments.)
 
   :samp:`{Standard}:`
-
     Fortran 77 and later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -55,10 +59,24 @@ DIM --- Positive difference
 
   :samp:`{Specific names}:`
 
-    =============  ===================  ==============  ====================
-    Name           Argument             Return type     Standard
-    =============  ===================  ==============  ====================
-    ``DIM(X,Y)``   ``REAL(4) X, Y``     ``REAL(4)``     Fortran 77 and later
-    ``IDIM(X,Y)``  ``INTEGER(4) X, Y``  ``INTEGER(4)``  Fortran 77 and later
-    ``DDIM(X,Y)``  ``REAL(8) X, Y``     ``REAL(8)``     Fortran 77 and later
-    =============  ===================  ==============  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``DIM(X,Y)``
+         - ``REAL(4) X, Y``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``IDIM(X,Y)``
+         - ``INTEGER(4) X, Y``
+         - ``INTEGER(4)``
+         - Fortran 77 and later
+       * - ``DDIM(X,Y)``
+         - ``REAL(8) X, Y``
+         - ``REAL(8)``
+         - Fortran 77 and later
+

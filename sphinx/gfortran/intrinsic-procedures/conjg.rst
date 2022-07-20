@@ -3,9 +3,13 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: CONJG, DCONJG, complex conjugate
-
 .. _conjg:
+
+.. index:: CONJG
+
+.. index:: DCONJG
+
+.. index:: complex conjugate
 
 CONJG --- Complex conjugate function
 ************************************
@@ -22,11 +26,9 @@ CONJG --- Complex conjugate function
     The return value is of type ``COMPLEX``.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later, has an overload that is a GNU extension
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -50,8 +52,16 @@ CONJG --- Complex conjugate function
 
   :samp:`{Specific names}:`
 
-    =============  ================  ==============  =============
-    Name           Argument          Return type     Standard
-    =============  ================  ==============  =============
-    ``DCONJG(Z)``  ``COMPLEX(8) Z``  ``COMPLEX(8)``  GNU extension
-    =============  ================  ==============  =============
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``DCONJG(Z)``
+         - ``COMPLEX(8) Z``
+         - ``COMPLEX(8)``
+         - GNU extension
+

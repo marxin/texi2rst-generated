@@ -5,12 +5,14 @@
 
 .. _char:
 
+.. index:: CHAR
+
+.. index:: conversion, to character
+
 CHAR --- Character conversion function
 **************************************
 
-.. index:: CHAR, conversion, to character
-
-.. function:: CHAR(I, KIND)
+.. function:: CHAR(I [, KIND])
 
   ``CHAR(I [, KIND])`` returns the character represented by the integer :samp:`{I}`.
 
@@ -25,11 +27,9 @@ CHAR --- Character conversion function
     The return value is of type ``CHARACTER(1)``
 
   :samp:`{Standard}:`
-
     Fortran 77 and later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -51,19 +51,25 @@ CHAR --- Character conversion function
 
   :samp:`{Specific names}:`
 
-    ===========  =============  ====================  ====================
-    Name         Argument       Return type           Standard
-    ===========  =============  ====================  ====================
-    ``CHAR(I)``  ``INTEGER I``  ``CHARACTER(LEN=1)``  Fortran 77 and later
-    ===========  =============  ====================  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``CHAR(I)``
+         - ``INTEGER I``
+         - ``CHARACTER(LEN=1)``
+         - Fortran 77 and later
 
   :samp:`{Note}:`
-
     See :ref:`ICHAR` for a discussion of converting between numerical values
     and formatted string representations.
 
   :samp:`{See also}:`
-
     :ref:`ACHAR`, 
     :ref:`IACHAR`, 
     :ref:`ICHAR`
+

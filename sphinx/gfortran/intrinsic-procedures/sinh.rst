@@ -3,9 +3,17 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: SINH, DSINH, hyperbolic sine, hyperbolic function, sine, sine, hyperbolic
-
 .. _sinh:
+
+.. index:: SINH
+
+.. index:: DSINH
+
+.. index:: hyperbolic sine
+
+.. index:: hyperbolic function, sine
+
+.. index:: sine, hyperbolic
 
 SINH --- Hyperbolic sine function 
 **********************************
@@ -21,12 +29,10 @@ SINH --- Hyperbolic sine function
     The return value has same type and kind as :samp:`{X}`.
 
   :samp:`{Standard}:`
-
     Fortran 90 and later, for a complex argument Fortran 2008 or later, has
     a GNU extension
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -46,12 +52,19 @@ SINH --- Hyperbolic sine function
 
   :samp:`{Specific names}:`
 
-    ============  =============  ===========  ====================
-    Name          Argument       Return type  Standard
-    ============  =============  ===========  ====================
-    ``DSINH(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 90 and later
-    ============  =============  ===========  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``DSINH(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - Fortran 90 and later
 
   :samp:`{See also}:`
-
     :ref:`ASINH`
+

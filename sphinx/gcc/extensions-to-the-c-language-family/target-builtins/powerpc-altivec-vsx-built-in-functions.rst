@@ -103,72 +103,200 @@ considered deprecated.
 
 The PVIPR documents the following overloaded functions:
 
-================================  ================================  ===================================
-``vec_abs``                       ``vec_absd``                      ``vec_abss``
-``vec_add``                       ``vec_addc``                      ``vec_adde``
-``vec_addec``                     ``vec_adds``                      ``vec_all_eq``
-``vec_all_ge``                    ``vec_all_gt``                    ``vec_all_in``
-``vec_all_le``                    ``vec_all_lt``                    ``vec_all_nan``
-``vec_all_ne``                    ``vec_all_nge``                   ``vec_all_ngt``
-``vec_all_nle``                   ``vec_all_nlt``                   ``vec_all_numeric``
-``vec_and``                       ``vec_andc``                      ``vec_any_eq``
-``vec_any_ge``                    ``vec_any_gt``                    ``vec_any_le``
-``vec_any_lt``                    ``vec_any_nan``                   ``vec_any_ne``
-``vec_any_nge``                   ``vec_any_ngt``                   ``vec_any_nle``
-``vec_any_nlt``                   ``vec_any_numeric``               ``vec_any_out``
-``vec_avg``                       ``vec_bperm``                     ``vec_ceil``
-``vec_cipher_be``                 ``vec_cipherlast_be``             ``vec_cmpb``
-``vec_cmpeq``                     ``vec_cmpge``                     ``vec_cmpgt``
-``vec_cmple``                     ``vec_cmplt``                     ``vec_cmpne``
-``vec_cmpnez``                    ``vec_cntlz``                     ``vec_cntlz_lsbb``
-``vec_cnttz``                     ``vec_cnttz_lsbb``                ``vec_cpsgn``
-``vec_ctf``                       ``vec_cts``                       ``vec_ctu``
-``vec_div``                       ``vec_double``                    ``vec_doublee``
-``vec_doubleh``                   ``vec_doublel``                   ``vec_doubleo``
-``vec_eqv``                       ``vec_expte``                     ``vec_extract``
-``vec_extract_exp``               ``vec_extract_fp32_from_shorth``  ``vec_extract_fp32_from_shortl``
-``vec_extract_sig``               ``vec_extract_4b``                ``vec_first_match_index``
-``vec_first_match_or_eos_index``  ``vec_first_mismatch_index``      ``vec_first_mismatch_or_eos_index``
-``vec_float``                     ``vec_float2``                    ``vec_floate``
-``vec_floato``                    ``vec_floor``                     ``vec_gb``
-``vec_insert``                    ``vec_insert_exp``                ``vec_insert4b``
-``vec_ld``                        ``vec_lde``                       ``vec_ldl``
-``vec_loge``                      ``vec_madd``                      ``vec_madds``
-``vec_max``                       ``vec_mergee``                    ``vec_mergeh``
-``vec_mergel``                    ``vec_mergeo``                    ``vec_mfvscr``
-``vec_min``                       ``vec_mradds``                    ``vec_msub``
-``vec_msum``                      ``vec_msums``                     ``vec_mtvscr``
-``vec_mul``                       ``vec_mule``                      ``vec_mulo``
-``vec_nabs``                      ``vec_nand``                      ``vec_ncipher_be``
-``vec_ncipherlast_be``            ``vec_nearbyint``                 ``vec_neg``
-``vec_nmadd``                     ``vec_nmsub``                     ``vec_nor``
-``vec_or``                        ``vec_orc``                       ``vec_pack``
-``vec_pack_to_short_fp32``        ``vec_packpx``                    ``vec_packs``
-``vec_packsu``                    ``vec_parity_lsbb``               ``vec_perm``
-``vec_permxor``                   ``vec_pmsum_be``                  ``vec_popcnt``
-``vec_re``                        ``vec_recipdiv``                  ``vec_revb``
-``vec_reve``                      ``vec_rint``                      ``vec_rl``
-``vec_rlmi``                      ``vec_rlnm``                      ``vec_round``
-``vec_rsqrt``                     ``vec_rsqrte``                    ``vec_sbox_be``
-``vec_sel``                       ``vec_shasigma_be``               ``vec_signed``
-``vec_signed2``                   ``vec_signede``                   ``vec_signedo``
-``vec_sl``                        ``vec_sld``                       ``vec_sldw``
-``vec_sll``                       ``vec_slo``                       ``vec_slv``
-``vec_splat``                     ``vec_splat_s8``                  ``vec_splat_s16``
-``vec_splat_s32``                 ``vec_splat_u8``                  ``vec_splat_u16``
-``vec_splat_u32``                 ``vec_splats``                    ``vec_sqrt``
-``vec_sr``                        ``vec_sra``                       ``vec_srl``
-``vec_sro``                       ``vec_srv``                       ``vec_st``
-``vec_ste``                       ``vec_stl``                       ``vec_sub``
-``vec_subc``                      ``vec_sube``                      ``vec_subec``
-``vec_subs``                      ``vec_sum2s``                     ``vec_sum4s``
-``vec_sums``                      ``vec_test_data_class``           ``vec_trunc``
-``vec_unpackh``                   ``vec_unpackl``                   ``vec_unsigned``
-``vec_unsigned2``                 ``vec_unsignede``                 ``vec_unsignedo``
-``vec_xl``                        ``vec_xl_be``                     ``vec_xl_len``
-``vec_xl_len_r``                  ``vec_xor``                       ``vec_xst``
-``vec_xst_be``                    ``vec_xst_len``                   ``vec_xst_len_r``
-================================  ================================  ===================================
+.. list-table::
+
+   * - ``vec_abs``
+     - ``vec_absd``
+     - ``vec_abss``
+   * - ``vec_add``
+     - ``vec_addc``
+     - ``vec_adde``
+   * - ``vec_addec``
+     - ``vec_adds``
+     - ``vec_all_eq``
+   * - ``vec_all_ge``
+     - ``vec_all_gt``
+     - ``vec_all_in``
+   * - ``vec_all_le``
+     - ``vec_all_lt``
+     - ``vec_all_nan``
+   * - ``vec_all_ne``
+     - ``vec_all_nge``
+     - ``vec_all_ngt``
+   * - ``vec_all_nle``
+     - ``vec_all_nlt``
+     - ``vec_all_numeric``
+   * - ``vec_and``
+     - ``vec_andc``
+     - ``vec_any_eq``
+   * - ``vec_any_ge``
+     - ``vec_any_gt``
+     - ``vec_any_le``
+   * - ``vec_any_lt``
+     - ``vec_any_nan``
+     - ``vec_any_ne``
+   * - ``vec_any_nge``
+     - ``vec_any_ngt``
+     - ``vec_any_nle``
+   * - ``vec_any_nlt``
+     - ``vec_any_numeric``
+     - ``vec_any_out``
+   * - ``vec_avg``
+     - ``vec_bperm``
+     - ``vec_ceil``
+   * - ``vec_cipher_be``
+     - ``vec_cipherlast_be``
+     - ``vec_cmpb``
+   * - ``vec_cmpeq``
+     - ``vec_cmpge``
+     - ``vec_cmpgt``
+   * - ``vec_cmple``
+     - ``vec_cmplt``
+     - ``vec_cmpne``
+   * - ``vec_cmpnez``
+     - ``vec_cntlz``
+     - ``vec_cntlz_lsbb``
+   * - ``vec_cnttz``
+     - ``vec_cnttz_lsbb``
+     - ``vec_cpsgn``
+   * - ``vec_ctf``
+     - ``vec_cts``
+     - ``vec_ctu``
+   * - ``vec_div``
+     - ``vec_double``
+     - ``vec_doublee``
+   * - ``vec_doubleh``
+     - ``vec_doublel``
+     - ``vec_doubleo``
+   * - ``vec_eqv``
+     - ``vec_expte``
+     - ``vec_extract``
+   * - ``vec_extract_exp``
+     - ``vec_extract_fp32_from_shorth``
+     - ``vec_extract_fp32_from_shortl``
+   * - ``vec_extract_sig``
+     - ``vec_extract_4b``
+     - ``vec_first_match_index``
+   * - ``vec_first_match_or_eos_index``
+     - ``vec_first_mismatch_index``
+     - ``vec_first_mismatch_or_eos_index``
+   * - ``vec_float``
+     - ``vec_float2``
+     - ``vec_floate``
+   * - ``vec_floato``
+     - ``vec_floor``
+     - ``vec_gb``
+   * - ``vec_insert``
+     - ``vec_insert_exp``
+     - ``vec_insert4b``
+   * - ``vec_ld``
+     - ``vec_lde``
+     - ``vec_ldl``
+   * - ``vec_loge``
+     - ``vec_madd``
+     - ``vec_madds``
+   * - ``vec_max``
+     - ``vec_mergee``
+     - ``vec_mergeh``
+   * - ``vec_mergel``
+     - ``vec_mergeo``
+     - ``vec_mfvscr``
+   * - ``vec_min``
+     - ``vec_mradds``
+     - ``vec_msub``
+   * - ``vec_msum``
+     - ``vec_msums``
+     - ``vec_mtvscr``
+   * - ``vec_mul``
+     - ``vec_mule``
+     - ``vec_mulo``
+   * - ``vec_nabs``
+     - ``vec_nand``
+     - ``vec_ncipher_be``
+   * - ``vec_ncipherlast_be``
+     - ``vec_nearbyint``
+     - ``vec_neg``
+   * - ``vec_nmadd``
+     - ``vec_nmsub``
+     - ``vec_nor``
+   * - ``vec_or``
+     - ``vec_orc``
+     - ``vec_pack``
+   * - ``vec_pack_to_short_fp32``
+     - ``vec_packpx``
+     - ``vec_packs``
+   * - ``vec_packsu``
+     - ``vec_parity_lsbb``
+     - ``vec_perm``
+   * - ``vec_permxor``
+     - ``vec_pmsum_be``
+     - ``vec_popcnt``
+   * - ``vec_re``
+     - ``vec_recipdiv``
+     - ``vec_revb``
+   * - ``vec_reve``
+     - ``vec_rint``
+     - ``vec_rl``
+   * - ``vec_rlmi``
+     - ``vec_rlnm``
+     - ``vec_round``
+   * - ``vec_rsqrt``
+     - ``vec_rsqrte``
+     - ``vec_sbox_be``
+   * - ``vec_sel``
+     - ``vec_shasigma_be``
+     - ``vec_signed``
+   * - ``vec_signed2``
+     - ``vec_signede``
+     - ``vec_signedo``
+   * - ``vec_sl``
+     - ``vec_sld``
+     - ``vec_sldw``
+   * - ``vec_sll``
+     - ``vec_slo``
+     - ``vec_slv``
+   * - ``vec_splat``
+     - ``vec_splat_s8``
+     - ``vec_splat_s16``
+   * - ``vec_splat_s32``
+     - ``vec_splat_u8``
+     - ``vec_splat_u16``
+   * - ``vec_splat_u32``
+     - ``vec_splats``
+     - ``vec_sqrt``
+   * - ``vec_sr``
+     - ``vec_sra``
+     - ``vec_srl``
+   * - ``vec_sro``
+     - ``vec_srv``
+     - ``vec_st``
+   * - ``vec_ste``
+     - ``vec_stl``
+     - ``vec_sub``
+   * - ``vec_subc``
+     - ``vec_sube``
+     - ``vec_subec``
+   * - ``vec_subs``
+     - ``vec_sum2s``
+     - ``vec_sum4s``
+   * - ``vec_sums``
+     - ``vec_test_data_class``
+     - ``vec_trunc``
+   * - ``vec_unpackh``
+     - ``vec_unpackl``
+     - ``vec_unsigned``
+   * - ``vec_unsigned2``
+     - ``vec_unsignede``
+     - ``vec_unsignedo``
+   * - ``vec_xl``
+     - ``vec_xl_be``
+     - ``vec_xl_len``
+   * - ``vec_xl_len_r``
+     - ``vec_xor``
+     - ``vec_xst``
+   * - ``vec_xst_be``
+     - ``vec_xst_len``
+     - ``vec_xst_len_r``
 
 .. toctree::
   :maxdepth: 2

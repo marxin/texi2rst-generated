@@ -3,9 +3,15 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: ASIND, DASIND, trigonometric function, sine, inverse, degrees, sine, inverse, degrees
-
 .. _asind:
+
+.. index:: ASIND
+
+.. index:: DASIND
+
+.. index:: trigonometric function, sine, inverse, degrees
+
+.. index:: sine, inverse, degrees
 
 ASIND --- Arcsine function, degrees
 ***********************************
@@ -25,11 +31,9 @@ ASIND --- Arcsine function, degrees
     -90 \leq \Re \asin(x) \leq 90.
 
   :samp:`{Standard}:`
-
     GNU extension, enabled with :option:`-fdec-math`.
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -49,16 +53,26 @@ ASIND --- Arcsine function, degrees
 
   :samp:`{Specific names}:`
 
-    =============  =============  ===========  =============
-    Name           Argument       Return type  Standard
-    =============  =============  ===========  =============
-    ``ASIND(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
-    ``DASIND(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
-    =============  =============  ===========  =============
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``ASIND(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - GNU extension
+       * - ``DASIND(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - GNU extension
 
   :samp:`{See also}:`
-
     Inverse function: 
     :ref:`SIND` 
     Radians function: 
     :ref:`ASIN`
+

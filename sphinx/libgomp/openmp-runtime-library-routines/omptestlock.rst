@@ -18,16 +18,19 @@ omp_test_lock -- Test and set simple lock if available
 
 :samp:`{C/C++}:`
 
-  ============  ========================================
-  *Prototype*:  ``int omp_test_lock(omp_lock_t *lock);``
-  ============  ========================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_test_lock(omp_lock_t *lock);``
 
 :samp:`{Fortran}:`
 
-  ============  =================================================
-  *Interface*:  ``logical function omp_test_lock(svar)``
-                ``integer(omp_lock_kind), intent(inout) :: svar``
-  ============  =================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``logical function omp_test_lock(svar)``
+     * -
+       - ``integer(omp_lock_kind), intent(inout) :: svar``
 
 :samp:`{See also}:`
 

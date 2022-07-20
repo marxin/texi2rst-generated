@@ -3,9 +3,15 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: ATAND, DATAND, trigonometric function, tangent, inverse, degrees, tangent, inverse, degrees
-
 .. _atand:
+
+.. index:: ATAND
+
+.. index:: DATAND
+
+.. index:: trigonometric function, tangent, inverse, degrees
+
+.. index:: tangent, inverse, degrees
 
 ATAND --- Arctangent function, degrees
 **************************************
@@ -30,11 +36,9 @@ ATAND --- Arctangent function, degrees
     -90 \leq \Re \atand(x) \leq 90.
 
   :samp:`{Standard}:`
-
     GNU extension, enabled with :option:`-fdec-math`.
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -55,16 +59,26 @@ ATAND --- Arctangent function, degrees
 
   :samp:`{Specific names}:`
 
-    =============  =============  ===========  =============
-    Name           Argument       Return type  Standard
-    =============  =============  ===========  =============
-    ``ATAND(X)``   ``REAL(4) X``  ``REAL(4)``  GNU extension
-    ``DATAND(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
-    =============  =============  ===========  =============
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``ATAND(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - GNU extension
+       * - ``DATAND(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - GNU extension
 
   :samp:`{See also}:`
-
     Inverse function: 
     :ref:`TAND` 
     Radians function: 
     :ref:`ATAN`
+

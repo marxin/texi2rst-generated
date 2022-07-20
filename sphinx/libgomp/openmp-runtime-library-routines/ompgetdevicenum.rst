@@ -17,15 +17,17 @@ omp_get_device_num -- Return device number of current device
 
 :samp:`{C/C++}:`
 
-  ============  =================================
-  *Prototype*:  ``int omp_get_device_num(void);``
-  ============  =================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_get_device_num(void);``
 
 :samp:`{Fortran}:`
 
-  ============  =========================================
-  *Interface*:  ``integer function omp_get_device_num()``
-  ============  =========================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``integer function omp_get_device_num()``
 
 :samp:`{See also}:`
 

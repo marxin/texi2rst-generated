@@ -17,16 +17,19 @@ omp_set_lock -- Wait for and set simple lock
 
 :samp:`{C/C++}:`
 
-  ============  ========================================
-  *Prototype*:  ``void omp_set_lock(omp_lock_t *lock);``
-  ============  ========================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void omp_set_lock(omp_lock_t *lock);``
 
 :samp:`{Fortran}:`
 
-  ============  =================================================
-  *Interface*:  ``subroutine omp_set_lock(svar)``
-                ``integer(omp_lock_kind), intent(inout) :: svar``
-  ============  =================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine omp_set_lock(svar)``
+     * -
+       - ``integer(omp_lock_kind), intent(inout) :: svar``
 
 :samp:`{See also}:`
 

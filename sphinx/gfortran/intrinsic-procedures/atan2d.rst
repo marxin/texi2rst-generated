@@ -3,9 +3,15 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: ATAN2D, DATAN2D, trigonometric function, tangent, inverse, degrees, tangent, inverse, degrees
-
 .. _atan2d:
+
+.. index:: ATAN2D
+
+.. index:: DATAN2D
+
+.. index:: trigonometric function, tangent, inverse, degrees
+
+.. index:: tangent, inverse, degrees
 
 ATAN2D --- Arctangent function, degrees
 ***************************************
@@ -36,11 +42,9 @@ ATAN2D --- Arctangent function, degrees
     magnitude of the result is 90.
 
   :samp:`{Standard}:`
-
     GNU extension, enabled with :option:`-fdec-math`.
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -60,16 +64,26 @@ ATAN2D --- Arctangent function, degrees
 
   :samp:`{Specific names}:`
 
-    =================  ================  ===========  =============
-    Name               Argument          Return type  Standard
-    =================  ================  ===========  =============
-    ``ATAN2D(X, Y)``   ``REAL(4) X, Y``  ``REAL(4)``  GNU extension
-    ``DATAN2D(X, Y)``  ``REAL(8) X, Y``  ``REAL(8)``  GNU extension
-    =================  ================  ===========  =============
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``ATAN2D(X, Y)``
+         - ``REAL(4) X, Y``
+         - ``REAL(4)``
+         - GNU extension
+       * - ``DATAN2D(X, Y)``
+         - ``REAL(8) X, Y``
+         - ``REAL(8)``
+         - GNU extension
 
   :samp:`{See also}:`
-
     Alias: 
     :ref:`ATAND` 
     Radians function: 
     :ref:`ATAN2`
+

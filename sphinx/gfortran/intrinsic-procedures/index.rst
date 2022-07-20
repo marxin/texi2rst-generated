@@ -3,9 +3,13 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: INDEX, substring position, string, find substring
-
 .. _index-intrinsic:
+
+.. index:: INDEX
+
+.. index:: substring position
+
+.. index:: string, find substring
 
 INDEX --- Position of a substring within a string
 *************************************************
@@ -39,11 +43,9 @@ INDEX --- Position of a substring within a string
     :samp:`{KIND}` is absent, the return value is of default integer kind.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -54,13 +56,20 @@ INDEX --- Position of a substring within a string
 
   :samp:`{Specific names}:`
 
-    ===========================  =============  ==============  ====================
-    Name                         Argument       Return type     Standard
-    ===========================  =============  ==============  ====================
-    ``INDEX(STRING,SUBSTRING)``  ``CHARACTER``  ``INTEGER(4)``  Fortran 77 and later
-    ===========================  =============  ==============  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``INDEX(STRING,SUBSTRING)``
+         - ``CHARACTER``
+         - ``INTEGER(4)``
+         - Fortran 77 and later
 
   :samp:`{See also}:`
-
     :ref:`SCAN`, 
     :ref:`VERIFY`
+

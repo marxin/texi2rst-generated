@@ -18,16 +18,19 @@ omp_unset_nest_lock -- Unset nested lock
 
 :samp:`{C/C++}:`
 
-  ============  ====================================================
-  *Prototype*:  ``void omp_unset_nest_lock(omp_nest_lock_t *lock);``
-  ============  ====================================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void omp_unset_nest_lock(omp_nest_lock_t *lock);``
 
 :samp:`{Fortran}:`
 
-  ============  ======================================================
-  *Interface*:  ``subroutine omp_unset_nest_lock(nvar)``
-                ``integer(omp_nest_lock_kind), intent(inout) :: nvar``
-  ============  ======================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine omp_unset_nest_lock(nvar)``
+     * -
+       - ``integer(omp_nest_lock_kind), intent(inout) :: nvar``
 
 :samp:`{See also}:`
 

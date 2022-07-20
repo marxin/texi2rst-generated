@@ -16,15 +16,17 @@ that can be set for tasks.
 
 :samp:`{C/C++}:`
 
-  ============  ========================================
-  *Prototype*:  ``int omp_get_max_task_priority(void);``
-  ============  ========================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_get_max_task_priority(void);``
 
 :samp:`{Fortran}:`
 
-  ============  ================================================
-  *Interface*:  ``integer function omp_get_max_task_priority()``
-  ============  ================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``integer function omp_get_max_task_priority()``
 
 :samp:`{Reference}:`
 

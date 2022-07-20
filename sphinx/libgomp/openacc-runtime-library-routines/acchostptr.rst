@@ -14,9 +14,10 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  =================================
-  *Prototype*:  ``void *acc_hostptr(d_void *d);``
-  ============  =================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void *acc_hostptr(d_void *d);``
 
 :samp:`{Reference}:`
 

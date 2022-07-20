@@ -3,9 +3,15 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: ACOS, DACOS, trigonometric function, cosine, inverse, cosine, inverse
-
 .. _acos:
+
+.. index:: ACOS
+
+.. index:: DACOS
+
+.. index:: trigonometric function, cosine, inverse
+
+.. index:: cosine, inverse
 
 ACOS --- Arccosine function 
 ****************************
@@ -24,11 +30,9 @@ ACOS --- Arccosine function
     0 \leq \Re \acos(x) \leq \pi.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later, for a complex argument Fortran 2008 or later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -48,16 +52,26 @@ ACOS --- Arccosine function
 
   :samp:`{Specific names}:`
 
-    ============  =============  ===========  ====================
-    Name          Argument       Return type  Standard
-    ============  =============  ===========  ====================
-    ``ACOS(X)``   ``REAL(4) X``  ``REAL(4)``  Fortran 77 and later
-    ``DACOS(X)``  ``REAL(8) X``  ``REAL(8)``  Fortran 77 and later
-    ============  =============  ===========  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``ACOS(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DACOS(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - Fortran 77 and later
 
   :samp:`{See also}:`
-
     Inverse function: 
     :ref:`COS` 
     Degrees function: 
     :ref:`ACOSD`
+

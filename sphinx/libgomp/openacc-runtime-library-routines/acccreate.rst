@@ -19,27 +19,41 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  =============================================================
-  *Prototype*:  ``void *acc_create(h_void *a, size_t len);``
-  *Prototype*:  ``void *acc_create_async(h_void *a, size_t len, int async);``
-  ============  =============================================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void *acc_create(h_void *a, size_t len);``
+     * - *Prototype*:
+       - ``void *acc_create_async(h_void *a, size_t len, int async);``
 
 :samp:`{Fortran}:`
 
-  ============  ==============================================
-  *Interface*:  ``subroutine acc_create(a)``
-                ``type, dimension(:[,:]...) :: a``
-  *Interface*:  ``subroutine acc_create(a, len)``
-                ``type, dimension(:[,:]...) :: a``
-                ``integer len``
-  *Interface*:  ``subroutine acc_create_async(a, async)``
-                ``type, dimension(:[,:]...) :: a``
-                ``integer(acc_handle_kind) :: async``
-  *Interface*:  ``subroutine acc_create_async(a, len, async)``
-                ``type, dimension(:[,:]...) :: a``
-                ``integer len``
-                ``integer(acc_handle_kind) :: async``
-  ============  ==============================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine acc_create(a)``
+     * -
+       - ``type, dimension(:[,:]...) :: a``
+     * - *Interface*:
+       - ``subroutine acc_create(a, len)``
+     * -
+       - ``type, dimension(:[,:]...) :: a``
+     * -
+       - ``integer len``
+     * - *Interface*:
+       - ``subroutine acc_create_async(a, async)``
+     * -
+       - ``type, dimension(:[,:]...) :: a``
+     * -
+       - ``integer(acc_handle_kind) :: async``
+     * - *Interface*:
+       - ``subroutine acc_create_async(a, len, async)``
+     * -
+       - ``type, dimension(:[,:]...) :: a``
+     * -
+       - ``integer len``
+     * -
+       - ``integer(acc_handle_kind) :: async``
 
 :samp:`{Reference}:`
 

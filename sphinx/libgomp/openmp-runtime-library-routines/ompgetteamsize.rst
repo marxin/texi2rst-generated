@@ -18,16 +18,19 @@ omp_get_team_size -- Number of threads in a team
 
 :samp:`{C/C++}:`
 
-  ============  =====================================
-  *Prototype*:  ``int omp_get_team_size(int level);``
-  ============  =====================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_get_team_size(int level);``
 
 :samp:`{Fortran}:`
 
-  ============  =============================================
-  *Interface*:  ``integer function omp_get_team_size(level)``
-                ``integer level``
-  ============  =============================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``integer function omp_get_team_size(level)``
+     * -
+       - ``integer level``
 
 :samp:`{See also}:`
 

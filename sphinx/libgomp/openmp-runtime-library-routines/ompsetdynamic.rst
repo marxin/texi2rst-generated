@@ -17,16 +17,19 @@ omp_set_dynamic -- Enable/disable dynamic teams
 
 :samp:`{C/C++}:`
 
-  ============  ==============================================
-  *Prototype*:  ``void omp_set_dynamic(int dynamic_threads);``
-  ============  ==============================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void omp_set_dynamic(int dynamic_threads);``
 
 :samp:`{Fortran}:`
 
-  ============  ===============================================
-  *Interface*:  ``subroutine omp_set_dynamic(dynamic_threads)``
-                ``logical, intent(in) :: dynamic_threads``
-  ============  ===============================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine omp_set_dynamic(dynamic_threads)``
+     * -
+       - ``logical, intent(in) :: dynamic_threads``
 
 :samp:`{See also}:`
 

@@ -3,9 +3,17 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: LOG_GAMMA, LGAMMA, ALGAMA, DLGAMA, Gamma function, logarithm of
-
 .. _log_gamma:
+
+.. index:: LOG_GAMMA
+
+.. index:: LGAMMA
+
+.. index:: ALGAMA
+
+.. index:: DLGAMA
+
+.. index:: Gamma function, logarithm of
 
 LOG_GAMMA --- Logarithm of the Gamma function
 *********************************************
@@ -23,11 +31,9 @@ LOG_GAMMA --- Logarithm of the Gamma function
     The return value is of type ``REAL`` of the same kind as :samp:`{X}`.
 
   :samp:`{Standard}:`
-
     Fortran 2008 and later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -47,15 +53,28 @@ LOG_GAMMA --- Logarithm of the Gamma function
 
   :samp:`{Specific names}:`
 
-    =============  =============  ===========  =============
-    Name           Argument       Return type  Standard
-    =============  =============  ===========  =============
-    ``LGAMMA(X)``  ``REAL(4) X``  ``REAL(4)``  GNU extension
-    ``ALGAMA(X)``  ``REAL(4) X``  ``REAL(4)``  GNU extension
-    ``DLGAMA(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
-    =============  =============  ===========  =============
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``LGAMMA(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - GNU extension
+       * - ``ALGAMA(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - GNU extension
+       * - ``DLGAMA(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - GNU extension
 
   :samp:`{See also}:`
-
     Gamma function: 
     :ref:`GAMMA`
+

@@ -17,16 +17,19 @@ omp_get_ancestor_thread_num -- Ancestor thread ID
 
 :samp:`{C/C++}:`
 
-  ============  ===============================================
-  *Prototype*:  ``int omp_get_ancestor_thread_num(int level);``
-  ============  ===============================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_get_ancestor_thread_num(int level);``
 
 :samp:`{Fortran}:`
 
-  ============  =======================================================
-  *Interface*:  ``integer function omp_get_ancestor_thread_num(level)``
-                ``integer level``
-  ============  =======================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``integer function omp_get_ancestor_thread_num(level)``
+     * -
+       - ``integer level``
 
 :samp:`{See also}:`
 

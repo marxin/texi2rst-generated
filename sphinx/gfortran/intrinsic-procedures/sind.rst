@@ -3,9 +3,21 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: SIND, DSIND, CSIND, ZSIND, CDSIND, trigonometric function, sine, degrees, sine, degrees
-
 .. _sind:
+
+.. index:: SIND
+
+.. index:: DSIND
+
+.. index:: CSIND
+
+.. index:: ZSIND
+
+.. index:: CDSIND
+
+.. index:: trigonometric function, sine, degrees
+
+.. index:: sine, degrees
 
 SIND --- Sine function, degrees
 *******************************
@@ -22,11 +34,9 @@ SIND --- Sine function, degrees
     The return value has same type and kind as :samp:`{X}`, and its value is in degrees.
 
   :samp:`{Standard}:`
-
     GNU extension, enabled with :option:`-fdec-math`.
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -46,19 +56,38 @@ SIND --- Sine function, degrees
 
   :samp:`{Specific names}:`
 
-    =============  ================  ==============  =============
-    Name           Argument          Return type     Standard
-    =============  ================  ==============  =============
-    ``SIND(X)``    ``REAL(4) X``     ``REAL(4)``     GNU extension
-    ``DSIND(X)``   ``REAL(8) X``     ``REAL(8)``     GNU extension
-    ``CSIND(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  GNU extension
-    ``ZSIND(X)``   ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-    ``CDSIND(X)``  ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-    =============  ================  ==============  =============
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``SIND(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - GNU extension
+       * - ``DSIND(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - GNU extension
+       * - ``CSIND(X)``
+         - ``COMPLEX(4) X``
+         - ``COMPLEX(4)``
+         - GNU extension
+       * - ``ZSIND(X)``
+         - ``COMPLEX(8) X``
+         - ``COMPLEX(8)``
+         - GNU extension
+       * - ``CDSIND(X)``
+         - ``COMPLEX(8) X``
+         - ``COMPLEX(8)``
+         - GNU extension
 
   :samp:`{See also}:`
-
     Inverse function: 
     :ref:`ASIND` 
     Radians function: 
     :ref:`SIN` 
+

@@ -3,9 +3,11 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: ERFC, error function, complementary
-
 .. _erfc:
+
+.. index:: ERFC
+
+.. index:: error function, complementary
 
 ERFC --- Error function 
 ************************
@@ -22,11 +24,9 @@ ERFC --- Error function
     It lies in the range 0 \leq erfc (x) \leq 2 .
 
   :samp:`{Standard}:`
-
     Fortran 2008 and later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -46,8 +46,16 @@ ERFC --- Error function
 
   :samp:`{Specific names}:`
 
-    ============  =============  ===========  =============
-    Name          Argument       Return type  Standard
-    ============  =============  ===========  =============
-    ``DERFC(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
-    ============  =============  ===========  =============
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``DERFC(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - GNU extension
+

@@ -21,16 +21,19 @@ omp_set_nested -- Enable/disable nested parallel regions
 
 :samp:`{C/C++}:`
 
-  ============  ====================================
-  *Prototype*:  ``void omp_set_nested(int nested);``
-  ============  ====================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void omp_set_nested(int nested);``
 
 :samp:`{Fortran}:`
 
-  ============  =====================================
-  *Interface*:  ``subroutine omp_set_nested(nested)``
-                ``logical, intent(in) :: nested``
-  ============  =====================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine omp_set_nested(nested)``
+     * -
+       - ``logical, intent(in) :: nested``
 
 :samp:`{See also}:`
 

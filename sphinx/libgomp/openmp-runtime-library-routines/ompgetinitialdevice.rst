@@ -16,15 +16,17 @@ omp_get_initial_device -- Return device number of initial device
 
 :samp:`{C/C++}:`
 
-  ============  =====================================
-  *Prototype*:  ``int omp_get_initial_device(void);``
-  ============  =====================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_get_initial_device(void);``
 
 :samp:`{Fortran}:`
 
-  ============  =============================================
-  *Interface*:  ``integer function omp_get_initial_device()``
-  ============  =============================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``integer function omp_get_initial_device()``
 
 :samp:`{See also}:`
 

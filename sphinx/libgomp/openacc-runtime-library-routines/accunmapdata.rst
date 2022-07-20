@@ -14,9 +14,10 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  ==============================
-  *Prototype*:  ``acc_unmap_data(h_void *h);``
-  ============  ==============================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``acc_unmap_data(h_void *h);``
 
 :samp:`{Reference}:`
 

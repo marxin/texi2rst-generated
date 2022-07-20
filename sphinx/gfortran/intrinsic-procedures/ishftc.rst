@@ -5,12 +5,22 @@
 
 .. _ishftc:
 
+.. index:: ISHFTC
+
+.. index:: BSHFTC
+
+.. index:: IISHFTC
+
+.. index:: JISHFTC
+
+.. index:: KISHFTC
+
+.. index:: bits, shift circular
+
 ISHFTC --- Shift bits circularly
 ********************************
 
-.. index:: ISHFTC, BSHFTC, IISHFTC, JISHFTC, KISHFTC, bits, shift circular
-
-.. function:: ISHFTC(I, SHIFT, SIZE)
+.. function:: ISHFTC
 
   ``ISHFTC`` returns a value corresponding to :samp:`{I}` with the
   rightmost :samp:`{SIZE}` bits shifted circularly :samp:`{SHIFT}` places; that
@@ -37,11 +47,9 @@ ISHFTC --- Shift bits circularly
     :samp:`{I}`.
 
   :samp:`{Standard}:`
-
     Fortran 90 and later, has overloads that are GNU extensions
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -52,16 +60,35 @@ ISHFTC --- Shift bits circularly
 
   :samp:`{Specific names}:`
 
-    ==============  ================  ==============  ====================
-    Name            Argument          Return type     Standard
-    ==============  ================  ==============  ====================
-    ``ISHFTC(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later
-    ``BSHFTC(A)``   ``INTEGER(1) A``  ``INTEGER(1)``  GNU extension
-    ``IISHFTC(A)``  ``INTEGER(2) A``  ``INTEGER(2)``  GNU extension
-    ``JISHFTC(A)``  ``INTEGER(4) A``  ``INTEGER(4)``  GNU extension
-    ``KISHFTC(A)``  ``INTEGER(8) A``  ``INTEGER(8)``  GNU extension
-    ==============  ================  ==============  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``ISHFTC(A)``
+         - ``INTEGER A``
+         - ``INTEGER``
+         - Fortran 90 and later
+       * - ``BSHFTC(A)``
+         - ``INTEGER(1) A``
+         - ``INTEGER(1)``
+         - GNU extension
+       * - ``IISHFTC(A)``
+         - ``INTEGER(2) A``
+         - ``INTEGER(2)``
+         - GNU extension
+       * - ``JISHFTC(A)``
+         - ``INTEGER(4) A``
+         - ``INTEGER(4)``
+         - GNU extension
+       * - ``KISHFTC(A)``
+         - ``INTEGER(8) A``
+         - ``INTEGER(8)``
+         - GNU extension
 
   :samp:`{See also}:`
-
     :ref:`ISHFT`
+

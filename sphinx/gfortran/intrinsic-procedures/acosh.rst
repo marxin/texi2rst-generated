@@ -3,9 +3,19 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: ACOSH, DACOSH, area hyperbolic cosine, inverse hyperbolic cosine, hyperbolic function, cosine, inverse, cosine, hyperbolic, inverse
-
 .. _acosh:
+
+.. index:: ACOSH
+
+.. index:: DACOSH
+
+.. index:: area hyperbolic cosine
+
+.. index:: inverse hyperbolic cosine
+
+.. index:: hyperbolic function, cosine, inverse
+
+.. index:: cosine, hyperbolic, inverse
 
 ACOSH --- Inverse hyperbolic cosine function
 ********************************************
@@ -23,11 +33,9 @@ ACOSH --- Inverse hyperbolic cosine function
     0 \leq \Im \acosh(x) \leq \pi.
 
   :samp:`{Standard}:`
-
     Fortran 2008 and later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -47,13 +55,20 @@ ACOSH --- Inverse hyperbolic cosine function
 
   :samp:`{Specific names}:`
 
-    =============  =============  ===========  =============
-    Name           Argument       Return type  Standard
-    =============  =============  ===========  =============
-    ``DACOSH(X)``  ``REAL(8) X``  ``REAL(8)``  GNU extension
-    =============  =============  ===========  =============
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``DACOSH(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - GNU extension
 
   :samp:`{See also}:`
-
     Inverse function: 
     :ref:`COSH`
+

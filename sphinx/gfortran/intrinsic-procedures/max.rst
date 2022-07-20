@@ -3,9 +3,21 @@
   This is part of the GCC manual.
   For copying conditions, see the GPL license file
 
-.. index:: MAX, MAX0, AMAX0, MAX1, AMAX1, DMAX1, maximum value
-
 .. _max:
+
+.. index:: MAX
+
+.. index:: MAX0
+
+.. index:: AMAX0
+
+.. index:: MAX1
+
+.. index:: AMAX1
+
+.. index:: DMAX1
+
+.. index:: maximum value
 
 MAX --- Maximum value of an argument list
 *****************************************
@@ -28,11 +40,9 @@ MAX --- Maximum value of an argument list
     and has the same type and kind as the first argument.
 
   :samp:`{Standard}:`
-
     Fortran 77 and later
 
   :samp:`{Class}:`
-
     Elemental function
 
   :samp:`{Syntax}:`
@@ -43,18 +53,37 @@ MAX --- Maximum value of an argument list
 
   :samp:`{Specific names}:`
 
-    =============  =================  ================  ====================
-    Name           Argument           Return type       Standard
-    =============  =================  ================  ====================
-    ``MAX0(A1)``   ``INTEGER(4) A1``  ``INTEGER(4)``    Fortran 77 and later
-    ``AMAX0(A1)``  ``INTEGER(4) A1``  ``REAL(MAX(X))``  Fortran 77 and later
-    ``MAX1(A1)``   ``REAL A1``        ``INT(MAX(X))``   Fortran 77 and later
-    ``AMAX1(A1)``  ``REAL(4) A1``     ``REAL(4)``       Fortran 77 and later
-    ``DMAX1(A1)``  ``REAL(8) A1``     ``REAL(8)``       Fortran 77 and later
-    =============  =================  ================  ====================
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``MAX0(A1)``
+         - ``INTEGER(4) A1``
+         - ``INTEGER(4)``
+         - Fortran 77 and later
+       * - ``AMAX0(A1)``
+         - ``INTEGER(4) A1``
+         - ``REAL(MAX(X))``
+         - Fortran 77 and later
+       * - ``MAX1(A1)``
+         - ``REAL A1``
+         - ``INT(MAX(X))``
+         - Fortran 77 and later
+       * - ``AMAX1(A1)``
+         - ``REAL(4) A1``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DMAX1(A1)``
+         - ``REAL(8) A1``
+         - ``REAL(8)``
+         - Fortran 77 and later
 
   :samp:`{See also}:`
-
     :ref:`MAXLOC` 
     :ref:`MAXVAL`, 
     :ref:`MIN`
+

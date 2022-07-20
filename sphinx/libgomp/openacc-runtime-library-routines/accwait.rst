@@ -14,19 +14,25 @@ Description
 
 :samp:`{C/C++}:`
 
-  ========================================  ========================
-  *Prototype*:                              ``acc_wait(arg);``
-  *Prototype (OpenACC 1.0 compatibility)*:  ``acc_async_wait(arg);``
-  ========================================  ========================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``acc_wait(arg);``
+     * - *Prototype (OpenACC 1.0 compatibility)*:
+       - ``acc_async_wait(arg);``
 
 :samp:`{Fortran}:`
 
-  ========================================  ==================================
-  *Interface*:                              ``subroutine acc_wait(arg)``
-                                            ``integer(acc_handle_kind) arg``
-  *Interface (OpenACC 1.0 compatibility)*:  ``subroutine acc_async_wait(arg)``
-                                            ``integer(acc_handle_kind) arg``
-  ========================================  ==================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine acc_wait(arg)``
+     * -
+       - ``integer(acc_handle_kind) arg``
+     * - *Interface (OpenACC 1.0 compatibility)*:
+       - ``subroutine acc_async_wait(arg)``
+     * -
+       - ``integer(acc_handle_kind) arg``
 
 :samp:`{Reference}:`
 
