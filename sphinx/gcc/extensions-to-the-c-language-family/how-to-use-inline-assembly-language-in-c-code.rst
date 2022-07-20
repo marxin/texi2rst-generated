@@ -1421,18 +1421,18 @@ The table below shows the list of supported modifiers and their effects.
    * - ``R``
      - print embedded rounding and sae.
      - ``%R4``
-     - ``{rn-sae}, ``
+     - ``{rn-sae},``
      - ``, {rn-sae}``
    * - ``r``
      - print only sae.
      - ``%r4``
-     - ``{sae}, ``
+     - ``{sae},``
      - ``, {sae}``
    * - ``s``
      - print a shift double count, followed by the assemblers argument delimiterprint the opcode suffix of s.
      - ``%s1``
-     - ``$2, ``
-     - ``2, ``
+     - ``$2,``
+     - ``2,``
    * - ``S``
      - print the opcode suffix of s.
      - ``%S0``
