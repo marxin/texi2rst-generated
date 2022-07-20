@@ -12,18 +12,10 @@ ISO_C_BINDING
   Fortran 2003 and later, GNU extensions
 
   The following intrinsic procedures are provided by the module; their
-  definition can be found in the section Intrinsic Procedures of this
-  manual.
+definition can be found in the section Intrinsic Procedures of this
+manual.
 
-::
-
-  C_ASSOCIATED
-  C_F_POINTER
-  C_F_PROCPOINTER
-  C_FUNLOC
-  C_LOC
-  C_SIZEOF
-
+C_ASSOCIATEDC_F_POINTERC_F_PROCPOINTERC_FUNLOCC_LOCC_SIZEOF
 .. TODO: Vertical spacing between C_FUNLOC and C_LOC wrong in PDF,
    don't really know why.
 
@@ -48,33 +40,43 @@ Furthermore, if ``_Float128`` is supported in C, the named constants
    * - ``INTEGER``
      - ``C_INT``
      - ``int``
+     -
    * - ``INTEGER``
      - ``C_SHORT``
      - ``short int``
+     -
    * - ``INTEGER``
      - ``C_LONG``
      - ``long int``
+     -
    * - ``INTEGER``
      - ``C_LONG_LONG``
      - ``long long int``
+     -
    * - ``INTEGER``
      - ``C_SIGNED_CHAR``
      - ``signed char`` / ``unsigned char``
+     -
    * - ``INTEGER``
      - ``C_SIZE_T``
      - ``size_t``
+     -
    * - ``INTEGER``
      - ``C_INT8_T``
      - ``int8_t``
+     -
    * - ``INTEGER``
      - ``C_INT16_T``
      - ``int16_t``
+     -
    * - ``INTEGER``
      - ``C_INT32_T``
      - ``int32_t``
+     -
    * - ``INTEGER``
      - ``C_INT64_T``
      - ``int64_t``
+     -
    * - ``INTEGER``
      - ``C_INT128_T``
      - ``int128_t``
@@ -82,15 +84,19 @@ Furthermore, if ``_Float128`` is supported in C, the named constants
    * - ``INTEGER``
      - ``C_INT_LEAST8_T``
      - ``int_least8_t``
+     -
    * - ``INTEGER``
      - ``C_INT_LEAST16_T``
      - ``int_least16_t``
+     -
    * - ``INTEGER``
      - ``C_INT_LEAST32_T``
      - ``int_least32_t``
+     -
    * - ``INTEGER``
      - ``C_INT_LEAST64_T``
      - ``int_least64_t``
+     -
    * - ``INTEGER``
      - ``C_INT_LEAST128_T``
      - ``int_least128_t``
@@ -98,15 +104,19 @@ Furthermore, if ``_Float128`` is supported in C, the named constants
    * - ``INTEGER``
      - ``C_INT_FAST8_T``
      - ``int_fast8_t``
+     -
    * - ``INTEGER``
      - ``C_INT_FAST16_T``
      - ``int_fast16_t``
+     -
    * - ``INTEGER``
      - ``C_INT_FAST32_T``
      - ``int_fast32_t``
+     -
    * - ``INTEGER``
      - ``C_INT_FAST64_T``
      - ``int_fast64_t``
+     -
    * - ``INTEGER``
      - ``C_INT_FAST128_T``
      - ``int_fast128_t``
@@ -114,9 +124,11 @@ Furthermore, if ``_Float128`` is supported in C, the named constants
    * - ``INTEGER``
      - ``C_INTMAX_T``
      - ``intmax_t``
+     -
    * - ``INTEGER``
      - ``C_INTPTR_T``
      - ``intptr_t``
+     -
    * - ``INTEGER``
      - ``C_PTRDIFF_T``
      - ``ptrdiff_t``
@@ -124,12 +136,15 @@ Furthermore, if ``_Float128`` is supported in C, the named constants
    * - ``REAL``
      - ``C_FLOAT``
      - ``float``
+     -
    * - ``REAL``
      - ``C_DOUBLE``
      - ``double``
+     -
    * - ``REAL``
      - ``C_LONG_DOUBLE``
      - ``long double``
+     -
    * - ``REAL``
      - ``C_FLOAT128``
      - ``_Float128``
@@ -137,12 +152,15 @@ Furthermore, if ``_Float128`` is supported in C, the named constants
    * - ``COMPLEX``
      - ``C_FLOAT_COMPLEX``
      - ``float _Complex``
+     -
    * - ``COMPLEX``
      - ``C_DOUBLE_COMPLEX``
      - ``double _Complex``
+     -
    * - ``COMPLEX``
      - ``C_LONG_DOUBLE_COMPLEX``
      - ``long double _Complex``
+     -
    * - ``COMPLEX``
      - ``C_FLOAT128_COMPLEX``
      - ``_Float128 _Complex``
@@ -150,9 +168,11 @@ Furthermore, if ``_Float128`` is supported in C, the named constants
    * - ``LOGICAL``
      - ``C_BOOL``
      - ``_Bool``
+     -
    * - ``CHARACTER``
      - ``C_CHAR``
      - ``char``
+     -
 
 Additionally, the following parameters of type ``CHARACTER(KIND=C_CHAR)``
 are defined.
@@ -203,3 +223,4 @@ Moreover, the following two named constants are defined:
      - ``C_FUNPTR``
 
 Both are equivalent to the value ``NULL`` in C.
+

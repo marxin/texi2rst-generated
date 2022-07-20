@@ -1405,6 +1405,9 @@ The table below shows the list of supported modifiers and their effects.
      - ``42``
    * - ``P``
      - If used for a function, print the PLT suffix and generate PIC code. For example, emit ``foo@PLT`` instead of 'foo' for the function foo(). If used for a constant, drop all syntax-specific prefixes and issue the bare constant. See ``p`` above.
+     -
+     -
+     -
    * - ``q``
      - Print the DImode name of the register.
      - ``%q0``
@@ -1477,6 +1480,9 @@ The table below shows the list of supported modifiers and their effects.
      -
    * - ``Z``
      - Like ``z``, with special suffixes for x87 instructions.
+     -
+     -
+     -
 
 .. _x86floatingpointasmoperands:
 
