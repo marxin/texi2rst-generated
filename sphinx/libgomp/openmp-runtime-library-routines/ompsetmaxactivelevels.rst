@@ -15,16 +15,19 @@ omp_set_max_active_levels -- Limits the number of active parallel regions
 
 C/C++
 
-  ============  ===================================================
-  *Prototype*:  ``void omp_set_max_active_levels(int max_levels);``
-  ============  ===================================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void omp_set_max_active_levels(int max_levels);``
 
 :samp:`{Fortran}:`
 
-  ============  ====================================================
-  *Interface*:  ``subroutine omp_set_max_active_levels(max_levels)``
-                ``integer max_levels``
-  ============  ====================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine omp_set_max_active_levels(max_levels)``
+     * -
+       - ``integer max_levels``
 
 :samp:`{See also}:`
   :ref:`omp_get_max_active_levels`, :ref:`omp_get_active_level`,

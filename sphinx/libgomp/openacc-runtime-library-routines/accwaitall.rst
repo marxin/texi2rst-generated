@@ -13,17 +13,21 @@ Description
 
 :samp:`{C/C++}:`
 
-  ========================================  =============================
-  *Prototype*:                              ``acc_wait_all(void);``
-  *Prototype (OpenACC 1.0 compatibility)*:  ``acc_async_wait_all(void);``
-  ========================================  =============================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``acc_wait_all(void);``
+     * - *Prototype (OpenACC 1.0 compatibility)*:
+       - ``acc_async_wait_all(void);``
 
 :samp:`{Fortran}:`
 
-  ========================================  ===================================
-  *Interface*:                              ``subroutine acc_wait_all()``
-  *Interface (OpenACC 1.0 compatibility)*:  ``subroutine acc_async_wait_all()``
-  ========================================  ===================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine acc_wait_all()``
+     * - *Interface (OpenACC 1.0 compatibility)*:
+       - ``subroutine acc_async_wait_all()``
 
 :samp:`{Reference}:`
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section

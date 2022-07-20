@@ -79,17 +79,43 @@ MOD --- Remainder function
       end program test_mod
 
   :samp:`{Specific names}:`
-    =============  ==================  ==============  ====================
-    Name           Arguments           Return type     Standard
-    =============  ==================  ==============  ====================
-    ``MOD(A,P)``   ``INTEGER A,P``     ``INTEGER``     Fortran 77 and later
-    ``AMOD(A,P)``  ``REAL(4) A,P``     ``REAL(4)``     Fortran 77 and later
-    ``DMOD(A,P)``  ``REAL(8) A,P``     ``REAL(8)``     Fortran 77 and later
-    ``BMOD(A,P)``  ``INTEGER(1) A,P``  ``INTEGER(1)``  GNU extension
-    ``IMOD(A,P)``  ``INTEGER(2) A,P``  ``INTEGER(2)``  GNU extension
-    ``JMOD(A,P)``  ``INTEGER(4) A,P``  ``INTEGER(4)``  GNU extension
-    ``KMOD(A,P)``  ``INTEGER(8) A,P``  ``INTEGER(8)``  GNU extension
-    =============  ==================  ==============  ====================
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Arguments
+         - Return type
+         - Standard
+
+       * - ``MOD(A,P)``
+         - ``INTEGER A,P``
+         - ``INTEGER``
+         - Fortran 77 and later
+       * - ``AMOD(A,P)``
+         - ``REAL(4) A,P``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DMOD(A,P)``
+         - ``REAL(8) A,P``
+         - ``REAL(8)``
+         - Fortran 77 and later
+       * - ``BMOD(A,P)``
+         - ``INTEGER(1) A,P``
+         - ``INTEGER(1)``
+         - GNU extension
+       * - ``IMOD(A,P)``
+         - ``INTEGER(2) A,P``
+         - ``INTEGER(2)``
+         - GNU extension
+       * - ``JMOD(A,P)``
+         - ``INTEGER(4) A,P``
+         - ``INTEGER(4)``
+         - GNU extension
+       * - ``KMOD(A,P)``
+         - ``INTEGER(8) A,P``
+         - ``INTEGER(8)``
+         - GNU extension
 
   :samp:`{See also}:`
     :ref:`MODULO`

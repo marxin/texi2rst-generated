@@ -15,9 +15,10 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  ===================================================
-  *Prototype*:  ``acc_map_data(h_void *h, d_void *d, size_t len);``
-  ============  ===================================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``acc_map_data(h_void *h, d_void *d, size_t len);``
 
 :samp:`{Reference}:`
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section

@@ -54,15 +54,35 @@ IOR --- Bitwise logical or
       RESULT = IOR(I, J)
 
   :samp:`{Specific names}:`
-    ===========  ================  ==============  ====================
-    Name         Argument          Return type     Standard
-    ===========  ================  ==============  ====================
-    ``IOR(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later
-    ``BIOR(A)``  ``INTEGER(1) A``  ``INTEGER(1)``  GNU extension
-    ``IIOR(A)``  ``INTEGER(2) A``  ``INTEGER(2)``  GNU extension
-    ``JIOR(A)``  ``INTEGER(4) A``  ``INTEGER(4)``  GNU extension
-    ``KIOR(A)``  ``INTEGER(8) A``  ``INTEGER(8)``  GNU extension
-    ===========  ================  ==============  ====================
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``IOR(A)``
+         - ``INTEGER A``
+         - ``INTEGER``
+         - Fortran 90 and later
+       * - ``BIOR(A)``
+         - ``INTEGER(1) A``
+         - ``INTEGER(1)``
+         - GNU extension
+       * - ``IIOR(A)``
+         - ``INTEGER(2) A``
+         - ``INTEGER(2)``
+         - GNU extension
+       * - ``JIOR(A)``
+         - ``INTEGER(4) A``
+         - ``INTEGER(4)``
+         - GNU extension
+       * - ``KIOR(A)``
+         - ``INTEGER(8) A``
+         - ``INTEGER(8)``
+         - GNU extension
 
   :samp:`{See also}:`
     :ref:`IEOR`, 

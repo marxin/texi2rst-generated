@@ -55,15 +55,35 @@ SIN --- Sine function
       end program test_sin
 
   :samp:`{Specific names}:`
-    ============  ================  ==============  ====================
-    Name          Argument          Return type     Standard
-    ============  ================  ==============  ====================
-    ``SIN(X)``    ``REAL(4) X``     ``REAL(4)``     Fortran 77 and later
-    ``DSIN(X)``   ``REAL(8) X``     ``REAL(8)``     Fortran 77 and later
-    ``CSIN(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  Fortran 77 and later
-    ``ZSIN(X)``   ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-    ``CDSIN(X)``  ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-    ============  ================  ==============  ====================
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``SIN(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DSIN(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - Fortran 77 and later
+       * - ``CSIN(X)``
+         - ``COMPLEX(4) X``
+         - ``COMPLEX(4)``
+         - Fortran 77 and later
+       * - ``ZSIN(X)``
+         - ``COMPLEX(8) X``
+         - ``COMPLEX(8)``
+         - GNU extension
+       * - ``CDSIN(X)``
+         - ``COMPLEX(8) X``
+         - ``COMPLEX(8)``
+         - GNU extension
 
   :samp:`{See also}:`
     Inverse function: 

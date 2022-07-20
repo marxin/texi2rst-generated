@@ -15,16 +15,19 @@ omp_set_num_threads -- Set upper team size limit
 
 :samp:`{C/C++}:`
 
-  ============  ==============================================
-  *Prototype*:  ``void omp_set_num_threads(int num_threads);``
-  ============  ==============================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void omp_set_num_threads(int num_threads);``
 
 :samp:`{Fortran}:`
 
-  ============  ===============================================
-  *Interface*:  ``subroutine omp_set_num_threads(num_threads)``
-                ``integer, intent(in) :: num_threads``
-  ============  ===============================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine omp_set_num_threads(num_threads)``
+     * -
+       - ``integer, intent(in) :: num_threads``
 
 :samp:`{See also}:`
   :ref:`OMP_NUM_THREADS`, :ref:`omp_get_num_threads`, :ref:`omp_get_max_threads`

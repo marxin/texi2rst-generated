@@ -19,16 +19,19 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  ===========================================
-  *Prototype*:  ``acc_device_t acc_get_device_type(void);``
-  ============  ===========================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``acc_device_t acc_get_device_type(void);``
 
 :samp:`{Fortran}:`
 
-  ============  =====================================================
-  *Interface*:  ``function acc_get_device_type(void)``
-                ``integer(kind=acc_device_kind) acc_get_device_type``
-  ============  =====================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``function acc_get_device_type(void)``
+     * -
+       - ``integer(kind=acc_device_kind) acc_get_device_type``
 
 :samp:`{Reference}:`
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section

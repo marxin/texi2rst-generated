@@ -44,11 +44,19 @@ LEN --- Length of a character entity
       L = LEN(STRING [, KIND])
 
   :samp:`{Specific names}:`
-    ===============  =============  ===========  ====================
-    Name             Argument       Return type  Standard
-    ===============  =============  ===========  ====================
-    ``LEN(STRING)``  ``CHARACTER``  ``INTEGER``  Fortran 77 and later
-    ===============  =============  ===========  ====================
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``LEN(STRING)``
+         - ``CHARACTER``
+         - ``INTEGER``
+         - Fortran 77 and later
 
   :samp:`{See also}:`
     :ref:`LEN_TRIM`, 

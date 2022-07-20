@@ -30,15 +30,17 @@ omp_get_nested -- Nested parallel regions
 
 :samp:`{C/C++}:`
 
-  ============  =============================
-  *Prototype*:  ``int omp_get_nested(void);``
-  ============  =============================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_get_nested(void);``
 
 :samp:`{Fortran}:`
 
-  ============  =====================================
-  *Interface*:  ``logical function omp_get_nested()``
-  ============  =====================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``logical function omp_get_nested()``
 
 :samp:`{See also}:`
   :ref:`omp_set_max_active_levels`, :ref:`omp_set_nested`,

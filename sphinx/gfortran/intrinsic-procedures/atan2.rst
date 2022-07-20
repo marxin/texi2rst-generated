@@ -63,12 +63,23 @@ ATAN2 --- Arctangent function
       end program test_atan2
 
   :samp:`{Specific names}:`
-    ================  ================  ===========  ====================
-    Name              Argument          Return type  Standard
-    ================  ================  ===========  ====================
-    ``ATAN2(X, Y)``   ``REAL(4) X, Y``  ``REAL(4)``  Fortran 77 and later
-    ``DATAN2(X, Y)``  ``REAL(8) X, Y``  ``REAL(8)``  Fortran 77 and later
-    ================  ================  ===========  ====================
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``ATAN2(X, Y)``
+         - ``REAL(4) X, Y``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DATAN2(X, Y)``
+         - ``REAL(8) X, Y``
+         - ``REAL(8)``
+         - Fortran 77 and later
 
   :samp:`{See also}:`
     Alias: 

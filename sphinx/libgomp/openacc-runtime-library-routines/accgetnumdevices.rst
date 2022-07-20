@@ -14,16 +14,19 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  =====================================================
-  *Prototype*:  ``int acc_get_num_devices(acc_device_t devicetype);``
-  ============  =====================================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int acc_get_num_devices(acc_device_t devicetype);``
 
 :samp:`{Fortran}:`
 
-  ============  ====================================================
-  *Interface*:  ``integer function acc_get_num_devices(devicetype)``
-                ``integer(kind=acc_device_kind) devicetype``
-  ============  ====================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``integer function acc_get_num_devices(devicetype)``
+     * -
+       - ``integer(kind=acc_device_kind) devicetype``
 
 :samp:`{Reference}:`
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section

@@ -1314,58 +1314,188 @@ The rest of this discussion uses the following code for illustrative purposes.
 With no modifiers, this is what the output from the operands would be
 for the :samp:`att` and :samp:`intel` dialects of assembler:
 
-=======  ===========  ===================
-Operand  :samp:`att`  :samp:`intel`
-=======  ===========  ===================
-``%0``   ``%eax``     ``eax``
-``%1``   ``$2``       ``2``
-``%3``   ``$.L3``     ``OFFSET FLAT:.L3``
-``%4``   ``$8``       ``8``
-``%5``   ``%xmm0``    ``xmm0``
-``%7``   ``$0``       ``0``
-=======  ===========  ===================
+.. list-table::
+   :header-rows: 1
+
+   * - Operand
+     - :samp:`att`
+     - :samp:`intel`
+
+   * - ``%0``
+     - ``%eax``
+     - ``eax``
+   * - ``%1``
+     - ``$2``
+     - ``2``
+   * - ``%3``
+     - ``$.L3``
+     - ``OFFSET FLAT:.L3``
+   * - ``%4``
+     - ``$8``
+     - ``8``
+   * - ``%5``
+     - ``%xmm0``
+     - ``xmm0``
+   * - ``%7``
+     - ``$0``
+     - ``0``
+
 The table below shows the list of supported modifiers and their effects.
 
-========  ===========================================================================================================  =======  ================  ==============
-Modifier  Description                                                                                                  Operand  :samp:`att`       :samp:`intel`
-========  ===========================================================================================================  =======  ================  ==============
-``A``     Print an absolute memory reference.                                                                          ``%A0``  ``*%rax``         ``rax``
-``b``     Print the QImode name of the register.                                                                       ``%b0``  ``%al``           ``al``
-``B``     print the opcode suffix of b.                                                                                ``%B0``  ``b``
-``c``     Require a constant operand and print the constant expression with no punctuation.                            ``%c1``  ``2``             ``2``
-``d``     print duplicated register operand for AVX instruction.                                                       ``%d5``  ``%xmm0, %xmm0``  ``xmm0, xmm0``
-``E``     Print the address in Double Integer (DImode) mode (8 bytes) when the target is 64-bit.                       ``%E1``  ``%(rax)``        ``[rax]``
-          Otherwise mode is unspecified (VOIDmode).
-``g``     Print the V16SFmode name of the register.                                                                    ``%g0``  ``%zmm0``         ``zmm0``
-``h``     Print the QImode name for a 'high' register.                                                                 ``%h0``  ``%ah``           ``ah``
-``H``     Add 8 bytes to an offsettable memory reference. Useful when accessing the                                    ``%H0``  ``8(%rax)``       ``8[rax]``
-          high 8 bytes of SSE values. For a memref in (%rax), it generates
-``k``     Print the SImode name of the register.                                                                       ``%k0``  ``%eax``          ``eax``
-``l``     Print the label name with no punctuation.                                                                    ``%l3``  ``.L3``           ``.L3``
-``L``     print the opcode suffix of l.                                                                                ``%L0``  ``l``
-``N``     print maskz.                                                                                                 ``%N7``  ``{z}``           ``{z}``
-``p``     Print raw symbol name (without syntax-specific prefixes).                                                    ``%p2``  ``42``            ``42``
-``P``     If used for a function, print the PLT suffix and generate PIC code.
-          For example, emit ``foo@PLT`` instead of 'foo' for the function
-          foo(). If used for a constant, drop all syntax-specific prefixes and
-          issue the bare constant. See ``p`` above.
-``q``     Print the DImode name of the register.                                                                       ``%q0``  ``%rax``          ``rax``
-``Q``     print the opcode suffix of q.                                                                                ``%Q0``  ``q``
-``R``     print embedded rounding and sae.                                                                             ``%R4``  ``{rn-sae}, ``    ``, {rn-sae}``
-``r``     print only sae.                                                                                              ``%r4``  ``{sae}, ``       ``, {sae}``
-``s``     print a shift double count, followed by the assemblers argument                                              ``%s1``  ``$2, ``          ``2, ``
-          delimiterprint the opcode suffix of s.
-``S``     print the opcode suffix of s.                                                                                ``%S0``  ``s``
-``t``     print the V8SFmode name of the register.                                                                     ``%t5``  ``%ymm0``         ``ymm0``
-``T``     print the opcode suffix of t.                                                                                ``%T0``  ``t``
-``V``     print naked full integer register name without %.                                                            ``%V0``  ``eax``           ``eax``
-``w``     Print the HImode name of the register.                                                                       ``%w0``  ``%ax``           ``ax``
-``W``     print the opcode suffix of w.                                                                                ``%W0``  ``w``
-``x``     print the V4SFmode name of the register.                                                                     ``%x5``  ``%xmm0``         ``xmm0``
-``y``     print "st(0)" instead of "st" as a register.                                                                 ``%y6``  ``%st(0)``        ``st(0)``
-``z``     Print the opcode suffix for the size of the current integer operand (one of ``b`` / ``w`` / ``l`` / ``q``).  ``%z0``  ``l``
-``Z``     Like ``z``, with special suffixes for x87 instructions.
-========  ===========================================================================================================  =======  ================  ==============
+.. list-table::
+   :header-rows: 1
+
+   * - Modifier
+     - Description
+     - Operand
+     - :samp:`att`
+     - :samp:`intel`
+
+   * - ``A``
+     - Print an absolute memory reference.
+     - ``%A0``
+     - ``*%rax``
+     - ``rax``
+   * - ``b``
+     - Print the QImode name of the register.
+     - ``%b0``
+     - ``%al``
+     - ``al``
+   * - ``B``
+     - print the opcode suffix of b.
+     - ``%B0``
+     - ``b``
+     -
+   * - ``c``
+     - Require a constant operand and print the constant expression with no punctuation.
+     - ``%c1``
+     - ``2``
+     - ``2``
+   * - ``d``
+     - print duplicated register operand for AVX instruction.
+     - ``%d5``
+     - ``%xmm0, %xmm0``
+     - ``xmm0, xmm0``
+   * - ``E``
+     - Print the address in Double Integer (DImode) mode (8 bytes) when the target is 64-bit. Otherwise mode is unspecified (VOIDmode).
+     - ``%E1``
+     - ``%(rax)``
+     - ``[rax]``
+   * - ``g``
+     - Print the V16SFmode name of the register.
+     - ``%g0``
+     - ``%zmm0``
+     - ``zmm0``
+   * - ``h``
+     - Print the QImode name for a 'high' register.
+     - ``%h0``
+     - ``%ah``
+     - ``ah``
+   * - ``H``
+     - Add 8 bytes to an offsettable memory reference. Useful when accessing the high 8 bytes of SSE values. For a memref in (%rax), it generates
+     - ``%H0``
+     - ``8(%rax)``
+     - ``8[rax]``
+   * - ``k``
+     - Print the SImode name of the register.
+     - ``%k0``
+     - ``%eax``
+     - ``eax``
+   * - ``l``
+     - Print the label name with no punctuation.
+     - ``%l3``
+     - ``.L3``
+     - ``.L3``
+   * - ``L``
+     - print the opcode suffix of l.
+     - ``%L0``
+     - ``l``
+     -
+   * - ``N``
+     - print maskz.
+     - ``%N7``
+     - ``{z}``
+     - ``{z}``
+   * - ``p``
+     - Print raw symbol name (without syntax-specific prefixes).
+     - ``%p2``
+     - ``42``
+     - ``42``
+   * - ``P``
+     - If used for a function, print the PLT suffix and generate PIC code. For example, emit ``foo@PLT`` instead of 'foo' for the function foo(). If used for a constant, drop all syntax-specific prefixes and issue the bare constant. See ``p`` above.
+   * - ``q``
+     - Print the DImode name of the register.
+     - ``%q0``
+     - ``%rax``
+     - ``rax``
+   * - ``Q``
+     - print the opcode suffix of q.
+     - ``%Q0``
+     - ``q``
+     -
+   * - ``R``
+     - print embedded rounding and sae.
+     - ``%R4``
+     - ``{rn-sae}, ``
+     - ``, {rn-sae}``
+   * - ``r``
+     - print only sae.
+     - ``%r4``
+     - ``{sae}, ``
+     - ``, {sae}``
+   * - ``s``
+     - print a shift double count, followed by the assemblers argument delimiterprint the opcode suffix of s.
+     - ``%s1``
+     - ``$2, ``
+     - ``2, ``
+   * - ``S``
+     - print the opcode suffix of s.
+     - ``%S0``
+     - ``s``
+     -
+   * - ``t``
+     - print the V8SFmode name of the register.
+     - ``%t5``
+     - ``%ymm0``
+     - ``ymm0``
+   * - ``T``
+     - print the opcode suffix of t.
+     - ``%T0``
+     - ``t``
+     -
+   * - ``V``
+     - print naked full integer register name without %.
+     - ``%V0``
+     - ``eax``
+     - ``eax``
+   * - ``w``
+     - Print the HImode name of the register.
+     - ``%w0``
+     - ``%ax``
+     - ``ax``
+   * - ``W``
+     - print the opcode suffix of w.
+     - ``%W0``
+     - ``w``
+     -
+   * - ``x``
+     - print the V4SFmode name of the register.
+     - ``%x5``
+     - ``%xmm0``
+     - ``xmm0``
+   * - ``y``
+     - print "st(0)" instead of "st" as a register.
+     - ``%y6``
+     - ``%st(0)``
+     - ``st(0)``
+   * - ``z``
+     - Print the opcode suffix for the size of the current integer operand (one of ``b`` / ``w`` / ``l`` / ``q``).
+     - ``%z0``
+     - ``l``
+     -
+   * - ``Z``
+     - Like ``z``, with special suffixes for x87 instructions.
+
 .. _x86floatingpointasmoperands:
 
 x86 Floating-Point asm Operands
@@ -1459,37 +1589,58 @@ MSP430 Operand Modifiers
 
 The list below describes the supported modifiers and their effects for MSP430.
 
-========  ===========================================================
-Modifier  Description
-========  ===========================================================
-``A``     Select low 16-bits of the constant/register/memory operand.
-``B``     Select high 16-bits of the constant/register/memory
-          operand.
-``C``     Select bits 32-47 of the constant/register/memory operand.
-``D``     Select bits 48-63 of the constant/register/memory operand.
-``H``     Equivalent to ``B`` (for backwards compatibility).
-``I``     Print the inverse (logical ``NOT``) of the constant
-          value.
-``J``     Print an integer without a ``#`` prefix.
-``L``     Equivalent to ``A`` (for backwards compatibility).
-``O``     Offset of the current frame from the top of the stack.
-``Q``     Use the ``A`` instruction postfix.
-``R``     Inverse of condition code, for unsigned comparisons.
-``W``     Subtract 16 from the constant value.
-``X``     Use the ``X`` instruction postfix.
-``Y``     Subtract 4 from the constant value.
-``Z``     Subtract 1 from the constant value.
-``b``     Append ``.B``, ``.W`` or ``.A`` to the
-          instruction, depending on the mode.
-``d``     Offset 1 byte of a memory reference or constant value.
-``e``     Offset 3 bytes of a memory reference or constant value.
-``f``     Offset 5 bytes of a memory reference or constant value.
-``g``     Offset 7 bytes of a memory reference or constant value.
-``p``     Print the value of 2, raised to the power of the given
-          constant.  Used to select the specified bit position.
-``r``     Inverse of condition code, for signed comparisons.
-``x``     Equivialent to ``X``, but only for pointers.
-========  ===========================================================
+.. list-table::
+   :header-rows: 1
+
+   * - Modifier
+     - Description
+
+   * - ``A``
+     - Select low 16-bits of the constant/register/memory operand.
+   * - ``B``
+     - Select high 16-bits of the constant/register/memory operand.
+   * - ``C``
+     - Select bits 32-47 of the constant/register/memory operand.
+   * - ``D``
+     - Select bits 48-63 of the constant/register/memory operand.
+   * - ``H``
+     - Equivalent to ``B`` (for backwards compatibility).
+   * - ``I``
+     - Print the inverse (logical ``NOT``) of the constant value.
+   * - ``J``
+     - Print an integer without a ``#`` prefix.
+   * - ``L``
+     - Equivalent to ``A`` (for backwards compatibility).
+   * - ``O``
+     - Offset of the current frame from the top of the stack.
+   * - ``Q``
+     - Use the ``A`` instruction postfix.
+   * - ``R``
+     - Inverse of condition code, for unsigned comparisons.
+   * - ``W``
+     - Subtract 16 from the constant value.
+   * - ``X``
+     - Use the ``X`` instruction postfix.
+   * - ``Y``
+     - Subtract 4 from the constant value.
+   * - ``Z``
+     - Subtract 1 from the constant value.
+   * - ``b``
+     - Append ``.B``, ``.W`` or ``.A`` to the instruction, depending on the mode.
+   * - ``d``
+     - Offset 1 byte of a memory reference or constant value.
+   * - ``e``
+     - Offset 3 bytes of a memory reference or constant value.
+   * - ``f``
+     - Offset 5 bytes of a memory reference or constant value.
+   * - ``g``
+     - Offset 7 bytes of a memory reference or constant value.
+   * - ``p``
+     - Print the value of 2, raised to the power of the given constant.  Used to select the specified bit position.
+   * - ``r``
+     - Inverse of condition code, for signed comparisons.
+   * - ``x``
+     - Equivialent to ``X``, but only for pointers.
 
 .. Most of this node appears by itself (in a different place) even
    when the INTERNALS flag is clear.  Passages that require the internals

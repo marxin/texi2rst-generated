@@ -57,15 +57,35 @@ COS --- Cosine function
       end program test_cos
 
   :samp:`{Specific names}:`
-    ============  ================  ==============  ====================
-    Name          Argument          Return type     Standard
-    ============  ================  ==============  ====================
-    ``COS(X)``    ``REAL(4) X``     ``REAL(4)``     Fortran 77 and later
-    ``DCOS(X)``   ``REAL(8) X``     ``REAL(8)``     Fortran 77 and later
-    ``CCOS(X)``   ``COMPLEX(4) X``  ``COMPLEX(4)``  Fortran 77 and later
-    ``ZCOS(X)``   ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-    ``CDCOS(X)``  ``COMPLEX(8) X``  ``COMPLEX(8)``  GNU extension
-    ============  ================  ==============  ====================
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``COS(X)``
+         - ``REAL(4) X``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``DCOS(X)``
+         - ``REAL(8) X``
+         - ``REAL(8)``
+         - Fortran 77 and later
+       * - ``CCOS(X)``
+         - ``COMPLEX(4) X``
+         - ``COMPLEX(4)``
+         - Fortran 77 and later
+       * - ``ZCOS(X)``
+         - ``COMPLEX(8) X``
+         - ``COMPLEX(8)``
+         - GNU extension
+       * - ``CDCOS(X)``
+         - ``COMPLEX(8) X``
+         - ``COMPLEX(8)``
+         - GNU extension
 
   :samp:`{See also}:`
     Inverse function: 

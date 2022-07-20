@@ -1144,23 +1144,81 @@ Intrinsics for which prefixed versions are available and in what form are noted
 in :ref:`intrinsic-procedures`. The complete list of supported intrinsics is
 here:
 
-==========  ==========  ===========  ===========  ===========
-Intrinsic   B           I            J            K
-==========  ==========  ===========  ===========  ===========
-``ABS``     ``BABS``    ``IIABS``    ``JIABS``    ``KIABS``
-``BTEST``   ``BBTEST``  ``BITEST``   ``BJTEST``   ``BKTEST``
-``IAND``    ``BIAND``   ``IIAND``    ``JIAND``    ``KIAND``
-``IBCLR``   ``BBCLR``   ``IIBCLR``   ``JIBCLR``   ``KIBCLR``
-``IBITS``   ``BBITS``   ``IIBITS``   ``JIBITS``   ``KIBITS``
-``IBSET``   ``BBSET``   ``IIBSET``   ``JIBSET``   ``KIBSET``
-``IEOR``    ``BIEOR``   ``IIEOR``    ``JIEOR``    ``KIEOR``
-``IOR``     ``BIOR``    ``IIOR``     ``JIOR``     ``KIOR``
-``ISHFT``   ``BSHFT``   ``IISHFT``   ``JISHFT``   ``KISHFT``
-``ISHFTC``  ``BSHFTC``  ``IISHFTC``  ``JISHFTC``  ``KISHFTC``
-``MOD``     ``BMOD``    ``IMOD``     ``JMOD``     ``KMOD``
-``NOT``     ``BNOT``    ``INOT``     ``JNOT``     ``KNOT``
-``REAL``    ``--``      ``FLOATI``   ``FLOATJ``   ``FLOATK``
-==========  ==========  ===========  ===========  ===========
+.. list-table::
+   :header-rows: 1
+
+   * - Intrinsic
+     - B
+     - I
+     - J
+     - K
+
+   * - ``ABS``
+     - ``BABS``
+     - ``IIABS``
+     - ``JIABS``
+     - ``KIABS``
+   * - ``BTEST``
+     - ``BBTEST``
+     - ``BITEST``
+     - ``BJTEST``
+     - ``BKTEST``
+   * - ``IAND``
+     - ``BIAND``
+     - ``IIAND``
+     - ``JIAND``
+     - ``KIAND``
+   * - ``IBCLR``
+     - ``BBCLR``
+     - ``IIBCLR``
+     - ``JIBCLR``
+     - ``KIBCLR``
+   * - ``IBITS``
+     - ``BBITS``
+     - ``IIBITS``
+     - ``JIBITS``
+     - ``KIBITS``
+   * - ``IBSET``
+     - ``BBSET``
+     - ``IIBSET``
+     - ``JIBSET``
+     - ``KIBSET``
+   * - ``IEOR``
+     - ``BIEOR``
+     - ``IIEOR``
+     - ``JIEOR``
+     - ``KIEOR``
+   * - ``IOR``
+     - ``BIOR``
+     - ``IIOR``
+     - ``JIOR``
+     - ``KIOR``
+   * - ``ISHFT``
+     - ``BSHFT``
+     - ``IISHFT``
+     - ``JISHFT``
+     - ``KISHFT``
+   * - ``ISHFTC``
+     - ``BSHFTC``
+     - ``IISHFTC``
+     - ``JISHFTC``
+     - ``KISHFTC``
+   * - ``MOD``
+     - ``BMOD``
+     - ``IMOD``
+     - ``JMOD``
+     - ``KMOD``
+   * - ``NOT``
+     - ``BNOT``
+     - ``INOT``
+     - ``JNOT``
+     - ``KNOT``
+   * - ``REAL``
+     - ``--``
+     - ``FLOATI``
+     - ``FLOATJ``
+     - ``FLOATK``
+
 .. _automatic-and-static-attributes:
 
 .. index:: variable attributes
@@ -1235,18 +1293,29 @@ Specifically, :option:`-fdec-math` enables the :ref:`COTAN` intrinsic, and
 trigonometric intrinsics which accept or produce values in degrees instead of
 radians.  Here is a summary of the new intrinsics:
 
-============  =============
-Radians       Degrees
-============  =============
-``ACOS``      ``ACOSD`` \*
-``ASIN``      ``ASIND`` \*
-``ATAN``      ``ATAND`` \*
-``ATAN2``     ``ATAN2D`` \*
-``COS``       ``COSD`` \*
-``COTAN`` \*  ``COTAND`` \*
-``SIN``       ``SIND`` \*
-``TAN``       ``TAND`` \*
-============  =============
+.. list-table::
+   :header-rows: 1
+
+   * - Radians
+     - Degrees
+
+   * - ``ACOS``
+     - ``ACOSD`` \*
+   * - ``ASIN``
+     - ``ASIND`` \*
+   * - ``ATAN``
+     - ``ATAND`` \*
+   * - ``ATAN2``
+     - ``ATAN2D`` \*
+   * - ``COS``
+     - ``COSD`` \*
+   * - ``COTAN`` \*
+     - ``COTAND`` \*
+   * - ``SIN``
+     - ``SIND`` \*
+   * - ``TAN``
+     - ``TAND`` \*
+
 \* Enabled with :option:`-fdec-math`.
 
 For advanced users, it may be important to know the implementation of these
@@ -1355,15 +1424,29 @@ other operand is an integer in a logical operation.  In this case,
 Here is the mapping of logical operator to bitwise intrinsic used with
 :option:`-fdec` :
 
-==========  =============  ==========================
-Operator    Intrinsic      Bitwise operation
-==========  =============  ==========================
-``.NOT.``   ``NOT``        complement
-``.AND.``   ``IAND``       intersection
-``.OR.``    ``IOR``        union
-``.NEQV.``  ``IEOR``       exclusive or
-``.EQV.``   ``NOT(IEOR)``  complement of exclusive or
-==========  =============  ==========================
+.. list-table::
+   :header-rows: 1
+
+   * - Operator
+     - Intrinsic
+     - Bitwise operation
+
+   * - ``.NOT.``
+     - ``NOT``
+     - complement
+   * - ``.AND.``
+     - ``IAND``
+     - intersection
+   * - ``.OR.``
+     - ``IOR``
+     - union
+   * - ``.NEQV.``
+     - ``IEOR``
+     - exclusive or
+   * - ``.EQV.``
+     - ``NOT(IEOR)``
+     - complement of exclusive or
+
 .. _extended-i-o-specifiers:
 
 .. index:: CARRIAGECONTROL
@@ -1400,26 +1483,44 @@ compile flag :option:`-fdec`, for compatibility.
   Where *cc* is a character expression that evaluates to one of the
   following values:
 
-  =============  ========================================================
-  ``'LIST'``     One line feed between records (default)
-  ``'FORTRAN'``  Legacy interpretation of the first character (see below)
-  ``'NONE'``     No separator between records
-  =============  ========================================================
+  .. list-table::
+
+     * - ``'LIST'``
+       - One line feed between records (default)
+     * - ``'FORTRAN'``
+       - Legacy interpretation of the first character (see below)
+     * - ``'NONE'``
+       - No separator between records
 
   With ``CARRIAGECONTROL='FORTRAN'``, when a record is written, the first
   character of the input record is not written, and instead determines the output
   record separator as follows:
 
-  =================  =========================  ==================================
-  Leading character  Meaning                    Output separating character(s)
-  =================  =========================  ==================================
-  ``'+'``            Overprinting               Carriage return only
-  ``'-'``            New line                   Line feed and carriage return
-  ``'0'``            Skip line                  Two line feeds and carriage return
-  ``'1'``            New page                   Form feed and carriage return
-  ``'$'``            Prompting                  Line feed (no carriage return)
-  ``CHAR(0)``        Overprinting (no advance)  None
-  =================  =========================  ==================================
+  .. list-table::
+     :header-rows: 1
+
+     * - Leading character
+       - Meaning
+       - Output separating character(s)
+
+     * - ``'+'``
+       - Overprinting
+       - Carriage return only
+     * - ``'-'``
+       - New line
+       - Line feed and carriage return
+     * - ``'0'``
+       - Skip line
+       - Two line feeds and carriage return
+     * - ``'1'``
+       - New page
+       - Form feed and carriage return
+     * - ``'$'``
+       - Prompting
+       - Line feed (no carriage return)
+     * - ``CHAR(0)``
+       - Overprinting (no advance)
+       - None
 
 .. envvar:: READONLY
 
@@ -1448,12 +1549,20 @@ compile flag :option:`-fdec`, for compatibility.
   a value as seen in the table below. The latter two forms are aliases
   for particular values of *sh*:
 
-  ====================  ============  ======================
-  Explicit form         Short form    Meaning
-  ====================  ============  ======================
-  ``SHARE='DENYRW'``    ``NOSHARED``  Exclusive (write) lock
-  ``SHARE='DENYNONE'``  ``SHARED``    Shared (read) lock
-  ====================  ============  ======================
+  .. list-table::
+     :header-rows: 1
+
+     * - Explicit form
+       - Short form
+       - Meaning
+
+     * - ``SHARE='DENYRW'``
+       - ``NOSHARED``
+       - Exclusive (write) lock
+     * - ``SHARE='DENYNONE'``
+       - ``SHARED``
+       - Shared (read) lock
+
   In general only one process may hold an exclusive (write) lock for a given file
   at a time, whereas many processes may hold shared (read) locks for the same
   file.

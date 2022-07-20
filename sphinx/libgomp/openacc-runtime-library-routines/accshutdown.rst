@@ -14,16 +14,19 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  ==========================================
-  *Prototype*:  ``acc_shutdown(acc_device_t devicetype);``
-  ============  ==========================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``acc_shutdown(acc_device_t devicetype);``
 
 :samp:`{Fortran}:`
 
-  ============  =======================================
-  *Interface*:  ``subroutine acc_shutdown(devicetype)``
-                ``integer(acc_device_kind) devicetype``
-  ============  =======================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine acc_shutdown(devicetype)``
+     * -
+       - ``integer(acc_device_kind) devicetype``
 
 :samp:`{Reference}:`
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section

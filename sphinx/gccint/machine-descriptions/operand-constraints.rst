@@ -363,22 +363,22 @@ each :samp:`>` with :samp:`_g`.  Here are some examples:
 
 .. the @c's prevent double blank lines in the printed manual.
 
-============  =============
-**Original**  **Mangled**  
-              ..  c
-``x``         ``x``       
-              ..  c
-``P42x``      ``P42x``    
-              ..  c
-``P4_x``      ``P4__x``   
-              ..  c
-``P4>x``      ``P4_gx``   
-              ..  c
-``P4>>``      ``P4_g_g``  
-              ..  c
-``P4_g>``     ``P4__g_g`` 
-              ..  c
-============  =============
+.. list-table::
+
+   * - **Original**
+     - **Mangled** ..  c
+   * - ``x``
+     - ``x`` ..  c
+   * - ``P42x``
+     - ``P42x`` ..  c
+   * - ``P4_x``
+     - ``P4__x`` ..  c
+   * - ``P4>x``
+     - ``P4_gx`` ..  c
+   * - ``P4>>``
+     - ``P4_g_g`` ..  c
+   * - ``P4_g>``
+     - ``P4__g_g`` ..  c
 
 Throughout this section, the variable :samp:`{c}` is either a constraint
 in the abstract sense, or a constant from ``enum constraint_num`` ;

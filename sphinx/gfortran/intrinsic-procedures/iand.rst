@@ -63,15 +63,35 @@ IAND --- Bitwise logical and
       END PROGRAM
 
   :samp:`{Specific names}:`
-    ============  ================  ==============  ====================
-    Name          Argument          Return type     Standard
-    ============  ================  ==============  ====================
-    ``IAND(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later
-    ``BIAND(A)``  ``INTEGER(1) A``  ``INTEGER(1)``  GNU extension
-    ``IIAND(A)``  ``INTEGER(2) A``  ``INTEGER(2)``  GNU extension
-    ``JIAND(A)``  ``INTEGER(4) A``  ``INTEGER(4)``  GNU extension
-    ``KIAND(A)``  ``INTEGER(8) A``  ``INTEGER(8)``  GNU extension
-    ============  ================  ==============  ====================
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``IAND(A)``
+         - ``INTEGER A``
+         - ``INTEGER``
+         - Fortran 90 and later
+       * - ``BIAND(A)``
+         - ``INTEGER(1) A``
+         - ``INTEGER(1)``
+         - GNU extension
+       * - ``IIAND(A)``
+         - ``INTEGER(2) A``
+         - ``INTEGER(2)``
+         - GNU extension
+       * - ``JIAND(A)``
+         - ``INTEGER(4) A``
+         - ``INTEGER(4)``
+         - GNU extension
+       * - ``KIAND(A)``
+         - ``INTEGER(8) A``
+         - ``INTEGER(8)``
+         - GNU extension
 
   :samp:`{See also}:`
     :ref:`IOR`, 

@@ -17,15 +17,17 @@ omp_get_proc_bind -- Whether theads may be moved between CPUs
 
 :samp:`{C/C++}:`
 
-  ============  ============================================
-  *Prototype*:  ``omp_proc_bind_t omp_get_proc_bind(void);``
-  ============  ============================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``omp_proc_bind_t omp_get_proc_bind(void);``
 
 :samp:`{Fortran}:`
 
-  ============  =================================================================
-  *Interface*:  ``integer(kind=omp_proc_bind_kind) function omp_get_proc_bind()``
-  ============  =================================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``integer(kind=omp_proc_bind_kind) function omp_get_proc_bind()``
 
 :samp:`{See also}:`
   :ref:`OMP_PROC_BIND`, :ref:`OMP_PLACES`, :ref:`GOMP_CPU_AFFINITY`,

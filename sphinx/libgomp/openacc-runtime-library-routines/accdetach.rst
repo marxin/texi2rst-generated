@@ -14,12 +14,16 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  =======================================================
-  *Prototype*:  ``acc_detach(h_void **ptr);``
-  *Prototype*:  ``acc_detach_async(h_void **ptr, int async);``
-  *Prototype*:  ``acc_detach_finalize(h_void **ptr);``
-  *Prototype*:  ``acc_detach_finalize_async(h_void **ptr, int async);``
-  ============  =======================================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``acc_detach(h_void **ptr);``
+     * - *Prototype*:
+       - ``acc_detach_async(h_void **ptr, int async);``
+     * - *Prototype*:
+       - ``acc_detach_finalize(h_void **ptr);``
+     * - *Prototype*:
+       - ``acc_detach_finalize_async(h_void **ptr, int async);``
 
 :samp:`{Reference}:`
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section

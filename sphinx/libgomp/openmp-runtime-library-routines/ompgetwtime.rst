@@ -16,15 +16,17 @@ omp_get_wtime -- Elapsed wall clock time
 
 :samp:`{C/C++}:`
 
-  ============  ===============================
-  *Prototype*:  ``double omp_get_wtime(void);``
-  ============  ===============================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``double omp_get_wtime(void);``
 
 :samp:`{Fortran}:`
 
-  ============  =============================================
-  *Interface*:  ``double precision function omp_get_wtime()``
-  ============  =============================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``double precision function omp_get_wtime()``
 
 :samp:`{See also}:`
   :ref:`omp_get_wtick`

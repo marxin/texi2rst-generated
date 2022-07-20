@@ -14,15 +14,17 @@ omp_get_teams_thread_limit -- Maximum number of threads imposed by teams
 
 :samp:`{C/C++}:`
 
-  ============  =========================================
-  *Prototype*:  ``int omp_get_teams_thread_limit(void);``
-  ============  =========================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``int omp_get_teams_thread_limit(void);``
 
 :samp:`{Fortran}:`
 
-  ============  =================================================
-  *Interface*:  ``integer function omp_get_teams_thread_limit()``
-  ============  =================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``integer function omp_get_teams_thread_limit()``
 
 :samp:`{See also}:`
   :ref:`omp_set_teams_thread_limit`, :ref:`OMP_TEAMS_THREAD_LIMIT`

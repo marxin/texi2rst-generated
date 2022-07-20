@@ -150,19 +150,31 @@ The table below lists the ``v2sf`` operations for which hardware
 support exists.  ``a``, ``b`` and ``c`` are ``v2sf``
 values and ``x`` is an integral value.
 
-================  =========================
-C code            MIPS instruction
-================  =========================
-``a + b``         ``add.ps``
-``a - b``         ``sub.ps``
-``-a``            ``neg.ps``
-``a * b``         ``mul.ps``
-``a * b + c``     ``madd.ps``
-``a * b - c``     ``msub.ps``
-``-(a * b + c)``  ``nmadd.ps``
-``-(a * b - c)``  ``nmsub.ps``
-``x ? a : b``     ``movn.ps`` / ``movz.ps``
-================  =========================
+.. list-table::
+   :header-rows: 1
+
+   * - C code
+     - MIPS instruction
+
+   * - ``a + b``
+     - ``add.ps``
+   * - ``a - b``
+     - ``sub.ps``
+   * - ``-a``
+     - ``neg.ps``
+   * - ``a * b``
+     - ``mul.ps``
+   * - ``a * b + c``
+     - ``madd.ps``
+   * - ``a * b - c``
+     - ``msub.ps``
+   * - ``-(a * b + c)``
+     - ``nmadd.ps``
+   * - ``-(a * b - c)``
+     - ``nmsub.ps``
+   * - ``x ? a : b``
+     - ``movn.ps`` / ``movz.ps``
+
 Note that the multiply-accumulate instructions can be disabled
 using the command-line option ``-mno-fused-madd``.
 

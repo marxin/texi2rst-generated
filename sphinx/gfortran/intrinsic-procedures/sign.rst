@@ -58,11 +58,25 @@ SIGN --- Sign copying function
       end program test_sign
 
   :samp:`{Specific names}:`
-    ==============  ===================  ==============  ====================
-    Name            Arguments            Return type     Standard
-    ==============  ===================  ==============  ====================
-    ``SIGN(A,B)``   ``REAL(4) A, B``     ``REAL(4)``     Fortran 77 and later
-    ``ISIGN(A,B)``  ``INTEGER(4) A, B``  ``INTEGER(4)``  Fortran 77 and later
-    ``DSIGN(A,B)``  ``REAL(8) A, B``     ``REAL(8)``     Fortran 77 and later
-    ==============  ===================  ==============  ====================
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Arguments
+         - Return type
+         - Standard
+
+       * - ``SIGN(A,B)``
+         - ``REAL(4) A, B``
+         - ``REAL(4)``
+         - Fortran 77 and later
+       * - ``ISIGN(A,B)``
+         - ``INTEGER(4) A, B``
+         - ``INTEGER(4)``
+         - Fortran 77 and later
+       * - ``DSIGN(A,B)``
+         - ``REAL(8) A, B``
+         - ``REAL(8)``
+         - Fortran 77 and later
 

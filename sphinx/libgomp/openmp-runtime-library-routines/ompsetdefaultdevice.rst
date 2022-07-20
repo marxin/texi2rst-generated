@@ -14,16 +14,19 @@ omp_set_default_device -- Set the default device for target regions
 
 :samp:`{C/C++}:`
 
-  ============  ================================================
-  *Prototype*:  ``void omp_set_default_device(int device_num);``
-  ============  ================================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void omp_set_default_device(int device_num);``
 
 :samp:`{Fortran}:`
 
-  ============  =================================================
-  *Interface*:  ``subroutine omp_set_default_device(device_num)``
-                ``integer device_num``
-  ============  =================================================
+  .. list-table::
+
+     * - *Interface*:
+       - ``subroutine omp_set_default_device(device_num)``
+     * -
+       - ``integer device_num``
 
 :samp:`{See also}:`
   :ref:`OMP_DEFAULT_DEVICE`, :ref:`omp_get_default_device`

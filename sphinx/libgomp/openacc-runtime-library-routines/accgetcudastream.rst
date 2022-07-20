@@ -14,9 +14,10 @@ Description
 
 :samp:`{C/C++}:`
 
-  ============  =========================================
-  *Prototype*:  ``void *acc_get_cuda_stream(int async);``
-  ============  =========================================
+  .. list-table::
+
+     * - *Prototype*:
+       - ``void *acc_get_cuda_stream(int async);``
 
 :samp:`{Reference}:`
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section

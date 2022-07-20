@@ -53,15 +53,35 @@ ISHFT --- Shift bits
       RESULT = ISHFT(I, SHIFT)
 
   :samp:`{Specific names}:`
-    =============  ================  ==============  ====================
-    Name           Argument          Return type     Standard
-    =============  ================  ==============  ====================
-    ``ISHFT(A)``   ``INTEGER A``     ``INTEGER``     Fortran 90 and later
-    ``BSHFT(A)``   ``INTEGER(1) A``  ``INTEGER(1)``  GNU extension
-    ``IISHFT(A)``  ``INTEGER(2) A``  ``INTEGER(2)``  GNU extension
-    ``JISHFT(A)``  ``INTEGER(4) A``  ``INTEGER(4)``  GNU extension
-    ``KISHFT(A)``  ``INTEGER(8) A``  ``INTEGER(8)``  GNU extension
-    =============  ================  ==============  ====================
+
+    .. list-table::
+       :header-rows: 1
+
+       * - Name
+         - Argument
+         - Return type
+         - Standard
+
+       * - ``ISHFT(A)``
+         - ``INTEGER A``
+         - ``INTEGER``
+         - Fortran 90 and later
+       * - ``BSHFT(A)``
+         - ``INTEGER(1) A``
+         - ``INTEGER(1)``
+         - GNU extension
+       * - ``IISHFT(A)``
+         - ``INTEGER(2) A``
+         - ``INTEGER(2)``
+         - GNU extension
+       * - ``JISHFT(A)``
+         - ``INTEGER(4) A``
+         - ``INTEGER(4)``
+         - GNU extension
+       * - ``KISHFT(A)``
+         - ``INTEGER(8) A``
+         - ``INTEGER(8)``
+         - GNU extension
 
   :samp:`{See also}:`
     :ref:`ISHFTC`
