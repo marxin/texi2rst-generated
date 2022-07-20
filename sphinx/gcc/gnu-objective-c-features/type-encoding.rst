@@ -21,6 +21,7 @@ The types are encoded in the following way:
 .. @sp 1
 
 .. list-table::
+   :widths: 15 85
 
    * - ``_Bool``
      - ``B``
