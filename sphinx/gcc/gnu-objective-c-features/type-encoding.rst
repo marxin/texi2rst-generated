@@ -21,7 +21,7 @@ The types are encoded in the following way:
 .. @sp 1
 
 .. list-table::
-   :widths: 15 85
+   :widths: 25 75
 
    * - ``_Bool``
      - ``B``
@@ -91,6 +91,7 @@ The non-atomic types are encoded as follows:
 .. @sp 1
 
 .. list-table::
+   :widths: 15 85
 
    * - pointers
      - :samp:`^` followed by the pointed type.
