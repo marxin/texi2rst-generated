@@ -46,8 +46,8 @@ are given below.
   .. list-table::
      :header-rows: 1
 
-     * - **Family**
-       - **:samp:`-mcpu` arguments**
+     * - Family
+       - :samp:`-mcpu` arguments
 
      * - :samp:`51`
        - :samp:`51` :samp:`51ac` :samp:`51ag` :samp:`51cn` :samp:`51em` :samp:`51je` :samp:`51jf` :samp:`51jg` :samp:`51jm` :samp:`51mm` :samp:`51qe` :samp:`51qm`
