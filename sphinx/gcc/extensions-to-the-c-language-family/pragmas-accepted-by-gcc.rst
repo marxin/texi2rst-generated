@@ -470,7 +470,7 @@ macros are defined.
   to the state as of that point in the source file.  Thus, pragmas occurring
   after a line do not affect diagnostics caused by that line.
 
-``#pragma GCC diagnostic push`` ``#pragma GCC diagnostic pop``
+``#pragma GCC diagnostic push``, ``#pragma GCC diagnostic pop``
   Causes GCC to remember the state of the diagnostics as of each
   ``push``, and restore to that point at each ``pop``.  If a
   ``pop`` has no matching ``push``, the command-line options are
@@ -574,7 +574,7 @@ GCC also offers a simple mechanism for printing messages during compilation.
 Visibility Pragmas
 ^^^^^^^^^^^^^^^^^^
 
-:samp:`#pragma GCC visibility push({visibility})` ``#pragma GCC visibility pop``
+:samp:`#pragma GCC visibility push({visibility})`, ``#pragma GCC visibility pop``
 
   .. index:: pragma, visibility
 

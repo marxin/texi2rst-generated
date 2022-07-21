@@ -2255,18 +2255,31 @@ optimizations to be performed is desired.
   The following options :option:`-fPIC`, :option:`-fpic`, :option:`-fpie` and
   :option:`-fPIE` are combined based on the following scheme:
 
-  .. note::
-    :option:`-fPIC` + :option:`-fpic` = :option:`-fpic`
+  .. list-table::
+      :header-rows: 1
 
-    :option:`-fPIC` + :option:`-fno-pic` = :option:`-fno-pic`
+      * - argument 1
+        - argument 2
+        - output
 
-    :option:`-fpic`/:option:`-fPIC` + (no option) = (no option)
-
-    :option:`-fPIC` + :option:`-fPIE` = :option:`-fPIE`
-
-    :option:`-fpic` + :option:`-fPIE` = :option:`-fpie`
-
-    :option:`-fPIC`/:option:`-fpic` + :option:`-fpie` = :option:`-fpie`
+      * - :option:`-fPIC`
+        - :option:`-fpic`
+        - :option:`-fpic`
+      * - :option:`-fPIC`
+        - :option:`-fno-pic`
+        - :option:`-fno-pic`
+      * - :option:`-fpic`/:option:`-fPIC`
+        - no option
+        - no option
+      * - :option:`-fPIC`
+        - :option:`-fPIE`
+        - :option:`-fPIE`
+      * - :option:`-fpic`
+        - :option:`-fPIE`
+        - :option:`-fpie`
+      * - :option:`-fPIC`/:option:`-fpic`
+        - :option:`-fpie`
+        - :option:`-fpie`
 
   Certain ABI-changing flags are required to match in all compilation units,
   and trying to override this at link time with a conflicting value

@@ -609,26 +609,26 @@ The following options control the analyzer.
     Currently, :option:`-fanalyzer-checker`:samp:`=taint` disables the
     following warnings from :option:`-fanalyzer` :
 
-  :option:`-Wanalyzer-double-fclose` 
-  :option:`-Wanalyzer-double-free` 
-  :option:`-Wanalyzer-exposure-through-output-file` 
-  :option:`-Wanalyzer-fd-access-mode-mismatch` 
-  :option:`-Wanalyzer-fd-double-close` 
-  :option:`-Wanalyzer-fd-leak` 
-  :option:`-Wanalyzer-fd-use-after-close` 
-  :option:`-Wanalyzer-fd-use-without-check` 
-  :option:`-Wanalyzer-file-leak` 
-  :option:`-Wanalyzer-free-of-non-heap` 
-  :option:`-Wanalyzer-malloc-leak` 
-  :option:`-Wanalyzer-mismatching-deallocation` 
-  :option:`-Wanalyzer-null-argument` 
-  :option:`-Wanalyzer-null-dereference` 
-  :option:`-Wanalyzer-possible-null-argument` 
-  :option:`-Wanalyzer-possible-null-dereference` 
-  :option:`-Wanalyzer-unsafe-call-within-signal-handler` 
-  :option:`-Wanalyzer-use-after-free` 
-  :option:`-Wanalyzer-va-list-leak` 
-  :option:`-Wanalyzer-va-list-use-after-va-end` 
+    :option:`-Wanalyzer-double-fclose` |gol|
+    :option:`-Wanalyzer-double-free`  |gol|
+    :option:`-Wanalyzer-exposure-through-output-file`  |gol|
+    :option:`-Wanalyzer-fd-access-mode-mismatch`  |gol|
+    :option:`-Wanalyzer-fd-double-close`  |gol|
+    :option:`-Wanalyzer-fd-leak`  |gol|
+    :option:`-Wanalyzer-fd-use-after-close`  |gol|
+    :option:`-Wanalyzer-fd-use-without-check`  |gol|
+    :option:`-Wanalyzer-file-leak`  |gol|
+    :option:`-Wanalyzer-free-of-non-heap`  |gol|
+    :option:`-Wanalyzer-malloc-leak`  |gol|
+    :option:`-Wanalyzer-mismatching-deallocation`  |gol|
+    :option:`-Wanalyzer-null-argument`  |gol|
+    :option:`-Wanalyzer-null-dereference`  |gol|
+    :option:`-Wanalyzer-possible-null-argument`  |gol|
+    :option:`-Wanalyzer-possible-null-dereference`  |gol|
+    :option:`-Wanalyzer-unsafe-call-within-signal-handler` |gol|
+    :option:`-Wanalyzer-use-after-free`  |gol|
+    :option:`-Wanalyzer-va-list-leak`  |gol|
+    :option:`-Wanalyzer-va-list-use-after-va-end`
 
 .. option:: -fno-analyzer-feasibility
 

@@ -107,9 +107,9 @@
     since the list is searched from the end backwards, it is effectively
     possible to override earlier entries using this technique.
 
-    GCC has the following spec strings built into it.  Spec files can
-    override these strings or create their own.  Note that individual
-    targets can also add their own spec strings to this list.
+  GCC has the following spec strings built into it.  Spec files can
+  override these strings or create their own.  Note that individual
+  targets can also add their own spec strings to this list.
 
   .. code-block::
 
