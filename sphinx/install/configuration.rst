@@ -623,6 +623,7 @@ corresponding :option:`--without` option.
     ``aprofile`` and ``rmprofile``.
 
     .. list-table::
+       :widths: 15 30 30
 
        * - Option
          - aprofile
