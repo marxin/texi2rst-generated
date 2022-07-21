@@ -17,14 +17,11 @@ IEEE modules: IEEE_EXCEPTIONS, IEEE_ARITHMETIC, and IEEE_FEATURES
   (*Binary floating-point arithmetic for microprocessor systems*). These
   modules are only provided on the following supported platforms:
 
-* i386 and x86_64 processors
-
-* platforms which use the GNU C Library (glibc)
-
-* platforms with support for SysV/386 routines for floating point
-  interface (including Solaris and BSDs)
-
-* platforms with the AIX OS
+  * i386 and x86_64 processors
+  * platforms which use the GNU C Library (glibc)
+  * platforms with support for SysV/386 routines for floating point
+    interface (including Solaris and BSDs)
+  * platforms with the AIX OS
 
 For full compliance with the Fortran standards, code using the
 ``IEEE_EXCEPTIONS`` or ``IEEE_ARITHMETIC`` modules should be compiled
