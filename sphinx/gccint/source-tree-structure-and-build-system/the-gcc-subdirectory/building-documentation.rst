@@ -68,31 +68,41 @@ Here are some specific guidelines for the GCC documentation:
 
 * Please stick to this order of heading adornments:
 
-  1. ``=`` with overline for document title::
+  1. ``=`` with overline for document title:
 
-       ==============
-       Document title
-       ==============
+  .. code-block:: rst
 
-  2. ``-`` for chapters::
+    ==============
+    Document title
+    ==============
 
-       Chapter
-       -------
+  2. ``-`` for chapters:
 
-  3. ``*`` for sections::
+  .. code-block:: rst
 
-       Section
-       *******
+    Chapter
+    -------
 
-  4. ``^`` for subsections::
+  3. ``*`` for sections:
 
-       Subsection
-       ^^^^^^^^^^
+  .. code-block:: rst
 
-  5. ``~`` for subsubsections::
+      Section
+      *******
 
-       Subsubsection
-       ~~~~~~~~~~~~~
+  4. ``^`` for subsections:
+
+  .. code-block:: rst
+
+      Subsection
+      ^^^^^^^^^^
+
+  5. ``~`` for subsubsections:
+
+  .. code-block:: rst
+
+      Subsubsection
+      ~~~~~~~~~~~~~
 
   Although RST doesn't mandate a specific order ("Rather than imposing a fixed
   number and order of section title adornment styles, the order enforced will be
