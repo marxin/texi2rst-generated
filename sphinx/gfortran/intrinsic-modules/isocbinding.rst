@@ -12,10 +12,15 @@ ISO_C_BINDING
   Fortran 2003 and later, GNU extensions
 
   The following intrinsic procedures are provided by the module; their
-definition can be found in the section Intrinsic Procedures of this
-manual.
+  definition can be found in the section Intrinsic Procedures of this
+  manual.
 
-C_ASSOCIATEDC_F_POINTERC_F_PROCPOINTERC_FUNLOCC_LOCC_SIZEOF
+* C_ASSOCIATED
+* C_F_POINTER
+* C_F_PROCPOINTER
+* C_FUNLOCC_LOC
+* C_SIZEOF
+
 .. TODO: Vertical spacing between C_FUNLOC and C_LOC wrong in PDF,
    don't really know why.
 

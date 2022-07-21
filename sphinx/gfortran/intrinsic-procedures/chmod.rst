@@ -59,6 +59,7 @@ CHMOD --- Change access permissions of files
       end program chmod_test
 
     ``CHMOD`` as function:
+
     .. code-block:: fortran
 
       program chmod_test

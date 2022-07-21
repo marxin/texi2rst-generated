@@ -48,6 +48,7 @@ PACK --- Pack an array into an array of rank one
 
   Example:
     Gathering nonzero elements from an array:
+
     .. code-block:: fortran
 
       PROGRAM test_pack_1
@@ -57,6 +58,7 @@ PACK --- Pack an array into an array of rank one
       END PROGRAM
 
     Gathering nonzero elements from an array and appending elements from :samp:`{VECTOR}` :
+
     .. code-block:: fortran
 
       PROGRAM test_pack_2

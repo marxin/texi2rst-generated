@@ -27,6 +27,26 @@ ASSOCIATED --- Status of a pointer or pointer/target pair
   :return:
     ``ASSOCIATED(POINTER)`` returns a scalar value of type ``LOGICAL(4)``.
     There are several cases:
+
+    - When the optional TARGET is not present then
+      ASSOCIATED(POINTER) is true if POINTER is associated with a target; otherwise, it returns false.
+
+    - If TARGET is present and a scalar target, the result is true if
+      TARGET is not a zero-sized storage sequence and the target associated with POINTER occupies the same storage units. If POINTER is disassociated, the result is false.
+
+    - If TARGET is present and an array target, the result is true if
+      TARGET and POINTER have the same shape, are not zero-sized arrays, are arrays whose elements are not zero-sized storage sequences,
+      and TARGET and POINTER occupy the same storage units in array element order. As in case(B), the result is false, if POINTER is disassociated.
+
+    - If TARGET is present and an scalar pointer, the result is true
+      if TARGET is associated with POINTER, the target associated with TARGET are not zero-sized storage sequences and occupy the same storage units.
+      The result is false, if either TARGET or POINTER is disassociated.
+
+    - If TARGET is present and an array pointer, the result is true if
+      target associated with POINTER and the target associated with TARGET have the same shape, are not zero-sized arrays,
+      are arrays whose elements are not zero-sized storage sequences, and TARGET and POINTER occupy the same storage units in array element order.
+      The result is false, if either TARGET or POINTER is disassociated.
+
   Standard:
     Fortran 90 and later
 

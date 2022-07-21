@@ -70,6 +70,7 @@ ICHAR --- Character-to-integer conversion function
     ``REAL`` value with the value 154, or vice versa. Instead, this
     functionality is provided by internal-file I/O, as in the following
     example:
+
     .. code-block:: fortran
 
       program read_val
