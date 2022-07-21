@@ -16,6 +16,7 @@ Description:
   :envvar:`GOMP_RTEMS_THREAD_POOLS` is a list of optional
   ``<thread-pool-count>[$<priority>]@<scheduler-name>`` configurations
   separated by ``:`` where:
+
   * ``<thread-pool-count>`` is the thread pool count for this scheduler
     instance.
 

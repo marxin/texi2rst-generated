@@ -19,13 +19,13 @@ OpenMP Context Selectors
 
    * - ``intel_mic``, ``x86``, ``x86_64``, ``i386``, ``i486``, ``i586``, ``i686``, ``ia32``
      - ``host``
-     - See ``-m...`` flags in 'x86 Options' (without ``-m``)
+     - See ``-m...`` flags in :ref:`gcc:x86-options` (without ``-m``)
    * - ``amdgcn``, ``gcn``
      - ``gpu``
-     - See ``-march=`` in 'AMD GCN Options'
+     - See ``-march=`` in :ref:`gcc:amd-gcn-options`
    * - ``nvptx``
      - ``gpu``
-     - See ``-misa=`` in 'Nvidia PTX Options'
+     - See ``-misa=`` in :ref:`gcc:nvidia-ptx-options`
 
 .. -
    The libgomp ABI
