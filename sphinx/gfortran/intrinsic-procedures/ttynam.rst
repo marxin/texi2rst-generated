@@ -9,8 +9,8 @@
 
 .. index:: system, terminal
 
-TTYNAM --- Get the name of a terminal device.
-*********************************************
+TTYNAM --- Get the name of a terminal device
+********************************************
 
 .. function:: TTYNAM(UNIT)
 
