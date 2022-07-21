@@ -70,39 +70,39 @@ Here are some specific guidelines for the GCC documentation:
 
   1. ``=`` with overline for document title:
 
-  .. code-block:: rst
+    .. code-block:: rst
 
-    ==============
-    Document title
-    ==============
+      ==============
+      Document title
+      ==============
 
   2. ``-`` for chapters:
 
-  .. code-block:: rst
+    .. code-block:: rst
 
-    Chapter
-    -------
+      Chapter
+      -------
 
   3. ``*`` for sections:
 
-  .. code-block:: rst
+    .. code-block:: rst
 
-      Section
-      *******
+        Section
+        *******
 
   4. ``^`` for subsections:
 
-  .. code-block:: rst
+    .. code-block:: rst
 
-      Subsection
-      ^^^^^^^^^^
+        Subsection
+        ^^^^^^^^^^
 
   5. ``~`` for subsubsections:
 
-  .. code-block:: rst
+    .. code-block:: rst
 
-      Subsubsection
-      ~~~~~~~~~~~~~
+        Subsubsection
+        ~~~~~~~~~~~~~
 
   Although RST doesn't mandate a specific order ("Rather than imposing a fixed
   number and order of section title adornment styles, the order enforced will be
