@@ -21,7 +21,7 @@ case based on the initial one:
 
 .. index:: define_subst
 
-.. code-block:: c++
+.. code-block::
 
   (define_subst "name"
     [input-template]
@@ -71,7 +71,7 @@ Suppose there are two kinds of instructions: one that touches flags and
 the other that does not.  The instructions of the second type could be
 generated with the following ``define_subst`` :
 
-.. code-block:: c++
+.. code-block::
 
   (define_subst "add_clobber_subst"
     [(set (match_operand:SI 0 "" "")
@@ -88,7 +88,7 @@ applied.
 Assume there is an RTL template for a ``max`` instruction to be used
 in ``define_subst`` mentioned above:
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn "maxsi"
     [(set (match_operand:SI 0 "register_operand" "=r")
@@ -102,7 +102,7 @@ in ``define_subst`` mentioned above:
 To mark the RTL template for ``define_subst`` application,
 subst-attributes are used.  They should be declared in advance:
 
-.. code-block:: c++
+.. code-block::
 
   (define_subst_attr "add_clobber_name" "add_clobber_subst" "_noclobber" "_clobber")
 
@@ -118,7 +118,7 @@ Once the subst-attribute has been defined, it should be used in RTL
 templates which need to be processed by the ``define_subst``.  So,
 the original RTL template should be changed:
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn "maxsi<add_clobber_name>"
     [(set (match_operand:SI 0 "register_operand" "=r")
@@ -131,7 +131,7 @@ the original RTL template should be changed:
 
 The result of the ``define_subst`` usage would look like the following:
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn "maxsi_noclobber"
     [(set (match_operand:SI 0 "register_operand" "=r")

@@ -88,7 +88,7 @@ require which features.  The example below does this for ``cpu_facility``.
 E.g. the following two patterns could easily be merged using the ``enabled``
 attribute:
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn "*movdi_old"
     [(set (match_operand:DI 0 "register_operand" "=d")
@@ -107,7 +107,7 @@ attribute:
 
 to:
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn "*movdi_combined"
     [(set (match_operand:DI 0 "register_operand" "=d,f,d")
@@ -121,7 +121,7 @@ to:
 
 with the ``enabled`` attribute defined like this:
 
-.. code-block:: c++
+.. code-block::
 
   (define_attr "cpu_facility" "standard,new" (const_string "standard"))
 
@@ -308,7 +308,7 @@ the future.  For the time being, constraints with these names must be
 written in a stylized form, so that ``genpreds`` can tell you did
 it correctly:
 
-.. code-block:: c++
+.. code-block::
 
   (define_constraint "[GHIJKLMNOP]..."
     "doc..."
@@ -410,7 +410,7 @@ optimization is applied if operand 2 does *not* satisfy the
 :samp:`K` constraint.  (This is a simplified version of a peephole
 definition from the i386 machine description.)
 
-.. code-block:: c++
+.. code-block::
 
   (define_peephole2
     [(match_scratch:SI 3 "r")

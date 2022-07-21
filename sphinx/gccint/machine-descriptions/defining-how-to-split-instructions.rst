@@ -40,7 +40,7 @@ split the addition into two insns is machine-dependent.
 The ``define_split`` definition tells the compiler how to split a
 complex insn into several simpler insns.  It looks like this:
 
-.. code-block:: c++
+.. code-block::
 
   (define_split
     [insn-pattern]
@@ -102,7 +102,7 @@ As an example of this usage of ``define_split``, consider the following
 example from :samp:`a29k.md`, which splits a ``sign_extend`` from
 ``HImode`` to ``SImode`` into a pair of shift insns:
 
-.. code-block:: c++
+.. code-block::
 
   (define_split
     [(set (match_operand:SI 0 "gen_reg_operand" "")
@@ -131,7 +131,7 @@ patterns to be generated.  It will verify that these patterns match some
 Here is an example of this use of ``define_split``, taken from
 :samp:`rs6000.md`:
 
-.. code-block:: c++
+.. code-block::
 
   (define_split
     [(set (match_operand:SI 0 "gen_reg_operand" "")
@@ -160,7 +160,7 @@ can be substituted into the address of a subsequent operation.
 An example that uses a scratch register, from the same file, generates
 an equality comparison of a register and a large constant:
 
-.. code-block:: c++
+.. code-block::
 
   (define_split
     [(set (match_operand:CC 0 "cc_reg_operand" "")
@@ -214,7 +214,7 @@ For the common case where the pattern of a define_split exactly matches the
 pattern of a define_insn, use ``define_insn_and_split``.  It looks like
 this:
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn_and_split
     [insn-pattern]
@@ -236,7 +236,7 @@ with :samp:`&&`, the condition used for the split will be the constructed as a
 logical 'and' of the split condition with the insn condition.  For example,
 from i386.md:
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn_and_split "zero_extendhisi2_and"
     [(set (match_operand:SI 0 "register_operand" "=r")
@@ -276,7 +276,7 @@ in :samp:`{insn-pattern}` with a corresponding ``match_dup``, and each
 ``match_operator`` in the pattern with a corresponding ``match_op_dup``.
 The arguments are otherwise identical to ``define_insn_and_split`` :
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn_and_rewrite
     [insn-pattern]

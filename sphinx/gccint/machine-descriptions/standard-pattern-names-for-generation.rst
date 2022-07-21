@@ -2557,7 +2557,7 @@ simple_return
   Machines that have conditional return instructions should define patterns
   such as
 
-  .. code-block:: c++
+  .. code-block::
 
     (define_insn ""
       [(set (pc)
@@ -2931,7 +2931,7 @@ ctrapMM4
 
   A typical ``ctrap`` pattern looks like
 
-  .. code-block:: c++
+  .. code-block::
 
     (define_insn "ctrapsi4"
       [(trap_if (match_operator 0 "trap_operator"

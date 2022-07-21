@@ -111,7 +111,7 @@ initial insn list.  If the preparation statement always invokes
 ``DONE`` or ``FAIL``, the RTL template may be reduced to a simple
 list of operands, such as this example:
 
-.. code-block:: c++
+.. code-block::
 
   (define_expand "addsi3"
     [(match_operand:SI 0 "register_operand" "")
@@ -126,7 +126,7 @@ list of operands, such as this example:
 
 Here is an example, the definition of left-shift for the SPUR chip:
 
-.. code-block:: c++
+.. code-block::
 
   (define_expand "ashlsi3"
     [(set (match_operand:SI 0 "register_operand" "")
@@ -152,7 +152,7 @@ patterns with names, then it would be possible to use a
 ``define_insn`` in that case.  Here is another case (zero-extension
 on the 68000) which makes more use of the power of ``define_expand`` :
 
-.. code-block:: c++
+.. code-block::
 
   (define_expand "zero_extendhisi2"
     [(set (match_operand:SI 0 "general_operand" "")
@@ -182,7 +182,7 @@ against a halfword mask.  But this mask cannot be represented by a
 on this machine.  So it must be copied into a register with
 ``force_reg`` and then the register used in the ``and``.
 
-.. code-block:: c++
+.. code-block::
 
   (define_expand "zero_extendhisi2"
     [(set (match_operand:SI 0 "register_operand" "")

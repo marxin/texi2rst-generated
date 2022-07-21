@@ -19,7 +19,7 @@ can be quite tedious to describe these forms directly in the
 
 .. index:: define_cond_exec
 
-.. code-block:: c++
+.. code-block::
 
   (define_cond_exec
     [predicate-pattern]
@@ -69,7 +69,7 @@ attribute is true, a new ``define_insn`` pattern will be
 generated that matches a predicated version of the instruction.
 For example,
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn "addsi"
     [(set (match_operand:SI 0 "register_operand" "r")
@@ -86,7 +86,7 @@ For example,
 
 generates a new pattern
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn ""
     [(cond_exec

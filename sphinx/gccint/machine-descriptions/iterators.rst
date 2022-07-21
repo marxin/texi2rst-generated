@@ -54,7 +54,7 @@ Defining Mode Iterators
 
 The syntax for defining a mode iterator is:
 
-.. code-block:: c++
+.. code-block::
 
   (define_mode_iterator name [(mode1 "cond1") ... (moden "condn")])
 
@@ -67,7 +67,7 @@ C condition will also require that :samp:`{condi}` be true.
 
 For example:
 
-.. code-block:: c++
+.. code-block::
 
   (define_mode_iterator P [(SI "Pmode == SImode") (DI "Pmode == DImode")])
 
@@ -81,7 +81,7 @@ As with other :samp:`.md` conditions, an empty string is treated
 as 'always true'.  ``(mode "")`` can also be abbreviated
 to ``mode``.  For example:
 
-.. code-block:: c++
+.. code-block::
 
   (define_mode_iterator GPR [SI (DI "TARGET_64BIT")])
 
@@ -119,7 +119,7 @@ There are two standard attributes: ``mode``, which is the name of
 the mode in lower case, and ``MODE``, which is the same thing in
 upper case.  You can define other attributes using:
 
-.. code-block:: c++
+.. code-block::
 
   (define_mode_attr name [(mode1 "value1") ... (moden "valuen")])
 
@@ -135,7 +135,7 @@ value.
 
 For example, suppose an :samp:`.md` file has:
 
-.. code-block:: c++
+.. code-block::
 
   (define_mode_iterator P [(SI "Pmode == SImode") (DI "Pmode == DImode")])
   (define_mode_attr load [(SI "lw") (DI "ld")])
@@ -147,7 +147,7 @@ will use ``"lw\t%0,%1"`` and the ``DI`` version will use
 
 Here is an example of using an attribute for a mode:
 
-.. code-block:: c++
+.. code-block::
 
   (define_mode_iterator LONG [SI DI])
   (define_mode_attr SHORT [(SI "HI") (DI "SI")])
@@ -165,7 +165,7 @@ Mode Iterator Examples
 Here is an example from the MIPS port.  It defines the following
 modes and attributes (among others):
 
-.. code-block:: c++
+.. code-block::
 
   (define_mode_iterator GPR [SI (DI "TARGET_64BIT")])
   (define_mode_attr d [(SI "") (DI "d")])
@@ -173,7 +173,7 @@ modes and attributes (among others):
 and uses the following template to define both ``subsi3``
 and ``subdi3`` :
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn "sub<mode>3"
     [(set (match_operand:GPR 0 "register_operand" "=d")
@@ -186,7 +186,7 @@ and ``subdi3`` :
 
 This is exactly equivalent to:
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn "subsi3"
     [(set (match_operand:SI 0 "register_operand" "=d")
@@ -217,7 +217,7 @@ Code iterators operate in a similar way to mode iterators.  See :ref:`mode-itera
 
 The construct:
 
-.. code-block:: c++
+.. code-block::
 
   (define_code_iterator name [(code1 "cond1") ... (coden "condn")])
 
@@ -235,7 +235,7 @@ There are two standard code attributes: ``code``, the name of the
 code in lower case, and ``CODE``, the name of the code in upper case.
 Other attributes are defined using:
 
-.. code-block:: c++
+.. code-block::
 
   (define_code_attr name [(code1 "value1") ... (coden "valuen")])
 
@@ -244,7 +244,7 @@ useful if two sets of codes act in tandem.  For example, the following
 ``define_insn`` defines two patterns, one calculating a signed absolute
 difference and another calculating an unsigned absolute difference:
 
-.. code-block:: c++
+.. code-block::
 
   (define_code_iterator any_max [smax umax])
   (define_code_attr paired_min [(smax "smin") (umax "umin")])
@@ -262,7 +262,7 @@ with ``smin``.
 
 Here's an example of code iterators in action, taken from the MIPS port:
 
-.. code-block:: c++
+.. code-block::
 
   (define_code_iterator any_cond [unordered ordered unlt unge uneq ltgt unle ungt
                                   eq ne gt ge lt le gtu geu ltu leu])
@@ -281,7 +281,7 @@ Here's an example of code iterators in action, taken from the MIPS port:
 
 This is equivalent to:
 
-.. code-block:: c++
+.. code-block::
 
   (define_expand "bunordered"
     [(set (pc)
@@ -320,7 +320,7 @@ Int iterators operate in a similar way to code iterators.  See :ref:`code-iterat
 
 The construct:
 
-.. code-block:: c++
+.. code-block::
 
   (define_int_iterator name [(int1 "cond1") ... (intn "condn")])
 
@@ -339,13 +339,13 @@ See :ref:`defining-mode-iterators`.
 It is possible to define attributes for ints as well as for codes and modes.
 Attributes are defined using:
 
-.. code-block:: c++
+.. code-block::
 
   (define_int_attr name [(int1 "value1") ... (intn "valuen")])
 
 Here's an example of int iterators in action, taken from the ARM port:
 
-.. code-block:: c++
+.. code-block::
 
   (define_int_iterator QABSNEG [UNSPEC_VQABS UNSPEC_VQNEG])
 
@@ -363,7 +363,7 @@ Here's an example of int iterators in action, taken from the ARM port:
 
 This is equivalent to:
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn "neon_vqabs<mode>"
     [(set (match_operand:VDQIW 0 "s_register_operand" "=w")
@@ -414,7 +414,7 @@ Declarations of subst-attributes have the following syntax:
 
 .. index:: define_subst_attr
 
-.. code-block:: c++
+.. code-block::
 
   (define_subst_attr "name"
     "subst-name"
@@ -445,7 +445,7 @@ Ports sometimes need to apply iterators using C++ code, in order to
 get the code or RTL pattern for a specific instruction.  For example,
 suppose we have the :samp:`neon_vq<absneg><mode>` pattern given above:
 
-.. code-block:: c++
+.. code-block::
 
   (define_int_iterator QABSNEG [UNSPEC_VQABS UNSPEC_VQNEG])
 
@@ -492,7 +492,7 @@ lead to a double or trailing underscore.
 
   For example, changing the pattern above to:
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn "@neon_vq<absneg><mode>"
     [(set (match_operand:VDQIW 0 "s_register_operand" "=w")
@@ -518,7 +518,7 @@ would then give ``CODE_FOR_neon_vqabsv8qi``.
 It is possible to have multiple :samp:`@` patterns with the same
 name and same types of iterator.  For example:
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn "@some_arithmetic_op<mode>"
     [(set (match_operand:INTEGER_MODES 0 "register_operand") ...)]

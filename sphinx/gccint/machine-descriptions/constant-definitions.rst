@@ -23,7 +23,7 @@ a different value.
 
 To come back to the a29k load multiple example, instead of
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn ""
     [(match_parallel 0 "load_multiple_operation"
@@ -36,7 +36,7 @@ To come back to the a29k load multiple example, instead of
 
 You could write:
 
-.. code-block:: c++
+.. code-block::
 
   (define_constants [
       (R_BP 177)
@@ -65,7 +65,7 @@ are visible to both the machine description file and the main C code.
 
 The syntax is as follows:
 
-.. code-block:: c++
+.. code-block::
 
   (define_c_enum "name" [
     value0
@@ -95,7 +95,7 @@ where :samp:`{cname}` is the capitalized form of :samp:`{name}`.
 It also makes each :samp:`{valuei}` available in the machine description
 file, just as if it had been declared with:
 
-.. code-block:: c++
+.. code-block::
 
   (define_constants [(valuei i)])
 
@@ -105,7 +105,7 @@ begins with :samp:`{cname}`.
 You can split the enumeration definition into as many statements as
 you like.  The above example is directly equivalent to:
 
-.. code-block:: c++
+.. code-block::
 
   (define_c_enum "name" [value0])
   (define_c_enum "name" [value1])
@@ -127,7 +127,7 @@ Some enumeration names have special significance to GCC:
   If an enumeration called ``unspecv`` is defined, GCC will use it
   when printing out ``unspec_volatile`` expressions.  For example:
 
-  .. code-block:: c++
+  .. code-block::
 
     (define_c_enum "unspecv" [
       UNSPECV_BLOCKAGE
@@ -157,7 +157,7 @@ Some enumeration names have special significance to GCC:
 
 Another way of defining an enumeration is to use ``define_enum`` :
 
-.. code-block:: c++
+.. code-block::
 
   (define_enum "name" [
     value0
@@ -168,7 +168,7 @@ Another way of defining an enumeration is to use ``define_enum`` :
 
 This directive implies:
 
-.. code-block:: c++
+.. code-block::
 
   (define_c_enum "name" [
     cname_cvalue0

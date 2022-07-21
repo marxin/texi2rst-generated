@@ -56,7 +56,7 @@ The :samp:`doloop_end` pattern must have a specific structure to be
 handled correctly by GCC.  The example below is taken (slightly
 simplified) from the PDP-11 target:
 
-.. code-block:: c++
+.. code-block::
 
   (define_expand "doloop_end"
     [(parallel [(set (pc)

@@ -24,7 +24,7 @@ if a target machine has a two-address add instruction :samp:`addr` to add
 into a register and another :samp:`addm` to add a register to memory, you
 might write this pattern:
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn "addsi3"
     [(set (match_operand:SI 0 "general_operand" "=r,m")

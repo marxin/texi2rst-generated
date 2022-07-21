@@ -43,7 +43,7 @@ RTL to Text Peephole Optimizers
 
 A definition looks like this:
 
-.. code-block:: c++
+.. code-block::
 
   (define_peephole
     [insn-pattern-1
@@ -132,7 +132,7 @@ so the insns they produce are never combined or rearranged in any way.
 
 Here is an example, taken from the 68000 machine description:
 
-.. code-block:: c++
+.. code-block::
 
   (define_peephole
     [(set (reg:SI 15) (plus:SI (reg:SI 15) (const_int 4)))
@@ -191,7 +191,7 @@ implicitly enclosed in a ``parallel``.  Then you must explicitly
 write the ``parallel``, and the square brackets within it, in the
 ``define_peephole``.  Thus, if an insn pattern looks like this,
 
-.. code-block:: c++
+.. code-block::
 
   (define_insn "divmodsi4"
     [(set (match_operand:SI 0 "general_operand" "=d")
@@ -204,7 +204,7 @@ write the ``parallel``, and the square brackets within it, in the
 
 then the way to mention this insn in a peephole is as follows:
 
-.. code-block:: c++
+.. code-block::
 
   (define_peephole
     [...
@@ -229,7 +229,7 @@ substitute one sequence of instructions for another sequence,
 what additional scratch registers may be needed and what their
 lifetimes must be.
 
-.. code-block:: c++
+.. code-block::
 
   (define_peephole2
     [insn-pattern-1
@@ -260,7 +260,7 @@ at which the register must be available.
 
 Here is an example from the IA-32 machine description:
 
-.. code-block:: c++
+.. code-block::
 
   (define_peephole2
     [(match_scratch:SI 2 "r")
@@ -284,7 +284,7 @@ to be live only at the point just before the arithmetic.
 A real example requiring extended scratch lifetimes is harder to come by,
 so here's a silly made-up example:
 
-.. code-block:: c++
+.. code-block::
 
   (define_peephole2
     [(match_scratch:SI 4 "r")

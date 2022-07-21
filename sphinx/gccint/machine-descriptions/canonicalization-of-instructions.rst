@@ -54,7 +54,7 @@ are performed:
   ``compare`` operator is always written as the first RTL expression of
   the ``parallel`` instruction pattern.  For example,
 
-  .. code-block:: c++
+  .. code-block::
 
     (define_insn ""
       [(set (reg:CCZ FLAGS_REG)
@@ -92,7 +92,7 @@ are performed:
   operand with the bitwise negation of the other should specify the pattern
   for that instruction as
 
-  .. code-block:: c++
+  .. code-block::
 
     (define_insn ""
       [(set (match_operand:m 0 ...)
@@ -103,7 +103,7 @@ are performed:
 
   Similarly, a pattern for a 'NAND' instruction should be written
 
-  .. code-block:: c++
+  .. code-block::
 
     (define_insn ""
       [(set (match_operand:m 0 ...)
