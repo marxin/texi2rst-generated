@@ -17,11 +17,9 @@ conversion specifier.  The ``%m$`` or ``*m$`` style must not be used in
 the format.
 
 Syntax:
-
   ``int quadmath_snprintf (char *s, size_t size, const char *format, ...)``
 
 Arguments:
-
   .. list-table::
 
      * - :samp:`{s}`
@@ -31,14 +29,12 @@ Arguments:
      * - :samp:`{format}`
        - conversion specifier string
 
-.. note::
-
+Note:
   On some targets when supported by the C library hooks are installed
   for ``printf`` family of functions, so that ``printf ("%Qe", 1.2Q);``
   etc. works too.
 
 Example:
-
   .. code-block:: c++
 
     #include <quadmath.h>

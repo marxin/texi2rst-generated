@@ -12,11 +12,9 @@ The function ``strtoflt128`` converts a string into a
 ``__float128`` number.
 
 Syntax:
-
   ``__float128 strtoflt128 (const char *s, char **sp)``
 
 Arguments:
-
   .. list-table::
 
      * - :samp:`{s}`
@@ -28,7 +26,6 @@ Arguments:
   next character following the parts of the string, which have been read.
 
 Example:
-
   .. code-block:: c++
 
     #include <quadmath.h>
