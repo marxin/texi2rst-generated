@@ -101,6 +101,7 @@ _gfortran_set_options --- Set library option flags
   :samp:`{option flag list}:`
 
     .. list-table::
+       :widths: 15 85
 
        * - :samp:`{option}` [0]
          - Allowed standard; can give run-time errors if e.g. an input-output edit descriptor is invalid in a given standard.  Possible values are (bitwise or-ed) ``GFC_STD_F77`` (1), ``GFC_STD_F95_OBS`` (2), ``GFC_STD_F95_DEL`` (4), ``GFC_STD_F95`` (8), ``GFC_STD_F2003`` (16), ``GFC_STD_GNU`` (32), ``GFC_STD_LEGACY`` (64), ``GFC_STD_F2008`` (128), ``GFC_STD_F2008_OBS`` (256), ``GFC_STD_F2008_TS`` (512), ``GFC_STD_F2018`` (1024), ``GFC_STD_F2018_OBS`` (2048), and ``GFC_STD=F2018_DEL`` (4096). Default: ``GFC_STD_F95_OBS | GFC_STD_F95_DEL | GFC_STD_F95 | GFC_STD_F2003 | GFC_STD_F2008 | GFC_STD_F2008_TS | GFC_STD_F2008_OBS | GFC_STD_F77 | GFC_STD_F2018 | GFC_STD_F2018_OBS | GFC_STD_F2018_DEL | GFC_STD_GNU | GFC_STD_LEGACY``.

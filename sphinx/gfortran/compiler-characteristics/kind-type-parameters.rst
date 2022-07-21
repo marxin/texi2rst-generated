@@ -29,7 +29,8 @@ data types are:
 
   4, 8, 10 [#f1]_, 16 [#f1]_, default: 4 [#f3]_
 
-``DOUBLE`` PRECISION
+``DOUBLE PRECISION``
+
   4, 8, 10 [#f1]_, 16 [#f1]_, default: 8 [#f3]_
 
 ``CHARACTER``
