@@ -25,21 +25,17 @@ REPEAT --- Repeated string concatenation
     of :samp:`{STRING}`.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = REPEAT(STRING, NCOPIES)
 
   Example:
-
     .. code-block:: fortran
 
       program test_repeat

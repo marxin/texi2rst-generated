@@ -24,22 +24,18 @@ CHDIR --- Change working directory
     otherwise.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL CHDIR(NAME [, STATUS])
       STATUS = CHDIR(NAME)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_chdir
@@ -52,5 +48,4 @@ CHDIR --- Change working directory
       END PROGRAM
 
   See also:
-
     :ref:`GETCWD`

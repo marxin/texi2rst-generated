@@ -22,21 +22,17 @@ TRIM --- Remove trailing blank characters of a string
     less the number of trailing blanks.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = TRIM(STRING)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_trim
@@ -45,6 +41,5 @@ TRIM --- Remove trailing blank characters of a string
       END PROGRAM
 
   See also:
-
     :ref:`ADJUSTL`, 
     :ref:`ADJUSTR`

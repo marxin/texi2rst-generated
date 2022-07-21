@@ -37,13 +37,11 @@ ICHAR --- Character-to-integer conversion function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ICHAR(C [, KIND])
 
   Example:
-
     .. code-block:: fortran
 
       program test_ichar
@@ -52,7 +50,6 @@ ICHAR --- Character-to-integer conversion function
       end program test_ichar
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 
@@ -73,7 +70,6 @@ ICHAR --- Character-to-integer conversion function
     ``REAL`` value with the value 154, or vice versa. Instead, this
     functionality is provided by internal-file I/O, as in the following
     example:
-
     .. code-block:: fortran
 
       program read_val

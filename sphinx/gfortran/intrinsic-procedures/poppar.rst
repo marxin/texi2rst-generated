@@ -25,21 +25,17 @@ POPPAR --- Parity of the number of bits set
     kind.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = POPPAR(I)
 
   Example:
-
     .. code-block:: fortran
 
       program test_population
@@ -49,7 +45,6 @@ POPPAR --- Parity of the number of bits set
       end program test_population
 
   See also:
-
     :ref:`POPCNT`, 
     :ref:`LEADZ`, 
     :ref:`TRAILZ`

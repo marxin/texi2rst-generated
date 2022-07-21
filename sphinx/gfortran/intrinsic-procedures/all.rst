@@ -31,21 +31,17 @@ ALL --- All values in MASK along DIM are true
     the shape of :samp:`{MASK}` where the :samp:`{DIM}` dimension is elided. 
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ALL(MASK [, DIM])
 
   Example:
-
     .. code-block:: fortran
 
       program test_all

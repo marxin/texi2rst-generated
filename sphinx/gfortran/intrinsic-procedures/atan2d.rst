@@ -48,13 +48,11 @@ ATAN2D --- Arctangent function, degrees
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ATAN2D(Y, X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_atan2d
@@ -63,7 +61,6 @@ ATAN2D --- Arctangent function, degrees
       end program test_atan2d
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

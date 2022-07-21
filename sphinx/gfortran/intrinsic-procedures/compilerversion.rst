@@ -20,25 +20,20 @@ COMPILER_VERSION --- Compiler version string
     It contains the name of the compiler and its version number.
 
   Standard:
-
     Fortran 2008
 
   Class:
-
     Inquiry function of the module ``ISO_FORTRAN_ENV``
 
   Syntax:
-
     .. code-block:: fortran
 
       STR = COMPILER_VERSION()
 
   Arguments:
-
     None
 
   Example:
-
     .. code-block:: fortran
 
          use iso_fortran_env
@@ -48,6 +43,5 @@ COMPILER_VERSION --- Compiler version string
          end
 
   See also:
-
     :ref:`COMPILER_OPTIONS`, 
     :ref:`ISO_FORTRAN_ENV`

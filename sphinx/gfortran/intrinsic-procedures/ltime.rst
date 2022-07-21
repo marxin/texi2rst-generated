@@ -26,23 +26,18 @@ LTIME --- Convert time to local time info
 
   :return:
     The elements of :samp:`{VALUES}` are assigned as follows:
-
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL LTIME(TIME, VALUES)
 
   See also:
-
     :ref:`DATE_AND_TIME`, 
     :ref:`CTIME`, 
     :ref:`GMTIME`, 

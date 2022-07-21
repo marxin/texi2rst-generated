@@ -36,13 +36,11 @@ GAMMA --- Gamma function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       X = GAMMA(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_gamma
@@ -51,7 +49,6 @@ GAMMA --- Gamma function
       end program test_gamma
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

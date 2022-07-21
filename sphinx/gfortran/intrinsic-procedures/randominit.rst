@@ -33,21 +33,17 @@ RANDOM_INIT --- Initialize a pseudo-random number generator
     ``RANDOM_INIT``.
 
   Standard:
-
     Fortran 2018
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL RANDOM_INIT(REPEATABLE, IMAGE_DISTINCT)
 
   Example:
-
     .. code-block:: fortran
 
       program test_random_seed
@@ -62,6 +58,5 @@ RANDOM_INIT --- Initialize a pseudo-random number generator
       end program test_random_seed
 
   See also:
-
     :ref:`RANDOM_NUMBER`, 
     :ref:`RANDOM_SEED`

@@ -37,21 +37,17 @@ CO_MIN --- Minimal value on the current set of images
     (optional) a scalar character variable
 
   Standard:
-
     Technical Specification (TS) 18508 or later
 
   Class:
-
     Collective subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL CO_MIN(A [, RESULT_IMAGE, STAT, ERRMSG])
 
   Example:
-
     .. code-block:: fortran
 
       program test
@@ -64,7 +60,6 @@ CO_MIN --- Minimal value on the current set of images
       end program test
 
   See also:
-
     :ref:`CO_MAX`, 
     :ref:`CO_SUM`, 
     :ref:`CO_REDUCE`, 

@@ -26,21 +26,17 @@ BGE --- Bitwise greater than or equal to
     The return value is of type ``LOGICAL`` and of the default kind.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = BGE(I, J)
 
   See also:
-
     :ref:`BGT`, 
     :ref:`BLE`, 
     :ref:`BLT`

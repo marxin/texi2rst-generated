@@ -27,22 +27,18 @@ ETIME --- Execution time subroutine (or function)
     Elapsed time in seconds since the start of program execution.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL ETIME(VALUES, TIME).
       TIME = ETIME(VALUES), (not recommended).
 
   Example:
-
     .. code-block:: fortran
 
       program test_etime
@@ -63,5 +59,4 @@ ETIME --- Execution time subroutine (or function)
       end program test_etime
 
   See also:
-
     :ref:`CPU_TIME`

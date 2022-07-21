@@ -27,21 +27,17 @@ PARITY --- Reduction with exclusive OR
     The result is of the same type as :samp:`{MASK}`.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = PARITY(MASK[, DIM])
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_sum

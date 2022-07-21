@@ -33,21 +33,17 @@ AND --- Bitwise logical AND
     the other argument as-if a call to :ref:`INT` occurred.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = AND(I, J)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_and
@@ -60,6 +56,5 @@ AND --- Bitwise logical AND
       END PROGRAM
 
   See also:
-
     Fortran 95 elemental function: 
     :ref:`IAND`

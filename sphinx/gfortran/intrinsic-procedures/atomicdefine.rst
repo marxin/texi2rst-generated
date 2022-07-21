@@ -33,21 +33,17 @@ ATOMIC_DEFINE --- Setting a variable atomically
     (optional) Scalar default-kind integer variable.
 
   Standard:
-
     Fortran 2008 and later; with :samp:`{STAT}`, TS 18508 or later
 
   Class:
-
     Atomic subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL ATOMIC_DEFINE (ATOM, VALUE [, STAT])
 
   Example:
-
     .. code-block:: fortran
 
       program atomic
@@ -57,7 +53,6 @@ ATOMIC_DEFINE --- Setting a variable atomically
       end program atomic
 
   See also:
-
     :ref:`ATOMIC_REF`, 
     :ref:`ATOMIC_CAS`, 
     :ref:`ISO_FORTRAN_ENV`, 

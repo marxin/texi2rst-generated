@@ -22,21 +22,17 @@ RADIX --- Base of a model number
     integer kind.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = RADIX(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_radix
@@ -45,5 +41,4 @@ RADIX --- Base of a model number
       end program test_radix
 
   See also:
-
     :ref:`SELECTED_REAL_KIND`

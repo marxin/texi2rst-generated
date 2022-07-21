@@ -26,21 +26,17 @@ HYPOT --- Euclidean distance function
     The return value has the same type and kind type parameter as :samp:`{X}`.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = HYPOT(X, Y)
 
   Example:
-
     .. code-block:: fortran
 
       program test_hypot

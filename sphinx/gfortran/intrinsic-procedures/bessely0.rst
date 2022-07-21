@@ -35,13 +35,11 @@ BESSEL_Y0 --- Bessel function of the second kind of order 0
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = BESSEL_Y0(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_besy0
@@ -50,7 +48,6 @@ BESSEL_Y0 --- Bessel function of the second kind of order 0
       end program test_besy0
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

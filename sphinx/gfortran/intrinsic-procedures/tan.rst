@@ -33,13 +33,11 @@ TAN --- Tangent function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = TAN(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_tan
@@ -48,7 +46,6 @@ TAN --- Tangent function
       end program test_tan
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

@@ -23,21 +23,17 @@ ISNAN --- Test for a NaN
     if :samp:`{X}` is a NaN and ``FALSE`` otherwise.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       ISNAN(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_nan

@@ -48,13 +48,11 @@ IOR --- Bitwise logical or
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = IOR(I, J)
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

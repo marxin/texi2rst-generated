@@ -22,21 +22,17 @@ HUGE --- Largest number of a kind
     The return value is of the same type and kind as :samp:`{X}`
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = HUGE(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_huge_tiny

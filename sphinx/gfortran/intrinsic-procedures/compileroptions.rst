@@ -21,25 +21,20 @@ COMPILER_OPTIONS --- Options passed to the compiler
     the ``COMPILER_OPTIONS`` intrinsic.
 
   Standard:
-
     Fortran 2008
 
   Class:
-
     Inquiry function of the module ``ISO_FORTRAN_ENV``
 
   Syntax:
-
     .. code-block:: fortran
 
       STR = COMPILER_OPTIONS()
 
   Arguments:
-
     None
 
   Example:
-
     .. code-block:: fortran
 
          use iso_fortran_env
@@ -49,6 +44,5 @@ COMPILER_OPTIONS --- Options passed to the compiler
          end
 
   See also:
-
     :ref:`COMPILER_VERSION`, 
     :ref:`ISO_FORTRAN_ENV`

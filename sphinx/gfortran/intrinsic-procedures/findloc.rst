@@ -62,21 +62,17 @@ FINDLOC --- Search an array for a value
     is of default kind.
 
   Standard:
-
     Fortran 2008 and later.
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = FINDLOC(ARRAY, VALUE, DIM [, MASK] [,KIND] [,BACK])
       RESULT = FINDLOC(ARRAY, VALUE, [, MASK] [,KIND] [,BACK])
 
   See also:
-
     :ref:`MAXLOC`, 
     :ref:`MINLOC`

@@ -38,21 +38,17 @@ DATE_AND_TIME --- Date and time subroutine
     None
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL DATE_AND_TIME([DATE, TIME, ZONE, VALUES])
 
   Example:
-
     .. code-block:: fortran
 
       program test_time_and_date
@@ -70,6 +66,5 @@ DATE_AND_TIME --- Date and time subroutine
       end program test_time_and_date
 
   See also:
-
     :ref:`CPU_TIME`, 
     :ref:`SYSTEM_CLOCK`

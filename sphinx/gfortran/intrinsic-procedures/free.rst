@@ -26,23 +26,18 @@ FREE --- Frees memory
     None
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL FREE(PTR)
 
   Example:
-
     See ``MALLOC`` for an example.
 
   See also:
-
     :ref:`MALLOC`

@@ -22,22 +22,18 @@ TTYNAM --- Get the name of a terminal device.
     Shall be of type ``CHARACTER``.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL TTYNAM(UNIT, NAME)
       NAME = TTYNAM(UNIT)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_ttynam
@@ -48,5 +44,4 @@ TTYNAM --- Get the name of a terminal device.
       END PROGRAM
 
   See also:
-
     :ref:`ISATTY`

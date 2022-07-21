@@ -28,19 +28,15 @@ MASKL --- Left justified mask
     default integer kind.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = MASKL(I[, KIND])
 
   See also:
-
     :ref:`MASKR`

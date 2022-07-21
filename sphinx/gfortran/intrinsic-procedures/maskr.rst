@@ -28,19 +28,15 @@ MASKR --- Right justified mask
     default integer kind.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = MASKR(I[, KIND])
 
   See also:
-
     :ref:`MASKL`

@@ -48,13 +48,11 @@ ATAN2 --- Arctangent function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ATAN2(Y, X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_atan2
@@ -63,7 +61,6 @@ ATAN2 --- Arctangent function
       end program test_atan2
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

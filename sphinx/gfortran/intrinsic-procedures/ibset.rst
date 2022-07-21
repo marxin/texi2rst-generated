@@ -42,13 +42,11 @@ IBSET --- Set bit
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = IBSET(I, POS)
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

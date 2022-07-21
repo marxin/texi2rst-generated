@@ -21,21 +21,17 @@ MCLOCK8 --- Time function (64-bit)
     the system does not support ``clock(3)``.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = MCLOCK8()
 
   See also:
-
     :ref:`CTIME`, 
     :ref:`GMTIME`, 
     :ref:`LTIME`, 

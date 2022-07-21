@@ -42,13 +42,11 @@ NOT --- Logical negation
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = NOT(I)
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

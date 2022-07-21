@@ -31,21 +31,17 @@ SPREAD --- Add a dimension to an array
     where n equals the rank of :samp:`{SOURCE}`.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = SPREAD(SOURCE, DIM, NCOPIES)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_spread
@@ -55,5 +51,4 @@ SPREAD --- Add a dimension to an array
       END PROGRAM
 
   See also:
-
     :ref:`UNPACK`

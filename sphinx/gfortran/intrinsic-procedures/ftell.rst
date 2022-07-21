@@ -25,22 +25,18 @@ FTELL --- Current stream position
     number :samp:`{UNIT}`, or to -1 if the unit is not currently open.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL FTELL(UNIT, OFFSET)
       OFFSET = FTELL(UNIT)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_ftell
@@ -51,5 +47,4 @@ FTELL --- Current stream position
       END PROGRAM
 
   See also:
-
     :ref:`FSEEK`

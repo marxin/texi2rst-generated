@@ -32,22 +32,18 @@ PRODUCT --- Product of array elements
     The result is of the same type as :samp:`{ARRAY}`.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = PRODUCT(ARRAY[, MASK])
       RESULT = PRODUCT(ARRAY, DIM[, MASK])
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_product
@@ -57,5 +53,4 @@ PRODUCT --- Product of array elements
       END PROGRAM
 
   See also:
-
     :ref:`SUM`

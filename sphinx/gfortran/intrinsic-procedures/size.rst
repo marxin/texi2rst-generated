@@ -33,21 +33,17 @@ SIZE --- Determine the size of an array
     :samp:`{KIND}` is absent, the return value is of default integer kind.
 
   Standard:
-
     Fortran 90 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = SIZE(ARRAY[, DIM [, KIND]])
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_size
@@ -55,6 +51,5 @@ SIZE --- Determine the size of an array
       END PROGRAM
 
   See also:
-
     :ref:`SHAPE`, 
     :ref:`RESHAPE`

@@ -23,21 +23,17 @@ NEW_LINE --- New line character
     the same kind as parameter :samp:`{C}`.
 
   Standard:
-
     Fortran 2003 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = NEW_LINE(C)
 
   Example:
-
     .. code-block:: fortran
 
       program newline

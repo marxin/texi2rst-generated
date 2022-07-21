@@ -31,22 +31,18 @@ IANY --- Bitwise OR of array elements
     The result is of the same type as :samp:`{ARRAY}`.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = IANY(ARRAY[, MASK])
       RESULT = IANY(ARRAY, DIM[, MASK])
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_iany
@@ -60,7 +56,6 @@ IANY --- Bitwise OR of array elements
       END PROGRAM
 
   See also:
-
     :ref:`IPARITY`, 
     :ref:`IALL`, 
     :ref:`IOR`

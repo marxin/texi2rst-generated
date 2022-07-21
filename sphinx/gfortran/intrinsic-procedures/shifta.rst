@@ -31,20 +31,16 @@ SHIFTA --- Right shift with fill
     :samp:`{I}`.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = SHIFTA(I, SHIFT)
 
   See also:
-
     :ref:`SHIFTL`, 
     :ref:`SHIFTR`

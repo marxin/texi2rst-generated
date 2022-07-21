@@ -32,21 +32,17 @@ ATOMIC_ADD --- Atomic ADD operation
     (optional) Scalar default-kind integer variable.
 
   Standard:
-
     TS 18508 or later
 
   Class:
-
     Atomic subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL ATOMIC_ADD (ATOM, VALUE [, STAT])
 
   Example:
-
     .. code-block:: fortran
 
       program atomic
@@ -56,7 +52,6 @@ ATOMIC_ADD --- Atomic ADD operation
       end program atomic
 
   See also:
-
     :ref:`ATOMIC_DEFINE`, 
     :ref:`ATOMIC_FETCH_ADD`, 
     :ref:`ISO_FORTRAN_ENV`, 

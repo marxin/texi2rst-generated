@@ -30,13 +30,11 @@ ERFC --- Error function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ERFC(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_erfc
@@ -45,7 +43,6 @@ ERFC --- Error function
       end program test_erfc
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

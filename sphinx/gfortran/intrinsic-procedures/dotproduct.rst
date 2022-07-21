@@ -32,21 +32,17 @@ DOT_PRODUCT --- Dot product function
     ``LOGICAL``, the return value is ``.TRUE.`` or ``.FALSE.``.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = DOT_PRODUCT(VECTOR_A, VECTOR_B)
 
   Example:
-
     .. code-block:: fortran
 
       program test_dot_prod

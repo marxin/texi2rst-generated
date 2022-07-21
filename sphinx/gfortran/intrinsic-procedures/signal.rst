@@ -34,22 +34,18 @@ SIGNAL --- Signal handling subroutine (or function)
     The ``SIGNAL`` function returns the value returned by ``signal(2)``.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL SIGNAL(NUMBER, HANDLER [, STATUS])
       STATUS = SIGNAL(NUMBER, HANDLER)
 
   Example:
-
     .. code-block:: fortran
 
       program test_signal

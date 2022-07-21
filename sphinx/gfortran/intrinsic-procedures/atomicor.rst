@@ -32,21 +32,17 @@ ATOMIC_OR --- Atomic bitwise OR operation
     (optional) Scalar default-kind integer variable.
 
   Standard:
-
     TS 18508 or later
 
   Class:
-
     Atomic subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL ATOMIC_OR (ATOM, VALUE [, STAT])
 
   Example:
-
     .. code-block:: fortran
 
       program atomic
@@ -56,7 +52,6 @@ ATOMIC_OR --- Atomic bitwise OR operation
       end program atomic
 
   See also:
-
     :ref:`ATOMIC_DEFINE`, 
     :ref:`ATOMIC_FETCH_OR`, 
     :ref:`ISO_FORTRAN_ENV`, 

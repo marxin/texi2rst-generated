@@ -22,21 +22,17 @@ SPACING --- Smallest distance between two numbers of a given type
     The result is of the same type as the input argument :samp:`{X}`.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = SPACING(X)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_spacing
@@ -48,5 +44,4 @@ SPACING --- Smallest distance between two numbers of a given type
       END PROGRAM
 
   See also:
-
     :ref:`RRSPACING`

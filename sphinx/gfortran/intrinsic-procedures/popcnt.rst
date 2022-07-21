@@ -23,21 +23,17 @@ POPCNT --- Number of bits set
     kind.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = POPCNT(I)
 
   Example:
-
     .. code-block:: fortran
 
       program test_population
@@ -47,7 +43,6 @@ POPCNT --- Number of bits set
       end program test_population
 
   See also:
-
     :ref:`POPPAR`, 
     :ref:`LEADZ`, 
     :ref:`TRAILZ`

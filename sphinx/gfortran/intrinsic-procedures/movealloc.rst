@@ -27,21 +27,17 @@ MOVE_ALLOC --- Move allocation from one object to another
     None
 
   Standard:
-
     Fortran 2003 and later
 
   Class:
-
     Pure subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL MOVE_ALLOC(FROM, TO)
 
   Example:
-
     .. code-block:: fortran
 
       program test_move_alloc

@@ -40,13 +40,11 @@ EXP --- Exponential function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = EXP(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_exp
@@ -55,7 +53,6 @@ EXP --- Exponential function
       end program test_exp
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

@@ -17,14 +17,11 @@ RAN --- Real pseudo-random number
   documentation.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Function
 
   See also:
-
     :ref:`RAND`, 
     :ref:`RANDOM_NUMBER`

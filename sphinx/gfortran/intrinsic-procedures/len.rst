@@ -38,13 +38,11 @@ LEN --- Length of a character entity
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       L = LEN(STRING [, KIND])
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

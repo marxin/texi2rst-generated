@@ -25,21 +25,17 @@ UNLINK --- Remove a file from the file system
     (Optional) Shall be of default ``INTEGER`` type.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL UNLINK(PATH [, STATUS])
       STATUS = UNLINK(PATH)
 
   See also:
-
     :ref:`LINK`, 
     :ref:`SYMLNK`

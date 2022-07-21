@@ -26,15 +26,12 @@ HOSTNM --- Get system host name
     be obtained, or to a blank string otherwise.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL HOSTNM(C [, STATUS])

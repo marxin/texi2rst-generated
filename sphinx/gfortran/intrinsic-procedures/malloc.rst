@@ -28,21 +28,17 @@ MALLOC --- Allocate dynamic memory
     C pointers (``sizeof(void *)``).
 
   Standard:
-
     GNU extension
 
   Class:
-
     Function
 
   Syntax:
-
     .. code-block:: fortran
 
       PTR = MALLOC(SIZE)
 
   Example:
-
     The following example demonstrates the use of ``MALLOC`` and
     ``FREE`` with Cray pointers.
 
@@ -67,5 +63,4 @@ MALLOC --- Allocate dynamic memory
       end program test_malloc
 
   See also:
-
     :ref:`FREE`

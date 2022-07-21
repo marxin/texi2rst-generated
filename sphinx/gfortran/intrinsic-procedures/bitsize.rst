@@ -23,21 +23,17 @@ BIT_SIZE --- Bit size inquiry function
     The return value is of type ``INTEGER``
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = BIT_SIZE(I)
 
   Example:
-
     .. code-block:: fortran
 
       program test_bit_size

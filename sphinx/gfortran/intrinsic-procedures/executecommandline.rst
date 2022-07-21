@@ -34,21 +34,17 @@ EXECUTE_COMMAND_LINE --- Execute a shell command
     default kind.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL EXECUTE_COMMAND_LINE(COMMAND [, WAIT, EXITSTAT, CMDSTAT, CMDMSG ])
 
   Example:
-
     .. code-block:: fortran
 
       program test_exec
@@ -63,7 +59,6 @@ EXECUTE_COMMAND_LINE --- Execute a shell command
       end program test_exec
 
   Note:
-
     Because this intrinsic is implemented in terms of the ``system``
     function call, its behavior with respect to signaling is processor
     dependent. In particular, on POSIX-compliant systems, the SIGINT and
@@ -72,5 +67,4 @@ EXECUTE_COMMAND_LINE --- Execute a shell command
     terminated alongside.
 
   See also:
-
     :ref:`SYSTEM`

@@ -23,25 +23,20 @@ SRAND --- Reinitialize the random number generator
     Does not return anything.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL SRAND(SEED)
 
   Example:
-
     See ``RAND`` and ``IRAND`` for examples.
 
   Notes:
-
     The Fortran standard specifies the intrinsic subroutines
     ``RANDOM_SEED`` to initialize the pseudo-random number
     generator and ``RANDOM_NUMBER`` to generate pseudo-random numbers.
@@ -53,7 +48,6 @@ SRAND --- Reinitialize the random number generator
     pseudo-random number generators.
 
   See also:
-
     :ref:`RAND`, 
     :ref:`RANDOM_SEED`, 
     :ref:`RANDOM_NUMBER`

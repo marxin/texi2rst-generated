@@ -26,21 +26,17 @@ BLE --- Bitwise less than or equal to
     The return value is of type ``LOGICAL`` and of the default kind.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = BLE(I, J)
 
   See also:
-
     :ref:`BGT`, 
     :ref:`BGE`, 
     :ref:`BLT`

@@ -27,21 +27,17 @@ MODULO --- Modulo function
     extension, kind is the largest kind of the actual arguments.)
 
   Standard:
-
     Fortran 95 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = MODULO(A, P)
 
   Example:
-
     .. code-block:: fortran
 
       program test_modulo
@@ -56,5 +52,4 @@ MODULO --- Modulo function
       end program
 
   See also:
-
     :ref:`MOD`

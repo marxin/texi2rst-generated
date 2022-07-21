@@ -37,13 +37,11 @@ COTAND --- Cotangent function, degrees
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = COTAND(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_cotand
@@ -52,7 +50,6 @@ COTAND --- Cotangent function, degrees
       end program test_cotand
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

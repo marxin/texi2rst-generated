@@ -33,13 +33,11 @@ CHAR --- Character conversion function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = CHAR(I [, KIND])
 
   Example:
-
     .. code-block:: fortran
 
       program test_char
@@ -50,7 +48,6 @@ CHAR --- Character conversion function
       end program test_char
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

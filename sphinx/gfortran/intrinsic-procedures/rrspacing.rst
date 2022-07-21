@@ -24,19 +24,15 @@ RRSPACING --- Reciprocal of the relative spacing
     ``ABS(FRACTION(X)) * FLOAT(RADIX(X))**DIGITS(X)``.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = RRSPACING(X)
 
   See also:
-
     :ref:`SPACING`

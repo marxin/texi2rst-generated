@@ -22,21 +22,17 @@ C_FUNLOC --- Obtain the C address of a procedure
     of the argument.
 
   Standard:
-
     Fortran 2003 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = C_FUNLOC(x)
 
   Example:
-
     .. code-block:: fortran
 
       module x
@@ -62,7 +58,6 @@ C_FUNLOC --- Obtain the C address of a procedure
       end program main
 
   See also:
-
     :ref:`C_ASSOCIATED`, 
     :ref:`C_LOC`, 
     :ref:`C_F_POINTER`, 

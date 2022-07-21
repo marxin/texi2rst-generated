@@ -48,21 +48,17 @@ GET_ENVIRONMENT_VARIABLE --- Get an environmental variable
     name.
 
   Standard:
-
     Fortran 2003 and later
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL GET_ENVIRONMENT_VARIABLE(NAME[, VALUE, LENGTH, STATUS, TRIM_NAME)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_getenv

@@ -29,22 +29,18 @@ FPUTC --- Write a single character in stream mode
     error code otherwise.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL FPUTC(UNIT, C [, STATUS])
       STATUS = FPUTC(UNIT, C)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_fputc
@@ -59,7 +55,6 @@ FPUTC --- Write a single character in stream mode
       END PROGRAM
 
   See also:
-
     :ref:`FPUT`, 
     :ref:`FGET`, 
     :ref:`FGETC`

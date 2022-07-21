@@ -33,20 +33,16 @@ UCOBOUND --- Upper codimension bounds of an array
     corresponding to the lower cobound of the array along that codimension.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = UCOBOUND(COARRAY [, DIM [, KIND]])
 
   See also:
-
     :ref:`LCOBOUND`, 
     :ref:`LBOUND`

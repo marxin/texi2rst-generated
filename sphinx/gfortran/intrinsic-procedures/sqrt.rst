@@ -41,13 +41,11 @@ SQRT --- Square-root function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = SQRT(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_sqrt
@@ -58,7 +56,6 @@ SQRT --- Square-root function
       end program test_sqrt
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

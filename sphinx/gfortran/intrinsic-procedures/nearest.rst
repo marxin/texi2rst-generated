@@ -30,21 +30,17 @@ NEAREST --- Nearest representable number
     ``X`` and nearest to it.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = NEAREST(X, S)
 
   Example:
-
     .. code-block:: fortran
 
       program test_nearest

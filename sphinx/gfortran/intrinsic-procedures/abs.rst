@@ -50,13 +50,11 @@ ABS --- Absolute value
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ABS(A)
 
   Example:
-
     .. code-block:: fortran
 
       program test_abs
@@ -69,7 +67,6 @@ ABS --- Absolute value
       end program test_abs
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

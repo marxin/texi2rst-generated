@@ -33,15 +33,12 @@ MATMUL --- matrix multiplication
     for the ``*`` or ``.AND.`` operators.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = MATMUL(MATRIX_A, MATRIX_B)

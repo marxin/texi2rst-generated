@@ -24,21 +24,17 @@ PRECISION --- Decimal precision of a real kind
     kind.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = PRECISION(X)
 
   Example:
-
     .. code-block:: fortran
 
       program prec_and_range
@@ -50,6 +46,5 @@ PRECISION --- Decimal precision of a real kind
       end program prec_and_range
 
   See also:
-
     :ref:`SELECTED_REAL_KIND`, 
     :ref:`RANGE`

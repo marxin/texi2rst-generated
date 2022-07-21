@@ -27,19 +27,15 @@ EXTENDS_TYPE_OF ---  Query dynamic type for extension
     the dynamic type of A is an extension type of the dynamic type of MOLD.
 
   Standard:
-
     Fortran 2003 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = EXTENDS_TYPE_OF(A, MOLD)
 
   See also:
-
     :ref:`SAME_TYPE_AS`

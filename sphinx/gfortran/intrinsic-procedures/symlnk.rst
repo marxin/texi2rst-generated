@@ -30,21 +30,17 @@ SYMLNK --- Create a symbolic link
     (Optional) Shall be of default ``INTEGER`` type.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL SYMLNK(PATH1, PATH2 [, STATUS])
       STATUS = SYMLNK(PATH1, PATH2)
 
   See also:
-
     :ref:`LINK`, 
     :ref:`UNLINK`

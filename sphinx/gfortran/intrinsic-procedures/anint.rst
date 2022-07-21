@@ -41,13 +41,11 @@ ANINT --- Nearest whole number
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ANINT(A [, KIND])
 
   Example:
-
     .. code-block:: fortran
 
       program test_anint
@@ -60,7 +58,6 @@ ANINT --- Nearest whole number
       end program test_anint
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

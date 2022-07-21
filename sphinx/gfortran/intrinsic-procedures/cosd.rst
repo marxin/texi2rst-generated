@@ -42,13 +42,11 @@ COSD --- Cosine function, degrees
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = COSD(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_cosd
@@ -57,7 +55,6 @@ COSD --- Cosine function, degrees
       end program test_cosd
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

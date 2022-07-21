@@ -19,21 +19,17 @@ FLUSH --- Flush I/O unit(s)
     (Optional) The type shall be ``INTEGER``.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL FLUSH(UNIT)
 
   Note:
-
     Beginning with the Fortran 2003 standard, there is a ``FLUSH``
     statement that should be preferred over the ``FLUSH`` intrinsic.
 

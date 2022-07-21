@@ -33,21 +33,17 @@ OR --- Bitwise logical OR
     the other argument as-if a call to :ref:`INT` occurred.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = OR(I, J)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_or
@@ -60,6 +56,5 @@ OR --- Bitwise logical OR
       END PROGRAM
 
   See also:
-
     Fortran 95 elemental function: 
     :ref:`IOR`

@@ -32,21 +32,17 @@ GETARG --- Get command line arguments
     to the name of the program (on systems that support this feature).
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL GETARG(POS, VALUE)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_getarg
@@ -60,7 +56,6 @@ GETARG --- Get command line arguments
       END PROGRAM
 
   See also:
-
     GNU Fortran 77 compatibility function: 
     :ref:`IARGC` 
     Fortran 2003 functions and subroutines: 

@@ -33,21 +33,17 @@ XOR --- Bitwise logical exclusive OR
     the other argument as-if a call to :ref:`INT` occurred.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = XOR(I, J)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_xor
@@ -60,6 +56,5 @@ XOR --- Bitwise logical exclusive OR
       END PROGRAM
 
   See also:
-
     Fortran 95 elemental function: 
     :ref:`IEOR`

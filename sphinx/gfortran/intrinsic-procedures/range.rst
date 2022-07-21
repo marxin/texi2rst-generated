@@ -24,24 +24,19 @@ RANGE --- Decimal exponent range
     kind.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = RANGE(X)
 
   Example:
-
     See ``PRECISION`` for an example.
 
   See also:
-
     :ref:`SELECTED_REAL_KIND`, 
     :ref:`PRECISION`

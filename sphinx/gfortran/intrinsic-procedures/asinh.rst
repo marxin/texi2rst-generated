@@ -39,13 +39,11 @@ ASINH --- Inverse hyperbolic sine function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ASINH(X)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_asinh
@@ -54,7 +52,6 @@ ASINH --- Inverse hyperbolic sine function
       END PROGRAM
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

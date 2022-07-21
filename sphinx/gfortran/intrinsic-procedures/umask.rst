@@ -24,15 +24,12 @@ UMASK --- Set the file creation mask
     ``INTEGER``.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL UMASK(MASK [, OLD])

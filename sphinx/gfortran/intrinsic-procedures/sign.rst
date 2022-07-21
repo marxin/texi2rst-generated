@@ -38,13 +38,11 @@ SIGN --- Sign copying function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = SIGN(A, B)
 
   Example:
-
     .. code-block:: fortran
 
       program test_sign
@@ -58,7 +56,6 @@ SIGN --- Sign copying function
       end program test_sign
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

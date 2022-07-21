@@ -31,21 +31,17 @@ SHAPE --- Determine the shape of an array
     return value has the default integer kind otherwise the specified kind.
 
   Standard:
-
     Fortran 90 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = SHAPE(SOURCE [, KIND])
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_shape
@@ -55,6 +51,5 @@ SHAPE --- Determine the shape of an array
       END PROGRAM
 
   See also:
-
     :ref:`RESHAPE`, 
     :ref:`SIZE`

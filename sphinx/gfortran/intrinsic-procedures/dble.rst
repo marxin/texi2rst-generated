@@ -22,21 +22,17 @@ DBLE --- Double conversion function
     The return value is of type double precision real.
 
   Standard:
-
     Fortran 77 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = DBLE(A)
 
   Example:
-
     .. code-block:: fortran
 
       program test_dble
@@ -47,5 +43,4 @@ DBLE --- Double conversion function
       end program test_dble
 
   See also:
-
     :ref:`REAL`

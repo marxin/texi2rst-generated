@@ -38,19 +38,15 @@ DSHIFTL --- Combined left shift
     kind type parameter of the other.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = DSHIFTL(I, J, SHIFT)
 
   See also:
-
     :ref:`DSHIFTR`

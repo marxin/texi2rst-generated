@@ -26,21 +26,17 @@ IRAND --- Integer pseudo-random number
     The return value is of ``INTEGER(kind=4)`` type.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = IRAND(I)
 
   Example:
-
     .. code-block:: fortran
 
       program test_irand

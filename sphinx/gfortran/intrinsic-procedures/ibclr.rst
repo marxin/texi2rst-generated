@@ -44,13 +44,11 @@ IBCLR --- Clear bit
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = IBCLR(I, POS)
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

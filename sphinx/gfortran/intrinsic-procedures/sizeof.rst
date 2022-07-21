@@ -32,21 +32,17 @@ SIZEOF --- Size in bytes of an expression
     storage or an array element multiplied by the size of the array.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       N = SIZEOF(X)
 
   Example:
-
     .. code-block:: fortran
 
          integer :: i
@@ -58,6 +54,5 @@ SIZEOF --- Size in bytes of an expression
     where default ``REAL`` variables are unusually padded.
 
   See also:
-
     :ref:`C_SIZEOF`, 
     :ref:`STORAGE_SIZE`

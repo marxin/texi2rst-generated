@@ -36,13 +36,11 @@ ACOS --- Arccosine function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ACOS(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_acos
@@ -51,7 +49,6 @@ ACOS --- Arccosine function
       end program test_acos
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

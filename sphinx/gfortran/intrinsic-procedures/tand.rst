@@ -33,13 +33,11 @@ TAND --- Tangent function, degrees
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = TAND(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_tand
@@ -48,7 +46,6 @@ TAND --- Tangent function, degrees
       end program test_tand
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

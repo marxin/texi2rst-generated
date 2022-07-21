@@ -21,21 +21,17 @@ SELECTED_INT_KIND --- Choose integer kind
     Shall be a scalar and of type ``INTEGER``.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = SELECTED_INT_KIND(R)
 
   Example:
-
     .. code-block:: fortran
 
       program large_integers

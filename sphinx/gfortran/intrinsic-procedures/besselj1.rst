@@ -37,13 +37,11 @@ BESSEL_J1 --- Bessel function of the first kind of order 1
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = BESSEL_J1(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_besj1
@@ -52,7 +50,6 @@ BESSEL_J1 --- Bessel function of the first kind of order 1
       end program test_besj1
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

@@ -25,20 +25,16 @@ SECOND --- CPU time function
     seconds.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL SECOND(TIME)
       TIME = SECOND()
 
   See also:
-
     :ref:`CPU_TIME`

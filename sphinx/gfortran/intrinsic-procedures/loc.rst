@@ -23,21 +23,17 @@ LOC --- Returns the address of a variable
     machine.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = LOC(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_loc

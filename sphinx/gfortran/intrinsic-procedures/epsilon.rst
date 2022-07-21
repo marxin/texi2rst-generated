@@ -22,21 +22,17 @@ EPSILON --- Epsilon function
     The return value is of same type as the argument.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = EPSILON(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_epsilon

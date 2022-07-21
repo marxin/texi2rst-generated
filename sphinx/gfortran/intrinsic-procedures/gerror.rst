@@ -19,21 +19,17 @@ GERROR --- Get last system error message
     Shall be of type ``CHARACTER`` and of default kind.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL GERROR(RESULT)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_gerror
@@ -43,6 +39,5 @@ GERROR --- Get last system error message
       END PROGRAM
 
   See also:
-
     :ref:`IERRNO`, 
     :ref:`PERROR`

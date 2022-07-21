@@ -23,21 +23,17 @@ EXIT --- Exit the program with status.
     ``STATUS`` is passed to the parent process on exit.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL EXIT([STATUS])
 
   Example:
-
     .. code-block:: fortran
 
       program test_exit
@@ -47,6 +43,5 @@ EXIT --- Exit the program with status.
       end program test_exit
 
   See also:
-
     :ref:`ABORT`, 
     :ref:`KILL`

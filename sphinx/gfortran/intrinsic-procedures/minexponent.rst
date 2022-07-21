@@ -23,19 +23,15 @@ MINEXPONENT --- Minimum exponent of a real kind
     kind.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = MINEXPONENT(X)
 
   Example:
-
     See ``MAXEXPONENT`` for an example.

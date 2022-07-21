@@ -27,21 +27,17 @@ LOGICAL --- Convert to logical type
     :samp:`{KIND}` is not given.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = LOGICAL(L [, KIND])
 
   See also:
-
     :ref:`INT`, 
     :ref:`REAL`, 
     :ref:`CMPLX`

@@ -37,20 +37,16 @@ UBOUND --- Upper dimension bounds of an array
     the relevant dimension.
 
   Standard:
-
     Fortran 90 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = UBOUND(ARRAY [, DIM [, KIND]])
 
   See also:
-
     :ref:`LBOUND`, 
     :ref:`LCOBOUND`

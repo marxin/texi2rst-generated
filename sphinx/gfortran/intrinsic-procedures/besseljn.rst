@@ -48,7 +48,6 @@ BESSEL_JN --- Bessel function of the first kind
     ``BESSEL_JN(N1, N2, X)``
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = BESSEL_JN(N, X)
@@ -60,7 +59,6 @@ BESSEL_JN --- Bessel function of the first kind
     the elemental function.
 
   Example:
-
     .. code-block:: fortran
 
       program test_besjn
@@ -69,7 +67,6 @@ BESSEL_JN --- Bessel function of the first kind
       end program test_besjn
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

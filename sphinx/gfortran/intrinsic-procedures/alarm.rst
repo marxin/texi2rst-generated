@@ -34,21 +34,17 @@ ALARM --- Execute a routine after a given delay
     variable of the default ``INTEGER`` kind. It is ``INTENT(OUT)``.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL ALARM(SECONDS, HANDLER [, STATUS])
 
   Example:
-
     .. code-block:: fortran
 
       program test_alarm

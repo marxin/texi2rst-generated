@@ -23,15 +23,12 @@ TRANSPOSE --- Transpose an array of rank two
     ``(/ m, n /)`` if :samp:`{MATRIX}` has shape ``(/ n, m /)``.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = TRANSPOSE(MATRIX)

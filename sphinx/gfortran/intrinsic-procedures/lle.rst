@@ -39,13 +39,11 @@ LLE --- Lexical less than or equal
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = LLE(STRING_A, STRING_B)
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

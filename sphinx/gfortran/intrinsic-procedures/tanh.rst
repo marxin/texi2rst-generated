@@ -38,13 +38,11 @@ TANH --- Hyperbolic tangent function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       X = TANH(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_tanh
@@ -53,7 +51,6 @@ TANH --- Hyperbolic tangent function
       end program test_tanh
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

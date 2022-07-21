@@ -38,19 +38,15 @@ DSHIFTR --- Combined right shift
     kind type parameter of the other.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = DSHIFTR(I, J, SHIFT)
 
   See also:
-
     :ref:`DSHIFTL`

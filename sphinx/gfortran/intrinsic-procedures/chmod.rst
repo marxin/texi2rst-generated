@@ -35,22 +35,18 @@ CHMOD --- Change access permissions of files
     otherwise.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL CHMOD(NAME, MODE[, STATUS])
       STATUS = CHMOD(NAME, MODE)
 
   Example:
-
     ``CHMOD`` as subroutine
 
     .. code-block:: fortran
@@ -63,7 +59,6 @@ CHMOD --- Change access permissions of files
       end program chmod_test
 
     ``CHMOD`` as function:
-
     .. code-block:: fortran
 
       program chmod_test

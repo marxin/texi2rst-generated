@@ -32,21 +32,17 @@ ATOMIC_XOR --- Atomic bitwise OR operation
     (optional) Scalar default-kind integer variable.
 
   Standard:
-
     TS 18508 or later
 
   Class:
-
     Atomic subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL ATOMIC_XOR (ATOM, VALUE [, STAT])
 
   Example:
-
     .. code-block:: fortran
 
       program atomic
@@ -56,7 +52,6 @@ ATOMIC_XOR --- Atomic bitwise OR operation
       end program atomic
 
   See also:
-
     :ref:`ATOMIC_DEFINE`, 
     :ref:`ATOMIC_FETCH_XOR`, 
     :ref:`ISO_FORTRAN_ENV`, 

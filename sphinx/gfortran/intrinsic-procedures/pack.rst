@@ -36,23 +36,18 @@ PACK --- Pack an array into an array of rank one
     number of ``TRUE`` values in :samp:`{MASK}` otherwise.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = PACK(ARRAY, MASK[,VECTOR])
 
   Example:
-
     Gathering nonzero elements from an array:
-
     .. code-block:: fortran
 
       PROGRAM test_pack_1
@@ -62,7 +57,6 @@ PACK --- Pack an array into an array of rank one
       END PROGRAM
 
     Gathering nonzero elements from an array and appending elements from :samp:`{VECTOR}` :
-
     .. code-block:: fortran
 
       PROGRAM test_pack_2
@@ -73,5 +67,4 @@ PACK --- Pack an array into an array of rank one
       END PROGRAM
 
   See also:
-
     :ref:`UNPACK`

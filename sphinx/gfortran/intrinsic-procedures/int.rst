@@ -39,13 +39,11 @@ INT --- Convert to integer type
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = INT(A [, KIND))
 
   Example:
-
     .. code-block:: fortran
 
       program test_int
@@ -56,7 +54,6 @@ INT --- Convert to integer type
       end program
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

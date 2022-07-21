@@ -27,21 +27,17 @@ COMPLEX --- Complex conversion function
     value is of default ``COMPLEX`` type.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = COMPLEX(X, Y)
 
   Example:
-
     .. code-block:: fortran
 
       program test_complex
@@ -51,5 +47,4 @@ COMPLEX --- Complex conversion function
       end program test_complex
 
   See also:
-
     :ref:`CMPLX`

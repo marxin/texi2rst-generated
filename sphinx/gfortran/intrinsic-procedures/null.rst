@@ -22,25 +22,20 @@ NULL --- Function that returns an disassociated pointer
     A disassociated pointer.
 
   Standard:
-
     Fortran 95 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       PTR => NULL([MOLD])
 
   Example:
-
     .. code-block:: fortran
 
       REAL, POINTER, DIMENSION(:) :: VEC => NULL ()
 
   See also:
-
     :ref:`ASSOCIATED`

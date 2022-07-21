@@ -39,13 +39,11 @@ DIM --- Positive difference
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = DIM(X, Y)
 
   Example:
-
     .. code-block:: fortran
 
       program test_dim
@@ -58,7 +56,6 @@ DIM --- Positive difference
       end program test_dim
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

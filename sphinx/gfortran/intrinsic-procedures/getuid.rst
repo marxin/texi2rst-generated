@@ -19,24 +19,19 @@ GETUID --- User ID function
     kind.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = GETUID()
 
   Example:
-
     See ``GETPID`` for an example.
 
   See also:
-
     :ref:`GETPID`, 
     :ref:`GETLOG`

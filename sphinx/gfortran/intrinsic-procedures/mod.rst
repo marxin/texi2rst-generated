@@ -52,13 +52,11 @@ MOD --- Remainder function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = MOD(A, P)
 
   Example:
-
     .. code-block:: fortran
 
       program test_mod
@@ -79,7 +77,6 @@ MOD --- Remainder function
       end program test_mod
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

@@ -50,13 +50,11 @@ IBITS --- Bit extraction
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = IBITS(I, POS, LEN)
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

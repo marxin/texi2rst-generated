@@ -35,21 +35,17 @@ ACCESS --- Checks file access modes
     has been given for ``MODE`` the value ``1`` is returned.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ACCESS(NAME, MODE)
 
   Example:
-
     .. code-block:: fortran
 
       program access_test

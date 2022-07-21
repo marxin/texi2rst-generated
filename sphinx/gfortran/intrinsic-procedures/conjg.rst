@@ -32,13 +32,11 @@ CONJG --- Complex conjugate function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       Z = CONJG(Z)
 
   Example:
-
     .. code-block:: fortran
 
       program test_conjg
@@ -51,7 +49,6 @@ CONJG --- Complex conjugate function
       end program test_conjg
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

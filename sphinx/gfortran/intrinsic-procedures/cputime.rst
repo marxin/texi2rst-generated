@@ -23,21 +23,17 @@ CPU_TIME --- CPU elapsed time in seconds
     None
 
   Standard:
-
     Fortran 95 and later
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL CPU_TIME(TIME)
 
   Example:
-
     .. code-block:: fortran
 
       program test_cpu_time
@@ -49,6 +45,5 @@ CPU_TIME --- CPU elapsed time in seconds
       end program test_cpu_time
 
   See also:
-
     :ref:`SYSTEM_CLOCK`, 
     :ref:`DATE_AND_TIME`

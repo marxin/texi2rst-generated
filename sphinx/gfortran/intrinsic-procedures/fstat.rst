@@ -26,26 +26,21 @@ FSTAT --- Get file status
     on success and a system specific error code otherwise.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL FSTAT(UNIT, VALUES [, STATUS])
       STATUS = FSTAT(UNIT, VALUES)
 
   Example:
-
     See :ref:`STAT` for an example.
 
   See also:
-
     To stat a link: 
     :ref:`LSTAT` 
     To stat a file: 

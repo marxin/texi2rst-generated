@@ -44,21 +44,17 @@ GET_COMMAND_ARGUMENT --- Get command line arguments
     zero.
 
   Standard:
-
     Fortran 2003 and later
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL GET_COMMAND_ARGUMENT(NUMBER [, VALUE, LENGTH, STATUS])
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_get_command_argument
@@ -76,6 +72,5 @@ GET_COMMAND_ARGUMENT --- Get command line arguments
       END PROGRAM
 
   See also:
-
     :ref:`GET_COMMAND`, 
     :ref:`COMMAND_ARGUMENT_COUNT`

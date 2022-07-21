@@ -25,21 +25,17 @@ ITIME --- Get current local time subroutine (hour/minutes/seconds)
     Does not return anything.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL ITIME(VALUES)
 
   Example:
-
     .. code-block:: fortran
 
       program test_itime
@@ -51,5 +47,4 @@ ITIME --- Get current local time subroutine (hour/minutes/seconds)
       end program test_itime
 
   See also:
-
     :ref:`DATE_AND_TIME`

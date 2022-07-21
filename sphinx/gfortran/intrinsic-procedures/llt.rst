@@ -39,13 +39,11 @@ LLT --- Lexical less than
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = LLT(STRING_A, STRING_B)
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

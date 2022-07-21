@@ -37,21 +37,17 @@ ATOMIC_FETCH_ADD --- Atomic ADD operation with prior fetch
     (optional) Scalar default-kind integer variable.
 
   Standard:
-
     TS 18508 or later
 
   Class:
-
     Atomic subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL ATOMIC_FETCH_ADD (ATOM, VALUE, old [, STAT])
 
   Example:
-
     .. code-block:: fortran
 
       program atomic
@@ -61,7 +57,6 @@ ATOMIC_FETCH_ADD --- Atomic ADD operation with prior fetch
       end program atomic
 
   See also:
-
     :ref:`ATOMIC_DEFINE`, 
     :ref:`ATOMIC_ADD`, 
     :ref:`ISO_FORTRAN_ENV`, 

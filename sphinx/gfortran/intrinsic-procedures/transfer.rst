@@ -36,21 +36,17 @@ TRANSFER --- Transfer bit patterns
     and :samp:`{MOLD}` is a scalar, the result is a scalar.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = TRANSFER(SOURCE, MOLD[, SIZE])
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_transfer

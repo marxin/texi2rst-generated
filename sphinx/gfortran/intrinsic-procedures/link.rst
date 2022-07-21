@@ -29,21 +29,17 @@ LINK --- Create a hard link
     (Optional) Shall be of default ``INTEGER`` type.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL LINK(PATH1, PATH2 [, STATUS])
       STATUS = LINK(PATH1, PATH2)
 
   See also:
-
     :ref:`SYMLNK`, 
     :ref:`UNLINK`

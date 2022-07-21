@@ -29,21 +29,17 @@ DCMPLX --- Double complex conversion function
     The return value is of type ``COMPLEX(8)``
 
   Standard:
-
     GNU extension
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = DCMPLX(X [, Y])
 
   Example:
-
     .. code-block:: fortran
 
       program test_dcmplx

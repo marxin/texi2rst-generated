@@ -47,13 +47,11 @@ IAND --- Bitwise logical and
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = IAND(I, J)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_iand
@@ -63,7 +61,6 @@ IAND --- Bitwise logical and
       END PROGRAM
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

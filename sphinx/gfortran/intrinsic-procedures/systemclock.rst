@@ -33,21 +33,17 @@ SYSTEM_CLOCK --- Time function
     ``INTEGER`` with ``INTENT(OUT)``.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL SYSTEM_CLOCK([COUNT, COUNT_RATE, COUNT_MAX])
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_system_clock
@@ -57,6 +53,5 @@ SYSTEM_CLOCK --- Time function
       END PROGRAM
 
   See also:
-
     :ref:`DATE_AND_TIME`, 
     :ref:`CPU_TIME`

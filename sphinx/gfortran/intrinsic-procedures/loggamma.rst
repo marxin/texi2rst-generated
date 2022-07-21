@@ -37,13 +37,11 @@ LOG_GAMMA --- Logarithm of the Gamma function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       X = LOG_GAMMA(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_log_gamma
@@ -52,7 +50,6 @@ LOG_GAMMA --- Logarithm of the Gamma function
       end program test_log_gamma
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

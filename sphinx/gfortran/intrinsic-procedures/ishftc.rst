@@ -53,13 +53,11 @@ ISHFTC --- Shift bits circularly
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ISHFTC(I, SHIFT [, SIZE])
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

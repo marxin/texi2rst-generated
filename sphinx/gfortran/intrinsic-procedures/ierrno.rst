@@ -20,23 +20,18 @@ IERRNO --- Get the last system error number
     kind.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = IERRNO()
 
   Arguments:
-
     None
 
   See also:
-
     :ref:`PERROR`

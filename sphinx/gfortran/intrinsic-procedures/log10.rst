@@ -38,13 +38,11 @@ LOG10 --- Base 10 logarithm function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = LOG10(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_log10
@@ -53,7 +51,6 @@ LOG10 --- Base 10 logarithm function
       end program test_log10
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

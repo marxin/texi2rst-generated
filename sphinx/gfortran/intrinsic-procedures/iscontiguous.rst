@@ -22,21 +22,17 @@ IS_CONTIGUOUS --- Test whether an array is contiguous
     :samp:`{ARRAY}` is contiguous and false otherwise.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = IS_CONTIGUOUS(ARRAY)
 
   Example:
-
     .. code-block:: fortran
 
       program test

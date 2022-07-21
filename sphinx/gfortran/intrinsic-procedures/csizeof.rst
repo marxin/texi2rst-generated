@@ -28,21 +28,17 @@ C_SIZEOF --- Size in bytes of an expression
     the sizes of the data pointed to by these components.
 
   Standard:
-
     Fortran 2008
 
   Class:
-
     Inquiry function of the module ``ISO_C_BINDING``
 
   Syntax:
-
     .. code-block:: fortran
 
       N = C_SIZEOF(X)
 
   Example:
-
     .. code-block:: fortran
 
          use iso_c_binding
@@ -55,6 +51,5 @@ C_SIZEOF --- Size in bytes of an expression
     where default ``REAL`` variables are unusually padded.
 
   See also:
-
     :ref:`SIZEOF`, 
     :ref:`STORAGE_SIZE`

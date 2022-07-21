@@ -29,22 +29,18 @@ FGETC --- Read a single character in stream mode
     error code otherwise.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL FGETC(UNIT, C [, STATUS])
       STATUS = FGETC(UNIT, C)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_fgetc
@@ -61,7 +57,6 @@ FGETC --- Read a single character in stream mode
       END PROGRAM
 
   See also:
-
     :ref:`FGET`, 
     :ref:`FPUT`, 
     :ref:`FPUTC`

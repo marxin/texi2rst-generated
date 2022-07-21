@@ -28,26 +28,21 @@ LSTAT --- Get file status
     Returns 0 on success and a system specific error code otherwise.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL LSTAT(NAME, VALUES [, STATUS])
       STATUS = LSTAT(NAME, VALUES)
 
   Example:
-
     See :ref:`STAT` for an example.
 
   See also:
-
     To stat an open file: 
     :ref:`FSTAT` 
     To stat a file: 

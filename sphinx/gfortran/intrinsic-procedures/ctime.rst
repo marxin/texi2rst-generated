@@ -29,22 +29,18 @@ CTIME --- Convert a time into a string
     The converted date and time as a string.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL CTIME(TIME, RESULT).
       RESULT = CTIME(TIME).
 
   Example:
-
     .. code-block:: fortran
 
       program test_ctime

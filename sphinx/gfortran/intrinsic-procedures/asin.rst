@@ -36,13 +36,11 @@ ASIN --- Arcsine function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ASIN(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_asin
@@ -51,7 +49,6 @@ ASIN --- Arcsine function
       end program test_asin
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

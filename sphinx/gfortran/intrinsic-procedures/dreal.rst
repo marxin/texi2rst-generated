@@ -21,21 +21,17 @@ DREAL --- Double real part function
     The return value is of type ``REAL(8)``.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = DREAL(A)
 
   Example:
-
     .. code-block:: fortran
 
       program test_dreal
@@ -44,5 +40,4 @@ DREAL --- Double real part function
       end program test_dreal
 
   See also:
-
     :ref:`AIMAG`

@@ -22,21 +22,17 @@ ERFC_SCALED --- Error function
     The return value is of type ``REAL`` and of the same kind as :samp:`{X}`.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ERFC_SCALED(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_erfc_scaled

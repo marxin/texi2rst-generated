@@ -27,23 +27,19 @@ ALLOCATED --- Status of an allocatable entity
     ``.TRUE.`` ; otherwise, it returns ``.FALSE.`` 
 
   Standard:
-
     Fortran 90 and later.  Note, the ``SCALAR=`` keyword and allocatable
     scalar entities are available in Fortran 2003 and later.
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ALLOCATED(ARRAY)
       RESULT = ALLOCATED(SCALAR) 
 
   Example:
-
     .. code-block:: fortran
 
       program test_allocated

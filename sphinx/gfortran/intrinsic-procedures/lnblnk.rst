@@ -24,20 +24,16 @@ LNBLNK --- Index of the last non-blank character in a string
     The return value is of ``INTEGER(kind=4)`` type.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = LNBLNK(STRING)
 
   See also:
-
     :ref:`index-intrinsic`, 
     :ref:`LEN_TRIM`

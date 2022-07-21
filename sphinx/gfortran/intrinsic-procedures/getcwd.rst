@@ -22,22 +22,18 @@ GETCWD --- Get current working directory
     a system specific and nonzero error code otherwise.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL GETCWD(C [, STATUS])
       STATUS = GETCWD(C)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_getcwd
@@ -47,5 +43,4 @@ GETCWD --- Get current working directory
       END PROGRAM
 
   See also:
-
     :ref:`CHDIR`

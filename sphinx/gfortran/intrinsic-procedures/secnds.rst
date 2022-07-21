@@ -27,21 +27,17 @@ SECNDS --- Time function
     None
 
   Standard:
-
     GNU extension
 
   Class:
-
     Function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = SECNDS (X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_secnds

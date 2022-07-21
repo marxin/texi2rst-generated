@@ -37,13 +37,11 @@ ACOSD --- Arccosine function, degrees
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ACOSD(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_acosd
@@ -52,7 +50,6 @@ ACOSD --- Arccosine function, degrees
       end program test_acosd
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

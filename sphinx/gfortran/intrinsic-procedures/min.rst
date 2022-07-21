@@ -46,13 +46,11 @@ MIN --- Minimum value of an argument list
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = MIN(A1, A2 [, A3, ...])
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

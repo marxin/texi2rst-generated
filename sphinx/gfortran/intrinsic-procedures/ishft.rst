@@ -47,13 +47,11 @@ ISHFT --- Shift bits
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ISHFT(I, SHIFT)
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

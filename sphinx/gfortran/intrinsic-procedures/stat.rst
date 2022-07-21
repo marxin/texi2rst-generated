@@ -28,22 +28,18 @@ STAT --- Get file status
     on success and a system specific error code otherwise.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL STAT(NAME, VALUES [, STATUS])
       STATUS = STAT(NAME, VALUES)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_stat
@@ -70,7 +66,6 @@ STAT --- Get file status
       END PROGRAM
 
   See also:
-
     To stat an open file: 
     :ref:`FSTAT` 
     To stat a link: 

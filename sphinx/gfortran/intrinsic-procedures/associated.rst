@@ -27,23 +27,18 @@ ASSOCIATED --- Status of a pointer or pointer/target pair
   :return:
     ``ASSOCIATED(POINTER)`` returns a scalar value of type ``LOGICAL(4)``.
     There are several cases:
-
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ASSOCIATED(POINTER [, TARGET])
 
   Example:
-
     .. code-block:: fortran
 
       program test_associated
@@ -56,5 +51,4 @@ ASSOCIATED --- Status of a pointer or pointer/target pair
       end program test_associated
 
   See also:
-
     :ref:`NULL`

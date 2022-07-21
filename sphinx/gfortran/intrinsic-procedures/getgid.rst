@@ -19,24 +19,19 @@ GETGID --- Group ID function
     kind.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = GETGID()
 
   Example:
-
     See ``GETPID`` for an example.
 
   See also:
-
     :ref:`GETPID`, 
     :ref:`GETUID`

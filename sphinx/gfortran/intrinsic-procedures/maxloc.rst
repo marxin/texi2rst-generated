@@ -57,24 +57,20 @@ MAXLOC --- Location of the maximum value within an array
     is of default kind.
 
   Standard:
-
     Fortran 95 and later; :samp:`{ARRAY}` of ``CHARACTER`` and the
     :samp:`{KIND}` argument are available in Fortran 2003 and later.
     The :samp:`{BACK}` argument is available in Fortran 2008 and later.
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = MAXLOC(ARRAY, DIM [, MASK] [,KIND] [,BACK])
       RESULT = MAXLOC(ARRAY [, MASK] [,KIND] [,BACK])
 
   See also:
-
     :ref:`FINDLOC`, 
     :ref:`MAX`, 
     :ref:`MAXVAL`

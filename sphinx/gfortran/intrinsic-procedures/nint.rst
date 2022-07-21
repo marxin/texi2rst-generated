@@ -37,13 +37,11 @@ NINT --- Nearest whole number
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = NINT(A [, KIND])
 
   Example:
-
     .. code-block:: fortran
 
       program test_nint
@@ -55,7 +53,6 @@ NINT --- Nearest whole number
       end program test_nint
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

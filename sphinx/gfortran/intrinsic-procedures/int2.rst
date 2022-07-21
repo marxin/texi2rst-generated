@@ -24,20 +24,16 @@ INT2 --- Convert to 16-bit integer type
     The return value is a ``INTEGER(2)`` variable.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = INT2(A)
 
   See also:
-
     :ref:`INT`, 
     :ref:`INT8`

@@ -25,21 +25,17 @@ SYSTEM --- Execute a shell command
     (Optional) Shall be of default ``INTEGER`` type.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL SYSTEM(COMMAND [, STATUS])
       STATUS = SYSTEM(COMMAND)
 
   See also:
-
     :ref:`EXECUTE_COMMAND_LINE`, which is part of the Fortran 2008 standard
     and should considered in new code for future portability.

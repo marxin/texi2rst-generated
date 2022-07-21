@@ -53,14 +53,12 @@ REAL --- Convert to real type
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = REAL(A [, KIND])
       RESULT = REALPART(Z)
 
   Example:
-
     .. code-block:: fortran
 
       program test_real
@@ -69,7 +67,6 @@ REAL --- Convert to real type
       end program test_real
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

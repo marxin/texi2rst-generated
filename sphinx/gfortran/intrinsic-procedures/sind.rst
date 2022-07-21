@@ -40,13 +40,11 @@ SIND --- Sine function, degrees
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = SIND(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_sind
@@ -55,7 +53,6 @@ SIND --- Sine function, degrees
       end program test_sind
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

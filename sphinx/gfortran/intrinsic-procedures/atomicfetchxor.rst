@@ -36,21 +36,17 @@ ATOMIC_FETCH_XOR --- Atomic bitwise XOR operation with prior fetch
     (optional) Scalar default-kind integer variable.
 
   Standard:
-
     TS 18508 or later
 
   Class:
-
     Atomic subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL ATOMIC_FETCH_XOR (ATOM, VALUE, OLD [, STAT])
 
   Example:
-
     .. code-block:: fortran
 
       program atomic
@@ -60,7 +56,6 @@ ATOMIC_FETCH_XOR --- Atomic bitwise XOR operation with prior fetch
       end program atomic
 
   See also:
-
     :ref:`ATOMIC_DEFINE`, 
     :ref:`ATOMIC_XOR`, 
     :ref:`ISO_FORTRAN_ENV`, 

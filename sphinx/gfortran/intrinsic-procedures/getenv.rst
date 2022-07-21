@@ -26,21 +26,17 @@ GETENV --- Get an environmental variable
     is not set, :samp:`{VALUE}` will be filled with blanks.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL GETENV(NAME, VALUE)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_getenv
@@ -50,5 +46,4 @@ GETENV --- Get an environmental variable
       END PROGRAM
 
   See also:
-
     :ref:`GET_ENVIRONMENT_VARIABLE`

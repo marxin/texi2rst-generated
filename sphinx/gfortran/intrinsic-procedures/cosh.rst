@@ -38,13 +38,11 @@ COSH --- Hyperbolic cosine function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       X = COSH(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_cosh
@@ -53,7 +51,6 @@ COSH --- Hyperbolic cosine function
       end program test_cosh
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

@@ -25,21 +25,17 @@ RAND --- Real pseudo-random number
     The return value is of ``REAL`` type and the default kind.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = RAND(I)
 
   Example:
-
     .. code-block:: fortran
 
       program test_rand
@@ -51,6 +47,5 @@ RAND --- Real pseudo-random number
       end program test_rand
 
   See also:
-
     :ref:`SRAND`, 
     :ref:`RANDOM_NUMBER`

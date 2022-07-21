@@ -32,13 +32,11 @@ DPROD --- Double product function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = DPROD(X, Y)
 
   Example:
-
     .. code-block:: fortran
 
       program test_dprod
@@ -50,7 +48,6 @@ DPROD --- Double product function
       end program test_dprod
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

@@ -28,21 +28,17 @@ SET_EXPONENT --- Set the exponent of the model
     it is ``FRACTION(X) * RADIX(X)**I``.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = SET_EXPONENT(X, I)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_setexp

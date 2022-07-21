@@ -52,13 +52,11 @@ MVBITS --- Move bits from one integer to another
     Elemental subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL MVBITS(FROM, FROMPOS, LEN, TO, TOPOS)
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

@@ -40,13 +40,11 @@ SIN --- Sine function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = SIN(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_sin
@@ -55,7 +53,6 @@ SIN --- Sine function
       end program test_sin
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

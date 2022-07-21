@@ -19,21 +19,17 @@ RANDOM_NUMBER --- Pseudo-random number
     Shall be a scalar or an array of type ``REAL``.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL RANDOM_NUMBER(HARVEST)
 
   Example:
-
     .. code-block:: fortran
 
       program test_random_number
@@ -42,6 +38,5 @@ RANDOM_NUMBER --- Pseudo-random number
       end program
 
   See also:
-
     :ref:`RANDOM_SEED`, 
     :ref:`RANDOM_INIT`

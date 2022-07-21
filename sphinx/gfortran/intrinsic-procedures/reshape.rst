@@ -39,21 +39,17 @@ RESHAPE --- Function to reshape an array
     :samp:`{SOURCE}`. 
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = RESHAPE(SOURCE, SHAPE[, PAD, ORDER])
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_reshape
@@ -63,5 +59,4 @@ RESHAPE --- Function to reshape an array
       END PROGRAM
 
   See also:
-
     :ref:`SHAPE`

@@ -23,21 +23,17 @@ DIGITS --- Significant binary digits function
     The return value is of type ``INTEGER``.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = DIGITS(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_digits

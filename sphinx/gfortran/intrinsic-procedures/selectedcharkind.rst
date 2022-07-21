@@ -22,21 +22,17 @@ SELECTED_CHAR_KIND --- Choose character kind
     Shall be a scalar and of the default character type.
 
   Standard:
-
     Fortran 2003 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = SELECTED_CHAR_KIND(NAME)
 
   Example:
-
     .. code-block:: fortran
 
       program character_kind

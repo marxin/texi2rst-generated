@@ -31,21 +31,17 @@ RSHIFT --- Right shift bits
     :samp:`{I}`.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = RSHIFT(I, SHIFT)
 
   See also:
-
     :ref:`ISHFT`, 
     :ref:`ISHFTC`, 
     :ref:`LSHIFT`, 

@@ -33,21 +33,17 @@ RANDOM_SEED --- Initialize a pseudo-random number sequence
     the :samp:`{SIZE}` argument.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL RANDOM_SEED([SIZE, PUT, GET])
 
   Example:
-
     .. code-block:: fortran
 
       program test_random_seed
@@ -62,6 +58,5 @@ RANDOM_SEED --- Initialize a pseudo-random number sequence
       end program test_random_seed
 
   See also:
-
     :ref:`RANDOM_NUMBER`, 
     :ref:`RANDOM_INIT`

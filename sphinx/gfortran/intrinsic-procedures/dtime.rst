@@ -29,22 +29,18 @@ DTIME --- Execution time subroutine (or function)
     execution if not called before.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL DTIME(VALUES, TIME).
       TIME = DTIME(VALUES), (not recommended).
 
   Example:
-
     .. code-block:: fortran
 
       program test_dtime
@@ -65,5 +61,4 @@ DTIME --- Execution time subroutine (or function)
       end program test_dtime
 
   See also:
-
     :ref:`CPU_TIME`

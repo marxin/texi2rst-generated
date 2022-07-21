@@ -41,13 +41,11 @@ BTEST --- Bit test function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = BTEST(I, POS)
 
   Example:
-
     .. code-block:: fortran
 
       program test_btest
@@ -61,7 +59,6 @@ BTEST --- Bit test function
       end program test_btest
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

@@ -18,21 +18,17 @@ SLEEP --- Sleep for the specified number of seconds
     The type shall be of default ``INTEGER``.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL SLEEP(SECONDS)
 
   Example:
-
     .. code-block:: fortran
 
       program test_sleep

@@ -19,21 +19,17 @@ GETPID --- Process ID function
     kind.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = GETPID()
 
   Example:
-
     .. code-block:: fortran
 
       program info
@@ -43,6 +39,5 @@ GETPID --- Process ID function
       end program info
 
   See also:
-
     :ref:`GETGID`, 
     :ref:`GETUID`

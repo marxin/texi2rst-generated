@@ -42,13 +42,11 @@ COS --- Cosine function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = COS(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_cos
@@ -57,7 +55,6 @@ COS --- Cosine function
       end program test_cos
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

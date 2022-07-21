@@ -26,22 +26,18 @@ FGET --- Read a single character in stream mode from stdin
     error code otherwise.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL FGET(C [, STATUS])
       STATUS = FGET(C)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_fget
@@ -59,7 +55,6 @@ FGET --- Read a single character in stream mode from stdin
       END PROGRAM
 
   See also:
-
     :ref:`FGETC`, 
     :ref:`FPUT`, 
     :ref:`FPUTC`

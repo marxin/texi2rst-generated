@@ -25,21 +25,17 @@ BLT --- Bitwise less than
     The return value is of type ``LOGICAL`` and of the default kind.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = BLT(I, J)
 
   See also:
-
     :ref:`BGE`, 
     :ref:`BGT`, 
     :ref:`BLE`

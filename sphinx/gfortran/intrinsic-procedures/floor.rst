@@ -26,21 +26,17 @@ FLOOR --- Integer floor function
     and of default-kind ``INTEGER`` otherwise.
 
   Standard:
-
     Fortran 95 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = FLOOR(A [, KIND])
 
   Example:
-
     .. code-block:: fortran
 
       program test_floor
@@ -51,6 +47,5 @@ FLOOR --- Integer floor function
       end program test_floor
 
   See also:
-
     :ref:`CEILING`, 
     :ref:`NINT`

@@ -48,13 +48,11 @@ IEOR --- Bitwise logical exclusive or
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = IEOR(I, J)
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

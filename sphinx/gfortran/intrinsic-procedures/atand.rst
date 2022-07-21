@@ -42,14 +42,12 @@ ATAND --- Arctangent function, degrees
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ATAND(X)
       RESULT = ATAND(Y, X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_atand
@@ -58,7 +56,6 @@ ATAND --- Arctangent function, degrees
       end program test_atand
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

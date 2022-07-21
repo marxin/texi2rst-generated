@@ -24,21 +24,17 @@ ADJUSTL --- Left adjust a string
     spaces are inserted on the end of :samp:`{STRING}`.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ADJUSTL(STRING)
 
   Example:
-
     .. code-block:: fortran
 
       program test_adjustl
@@ -48,6 +44,5 @@ ADJUSTL --- Left adjust a string
       end program test_adjustl
 
   See also:
-
     :ref:`ADJUSTR`, 
     :ref:`TRIM`

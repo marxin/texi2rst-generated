@@ -21,19 +21,15 @@ PERROR --- Print system error message
     default kind.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL PERROR(STRING)
 
   See also:
-
     :ref:`IERRNO`

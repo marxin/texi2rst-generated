@@ -26,22 +26,18 @@ FPUT --- Write a single character in stream mode to stdout
     error code otherwise.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL FPUT(C [, STATUS])
       STATUS = FPUT(C)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_fput
@@ -53,7 +49,6 @@ FPUT --- Write a single character in stream mode to stdout
       END PROGRAM
 
   See also:
-
     :ref:`FPUTC`, 
     :ref:`FGET`, 
     :ref:`FGETC`

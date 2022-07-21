@@ -25,21 +25,17 @@ IDATE --- Get current local time subroutine (day/month/year)
     Does not return anything.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL IDATE(VALUES)
 
   Example:
-
     .. code-block:: fortran
 
       program test_idate
@@ -51,5 +47,4 @@ IDATE --- Get current local time subroutine (day/month/year)
       end program test_idate
 
   See also:
-
     :ref:`DATE_AND_TIME`

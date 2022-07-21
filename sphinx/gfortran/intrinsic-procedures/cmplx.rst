@@ -36,21 +36,17 @@ CMPLX --- Complex conversion function
     :samp:`{X}` and :samp:`{Y}`. 
 
   Standard:
-
     Fortran 77 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = CMPLX(X [, Y [, KIND]])
 
   Example:
-
     .. code-block:: fortran
 
       program test_cmplx
@@ -62,5 +58,4 @@ CMPLX --- Complex conversion function
       end program test_cmplx
 
   See also:
-
     :ref:`COMPLEX`

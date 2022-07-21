@@ -39,13 +39,11 @@ ATANH --- Inverse hyperbolic tangent function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ATANH(X)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_atanh
@@ -54,7 +52,6 @@ ATANH --- Inverse hyperbolic tangent function
       END PROGRAM
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

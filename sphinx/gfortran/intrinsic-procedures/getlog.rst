@@ -24,21 +24,17 @@ GETLOG --- Get login name
     return a blank string.)
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL GETLOG(C)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM TEST_GETLOG
@@ -48,5 +44,4 @@ GETLOG --- Get login name
       END PROGRAM
 
   See also:
-
     :ref:`GETUID`

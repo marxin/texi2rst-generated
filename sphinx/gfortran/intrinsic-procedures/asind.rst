@@ -37,13 +37,11 @@ ASIND --- Arcsine function, degrees
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ASIND(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_asind
@@ -52,7 +50,6 @@ ASIND --- Arcsine function, degrees
       end program test_asind
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

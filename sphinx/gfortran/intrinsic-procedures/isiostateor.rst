@@ -26,21 +26,17 @@ IS_IOSTAT_EOR --- Test for end-of-record value
     ``IOSTAT=`` specifiers, and is ``.FALSE.`` otherwise.
 
   Standard:
-
     Fortran 2003 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = IS_IOSTAT_EOR(I)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM iostat

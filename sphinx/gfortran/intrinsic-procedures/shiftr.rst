@@ -29,20 +29,16 @@ SHIFTR --- Right shift
     :samp:`{I}`.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = SHIFTR(I, SHIFT)
 
   See also:
-
     :ref:`SHIFTA`, 
     :ref:`SHIFTL`

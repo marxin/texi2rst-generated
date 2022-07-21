@@ -37,13 +37,11 @@ BESSEL_J0 --- Bessel function of the first kind of order 0
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = BESSEL_J0(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_besj0
@@ -52,7 +50,6 @@ BESSEL_J0 --- Bessel function of the first kind of order 0
       end program test_besj0
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

@@ -27,21 +27,17 @@ NORM2 --- Euclidean vector norms
     The result is of the same type as :samp:`{ARRAY}`.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = NORM2(ARRAY[, DIM])
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_sum

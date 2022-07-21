@@ -36,13 +36,11 @@ SINH --- Hyperbolic sine function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = SINH(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_sinh
@@ -51,7 +49,6 @@ SINH --- Hyperbolic sine function
       end program test_sinh
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

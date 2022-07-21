@@ -20,21 +20,17 @@ TIME8 --- Time function (64-bit)
     The return value is a scalar of type ``INTEGER(8)``.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = TIME8()
 
   See also:
-
     :ref:`DATE_AND_TIME`, 
     :ref:`CTIME`, 
     :ref:`GMTIME`, 

@@ -24,20 +24,16 @@ INT8 --- Convert to 64-bit integer type
     The return value is a ``INTEGER(8)`` variable.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = INT8(A)
 
   See also:
-
     :ref:`INT`, 
     :ref:`INT2`

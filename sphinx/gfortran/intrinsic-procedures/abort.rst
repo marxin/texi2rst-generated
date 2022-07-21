@@ -20,21 +20,17 @@ ABORT --- Abort the program
     Does not return.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL ABORT
 
   Example:
-
     .. code-block:: fortran
 
       program test_abort
@@ -43,7 +39,6 @@ ABORT --- Abort the program
       end program test_abort
 
   See also:
-
     :ref:`EXIT`, 
     :ref:`KILL`, 
     :ref:`BACKTRACE`

@@ -30,15 +30,12 @@ MERGE --- Merge variables
     The result is of the same type and type parameters as :samp:`{TSOURCE}`.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = MERGE(TSOURCE, FSOURCE, MASK)

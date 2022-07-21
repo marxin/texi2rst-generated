@@ -19,21 +19,17 @@ COMMAND_ARGUMENT_COUNT --- Get number of command line arguments
     The return value is an ``INTEGER`` of default kind.
 
   Standard:
-
     Fortran 2003 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = COMMAND_ARGUMENT_COUNT()
 
   Example:
-
     .. code-block:: fortran
 
       program test_command_argument_count
@@ -43,6 +39,5 @@ COMMAND_ARGUMENT_COUNT --- Get number of command line arguments
       end program test_command_argument_count
 
   See also:
-
     :ref:`GET_COMMAND`, 
     :ref:`GET_COMMAND_ARGUMENT`

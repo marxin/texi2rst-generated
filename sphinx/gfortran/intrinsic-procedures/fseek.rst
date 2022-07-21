@@ -34,21 +34,17 @@ FSEEK --- Low level file positioning subroutine
     ``INTEGER(4)``.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL FSEEK(UNIT, OFFSET, WHENCE[, STATUS])
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_fseek
@@ -73,5 +69,4 @@ FSEEK --- Low level file positioning subroutine
       END PROGRAM
 
   See also:
-
     :ref:`FTELL`

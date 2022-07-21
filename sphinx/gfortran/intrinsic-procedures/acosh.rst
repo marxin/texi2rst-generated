@@ -39,13 +39,11 @@ ACOSH --- Inverse hyperbolic cosine function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ACOSH(X)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_acosh
@@ -54,7 +52,6 @@ ACOSH --- Inverse hyperbolic cosine function
       END PROGRAM
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

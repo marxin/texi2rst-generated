@@ -22,21 +22,17 @@ RANK --- Rank of a data object
     kind. For arrays, their rank is returned; for scalars zero is returned.
 
   Standard:
-
     Technical Specification (TS) 29113
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = RANK(A)
 
   Example:
-
     .. code-block:: fortran
 
       program test_rank

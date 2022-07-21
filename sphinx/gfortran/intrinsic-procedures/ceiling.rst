@@ -26,21 +26,17 @@ CEILING --- Integer ceiling function
     and a default-kind ``INTEGER`` otherwise.
 
   Standard:
-
     Fortran 95 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = CEILING(A [, KIND])
 
   Example:
-
     .. code-block:: fortran
 
       program test_ceiling
@@ -51,6 +47,5 @@ CEILING --- Integer ceiling function
       end program test_ceiling
 
   See also:
-
     :ref:`FLOOR`, 
     :ref:`NINT`

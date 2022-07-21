@@ -24,21 +24,17 @@ KIND --- Kind of an entity
     integer kind.
 
   Standard:
-
     Fortran 95 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       K = KIND(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_kind

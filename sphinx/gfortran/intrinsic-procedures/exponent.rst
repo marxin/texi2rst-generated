@@ -22,21 +22,17 @@ EXPONENT --- Exponent function
     The return value is of type default ``INTEGER``.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = EXPONENT(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_exponent

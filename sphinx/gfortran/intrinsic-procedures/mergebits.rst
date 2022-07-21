@@ -33,15 +33,12 @@ MERGE_BITS --- Merge of bits under mask
     The result is of the same type and kind as :samp:`{I}`.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = MERGE_BITS(I, J, MASK)

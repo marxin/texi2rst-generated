@@ -48,7 +48,6 @@ BESSEL_YN --- Bessel function of the second kind
     ``BESSEL_YN(N1, N2, X)``
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = BESSEL_YN(N, X)
@@ -60,7 +59,6 @@ BESSEL_YN --- Bessel function of the second kind
     the elemental function.
 
   Example:
-
     .. code-block:: fortran
 
       program test_besyn
@@ -69,7 +67,6 @@ BESSEL_YN --- Bessel function of the second kind
       end program test_besyn
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

@@ -24,21 +24,17 @@ PRESENT --- Determine whether an optional dummy argument is specified
     ``FALSE`` otherwise.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = PRESENT(A)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_present

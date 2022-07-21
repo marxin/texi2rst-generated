@@ -24,21 +24,17 @@ ADJUSTR --- Right adjust a string
     spaces are inserted at the start of :samp:`{STRING}`.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ADJUSTR(STRING)
 
   Example:
-
     .. code-block:: fortran
 
       program test_adjustr
@@ -48,6 +44,5 @@ ADJUSTR --- Right adjust a string
       end program test_adjustr
 
   See also:
-
     :ref:`ADJUSTL`, 
     :ref:`TRIM`

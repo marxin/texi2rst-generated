@@ -32,22 +32,18 @@ SUM --- Sum of array elements
     The result is of the same type as :samp:`{ARRAY}`.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = SUM(ARRAY[, MASK])
       RESULT = SUM(ARRAY, DIM[, MASK])
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_sum
@@ -57,5 +53,4 @@ SUM --- Sum of array elements
       END PROGRAM
 
   See also:
-
     :ref:`PRODUCT`

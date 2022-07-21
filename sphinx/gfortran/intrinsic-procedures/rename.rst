@@ -29,20 +29,16 @@ RENAME --- Rename a file
     (Optional) Shall be of default ``INTEGER`` type.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL RENAME(PATH1, PATH2 [, STATUS])
       STATUS = RENAME(PATH1, PATH2)
 
   See also:
-
     :ref:`LINK`

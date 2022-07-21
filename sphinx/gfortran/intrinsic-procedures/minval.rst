@@ -42,21 +42,17 @@ MINVAL --- Minimum value of an array
     cases, the result is of the same type and kind as :samp:`{ARRAY}`.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = MINVAL(ARRAY, DIM [, MASK])
       RESULT = MINVAL(ARRAY [, MASK])
 
   See also:
-
     :ref:`MIN`, 
     :ref:`MINLOC`

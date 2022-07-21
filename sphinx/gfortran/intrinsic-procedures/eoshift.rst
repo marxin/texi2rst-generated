@@ -40,21 +40,17 @@ EOSHIFT --- End-off shift elements of an array
     Returns an array of same type and rank as the :samp:`{ARRAY}` argument.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = EOSHIFT(ARRAY, SHIFT [, BOUNDARY, DIM])
 
   Example:
-
     .. code-block:: fortran
 
       program test_eoshift

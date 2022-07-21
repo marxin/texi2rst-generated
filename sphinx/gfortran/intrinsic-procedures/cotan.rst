@@ -34,13 +34,11 @@ COTAN --- Cotangent function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = COTAN(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_cotan
@@ -49,7 +47,6 @@ COTAN --- Cotangent function
       end program test_cotan
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

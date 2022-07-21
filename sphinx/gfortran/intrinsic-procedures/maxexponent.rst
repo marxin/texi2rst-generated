@@ -23,21 +23,17 @@ MAXEXPONENT --- Maximum exponent of a real kind
     kind.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = MAXEXPONENT(X)
 
   Example:
-
     .. code-block:: fortran
 
       program exponents

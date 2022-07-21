@@ -22,21 +22,17 @@ ISATTY --- Whether a unit is a terminal device.
     device, ``.FALSE.`` otherwise.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ISATTY(UNIT)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_isatty
@@ -47,5 +43,4 @@ ISATTY --- Whether a unit is a terminal device.
       END PROGRAM
 
   See also:
-
     :ref:`TTYNAM`

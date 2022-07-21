@@ -22,21 +22,17 @@ FNUM --- File number function
     The return value is of type ``INTEGER``
 
   Standard:
-
     GNU extension
 
   Class:
-
     Function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = FNUM(UNIT)
 
   Example:
-
     .. code-block:: fortran
 
       program test_fnum

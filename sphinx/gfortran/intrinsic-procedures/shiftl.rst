@@ -29,20 +29,16 @@ SHIFTL --- Left shift
     :samp:`{I}`.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = SHIFTL(I, SHIFT)
 
   See also:
-
     :ref:`SHIFTA`, 
     :ref:`SHIFTR`

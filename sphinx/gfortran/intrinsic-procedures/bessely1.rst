@@ -35,13 +35,11 @@ BESSEL_Y1 --- Bessel function of the second kind of order 1
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = BESSEL_Y1(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_besy1
@@ -50,7 +48,6 @@ BESSEL_Y1 --- Bessel function of the second kind of order 1
       end program test_besy1
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

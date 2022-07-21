@@ -39,13 +39,11 @@ AIMAG --- Imaginary part of complex number
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = AIMAG(Z)
 
   Example:
-
     .. code-block:: fortran
 
       program test_aimag
@@ -57,7 +55,6 @@ AIMAG --- Imaginary part of complex number
       end program test_aimag
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

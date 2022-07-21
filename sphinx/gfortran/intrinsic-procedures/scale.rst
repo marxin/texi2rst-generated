@@ -25,21 +25,17 @@ SCALE --- Scale a real value
     Its value is ``X * RADIX(X)**I``.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = SCALE(X, I)
 
   Example:
-
     .. code-block:: fortran
 
       program test_scale

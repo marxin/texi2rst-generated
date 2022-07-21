@@ -22,21 +22,17 @@ C_LOC --- Obtain the C address of an object
     of the argument.
 
   Standard:
-
     Fortran 2003 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = C_LOC(X)
 
   Example:
-
     .. code-block:: fortran
 
       subroutine association_test(a,b)
@@ -49,7 +45,6 @@ C_LOC --- Obtain the C address of an object
       end subroutine association_test
 
   See also:
-
     :ref:`C_ASSOCIATED`, 
     :ref:`C_FUNLOC`, 
     :ref:`C_F_POINTER`, 

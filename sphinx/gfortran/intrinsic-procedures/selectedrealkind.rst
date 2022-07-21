@@ -35,21 +35,17 @@ SELECTED_REAL_KIND --- Choose real kind
     is returned. If no real data type matches the criteria, the result is
 
   Standard:
-
     Fortran 90 and later, with ``RADIX`` Fortran 2008 or later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = SELECTED_REAL_KIND([P, R, RADIX])
 
   Example:
-
     .. code-block:: fortran
 
       program real_kinds
@@ -66,7 +62,6 @@ SELECTED_REAL_KIND --- Choose real kind
       end program real_kinds
 
   See also:
-
     :ref:`PRECISION`, 
     :ref:`RANGE`, 
     :ref:`RADIX`

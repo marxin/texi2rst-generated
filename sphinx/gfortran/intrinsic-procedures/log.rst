@@ -48,13 +48,11 @@ LOG --- Natural logarithm function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = LOG(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_log
@@ -65,7 +63,6 @@ LOG --- Natural logarithm function
       end program test_log
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

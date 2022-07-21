@@ -32,25 +32,20 @@ KILL --- Send a signal to a process
     Returns 0 on success; otherwise a system-specific error code is returned.
 
   Standard:
-
     GNU extension
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine, function
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL KILL(PID, SIG [, STATUS])
       STATUS = KILL(PID, SIG)
 
   See also:
-
     :ref:`ABORT`, 
     :ref:`EXIT`

@@ -26,21 +26,17 @@ IS_IOSTAT_END --- Test for end-of-file value
     ``IOSTAT=`` specifiers, and is ``.FALSE.`` otherwise.
 
   Standard:
-
     Fortran 2003 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = IS_IOSTAT_END(I)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM iostat

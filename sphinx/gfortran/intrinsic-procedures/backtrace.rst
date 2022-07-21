@@ -17,23 +17,18 @@ BACKTRACE --- Show a backtrace
   to the unit corresponding to ``ERROR_UNIT`` in ``ISO_FORTRAN_ENV``.
 
   Standard:
-
     GNU extension
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL BACKTRACE
 
   Arguments:
-
     None
 
   See also:
-
     :ref:`ABORT`

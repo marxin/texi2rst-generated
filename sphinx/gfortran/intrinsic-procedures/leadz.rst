@@ -22,21 +22,17 @@ LEADZ --- Number of leading zero bits of an integer
     If all the bits of ``I`` are zero, the result value is ``BIT_SIZE(I)``.
 
   Standard:
-
     Fortran 2008 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = LEADZ(I)
 
   Example:
-
     .. code-block:: fortran
 
       PROGRAM test_leadz
@@ -45,7 +41,6 @@ LEADZ --- Number of leading zero bits of an integer
       END PROGRAM
 
   See also:
-
     :ref:`BIT_SIZE`, 
     :ref:`TRAILZ`, 
     :ref:`POPCNT`, 

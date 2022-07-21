@@ -24,21 +24,17 @@ FRACTION --- Fractional part of the model representation
     it is ``X * RADIX(X)**(-EXPONENT(X))``.
 
   Standard:
-
     Fortran 90 and later
 
   Class:
-
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       Y = FRACTION(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_fraction

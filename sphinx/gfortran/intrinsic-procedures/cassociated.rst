@@ -27,21 +27,17 @@ C_ASSOCIATED --- Status of a C pointer
     point to different addresses.
 
   Standard:
-
     Fortran 2003 and later
 
   Class:
-
     Inquiry function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = C_ASSOCIATED(c_ptr_1[, c_ptr_2])
 
   Example:
-
     .. code-block:: fortran
 
       subroutine association_test(a,b)
@@ -54,6 +50,5 @@ C_ASSOCIATED --- Status of a C pointer
       end subroutine association_test
 
   See also:
-
     :ref:`C_LOC`, 
     :ref:`C_FUNLOC`

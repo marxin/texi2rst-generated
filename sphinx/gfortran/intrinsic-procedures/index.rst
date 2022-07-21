@@ -49,13 +49,11 @@ INDEX --- Position of a substring within a string
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = INDEX(STRING, SUBSTRING [, BACK [, KIND]])
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

@@ -36,21 +36,17 @@ COUNT --- Count function
     of :samp:`{ARRAY}` with the :samp:`{DIM}` dimension removed.
 
   Standard:
-
     Fortran 90 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = COUNT(MASK [, DIM, KIND])
 
   Example:
-
     .. code-block:: fortran
 
       program test_count

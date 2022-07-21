@@ -30,13 +30,11 @@ ERF --- Error function
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = ERF(X)
 
   Example:
-
     .. code-block:: fortran
 
       program test_erf
@@ -45,7 +43,6 @@ ERF --- Error function
       end program test_erf
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

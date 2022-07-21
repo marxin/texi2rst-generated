@@ -37,21 +37,17 @@ CO_SUM --- Sum of values on the current set of images
     (optional) a scalar character variable
 
   Standard:
-
     Technical Specification (TS) 18508 or later
 
   Class:
-
     Collective subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL CO_SUM(A [, RESULT_IMAGE, STAT, ERRMSG])
 
   Example:
-
     .. code-block:: fortran
 
       program test
@@ -65,7 +61,6 @@ CO_SUM --- Sum of values on the current set of images
       end program test
 
   See also:
-
     :ref:`CO_MAX`, 
     :ref:`CO_MIN`, 
     :ref:`CO_REDUCE`, 

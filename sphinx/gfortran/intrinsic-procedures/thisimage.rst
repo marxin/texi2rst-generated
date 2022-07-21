@@ -40,16 +40,13 @@ THIS_IMAGE --- Function that returns the cosubscript index of this image
     the :samp:`{DIM}` element of ``THIS_IMAGE(COARRAY)``.
 
   Standard:
-
     Fortran 2008 and later. With :samp:`{DISTANCE}` argument, 
     Technical Specification (TS) 18508 or later
 
   Class:
-
     Transformational function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = THIS_IMAGE()
@@ -57,7 +54,6 @@ THIS_IMAGE --- Function that returns the cosubscript index of this image
       RESULT = THIS_IMAGE(COARRAY [, DIM])
 
   Example:
-
     .. code-block:: fortran
 
       INTEGER :: value[*]
@@ -75,6 +71,5 @@ THIS_IMAGE --- Function that returns the cosubscript index of this image
         error stop "something is rotten here"
 
   See also:
-
     :ref:`NUM_IMAGES`, 
     :ref:`IMAGE_INDEX`

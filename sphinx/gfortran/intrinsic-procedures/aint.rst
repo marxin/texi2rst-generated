@@ -43,13 +43,11 @@ AINT --- Truncate to a whole number
     Elemental function
 
   Syntax:
-
     .. code-block:: fortran
 
       RESULT = AINT(A [, KIND]) 
 
   Example:
-
     .. code-block:: fortran
 
       program test_aint
@@ -62,7 +60,6 @@ AINT --- Truncate to a whole number
       end program test_aint
 
   Specific names:
-
     .. list-table::
        :header-rows: 1
 

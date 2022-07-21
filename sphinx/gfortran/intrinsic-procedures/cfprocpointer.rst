@@ -24,21 +24,17 @@ C_F_PROCPOINTER --- Convert C into Fortran procedure pointer
     ``INTENT(OUT)``.
 
   Standard:
-
     Fortran 2003 and later
 
   Class:
-
     Subroutine
 
   Syntax:
-
     .. code-block:: fortran
 
       CALL C_F_PROCPOINTER(cptr, fptr)
 
   Example:
-
     .. code-block:: fortran
 
       program main
@@ -64,6 +60,5 @@ C_F_PROCPOINTER --- Convert C into Fortran procedure pointer
       end program main
 
   See also:
-
     :ref:`C_LOC`, 
     :ref:`C_F_POINTER`
