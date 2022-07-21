@@ -56,24 +56,24 @@ MINLOC --- Location of the minimum value within an array
     is present, the result is an integer of kind :samp:`{KIND}`, otherwise it
     is of default kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later; :samp:`{ARRAY}` of ``CHARACTER`` and the
     :samp:`{KIND}` argument are available in Fortran 2003 and later.
     The :samp:`{BACK}` argument is available in Fortran 2008 and later.
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = MINLOC(ARRAY, DIM [, MASK] [,KIND] [,BACK])
       RESULT = MINLOC(ARRAY [, MASK], [,KIND] [,BACK])
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`FINDLOC`, 
     :ref:`MIN`, 

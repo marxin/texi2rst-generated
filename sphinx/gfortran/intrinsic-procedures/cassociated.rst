@@ -26,21 +26,21 @@ C_ASSOCIATED --- Status of a C pointer
     :samp:`{c_ptr_1}` is a C NULL pointer or if :samp:`{c_ptr1}` and :samp:`{c_ptr_2}`
     point to different addresses.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = C_ASSOCIATED(c_ptr_1[, c_ptr_2])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -53,7 +53,7 @@ C_ASSOCIATED --- Status of a C pointer
            stop 'b and a do not point to same target'
       end subroutine association_test
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`C_LOC`, 
     :ref:`C_FUNLOC`

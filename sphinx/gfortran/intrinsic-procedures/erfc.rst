@@ -23,19 +23,19 @@ ERFC --- Error function
     The return value is of type ``REAL`` and of the same kind as :samp:`{X}`.
     It lies in the range 0 \leq erfc (x) \leq 2 .
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 2008 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ERFC(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -44,7 +44,7 @@ ERFC --- Error function
         x = erfc(x)
       end program test_erfc
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1

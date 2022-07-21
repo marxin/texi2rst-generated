@@ -25,19 +25,19 @@ CONJG --- Complex conjugate function
   :return:
     The return value is of type ``COMPLEX``.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later, has an overload that is a GNU extension
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       Z = CONJG(Z)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -50,7 +50,7 @@ CONJG --- Complex conjugate function
           print *, dz
       end program test_conjg
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1

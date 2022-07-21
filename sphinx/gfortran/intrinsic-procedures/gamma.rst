@@ -29,19 +29,19 @@ GAMMA --- Gamma function
   :return:
     The return value is of type ``REAL`` of the same kind as :samp:`{X}`.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 2008 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       X = GAMMA(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -50,7 +50,7 @@ GAMMA --- Gamma function
         x = gamma(x) ! returns 1.0
       end program test_gamma
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -65,7 +65,7 @@ GAMMA --- Gamma function
          - ``REAL(8)``
          - GNU extension
 
-  :samp:`{See also}:`
+  See also:
     Logarithm of the Gamma function: 
     :ref:`LOG_GAMMA`
 

@@ -19,21 +19,21 @@ TIME --- Time function
   :return:
     The return value is a scalar of type ``INTEGER(4)``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = TIME()
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`DATE_AND_TIME`, 
     :ref:`CTIME`, 

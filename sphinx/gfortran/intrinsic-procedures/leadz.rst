@@ -21,21 +21,21 @@ LEADZ --- Number of leading zero bits of an integer
     The type of the return value is the default ``INTEGER``.
     If all the bits of ``I`` are zero, the result value is ``BIT_SIZE(I)``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2008 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = LEADZ(I)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -44,7 +44,7 @@ LEADZ --- Number of leading zero bits of an integer
         WRITE (*,*) LEADZ(1)     ! prints 31
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`BIT_SIZE`, 
     :ref:`TRAILZ`, 

@@ -45,19 +45,19 @@ MVBITS --- Move bits from one integer to another
   :param TOPOS:
     The type shall be ``INTEGER``.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 90 and later, has overloads that are GNU extensions
 
-  :samp:`{Class}:`
+  Class:
     Elemental subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL MVBITS(FROM, FROMPOS, LEN, TO, TOPOS)
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -88,7 +88,7 @@ MVBITS --- Move bits from one integer to another
          - ``INTEGER(8)``
          - GNU extension
 
-  :samp:`{See also}:`
+  See also:
     :ref:`IBCLR`, 
     :ref:`IBSET`, 
     :ref:`IBITS`, 

@@ -23,21 +23,21 @@ GETLOG --- Get login name
     the ``getlogin`` function is not implemented either, this will
     return a blank string.)
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL GETLOG(C)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -47,6 +47,6 @@ GETLOG --- Get login name
         WRITE(*,*) login
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`GETUID`

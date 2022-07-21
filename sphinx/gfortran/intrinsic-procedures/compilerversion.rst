@@ -19,25 +19,25 @@ COMPILER_VERSION --- Compiler version string
     The return value is a default-kind string with system-dependent length.
     It contains the name of the compiler and its version number.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2008
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function of the module ``ISO_FORTRAN_ENV``
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       STR = COMPILER_VERSION()
 
-  :samp:`{Arguments}:`
+  Arguments:
 
     None
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -47,7 +47,7 @@ COMPILER_VERSION --- Compiler version string
                        compiler_options()
          end
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`COMPILER_OPTIONS`, 
     :ref:`ISO_FORTRAN_ENV`

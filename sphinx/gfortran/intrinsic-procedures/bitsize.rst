@@ -22,21 +22,21 @@ BIT_SIZE --- Bit size inquiry function
   :return:
     The return value is of type ``INTEGER``
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = BIT_SIZE(I)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

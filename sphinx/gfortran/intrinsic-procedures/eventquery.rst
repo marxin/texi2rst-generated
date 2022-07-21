@@ -29,21 +29,21 @@ EVENT_QUERY --- Query whether a coarray event has occurred
   :param STAT:
     (optional) Scalar default-kind integer variable.
 
-  :samp:`{Standard}:`
+  Standard:
 
     TS 18508 or later
 
-  :samp:`{Class}:`
+  Class:
 
     subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL EVENT_QUERY (EVENT, COUNT [, STAT])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

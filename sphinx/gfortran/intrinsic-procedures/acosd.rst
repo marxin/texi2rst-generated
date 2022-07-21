@@ -30,19 +30,19 @@ ACOSD --- Arccosine function, degrees
     The real part of the result is in degrees and lies in the range
     0 \leq \Re \acos(x) \leq 180.
 
-  :samp:`{Standard}:`
+  Standard:
     GNU extension, enabled with :option:`-fdec-math`
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ACOSD(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -51,7 +51,7 @@ ACOSD --- Arccosine function, degrees
         x = acosd(x)
       end program test_acosd
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -70,7 +70,7 @@ ACOSD --- Arccosine function, degrees
          - ``REAL(8)``
          - GNU extension
 
-  :samp:`{See also}:`
+  See also:
     Inverse function: 
     :ref:`COSD` 
     Radians function: 

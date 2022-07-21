@@ -18,21 +18,21 @@ FLUSH --- Flush I/O unit(s)
   :param UNIT:
     (Optional) The type shall be ``INTEGER``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL FLUSH(UNIT)
 
-  :samp:`{Note}:`
+  Note:
 
     Beginning with the Fortran 2003 standard, there is a ``FLUSH``
     statement that should be preferred over the ``FLUSH`` intrinsic.

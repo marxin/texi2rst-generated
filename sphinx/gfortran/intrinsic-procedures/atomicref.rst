@@ -32,21 +32,21 @@ ATOMIC_REF --- Obtaining the value of a variable atomically
   :param STAT:
     (optional) Scalar default-kind integer variable.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2008 and later; with :samp:`{STAT}`, TS 18508 or later
 
-  :samp:`{Class}:`
+  Class:
 
     Atomic subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL ATOMIC_REF(VALUE, ATOM [, STAT])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -62,7 +62,7 @@ ATOMIC_REF --- Obtaining the value of a variable atomically
         end if
       end program atomic
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`ATOMIC_DEFINE`, 
     :ref:`ATOMIC_CAS`, 

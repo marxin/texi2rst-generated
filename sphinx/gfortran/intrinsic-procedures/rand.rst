@@ -24,21 +24,21 @@ RAND --- Real pseudo-random number
   :return:
     The return value is of ``REAL`` type and the default kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = RAND(I)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -50,7 +50,7 @@ RAND --- Real pseudo-random number
         print *, rand(seed), rand(), rand(), rand()
       end program test_rand
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`SRAND`, 
     :ref:`RANDOM_NUMBER`

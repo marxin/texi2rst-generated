@@ -40,19 +40,19 @@ IAND --- Bitwise logical and
     A boz-literal-constant is converted to an ``INTEGER`` with the kind
     type parameter of the other argument as-if a call to :ref:`INT` occurred.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 90 and later, with boz-literal-constant Fortran 2008 and later, has overloads that are GNU extensions
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = IAND(I, J)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -62,7 +62,7 @@ IAND --- Bitwise logical and
         WRITE (*,*) IAND(a, b)
       END PROGRAM
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -93,7 +93,7 @@ IAND --- Bitwise logical and
          - ``INTEGER(8)``
          - GNU extension
 
-  :samp:`{See also}:`
+  See also:
     :ref:`IOR`, 
     :ref:`IEOR`, 
     :ref:`IBITS`, 

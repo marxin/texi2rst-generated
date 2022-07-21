@@ -26,21 +26,21 @@ SECNDS --- Time function
   :return:
     None
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = SECNDS (X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

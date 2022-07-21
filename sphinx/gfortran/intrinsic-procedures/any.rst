@@ -30,21 +30,21 @@ ANY --- Any value in MASK along DIM is true
     an array with the rank of :samp:`{MASK}` minus 1.  The shape is determined from
     the shape of :samp:`{MASK}` where the :samp:`{DIM}` dimension is elided. 
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ANY(MASK [, DIM])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

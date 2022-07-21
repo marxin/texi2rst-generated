@@ -26,21 +26,21 @@ MOVE_ALLOC --- Move allocation from one object to another
   :return:
     None
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Pure subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL MOVE_ALLOC(FROM, TO)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

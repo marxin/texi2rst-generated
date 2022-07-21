@@ -33,21 +33,21 @@ GET_COMMAND --- Get the entire command line
     is assigned 0 upon success of the command, -1 if :samp:`{COMMAND}` is too
     short to store the command line, or a positive value in case of an error.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL GET_COMMAND([COMMAND, LENGTH, STATUS])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -57,7 +57,7 @@ GET_COMMAND --- Get the entire command line
         WRITE (*,*) TRIM(cmd)
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`GET_COMMAND_ARGUMENT`, 
     :ref:`COMMAND_ARGUMENT_COUNT`

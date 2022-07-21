@@ -32,21 +32,21 @@ XOR --- Bitwise logical exclusive OR
     converted to an ``INTEGER`` with the kind type parameter of
     the other argument as-if a call to :ref:`INT` occurred.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = XOR(I, J)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -59,7 +59,7 @@ XOR --- Bitwise logical exclusive OR
         WRITE (*,*) XOR(a, b)
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     Fortran 95 elemental function: 
     :ref:`IEOR`

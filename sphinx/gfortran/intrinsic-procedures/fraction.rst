@@ -23,21 +23,21 @@ FRACTION --- Fractional part of the model representation
     The fractional part of the model representation of ``X`` is returned;
     it is ``X * RADIX(X)**(-EXPONENT(X))``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       Y = FRACTION(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

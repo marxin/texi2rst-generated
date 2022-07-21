@@ -23,21 +23,21 @@ C_F_PROCPOINTER --- Convert C into Fortran procedure pointer
     procedure pointer interoperable with :samp:`{cptr}`. It is
     ``INTENT(OUT)``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL C_F_PROCPOINTER(cptr, fptr)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -63,7 +63,7 @@ C_F_PROCPOINTER --- Convert C into Fortran procedure pointer
         call c_f_procpointer(cfunptr, myFunc)
       end program main
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`C_LOC`, 
     :ref:`C_F_POINTER`

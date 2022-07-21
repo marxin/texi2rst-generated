@@ -29,15 +29,15 @@ MERGE --- Merge variables
   :return:
     The result is of the same type and type parameters as :samp:`{TSOURCE}`.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 

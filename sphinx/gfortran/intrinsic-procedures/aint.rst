@@ -36,19 +36,19 @@ AINT --- Truncate to a whole number
     whole number that does not exceed its magnitude.  The sign is the same
     as the sign of :samp:`{X}`. 
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = AINT(A [, KIND]) 
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -61,7 +61,7 @@ AINT --- Truncate to a whole number
         x8 = aint(x4,8)
       end program test_aint
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1

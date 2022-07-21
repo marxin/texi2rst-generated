@@ -26,19 +26,19 @@ CHAR --- Character conversion function
   :return:
     The return value is of type ``CHARACTER(1)``
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = CHAR(I [, KIND])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -49,7 +49,7 @@ CHAR --- Character conversion function
           print *, i, c ! returns 'J'
       end program test_char
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -64,11 +64,11 @@ CHAR --- Character conversion function
          - ``CHARACTER(LEN=1)``
          - Fortran 77 and later
 
-  :samp:`{Note}:`
+  Note:
     See :ref:`ICHAR` for a discussion of converting between numerical values
     and formatted string representations.
 
-  :samp:`{See also}:`
+  See also:
     :ref:`ACHAR`, 
     :ref:`IACHAR`, 
     :ref:`ICHAR`

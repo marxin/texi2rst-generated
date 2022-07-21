@@ -33,21 +33,21 @@ EXECUTE_COMMAND_LINE --- Execute a shell command
     (Optional) Shall be an ``CHARACTER`` scalar of the
     default kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2008 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL EXECUTE_COMMAND_LINE(COMMAND [, WAIT, EXITSTAT, CMDSTAT, CMDMSG ])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -62,7 +62,7 @@ EXECUTE_COMMAND_LINE --- Execute a shell command
 
       end program test_exec
 
-  :samp:`{Note}:`
+  Note:
 
     Because this intrinsic is implemented in terms of the ``system``
     function call, its behavior with respect to signaling is processor
@@ -71,6 +71,6 @@ EXECUTE_COMMAND_LINE --- Execute a shell command
     such, if the parent process is terminated, the child process might not be
     terminated alongside.
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`SYSTEM`

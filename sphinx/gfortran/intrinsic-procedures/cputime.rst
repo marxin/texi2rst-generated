@@ -22,21 +22,21 @@ CPU_TIME --- CPU elapsed time in seconds
   :return:
     None
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 95 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL CPU_TIME(TIME)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -48,7 +48,7 @@ CPU_TIME --- CPU elapsed time in seconds
           print '("Time = ",f6.3," seconds.")',finish-start
       end program test_cpu_time
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`SYSTEM_CLOCK`, 
     :ref:`DATE_AND_TIME`

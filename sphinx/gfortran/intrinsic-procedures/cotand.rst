@@ -27,22 +27,22 @@ COTAND --- Cotangent function, degrees
   :return:
     The return value has same type and kind as :samp:`{X}`, and its value is in degrees.
 
-  :samp:`{Standard}:`
+  Standard:
     GNU extension, enabled with :option:`-fdec-math`.
 
     This function is for compatibility only and should be avoided in favor of
     standard constructs wherever possible.
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = COTAND(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -51,7 +51,7 @@ COTAND --- Cotangent function, degrees
         x = cotand(x)
       end program test_cotand
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -70,7 +70,7 @@ COTAND --- Cotangent function, degrees
          - ``REAL(8)``
          - GNU extension
 
-  :samp:`{See also}:`
+  See also:
     Converse function: 
     :ref:`TAND` 
     Radians function: 

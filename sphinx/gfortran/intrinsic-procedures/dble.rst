@@ -21,21 +21,21 @@ DBLE --- Double conversion function
   :return:
     The return value is of type double precision real.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 77 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = DBLE(A)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -46,6 +46,6 @@ DBLE --- Double conversion function
           print *, dble(x), dble(i), dble(z)
       end program test_dble
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`REAL`

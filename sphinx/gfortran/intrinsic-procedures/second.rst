@@ -24,21 +24,21 @@ SECOND --- CPU time function
     In either syntax, :samp:`{TIME}` is set to the process's current runtime in
     seconds.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine, function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL SECOND(TIME)
       TIME = SECOND()
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`CPU_TIME`

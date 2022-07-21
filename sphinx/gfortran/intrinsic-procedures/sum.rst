@@ -31,22 +31,22 @@ SUM --- Sum of array elements
   :return:
     The result is of the same type as :samp:`{ARRAY}`.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = SUM(ARRAY[, MASK])
       RESULT = SUM(ARRAY, DIM[, MASK])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -56,6 +56,6 @@ SUM --- Sum of array elements
         print *, SUM(x, MASK=MOD(x, 2)==1)     ! odd elements, sum = 9
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`PRODUCT`

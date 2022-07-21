@@ -30,21 +30,21 @@ SHIFTA --- Right shift with fill
     The return value is of type ``INTEGER`` and of the same kind as
     :samp:`{I}`.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2008 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = SHIFTA(I, SHIFT)
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`SHIFTL`, 
     :ref:`SHIFTR`

@@ -22,21 +22,21 @@ EXIT --- Exit the program with status.
   :return:
     ``STATUS`` is passed to the parent process on exit.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL EXIT([STATUS])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -46,7 +46,7 @@ EXIT --- Exit the program with status.
         call EXIT(STATUS)
       end program test_exit
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`ABORT`, 
     :ref:`KILL`

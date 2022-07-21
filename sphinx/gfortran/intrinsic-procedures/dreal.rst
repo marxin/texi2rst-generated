@@ -20,21 +20,21 @@ DREAL --- Double real part function
   :return:
     The return value is of type ``REAL(8)``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = DREAL(A)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -43,6 +43,6 @@ DREAL --- Double real part function
           print *, dreal(z)
       end program test_dreal
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`AIMAG`

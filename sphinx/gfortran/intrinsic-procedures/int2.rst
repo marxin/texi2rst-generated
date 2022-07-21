@@ -23,21 +23,21 @@ INT2 --- Convert to 16-bit integer type
   :return:
     The return value is a ``INTEGER(2)`` variable.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = INT2(A)
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`INT`, 
     :ref:`INT8`

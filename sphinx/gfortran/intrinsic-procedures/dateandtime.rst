@@ -37,21 +37,21 @@ DATE_AND_TIME --- Date and time subroutine
   :return:
     None
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL DATE_AND_TIME([DATE, TIME, ZONE, VALUES])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -69,7 +69,7 @@ DATE_AND_TIME --- Date and time subroutine
           print '(8i5)', values
       end program test_time_and_date
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`CPU_TIME`, 
     :ref:`SYSTEM_CLOCK`

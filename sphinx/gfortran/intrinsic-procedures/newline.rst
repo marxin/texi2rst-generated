@@ -22,21 +22,21 @@ NEW_LINE --- New line character
     Returns a :samp:`{CHARACTER}` scalar of length one with the new-line character of
     the same kind as parameter :samp:`{C}`.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = NEW_LINE(C)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

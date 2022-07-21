@@ -23,22 +23,22 @@ CHDIR --- Change working directory
     kind.  Returns 0 on success, and a system specific and nonzero error code
     otherwise.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine, function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL CHDIR(NAME [, STATUS])
       STATUS = CHDIR(NAME)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -51,6 +51,6 @@ CHDIR --- Change working directory
         WRITE(*,*) TRIM(path)
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`GETCWD`

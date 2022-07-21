@@ -32,15 +32,15 @@ MATMUL --- matrix multiplication
     kind of the result follow the usual type and kind promotion rules, as
     for the ``*`` or ``.AND.`` operators.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 

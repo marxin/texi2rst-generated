@@ -18,25 +18,25 @@ GETUID --- User ID function
     The return value of ``GETUID`` is an ``INTEGER`` of the default
     kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = GETUID()
 
-  :samp:`{Example}:`
+  Example:
 
     See ``GETPID`` for an example.
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`GETPID`, 
     :ref:`GETLOG`

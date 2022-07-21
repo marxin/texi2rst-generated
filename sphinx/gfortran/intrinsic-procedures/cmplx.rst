@@ -35,21 +35,21 @@ CMPLX --- Complex conversion function
     result is of the default ``COMPLEX`` kind, regardless of the kinds of
     :samp:`{X}` and :samp:`{Y}`. 
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 77 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = CMPLX(X [, Y [, KIND]])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -61,6 +61,6 @@ CMPLX --- Complex conversion function
           print *, z, cmplx(x)
       end program test_cmplx
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`COMPLEX`

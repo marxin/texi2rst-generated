@@ -25,21 +25,21 @@ FLOOR --- Integer floor function
     The return value is of type ``INTEGER(KIND)`` if :samp:`{KIND}` is present
     and of default-kind ``INTEGER`` otherwise.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 95 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = FLOOR(A [, KIND])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -50,7 +50,7 @@ FLOOR --- Integer floor function
           print *, floor(y) ! returns -64
       end program test_floor
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`CEILING`, 
     :ref:`NINT`

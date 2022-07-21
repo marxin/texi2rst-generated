@@ -19,21 +19,21 @@ ABORT --- Abort the program
   :return:
     Does not return.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL ABORT
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -42,7 +42,7 @@ ABORT --- Abort the program
         if (i /= j) call abort
       end program test_abort
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`EXIT`, 
     :ref:`KILL`, 

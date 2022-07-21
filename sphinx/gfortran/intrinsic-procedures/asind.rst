@@ -30,19 +30,19 @@ ASIND --- Arcsine function, degrees
     The real part of the result is in degrees and lies in the range
     -90 \leq \Re \asin(x) \leq 90.
 
-  :samp:`{Standard}:`
+  Standard:
     GNU extension, enabled with :option:`-fdec-math`.
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ASIND(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -51,7 +51,7 @@ ASIND --- Arcsine function, degrees
         x = asind(x)
       end program test_asind
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -70,7 +70,7 @@ ASIND --- Arcsine function, degrees
          - ``REAL(8)``
          - GNU extension
 
-  :samp:`{See also}:`
+  See also:
     Inverse function: 
     :ref:`SIND` 
     Radians function: 

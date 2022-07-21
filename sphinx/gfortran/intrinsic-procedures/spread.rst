@@ -30,21 +30,21 @@ SPREAD --- Add a dimension to an array
     The result is an array of the same type as :samp:`{SOURCE}` and has rank n+1
     where n equals the rank of :samp:`{SOURCE}`.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = SPREAD(SOURCE, DIM, NCOPIES)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -54,6 +54,6 @@ SPREAD --- Add a dimension to an array
         WRITE(*,*) SPREAD(B, 1, 2)            ! "1 1 2 2"
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`UNPACK`

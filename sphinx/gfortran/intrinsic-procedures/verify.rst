@@ -32,21 +32,21 @@ VERIFY --- Scan a string for characters not a given set
     The return value is of type ``INTEGER`` and of kind :samp:`{KIND}`. If
     :samp:`{KIND}` is absent, the return value is of default integer kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = VERIFY(STRING, SET[, BACK [, KIND]])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -58,7 +58,7 @@ VERIFY --- Scan a string for characters not a given set
         WRITE(*,*) VERIFY("FORTRAN", "FORTRAN")      ! 0' found none
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`SCAN`, 
     :ref:`index-intrinsic`

@@ -33,22 +33,22 @@ SIGNAL --- Signal handling subroutine (or function)
   :return:
     The ``SIGNAL`` function returns the value returned by ``signal(2)``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine, function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL SIGNAL(NUMBER, HANDLER [, STATUS])
       STATUS = SIGNAL(NUMBER, HANDLER)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

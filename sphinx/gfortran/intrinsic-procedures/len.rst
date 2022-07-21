@@ -31,19 +31,19 @@ LEN --- Length of a character entity
     The return value is of type ``INTEGER`` and of kind :samp:`{KIND}`. If
     :samp:`{KIND}` is absent, the return value is of default integer kind.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       L = LEN(STRING [, KIND])
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -58,7 +58,7 @@ LEN --- Length of a character entity
          - ``INTEGER``
          - Fortran 77 and later
 
-  :samp:`{See also}:`
+  See also:
     :ref:`LEN_TRIM`, 
     :ref:`ADJUSTL`, 
     :ref:`ADJUSTR`

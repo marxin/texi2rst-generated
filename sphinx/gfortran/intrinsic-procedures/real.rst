@@ -46,20 +46,20 @@ REAL --- Convert to real type
     These functions return a ``REAL`` variable or array under
     the following rules: 
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later, with :samp:`{KIND}` argument Fortran 90 and later, has GNU extensions
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = REAL(A [, KIND])
       RESULT = REALPART(Z)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -68,7 +68,7 @@ REAL --- Convert to real type
         print *, real(x), real(x,8), realpart(x)
       end program test_real
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -103,6 +103,6 @@ REAL --- Convert to real type
          - ``REAL(4)``
          - Fortran 77 and later
 
-  :samp:`{See also}:`
+  See also:
     :ref:`DBLE`
 

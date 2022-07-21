@@ -35,21 +35,21 @@ ATOMIC_FETCH_XOR --- Atomic bitwise XOR operation with prior fetch
   :param STAT:
     (optional) Scalar default-kind integer variable.
 
-  :samp:`{Standard}:`
+  Standard:
 
     TS 18508 or later
 
-  :samp:`{Class}:`
+  Class:
 
     Atomic subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL ATOMIC_FETCH_XOR (ATOM, VALUE, OLD [, STAT])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -59,7 +59,7 @@ ATOMIC_FETCH_XOR --- Atomic bitwise XOR operation with prior fetch
         call atomic_fetch_xor (atom[1], int(b'10100011101'), old)
       end program atomic
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`ATOMIC_DEFINE`, 
     :ref:`ATOMIC_XOR`, 

@@ -35,21 +35,21 @@ COUNT --- Count function
     than the rank of :samp:`{ARRAY}`, and a size corresponding to the shape
     of :samp:`{ARRAY}` with the :samp:`{DIM}` dimension removed.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = COUNT(MASK [, DIM, KIND])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

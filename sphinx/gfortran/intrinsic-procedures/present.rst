@@ -23,21 +23,21 @@ PRESENT --- Determine whether an optional dummy argument is specified
     Returns either ``TRUE`` if the optional argument :samp:`{A}` is present, or
     ``FALSE`` otherwise.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = PRESENT(A)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

@@ -37,20 +37,20 @@ DSHIFTL --- Combined left shift
     as if by the intrinsic function ``INT`` to an integer type with the
     kind type parameter of the other.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2008 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = DSHIFTL(I, J, SHIFT)
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`DSHIFTR`

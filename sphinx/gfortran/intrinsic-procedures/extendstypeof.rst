@@ -26,20 +26,20 @@ EXTENDS_TYPE_OF ---  Query dynamic type for extension
     The return value is a scalar of type default logical. It is true if and only if
     the dynamic type of A is an extension type of the dynamic type of MOLD.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = EXTENDS_TYPE_OF(A, MOLD)
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`SAME_TYPE_AS`

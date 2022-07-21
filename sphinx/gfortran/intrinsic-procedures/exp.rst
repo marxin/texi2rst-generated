@@ -33,19 +33,19 @@ EXP --- Exponential function
   :return:
     The return value has same type and kind as :samp:`{X}`.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later, has overloads that are GNU extensions
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = EXP(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -54,7 +54,7 @@ EXP --- Exponential function
         x = exp(x)
       end program test_exp
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1

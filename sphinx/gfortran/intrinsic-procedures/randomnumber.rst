@@ -18,21 +18,21 @@ RANDOM_NUMBER --- Pseudo-random number
   :param HARVEST:
     Shall be a scalar or an array of type ``REAL``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL RANDOM_NUMBER(HARVEST)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -41,7 +41,7 @@ RANDOM_NUMBER --- Pseudo-random number
         CALL RANDOM_NUMBER(r)
       end program
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`RANDOM_SEED`, 
     :ref:`RANDOM_INIT`

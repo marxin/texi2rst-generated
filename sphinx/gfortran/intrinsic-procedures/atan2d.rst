@@ -41,19 +41,19 @@ ATAN2D --- Arctangent function, degrees
     :samp:`{Y}` is negative zero.  Finally, if :samp:`{X}` is zero, then the
     magnitude of the result is 90.
 
-  :samp:`{Standard}:`
+  Standard:
     GNU extension, enabled with :option:`-fdec-math`.
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ATAN2D(Y, X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -62,7 +62,7 @@ ATAN2D --- Arctangent function, degrees
         x = atan2d(y,x)
       end program test_atan2d
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -81,7 +81,7 @@ ATAN2D --- Arctangent function, degrees
          - ``REAL(8)``
          - GNU extension
 
-  :samp:`{See also}:`
+  See also:
     Alias: 
     :ref:`ATAND` 
     Radians function: 

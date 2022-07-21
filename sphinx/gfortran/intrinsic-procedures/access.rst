@@ -34,21 +34,21 @@ ACCESS --- Checks file access modes
     accessible in the given mode; otherwise or if an invalid argument
     has been given for ``MODE`` the value ``1`` is returned.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ACCESS(NAME, MODE)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

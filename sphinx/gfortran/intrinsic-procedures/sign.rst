@@ -31,19 +31,19 @@ SIGN --- Sign copying function
     If B \ge 0 then the result is ``ABS(A)``, else
     it is ``-ABS(A)``.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = SIGN(A, B)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -57,7 +57,7 @@ SIGN --- Sign copying function
         print *, sign(-12.,-1.)
       end program test_sign
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1

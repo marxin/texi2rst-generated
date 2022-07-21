@@ -21,26 +21,26 @@ NULL --- Function that returns an disassociated pointer
   :return:
     A disassociated pointer.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 95 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       PTR => NULL([MOLD])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
       REAL, POINTER, DIMENSION(:) :: VEC => NULL ()
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`ASSOCIATED`

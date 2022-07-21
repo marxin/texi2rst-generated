@@ -41,19 +41,19 @@ IOR --- Bitwise logical or
     A boz-literal-constant is converted to an ``INTEGER`` with the kind
     type parameter of the other argument as-if a call to :ref:`INT` occurred.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 90 and later, with boz-literal-constant Fortran 2008 and later, has overloads that are GNU extensions
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = IOR(I, J)
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -84,7 +84,7 @@ IOR --- Bitwise logical or
          - ``INTEGER(8)``
          - GNU extension
 
-  :samp:`{See also}:`
+  See also:
     :ref:`IEOR`, 
     :ref:`IAND`, 
     :ref:`IBITS`, 

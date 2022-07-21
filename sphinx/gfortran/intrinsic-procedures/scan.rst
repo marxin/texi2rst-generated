@@ -32,21 +32,21 @@ SCAN --- Scan a string for the presence of a set of characters
     The return value is of type ``INTEGER`` and of kind :samp:`{KIND}`. If
     :samp:`{KIND}` is absent, the return value is of default integer kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = SCAN(STRING, SET[, BACK [, KIND]])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -56,7 +56,7 @@ SCAN --- Scan a string for the presence of a set of characters
         WRITE(*,*) SCAN("FORTRAN", "C++")         ! 0, found none
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`index-intrinsic`, 
     :ref:`VERIFY`

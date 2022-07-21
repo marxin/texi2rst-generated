@@ -36,21 +36,21 @@ ATOMIC_FETCH_ADD --- Atomic ADD operation with prior fetch
   :param STAT:
     (optional) Scalar default-kind integer variable.
 
-  :samp:`{Standard}:`
+  Standard:
 
     TS 18508 or later
 
-  :samp:`{Class}:`
+  Class:
 
     Atomic subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL ATOMIC_FETCH_ADD (ATOM, VALUE, old [, STAT])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -60,7 +60,7 @@ ATOMIC_FETCH_ADD --- Atomic ADD operation with prior fetch
         call atomic_add (atom[1], this_image(), old)
       end program atomic
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`ATOMIC_DEFINE`, 
     :ref:`ATOMIC_ADD`, 

@@ -34,19 +34,19 @@ ANINT --- Nearest whole number
     zero, ``ANINT(A)`` returns ``AINT(X+0.5)``.  If :samp:`{A}` is
     less than or equal to zero then it returns ``AINT(X-0.5)``.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ANINT(A [, KIND])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -59,7 +59,7 @@ ANINT --- Nearest whole number
         x8 = anint(x4,8)
       end program test_anint
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1

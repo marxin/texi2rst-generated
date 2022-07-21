@@ -23,21 +23,21 @@ ADJUSTL --- Left adjust a string
     :samp:`{STRING}` where leading spaces are removed and the same number of
     spaces are inserted on the end of :samp:`{STRING}`.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ADJUSTL(STRING)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -47,7 +47,7 @@ ADJUSTL --- Left adjust a string
         print *, str
       end program test_adjustl
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`ADJUSTR`, 
     :ref:`TRIM`

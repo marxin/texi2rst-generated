@@ -27,21 +27,21 @@ ACHAR --- Character in ASCII collating sequence
     If the :samp:`{KIND}` argument is present, the return value is of the
     specified kind and of the default kind otherwise.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 77 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ACHAR(I [, KIND])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -50,12 +50,12 @@ ACHAR --- Character in ASCII collating sequence
         c = achar(32)
       end program test_achar
 
-  :samp:`{Note}:`
+  Note:
 
     See :ref:`ICHAR` for a discussion of converting between numerical values
     and formatted string representations.
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`CHAR`, 
     :ref:`IACHAR`, 

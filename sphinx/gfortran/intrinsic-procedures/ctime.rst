@@ -28,22 +28,22 @@ CTIME --- Convert a time into a string
   :return:
     The converted date and time as a string.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine, function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL CTIME(TIME, RESULT).
       RESULT = CTIME(TIME).
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -58,7 +58,7 @@ CTIME --- Convert a time into a string
           print *, 'Program was started on ', date
       end program test_ctime
 
-  :samp:`{See Also}:`
+  See Also:
     :ref:`DATE_AND_TIME`, 
     :ref:`GMTIME`, 
     :ref:`LTIME`, 

@@ -28,22 +28,22 @@ FPUTC --- Write a single character in stream mode
     Returns 0 on success, -1 on end-of-file and a system specific positive
     error code otherwise.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine, function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL FPUTC(UNIT, C [, STATUS])
       STATUS = FPUTC(UNIT, C)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -58,7 +58,7 @@ FPUTC --- Write a single character in stream mode
         CLOSE(fd)
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`FPUT`, 
     :ref:`FGET`, 

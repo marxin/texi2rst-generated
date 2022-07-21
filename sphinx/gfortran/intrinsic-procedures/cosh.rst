@@ -31,19 +31,19 @@ COSH --- Hyperbolic cosine function
     is ``REAL``, the return value has a lower bound of one,
     \cosh (x) \geq 1.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later, for a complex argument Fortran 2008 or later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       X = COSH(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -52,7 +52,7 @@ COSH --- Hyperbolic cosine function
         x = cosh(x)
       end program test_cosh
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -71,7 +71,7 @@ COSH --- Hyperbolic cosine function
          - ``REAL(8)``
          - Fortran 77 and later
 
-  :samp:`{See also}:`
+  See also:
     Inverse function: 
     :ref:`ACOSH`
 

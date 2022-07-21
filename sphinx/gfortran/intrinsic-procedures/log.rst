@@ -41,19 +41,19 @@ LOG --- Natural logarithm function
     If :samp:`{X}` is ``COMPLEX``, the imaginary part \omega is in the range
     -\pi < \omega \leq \pi.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later, has GNU extensions
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = LOG(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -64,7 +64,7 @@ LOG --- Natural logarithm function
         z = log(z)
       end program test_log
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1

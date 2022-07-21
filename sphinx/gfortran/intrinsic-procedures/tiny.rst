@@ -21,20 +21,20 @@ TINY --- Smallest positive number of a real kind
   :return:
     The return value is of the same type and kind as :samp:`{X}`
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = TINY(X)
 
-  :samp:`{Example}:`
+  Example:
 
     See ``HUGE`` for an example.

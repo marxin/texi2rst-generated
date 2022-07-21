@@ -21,21 +21,21 @@ TRIM --- Remove trailing blank characters of a string
     A scalar of type ``CHARACTER`` which length is that of :samp:`{STRING}`
     less the number of trailing blanks.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = TRIM(STRING)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -44,7 +44,7 @@ TRIM --- Remove trailing blank characters of a string
         WRITE(*,*) LEN(s), LEN(TRIM(s))  ! "10 8", with/without trailing blanks
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`ADJUSTL`, 
     :ref:`ADJUSTR`

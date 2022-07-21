@@ -18,21 +18,21 @@ GETPID --- Process ID function
     The return value of ``GETPID`` is an ``INTEGER`` of the default
     kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = GETPID()
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -42,7 +42,7 @@ GETPID --- Process ID function
         print *, "Your numerical group ID is ", getgid()
       end program info
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`GETGID`, 
     :ref:`GETUID`

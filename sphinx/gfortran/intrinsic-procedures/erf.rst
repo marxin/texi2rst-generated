@@ -23,19 +23,19 @@ ERF --- Error function
     The return value is of type ``REAL``, of the same kind as
     :samp:`{X}` and lies in the range -1 \leq erf (x) \leq 1 .
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 2008 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ERF(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -44,7 +44,7 @@ ERF --- Error function
         x = erf(x)
       end program test_erf
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1

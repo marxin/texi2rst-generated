@@ -38,21 +38,21 @@ RESHAPE --- Function to reshape an array
     The result is an array of shape :samp:`{SHAPE}` with the same type as 
     :samp:`{SOURCE}`. 
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = RESHAPE(SOURCE, SHAPE[, PAD, ORDER])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -62,6 +62,6 @@ RESHAPE --- Function to reshape an array
         WRITE(*,*) SHAPE(RESHAPE(x, (/2, 2/)))    ! prints "2 2"
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`SHAPE`

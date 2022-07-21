@@ -32,19 +32,19 @@ ASINH --- Inverse hyperbolic sine function
     complex, the imaginary part of the result is in radians and lies between
     -\pi/2 \leq \Im \asinh(x) \leq \pi/2.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 2008 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ASINH(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -53,7 +53,7 @@ ASINH --- Inverse hyperbolic sine function
         WRITE (*,*) ASINH(x)
       END PROGRAM
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -68,7 +68,7 @@ ASINH --- Inverse hyperbolic sine function
          - ``REAL(8)``
          - GNU extension.
 
-  :samp:`{See also}:`
+  See also:
     Inverse function: 
     :ref:`SINH`
 

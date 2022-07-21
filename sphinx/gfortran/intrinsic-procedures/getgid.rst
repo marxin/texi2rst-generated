@@ -18,25 +18,25 @@ GETGID --- Group ID function
     The return value of ``GETGID`` is an ``INTEGER`` of the default
     kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = GETGID()
 
-  :samp:`{Example}:`
+  Example:
 
     See ``GETPID`` for an example.
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`GETPID`, 
     :ref:`GETUID`

@@ -27,19 +27,19 @@ COTAN --- Cotangent function
   :return:
     The return value has same type and kind as :samp:`{X}`, and its value is in radians.
 
-  :samp:`{Standard}:`
+  Standard:
     GNU extension, enabled with :option:`-fdec-math`.
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = COTAN(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -48,7 +48,7 @@ COTAN --- Cotangent function
         x = cotan(x)
       end program test_cotan
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -67,7 +67,7 @@ COTAN --- Cotangent function
          - ``REAL(8)``
          - GNU extension
 
-  :samp:`{See also}:`
+  See also:
     Converse function: 
     :ref:`TAN` 
     Degrees function: 

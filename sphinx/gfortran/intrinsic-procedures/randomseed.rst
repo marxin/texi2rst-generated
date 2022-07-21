@@ -32,21 +32,21 @@ RANDOM_SEED --- Initialize a pseudo-random number sequence
     of the array must be larger than or equal to the number returned by 
     the :samp:`{SIZE}` argument.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL RANDOM_SEED([SIZE, PUT, GET])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -61,7 +61,7 @@ RANDOM_SEED --- Initialize a pseudo-random number sequence
         write (*, *) seed
       end program test_random_seed
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`RANDOM_NUMBER`, 
     :ref:`RANDOM_INIT`

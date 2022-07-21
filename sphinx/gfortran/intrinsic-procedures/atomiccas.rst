@@ -41,21 +41,21 @@ ATOMIC_CAS --- Atomic compare and swap
   :param STAT:
     (optional) Scalar default-kind integer variable.
 
-  :samp:`{Standard}:`
+  Standard:
 
     TS 18508 or later
 
-  :samp:`{Class}:`
+  Class:
 
     Atomic subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL ATOMIC_CAS (ATOM, OLD, COMPARE, NEW [, STAT])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -65,7 +65,7 @@ ATOMIC_CAS --- Atomic compare and swap
         call atomic_cas (atom[1], prev, .false., .true.))
       end program atomic
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`ATOMIC_DEFINE`, 
     :ref:`ATOMIC_REF`, 

@@ -39,16 +39,16 @@ THIS_IMAGE --- Function that returns the cosubscript index of this image
     image. If :samp:`{DIM}` is present, a scalar is returned, with the value of
     the :samp:`{DIM}` element of ``THIS_IMAGE(COARRAY)``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2008 and later. With :samp:`{DISTANCE}` argument, 
     Technical Specification (TS) 18508 or later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
@@ -56,7 +56,7 @@ THIS_IMAGE --- Function that returns the cosubscript index of this image
       RESULT = THIS_IMAGE(DISTANCE)
       RESULT = THIS_IMAGE(COARRAY [, DIM])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -74,7 +74,7 @@ THIS_IMAGE --- Function that returns the cosubscript index of this image
       IF (THIS_IMAGE(HUGE(1)) /= THIS_IMAGE())
         error stop "something is rotten here"
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`NUM_IMAGES`, 
     :ref:`IMAGE_INDEX`

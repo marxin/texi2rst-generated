@@ -32,21 +32,21 @@ UCOBOUND --- Upper codimension bounds of an array
     :samp:`{COARRAY}`.  If :samp:`{DIM}` is present, the result is a scalar
     corresponding to the lower cobound of the array along that codimension.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2008 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = UCOBOUND(COARRAY [, DIM [, KIND]])
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`LCOBOUND`, 
     :ref:`LBOUND`

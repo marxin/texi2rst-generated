@@ -31,21 +31,21 @@ ATOMIC_XOR --- Atomic bitwise OR operation
   :param STAT:
     (optional) Scalar default-kind integer variable.
 
-  :samp:`{Standard}:`
+  Standard:
 
     TS 18508 or later
 
-  :samp:`{Class}:`
+  Class:
 
     Atomic subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL ATOMIC_XOR (ATOM, VALUE [, STAT])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -55,7 +55,7 @@ ATOMIC_XOR --- Atomic bitwise OR operation
         call atomic_xor (atom[1], int(b'10100011101'))
       end program atomic
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`ATOMIC_DEFINE`, 
     :ref:`ATOMIC_FETCH_XOR`, 

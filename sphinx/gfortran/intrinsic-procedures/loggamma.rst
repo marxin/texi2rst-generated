@@ -30,19 +30,19 @@ LOG_GAMMA --- Logarithm of the Gamma function
   :return:
     The return value is of type ``REAL`` of the same kind as :samp:`{X}`.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 2008 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       X = LOG_GAMMA(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -51,7 +51,7 @@ LOG_GAMMA --- Logarithm of the Gamma function
         x = lgamma(x) ! returns 0.0
       end program test_log_gamma
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -74,7 +74,7 @@ LOG_GAMMA --- Logarithm of the Gamma function
          - ``REAL(8)``
          - GNU extension
 
-  :samp:`{See also}:`
+  See also:
     Gamma function: 
     :ref:`GAMMA`
 

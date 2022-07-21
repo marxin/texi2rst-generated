@@ -32,19 +32,19 @@ ACOSH --- Inverse hyperbolic cosine function
     complex, the imaginary part of the result is in radians and lies between
     0 \leq \Im \acosh(x) \leq \pi.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 2008 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ACOSH(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -53,7 +53,7 @@ ACOSH --- Inverse hyperbolic cosine function
         WRITE (*,*) ACOSH(x)
       END PROGRAM
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -68,7 +68,7 @@ ACOSH --- Inverse hyperbolic cosine function
          - ``REAL(8)``
          - GNU extension
 
-  :samp:`{See also}:`
+  See also:
     Inverse function: 
     :ref:`COSH`
 

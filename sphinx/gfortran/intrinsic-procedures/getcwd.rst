@@ -21,22 +21,22 @@ GETCWD --- Get current working directory
     (Optional) status flag. Returns 0 on success, 
     a system specific and nonzero error code otherwise.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine, function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL GETCWD(C [, STATUS])
       STATUS = GETCWD(C)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -46,6 +46,6 @@ GETCWD --- Get current working directory
         WRITE(*,*) TRIM(cwd)
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`CHDIR`

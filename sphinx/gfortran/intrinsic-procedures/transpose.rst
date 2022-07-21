@@ -22,15 +22,15 @@ TRANSPOSE --- Transpose an array of rank two
     The result has the same type as :samp:`{MATRIX}`, and has shape 
     ``(/ m, n /)`` if :samp:`{MATRIX}` has shape ``(/ n, m /)``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 

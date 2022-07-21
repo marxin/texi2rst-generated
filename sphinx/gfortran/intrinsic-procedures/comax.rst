@@ -36,21 +36,21 @@ CO_MAX --- Maximal value on the current set of images
   :param ERRMSG:
     (optional) a scalar character variable
 
-  :samp:`{Standard}:`
+  Standard:
 
     Technical Specification (TS) 18508 or later
 
-  :samp:`{Class}:`
+  Class:
 
     Collective subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL CO_MAX(A [, RESULT_IMAGE, STAT, ERRMSG])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -63,7 +63,7 @@ CO_MAX --- Maximal value on the current set of images
         end if
       end program test
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`CO_MIN`, 
     :ref:`CO_SUM`, 

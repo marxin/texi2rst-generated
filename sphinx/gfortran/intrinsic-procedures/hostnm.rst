@@ -25,15 +25,15 @@ HOSTNM --- Get system host name
     In either syntax, :samp:`{NAME}` is set to the current hostname if it can
     be obtained, or to a blank string otherwise.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine, function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 

@@ -21,21 +21,21 @@ IS_CONTIGUOUS --- Test whether an array is contiguous
     Returns a ``LOGICAL`` of the default kind, which ``.TRUE.`` if
     :samp:`{ARRAY}` is contiguous and false otherwise.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2008 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = IS_CONTIGUOUS(ARRAY)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

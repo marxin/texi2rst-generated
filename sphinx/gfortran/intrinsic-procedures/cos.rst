@@ -35,19 +35,19 @@ COS --- Cosine function
     of the result is in radians. If :samp:`{X}` is of the type ``REAL``,
     the return value lies in the range -1 \leq \cos (x) \leq 1.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later, has overloads that are GNU extensions
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = COS(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -56,7 +56,7 @@ COS --- Cosine function
         x = cos(x)
       end program test_cos
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -87,7 +87,7 @@ COS --- Cosine function
          - ``COMPLEX(8)``
          - GNU extension
 
-  :samp:`{See also}:`
+  See also:
     Inverse function: 
     :ref:`ACOS` 
     Degrees function: 

@@ -16,24 +16,24 @@ BACKTRACE --- Show a backtrace
   execution continues normally afterwards. The backtrace information is printed
   to the unit corresponding to ``ERROR_UNIT`` in ``ISO_FORTRAN_ENV``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL BACKTRACE
 
-  :samp:`{Arguments}:`
+  Arguments:
 
     None
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`ABORT`

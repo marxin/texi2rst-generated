@@ -22,21 +22,21 @@ MAXEXPONENT --- Maximum exponent of a real kind
     The return value is of type ``INTEGER`` and of the default integer
     kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = MAXEXPONENT(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

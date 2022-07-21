@@ -26,20 +26,20 @@ SAME_TYPE_AS ---  Query dynamic types for equality
     The return value is a scalar of type default logical. It is true if and
     only if the dynamic type of A is the same as the dynamic type of B.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = SAME_TYPE_AS(A, B)
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`EXTENDS_TYPE_OF`

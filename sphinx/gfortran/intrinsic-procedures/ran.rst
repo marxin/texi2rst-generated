@@ -16,15 +16,15 @@ RAN --- Real pseudo-random number
   provided as an alias for ``RAND``.  See :ref:`RAND` for complete
   documentation.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Function
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`RAND`, 
     :ref:`RANDOM_NUMBER`

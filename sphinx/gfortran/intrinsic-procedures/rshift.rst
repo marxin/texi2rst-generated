@@ -30,21 +30,21 @@ RSHIFT --- Right shift bits
     The return value is of type ``INTEGER`` and of the same kind as
     :samp:`{I}`.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = RSHIFT(I, SHIFT)
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`ISHFT`, 
     :ref:`ISHFTC`, 

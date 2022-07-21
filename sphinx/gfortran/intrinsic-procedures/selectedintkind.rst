@@ -20,21 +20,21 @@ SELECTED_INT_KIND --- Choose integer kind
   :param R:
     Shall be a scalar and of type ``INTEGER``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = SELECTED_INT_KIND(R)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

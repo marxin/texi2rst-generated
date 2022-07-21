@@ -31,21 +31,21 @@ SIZEOF --- Size in bytes of an expression
     arrays that those are contiguous; for contiguous arrays, it returns the
     storage or an array element multiplied by the size of the array.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       N = SIZEOF(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -57,7 +57,7 @@ SIZEOF --- Size in bytes of an expression
     The example will print ``.TRUE.`` unless you are using a platform
     where default ``REAL`` variables are unusually padded.
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`C_SIZEOF`, 
     :ref:`STORAGE_SIZE`

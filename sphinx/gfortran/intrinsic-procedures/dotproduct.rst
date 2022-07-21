@@ -31,21 +31,21 @@ DOT_PRODUCT --- Dot product function
     ``INTEGER``, ``REAL``, or ``COMPLEX``.  If the arguments are
     ``LOGICAL``, the return value is ``.TRUE.`` or ``.FALSE.``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = DOT_PRODUCT(VECTOR_A, VECTOR_B)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

@@ -21,21 +21,21 @@ FNUM --- File number function
   :return:
     The return value is of type ``INTEGER``
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = FNUM(UNIT)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

@@ -43,21 +43,21 @@ GET_COMMAND_ARGUMENT --- Get command line arguments
     command line argument, :samp:`{STATUS}` is -1; and otherwise the :samp:`{STATUS}` is
     zero.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL GET_COMMAND_ARGUMENT(NUMBER [, VALUE, LENGTH, STATUS])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -75,7 +75,7 @@ GET_COMMAND_ARGUMENT --- Get command line arguments
         END DO
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`GET_COMMAND`, 
     :ref:`COMMAND_ARGUMENT_COUNT`

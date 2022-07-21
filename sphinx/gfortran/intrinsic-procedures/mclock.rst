@@ -20,21 +20,21 @@ MCLOCK --- Time function
     number of clock ticks since the start of the process, or ``-1`` if
     the system does not support ``clock(3)``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = MCLOCK()
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`CTIME`, 
     :ref:`GMTIME`, 

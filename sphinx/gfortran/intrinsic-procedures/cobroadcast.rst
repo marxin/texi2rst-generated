@@ -35,21 +35,21 @@ CO_BROADCAST --- Copy a value to all images the current set of images
   :param ERRMSG:
     (optional) a scalar character variable
 
-  :samp:`{Standard}:`
+  Standard:
 
     Technical Specification (TS) 18508 or later
 
-  :samp:`{Class}:`
+  Class:
 
     Collective subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL CO_BROADCAST(A, SOURCE_IMAGE [, STAT, ERRMSG])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -62,7 +62,7 @@ CO_BROADCAST --- Copy a value to all images the current set of images
         print *, this_image, ":", val
       end program test
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`CO_MAX`, 
     :ref:`CO_MIN`, 

@@ -25,21 +25,21 @@ GETENV --- Get an environmental variable
     not large enough to hold the data, it is truncated. If :samp:`{NAME}`
     is not set, :samp:`{VALUE}` will be filled with blanks.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL GETENV(NAME, VALUE)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -49,6 +49,6 @@ GETENV --- Get an environmental variable
         WRITE (*,*) TRIM(homedir)
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`GET_ENVIRONMENT_VARIABLE`

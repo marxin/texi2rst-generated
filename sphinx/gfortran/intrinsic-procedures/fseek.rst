@@ -33,21 +33,21 @@ FSEEK --- Low level file positioning subroutine
     (Optional) shall be a scalar of type 
     ``INTEGER(4)``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL FSEEK(UNIT, OFFSET, WHENCE[, STATUS])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -72,6 +72,6 @@ FSEEK --- Low level file positioning subroutine
         CLOSE(UNIT=fd)
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`FTELL`

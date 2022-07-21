@@ -31,19 +31,19 @@ TANH --- Hyperbolic tangent function
     is ``REAL``, the return value lies in the range
     - 1 \leq tanh(x) \leq 1 .
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later, for a complex argument Fortran 2008 or later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       X = TANH(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -52,7 +52,7 @@ TANH --- Hyperbolic tangent function
         x = tanh(x)
       end program test_tanh
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -71,6 +71,6 @@ TANH --- Hyperbolic tangent function
          - ``REAL(8)``
          - Fortran 77 and later
 
-  :samp:`{See also}:`
+  See also:
     :ref:`ATANH`
 

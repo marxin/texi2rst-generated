@@ -28,22 +28,22 @@ DTIME --- Execution time subroutine (or function)
     Elapsed time in seconds since the last invocation or since the start of program
     execution if not called before.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine, function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL DTIME(VALUES, TIME).
       TIME = DTIME(VALUES), (not recommended).
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -64,6 +64,6 @@ DTIME --- Execution time subroutine (or function)
           print *, tarray(2)
       end program test_dtime
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`CPU_TIME`

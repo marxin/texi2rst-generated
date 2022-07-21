@@ -34,19 +34,19 @@ SQRT --- Square-root function
     The return value is of type ``REAL`` or ``COMPLEX``.
     The kind type parameter is the same as :samp:`{X}`.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = SQRT(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -57,7 +57,7 @@ SQRT --- Square-root function
         z = sqrt(z)
       end program test_sqrt
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1

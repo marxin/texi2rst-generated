@@ -27,21 +27,21 @@ C_SIZEOF --- Size in bytes of an expression
     or ``ALLOCATABLE`` components, the return value does not account for
     the sizes of the data pointed to by these components.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2008
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function of the module ``ISO_C_BINDING``
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       N = C_SIZEOF(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -54,7 +54,7 @@ C_SIZEOF --- Size in bytes of an expression
     The example will print ``T`` unless you are using a platform
     where default ``REAL`` variables are unusually padded.
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`SIZEOF`, 
     :ref:`STORAGE_SIZE`

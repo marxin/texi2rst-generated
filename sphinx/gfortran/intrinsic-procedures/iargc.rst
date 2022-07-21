@@ -18,29 +18,29 @@ IARGC --- Get the number of command line arguments
   :return:
     The number of command line arguments, type ``INTEGER(4)``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = IARGC()
 
-  :samp:`{Arguments}:`
+  Arguments:
 
     None
 
-  :samp:`{Example}:`
+  Example:
 
     See :ref:`GETARG`
 
-  :samp:`{See also}:`
+  See also:
 
     GNU Fortran 77 compatibility subroutine: 
     :ref:`GETARG` 

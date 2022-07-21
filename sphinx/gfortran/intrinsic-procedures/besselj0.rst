@@ -30,19 +30,19 @@ BESSEL_J0 --- Bessel function of the first kind of order 0
     range - 0.4027... \leq Bessel (0,x) \leq 1. It has the same
     kind as :samp:`{X}`.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 2008 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = BESSEL_J0(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -51,7 +51,7 @@ BESSEL_J0 --- Bessel function of the first kind of order 0
         x = bessel_j0(x)
       end program test_besj0
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1

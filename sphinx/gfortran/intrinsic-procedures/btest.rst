@@ -34,19 +34,19 @@ BTEST --- Bit test function
   :return:
     The return value is of type ``LOGICAL``
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 90 and later, has overloads that are GNU extensions
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = BTEST(I, POS)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -60,7 +60,7 @@ BTEST --- Bit test function
           end do
       end program test_btest
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1

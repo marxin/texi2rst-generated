@@ -21,21 +21,21 @@ SELECTED_CHAR_KIND --- Choose character kind
   :param NAME:
     Shall be a scalar and of the default character type.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = SELECTED_CHAR_KIND(NAME)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

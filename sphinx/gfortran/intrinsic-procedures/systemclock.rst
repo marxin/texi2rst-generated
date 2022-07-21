@@ -32,21 +32,21 @@ SYSTEM_CLOCK --- Time function
     (Optional) shall be a scalar of type 
     ``INTEGER`` with ``INTENT(OUT)``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL SYSTEM_CLOCK([COUNT, COUNT_RATE, COUNT_MAX])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -56,7 +56,7 @@ SYSTEM_CLOCK --- Time function
         WRITE(*,*) count, count_rate, count_max
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`DATE_AND_TIME`, 
     :ref:`CPU_TIME`

@@ -20,25 +20,25 @@ COMPILER_OPTIONS --- Options passed to the compiler
     It contains the compiler flags used to compile the file, which called
     the ``COMPILER_OPTIONS`` intrinsic.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2008
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function of the module ``ISO_FORTRAN_ENV``
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       STR = COMPILER_OPTIONS()
 
-  :samp:`{Arguments}:`
+  Arguments:
 
     None
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -48,7 +48,7 @@ COMPILER_OPTIONS --- Options passed to the compiler
                        compiler_options()
          end
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`COMPILER_VERSION`, 
     :ref:`ISO_FORTRAN_ENV`

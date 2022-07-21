@@ -30,19 +30,19 @@ BESSEL_J1 --- Bessel function of the first kind of order 1
     range - 0.5818... \leq Bessel (0,x) \leq 0.5818 . It has the same
     kind as :samp:`{X}`.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 2008
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = BESSEL_J1(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -51,7 +51,7 @@ BESSEL_J1 --- Bessel function of the first kind of order 1
         x = bessel_j1(x)
       end program test_besj1
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1

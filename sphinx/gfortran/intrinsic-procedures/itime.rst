@@ -24,21 +24,21 @@ ITIME --- Get current local time subroutine (hour/minutes/seconds)
   :return:
     Does not return anything.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL ITIME(VALUES)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -50,6 +50,6 @@ ITIME --- Get current local time subroutine (hour/minutes/seconds)
         print *, tarray(3)
       end program test_itime
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`DATE_AND_TIME`

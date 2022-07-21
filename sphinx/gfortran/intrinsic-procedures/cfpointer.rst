@@ -29,21 +29,21 @@ C_F_POINTER --- Convert C into Fortran pointer
     if and only if :samp:`{fptr}` is an array. The size
     must be equal to the rank of :samp:`{fptr}`.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL C_F_POINTER(CPTR, FPTR[, SHAPE])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -62,7 +62,7 @@ C_F_POINTER --- Convert C into Fortran pointer
         call c_f_pointer(cptr, a, [12])
       end program main
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`C_LOC`, 
     :ref:`C_F_PROCPOINTER`

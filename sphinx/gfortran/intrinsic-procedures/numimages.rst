@@ -31,22 +31,22 @@ NUM_IMAGES --- Function that returns the number of images
     the number of failed images is returned, otherwise, the number of images which
     do have not the failed status.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2008 and later. With :samp:`{DISTANCE}` or :samp:`{FAILED}` argument, 
     Technical Specification (TS) 18508 or later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = NUM_IMAGES(DISTANCE, FAILED)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -60,7 +60,7 @@ NUM_IMAGES --- Function that returns the number of images
         END DO
       END IF
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`THIS_IMAGE`, 
     :ref:`IMAGE_INDEX`

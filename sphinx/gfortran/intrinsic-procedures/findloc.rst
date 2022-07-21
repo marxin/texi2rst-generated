@@ -61,22 +61,22 @@ FINDLOC --- Search an array for a value
     is present, the result is an integer of kind :samp:`{KIND}`, otherwise it
     is of default kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2008 and later.
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = FINDLOC(ARRAY, VALUE, DIM [, MASK] [,KIND] [,BACK])
       RESULT = FINDLOC(ARRAY, VALUE, [, MASK] [,KIND] [,BACK])
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`MAXLOC`, 
     :ref:`MINLOC`

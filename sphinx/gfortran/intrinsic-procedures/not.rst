@@ -35,19 +35,19 @@ NOT --- Logical negation
     The return type is ``INTEGER``, of the same kind as the
     argument.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 90 and later, has overloads that are GNU extensions
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = NOT(I)
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -78,7 +78,7 @@ NOT --- Logical negation
          - ``INTEGER(8)``
          - GNU extension
 
-  :samp:`{See also}:`
+  See also:
     :ref:`IAND`, 
     :ref:`IEOR`, 
     :ref:`IOR`, 

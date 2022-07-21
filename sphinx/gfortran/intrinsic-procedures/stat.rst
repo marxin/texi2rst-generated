@@ -27,22 +27,22 @@ STAT --- Get file status
     (Optional) status flag of type ``INTEGER(4)``. Returns 0 
     on success and a system specific error code otherwise.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine, function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL STAT(NAME, VALUES [, STATUS])
       STATUS = STAT(NAME, VALUES)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -69,7 +69,7 @@ STAT --- Get file status
         END IF
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     To stat an open file: 
     :ref:`FSTAT` 

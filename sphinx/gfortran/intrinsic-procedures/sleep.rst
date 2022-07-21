@@ -17,21 +17,21 @@ SLEEP --- Sleep for the specified number of seconds
   :param SECONDS:
     The type shall be of default ``INTEGER``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL SLEEP(SECONDS)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

@@ -21,21 +21,21 @@ EPSILON --- Epsilon function
   :return:
     The return value is of same type as the argument.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = EPSILON(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

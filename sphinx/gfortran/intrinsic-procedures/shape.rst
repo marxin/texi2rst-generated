@@ -30,21 +30,21 @@ SHAPE --- Determine the shape of an array
     the result is the rank one array of size zero. If :samp:`{KIND}` is absent, the
     return value has the default integer kind otherwise the specified kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = SHAPE(SOURCE [, KIND])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -54,7 +54,7 @@ SHAPE --- Determine the shape of an array
         WRITE(*,*) SIZE(SHAPE(42))      ! (/ /)
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`RESHAPE`, 
     :ref:`SIZE`

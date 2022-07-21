@@ -26,21 +26,21 @@ LOGICAL --- Convert to logical type
     kind corresponding to :samp:`{KIND}`, or of the default logical kind if
     :samp:`{KIND}` is not given.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = LOGICAL(L [, KIND])
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`INT`, 
     :ref:`REAL`, 

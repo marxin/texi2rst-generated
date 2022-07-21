@@ -35,20 +35,20 @@ ATAND --- Arctangent function, degrees
     the result is in degrees and lies in the range
     -90 \leq \Re \atand(x) \leq 90.
 
-  :samp:`{Standard}:`
+  Standard:
     GNU extension, enabled with :option:`-fdec-math`.
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ATAND(X)
       RESULT = ATAND(Y, X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -57,7 +57,7 @@ ATAND --- Arctangent function, degrees
         x = atand(x)
       end program test_atand
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -76,7 +76,7 @@ ATAND --- Arctangent function, degrees
          - ``REAL(8)``
          - GNU extension
 
-  :samp:`{See also}:`
+  See also:
     Inverse function: 
     :ref:`TAND` 
     Radians function: 

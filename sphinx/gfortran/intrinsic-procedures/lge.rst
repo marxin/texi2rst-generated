@@ -32,19 +32,19 @@ LGE --- Lexical greater than or equal
     Returns ``.TRUE.`` if ``STRING_A >= STRING_B``, and ``.FALSE.``
     otherwise, based on the ASCII ordering.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = LGE(STRING_A, STRING_B)
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -59,7 +59,7 @@ LGE --- Lexical greater than or equal
          - ``LOGICAL``
          - Fortran 77 and later
 
-  :samp:`{See also}:`
+  See also:
     :ref:`LGT`, 
     :ref:`LLE`, 
     :ref:`LLT`

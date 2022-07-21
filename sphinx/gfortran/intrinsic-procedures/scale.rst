@@ -24,21 +24,21 @@ SCALE --- Scale a real value
     The return value is of the same type and kind as :samp:`{X}`.
     Its value is ``X * RADIX(X)**I``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = SCALE(X, I)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

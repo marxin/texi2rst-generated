@@ -20,20 +20,20 @@ PERROR --- Print system error message
     A scalar of type ``CHARACTER`` and of the
     default kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL PERROR(STRING)
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`IERRNO`

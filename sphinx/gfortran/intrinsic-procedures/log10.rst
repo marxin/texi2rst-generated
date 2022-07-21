@@ -31,19 +31,19 @@ LOG10 --- Base 10 logarithm function
     The return value is of type ``REAL`` or ``COMPLEX``.
     The kind type parameter is the same as :samp:`{X}`.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = LOG10(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -52,7 +52,7 @@ LOG10 --- Base 10 logarithm function
         x = log10(x)
       end program test_log10
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1

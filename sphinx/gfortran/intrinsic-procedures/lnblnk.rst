@@ -23,21 +23,21 @@ LNBLNK --- Index of the last non-blank character in a string
   :return:
     The return value is of ``INTEGER(kind=4)`` type.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = LNBLNK(STRING)
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`index-intrinsic`, 
     :ref:`LEN_TRIM`

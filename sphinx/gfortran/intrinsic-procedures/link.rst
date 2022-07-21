@@ -28,22 +28,22 @@ LINK --- Create a hard link
   :param STATUS:
     (Optional) Shall be of default ``INTEGER`` type.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine, function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL LINK(PATH1, PATH2 [, STATUS])
       STATUS = LINK(PATH1, PATH2)
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`SYMLNK`, 
     :ref:`UNLINK`

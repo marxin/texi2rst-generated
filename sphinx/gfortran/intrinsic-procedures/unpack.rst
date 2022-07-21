@@ -29,21 +29,21 @@ UNPACK --- Unpack an array of rank one into an array
     The resulting array corresponds to :samp:`{FIELD}` with ``TRUE`` elements
     of :samp:`{MASK}` replaced by values from :samp:`{VECTOR}` in array element order.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = UNPACK(VECTOR, MASK, FIELD)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -56,7 +56,7 @@ UNPACK --- Unpack an array of rank one into an array
         unity = unpack(vector, reshape(mask, (/2,2/)), field)
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`PACK`, 
     :ref:`SPREAD`

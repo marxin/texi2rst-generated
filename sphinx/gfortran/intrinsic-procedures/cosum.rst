@@ -36,21 +36,21 @@ CO_SUM --- Sum of values on the current set of images
   :param ERRMSG:
     (optional) a scalar character variable
 
-  :samp:`{Standard}:`
+  Standard:
 
     Technical Specification (TS) 18508 or later
 
-  :samp:`{Class}:`
+  Class:
 
     Collective subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL CO_SUM(A [, RESULT_IMAGE, STAT, ERRMSG])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -64,7 +64,7 @@ CO_SUM --- Sum of values on the current set of images
         end if
       end program test
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`CO_MAX`, 
     :ref:`CO_MIN`, 

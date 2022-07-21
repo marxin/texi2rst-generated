@@ -30,19 +30,19 @@ NINT --- Nearest whole number
     rounding to the nearest whole number and with its sign preserved,
     converted to an ``INTEGER`` of the default kind.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later, with :samp:`{KIND}` argument Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = NINT(A [, KIND])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -54,7 +54,7 @@ NINT --- Nearest whole number
         print *, nint(x4), idnint(x8)
       end program test_nint
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -73,7 +73,7 @@ NINT --- Nearest whole number
          - ``INTEGER``
          - Fortran 77 and later
 
-  :samp:`{See also}:`
+  See also:
     :ref:`CEILING`, 
     :ref:`FLOOR`
 

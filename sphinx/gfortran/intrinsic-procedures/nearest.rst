@@ -29,21 +29,21 @@ NEAREST --- Nearest representable number
     ``NEAREST`` returns the processor-representable number smaller than
     ``X`` and nearest to it.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = NEAREST(X, S)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

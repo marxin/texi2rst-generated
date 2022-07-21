@@ -21,21 +21,21 @@ RADIX --- Base of a model number
     The return value is a scalar of type ``INTEGER`` and of the default
     integer kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = RADIX(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -44,6 +44,6 @@ RADIX --- Base of a model number
         print *, "The radix for the default real kind is", radix(0.0)
       end program test_radix
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`SELECTED_REAL_KIND`

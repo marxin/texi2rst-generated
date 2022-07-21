@@ -23,21 +23,21 @@ ADJUSTR --- Right adjust a string
     :samp:`{STRING}` where trailing spaces are removed and the same number of
     spaces are inserted at the start of :samp:`{STRING}`.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ADJUSTR(STRING)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -47,7 +47,7 @@ ADJUSTR --- Right adjust a string
         print *, str
       end program test_adjustr
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`ADJUSTL`, 
     :ref:`TRIM`

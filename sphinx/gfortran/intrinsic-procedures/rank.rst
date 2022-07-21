@@ -21,21 +21,21 @@ RANK --- Rank of a data object
     The return value is of type ``INTEGER`` and of the default integer
     kind. For arrays, their rank is returned; for scalars zero is returned.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Technical Specification (TS) 29113
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = RANK(A)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

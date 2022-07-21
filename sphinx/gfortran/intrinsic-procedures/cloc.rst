@@ -21,21 +21,21 @@ C_LOC --- Obtain the C address of an object
     The return value is of type ``C_PTR`` and contains the C address
     of the argument.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = C_LOC(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -48,7 +48,7 @@ C_LOC --- Obtain the C address of an object
            stop 'b and a do not point to same target'
       end subroutine association_test
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`C_ASSOCIATED`, 
     :ref:`C_FUNLOC`, 

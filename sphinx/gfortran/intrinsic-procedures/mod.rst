@@ -45,19 +45,19 @@ MOD --- Remainder function
     magnitude of P.  (As a GNU extension, kind is the largest kind of the actual
     arguments.)
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later, has overloads that are GNU extensions
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = MOD(A, P)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -78,7 +78,7 @@ MOD --- Remainder function
         print *, mod(17.5,-5.5d0)
       end program test_mod
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -117,6 +117,6 @@ MOD --- Remainder function
          - ``INTEGER(8)``
          - GNU extension
 
-  :samp:`{See also}:`
+  See also:
     :ref:`MODULO`
 

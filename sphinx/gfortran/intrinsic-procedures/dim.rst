@@ -32,19 +32,19 @@ DIM --- Positive difference
     The return value is of type ``INTEGER`` or ``REAL``.  (As a GNU
     extension, kind is the largest kind of the actual arguments.)
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = DIM(X, Y)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -57,7 +57,7 @@ DIM --- Positive difference
           print *, x
       end program test_dim
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1

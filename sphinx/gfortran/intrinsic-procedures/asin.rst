@@ -29,19 +29,19 @@ ASIN --- Arcsine function
     The real part of the result is in radians and lies in the range
     -\pi/2 \leq \Re \asin(x) \leq \pi/2.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later, for a complex argument Fortran 2008 or later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ASIN(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -50,7 +50,7 @@ ASIN --- Arcsine function
         x = asin(x)
       end program test_asin
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -69,7 +69,7 @@ ASIN --- Arcsine function
          - ``REAL(8)``
          - Fortran 77 and later
 
-  :samp:`{See also}:`
+  See also:
     Inverse function: 
     :ref:`SIN` 
     Degrees function: 

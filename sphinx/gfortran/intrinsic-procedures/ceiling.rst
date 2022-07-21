@@ -25,21 +25,21 @@ CEILING --- Integer ceiling function
     The return value is of type ``INTEGER(KIND)`` if :samp:`{KIND}` is present
     and a default-kind ``INTEGER`` otherwise.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 95 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = CEILING(A [, KIND])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -50,7 +50,7 @@ CEILING --- Integer ceiling function
           print *, ceiling(y) ! returns -63
       end program test_ceiling
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`FLOOR`, 
     :ref:`NINT`

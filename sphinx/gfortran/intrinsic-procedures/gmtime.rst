@@ -28,21 +28,21 @@ GMTIME --- Convert time to GMT info
   :return:
     The elements of :samp:`{VALUES}` are assigned as follows:
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL GMTIME(TIME, VALUES)
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`DATE_AND_TIME`, 
     :ref:`CTIME`, 

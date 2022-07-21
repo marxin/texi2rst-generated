@@ -32,15 +32,15 @@ MERGE_BITS --- Merge of bits under mask
   :return:
     The result is of the same type and kind as :samp:`{I}`.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2008 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 

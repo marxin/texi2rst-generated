@@ -25,21 +25,21 @@ IS_IOSTAT_END --- Test for end-of-file value
     :samp:`{I}` has the value which indicates an end of file condition for
     ``IOSTAT=`` specifiers, and is ``.FALSE.`` otherwise.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = IS_IOSTAT_END(I)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

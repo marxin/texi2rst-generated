@@ -25,19 +25,19 @@ DPROD --- Double product function
   :return:
     The return value is of type ``REAL(8)``.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = DPROD(X, Y)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -49,7 +49,7 @@ DPROD --- Double product function
           print *, d
       end program test_dprod
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1

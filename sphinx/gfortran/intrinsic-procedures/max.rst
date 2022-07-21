@@ -39,19 +39,19 @@ MAX --- Maximum value of an argument list
     The return value corresponds to the maximum value among the arguments,
     and has the same type and kind as the first argument.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = MAX(A1, A2 [, A3 [, ...]])
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -82,7 +82,7 @@ MAX --- Maximum value of an argument list
          - ``REAL(8)``
          - Fortran 77 and later
 
-  :samp:`{See also}:`
+  See also:
     :ref:`MAXLOC` 
     :ref:`MAXVAL`, 
     :ref:`MIN`

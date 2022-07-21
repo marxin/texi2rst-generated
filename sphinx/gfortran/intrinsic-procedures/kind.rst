@@ -23,21 +23,21 @@ KIND --- Kind of an entity
     The return value is a scalar of type ``INTEGER`` and of the default
     integer kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 95 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       K = KIND(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

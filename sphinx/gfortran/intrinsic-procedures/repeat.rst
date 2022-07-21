@@ -24,21 +24,21 @@ REPEAT --- Repeated string concatenation
     A new scalar of type ``CHARACTER`` built up from :samp:`{NCOPIES}` copies 
     of :samp:`{STRING}`.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = REPEAT(STRING, NCOPIES)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

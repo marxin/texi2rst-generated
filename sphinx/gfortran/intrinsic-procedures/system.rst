@@ -24,22 +24,22 @@ SYSTEM --- Execute a shell command
   :param STATUS:
     (Optional) Shall be of default ``INTEGER`` type.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine, function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL SYSTEM(COMMAND [, STATUS])
       STATUS = SYSTEM(COMMAND)
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`EXECUTE_COMMAND_LINE`, which is part of the Fortran 2008 standard
     and should considered in new code for future portability.

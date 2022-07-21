@@ -23,15 +23,15 @@ UMASK --- Set the file creation mask
     (Optional) Shall be a scalar of type
     ``INTEGER``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine, function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 

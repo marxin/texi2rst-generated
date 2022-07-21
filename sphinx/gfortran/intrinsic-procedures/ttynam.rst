@@ -21,22 +21,22 @@ TTYNAM --- Get the name of a terminal device.
   :param NAME:
     Shall be of type ``CHARACTER``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine, function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL TTYNAM(UNIT, NAME)
       NAME = TTYNAM(UNIT)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -47,6 +47,6 @@ TTYNAM --- Get the name of a terminal device.
         END DO
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`ISATTY`

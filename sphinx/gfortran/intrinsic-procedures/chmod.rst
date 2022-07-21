@@ -34,22 +34,22 @@ CHMOD --- Change access permissions of files
     In either syntax, :samp:`{STATUS}` is set to ``0`` on success and nonzero
     otherwise.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine, function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL CHMOD(NAME, MODE[, STATUS])
       STATUS = CHMOD(NAME, MODE)
 
-  :samp:`{Example}:`
+  Example:
 
     ``CHMOD`` as subroutine
 

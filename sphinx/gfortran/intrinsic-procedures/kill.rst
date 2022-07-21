@@ -31,26 +31,26 @@ KILL --- Send a signal to a process
     ``pid``.
     Returns 0 on success; otherwise a system-specific error code is returned.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine, function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL KILL(PID, SIG [, STATUS])
       STATUS = KILL(PID, SIG)
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`ABORT`, 
     :ref:`EXIT`

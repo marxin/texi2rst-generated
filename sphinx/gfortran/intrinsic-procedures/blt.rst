@@ -24,21 +24,21 @@ BLT --- Bitwise less than
   :return:
     The return value is of type ``LOGICAL`` and of the default kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2008 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = BLT(I, J)
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`BGE`, 
     :ref:`BGT`, 

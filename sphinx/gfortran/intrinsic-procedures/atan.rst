@@ -34,21 +34,21 @@ ATAN --- Arctangent function
     the result is in radians and lies in the range
     -\pi/2 \leq \Re \atan(x) \leq \pi/2.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later, for a complex argument and for two arguments
     Fortran 2008 or later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ATAN(X)
       RESULT = ATAN(Y, X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -57,7 +57,7 @@ ATAN --- Arctangent function
         x = atan(x)
       end program test_atan
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -76,7 +76,7 @@ ATAN --- Arctangent function
          - ``REAL(8)``
          - Fortran 77 and later
 
-  :samp:`{See also}:`
+  See also:
     Inverse function: 
     :ref:`TAN` 
     Degrees function: 

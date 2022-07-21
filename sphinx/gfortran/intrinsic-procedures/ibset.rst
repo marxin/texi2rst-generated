@@ -35,19 +35,19 @@ IBSET --- Set bit
     The return value is of type ``INTEGER`` and of the same kind as
     :samp:`{I}`.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 90 and later, has overloads that are GNU extensions
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = IBSET(I, POS)
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -78,7 +78,7 @@ IBSET --- Set bit
          - ``INTEGER(8)``
          - GNU extension
 
-  :samp:`{See also}:`
+  See also:
     :ref:`IBCLR`, 
     :ref:`IBITS`, 
     :ref:`IAND`, 

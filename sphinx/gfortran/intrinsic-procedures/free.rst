@@ -25,24 +25,24 @@ FREE --- Frees memory
   :return:
     None
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL FREE(PTR)
 
-  :samp:`{Example}:`
+  Example:
 
     See ``MALLOC`` for an example.
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`MALLOC`

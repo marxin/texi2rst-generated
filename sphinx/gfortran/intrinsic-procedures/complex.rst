@@ -26,21 +26,21 @@ COMPLEX --- Complex conversion function
     If :samp:`{X}` and :samp:`{Y}` are both of ``INTEGER`` type, then the return
     value is of default ``COMPLEX`` type.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = COMPLEX(X, Y)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -50,6 +50,6 @@ COMPLEX --- Complex conversion function
           print *, complex(i, x)
       end program test_complex
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`CMPLX`

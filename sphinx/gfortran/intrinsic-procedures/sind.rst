@@ -33,19 +33,19 @@ SIND --- Sine function, degrees
   :return:
     The return value has same type and kind as :samp:`{X}`, and its value is in degrees.
 
-  :samp:`{Standard}:`
+  Standard:
     GNU extension, enabled with :option:`-fdec-math`.
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = SIND(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -54,7 +54,7 @@ SIND --- Sine function, degrees
         x = sind(x)
       end program test_sind
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -85,7 +85,7 @@ SIND --- Sine function, degrees
          - ``COMPLEX(8)``
          - GNU extension
 
-  :samp:`{See also}:`
+  See also:
     Inverse function: 
     :ref:`ASIND` 
     Radians function: 

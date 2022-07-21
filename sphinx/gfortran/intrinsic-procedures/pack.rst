@@ -35,21 +35,21 @@ PACK --- Pack an array into an array of rank one
     If :samp:`{VECTOR}` is present, the result size is that of :samp:`{VECTOR}`, the
     number of ``TRUE`` values in :samp:`{MASK}` otherwise.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = PACK(ARRAY, MASK[,VECTOR])
 
-  :samp:`{Example}:`
+  Example:
 
     Gathering nonzero elements from an array:
 
@@ -72,6 +72,6 @@ PACK --- Pack an array into an array of rank one
         WRITE(*, FMT="(4(I0, ' '))") pack(m, m /= 0, (/ 0, 0, 3, 4 /))
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`UNPACK`

@@ -23,25 +23,25 @@ RANGE --- Decimal exponent range
     The return value is of type ``INTEGER`` and of the default integer
     kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = RANGE(X)
 
-  :samp:`{Example}:`
+  Example:
 
     See ``PRECISION`` for an example.
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`SELECTED_REAL_KIND`, 
     :ref:`PRECISION`

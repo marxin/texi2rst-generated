@@ -25,21 +25,21 @@ IRAND --- Integer pseudo-random number
   :return:
     The return value is of ``INTEGER(kind=4)`` type.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = IRAND(I)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

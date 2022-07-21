@@ -30,19 +30,19 @@ ICHAR --- Character-to-integer conversion function
     The return value is of type ``INTEGER`` and of kind :samp:`{KIND}`. If
     :samp:`{KIND}` is absent, the return value is of default integer kind.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ICHAR(C [, KIND])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -51,7 +51,7 @@ ICHAR --- Character-to-integer conversion function
         i = ichar(' ')
       end program test_ichar
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -66,7 +66,7 @@ ICHAR --- Character-to-integer conversion function
          - ``INTEGER(4)``
          - Fortran 77 and later
 
-  :samp:`{Note}:`
+  Note:
     No intrinsic exists to convert between a numeric value and a formatted
     character string representation -- for instance, given the
     ``CHARACTER`` value ``'154'``, obtaining an ``INTEGER`` or
@@ -90,7 +90,7 @@ ICHAR --- Character-to-integer conversion function
         print *, string2
       end program read_val
 
-  :samp:`{See also}:`
+  See also:
     :ref:`ACHAR`, 
     :ref:`CHAR`, 
     :ref:`IACHAR`

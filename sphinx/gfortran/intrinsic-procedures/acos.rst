@@ -29,19 +29,19 @@ ACOS --- Arccosine function
     The real part of the result is in radians and lies in the range
     0 \leq \Re \acos(x) \leq \pi.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later, for a complex argument Fortran 2008 or later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ACOS(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -50,7 +50,7 @@ ACOS --- Arccosine function
         x = acos(x)
       end program test_acos
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -69,7 +69,7 @@ ACOS --- Arccosine function
          - ``REAL(8)``
          - Fortran 77 and later
 
-  :samp:`{See also}:`
+  See also:
     Inverse function: 
     :ref:`COS` 
     Degrees function: 

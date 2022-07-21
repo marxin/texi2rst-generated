@@ -31,21 +31,21 @@ GETARG --- Get command line arguments
     will be filled with blanks. If :samp:`{POS}` = 0, :samp:`{VALUE}` is set
     to the name of the program (on systems that support this feature).
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL GETARG(POS, VALUE)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -59,7 +59,7 @@ GETARG --- Get command line arguments
         END DO
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     GNU Fortran 77 compatibility function: 
     :ref:`IARGC` 

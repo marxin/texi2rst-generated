@@ -31,22 +31,22 @@ PRODUCT --- Product of array elements
   :return:
     The result is of the same type as :samp:`{ARRAY}`.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = PRODUCT(ARRAY[, MASK])
       RESULT = PRODUCT(ARRAY, DIM[, MASK])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -56,6 +56,6 @@ PRODUCT --- Product of array elements
         print *, PRODUCT(x, MASK=MOD(x, 2)==1) ! odd elements, product = 15
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`SUM`

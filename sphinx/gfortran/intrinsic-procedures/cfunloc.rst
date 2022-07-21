@@ -21,21 +21,21 @@ C_FUNLOC --- Obtain the C address of a procedure
     The return value is of type ``C_FUNPTR`` and contains the C address
     of the argument.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = C_FUNLOC(x)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -61,7 +61,7 @@ C_FUNLOC --- Obtain the C address of a procedure
         call my_routine(c_funloc(sub))
       end program main
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`C_ASSOCIATED`, 
     :ref:`C_LOC`, 

@@ -24,21 +24,21 @@ POPPAR --- Parity of the number of bits set
     The return value is of type ``INTEGER`` and of the default integer
     kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2008 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = POPPAR(I)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -48,7 +48,7 @@ POPPAR --- Parity of the number of bits set
         print *, popcnt(huge(0_8)), poppar(huge(0_8))
       end program test_population
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`POPCNT`, 
     :ref:`LEADZ`, 

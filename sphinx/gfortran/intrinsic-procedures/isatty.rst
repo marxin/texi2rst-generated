@@ -21,21 +21,21 @@ ISATTY --- Whether a unit is a terminal device.
     Returns ``.TRUE.`` if the :samp:`{UNIT}` is connected to a terminal 
     device, ``.FALSE.`` otherwise.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ISATTY(UNIT)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -46,6 +46,6 @@ ISATTY --- Whether a unit is a terminal device.
         END DO
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`TTYNAM`

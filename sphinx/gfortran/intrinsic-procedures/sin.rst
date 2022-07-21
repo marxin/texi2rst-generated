@@ -33,19 +33,19 @@ SIN --- Sine function
   :return:
     The return value has same type and kind as :samp:`{X}`.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = SIN(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -54,7 +54,7 @@ SIN --- Sine function
         x = sin(x)
       end program test_sin
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -85,7 +85,7 @@ SIN --- Sine function
          - ``COMPLEX(8)``
          - GNU extension
 
-  :samp:`{See also}:`
+  See also:
     Inverse function: 
     :ref:`ASIN` 
     Degrees function: 

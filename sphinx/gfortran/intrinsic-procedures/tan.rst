@@ -26,19 +26,19 @@ TAN --- Tangent function
   :return:
     The return value has same type and kind as :samp:`{X}`, and its value is in radians.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later, for a complex argument Fortran 2008 or later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = TAN(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -47,7 +47,7 @@ TAN --- Tangent function
         x = tan(x)
       end program test_tan
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -66,7 +66,7 @@ TAN --- Tangent function
          - ``REAL(8)``
          - Fortran 77 and later
 
-  :samp:`{See also}:`
+  See also:
     Inverse function: 
     :ref:`ATAN` 
     Degrees function: 

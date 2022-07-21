@@ -28,21 +28,21 @@ RENAME --- Rename a file
   :param STATUS:
     (Optional) Shall be of default ``INTEGER`` type.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine, function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL RENAME(PATH1, PATH2 [, STATUS])
       STATUS = RENAME(PATH1, PATH2)
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`LINK`

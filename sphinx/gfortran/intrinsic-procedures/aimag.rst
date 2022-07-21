@@ -32,19 +32,19 @@ AIMAG --- Imaginary part of complex number
     The return value is of type ``REAL`` with the
     kind type parameter of the argument.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later, has overloads that are GNU extensions
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = AIMAG(Z)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -56,7 +56,7 @@ AIMAG --- Imaginary part of complex number
         print *, aimag(z4), dimag(z8)
       end program test_aimag
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1

@@ -26,23 +26,23 @@ ALLOCATED --- Status of an allocatable entity
     kind type parameter.  If the argument is allocated, then the result is
     ``.TRUE.`` ; otherwise, it returns ``.FALSE.`` 
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later.  Note, the ``SCALAR=`` keyword and allocatable
     scalar entities are available in Fortran 2003 and later.
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ALLOCATED(ARRAY)
       RESULT = ALLOCATED(SCALAR) 
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

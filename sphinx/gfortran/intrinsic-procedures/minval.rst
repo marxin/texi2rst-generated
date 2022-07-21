@@ -41,22 +41,22 @@ MINVAL --- Minimum value of an array
     the size of :samp:`{ARRAY}` with the :samp:`{DIM}` dimension removed.  In all
     cases, the result is of the same type and kind as :samp:`{ARRAY}`.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = MINVAL(ARRAY, DIM [, MASK])
       RESULT = MINVAL(ARRAY [, MASK])
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`MIN`, 
     :ref:`MINLOC`

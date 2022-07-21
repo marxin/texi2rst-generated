@@ -28,19 +28,19 @@ BESSEL_Y0 --- Bessel function of the second kind of order 0
   :return:
     The return value is of type ``REAL``. It has the same kind as :samp:`{X}`.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 2008 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = BESSEL_Y0(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -49,7 +49,7 @@ BESSEL_Y0 --- Bessel function of the second kind of order 0
         x = bessel_y0(x)
       end program test_besy0
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1

@@ -22,20 +22,20 @@ MINEXPONENT --- Minimum exponent of a real kind
     The return value is of type ``INTEGER`` and of the default integer
     kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = MINEXPONENT(X)
 
-  :samp:`{Example}:`
+  Example:
 
     See ``MAXEXPONENT`` for an example.

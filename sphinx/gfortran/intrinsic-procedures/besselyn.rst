@@ -40,26 +40,26 @@ BESSEL_YN --- Bessel function of the second kind
     The return value is a scalar of type ``REAL``. It has the same
     kind as :samp:`{X}`.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 2008 and later, negative :samp:`{N}` is allowed as GNU extension
 
-  :samp:`{Class}:`
+  Class:
     Elemental function, except for the transformational function
     ``BESSEL_YN(N1, N2, X)``
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = BESSEL_YN(N, X)
       RESULT = BESSEL_YN(N1, N2, X)
 
-  :samp:`{Note}:`
+  Note:
     The transformational function uses a recurrence algorithm which might,
     for some values of :samp:`{X}`, lead to different results than calls to
     the elemental function.
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -68,7 +68,7 @@ BESSEL_YN --- Bessel function of the second kind
         x = bessel_yn(5,x)
       end program test_besyn
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1

@@ -24,22 +24,22 @@ UNLINK --- Remove a file from the file system
   :param STATUS:
     (Optional) Shall be of default ``INTEGER`` type.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine, function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL UNLINK(PATH [, STATUS])
       STATUS = UNLINK(PATH)
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`LINK`, 
     :ref:`SYMLNK`

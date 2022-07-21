@@ -18,21 +18,21 @@ GERROR --- Get last system error message
   :param RESULT:
     Shall be of type ``CHARACTER`` and of default kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL GERROR(RESULT)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -42,7 +42,7 @@ GERROR --- Get last system error message
         WRITE(*,*) msg
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`IERRNO`, 
     :ref:`PERROR`

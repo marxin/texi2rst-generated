@@ -41,19 +41,19 @@ ATAN2 --- Arctangent function
     :samp:`{Y}` is negative zero.  Finally, if :samp:`{X}` is zero, then the
     magnitude of the result is \pi/2.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ATAN2(Y, X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -62,7 +62,7 @@ ATAN2 --- Arctangent function
         x = atan2(y,x)
       end program test_atan2
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -81,7 +81,7 @@ ATAN2 --- Arctangent function
          - ``REAL(8)``
          - Fortran 77 and later
 
-  :samp:`{See also}:`
+  See also:
     Alias: 
     :ref:`ATAN` 
     Degrees function: 

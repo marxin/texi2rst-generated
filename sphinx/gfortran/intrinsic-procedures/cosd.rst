@@ -35,19 +35,19 @@ COSD --- Cosine function, degrees
     of the result is in degrees.  If :samp:`{X}` is of the type ``REAL``,
     the return value lies in the range -1 \leq \cosd (x) \leq 1.
 
-  :samp:`{Standard}:`
+  Standard:
     GNU extension, enabled with :option:`-fdec-math`.
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = COSD(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -56,7 +56,7 @@ COSD --- Cosine function, degrees
         x = cosd(x)
       end program test_cosd
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -87,7 +87,7 @@ COSD --- Cosine function, degrees
          - ``COMPLEX(8)``
          - GNU extension
 
-  :samp:`{See also}:`
+  See also:
     Inverse function: 
     :ref:`ACOSD` 
     Radians function: 

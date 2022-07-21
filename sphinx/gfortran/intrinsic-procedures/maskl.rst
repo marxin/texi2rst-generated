@@ -27,20 +27,20 @@ MASKL --- Left justified mask
     specifies the kind value of the return type; otherwise, it is of the
     default integer kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2008 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = MASKL(I[, KIND])
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`MASKR`

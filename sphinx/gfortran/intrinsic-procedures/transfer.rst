@@ -35,21 +35,21 @@ TRANSFER --- Transfer bit patterns
     of the bitwise representation of :samp:`{SOURCE}`.   If :samp:`{SIZE}` is absent
     and :samp:`{MOLD}` is a scalar, the result is a scalar.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = TRANSFER(SOURCE, MOLD[, SIZE])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

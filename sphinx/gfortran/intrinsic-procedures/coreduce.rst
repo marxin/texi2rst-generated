@@ -52,21 +52,21 @@ CO_REDUCE --- Reduction of values on the current set of images
   :param ERRMSG:
     (optional) a scalar character variable
 
-  :samp:`{Standard}:`
+  Standard:
 
     Technical Specification (TS) 18508 or later
 
-  :samp:`{Class}:`
+  Class:
 
     Collective subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL CO_REDUCE(A, OPERATION, [, RESULT_IMAGE, STAT, ERRMSG])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -85,14 +85,14 @@ CO_REDUCE --- Reduction of values on the current set of images
         end function myprod
       end program test
 
-  :samp:`{Note}:`
+  Note:
 
     While the rules permit in principle an intrinsic function, none of the
     intrinsics in the standard fulfill the criteria of having a specific
     function, which takes two arguments of the same type and returning that
     type as result.
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`CO_MIN`, 
     :ref:`CO_MAX`, 

@@ -47,21 +47,21 @@ GET_ENVIRONMENT_VARIABLE --- Get an environmental variable
     are significant; otherwise they are not part of the environment variable
     name.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL GET_ENVIRONMENT_VARIABLE(NAME[, VALUE, LENGTH, STATUS, TRIM_NAME)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

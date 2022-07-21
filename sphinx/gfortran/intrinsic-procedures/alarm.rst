@@ -33,21 +33,21 @@ ALARM --- Execute a routine after a given delay
     (Optional) :samp:`{STATUS}` shall be a scalar
     variable of the default ``INTEGER`` kind. It is ``INTENT(OUT)``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL ALARM(SECONDS, HANDLER [, STATUS])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

@@ -34,21 +34,21 @@ SELECTED_REAL_KIND --- Choose real kind
     criteria, the kind of the data type with the smallest decimal precision
     is returned. If no real data type matches the criteria, the result is
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later, with ``RADIX`` Fortran 2008 or later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = SELECTED_REAL_KIND([P, R, RADIX])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -65,7 +65,7 @@ SELECTED_REAL_KIND --- Choose real kind
         print *, precision(z), range(z)
       end program real_kinds
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`PRECISION`, 
     :ref:`RANGE`, 

@@ -27,21 +27,21 @@ MALLOC --- Allocate dynamic memory
     variables of type ``INTEGER(K)`` have the same size as
     C pointers (``sizeof(void *)``).
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       PTR = MALLOC(SIZE)
 
-  :samp:`{Example}:`
+  Example:
 
     The following example demonstrates the use of ``MALLOC`` and
     ``FREE`` with Cray pointers.
@@ -66,6 +66,6 @@ MALLOC --- Allocate dynamic memory
         call free(ptr_x)
       end program test_malloc
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`FREE`

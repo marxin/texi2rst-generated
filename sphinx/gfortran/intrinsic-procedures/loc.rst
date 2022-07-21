@@ -22,21 +22,21 @@ LOC --- Returns the address of a variable
     corresponding to the size (in bytes) of a memory address on the target
     machine.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = LOC(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

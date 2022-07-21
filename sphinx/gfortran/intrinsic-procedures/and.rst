@@ -32,21 +32,21 @@ AND --- Bitwise logical AND
     converted to an ``INTEGER`` with the kind type parameter of
     the other argument as-if a call to :ref:`INT` occurred.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = AND(I, J)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -59,7 +59,7 @@ AND --- Bitwise logical AND
         WRITE (*,*) AND(a, b)
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     Fortran 95 elemental function: 
     :ref:`IAND`

@@ -32,19 +32,19 @@ INT --- Convert to integer type
     These functions return a ``INTEGER`` variable or array under 
     the following rules: 
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later, with boz-literal-constant Fortran 2008 and later.
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = INT(A [, KIND))
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -55,7 +55,7 @@ INT --- Convert to integer type
         print *, int(z), int(z,8)
       end program
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1

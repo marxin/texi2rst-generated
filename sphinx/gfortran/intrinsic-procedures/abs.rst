@@ -43,19 +43,19 @@ ABS --- Absolute value
     kind as the argument except the return value is ``REAL`` for a
     ``COMPLEX`` argument.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later, has overloads that are GNU extensions
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = ABS(A)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -68,7 +68,7 @@ ABS --- Absolute value
         x = abs(z)
       end program test_abs
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1

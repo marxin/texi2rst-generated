@@ -23,21 +23,21 @@ INT8 --- Convert to 64-bit integer type
   :return:
     The return value is a ``INTEGER(8)`` variable.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = INT8(A)
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`INT`, 
     :ref:`INT2`

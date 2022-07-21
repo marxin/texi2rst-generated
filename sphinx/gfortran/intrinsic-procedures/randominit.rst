@@ -32,21 +32,21 @@ RANDOM_INIT --- Initialize a pseudo-random number generator
     ``.false.``, the seed is set to a value that does depend which image called
     ``RANDOM_INIT``.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2018
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL RANDOM_INIT(REPEATABLE, IMAGE_DISTINCT)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -61,7 +61,7 @@ RANDOM_INIT --- Initialize a pseudo-random number generator
         if (any(x /= y)) call abort
       end program test_random_seed
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`RANDOM_NUMBER`, 
     :ref:`RANDOM_SEED`

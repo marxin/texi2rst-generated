@@ -22,21 +22,21 @@ ISNAN --- Test for a NaN
     Returns a default-kind ``LOGICAL``. The returned value is ``TRUE``
     if :samp:`{X}` is a NaN and ``FALSE`` otherwise.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       ISNAN(X)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 

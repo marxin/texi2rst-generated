@@ -24,21 +24,21 @@ IDATE --- Get current local time subroutine (day/month/year)
   :return:
     Does not return anything.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL IDATE(VALUES)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -50,6 +50,6 @@ IDATE --- Get current local time subroutine (day/month/year)
         print *, tarray(3)
       end program test_idate
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`DATE_AND_TIME`

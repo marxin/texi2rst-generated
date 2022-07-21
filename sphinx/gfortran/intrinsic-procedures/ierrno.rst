@@ -19,24 +19,24 @@ IERRNO --- Get the last system error number
     The return value is of type ``INTEGER`` and of the default integer
     kind.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = IERRNO()
 
-  :samp:`{Arguments}:`
+  Arguments:
 
     None
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`PERROR`

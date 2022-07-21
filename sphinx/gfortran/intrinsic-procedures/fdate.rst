@@ -25,22 +25,22 @@ FDATE --- Get the current time as a string
   :return:
     The current date and time as a string.
 
-  :samp:`{Standard}:`
+  Standard:
 
     GNU extension
 
-  :samp:`{Class}:`
+  Class:
 
     Subroutine, function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       CALL FDATE(DATE).
       DATE = FDATE().
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -56,7 +56,7 @@ FDATE --- Get the current time as a string
           print *, 'Program ended on ', date
       end program test_fdate
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`DATE_AND_TIME`, 
     :ref:`CTIME`

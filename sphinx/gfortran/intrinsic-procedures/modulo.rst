@@ -26,21 +26,21 @@ MODULO --- Modulo function
     The type and kind of the result are those of the arguments.  (As a GNU
     extension, kind is the largest kind of the actual arguments.)
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 95 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = MODULO(A, P)
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -55,6 +55,6 @@ MODULO --- Modulo function
         print *, modulo(17.5,-5.5)
       end program
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`MOD`

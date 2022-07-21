@@ -42,19 +42,19 @@ INDEX --- Position of a substring within a string
     The return value is of type ``INTEGER`` and of kind :samp:`{KIND}`. If
     :samp:`{KIND}` is absent, the return value is of default integer kind.
 
-  :samp:`{Standard}:`
+  Standard:
     Fortran 77 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
     Elemental function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = INDEX(STRING, SUBSTRING [, BACK [, KIND]])
 
-  :samp:`{Specific names}:`
+  Specific names:
 
     .. list-table::
        :header-rows: 1
@@ -69,7 +69,7 @@ INDEX --- Position of a substring within a string
          - ``INTEGER(4)``
          - Fortran 77 and later
 
-  :samp:`{See also}:`
+  See also:
     :ref:`SCAN`, 
     :ref:`VERIFY`
 

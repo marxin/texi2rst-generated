@@ -30,22 +30,22 @@ IPARITY --- Bitwise XOR of array elements
   :return:
     The result is of the same type as :samp:`{ARRAY}`.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 2008 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Transformational function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = IPARITY(ARRAY[, MASK])
       RESULT = IPARITY(ARRAY, DIM[, MASK])
 
-  :samp:`{Example}:`
+  Example:
 
     .. code-block:: fortran
 
@@ -59,7 +59,7 @@ IPARITY --- Bitwise XOR of array elements
         PRINT '(b8.8)', IPARITY(a)
       END PROGRAM
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`IANY`, 
     :ref:`IALL`, 

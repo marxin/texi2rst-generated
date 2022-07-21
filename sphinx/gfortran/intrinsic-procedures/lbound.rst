@@ -35,21 +35,21 @@ LBOUND --- Lower dimension bounds of an array
     structure component, or if it has a zero extent along the relevant
     dimension, the lower bound is taken to be 1.
 
-  :samp:`{Standard}:`
+  Standard:
 
     Fortran 90 and later, with :samp:`{KIND}` argument Fortran 2003 and later
 
-  :samp:`{Class}:`
+  Class:
 
     Inquiry function
 
-  :samp:`{Syntax}:`
+  Syntax:
 
     .. code-block:: fortran
 
       RESULT = LBOUND(ARRAY [, DIM [, KIND]])
 
-  :samp:`{See also}:`
+  See also:
 
     :ref:`UBOUND`, 
     :ref:`LCOBOUND`
