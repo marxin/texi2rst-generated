@@ -7,8 +7,8 @@
 
 .. _isatty:
 
-ISATTY --- Whether a unit is a terminal device.
-***********************************************
+ISATTY --- Whether a unit is a terminal device
+**********************************************
 
 .. function:: ISATTY(UNIT)
 
