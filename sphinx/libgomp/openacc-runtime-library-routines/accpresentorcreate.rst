@@ -21,8 +21,7 @@ Description
   Note that ``acc_present_or_create`` and ``acc_pcreate`` exist for
   backward compatibility with OpenACC 2.0; use :ref:`acc_create` instead.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
@@ -30,8 +29,7 @@ Description
      * - *Prototype*:
        - ``void *acc_pcreate(h_void *a, size_t len)``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -55,7 +53,6 @@ Description
      * -
        - ``integer len``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.21.

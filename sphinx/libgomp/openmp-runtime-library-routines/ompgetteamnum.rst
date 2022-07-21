@@ -8,24 +8,20 @@
 omp_get_team_num -- Get team number
 ***********************************
 
-:samp:`{Description}:`
-
+Description:
   Returns the team number of the calling thread.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``int omp_get_team_num(void);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
        - ``integer function omp_get_team_num()``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.33.

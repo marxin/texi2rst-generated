@@ -10,17 +10,14 @@
 OMP_DYNAMIC -- Dynamic adjustment of threads
 ********************************************
 
-:samp:`{Description}:`
-
+Description:
   Enable or disable the dynamic adjustment of the number of threads 
   within a team.  The value of this environment variable shall be 
   ``TRUE`` or ``FALSE``.  If undefined, dynamic adjustment is
   disabled by default.
 
-:samp:`{See also}:`
-
+See also:
   :ref:`omp_set_dynamic`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.3

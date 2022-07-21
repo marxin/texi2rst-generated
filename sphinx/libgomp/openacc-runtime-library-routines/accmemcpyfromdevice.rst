@@ -13,14 +13,12 @@ Description
   device memory specified by the device address :samp:`{dest}` for a length of
   :samp:`{bytes}` bytes.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``acc_memcpy_from_device(d_void *dest, h_void *src, size_t bytes);``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.32.

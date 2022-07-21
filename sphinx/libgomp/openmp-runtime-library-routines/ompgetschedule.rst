@@ -8,22 +8,19 @@
 omp_get_schedule -- Obtain the runtime scheduling method
 ********************************************************
 
-:samp:`{Description}:`
-
+Description:
   Obtain the runtime scheduling method.  The :samp:`{kind}` argument will be
   set to the value ``omp_sched_static``, ``omp_sched_dynamic``,
   ``omp_sched_guided`` or ``omp_sched_auto``.  The second argument,
   :samp:`{chunk_size}`, is set to the chunk size.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``void omp_get_schedule(omp_sched_t *kind, int *chunk_size);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -33,10 +30,8 @@ omp_get_schedule -- Obtain the runtime scheduling method
      * -
        - ``integer chunk_size``
 
-:samp:`{See also}:`
-
+See also:
   :ref:`omp_set_schedule`, :ref:`OMP_SCHEDULE`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.13.

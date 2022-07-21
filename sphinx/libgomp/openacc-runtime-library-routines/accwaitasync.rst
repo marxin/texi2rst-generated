@@ -12,15 +12,13 @@ Description
   This function enqueues a wait operation on queue :samp:`{async}` for any and all
   asynchronous operations enqueued on queue :samp:`{arg}`.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``acc_wait_async(int arg, int async);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -28,7 +26,6 @@ Description
      * -
        - ``integer(acc_handle_kind) arg, async``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.12.

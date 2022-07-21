@@ -8,8 +8,7 @@
 omp_get_nested -- Nested parallel regions
 *****************************************
 
-:samp:`{Description}:`
-
+Description:
   This function returns ``true`` if nested parallel regions are
   enabled, ``false`` otherwise.  Here, ``true`` and ``false``
   represent their language-specific counterparts.
@@ -29,25 +28,21 @@ omp_get_nested -- Nested parallel regions
   regions with ``omp_set_max_active_levels`` to one to disable, or
   above one to enable.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``int omp_get_nested(void);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
        - ``logical function omp_get_nested()``
 
-:samp:`{See also}:`
-
+See also:
   :ref:`omp_set_max_active_levels`, :ref:`omp_set_nested`,
   :ref:`OMP_MAX_ACTIVE_LEVELS`, :ref:`OMP_NESTED`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.11.

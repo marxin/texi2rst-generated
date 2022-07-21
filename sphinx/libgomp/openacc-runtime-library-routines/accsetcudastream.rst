@@ -17,14 +17,12 @@ Description
 
   The return value is not specified.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``int acc_set_cuda_stream(int async, void *stream);``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   A.2.1.4.

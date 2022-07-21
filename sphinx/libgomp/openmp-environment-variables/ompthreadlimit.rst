@@ -10,16 +10,13 @@
 OMP_THREAD_LIMIT -- Set the maximum number of threads
 *****************************************************
 
-:samp:`{Description}:`
-
+Description:
   Specifies the number of threads to use for the whole program.  The
   value of this variable shall be a positive integer.  If undefined,
   the number of threads is not limited.
 
-:samp:`{See also}:`
-
+See also:
   :ref:`OMP_NUM_THREADS`, :ref:`omp_get_thread_limit`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.10

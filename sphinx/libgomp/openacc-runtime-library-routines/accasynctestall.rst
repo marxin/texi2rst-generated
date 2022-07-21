@@ -15,15 +15,13 @@ Description
   any asynchronous operation has not completed, C/C++ returns a zero and
   Fortran returns a ``false``.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``int acc_async_test_all(void);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -31,7 +29,6 @@ Description
      * -
        - ``logical acc_get_device_num``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.10.

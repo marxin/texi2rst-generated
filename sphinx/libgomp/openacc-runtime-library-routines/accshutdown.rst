@@ -12,15 +12,13 @@ Description
   This function shuts down the runtime for the device type specified in
   :samp:`{devicetype}`.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``acc_shutdown(acc_device_t devicetype);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -28,7 +26,6 @@ Description
      * -
        - ``integer(acc_device_kind) devicetype``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.8.

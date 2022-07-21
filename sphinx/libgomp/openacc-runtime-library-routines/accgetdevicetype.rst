@@ -17,15 +17,13 @@ Description
   ``acc_ev_device_init_start``, ``acc_ev_device_init_end``
   callbacks of the OpenACC Profiling Interface (:ref:`openacc-profiling-interface`), that is, if the device is currently being initialized.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``acc_device_t acc_get_device_type(void);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -33,7 +31,6 @@ Description
      * -
        - ``integer(kind=acc_device_kind) acc_get_device_type``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.3.

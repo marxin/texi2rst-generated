@@ -8,20 +8,17 @@
 omp_destroy_nest_lock -- Destroy nested lock
 ********************************************
 
-:samp:`{Description}:`
-
+Description:
   Destroy a nested lock.  In order to be destroyed, a nested lock must be
   in the unlocked state and its nesting count must equal zero.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``void omp_destroy_nest_lock(omp_nest_lock_t *);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -29,10 +26,8 @@ omp_destroy_nest_lock -- Destroy nested lock
      * -
        - ``integer(omp_nest_lock_kind), intent(inout) :: nvar``
 
-:samp:`{See also}:`
-
+See also:
   :ref:`omp_init_lock`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.3.

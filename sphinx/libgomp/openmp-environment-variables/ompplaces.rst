@@ -10,8 +10,7 @@
 OMP_PLACES -- Specifies on which CPUs the theads should be placed
 *****************************************************************
 
-:samp:`{Description}:`
-
+Description:
   The thread placement can be either specified using an abstract name or by an
   explicit list of the places.  The abstract names ``threads``, ``cores``,
   ``sockets``, ``ll_caches`` and ``numa_domains`` can be optionally
@@ -47,11 +46,9 @@ OMP_PLACES -- Specifies on which CPUs the theads should be placed
   :envvar:`OMP_PROC_BIND` is either unset or ``false``, threads may be moved
   between CPUs following no placement policy.
 
-:samp:`{See also}:`
-
+See also:
   :ref:`OMP_PROC_BIND`, :ref:`GOMP_CPU_AFFINITY`, :ref:`omp_get_proc_bind`,
   :ref:`OMP_DISPLAY_ENV`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.5

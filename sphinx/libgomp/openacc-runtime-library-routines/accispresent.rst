@@ -21,15 +21,13 @@ Description
   memory is mapped to device memory, then a ``true`` is returned. Otherwise,
   a ``false`` is return to indicate the mapped memory is not present.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``int acc_is_present(h_void *a, size_t len);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -47,7 +45,6 @@ Description
      * -
        - ``logical acc_is_present``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.30.

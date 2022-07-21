@@ -8,22 +8,18 @@
 acc_prof_unregister -- Unregister callbacks.
 ********************************************
 
-:samp:`{Description}:`
-
+Description:
   This function unregisters callbacks.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``void acc_prof_unregister (acc_event_t, acc_prof_callback, acc_register_t);``
 
-:samp:`{See also}:`
-
+See also:
   :ref:`openacc-profiling-interface`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   5.3.

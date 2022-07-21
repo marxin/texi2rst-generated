@@ -17,8 +17,7 @@ Description
   a contiguous array section. The second form :samp:`{a}` specifies a variable or
   array element and :samp:`{len}` specifies the length in bytes.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
@@ -26,8 +25,7 @@ Description
      * - *Prototype*:
        - ``void *acc_create_async(h_void *a, size_t len, int async);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -55,7 +53,6 @@ Description
      * -
        - ``integer(acc_handle_kind) :: async``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.21.

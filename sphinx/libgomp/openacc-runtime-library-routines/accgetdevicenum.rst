@@ -13,15 +13,13 @@ Description
   type :samp:`{devicetype}`, will be used when executing a parallel or kernels
   region.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``int acc_get_device_num(acc_device_t devicetype);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -31,7 +29,6 @@ Description
      * -
        - ``integer acc_get_device_num``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.5.

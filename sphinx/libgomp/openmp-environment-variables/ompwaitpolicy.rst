@@ -10,18 +10,15 @@
 OMP_WAIT_POLICY -- How waiting threads are handled
 **************************************************
 
-:samp:`{Description}:`
-
+Description:
   Specifies whether waiting threads should be active or passive.  If
   the value is ``PASSIVE``, waiting threads should not consume CPU
   power while waiting; while the value is ``ACTIVE`` specifies that
   they should.  If undefined, threads wait actively for a short time
   before waiting passively.
 
-:samp:`{See also}:`
-
+See also:
   :ref:`GOMP_SPINCOUNT`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.8

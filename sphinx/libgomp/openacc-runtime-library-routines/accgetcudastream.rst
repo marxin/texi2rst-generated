@@ -12,14 +12,12 @@ Description
   This function returns the CUDA stream handle for the queue :samp:`{async}`.
   This handle is the same as used by the CUDA Runtime or Driver API's.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``void *acc_get_cuda_stream(int async);``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   A.2.1.3.

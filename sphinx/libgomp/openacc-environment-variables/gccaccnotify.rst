@@ -8,6 +8,5 @@
 GCC_ACC_NOTIFY
 **************
 
-:samp:`{Description}:`
-
+Description:
   Print debug information pertaining to the accelerator.

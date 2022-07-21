@@ -8,29 +8,24 @@
 omp_get_level -- Obtain the current nesting level
 *************************************************
 
-:samp:`{Description}:`
-
+Description:
   This function returns the nesting level for the parallel blocks,
   which enclose the calling call.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``int omp_get_level(void);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
        - ``integer function omp_level()``
 
-:samp:`{See also}:`
-
+See also:
   :ref:`omp_get_active_level`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.17.

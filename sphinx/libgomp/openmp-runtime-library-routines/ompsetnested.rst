@@ -8,8 +8,7 @@
 omp_set_nested -- Enable/disable nested parallel regions
 ********************************************************
 
-:samp:`{Description}:`
-
+Description:
   Enable or disable nested parallel regions, i.e., whether team members
   are allowed to create new teams.  The function takes the language-specific
   equivalent of ``true`` and ``false``, where ``true`` enables 
@@ -19,15 +18,13 @@ omp_set_nested -- Enable/disable nested parallel regions
   active nested regions to the maximum supported.  Disabling nested parallel
   regions will set the maximum number of active nested regions to one.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``void omp_set_nested(int nested);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -35,11 +32,9 @@ omp_set_nested -- Enable/disable nested parallel regions
      * -
        - ``logical, intent(in) :: nested``
 
-:samp:`{See also}:`
-
+See also:
   :ref:`omp_get_nested`, :ref:`omp_set_max_active_levels`,
   :ref:`OMP_MAX_ACTIVE_LEVELS`, :ref:`OMP_NESTED`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.10.

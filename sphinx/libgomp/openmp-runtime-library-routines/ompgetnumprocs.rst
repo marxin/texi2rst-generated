@@ -8,24 +8,20 @@
 omp_get_num_procs -- Number of processors online
 ************************************************
 
-:samp:`{Description}:`
-
+Description:
   Returns the number of processors online on that device.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``int omp_get_num_procs(void);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
        - ``integer function omp_get_num_procs()``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.5.

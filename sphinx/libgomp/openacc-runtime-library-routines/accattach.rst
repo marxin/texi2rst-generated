@@ -12,8 +12,7 @@ Description
   This function updates a pointer on the device from pointing to a host-pointer
   address to pointing to the corresponding device data.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
@@ -21,7 +20,6 @@ Description
      * - *Prototype*:
        - ``acc_attach_async(h_void **ptr, int async);``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.34.

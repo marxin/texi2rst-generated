@@ -13,15 +13,13 @@ Description
   specified by :samp:`{devicenum}`, associated with the specified device
   type :samp:`{devicetype}`.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``acc_set_device_num(int devicenum, acc_device_t devicetype);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -31,7 +29,6 @@ Description
      * -
        - ``integer(kind=acc_device_kind) devicetype``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.4.

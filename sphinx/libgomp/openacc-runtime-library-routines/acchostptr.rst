@@ -12,14 +12,12 @@ Description
   This function returns the host address that has been mapped to the
   device address specified by :samp:`{d}`.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``void *acc_hostptr(d_void *d);``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.29.

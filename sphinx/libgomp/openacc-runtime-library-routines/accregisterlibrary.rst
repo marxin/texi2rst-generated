@@ -8,22 +8,18 @@
 acc_register_library -- Library registration.
 *********************************************
 
-:samp:`{Description}:`
-
+Description:
   Function for library registration.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``void acc_register_library (acc_prof_reg, acc_prof_reg, acc_prof_lookup_func);``
 
-:samp:`{See also}:`
-
+See also:
   :ref:`openacc-profiling-interface`, :ref:`ACC_PROFLIB`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   5.3.

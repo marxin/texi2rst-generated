@@ -12,8 +12,7 @@ Description
   This function waits for completion of the asynchronous operation
   specified in :samp:`{arg}`.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
@@ -21,8 +20,7 @@ Description
      * - *Prototype (OpenACC 1.0 compatibility)*:
        - ``acc_async_wait(arg);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -34,7 +32,6 @@ Description
      * -
        - ``integer(acc_handle_kind) arg``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.11.

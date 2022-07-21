@@ -13,14 +13,12 @@ Description
   memory is specified with the device address :samp:`{d}`. The host memory is
   specified with the host address :samp:`{h}` and a length of :samp:`{len}`.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``acc_map_data(h_void *h, d_void *d, size_t len);``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.26.

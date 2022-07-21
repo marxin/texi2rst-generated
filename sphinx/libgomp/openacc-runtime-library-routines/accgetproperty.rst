@@ -27,8 +27,7 @@ Description
   The parameter ``acc_device_property`` will continue to be provided,
   but might be removed in a future version of GCC.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
@@ -36,8 +35,7 @@ Description
      * - *Prototype*:
        - ``const char *acc_get_property_string(int devicenum, acc_device_t devicetype, acc_device_property_t property);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -57,7 +55,6 @@ Description
      * -
        - ``character(*) string``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.6.

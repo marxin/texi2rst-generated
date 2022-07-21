@@ -21,8 +21,7 @@ Description
   Note that ``acc_present_or_copyin`` and ``acc_pcopyin`` exist for
   backward compatibility with OpenACC 2.0; use :ref:`acc_copyin` instead.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
@@ -30,8 +29,7 @@ Description
      * - *Prototype*:
        - ``void *acc_pcopyin(h_void *a, size_t len);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -55,7 +53,6 @@ Description
      * -
        - ``integer len``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.20.

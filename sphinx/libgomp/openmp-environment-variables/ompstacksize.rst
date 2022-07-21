@@ -10,8 +10,7 @@
 OMP_STACKSIZE -- Set default thread stack size
 **********************************************
 
-:samp:`{Description}:`
-
+Description:
   Set the default thread stack size in kilobytes, unless the number
   is suffixed by ``B``, ``K``, ``M`` or ``G``, in which
   case the size is, respectively, in bytes, kilobytes, megabytes
@@ -21,6 +20,5 @@ OMP_STACKSIZE -- Set default thread stack size
   stack size is left unchanged.  If undefined, the stack size is system
   dependent.
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.7

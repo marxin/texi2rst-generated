@@ -8,20 +8,17 @@
 omp_init_nest_lock -- Initialize nested lock
 ********************************************
 
-:samp:`{Description}:`
-
+Description:
   Initialize a nested lock.  After initialization, the lock is in
   an unlocked state and the nesting count is set to zero.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``void omp_init_nest_lock(omp_nest_lock_t *lock);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -29,10 +26,8 @@ omp_init_nest_lock -- Initialize nested lock
      * -
        - ``integer(omp_nest_lock_kind), intent(out) :: nvar``
 
-:samp:`{See also}:`
-
+See also:
   :ref:`omp_destroy_nest_lock`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.1.

@@ -8,22 +8,18 @@
 acc_prof_lookup -- Obtain inquiry functions.
 ********************************************
 
-:samp:`{Description}:`
-
+Description:
   Function to obtain inquiry functions.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``acc_query_fn acc_prof_lookup (const char *);``
 
-:samp:`{See also}:`
-
+See also:
   :ref:`openacc-profiling-interface`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   5.3.

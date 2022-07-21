@@ -8,8 +8,7 @@
 omp_get_dynamic -- Dynamic teams setting
 ****************************************
 
-:samp:`{Description}:`
-
+Description:
   This function returns ``true`` if enabled, ``false`` otherwise. 
   Here, ``true`` and ``false`` represent their language-specific 
   counterparts.
@@ -19,24 +18,20 @@ omp_get_dynamic -- Dynamic teams setting
   ``omp_set_dynamic``.  If undefined, dynamic adjustment is
   disabled by default.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``int omp_get_dynamic(void);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
        - ``logical function omp_get_dynamic()``
 
-:samp:`{See also}:`
-
+See also:
   :ref:`omp_set_dynamic`, :ref:`OMP_DYNAMIC`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.8.

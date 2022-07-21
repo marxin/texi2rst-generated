@@ -12,14 +12,12 @@ Description
   This function allocates :samp:`{len}` bytes of device memory. It returns
   the device address of the allocated memory.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``d_void* acc_malloc(size_t len);``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.18.

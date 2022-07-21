@@ -8,22 +8,19 @@
 omp_set_nest_lock -- Wait for and set nested lock
 *************************************************
 
-:samp:`{Description}:`
-
+Description:
   Before setting a nested lock, the lock variable must be initialized by 
   ``omp_init_nest_lock``.  The calling thread is blocked until the lock
   is available.  If the lock is already held by the current thread, the
   nesting count for the lock is incremented.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``void omp_set_nest_lock(omp_nest_lock_t *lock);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -31,10 +28,8 @@ omp_set_nest_lock -- Wait for and set nested lock
      * -
        - ``integer(omp_nest_lock_kind), intent(inout) :: nvar``
 
-:samp:`{See also}:`
-
+See also:
   :ref:`omp_init_nest_lock`, :ref:`omp_unset_nest_lock`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.4.

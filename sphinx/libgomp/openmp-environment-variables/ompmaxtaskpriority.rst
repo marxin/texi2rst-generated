@@ -12,17 +12,14 @@ number that can be set for a task.
 
 .. index:: Environment Variable
 
-:samp:`{Description}:`
-
+Description:
   Specifies the initial value for the maximum priority value that can be
   set for a task.  The value of this variable shall be a non-negative
   integer, and zero is allowed.  If undefined, the default priority is
   0.
 
-:samp:`{See also}:`
-
+See also:
   :ref:`omp_get_max_task_priority`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.14

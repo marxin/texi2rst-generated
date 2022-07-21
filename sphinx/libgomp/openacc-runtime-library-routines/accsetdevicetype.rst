@@ -12,15 +12,13 @@ Description
   This function indicates to the runtime library which device type, specified
   in :samp:`{devicetype}`, to use when executing a parallel or kernels region. 
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``acc_set_device_type(acc_device_t devicetype);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -28,7 +26,6 @@ Description
      * -
        - ``integer(kind=acc_device_kind) devicetype``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenACC specification v2.6 <https://www.openacc.org>`_, section
   3.2.2.

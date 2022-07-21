@@ -8,29 +8,24 @@
 omp_get_active_level -- Number of parallel regions
 **************************************************
 
-:samp:`{Description}:`
-
+Description:
   This function returns the nesting level for the active parallel blocks,
   which enclose the calling call.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``int omp_get_active_level(void);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
        - ``integer function omp_get_active_level()``
 
-:samp:`{See also}:`
-
+See also:
   :ref:`omp_get_level`, :ref:`omp_get_max_active_levels`, :ref:`omp_set_max_active_levels`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.20.

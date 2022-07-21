@@ -8,26 +8,22 @@
 omp_in_parallel -- Whether a parallel region is active
 ******************************************************
 
-:samp:`{Description}:`
-
+Description:
   This function returns ``true`` if currently running in parallel,
   ``false`` otherwise.  Here, ``true`` and ``false`` represent
   their language-specific counterparts.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``int omp_in_parallel(void);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
        - ``logical function omp_in_parallel()``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.6.

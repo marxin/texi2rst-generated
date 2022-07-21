@@ -8,8 +8,7 @@
 omp_set_schedule -- Set the runtime scheduling method
 *****************************************************
 
-:samp:`{Description}:`
-
+Description:
   Sets the runtime scheduling method.  The :samp:`{kind}` argument can have the
   value ``omp_sched_static``, ``omp_sched_dynamic``,
   ``omp_sched_guided`` or ``omp_sched_auto``.  Except for
@@ -17,15 +16,13 @@ omp_set_schedule -- Set the runtime scheduling method
   :samp:`{chunk_size}` if positive, or to the default value if zero or negative.
   For ``omp_sched_auto`` the :samp:`{chunk_size}` argument is ignored.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``void omp_set_schedule(omp_sched_t kind, int chunk_size);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -35,11 +32,9 @@ omp_set_schedule -- Set the runtime scheduling method
      * -
        - ``integer chunk_size``
 
-:samp:`{See also}:`
-
+See also:
   :ref:`omp_get_schedule`
   :ref:`OMP_SCHEDULE`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.12.

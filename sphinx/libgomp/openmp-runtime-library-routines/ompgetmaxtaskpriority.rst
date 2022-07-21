@@ -10,24 +10,20 @@ omp_get_max_task_priority -- Maximum priority value
 
 that can be set for tasks.
 
-:samp:`{Description}:`
-
+Description:
   This function obtains the maximum allowed priority number for tasks.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``int omp_get_max_task_priority(void);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
        - ``integer function omp_get_max_task_priority()``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.29.

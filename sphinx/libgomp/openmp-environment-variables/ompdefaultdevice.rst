@@ -10,18 +10,15 @@
 OMP_DEFAULT_DEVICE -- Set the device used in target regions
 ***********************************************************
 
-:samp:`{Description}:`
-
+Description:
   Set to choose the device which is used in a ``target`` region, unless the
   value is overridden by ``omp_set_default_device`` or by a ``device``
   clause.  The value shall be the nonnegative device number. If no device with
   the given device number exists, the code is executed on the host.  If unset,
   device number 0 will be used.
 
-:samp:`{See also}:`
-
+See also:
   :ref:`omp_get_default_device`, :ref:`omp_set_default_device`,
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.13

@@ -8,23 +8,20 @@
 omp_unset_lock -- Unset simple lock
 ***********************************
 
-:samp:`{Description}:`
-
+Description:
   A simple lock about to be unset must have been locked by ``omp_set_lock``
   or ``omp_test_lock`` before.  In addition, the lock must be held by the
   thread calling ``omp_unset_lock``.  Then, the lock becomes unlocked.  If one
   or more threads attempted to set the lock before, one of them is chosen to,
   again, set the lock to itself.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``void omp_unset_lock(omp_lock_t *lock);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -32,10 +29,8 @@ omp_unset_lock -- Unset simple lock
      * -
        - ``integer(omp_lock_kind), intent(inout) :: svar``
 
-:samp:`{See also}:`
-
+See also:
   :ref:`omp_set_lock`, :ref:`omp_test_lock`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.5.

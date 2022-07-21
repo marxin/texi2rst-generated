@@ -10,15 +10,12 @@
 OMP_CANCELLATION -- Set whether cancellation is activated
 *********************************************************
 
-:samp:`{Description}:`
-
+Description:
   If set to ``TRUE``, the cancellation is activated.  If set to ``FALSE`` or
   if unset, cancellation is disabled and the ``cancel`` construct is ignored.
 
-:samp:`{See also}:`
-
+See also:
   :ref:`omp_get_cancellation`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.11

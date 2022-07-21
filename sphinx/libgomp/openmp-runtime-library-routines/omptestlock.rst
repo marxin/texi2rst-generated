@@ -8,23 +8,20 @@
 omp_test_lock -- Test and set simple lock if available
 ******************************************************
 
-:samp:`{Description}:`
-
+Description:
   Before setting a simple lock, the lock variable must be initialized by 
   ``omp_init_lock``.  Contrary to ``omp_set_lock``, ``omp_test_lock`` 
   does not block if the lock is not available.  This function returns
   ``true`` upon success, ``false`` otherwise.  Here, ``true`` and
   ``false`` represent their language-specific counterparts.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``int omp_test_lock(omp_lock_t *lock);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
@@ -32,10 +29,8 @@ omp_test_lock -- Test and set simple lock if available
      * -
        - ``integer(omp_lock_kind), intent(inout) :: svar``
 
-:samp:`{See also}:`
-
+See also:
   :ref:`omp_init_lock`, :ref:`omp_set_lock`, :ref:`omp_set_lock`
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.6.

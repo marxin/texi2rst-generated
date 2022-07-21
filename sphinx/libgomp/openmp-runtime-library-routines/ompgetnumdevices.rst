@@ -8,24 +8,20 @@
 omp_get_num_devices -- Number of target devices
 ***********************************************
 
-:samp:`{Description}:`
-
+Description:
   Returns the number of target devices.
 
-:samp:`{C/C++}:`
-
+C/C++:
   .. list-table::
 
      * - *Prototype*:
        - ``int omp_get_num_devices(void);``
 
-:samp:`{Fortran}:`
-
+Fortran:
   .. list-table::
 
      * - *Interface*:
        - ``integer function omp_get_num_devices()``
 
-:samp:`{Reference}:`
-
+Reference:
   `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.31.
