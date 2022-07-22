@@ -3,6 +3,7 @@ Demo documentation
 
 .. toctree::
 
+  comparison
   demo
   demo2
 
