@@ -82,3 +82,26 @@ which results in:
     :returns: a result.
     :retval NULL: under some conditions.
     :retval NULL: under some other conditions as well.
+
+PDF output
+**********
+
+Cross-manual references
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Again, PDF version contains many references which are handy with preview feature:
+
+Texinfo version:
+
+.. image:: images/texinfo-pdf-link.png
+
+Sphinx version:
+
+.. image:: images/sphinx-pdf-link.png
+
+Code highlighting
+~~~~~~~~~~~~~~~~~
+
+Again, the PDF version provides built-in syntax highlighting provided by Pygments package:
+
+.. image:: images/sphinx-pdf-code.png
