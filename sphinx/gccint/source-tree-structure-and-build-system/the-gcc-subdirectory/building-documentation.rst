@@ -32,8 +32,13 @@ with your distributions. In order to do so, it is recommended to install
 Sphinx inside a virtual environment, using ``virtualenv-3``
 or ``virtualenv``, depending on how your distribution packaged Python 3.
 
-The HTML documentation uses RTD theme. Depending on the Sphinx version,
-it should be installed separately, with ``pip install sphinx_rtd_theme``.
+The HTML documentation uses Furo theme and some Sphinx extensions.
+Depending on the Sphinx version, it should be installed separately,
+with:
+
+::
+
+  pip install furo sphinx_copybutton
 
 The PDF documentation needs `python3-Sphinx-latex` that installs the
 corresponding XeLaTeX package. Moreover, `texlive-tex-gyre` texlive package
