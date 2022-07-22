@@ -9,7 +9,7 @@ OpenMP 5.2
 **********
 
 New features listed in Appendix B of the OpenMP specification
-*************************************************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
    :header-rows: 1
@@ -102,7 +102,7 @@ New features listed in Appendix B of the OpenMP specification
      -
 
 Other new OpenMP 5.2 features
-*****************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
    :header-rows: 1

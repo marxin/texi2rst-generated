@@ -9,7 +9,7 @@ OpenMP 5.0
 **********
 
 New features listed in Appendix B of the OpenMP specification
-*************************************************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. This list is sorted as in OpenMP 5.1's B.3 not as in OpenMP 5.0's B.2
 
@@ -197,7 +197,7 @@ New features listed in Appendix B of the OpenMP specification
      -
 
 Other new OpenMP 5.0 features
-*****************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
    :header-rows: 1
