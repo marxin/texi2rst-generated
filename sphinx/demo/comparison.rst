@@ -57,3 +57,28 @@ Sphinx (using Intersphinx extension) provides an elagant way how to cross refere
 (e.g. ``:ref:`gcc:amd-gcn-options``` :ref:`gcc:amd-gcn-options`)
 
 .. image:: images/sphinx-cross-refs.png
+
+Function documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Sphinx provides very rich directives when documenting a function, it's arguments, return value, etc.
+
+.. code-block:: rst
+
+    .. c:function:: PyObject *PyType_GenericAlloc(PyTypeObject *type, Py_ssize_t nitems)
+
+    :param type: description of the first parameter.
+    :param nitems: description of the second parameter.
+    :returns: a result.
+    :retval NULL: under some conditions.
+    :retval NULL: under some other conditions as well.
+
+which results in:
+
+.. c:function:: PyObject *PyType_GenericAlloc(PyTypeObject *type, Py_ssize_t nitems)
+
+    :param type: description of the first parameter.
+    :param nitems: description of the second parameter.
+    :returns: a result.
+    :retval NULL: under some conditions.
+    :retval NULL: under some other conditions as well.
