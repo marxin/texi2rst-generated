@@ -128,8 +128,14 @@ Options That Control Static Analysis
   :option:`-Wno-analyzer-fd-access-mode-mismatch`
   to disable it.
 
-  This diagnostic warns for paths through code in which a 
-  ``read`` on a write-only file descriptor is attempted, or vice versa
+  This diagnostic warns for paths through code in which a
+  ``read`` on a write-only file descriptor is attempted, or vice versa.
+
+  This diagnostic also warns for code paths in a which a function with attribute
+  ``fd_arg_read (N)`` is called with a file descriptor opened with
+  ``O_WRONLY`` at referenced argument ``N`` or a function with attribute
+  ``fd_arg_write (N)`` is called with a file descriptor opened with
+  ``O_RDONLY`` at referenced argument :samp:`{N}`.
 
 .. option:: -Wanalyzer-fd-access-mode-mismatch
 
@@ -141,7 +147,7 @@ Options That Control Static Analysis
   :option:`-Wno-analyzer-fd-double-close`
   to disable it.
 
-  This diagnostic warns for paths through code in which a 
+  This diagnostic warns for paths through code in which a
   file descriptor can be closed more than once.
 
 .. option:: -Wanalyzer-fd-double-close
@@ -154,7 +160,7 @@ Options That Control Static Analysis
   :option:`-Wno-analyzer-fd-leak`
   to disable it.
 
-  This diagnostic warns for paths through code in which an 
+  This diagnostic warns for paths through code in which an
   open file descriptor is leaked.
 
 .. option:: -Wanalyzer-fd-leak
@@ -167,8 +173,13 @@ Options That Control Static Analysis
   :option:`-Wno-analyzer-fd-use-after-close`
   to disable it.
 
-  This diagnostic warns for paths through code in which a 
+  This diagnostic warns for paths through code in which a
   read or write is called on a closed file descriptor.
+
+  This diagnostic also warns for paths through code in which
+  a function with attribute ``fd_arg (N)`` or ``fd_arg_read (N)``
+  or ``fd_arg_write (N)`` is called with a closed file descriptor at
+  referenced argument ``N``.
 
 .. option:: -Wanalyzer-fd-use-after-close
 
@@ -180,8 +191,13 @@ Options That Control Static Analysis
   :option:`-Wno-analyzer-fd-use-without-check`
   to disable it.
 
-  This diagnostic warns for paths through code in which a 
+  This diagnostic warns for paths through code in which a
   file descriptor is used without being checked for validity.
+
+  This diagnostic also warns for paths through code in which
+  a function with attribute ``fd_arg (N)`` or ``fd_arg_read (N)``
+  or ``fd_arg_write (N)`` is called with a file descriptor, at referenced
+  argument ``N``, without being checked for validity.
 
 .. option:: -Wanalyzer-fd-use-without-check
 

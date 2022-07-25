@@ -458,6 +458,46 @@ The following attributes are supported on most targets.
   For other linkers that cannot generate resolution file,
   explicit :gcc-attr:`externally_visible` attributes are still necessary.
 
+.. index:: fd_arg function attribute
+
+.. gcc-attr:: fd_arg, fd_arg (N)
+
+  The :gcc-attr:`fd_arg` attribute may be applied to a function that takes an open
+  file descriptor at referenced argument :samp:`{N}`.
+
+  It indicates that the passed filedescriptor must not have been closed.
+  Therefore, when the analyzer is enabled with :option:`-fanalyzer`, the
+  analyzer may emit a :option:`-Wanalyzer-fd-use-after-close` diagnostic
+  if it detects a code path in which a function with this attribute is
+  called with a closed file descriptor.
+
+  The attribute also indicates that the file descriptor must have been checked for
+  validity before usage. Therefore, analyzer may emit
+  :option:`-Wanalyzer-fd-use-without-check` diagnostic if it detects a code path in
+  which a function with this attribute is called with a file descriptor that has
+  not been checked for validity.
+
+.. index:: fd_arg_read function attribute
+
+.. gcc-attr:: fd_arg_read, fd_arg_read (N)
+
+  The :gcc-attr:`fd_arg_read` is identical to :gcc-attr:`fd_arg`, but with the additional
+  requirement that it might read from the file descriptor, and thus, the file
+  descriptor must not have been opened as write-only.
+
+  The analyzer may emit a :option:`-Wanalyzer-access-mode-mismatch`
+  diagnostic if it detects a code path in which a function with this
+  attribute is called on a file descriptor opened with ``O_WRONLY``.
+
+.. index:: fd_arg_write function attribute
+
+.. gcc-attr:: fd_arg_write, fd_arg_write (N)
+
+  The :gcc-attr:`fd_arg_write` is identical to :gcc-attr:`fd_arg_read` except that the
+  analyzer may emit a :option:`-Wanalyzer-access-mode-mismatch` diagnostic if
+  it detects a code path in which a function with this attribute is called on a
+  file descriptor opened with ``O_RDONLY``.
+
 .. index:: flatten function attribute
 
 .. gcc-attr:: flatten
