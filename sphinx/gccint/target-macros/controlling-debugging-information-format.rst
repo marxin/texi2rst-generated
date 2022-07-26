@@ -314,6 +314,12 @@ Here are macros for DWARF output.
   Define this macro if GCC should produce dwarf version 2 format
   debugging output in response to the :option:`-g` option.
 
+  To support optional call frame debugging information, you must also
+  define ``INCOMING_RETURN_ADDR_RTX`` and either set
+  ``RTX_FRAME_RELATED_P`` on the prologue insns if you use RTL for the
+  prologue, or call ``dwarf2out_def_cfa`` and ``dwarf2out_reg_save``
+  as appropriate from ``TARGET_ASM_FUNCTION_PROLOGUE`` if you don't.
+
 .. function:: int TARGET_DWARF_CALLING_CONVENTION (const_tree function)
 
   .. hook-start:TARGET_DWARF_CALLING_CONVENTION
@@ -323,12 +329,6 @@ Here are macros for DWARF output.
   value for the ``DW_CC_`` tag.
 
 .. hook-end
-
-To support optional call frame debugging information, you must also
-define ``INCOMING_RETURN_ADDR_RTX`` and either set
-``RTX_FRAME_RELATED_P`` on the prologue insns if you use RTL for the
-prologue, or call ``dwarf2out_def_cfa`` and ``dwarf2out_reg_save``
-as appropriate from ``TARGET_ASM_FUNCTION_PROLOGUE`` if you don't.
 
 .. function:: int TARGET_DWARF_CALLING_CONVENTION (const_tree function)
 
