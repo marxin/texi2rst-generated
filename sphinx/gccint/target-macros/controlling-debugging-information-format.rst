@@ -322,13 +322,19 @@ Here are macros for DWARF output.
   be emitted for each function.  Instead of an integer return the enum
   value for the ``DW_CC_`` tag.
 
-  .. hook-end
+.. hook-end
 
-  To support optional call frame debugging information, you must also
-  define ``INCOMING_RETURN_ADDR_RTX`` and either set
-  ``RTX_FRAME_RELATED_P`` on the prologue insns if you use RTL for the
-  prologue, or call ``dwarf2out_def_cfa`` and ``dwarf2out_reg_save``
-  as appropriate from ``TARGET_ASM_FUNCTION_PROLOGUE`` if you don't.
+To support optional call frame debugging information, you must also
+define ``INCOMING_RETURN_ADDR_RTX`` and either set
+``RTX_FRAME_RELATED_P`` on the prologue insns if you use RTL for the
+prologue, or call ``dwarf2out_def_cfa`` and ``dwarf2out_reg_save``
+as appropriate from ``TARGET_ASM_FUNCTION_PROLOGUE`` if you don't.
+
+.. function:: int TARGET_DWARF_CALLING_CONVENTION (const_tree function)
+
+  Define this to enable the dwarf attribute ``DW_AT_calling_convention`` to
+  be emitted for each function.  Instead of an integer return the enum
+  value for the ``DW_CC_`` tag.
 
 .. c:macro:: DWARF2_FRAME_INFO
 
