@@ -322,11 +322,11 @@ Here are macros for DWARF output.
 
 .. function:: int TARGET_DWARF_CALLING_CONVENTION (const_tree function)
 
-  .. hook-start:TARGET_DWARF_CALLING_CONVENTION
+    .. hook-start:TARGET_DWARF_CALLING_CONVENTION
 
-  Define this to enable the dwarf attribute ``DW_AT_calling_convention`` to
-  be emitted for each function.  Instead of an integer return the enum
-  value for the ``DW_CC_`` tag.
+    Define this to enable the dwarf attribute ``DW_AT_calling_convention`` to
+    be emitted for each function.  Instead of an integer return the enum
+    value for the ``DW_CC_`` tag.
 
 .. hook-end
 
