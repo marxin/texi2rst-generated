@@ -32,17 +32,25 @@ with your distributions. In order to do so, it is recommended to install
 Sphinx inside a virtual environment, using ``virtualenv-3``
 or ``virtualenv``, depending on how your distribution packaged Python 3.
 
-The HTML documentation uses Furo theme and some Sphinx extensions.
-Depending on the Sphinx version, it should be installed separately,
-with:
+::
+
+  virtualenv /tmp/venv && /tmp/venv/bin/pip install Sphinx furo sphinx_copybutton
+
+The virtualenv Sphinx can be then used by providing `SPHINXBUILD` environment variable.
+
+::
+
+  make SPHINXBUILD=/tmp/venv/bin/sphinx-build
+
+The HTML documentation uses `Furo <https://pradyunsg.me/furo/>`_ theme and some Sphinx extensions.
+If you use a system Sphinx, then the addition pacakges needs to be installed with pip:
 
 ::
 
   pip install furo sphinx_copybutton
 
-The PDF documentation needs `python3-Sphinx-latex` that installs the
-corresponding XeLaTeX package. Moreover, `texlive-tex-gyre` texlive package
-is needed.
+The PDF documentation needs `python3-Sphinx-latex`  and `texlive-tex-gyre`
+that provides the corresponding XeLaTeX packages.
 
 Writing Documentation
 =====================
