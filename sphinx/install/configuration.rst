@@ -1795,8 +1795,14 @@ corresponding :option:`--without` option.
   shorthand assumption is not correct, you can use the explicit
   include and lib options directly.
 
-  These flags are applicable to the host platform only.  When building
-  a cross compiler, they will not be used to configure target libraries.
+.. option:: --with-sphinx-build
+
+  The documentation depends on ``Sphinx`` version |needs_sphinx| and you can provide
+  an alternative path to ``sphinx-build`` which can be easily installed in
+  a virtual environment. For more information, please see :ref:`gccint:sphinx_install`.
+
+These flags are applicable to the host platform only.  When building
+a cross compiler, they will not be used to configure target libraries.
 
 Cross-Compiler-Specific Options
 ===============================

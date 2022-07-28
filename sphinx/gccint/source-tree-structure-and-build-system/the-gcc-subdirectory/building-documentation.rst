@@ -17,6 +17,8 @@ PDF format (:command:`make pdf`) and EPUB format (:command:`make epub`).
 .. _Sphinx: http://www.sphinx-doc.org/
 .. _reStructuredText: http://docutils.sourceforge.net/rst.html
 
+.. _sphinx_install:
+
 Sphinx Install
 ==============
 
@@ -36,11 +38,12 @@ or ``virtualenv``, depending on how your distribution packaged Python 3.
 
   virtualenv /tmp/venv && /tmp/venv/bin/pip install Sphinx furo sphinx_copybutton
 
-The virtualenv Sphinx can be then used by providing `SPHINXBUILD` environment variable.
+Then the virtualenv can be provided to the configure script :option:`install:--with-sphinx-build`
+and will be used by the build system:
 
 ::
 
-  make SPHINXBUILD=/tmp/venv/bin/sphinx-build
+  $ configure --with-sphinx-build=/tmp/venv/bin/sphinx-build
 
 The HTML documentation uses `Furo <https://pradyunsg.me/furo/>`_ theme and some Sphinx extensions.
 If you use a system Sphinx, then the addition pacakges needs to be installed with pip:
