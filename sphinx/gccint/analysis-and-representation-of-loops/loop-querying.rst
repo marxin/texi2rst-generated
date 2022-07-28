@@ -72,7 +72,7 @@ The most important functions to query loop structures are:
 
 * ``single_exit`` : Returns the single exit edge of the loop, or
   ``NULL`` if the loop has more than one exit.  You can only use this
-  function if LOOPS_HAVE_MARKED_SINGLE_EXITS property is used.
+  function if ``LOOPS_HAVE_RECORDED_EXITS`` is used.
 
 * ``get_loop_exit_edges`` : Enumerates the exit edges of a loop.
 
