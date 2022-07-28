@@ -105,3 +105,8 @@ This works: :option:`--verbose <make --verbose>`
 .. option:: -foo=BAR, -f BAR BAZ
 
    Normal option values.
+
+Formatting
+==========
+
+just a test
