@@ -45,6 +45,8 @@ I'm a demo documentation page.
 
 Enable it all :)
 
+Test this: :option:`-Wall-like-all <-Wall>`.
+
 I am a :command:`super-command`.
 I am **strong** and I am *emphasis*.
 
