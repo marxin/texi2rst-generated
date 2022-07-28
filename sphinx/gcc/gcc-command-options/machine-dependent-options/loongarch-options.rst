@@ -178,3 +178,14 @@ These command-line options are defined for LoongArch targets:
 
     The default code model is ``normal``.
 
+.. option:: -mexplicit-relocs, -mno-explicit-relocs
+
+  Use or do not use assembler relocation operators when dealing with symbolic
+  addresses.  The alternative is to use assembler macros instead, which may
+  limit optimization.  The default value for the option is determined during
+  GCC build-time by detecting corresponding assembler support:
+  ``-mexplicit-relocs`` if said support is present,
+  ``-mno-explicit-relocs`` otherwise.  This option is mostly useful for
+  debugging, or interoperation with assemblers different from the build-time
+  one.
+
