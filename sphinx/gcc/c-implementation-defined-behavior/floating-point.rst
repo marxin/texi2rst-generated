@@ -55,7 +55,8 @@ Floating Point
   7.6.1).
 
   This pragma is not implemented, but the default is to 'off' unless
-  :option:`-frounding-math` is used in which case it is 'on'.
+  :option:`-frounding-math` is used and :option:`-fno-trapping-math` is not
+  in which case it is 'on'.
 
 * Additional floating-point exceptions, rounding modes, environments,
   and classifications, and their macro names (C99 and C11 7.6, C99 and

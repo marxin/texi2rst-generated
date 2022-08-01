@@ -35,6 +35,7 @@ Options That Control Static Analysis
   :option:`-Wanalyzer-null-dereference` |gol|
   :option:`-Wanalyzer-possible-null-argument` |gol|
   :option:`-Wanalyzer-possible-null-dereference` |gol|
+  :option:`-Wanalyzer-putenv-of-auto-var` |gol|
   :option:`-Wanalyzer-shift-count-negative` |gol|
   :option:`-Wanalyzer-shift-count-overflow` |gol|
   :option:`-Wanalyzer-stale-setjmp-buffer` |gol|
@@ -77,7 +78,7 @@ Options That Control Static Analysis
   a buffer is assigned to point at a buffer with a size that is not a
   multiple of ``sizeof (*pointer)``.
 
-  See https://cwe.mitre.org/data/definitions/131.htmlCWE-131: Incorrect Calculation of Buffer Size.
+  See `CWE-131: Incorrect Calculation of Buffer Size <https://cwe.mitre.org/data/definitions/131.html>`_.
 
 .. option:: -Wanalyzer-allocation-size
 
@@ -90,6 +91,8 @@ Options That Control Static Analysis
 
   This diagnostic warns for paths through the code in which a ``FILE *``
   can have ``fclose`` called on it more than once.
+
+  See `CWE-1341: Multiple Releases of Same Resource or Handle <https://cwe.mitre.org/data/definitions/1341.html>`_.
 
 .. option:: -Wanalyzer-double-fclose
 
@@ -104,6 +107,8 @@ Options That Control Static Analysis
   can have a deallocator called on it more than once, either ``free``,
   or a deallocator referenced by attribute ``malloc``.
 
+  See `CWE-415: Double Free <https://cwe.mitre.org/data/definitions/415.html>`_.
+
 .. option:: -Wanalyzer-double-free
 
   Default setting; overrides :option:`-Wno-analyzer-double-free`.
@@ -117,6 +122,8 @@ Options That Control Static Analysis
   This diagnostic warns for paths through the code in which a
   security-sensitive value is written to an output file
   (such as writing a password to a log file).
+
+  See `CWE-532: Information Exposure Through Log Files <https://cwe.mitre.org/data/definitions/532.html>`_.
 
 .. option:: -Wanalyzer-exposure-through-output-file
 
@@ -150,6 +157,8 @@ Options That Control Static Analysis
   This diagnostic warns for paths through code in which a
   file descriptor can be closed more than once.
 
+  See `CWE-1341: Multiple Releases of Same Resource or Handle <https://cwe.mitre.org/data/definitions/1341.html>`_.
+
 .. option:: -Wanalyzer-fd-double-close
 
   Default setting; overrides :option:`-Wno-analyzer-fd-double-close`.
@@ -162,6 +171,8 @@ Options That Control Static Analysis
 
   This diagnostic warns for paths through code in which an
   open file descriptor is leaked.
+
+  See `CWE-775: Missing Release of File Descriptor or Handle after Effective Lifetime <https://cwe.mitre.org/data/definitions/775.html>`_.
 
 .. option:: -Wanalyzer-fd-leak
 
@@ -212,6 +223,8 @@ Options That Control Static Analysis
   This diagnostic warns for paths through the code in which a
   ``<stdio.h>`` ``FILE *`` stream object is leaked.
 
+  See `CWE-775: Missing Release of File Descriptor or Handle after Effective Lifetime <https://cwe.mitre.org/data/definitions/775.html>`_.
+
 .. option:: -Wanalyzer-file-leak
 
   Default setting; overrides :option:`-Wno-analyzer-file-leak`.
@@ -224,6 +237,8 @@ Options That Control Static Analysis
 
   This diagnostic warns for paths through the code in which ``free``
   is called on a non-heap pointer (e.g. an on-stack buffer, or a global).
+
+  See `CWE-590: Free of Memory not on the Heap <https://cwe.mitre.org/data/definitions/590.html>`_.
 
 .. option:: -Wanalyzer-free-of-non-heap
 
@@ -238,6 +253,8 @@ Options That Control Static Analysis
   This diagnostic warns for paths through the code in which a
   pointer allocated via an allocator is leaked: either ``malloc``,
   or a function marked with attribute ``malloc``.
+
+  See `CWE-401: Missing Release of Memory after Effective Lifetime <https://cwe.mitre.org/data/definitions/401.html>`_.
 
 .. option:: -Wanalyzer-malloc-leak
 
@@ -256,6 +273,8 @@ Options That Control Static Analysis
   and vector ``delete[]``, and those marked as allocator/deallocator
   pairs using attribute ``malloc``.
 
+  See `CWE-762: Mismatched Memory Management Routines <https://cwe.mitre.org/data/definitions/762.html>`_.
+
 .. option:: -Wanalyzer-mismatching-deallocation
 
   Default setting; overrides :option:`-Wno-analyzer-mismatching-deallocation`.
@@ -270,6 +289,8 @@ Options That Control Static Analysis
   with ``__attribute__((nonnull))`` as requiring a non-NULL
   value.
 
+  See `CWE-690: Unchecked Return Value to NULL Pointer Dereference <https://cwe.mitre.org/data/definitions/690.html>`_.
+
 .. option:: -Wanalyzer-possible-null-argument
 
   Default setting; overrides :option:`-Wno-analyzer-possible-null-argument`.
@@ -281,6 +302,8 @@ Options That Control Static Analysis
 
   This diagnostic warns for paths through the code in which a
   possibly-NULL value is dereferenced.
+
+  See `CWE-690: Unchecked Return Value to NULL Pointer Dereference <https://cwe.mitre.org/data/definitions/690.html>`_.
 
 .. option:: -Wanalyzer-possible-null-dereference
 
@@ -296,6 +319,8 @@ Options That Control Static Analysis
   with ``__attribute__((nonnull))`` as requiring a non-NULL
   value.
 
+  See `CWE-476: NULL Pointer Dereference <https://cwe.mitre.org/data/definitions/476.html>`_.
+
 .. option:: -Wanalyzer-null-argument
 
   Default setting; overrides :option:`-Wno-analyzer-null-argument`.
@@ -308,9 +333,26 @@ Options That Control Static Analysis
   This diagnostic warns for paths through the code in which a
   value known to be NULL is dereferenced.
 
+  See `CWE-476: NULL Pointer Dereference <https://cwe.mitre.org/data/definitions/476.html>`_.
+
 .. option:: -Wanalyzer-null-dereference
 
   Default setting; overrides :option:`-Wno-analyzer-null-dereference`.
+
+.. option:: -Wno-analyzer-putenv-of-auto-var
+
+  This warning requires :option:`-fanalyzer`, which enables it; use
+  :option:`-Wno-analyzer-possible-null-dereference` to disable it.
+
+  This diagnostic warns for paths through the code in which a
+  call to ``putenv`` is passed a pointer to an automatic variable
+  or an on-stack buffer.
+
+  See `POS34-C. Do not call putenv() with a pointer to an automatic variable as the argument <https://wiki.sei.cmu.edu/confluence/x/6NYxBQ>`_.
+
+.. option:: -Wanalyzer-putenv-of-auto-var
+
+  Default setting; overrides :option:`-Wno-analyzer-putenv-of-auto-var`.
 
 .. option:: -Wno-analyzer-shift-count-negative
 
@@ -378,7 +420,11 @@ Options That Control Static Analysis
   inject an excessively large allocation and potentially cause a denial
   of service attack.
 
+<<<<<<< HEAD
   See `CWE-789 <https://cwe.mitre.org/data/definitions/789.html>`_: Memory Allocation with Excessive Size Value.
+=======
+  See `CWE-789: Memory Allocation with Excessive Size Value <https://cwe.mitre.org/data/definitions/789.html>`_.
+>>>>>>> raw
 
 .. option:: -Wanalyzer-tainted-allocation-size
 
@@ -395,7 +441,11 @@ Options That Control Static Analysis
   of an array access without being sanitized, so that an attacker
   could inject an out-of-bounds access.
 
+<<<<<<< HEAD
   See `CWE-129 <https://cwe.mitre.org/data/definitions/129.html>`_: Improper Validation of Array Index.
+=======
+  See `CWE-129: Improper Validation of Array Index <https://cwe.mitre.org/data/definitions/129.html>`_.
+>>>>>>> raw
 
 .. option:: -Wanalyzer-tainted-array-index
 
@@ -412,6 +462,8 @@ Options That Control Static Analysis
   in a division or modulus operation without being sanitized, so that
   an attacker could inject a division-by-zero.
 
+  See `CWE-369: Divide By Zero <https://cwe.mitre.org/data/definitions/369.html>`_.
+
 .. option:: -Wanalyzer-tainted-divisor
 
   Default setting; overrides :option:`-Wno-analyzer-tainted-divisor`.
@@ -427,7 +479,11 @@ Options That Control Static Analysis
   without being sanitized, so that an attacker could inject an out-of-bounds
   access.
 
+<<<<<<< HEAD
   See `CWE-823 <https://cwe.mitre.org/data/definitions/823.html>`_: Use of Out-of-range Pointer Offset.
+=======
+  See `CWE-823: Use of Out-of-range Pointer Offset <https://cwe.mitre.org/data/definitions/823.html>`_.
+>>>>>>> raw
 
 .. option:: -Wanalyzer-tainted-offset
 
@@ -444,6 +500,8 @@ Options That Control Static Analysis
   an operation such as ``memset`` without being sanitized, so that an
   attacker could inject an out-of-bounds access.
 
+  See `CWE-129: Improper Validation of Array Index <https://cwe.mitre.org/data/definitions/129.html>`_.
+
 .. option:: -Wanalyzer-tainted-size
 
   Default setting; overrides :option:`-Wno-analyzer-tainted-size`.
@@ -457,6 +515,8 @@ Options That Control Static Analysis
   function known to be async-signal-unsafe (such as ``fprintf``) is
   called from a signal handler.
 
+  See `CWE-479: Signal Handler Use of a Non-reentrant Function <https://cwe.mitre.org/data/definitions/479.html>`_.
+
 .. option:: -Wanalyzer-unsafe-call-within-signal-handler
 
   Default setting; overrides :option:`-Wno-analyzer-unsafe-call-within-signal-handler`.
@@ -469,6 +529,8 @@ Options That Control Static Analysis
   This diagnostic warns for paths through the code in which a
   pointer is used after a deallocator is called on it: either ``free``,
   or a deallocator referenced by attribute ``malloc``.
+
+  See `CWE-416: Use After Free <https://cwe.mitre.org/data/definitions/416.html>`_.
 
 .. option:: -Wanalyzer-use-after-free
 
@@ -498,6 +560,8 @@ Options That Control Static Analysis
   passed to a variadic call, but uses a type that does not match that of
   the expression passed to the call.
 
+  See `CWE-686: Function Call With Incorrect Argument Type <https://cwe.mitre.org/data/definitions/686.html>`_.
+
 .. option:: -Wanalyzer-va-arg-type-mismatch
 
   Default setting; overrides :option:`-Wno-analyzer-va-arg-type-mismatch`.
@@ -512,6 +576,8 @@ Options That Control Static Analysis
   the analyzer detects an attempt to use ``va_arg`` to access the next
   value passed to a variadic call, but all of the values in the
   ``va_list`` have already been consumed.
+
+  See `CWE-685: Function Call With Incorrect Number of Arguments <https://cwe.mitre.org/data/definitions/685.html>`_.
 
 .. option:: -Wanalyzer-va-list-exhausted
 
@@ -583,6 +649,8 @@ Options That Control Static Analysis
 
   This diagnostic warns for paths through the code in which an uninitialized
   value is used.
+
+  See `CWE-457: Use of Uninitialized Variable <https://cwe.mitre.org/data/definitions/457.html>`_.
 
 .. option:: -Wanalyzer-use-of-uninitialized-value
 

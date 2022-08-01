@@ -298,6 +298,7 @@ in the following sections.
   :option:`-Wno-analyzer-null-dereference` |gol|
   :option:`-Wno-analyzer-possible-null-argument` |gol|
   :option:`-Wno-analyzer-possible-null-dereference` |gol|
+  :option:`-Wno-analyzer-putenv-of-auto-var`  |gol|
   :option:`-Wno-analyzer-shift-count-negative` |gol|
   :option:`-Wno-analyzer-shift-count-overflow` |gol|
   :option:`-Wno-analyzer-stale-setjmp-buffer` |gol|
