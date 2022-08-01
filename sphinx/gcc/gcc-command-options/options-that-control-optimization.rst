@@ -2718,6 +2718,11 @@ correctness.  All must be specifically enabled.
 
   The default is :option:`-ftrapping-math`.
 
+  Future versions of GCC may provide finer control of this setting
+  using C99's ``FENV_ACCESS`` pragma.  This command-line option
+  will be used along with :option:`-frounding-math` to specify the
+  default state for ``FENV_ACCESS``.
+
 .. option:: -ftrapping-math
 
   Default setting; overrides :option:`-fno-trapping-math`.
@@ -2740,7 +2745,8 @@ correctness.  All must be specifically enabled.
   disable all GCC optimizations that are affected by rounding mode.
   Future versions of GCC may provide finer control of this setting
   using C99's ``FENV_ACCESS`` pragma.  This command-line option
-  will be used to specify the default state for ``FENV_ACCESS``.
+  will be used along with :option:`-ftrapping-math` to specify the
+  default state for ``FENV_ACCESS``.
 
 .. option:: -fsignaling-nans
 

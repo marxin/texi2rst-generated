@@ -325,7 +325,7 @@ honor these options.
 .. option:: -fno-diagnostics-show-cwe
 
   Diagnostic messages can optionally have an associated
-  https://cwe.mitre.org/index.htmlCWE identifier.
+  `CWE <https://cwe.mitre.org/index.html>`_ identifier.
   GCC itself only provides such metadata for some of the :option:`-fanalyzer`
   diagnostics.  GCC plugins may also provide diagnostics with such metadata.
   By default, if this information is present, it will be printed with
