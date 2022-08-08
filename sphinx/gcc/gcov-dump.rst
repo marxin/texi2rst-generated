@@ -23,6 +23,7 @@ gcov-dump
      [ :option:`-l` | :option:`--long` ]
      [ :option:`-p` | :option:`--positions` ]
      [ :option:`-r` | :option:`--raw` ]
+     [ :option:`-s` | :option:`--stable` ]
      [ :samp:`{gcovfiles}` ]
 
 Options
@@ -40,6 +41,9 @@ Options
 
 ``-r`` ``--raw``
   Print content records in raw format.
+
+``-s`` ``--stable``
+  Print content in stable format usable for comparison.
 
 ``-v`` ``--version``
   Display the :command:`gcov-dump` version number (on the standard output),

@@ -29,6 +29,7 @@ Options That Control Static Analysis
   :option:`-Wanalyzer-fd-use-without-check` 
   :option:`-Wanalyzer-file-leak` 
   :option:`-Wanalyzer-free-of-non-heap` 
+  :option:`-Wanalyzer-jump-through-null` 
   :option:`-Wanalyzer-malloc-leak` 
   :option:`-Wanalyzer-mismatching-deallocation` 
   :option:`-Wanalyzer-null-argument` 
@@ -252,6 +253,19 @@ Options That Control Static Analysis
 
   Default setting; overrides :option:`-Wno-analyzer-free-of-non-heap`.
 
+.. option:: -Wno-analyzer-jump-through-null
+
+  This warning requires :option:`-fanalyzer`, which enables it; use
+  :option:`-Wno-analyzer-jump-through-null`
+  to disable it.
+
+  This diagnostic warns for paths through the code in which a ``NULL``
+  function pointer is called.
+
+.. option:: -Wanalyzer-jump-through-null
+
+  Default setting; overrides :option:`-Wno-analyzer-jump-through-null`.
+
 .. option:: -Wno-analyzer-malloc-leak
 
   This warning requires :option:`-fanalyzer`, which enables it; use
@@ -350,7 +364,7 @@ Options That Control Static Analysis
 .. option:: -Wno-analyzer-putenv-of-auto-var
 
   This warning requires :option:`-fanalyzer`, which enables it; use
-  :option:`-Wno-analyzer-possible-null-dereference` to disable it.
+  :option:`-Wno-analyzer-putenv-of-auto-var` to disable it.
 
   This diagnostic warns for paths through the code in which a
   call to ``putenv`` is passed a pointer to an automatic variable

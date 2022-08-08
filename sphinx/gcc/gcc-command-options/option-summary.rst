@@ -284,6 +284,7 @@ in the following sections.
   :option:`-Wno-analyzer-fd-use-without-check` 
   :option:`-Wno-analyzer-file-leak` 
   :option:`-Wno-analyzer-free-of-non-heap` 
+  :option:`-Wno-analyzer-jump-through-null` 
   :option:`-Wno-analyzer-malloc-leak` 
   :option:`-Wno-analyzer-mismatching-deallocation` 
   :option:`-Wno-analyzer-null-argument` 
