@@ -292,6 +292,7 @@ in the following sections.
   :option:`-Wno-analyzer-fd-use-without-check` |gol|
   :option:`-Wno-analyzer-file-leak` |gol|
   :option:`-Wno-analyzer-free-of-non-heap` |gol|
+  :option:`-Wno-analyzer-jump-through-null` |gol|
   :option:`-Wno-analyzer-malloc-leak` |gol|
   :option:`-Wno-analyzer-mismatching-deallocation` |gol|
   :option:`-Wno-analyzer-null-argument` |gol|

@@ -21,6 +21,7 @@ gcov-dump---an Offline Gcda and Gcno Profile Dump Tool
        [ :option:`-l` | :option:`--long` ]
        [ :option:`-p` | :option:`--positions` ]
        [ :option:`-r` | :option:`--raw` ]
+       [ :option:`-s` | :option:`--stable` ]
        [ :samp:`{gcovfiles}` ]
 
 .. only:: not man
@@ -55,8 +56,15 @@ Options
 
   Print content records in raw format.
 
+<<<<<<< HEAD
 .. option:: -v, --version
 
+=======
+``-s`` ``--stable``
+  Print content in stable format usable for comparison.
+
+``-v`` ``--version``
+>>>>>>> raw
   Display the :command:`gcov-dump` version number (on the standard output),
   and exit without doing any further processing.
 
