@@ -666,6 +666,118 @@ Options That Control Static Analysis
 
   Default setting; overrides :option:`-Wno-analyzer-use-of-uninitialized-value`.
 
+The analyzer has hardcoded knowledge about the behavior of the following
+memory-management functions:
+
+* ``alloca``
+
+* The built-in functions ``__builtin_alloc``,
+  ``__builtin_alloc_with_align``, 
+
+* ``__builtin_calloc``,
+  ``__builtin_free``, ``__builtin_malloc``, ``__builtin_memcpy``,
+  ``__builtin_memcpy_chk``, ``__builtin_memset``,
+  ``__builtin_memset_chk``, ``__builtin_realloc``,
+  ``__builtin_stack_restore``, and ``__builtin_stack_save``
+
+* ``calloc``
+
+* ``free``
+
+* ``malloc``
+
+* ``memset``
+
+* ``operator delete``
+
+* ``operator delete []``
+
+* ``operator new``
+
+* ``operator new []``
+
+* ``realloc``
+
+* ``strdup``
+
+* ``strndup``
+
+of the following functions for working with file descriptors:
+
+* ``open``
+
+* ``close``
+
+* ``creat``
+
+* ``dup``, ``dup2`` and ``dup3``
+
+* ``read``
+
+* ``write``
+
+of the following functions for working with ``<stdio.h>`` streams:
+
+* The built-in functions ``__builtin_fprintf``,
+  ``__builtin_fprintf_unlocked``, ``__builtin_fputc``,
+  ``__builtin_fputc_unlocked``, ``__builtin_fputs``,
+  ``__builtin_fputs_unlocked``, ``__builtin_fwrite``,
+  ``__builtin_fwrite_unlocked``, ``__builtin_printf``,
+  ``__builtin_printf_unlocked``, ``__builtin_putc``,
+  ``__builtin_putchar``, ``__builtin_putchar_unlocked``,
+  ``__builtin_putc_unlocked``, ``__builtin_puts``,
+  ``__builtin_puts_unlocked``, ``__builtin_vfprintf``, and
+  ``__builtin_vprintf``
+
+* ``fopen``
+
+* ``fclose``
+
+* ``fgets``
+
+* ``fgets_unlocked``
+
+* ``fread``
+
+* ``getchar``
+
+* ``fprintf``
+
+* ``printf``
+
+* ``fwrite``
+
+and of the following functions:
+
+* The built-in functions ``__builtin_expect``,
+  ``__builtin_expect_with_probability``, ``__builtin_strchr``,
+  ``__builtin_strcpy``, ``__builtin_strcpy_chk``,
+  ``__builtin_strlen``, ``__builtin_va_copy``, and
+  ``__builtin_va_start``
+
+* The GNU extensions ``error`` and ``error_at_line``
+
+* ``getpass``
+
+* ``longjmp``
+
+* ``putenv``
+
+* ``setjmp``
+
+* ``siglongjmp``
+
+* :gcc-attr:`signal`
+
+* ``sigsetjmp``
+
+* ``strchr``
+
+* ``strlen``
+
+In addition, various functions with an ``__analyzer_`` prefix have
+special meaning to the analyzer, described in the GCC Internals manual.
+
 Pertinent parameters for controlling the exploration are:
 :option:`--param analyzer-bb-explosion-factor`:samp:`={value}`,
 :option:`--param analyzer-max-enodes-per-program-point`:samp:`={value}`,
