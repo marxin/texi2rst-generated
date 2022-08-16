@@ -18,7 +18,6 @@ Options That Control Static Analysis
 
   Enabling this option effectively enables the following warnings:
 
-<<<<<<< HEAD
   :option:`-Wanalyzer-allocation-size` |gol|
   :option:`-Wanalyzer-double-fclose` |gol|
   :option:`-Wanalyzer-double-free` |gol|

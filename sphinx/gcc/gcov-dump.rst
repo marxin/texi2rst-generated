@@ -56,15 +56,12 @@ Options
 
   Print content records in raw format.
 
-<<<<<<< HEAD
-.. option:: -v, --version
+.. options:: -s, --stable
 
-=======
-``-s`` ``--stable``
   Print content in stable format usable for comparison.
 
-``-v`` ``--version``
->>>>>>> raw
+.. option:: -v, --version
+
   Display the :command:`gcov-dump` version number (on the standard output),
   and exit without doing any further processing.
 
