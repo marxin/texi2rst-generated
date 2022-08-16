@@ -34,6 +34,7 @@ Options That Control Static Analysis
   :option:`-Wanalyzer-mismatching-deallocation` |gol|
   :option:`-Wanalyzer-null-argument` |gol|
   :option:`-Wanalyzer-null-dereference` |gol|
+  :option:`-Wanalyzer-out-of-bounds` |gol|
   :option:`-Wanalyzer-possible-null-argument` |gol|
   :option:`-Wanalyzer-possible-null-dereference` |gol|
   :option:`-Wanalyzer-putenv-of-auto-var` |gol|
@@ -292,6 +293,22 @@ Options That Control Static Analysis
 .. option:: -Wanalyzer-mismatching-deallocation
 
   Default setting; overrides :option:`-Wno-analyzer-mismatching-deallocation`.
+
+.. option:: -Wno-analyzer-out-of-bounds
+
+  This warning requires :option:`-fanalyzer` to enable it; use
+  :option:`-Wno-analyzer-out-of-bounds` to disable it.
+
+  This diagnostic warns for path through the code in which a buffer is
+  definitely read or written out-of-bounds.  The diagnostic only applies
+  for cases where the analyzer is able to determine a constant offset and
+  for accesses past the end of a buffer, also a constant capacity.
+
+  See `CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer <https://cwe.mitre.org/data/definitions/119.html>`_.
+
+.. option:: -Wanalyzer-out-of-bounds
+
+  Default setting; overrides :option:`-Wno-analyzer-out-of-bounds`.
 
 .. option:: -Wno-analyzer-possible-null-argument
 
