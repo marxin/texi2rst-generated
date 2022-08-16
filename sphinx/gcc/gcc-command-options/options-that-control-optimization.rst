@@ -3851,9 +3851,9 @@ section includes experimental options that may produce broken code.
   .. gcc-param:: max-jump-thread-paths
 
     The maximum number of paths to consider when searching for jump threading
-    opportunities.  When arriving at a block incoming edges are only considered
-    if the number of paths to be searched sofar multiplied by the incoming
-    edge degree does not exhaust the specified maximum number of paths to
+    opportunities.  When arriving at a block, incoming edges are only considered
+    if the number of paths to be searched so far multiplied by the number of
+    incoming edges does not exhaust the specified maximum number of paths to
     consider.
 
   .. gcc-param:: max-fields-for-field-sensitive

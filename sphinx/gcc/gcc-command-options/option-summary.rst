@@ -289,6 +289,7 @@ in the following sections.
   :option:`-Wno-analyzer-mismatching-deallocation` 
   :option:`-Wno-analyzer-null-argument` 
   :option:`-Wno-analyzer-null-dereference` 
+  :option:`-Wno-analyzer-out-of-bounds` 
   :option:`-Wno-analyzer-possible-null-argument` 
   :option:`-Wno-analyzer-possible-null-dereference` 
   :option:`-Wno-analyzer-putenv-of-auto-var` 
