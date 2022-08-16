@@ -56,7 +56,7 @@ Options
 
   Print content records in raw format.
 
-.. options:: -s, --stable
+.. option:: -s, --stable
 
   Print content in stable format usable for comparison.
 
