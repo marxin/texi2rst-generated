@@ -29,6 +29,7 @@ Options That Control Static Analysis
   :option:`-Wanalyzer-fd-use-without-check` |gol|
   :option:`-Wanalyzer-file-leak` |gol|
   :option:`-Wanalyzer-free-of-non-heap` |gol|
+  :option:`-Wanalyzer-imprecise-fp-arithmetic` |gol|
   :option:`-Wanalyzer-jump-through-null` |gol|
   :option:`-Wanalyzer-malloc-leak` |gol|
   :option:`-Wanalyzer-mismatching-deallocation` |gol|
@@ -245,6 +246,21 @@ Options That Control Static Analysis
 .. option:: -Wanalyzer-free-of-non-heap
 
   Default setting; overrides :option:`-Wno-analyzer-free-of-non-heap`.
+
+.. option:: -Wno-analyzer-imprecise-fp-arithmetic
+
+  This warning requires :option:`-fanalyzer`, which enables it; use
+  :option:`-Wno-analyzer-imprecise-fp-arithmetic`
+  to disable it.
+
+  This diagnostic warns for paths through the code in which floating-point
+  arithmetic is used in locations where precise computation is needed.  This
+  diagnostic only warns on use of floating-point operands inside the
+  calculation of an allocation size at the moment.
+
+.. option:: -Wanalyzer-imprecise-fp-arithmetic
+
+  Default setting; overrides :option:`-Wno-analyzer-imprecise-fp-arithmetic`.
 
 .. option:: -Wno-analyzer-jump-through-null
 
