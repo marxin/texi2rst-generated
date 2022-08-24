@@ -934,6 +934,7 @@ in the following sections.
   :option:`-mcond-move-float`  :option:`-mno-cond-move-float` 
   :option:`-memcpy`  :option:`-mno-memcpy` :option:`-mstrict-align` :option:`-mno-strict-align` 
   :option:`-mmax-inline-memcpy-size`:samp:`={n}` 
+  :option:`-mexplicit-relocs` :option:`-mno-explicit-relocs` 
   :option:`-mcmodel`:samp:`={code-model}`
 
   *M32R/D Options*

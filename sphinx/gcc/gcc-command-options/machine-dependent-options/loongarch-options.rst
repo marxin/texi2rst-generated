@@ -146,35 +146,22 @@ These command-line options are defined for LoongArch targets:
 :samp:`-mcmodel={code-model}`
   Set the code model to one of:
 
-  :samp:`tiny-static`
-    * local symbol and global strong symbol: The data section must be within +/-2MiB addressing space.
-      The text section must be within +/-128MiB addressing space.
-
-    * global weak symbol: The got table must be within +/-2GiB addressing space.
-
-  :samp:`tiny`
-    * local symbol: The data section must be within +/-2MiB addressing space.
-      The text section must be within +/-128MiB
-      addressing space.
-
-    * global symbol: The got table must be within +/-2GiB addressing space.
+  :samp:`tiny-static (Not implemented yet)`
+  :samp:`tiny (Not implemented yet)`
 
   :samp:`normal`
-    * local symbol: The data section must be within +/-2GiB addressing space.
-      The text section must be within +/-128MiB addressing space.
+    The text segment must be within 128MB addressing space.  The data segment must
+    be within 2GB addressing space.
 
-    * global symbol: The got table must be within +/-2GiB addressing space.
+  :samp:`medium`
+    The text segment and data segment must be within 2GB addressing space.
 
-  :samp:`large`
-    * local symbol: The data section must be within +/-2GiB addressing space.
-      The text section must be within +/-128GiB addressing space.
+  :samp:`large (Not implemented yet)`
 
-    * global symbol: The got table must be within +/-2GiB addressing space.
-
-  :samp:`extreme(Not implemented yet)`
-    * local symbol: The data and text section must be within +/-8EiB addressing space.
-
-    * global symbol: The data got table must be within +/-8EiB addressing space.
+  :samp:`extreme`
+    This mode does not limit the size of the code segment and data segment.
+    The :option:`-mcmodel`:samp:`=extreme` option is incompatible with :option:`-fplt` and
+    :option:`-mno-explicit-relocs`.
 
     The default code model is ``normal``.
 
