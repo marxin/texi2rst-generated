@@ -25,7 +25,6 @@ gcc [ :option:`-c` | :option:`-S` | :option:`-E` ] [ :option:`-std`:samp:`={stan
 
 Only the most useful options are listed here; see below for the
 remainder.  :command:`g++` accepts mostly the same options as :command:`gcc`.
-
 For instructions on reporting bugs, see
 |bugurl|.
 

@@ -725,7 +725,7 @@ optimizations to be performed is desired.
   for programs that depend on that behavior.
 
   This option is enabled by default on most targets.  On Nios II ELF, it
-  defaults to off.  On AVR, CR16, and MSP430, this option is completely disabled.
+  defaults to off.  On AVR and MSP430, this option is completely disabled.
 
   Passes that use the dataflow information
   are enabled independently at different optimization levels.
@@ -3548,6 +3548,11 @@ section includes experimental options that may produce broken code.
 
     Maximum number of arguments in a PHI supported by TREE if conversion
     unless the loop is marked with simd pragma.
+
+  .. gcc-param:: vect-max-layout-candidates
+
+    The maximum number of possible vector layouts (such as permutations)
+    to consider when optimizing to-be-vectorized code.
 
   .. gcc-param:: vect-max-version-for-alignment-checks
 

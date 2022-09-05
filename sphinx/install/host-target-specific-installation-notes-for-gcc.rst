@@ -150,20 +150,6 @@ See :ref:`gcc:blackfin-options`,
 More information, and a version of binutils with support for this processor,
 are available at https://sourceforge.net/projects/adi-toolchain/.
 
-CR16
-====
-
-The CR16 CompactRISC architecture is a 16-bit architecture. This
-architecture is used in embedded applications.
-
-See :ref:`gcc:cr16-options`,
-
-Use :samp:`configure --target=cr16-elf --enable-languages=c,c++` to configure
-GCCfor building a CR16 elf cross-compiler.
-
-Use :samp:`configure --target=cr16-uclinux --enable-languages=c,c++` to
-configure GCCfor building a CR16 uclinux cross-compiler.
-
 CRIS
 ====
 
@@ -204,8 +190,7 @@ on FreeBSD 7 or later) and the use of ``__cxa_atexit`` by default
 by GCC 4.5 and above.
 
 We support FreeBSD using the ELF file format with DWARF 2 debugging
-for all CPU architectures.  You may use :option:`-gstabs` instead of
-:option:`-g`, if you really want the old debugging format.  There are
+for all CPU architectures.  There are
 no known issues with mixing object files and libraries with different
 debugging formats.  Otherwise, this release of GCC should now match
 more of the configuration used in the stock FreeBSD configuration of

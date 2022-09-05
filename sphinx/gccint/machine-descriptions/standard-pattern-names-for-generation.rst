@@ -1784,6 +1784,11 @@ xorsignm3
 
   This pattern is not allowed to ``FAIL``.
 
+  .. index:: issignalingm2 instruction pattern
+
+issignalingm2
+  Set operand 0 to 1 if operand 1 is a signaling NaN and to 0 otherwise.
+
   .. index:: cadd90m3 instruction pattern
 
 cadd90m3

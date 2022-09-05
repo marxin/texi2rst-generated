@@ -42,10 +42,8 @@ information useful for debugging do not run at all, so that
   On most systems that use stabs format, :option:`-g` enables use of extra
   debugging information that only GDB can use; this extra information
   makes debugging work better in GDB but probably makes other debuggers
-  crash or
-  refuse to read the program.  If you want to control for certain whether
-  to generate the extra information, use :option:`-gstabs+`, :option:`-gstabs`,
-  :option:`-gxcoff+`, :option:`-gxcoff`, or :option:`-gvms` (see below).
+  crash or refuse to read the program.  If you want to control for certain whether
+  to generate the extra information, use :option:`-gvms` (see below).
 
 .. option:: -ggdb
 
@@ -100,40 +98,12 @@ information useful for debugging do not run at all, so that
   Level 2 produces type information for entities (functions, data objects etc.)
   at file-scope or global-scope only.
 
-.. option:: -gstabs
-
-  Produce debugging information in stabs format (if that is supported),
-  without GDB extensions.  This is the format used by DBX on most BSD
-  systems.  On MIPS, Alpha and System V Release 4 systems this option
-  produces stabs debugging output that is not understood by DBX.
-  On System V Release 4 systems this option requires the GNU assembler.
-
-.. option:: -gstabs+
-
-  Produce debugging information in stabs format (if that is supported),
-  using GNU extensions understood only by the GNU debugger (GDB).  The
-  use of these extensions is likely to make other debuggers crash or
-  refuse to read the program.
-
-.. option:: -gxcoff
-
-  Produce debugging information in XCOFF format (if that is supported).
-  This is the format used by the DBX debugger on IBM RS/6000 systems.
-
-.. option:: -gxcoff+
-
-  Produce debugging information in XCOFF format (if that is supported),
-  using GNU extensions understood only by the GNU debugger (GDB).  The
-  use of these extensions is likely to make other debuggers crash or
-  refuse to read the program, and may cause assemblers other than the GNU
-  assembler (GAS) to fail with an error.
-
 .. option:: -gvms
 
   Produce debugging information in Alpha/VMS debug format (if that is
   supported).  This is the format used by DEBUG on Alpha/VMS systems.
 
-:samp:`-g{level}` :samp:`-ggdb{level}` :samp:`-gstabs{level}` :samp:`-gxcoff{level}` :samp:`-gvms{level}`
+:samp:`-g{level}` :samp:`-ggdb{level}` :samp:`-gvms{level}`
   Request debugging information and also use :samp:`{level}` to specify how
   much information.  The default level is 2.
 

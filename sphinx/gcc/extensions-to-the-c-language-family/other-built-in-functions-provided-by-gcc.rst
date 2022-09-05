@@ -37,6 +37,8 @@
 
 .. index:: __builtin_islessgreater
 
+.. index:: __builtin_issignaling
+
 .. index:: __builtin_isunordered
 
 .. index:: __builtin_object_size
@@ -988,6 +990,8 @@ In the same fashion, GCC provides ``fpclassify``, ``isfinite``,
 ``isinf_sign``, ``isnormal`` and ``signbit`` built-ins used with
 ``__builtin_`` prefixed.  The ``isinf`` and ``isnan``
 built-in functions appear both with and without the ``__builtin_`` prefix.
+With ``-ffinite-math-only`` option the ``isinf`` and ``isnan``
+built-in functions will always return 0.
 
 GCC provides built-in versions of the ISO C99 floating-point rounding and
 exceptions handling functions ``fegetround``, ``feclearexcept`` and
@@ -1892,6 +1896,20 @@ calls.  These built-in functions appear both with and without the
 
   Similar to ``__builtin_nans``, except the return type is
   ``_Floatnx``.
+
+.. function:: int __builtin_issignaling (...)
+
+  Return non-zero if the argument is a signaling NaN and zero otherwise.
+  Note while the parameter list is an
+  ellipsis, this function only accepts exactly one floating-point
+  argument.  GCC treats this parameter as type-generic, which means it
+  does not do default promotion from float to double.
+  This built-in function can work even without the non-default
+  ``-fsignaling-nans`` option, although if a signaling NaN is computed,
+  stored or passed as argument to some function other than this built-in
+  in the current translation unit, it is safer to use ``-fsignaling-nans``.
+  With ``-ffinite-math-only`` option this built-in function will always
+  return 0.
 
 .. function:: int __builtin_ffs (int x)
 

@@ -94,7 +94,7 @@ in the following sections.
   :option:`-Wreorder`  :option:`-Wregister` 
   :option:`-Wstrict-null-sentinel`  :option:`-Wno-subobject-linkage`  :option:`-Wtemplates` 
   :option:`-Wno-non-template-friend`  :option:`-Wold-style-cast` 
-  :option:`-Woverloaded-virtual`  :option:`-Wno-pmf-conversions` :option:`-Wsign-promo` 
+  :option:`-Woverloaded-virtual`  :option:`-Wno-pmf-conversions` :option:`-Wself-move` :option:`-Wsign-promo` 
   :option:`-Wsized-deallocation`  :option:`-Wsuggest-final-methods` 
   :option:`-Wsuggest-final-types`  :option:`-Wsuggest-override`  
   :option:`-Wno-terminate`  :option:`-Wuseless-cast`  :option:`-Wno-vexing-parse`  
@@ -197,9 +197,9 @@ in the following sections.
   :option:`-Winfinite-recursion` 
   :option:`-Winit-self`  :option:`-Winline`  :option:`-Wno-int-conversion`  :option:`-Wint-in-bool-context` 
   :option:`-Wno-int-to-pointer-cast`  :option:`-Wno-invalid-memory-model` 
-  :option:`-Winvalid-pch`  :option:`-Wjump-misses-init`  :option:`-Wlarger-than`:samp:`={byte-size}` 
-  :option:`-Wlogical-not-parentheses`  :option:`-Wlogical-op`  :option:`-Wlong-long` 
-  :option:`-Wno-lto-type-mismatch` :option:`-Wmain`  :option:`-Wmaybe-uninitialized` 
+  :option:`-Winvalid-pch`  :option:`-Winvalid-utf8` :option:`-Wjump-misses-init`  
+  :option:`-Wlarger-than`:samp:`={byte-size}`  :option:`-Wlogical-not-parentheses`  :option:`-Wlogical-op`  
+  :option:`-Wlong-long`  :option:`-Wno-lto-type-mismatch` :option:`-Wmain`  :option:`-Wmaybe-uninitialized` 
   :option:`-Wmemset-elt-size`  :option:`-Wmemset-transposed-args` 
   :option:`-Wmisleading-indentation`  :option:`-Wmissing-attributes`  :option:`-Wmissing-braces` 
   :option:`-Wmissing-field-initializers`  :option:`-Wmissing-format-attribute` 
@@ -246,6 +246,7 @@ in the following sections.
   :option:`-Wvector-operation-performance` 
   :option:`-Wvla`  :option:`-Wvla-larger-than`:samp:`={byte-size}`  :option:`-Wno-vla-larger-than` 
   :option:`-Wvolatile-register-var`  :option:`-Wwrite-strings` 
+  :option:`-Wxor-used-as-pow` 
   :option:`-Wzero-length-bounds`
 
 *Static Analyzer Options*
@@ -327,7 +328,7 @@ in the following sections.
   :option:`-g`  :option:`-g`:samp:`{level}`  :option:`-gdwarf`  :option:`-gdwarf-`:samp:`{version}` 
   :option:`-gbtf` :option:`-gctf`  :option:`-gctf`:samp:`{level}` 
   :option:`-ggdb`  :option:`-grecord-gcc-switches`  :option:`-gno-record-gcc-switches` 
-  :option:`-gstabs`  :option:`-gstabs+`  :option:`-gstrict-dwarf`  :option:`-gno-strict-dwarf` 
+  :option:`-gstrict-dwarf`  :option:`-gno-strict-dwarf` 
   :option:`-gas-loc-support`  :option:`-gno-as-loc-support` 
   :option:`-gas-locview-support`  :option:`-gno-as-locview-support` 
   :option:`-gcolumn-info`  :option:`-gno-column-info`  :option:`-gdwarf32`  :option:`-gdwarf64` 
@@ -335,7 +336,7 @@ in the following sections.
   :option:`-gvariable-location-views`  :option:`-gno-variable-location-views` 
   :option:`-ginternal-reset-location-views`  :option:`-gno-internal-reset-location-views` 
   :option:`-ginline-points`  :option:`-gno-inline-points` 
-  :option:`-gvms`  :option:`-gxcoff`  :option:`-gxcoff+`  :option:`-gz` [= :samp:`{type}` ] 
+  :option:`-gvms` :option:`-gz` [= :samp:`{type}` ] 
   :option:`-gsplit-dwarf`  :option:`-gdescribe-dies`  :option:`-gno-describe-dies` 
   :option:`-fdebug-prefix-map`:samp:`={old}` = :samp:`{new}`  :option:`-fdebug-types-section` 
   :option:`-fno-eliminate-unused-debug-types` 
@@ -749,15 +750,6 @@ in the following sections.
   :option:`-m32-bit`  :option:`-m16-bit`  :option:`-m8-bit`  :option:`-mno-prologue-epilogue` 
   :option:`-melf`  :option:`-maout`  :option:`-sim`  :option:`-sim2` 
   :option:`-mmul-bug-workaround`  :option:`-mno-mul-bug-workaround`
-
-  *CR16 Options*
-
-  .. program:: CR16
-
-  :option:`-mmac` 
-  :option:`-mcr16cplus`  :option:`-mcr16c` 
-  :option:`-msim`  :option:`-mint32`  :option:`-mbit-ops`
-  :option:`-mdata-model`:samp:`={model}`
 
   *C-SKY Options*
 

@@ -229,6 +229,7 @@ warnings, in some cases it may also cause false positives.
   :option:`-Wreorder`   
   :option:`-Wrestrict`   
   :option:`-Wreturn-type`  
+  :option:`-Wself-move` (only for C++)  
   :option:`-Wsequence-point`  
   :option:`-Wsign-compare` (only in C++)  
   :option:`-Wsizeof-array-div` 
@@ -1326,6 +1327,33 @@ warnings, in some cases it may also cause false positives.
 .. option:: -Wno-parentheses
 
   Default setting; overrides :option:`-Wparentheses`.
+
+.. option:: -Wno-self-move
+
+  .. note::
+
+    C++ and Objective-C++ only
+
+  This warning warns when a value is moved to itself with ``std::move``.
+  Such a ``std::move`` typically has no effect.
+
+  .. code-block:: c++
+
+    struct T {
+    ...
+    };
+    void fn()
+    {
+      T t;
+      ...
+      t = std::move (t);
+    }
+
+  This warning is enabled by :option:`-Wall`.
+
+.. option:: -Wself-move
+
+  Default setting; overrides :option:`-Wno-self-move`.
 
 .. option:: -Wsequence-point
 
@@ -4598,6 +4626,16 @@ warnings, in some cases it may also cause false positives.
 
   Default setting; overrides :option:`-Winvalid-pch`.
 
+.. option:: -Winvalid-utf8
+
+  Warn if an invalid UTF-8 character is found.
+  This warning is on by default for C++23 if :option:`-finput-charset`:samp:`=UTF-8`
+  is used and turned into error with :option:`-pedantic-errors`.
+
+.. option:: -Wno-invalid-utf8
+
+  Default setting; overrides :option:`-Winvalid-utf8`.
+
 .. option:: -Wlong-long
 
   Warn if ``long long`` type is used.  This is enabled by either
@@ -4727,6 +4765,27 @@ warnings, in some cases it may also cause false positives.
 .. option:: -Wno-volatile-register-var
 
   Default setting; overrides :option:`-Wvolatile-register-var`.
+
+.. option:: -Wxor-used-as-pow
+
+  .. note::
+
+    C, C++, Objective-C and Objective-C++ only
+
+  Warn about uses of ``^``, the exclusive or operator, where it appears
+  the user meant exponentiation.  Specifically, the warning occurs when the
+  left-hand side is the decimal constant 2 or 10 and the right-hand side
+  is also a decimal constant.
+
+  In C and C++, ``^`` means exclusive or, whereas in some other languages
+  (e.g. TeX and some versions of BASIC) it means exponentiation.
+
+  This warning is enabled by default.  It can be silenced by converting one
+  of the operands to hexadecimal.
+
+.. option:: -Wno-xor-used-as-pow
+
+  Default setting; overrides :option:`-Wxor-used-as-pow`.
 
 .. option:: -Wdisabled-optimization
 

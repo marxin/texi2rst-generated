@@ -36,6 +36,7 @@ attributes.
   specifying-attributes-of-variables/blackfin-variable-attributes
   specifying-attributes-of-variables/h8-300-variable-attributes
   specifying-attributes-of-variables/ia-64-variable-attributes
+  specifying-attributes-of-variables/loongarch-variable-attributes
   specifying-attributes-of-variables/m32r-d-variable-attributes
   specifying-attributes-of-variables/mep-variable-attributes
   specifying-attributes-of-variables/microsoft-windows-variable-attributes
@@ -855,6 +856,24 @@ The IA-64 back end supports the following variable attribute:
   instruction).  Caveat: such addressing is by definition not position
   independent and hence this attribute must not be used for objects
   defined by shared libraries.
+
+.. _loongarch-variable-attributes:
+
+LoongArch Variable Attributes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+One attribute is currently defined for the LoongArch.
+
+.. index:: model variable attribute, LoongArch
+
+.. gcc-attr:: model("name")
+
+  Use this attribute on the LoongArch to use a different code model for
+  addressing this variable, than the code model specified by the global
+  :option:`-mcmodel` option.  This attribute is mostly useful if a
+  ``section`` attribute and/or a linker script will locate this object
+  specially.  Currently the only supported values of :samp:`{name}` are
+  ``normal`` and ``extreme``.
 
 .. _m32r-d-variable-attributes:
 

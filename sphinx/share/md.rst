@@ -1080,38 +1080,6 @@ the meanings of that architecture's constraints.
   ``Q``
     Any SYMBOL_REF.
 
-:samp:`CR16 Architecture---{config/cr16/cr16.h}`
-
-  ``b``
-    Registers from r0 to r14 (registers without stack pointer)
-
-  ``t``
-    Register from r0 to r11 (all 16-bit registers)
-
-  ``p``
-    Register from r12 to r15 (all 32-bit registers)
-
-  ``I``
-    Signed constant that fits in 4 bits
-
-  ``J``
-    Signed constant that fits in 5 bits
-
-  ``K``
-    Signed constant that fits in 6 bits
-
-  ``L``
-    Unsigned constant that fits in 4 bits
-
-  ``M``
-    Signed constant that fits in 32 bits
-
-  ``N``
-    Check for 64 bits wide constants for add/sub instructions
-
-  ``G``
-    Floating point constant that is legal for store immediate
-
 :samp:`C-SKY---{config/csky/constraints.md}`
 
   ``a``
