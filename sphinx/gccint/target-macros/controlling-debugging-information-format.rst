@@ -30,7 +30,7 @@ Macros Affecting All Debugging Formats
 
 These macros affect all debugging formats.
 
-.. c:macro:: DEBUGGER_REGISTER_NUMBER (regno)
+.. c:macro:: DEBUGGER_REGNO (regno)
 
   A C expression that returns the debugger register number for the compiler
   register number :samp:`{regno}`.  In the default macro provided, the value
@@ -41,11 +41,11 @@ These macros affect all debugging formats.
 
   If two registers have consecutive numbers inside GCC, and they can be
   used as a pair to hold a multiword value, then they *must* have
-  consecutive numbers after renumbering with ``DEBUGGER_REGISTER_NUMBER``.
+  consecutive numbers after renumbering with ``DEBUGGER_REGNO``.
   Otherwise, debuggers will be unable to access such a pair, because they
   expect register pairs to be consecutive in their own numbering scheme.
 
-  If you find yourself defining ``DEBUGGER_REGISTER_NUMBER`` in way that
+  If you find yourself defining ``DEBUGGER_REGNO`` in way that
   does not preserve register pairs, then what you must do instead is
   redefine the actual register numbering scheme.
 
