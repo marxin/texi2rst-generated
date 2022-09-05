@@ -80,7 +80,6 @@ GCC plugins may provide their own attributes.
   declaring-attributes-of-functions/avr-function-attributes
   declaring-attributes-of-functions/blackfin-function-attributes
   declaring-attributes-of-functions/bpf-function-attributes
-  declaring-attributes-of-functions/cr16-function-attributes
   declaring-attributes-of-functions/c-sky-function-attributes
   declaring-attributes-of-functions/epiphany-function-attributes
   declaring-attributes-of-functions/h8-300-function-attributes

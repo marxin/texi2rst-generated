@@ -53,8 +53,8 @@ in the following sections.
   :option:`-fno-gnu-keywords` |gol|
   :option:`-fno-implicit-templates` |gol|
   :option:`-fno-implicit-inline-templates` |gol|
-  :option:`-fno-implement-inlines` |gol|
-  :option:`-fmodule-header`:samp:`[={kind}]` :option:`-fmodule-only` :option:`-fmodules-ts` |gol|
+  :option:`-fno-implement-inlines`  |gol|
+  :option:`-fmodule-header` [= :samp:`{kind}` ] :option:`-fmodule-only` :option:`-fmodules-ts` |gol|
   :option:`-fmodule-implicit-inline` |gol|
   :option:`-fno-module-lazy` |gol|
   :option:`-fmodule-mapper`:samp:`={specification}` |gol|
@@ -73,9 +73,9 @@ in the following sections.
   :option:`-fvisibility-inlines-hidden` |gol|
   :option:`-fvisibility-ms-compat` |gol|
   :option:`-fext-numeric-literals` |gol|
-  :option:`-flang-info-include-translate`:samp:`=[{header}]` |gol|
+  :option:`-flang-info-include-translate` [= :samp:`{header}` ] |gol|
   :option:`-flang-info-include-translate-not` |gol|
-  :option:`-flang-info-module-cmi`:samp:`[={module}]` |gol|
+  :option:`-flang-info-module-cmi` [= :samp:`{module}` ] |gol|
   :option:`-stdlib`:samp:`={libstdc++,libc++}` |gol|
   :option:`-Wabi-tag`  :option:`-Wcatch-value`  :option:`-Wcatch-value`:samp:`={n}` |gol|
   :option:`-Wno-class-conversion`  :option:`-Wclass-memaccess` |gol|
@@ -84,8 +84,7 @@ in the following sections.
   :option:`-Wctor-dtor-privacy`  :option:`-Wno-delete-incomplete` |gol|
   :option:`-Wdelete-non-virtual-dtor`  :option:`-Wno-deprecated-array-compare` |gol|
   :option:`-Wdeprecated-copy` :option:`-Wdeprecated-copy-dtor` |gol|
-  :option:`-Wno-deprecated-enum-enum-conversion` |gol|
-  :option:`-Wno-deprecated-enum-float-conversion` |gol|
+  :option:`-Wno-deprecated-enum-enum-conversion` :option:`-Wno-deprecated-enum-float-conversion` |gol|
   :option:`-Weffc++`  :option:`-Wno-exceptions` :option:`-Wextra-semi`  :option:`-Wno-inaccessible-base` |gol|
   :option:`-Wno-inherited-variadic-ctor`  :option:`-Wno-init-list-lifetime` |gol|
   :option:`-Winvalid-imported-macros` |gol|
@@ -98,11 +97,11 @@ in the following sections.
   :option:`-Wreorder`  :option:`-Wregister` |gol|
   :option:`-Wstrict-null-sentinel`  :option:`-Wno-subobject-linkage`  :option:`-Wtemplates` |gol|
   :option:`-Wno-non-template-friend`  :option:`-Wold-style-cast` |gol|
-  :option:`-Woverloaded-virtual`  :option:`-Wno-pmf-conversions` :option:`-Wsign-promo` |gol|
+  :option:`-Woverloaded-virtual`  :option:`-Wno-pmf-conversions` :option:`-Wself-move` :option:`-Wsign-promo` |gol|
   :option:`-Wsized-deallocation`  :option:`-Wsuggest-final-methods` |gol|
-  :option:`-Wsuggest-final-types`  :option:`-Wsuggest-override` |gol|
-  :option:`-Wno-terminate`  :option:`-Wuseless-cast`  :option:`-Wno-vexing-parse` |gol|
-  :option:`-Wvirtual-inheritance` |gol|
+  :option:`-Wsuggest-final-types`  :option:`-Wsuggest-override`  |gol|
+  :option:`-Wno-terminate`  :option:`-Wuseless-cast`  :option:`-Wno-vexing-parse`  |gol|
+  :option:`-Wvirtual-inheritance`  |gol|
   :option:`-Wno-virtual-move-assign`  :option:`-Wvolatile`  :option:`-Wzero-as-null-pointer-constant`
 
 *Objective-C and Objective-C++ Language Options*
@@ -167,17 +166,17 @@ in the following sections.
   :option:`-Warith-conversion` |gol|
   :option:`-Warray-bounds`  :option:`-Warray-bounds`:samp:`={n}`  :option:`-Warray-compare` |gol|
   :option:`-Wno-attributes`  :option:`-Wattribute-alias`:samp:`={n}` :option:`-Wno-attribute-alias` |gol|
-  :option:`-Wno-attribute-warning` |gol|
-  :option:`-Wbidi-chars`:samp:`=[none|unpaired|any|ucn]` |gol|
+  :option:`-Wno-attribute-warning`  |gol|
+  :option:`-Wbidi-chars` =[none|unpaired|any|ucn] |gol|
   :option:`-Wbool-compare`  :option:`-Wbool-operation` |gol|
   :option:`-Wno-builtin-declaration-mismatch` |gol|
   :option:`-Wno-builtin-macro-redefined`  :option:`-Wc90-c99-compat`  :option:`-Wc99-c11-compat` |gol|
   :option:`-Wc11-c2x-compat` |gol|
-  :option:`-Wc++-compat`  :option:`-Wc++11-compat`  :option:`-Wc++14-compat`  :option:`-Wc++17-compat` |gol|
-  :option:`-Wc++20-compat` |gol|
-  :option:`-Wno-c++11-extensions`  :option:`-Wno-c++14-extensions` :option:`-Wno-c++17-extensions` |gol|
-  :option:`-Wno-c++20-extensions`  :option:`-Wno-c++23-extensions` |gol|
-  :option:`-Wcast-align`  :option:`-Wcast-align`:samp:`=strict`  :option:`-Wcast-function-type`  :option:`-Wcast-qual` |gol|
+  :option:`-Wc++-compat`  :option:`-Wc++11-compat`  :option:`-Wc++14-compat`  :option:`-Wc++17-compat`  |gol|
+  :option:`-Wc++20-compat`   |gol|
+  :option:`-Wno-c++11-extensions`  :option:`-Wno-c++14-extensions` :option:`-Wno-c++17-extensions`  |gol|
+  :option:`-Wno-c++20-extensions`  :option:`-Wno-c++23-extensions`  |gol|
+  :option:`-Wcast-align`  :option:`-Wcast-align`:samp:`=strict`  :option:`-Wcast-function-type`  :option:`-Wcast-qual`  |gol|
   :option:`-Wchar-subscripts` |gol|
   :option:`-Wclobbered`  :option:`-Wcomment` |gol|
   :option:`-Wconversion`  :option:`-Wno-coverage-mismatch`  :option:`-Wno-cpp` |gol|
@@ -204,15 +203,15 @@ in the following sections.
   :option:`-Winfinite-recursion` |gol|
   :option:`-Winit-self`  :option:`-Winline`  :option:`-Wno-int-conversion`  :option:`-Wint-in-bool-context` |gol|
   :option:`-Wno-int-to-pointer-cast`  :option:`-Wno-invalid-memory-model` |gol|
-  :option:`-Winvalid-pch`  :option:`-Wjump-misses-init`  :option:`-Wlarger-than`:samp:`={byte-size}` |gol|
-  :option:`-Wlogical-not-parentheses`  :option:`-Wlogical-op`  :option:`-Wlong-long` |gol|
-  :option:`-Wno-lto-type-mismatch` :option:`-Wmain`  :option:`-Wmaybe-uninitialized` |gol|
+  :option:`-Winvalid-pch`  :option:`-Winvalid-utf8` :option:`-Wjump-misses-init`  |gol|
+  :option:`-Wlarger-than`:samp:`={byte-size}`  :option:`-Wlogical-not-parentheses`  :option:`-Wlogical-op`  |gol|
+  :option:`-Wlong-long`  :option:`-Wno-lto-type-mismatch` :option:`-Wmain`  :option:`-Wmaybe-uninitialized` |gol|
   :option:`-Wmemset-elt-size`  :option:`-Wmemset-transposed-args` |gol|
   :option:`-Wmisleading-indentation`  :option:`-Wmissing-attributes`  :option:`-Wmissing-braces` |gol|
   :option:`-Wmissing-field-initializers`  :option:`-Wmissing-format-attribute` |gol|
   :option:`-Wmissing-include-dirs`  :option:`-Wmissing-noreturn`  :option:`-Wno-missing-profile` |gol|
   :option:`-Wno-multichar`  :option:`-Wmultistatement-macros`  :option:`-Wnonnull`  :option:`-Wnonnull-compare` |gol|
-  :option:`-Wnormalized`:samp:`=[none|id|nfc|nfkc]` |gol|
+  :option:`-Wnormalized` =[none|id|nfc|nfkc] |gol|
   :option:`-Wnull-dereference`  :option:`-Wno-odr`  |gol|
   :option:`-Wopenacc-parallelism`  |gol|
   :option:`-Wopenmp-simd`  |gol|
@@ -236,7 +235,7 @@ in the following sections.
   :option:`-Wstring-compare` |gol|
   :option:`-Wno-stringop-overflow` :option:`-Wno-stringop-overread` |gol|
   :option:`-Wno-stringop-truncation` |gol|
-  :option:`-Wsuggest-attribute`:samp:`=[pure|const|noreturn|format|malloc]` |gol|
+  :option:`-Wsuggest-attribute` =[pure|const|noreturn|format|malloc] |gol|
   :option:`-Wswitch`  :option:`-Wno-switch-bool`  :option:`-Wswitch-default`  :option:`-Wswitch-enum` |gol|
   :option:`-Wno-switch-outside-range`  :option:`-Wno-switch-unreachable`  :option:`-Wsync-nand` |gol|
   :option:`-Wsystem-headers`  :option:`-Wtautological-compare`  :option:`-Wtrampolines`  :option:`-Wtrigraphs` |gol|
@@ -253,6 +252,7 @@ in the following sections.
   :option:`-Wvector-operation-performance` |gol|
   :option:`-Wvla`  :option:`-Wvla-larger-than`:samp:`={byte-size}`  :option:`-Wno-vla-larger-than` |gol|
   :option:`-Wvolatile-register-var`  :option:`-Wwrite-strings` |gol|
+  :option:`-Wxor-used-as-pow` |gol|
   :option:`-Wzero-length-bounds`
 
 *Static Analyzer Options*
@@ -337,7 +337,7 @@ in the following sections.
   :option:`-g`  :option:`-g`:samp:`{level}`  :option:`-gdwarf`  :option:`-gdwarf-`:samp:`{version}` |gol|
   :option:`-gbtf` :option:`-gctf`  :option:`-gctf`:samp:`{level}` |gol|
   :option:`-ggdb`  :option:`-grecord-gcc-switches`  :option:`-gno-record-gcc-switches` |gol|
-  :option:`-gstabs`  :option:`-gstabs+`  :option:`-gstrict-dwarf`  :option:`-gno-strict-dwarf` |gol|
+  :option:`-gstrict-dwarf`  :option:`-gno-strict-dwarf` |gol|
   :option:`-gas-loc-support`  :option:`-gno-as-loc-support` |gol|
   :option:`-gas-locview-support`  :option:`-gno-as-locview-support` |gol|
   :option:`-gcolumn-info`  :option:`-gno-column-info`  :option:`-gdwarf32`  :option:`-gdwarf64` |gol|
@@ -345,12 +345,12 @@ in the following sections.
   :option:`-gvariable-location-views`  :option:`-gno-variable-location-views` |gol|
   :option:`-ginternal-reset-location-views`  :option:`-gno-internal-reset-location-views` |gol|
   :option:`-ginline-points`  :option:`-gno-inline-points` |gol|
-  :option:`-gvms`  :option:`-gxcoff`  :option:`-gxcoff+`  :option:`-gz`:samp:`[={type}]` |gol|
+  :option:`-gvms` :option:`-gz` [= :samp:`{type}` ] |gol|
   :option:`-gsplit-dwarf`  :option:`-gdescribe-dies`  :option:`-gno-describe-dies` |gol|
-  :option:`-fdebug-prefix-map`:samp:`={old}={new}`  :option:`-fdebug-types-section` |gol|
+  :option:`-fdebug-prefix-map`:samp:`={old}` = :samp:`{new}`  :option:`-fdebug-types-section` |gol|
   :option:`-fno-eliminate-unused-debug-types` |gol|
   :option:`-femit-struct-debug-baseonly`  :option:`-femit-struct-debug-reduced` |gol|
-  :option:`-femit-struct-debug-detailed`:samp:`[={spec-list}]` |gol|
+  :option:`-femit-struct-debug-detailed` [= :samp:`{spec-list}` ] |gol|
   :option:`-fno-eliminate-unused-debug-symbols`  :option:`-femit-class-debug-always` |gol|
   :option:`-fno-merge-debug-strings`  :option:`-fno-dwarf2-cfi-asm` |gol|
   :option:`-fvar-tracking`  :option:`-fvar-tracking-assignments`
@@ -763,15 +763,6 @@ in the following sections.
   :option:`-m32-bit`  :option:`-m16-bit`  :option:`-m8-bit`  :option:`-mno-prologue-epilogue` |gol|
   :option:`-melf`  :option:`-maout`  :option:`-sim`  :option:`-sim2` |gol|
   :option:`-mmul-bug-workaround`  :option:`-mno-mul-bug-workaround`
-
-  *CR16 Options*
-
-  .. program:: CR16
-
-  :option:`-mmac` |gol|
-  :option:`-mcr16cplus`  :option:`-mcr16c` |gol|
-  :option:`-msim`  :option:`-mint32`  :option:`-mbit-ops` |gol|
-  :option:`-mdata-model`:samp:`={model}`
 
   *C-SKY Options*
 

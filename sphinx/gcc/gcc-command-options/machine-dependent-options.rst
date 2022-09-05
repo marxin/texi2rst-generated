@@ -36,7 +36,6 @@ platform.
   machine-dependent-options/blackfin-options
   machine-dependent-options/c6x-options
   machine-dependent-options/cris-options
-  machine-dependent-options/cr16-options
   machine-dependent-options/c-sky-options
   machine-dependent-options/darwin-options
   machine-dependent-options/dec-alpha-options

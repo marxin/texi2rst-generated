@@ -269,7 +269,7 @@ passes that are run after the Tree optimization passes.
 
   This is run after final because it must output the stack slot offsets
   for pseudo registers that did not get hard registers.  Source files
-  are :samp:`dbxout.cc` for DBX symbol table format, :samp:`dwarfout.c` for
+  are :samp:`dwarfout.c` for
   DWARF symbol table format, files :samp:`dwarf2out.cc` and :samp:`dwarf2asm.cc`
   for DWARF2 symbol table format, and :samp:`vmsdbgout.cc` for VMS debug
   symbol table format.

@@ -121,8 +121,8 @@ New features listed in Appendix B of the OpenMP specification
      - Y
      -
    * - ``ancestor`` modifier on ``device`` clause
-     - P
-     - Reverse offload unsupported
+     - Y
+     - See comment for ``requires``
    * - Implicit declare target directive
      - Y
      -

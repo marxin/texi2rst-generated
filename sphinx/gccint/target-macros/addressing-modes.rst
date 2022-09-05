@@ -646,6 +646,9 @@ This is about addressing modes.
   This hook should set :samp:`{vecsize_mangle}`, :samp:`{vecsize_int}`, :samp:`{vecsize_float}`
   fields in :samp:`{simd_clone}` structure pointed by :samp:`{clone_info}` argument and also
   :samp:`{simdlen}` field if it was previously 0.
+  :samp:`{vecsize_mangle}` is a marker for the backend only. :samp:`{vecsize_int}` and
+  :samp:`{vecsize_float}` should be left zero on targets where the number of lanes is
+  not determined by the bitsize (in which case :samp:`{simdlen}` is always used).
   The hook should return 0 if SIMD clones shouldn't be emitted,
   or number of :samp:`{vecsize_mangle}` variants that should be emitted.
 

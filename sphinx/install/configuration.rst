@@ -141,7 +141,7 @@ It looks like this: :samp:`{cpu}-{company}-{system}`.
 Here are the possible CPU types:
 
 aarch64, aarch64_be, alpha, alpha64, amdgcn, arc, arceb, arm, armeb, avr, bfin,
-bpf, cr16, cris, csky, epiphany, fido, fr30, frv, ft32, h8300, hppa, hppa2.0,
+bpf, cris, csky, epiphany, fido, fr30, frv, ft32, h8300, hppa, hppa2.0,
 hppa64, i486, i686, ia64, iq2000, lm32, loongarch64, m32c, m32r, m32rle, m68k,
 mcore, microblaze, microblazeel, mips, mips64, mips64el, mips64octeon,
 mips64orion, mips64vr, mipsel, mipsisa32, mipsisa32r2, mipsisa64, mipsisa64r2,
