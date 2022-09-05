@@ -166,7 +166,7 @@ This discusses registers that address the stack frame.
   used in .eh_frame or .debug_frame is different from that used in other
   debug info sections.  Given a GCC hard register number, this macro
   should return the .eh_frame register number.  The default is
-  ``DEBUGGER_REGISTER_NUMBER (regno)``.
+  ``DEBUGGER_REGNO (regno)``.
 
 .. c:macro:: DWARF2_FRAME_REG_OUT (regno, for_eh)
 
