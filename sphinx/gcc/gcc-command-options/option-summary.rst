@@ -927,6 +927,7 @@ in the following sections.
   :option:`-memcpy`  :option:`-mno-memcpy` :option:`-mstrict-align` :option:`-mno-strict-align` 
   :option:`-mmax-inline-memcpy-size`:samp:`={n}` 
   :option:`-mexplicit-relocs` :option:`-mno-explicit-relocs` 
+  :option:`-mdirect-extern-access` :option:`-mno-direct-extern-access` 
   :option:`-mcmodel`:samp:`={code-model}`
 
   *M32R/D Options*

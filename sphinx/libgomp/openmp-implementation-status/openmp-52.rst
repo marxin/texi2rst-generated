@@ -91,14 +91,14 @@ New features listed in Appendix B of the OpenMP specification
      - Y
      -
    * - New ``doacross`` clause as alias for ``depend`` with ``source`` / ``sink`` modifier
-     - N
+     - Y
      -
    * - Deprecation of ``depend`` with ``source`` / ``sink`` modifier
      - N
      -
    * - ``omp_cur_iteration`` keyword
-     - N
-     -
+     - P
+     - ``sink: omp_cur_iteration - 1`` unsupported
 
 Other new OpenMP 5.2 features
 *****************************

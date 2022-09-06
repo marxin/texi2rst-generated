@@ -176,3 +176,16 @@ These command-line options are defined for LoongArch targets:
   debugging, or interoperation with assemblers different from the build-time
   one.
 
+.. option:: -mdirect-extern-access, -mno-direct-extern-access
+
+  Do not use or use GOT to access external symbols.  The default is
+  :option:`-mno-direct-extern-access` : GOT is used for external symbols with
+  default visibility, but not used for other external symbols.
+
+  With :option:`-mdirect-extern-access`, GOT is not used and all external
+  symbols are PC-relatively addressed.  It is **only** suitable for
+  environments where no dynamic link is performed, like firmwares, OS
+  kernels, executables linked with :option:`-static` or :option:`-static-pie`.
+  :option:`-mdirect-extern-access` is not compatible with :option:`-fPIC` or
+  :option:`-fpic`.
+
