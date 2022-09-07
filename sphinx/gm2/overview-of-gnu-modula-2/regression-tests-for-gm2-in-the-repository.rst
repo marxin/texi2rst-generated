@@ -21,7 +21,7 @@ be run using:
   $ make check-m2 -j 24
 
 Finally the results of the testsuite can be emailed to the
-https://gcc.gnu.org/lists.htmlgcc-testresults list using the
+`gcc-testresults <https://gcc.gnu.org/lists.html>`_ list using the
 script:
 
 .. code-block:: modula2

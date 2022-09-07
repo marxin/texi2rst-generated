@@ -31,12 +31,12 @@ News
 
 ``Talk given at The GNU Tools Cauldron 2018``
   here is a talk on GNU Modula-2 given at
-  https://gcc.gnu.org/wiki/cauldron2018The GNU Tools Cauldron,
+  `The GNU Tools Cauldron <https://gcc.gnu.org/wiki/cauldron2018>`_,
   Manchester on 8th September 2018.
   The title is, 'GNU Modula-2 update, catching semantic errors post
   code optimisation and improved debugging'
-  [http://floppsie.comp.glam.ac.uk/Papers/paper23/gaius-mulley-gnu-m2.pdfslides
-  and https://www.youtube.com/watch?v=6jf6weRuHjkvideo].
+  [`slides <http://floppsie.comp.glam.ac.uk/Papers/paper23/gaius-mulley-gnu-m2.pdf>`_
+  and `video <https://www.youtube.com/watch?v=6jf6weRuHjk>`_].
 
 ``gm2 1.8.2``
   was released on Aug 30th 2018.  gm2-1.8.2 grafts onto gcc-8.2.0
@@ -55,12 +55,12 @@ News
 
 ``Talk given at The GNU Tools Cauldron 2016``
   here is a talk on GNU Modula-2 given at
-  https://gcc.gnu.org/wiki/cauldron2016The GNU Tools Cauldron,
+  `The GNU Tools Cauldron <https://gcc.gnu.org/wiki/cauldron2016>`_,
   Hebden Bridge on 9th September 2016.
   The title is, 'GNU Modula-2 status, whole
   program optimisation and language interoperability'
-  [http://floppsie.comp.glam.ac.uk/Papers/paper22/gaius-gcc-cauldron-2016.pdfslides
-  and https://www.youtube.com/watch?v=8GMyxwHdr1Evideo].
+  [`slides <http://floppsie.comp.glam.ac.uk/Papers/paper22/gaius-gcc-cauldron-2016.pdf>`_
+  and `video <https://www.youtube.com/watch?v=8GMyxwHdr1E>`_].
 
 ``gm2 1.1.6``
   was released on February 22nd 2016.  gm2-1.1.6 grafts onto gcc-4.7.4.

@@ -4,7 +4,7 @@ How to get source code using git
 ********************************
 
 GNU Modula-2 is in the process of migrating into the
-https://gcc.gnu.org/git.htmlGCC git tree.  The development
+`GCC git tree <https://gcc.gnu.org/git.html>`_.  The development
 branch is available via git:
 
 .. code-block:: modula2
@@ -16,7 +16,7 @@ branch is available via git:
 
 .. _obtaining:
 GNU Modula-2 is in the process of migrating into the
-https://gcc.gnu.org/git.htmlGCC git tree.
+`GCC git tree <https://gcc.gnu.org/git.html>`_.
 See :ref:`gm2:development` section in this GM2 documentation for git
 details and See :ref:`gcc:downloading-the-source` in the GCC
 documentation.
