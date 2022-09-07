@@ -1,0 +1,178 @@
+.. _gm2-libs-iso-processes:
+
+gm2-libs-iso/Processes
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: modula2
+
+  DEFINITION MODULE Processes;
+
+    (* This module allows concurrent algorithms to be expressed using
+       processes. A process is a unit of a program that has the
+       potential to run in parallel with other processes.
+    *)
+
+  IMPORT SYSTEM;
+
+  TYPE
+    ProcessId;                      (* Used to identify processes *)
+  Parameter (type)
+    Parameter     = SYSTEM.ADDRESS; (* Used to pass data between processes *)
+  Body (type)
+    Body          = PROC;           (* Used as the type of a process body *)
+  Urgency (type)
+    Urgency       = INTEGER;        (* Used by the internal scheduler *)
+  Sources (type)
+    Sources       = CARDINAL;       (* Used to identify event sources *)
+  ProcessesExceptions (type)
+    ProcessesExceptions =           (* Exceptions raised by this module *)
+      (passiveProgram, processError);
+
+  (* The following procedures create processes and switch control between
+     them. *)
+
+  Create
+  PROCEDURE Create (procBody: Body; extraSpace: CARDINAL; procUrg: Urgency;
+                    procParams: Parameter; VAR procId: ProcessId);
+    (* Creates a new process with procBody as its body, and with urgency
+       and parameters given by procUrg and procParams.  At least as
+       much workspace (in units of SYSTEM.LOC) as is specified by
+       extraSpace is allocated to the process.
+       An identity for the new process is returned in procId.
+       The process is created in the passive state; it will not run
+       until activated.
+    *)
+
+  Start
+  PROCEDURE Start (procBody: Body; extraSpace: CARDINAL; procUrg: Urgency;
+                   procParams: Parameter; VAR procId: ProcessId);
+    (* Creates a new process, with parameters as for Create.
+       The process is created in the ready state; it is eligible to
+       run immediately.
+    *)
+
+  StopMe
+  PROCEDURE StopMe ();
+    (* Terminates the calling process.
+       The process must not be associated with a source of events.
+    *)
+
+  SuspendMe
+  PROCEDURE SuspendMe ();
+    (* Causes the calling process to enter the passive state.  The
+       procedure only returns when the calling process is again
+       activated by another process.
+    *)
+
+  Activate
+  PROCEDURE Activate (procId: ProcessId);
+    (* Causes the process identified by procId to enter the ready
+       state, and thus to become eligible to run again.
+    *)
+
+  SuspendMeAndActivate
+  PROCEDURE SuspendMeAndActivate (procId: ProcessId);
+    (* Executes an atomic sequence of SuspendMe() and
+       Activate(procId). *)
+
+  Switch
+  PROCEDURE Switch (procId: ProcessId; VAR info: Parameter);
+    (* Causes the calling process to enter the passive state; the
+       process identified by procId becomes the currently executing
+       process.  info is used to pass parameter information from the
+       calling to the activated process.  On return, info will
+       contain information from the process that chooses to switch
+       back to this one (or will be NIL if Activate or
+       SuspendMeAndActivate are used instead of Switch).
+    *)
+
+  Wait
+  PROCEDURE Wait ();
+    (* Causes the calling process to enter the waiting state.
+       The procedure will return when the calling process is
+       activated by another process, or when one of its associated
+       eventSources has generated an event.
+    *)
+
+  (* The following procedures allow the association of processes
+     with sources of external events.
+  *)
+
+  Attach
+  PROCEDURE Attach (eventSource: Sources);
+    (* Associates the specified eventSource with the calling
+       process. *)
+
+  Detach
+  PROCEDURE Detach (eventSource: Sources);
+    (* Dissociates the specified eventSource from the program. *)
+
+  IsAttached
+  PROCEDURE IsAttached (eventSource: Sources): BOOLEAN;
+    (* Returns TRUE if and only if the specified eventSource is
+       currently associated with one of the processes of the
+       program.
+    *)
+
+  Handler
+  PROCEDURE Handler (eventSource: Sources): ProcessId;
+    (* Returns the identity of the process, if any, that is
+       associated with the specified eventSource.
+    *)
+
+  (* The following procedures allow processes to obtain their
+     identity, parameters, and urgency.
+  *)
+
+  Me
+  PROCEDURE Me (): ProcessId;
+    (* Returns the identity of the calling process (as assigned
+       when the process was first created).
+    *)
+
+  MyParam
+  PROCEDURE MyParam (): Parameter;
+    (* Returns the value specified as procParams when the calling
+       process was created. *)
+
+  UrgencyOf
+  PROCEDURE UrgencyOf (procId: ProcessId): Urgency;
+    (* Returns the urgency established when the process identified
+       by procId was first created.
+    *)
+
+  (* The following procedure provides facilities for exception
+     handlers. *)
+
+  ProcessesException
+  PROCEDURE ProcessesException (): ProcessesExceptions;
+    (* If the current coroutine is in the exceptional execution state
+       because of the raising of a language exception, returns the
+       corresponding enumeration value, and otherwise raises an
+       exception.
+    *)
+
+  IsProcessesException
+  PROCEDURE IsProcessesException (): BOOLEAN;
+    (* Returns TRUE if the current coroutine is in the exceptional
+       execution state because of the raising of an exception in
+       a routine from this module; otherwise returns FALSE.
+    *)
+
+  (*
+     Reschedule - rotates the ready queue and transfers to the process
+                  with the highest run priority.
+  *)
+
+  Reschedule
+  PROCEDURE Reschedule ;
+
+  (*
+     displayProcesses -
+  *)
+
+  displayProcesses
+  PROCEDURE displayProcesses (message: ARRAY OF CHAR) ;
+
+  END Processes.
+
