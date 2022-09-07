@@ -20,7 +20,6 @@ This chapter contains M2F, PIM and ISO libraries.
   :maxdepth: 2
 
   pim-and-iso-library-definitions/base-libraries
-  pim-and-iso-library-definitions/pim-and-logitech-3.0-compatible-libraries
   pim-and-iso-library-definitions/pim-coroutine-support
   pim-and-iso-library-definitions/m2-iso-libraries
   pim-and-iso-library-definitions/pim-and-logitech-30-compatible

@@ -27,7 +27,6 @@ Using GNU Modula-2
   using-gnu-modula-2/accessing-gnu-modula-2-built-ins
   using-gnu-modula-2/the-pim-system-module
   using-gnu-modula-2/the-iso-system-module
-  using-gnu-modula-2/how-to-run-the-testsuite
 
 This document contains the user and design issues relevant to the
 Modula-2 front end to gcc.  Throughout this document the GNU Modula-2

@@ -30,14 +30,8 @@
 .. toctree::
   :maxdepth: 2
 
-  what-is-gnu-modula-2
-  using-gnu-modula-2
-  licence-of-gnu-modula-2
-  contributing-to-gnu-modula-2
-  gnu-modula-2-internals
-  ebnf-of-gnu-modula-2
-  gnu-public-licence-v3
-  pim-and-iso-library-definitions
-  document-and-function-indices
   overview-of-gnu-modula-2
-
+  using-gnu-modula-2
+  using-gnu-modula-2/licence-of-gnu-modula-2
+  ebnf-of-gnu-modula-2
+  pim-and-iso-library-definitions
