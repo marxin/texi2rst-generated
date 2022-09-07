@@ -7,7 +7,7 @@ This section introduces the GNU Modula-2 language extensions.
 The GNU Modula-2 compiler allows abstract data types to be any type,
 not just restricted to a pointer type providing the
 :samp:`-fextended-opaque` option is supplied
-See :ref:`gm2:compiler-options`.
+See :ref:`compiler-options`.
 
 Declarations can be made in any order, whether they are
 types, constants, procedures, nested modules or variables.

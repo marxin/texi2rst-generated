@@ -17,7 +17,7 @@ branch is available via git:
 .. _obtaining:
 GNU Modula-2 is in the process of migrating into the
 `GCC git tree <https://gcc.gnu.org/git.html>`_.
-See :ref:`gm2:development` section in this GM2 documentation for git
+See :ref:`development` section in this GM2 documentation for git
 details and See :ref:`gcc:downloading-the-source` in the GCC
 documentation.
 

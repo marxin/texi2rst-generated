@@ -66,7 +66,7 @@ like this:
   $ python3 testnum.py
   1234 x 2 = 2468
 
-See :ref:`gm2:producing-a-python-module` for another example which
+See :ref:`producing-a-python-module` for another example which
 uses the ``UNQUALIFIED`` keyword to reduce the module name clutter
 from the viewport of Python3.
 

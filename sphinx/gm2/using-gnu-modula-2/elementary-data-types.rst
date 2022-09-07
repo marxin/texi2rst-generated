@@ -36,6 +36,6 @@ An equivalence table is given below:
 
 Note that GNU Modula-2 also supports fixed sized data types which are
 exported from the ``SYSTEM`` module.
-See :ref:`gm2:the-pim-system-module`.
-See :ref:`gm2:the-iso-system-module`.
+See :ref:`the-pim-system-module`.
+See :ref:`the-iso-system-module`.
 

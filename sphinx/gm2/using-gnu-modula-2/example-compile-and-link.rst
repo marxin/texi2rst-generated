@@ -23,7 +23,7 @@ This manual only documents the options specific to :command:`gm2`.
 
 This section describes how to compile and link a simple hello world
 program.  It provides a few examples of using the different options
-mentioned in see :ref:`gm2:compiler-options`.  Assuming that you have
+mentioned in see :ref:`compiler-options`.  Assuming that you have
 a file called :samp:`hello.mod` in your current directory which
 contains:
 

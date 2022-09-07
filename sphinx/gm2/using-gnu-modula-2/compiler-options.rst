@@ -199,37 +199,37 @@ compilation is done.  The following kinds of input file names are supported:
   ``SYSTEM`` module and alters the default library search path so
   that the ISO libraries are searched before the PIM libraries.  It also
   effects the behaviour of ``DIV`` and ``MOD`` operators.
-  See :ref:`gm2:dialect`.
+  See :ref:`dialect`.
 
 ``-fpim``
   turn on PIM standard features. Currently this enables the PIM
   ``SYSTEM`` module and determines which identifiers are pervasive
   (declared in the base module). If no other :samp:`-fpim[234]` switch is
   used then division and modulus operators behave as defined in PIM4.
-  See :ref:`gm2:dialect`.
+  See :ref:`dialect`.
 
 ``-fpim2``
   turn on PIM-2 standard features. Currently this removes ``SIZE``
   from being a pervasive identifier (declared in the base module).  It
   places ``SIZE`` in the ``SYSTEM`` module.  It also effects the
   behaviour of ``DIV`` and ``MOD`` operators.
-  See :ref:`gm2:dialect`.
+  See :ref:`dialect`.
 
 ``-fpim3``
   turn on PIM-3 standard features. Currently this only effects the
   behaviour of ``DIV`` and ``MOD`` operators.
-  See :ref:`gm2:dialect`.
+  See :ref:`dialect`.
 
 ``-fpim4``
   turn on PIM-4 standard features. Currently this only effects the
   behaviour of ``DIV`` and ``MOD`` operators.
-  See :ref:`gm2:dialect`.
+  See :ref:`dialect`.
 
 ``-fpositive-mod-floor-div``
   forces the ``DIV`` and ``MOD`` operators to behave as defined by PIM4.
   All modulus results are positive and the results from the division are
   rounded to the floor.
-  See :ref:`gm2:dialect`.
+  See :ref:`dialect`.
 
 ``-flibs=``
   modifies the default library search path.  The libraries supplied are:

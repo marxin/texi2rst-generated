@@ -48,6 +48,6 @@ program module.
 
 GNU Modula-2 also provides additional fixed sized data types which
 are all exported from the ``SYSTEM`` module.
-See :ref:`gm2:the-pim-system-module`.
-See :ref:`gm2:the-iso-system-module`.
+See :ref:`the-pim-system-module`.
+See :ref:`the-iso-system-module`.
 

@@ -121,6 +121,7 @@ code to test whether the address range of their respective contents
 intersect.
 
 .. _linking:
+
 This section describes the linking related options.  There are three
 linking strategies available which are dynamic scaffold, static
 scaffold and user defined.  The dynamic scaffold is enabled by default
