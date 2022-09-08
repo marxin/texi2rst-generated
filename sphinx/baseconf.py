@@ -150,6 +150,7 @@ latex_logo = '../logo.pdf'
 latex_use_xindy = False
 
 latex_elements = {
+    'pointsize': '11pt',
     'fontpkg': r'''
 \setmonofont[Scale=0.8]{DejaVu Sans Mono}
 ''',
