@@ -13,5 +13,5 @@ The following sections present notes on the offload-target specifics
 .. toctree::
   :maxdepth: 2
 
-  nvptx
   amd-radeon-gcn
+  nvptx
