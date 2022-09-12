@@ -40,8 +40,8 @@ New features listed in Appendix B of the OpenMP specification
    * - ``dispatch`` construct
      - N
      -
-   * - device-specific ICV settings the environment variables
-     - N
+   * - device-specific ICV settings with environment variables
+     - Y
      -
    * - ``assume`` directive
      - N

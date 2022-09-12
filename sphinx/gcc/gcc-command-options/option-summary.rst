@@ -156,6 +156,7 @@ in the following sections.
 
   See :ref:`warning-options`.
 
+<<<<<<< HEAD
   :option:`-fsyntax-only`  :option:`-fmax-errors`:samp:`={n}`  :option:`-Wpedantic` |gol|
   :option:`-pedantic-errors` |gol|
   :option:`-w`  :option:`-Wextra`  :option:`-Wall`  :option:`-Wabi`:samp:`={n}` |gol|
@@ -203,7 +204,7 @@ in the following sections.
   :option:`-Winfinite-recursion` |gol|
   :option:`-Winit-self`  :option:`-Winline`  :option:`-Wno-int-conversion`  :option:`-Wint-in-bool-context` |gol|
   :option:`-Wno-int-to-pointer-cast`  :option:`-Wno-invalid-memory-model` |gol|
-  :option:`-Winvalid-pch`  :option:`-Winvalid-utf8` :option:`-Wjump-misses-init`  |gol|
+  :option:`-Winvalid-pch`  :option:`-Winvalid-utf8` :option:`-Wno-unicode` :option:`-Wjump-misses-init`  |gol|
   :option:`-Wlarger-than`:samp:`={byte-size}`  :option:`-Wlogical-not-parentheses`  :option:`-Wlogical-op`  |gol|
   :option:`-Wlong-long`  :option:`-Wno-lto-type-mismatch` :option:`-Wmain`  :option:`-Wmaybe-uninitialized` |gol|
   :option:`-Wmemset-elt-size`  :option:`-Wmemset-transposed-args` |gol|
@@ -285,6 +286,7 @@ in the following sections.
   :option:`-Wno-analyzer-double-fclose` |gol|
   :option:`-Wno-analyzer-double-free` |gol|
   :option:`-Wno-analyzer-exposure-through-output-file` |gol|
+  :option:`-Wno-analyzer-exposure-through-uninit-copy` |gol|
   :option:`-Wno-analyzer-fd-access-mode-mismatch` |gol|
   :option:`-Wno-analyzer-fd-double-close` |gol|
   :option:`-Wno-analyzer-fd-leak` |gol|

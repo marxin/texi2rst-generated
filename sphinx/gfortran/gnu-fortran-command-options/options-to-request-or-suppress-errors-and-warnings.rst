@@ -257,6 +257,10 @@ by GNU Fortran:
 
   * A ``CHARACTER`` variable is declared with negative length.
 
+  * With :option:`-fopenmp`, for fixed-form source code, when an ``omx``
+    vendor-extension sentinel is encountered. (The equivalent ``ompx``,
+    used in free-form source code, is diagnosed by default.)
+
 .. index:: Wtabs, warnings, tabs, tabulators
 
 .. option:: -Wtabs

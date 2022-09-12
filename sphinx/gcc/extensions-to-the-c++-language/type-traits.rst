@@ -75,14 +75,17 @@ pair of types).
 ``__has_virtual_destructor (type)``
   If ``type`` is a class type with a virtual destructor
   ([class.dtor]) then the trait is ``true``, else it is ``false``.
-  Requires: ``type`` shall be a complete type, (possibly cv-qualified)
-  ``void``, or an array of unknown bound.
+  Requires: If ``type`` is a non-union class type, it shall be a complete type.
 
 ``__is_abstract (type)``
   If ``type`` is an abstract class ([class.abstract]) then the trait
   is ``true``, else it is ``false``.
-  Requires: ``type`` shall be a complete type, (possibly cv-qualified)
-  ``void``, or an array of unknown bound.
+  Requires: If ``type`` is a non-union class type, it shall be a complete type.
+
+``__is_aggregate (type)``
+  If ``type`` is an aggregate type ([dcl.init.aggr]) the trait is
+  ``true``, else it is ``false``.
+  Requires: If ``type`` is a class type, it shall be a complete type.
 
 ``__is_base_of (base_type, derived_type)``
   If ``base_type`` is a base class of ``derived_type``
@@ -107,12 +110,16 @@ pair of types).
   members, and ``type`` has no virtual base classes, and ``type``
   has no base classes ``base_type`` for which
   ``__is_empty (base_type)`` is ``false``.
-  Requires: ``type`` shall be a complete type, (possibly cv-qualified)
-  ``void``, or an array of unknown bound.
+  Requires: If ``type`` is a non-union class type, it shall be a complete type.
 
 ``__is_enum (type)``
   If ``type`` is a cv enumeration type ([basic.compound]) the trait is
   ``true``, else it is ``false``.
+
+``__is_final (type)``
+  If ``type`` is a class or union type marked ``final``, then the trait
+  is ``true``, else it is ``false``.
+  Requires: If ``type`` is a class type, it shall be a complete type.
 
 ``__is_literal_type (type)``
   If ``type`` is a literal type ([basic.types]) the trait is
@@ -129,20 +136,19 @@ pair of types).
 ``__is_polymorphic (type)``
   If ``type`` is a polymorphic class ([class.virtual]) then the trait
   is ``true``, else it is ``false``.
-  Requires: ``type`` shall be a complete type, (possibly cv-qualified)
-  ``void``, or an array of unknown bound.
+  Requires: If ``type`` is a non-union class type, it shall be a complete type.
 
 ``__is_standard_layout (type)``
   If ``type`` is a standard-layout type ([basic.types]) the trait is
   ``true``, else it is ``false``.
-  Requires: ``type`` shall be a complete type, (possibly cv-qualified)
-  ``void``, or an array of unknown bound.
+  Requires: ``type`` shall be a complete type, an array of complete types,
+  or (possibly cv-qualified) ``void``.
 
 ``__is_trivial (type)``
   If ``type`` is a trivial type ([basic.types]) the trait is
   ``true``, else it is ``false``.
-  Requires: ``type`` shall be a complete type, (possibly cv-qualified)
-  ``void``, or an array of unknown bound.
+  Requires: ``type`` shall be a complete type, an array of complete types,
+  or (possibly cv-qualified) ``void``.
 
 ``__is_union (type)``
   If ``type`` is a cv union type ([basic.compound]) the trait is
