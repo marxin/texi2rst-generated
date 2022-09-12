@@ -281,6 +281,6 @@ offloading devices (it's not clear if they should be):
 * ``acc_memcpy_from_device``, ``acc_memcpy_from_device_async``
 
 .. -
-   Offload-Target Specifics
+   OpenMP-Implementation Specifics
    -
 

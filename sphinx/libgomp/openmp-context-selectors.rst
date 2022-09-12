@@ -25,9 +25,5 @@ OpenMP Context Selectors
      - See ``-march=`` in 'AMD GCN Options'
    * - ``nvptx``
      - ``gpu``
-     - See ``-misa=`` in 'Nvidia PTX Options'
-
-.. -
-   The libgomp ABI
-   -
+     - See ``-march=`` in 'Nvidia PTX Options'
 

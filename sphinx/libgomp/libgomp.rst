@@ -41,6 +41,7 @@ changed to GNU Offloading and Multi Processing Runtime Library.
   cuda-streams-usage
   openacc-library-interoperability
   openacc-profiling-interface
+  openmp-implementation-specifics
   offload-target-specifics
   the-libgomp-abi
   reporting-bugs

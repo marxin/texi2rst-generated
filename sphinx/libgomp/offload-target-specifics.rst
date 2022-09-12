@@ -8,10 +8,12 @@
 Offload-Target Specifics
 ------------------------
 
-The following sections present notes on the offload-target specifics.
+The following sections present notes on the offload-target specifics
 
 .. toctree::
   :maxdepth: 2
 
-  openmp-context-selectors
+  amd-radeon
+  nvptx
+  amd-radeon-gcn
 

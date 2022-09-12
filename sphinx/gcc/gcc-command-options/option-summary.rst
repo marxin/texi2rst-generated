@@ -197,7 +197,7 @@ in the following sections.
   :option:`-Winfinite-recursion` 
   :option:`-Winit-self`  :option:`-Winline`  :option:`-Wno-int-conversion`  :option:`-Wint-in-bool-context` 
   :option:`-Wno-int-to-pointer-cast`  :option:`-Wno-invalid-memory-model` 
-  :option:`-Winvalid-pch`  :option:`-Winvalid-utf8` :option:`-Wjump-misses-init`  
+  :option:`-Winvalid-pch`  :option:`-Winvalid-utf8`  :option:`-Wno-unicode`  :option:`-Wjump-misses-init`  
   :option:`-Wlarger-than`:samp:`={byte-size}`  :option:`-Wlogical-not-parentheses`  :option:`-Wlogical-op`  
   :option:`-Wlong-long`  :option:`-Wno-lto-type-mismatch` :option:`-Wmain`  :option:`-Wmaybe-uninitialized` 
   :option:`-Wmemset-elt-size`  :option:`-Wmemset-transposed-args` 
@@ -278,6 +278,7 @@ in the following sections.
   :option:`-Wno-analyzer-double-fclose` 
   :option:`-Wno-analyzer-double-free` 
   :option:`-Wno-analyzer-exposure-through-output-file` 
+  :option:`-Wno-analyzer-exposure-through-uninit-copy` 
   :option:`-Wno-analyzer-fd-access-mode-mismatch` 
   :option:`-Wno-analyzer-fd-double-close` 
   :option:`-Wno-analyzer-fd-leak` 

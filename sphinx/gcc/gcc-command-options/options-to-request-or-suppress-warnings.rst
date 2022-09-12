@@ -4636,6 +4636,15 @@ warnings, in some cases it may also cause false positives.
 
   Default setting; overrides :option:`-Winvalid-utf8`.
 
+.. option:: -Wno-unicode
+
+  Don't diagnose invalid forms of delimited or named escape sequences which are
+  treated as separate tokens.  Wunicode is enabled by default.
+
+.. option:: -Wunicode
+
+  Default setting; overrides :option:`-Wno-unicode`.
+
 .. option:: -Wlong-long
 
   Warn if ``long long`` type is used.  This is enabled by either

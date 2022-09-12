@@ -22,6 +22,7 @@ Options That Control Static Analysis
   :option:`-Wanalyzer-double-fclose` 
   :option:`-Wanalyzer-double-free` 
   :option:`-Wanalyzer-exposure-through-output-file` 
+  :option:`-Wanalyzer-exposure-through-uninit-copy` 
   :option:`-Wanalyzer-fd-access-mode-mismatch` 
   :option:`-Wanalyzer-fd-double-close` 
   :option:`-Wanalyzer-fd-leak` 
@@ -139,6 +140,19 @@ Options That Control Static Analysis
 .. option:: -Wanalyzer-exposure-through-output-file
 
   Default setting; overrides :option:`-Wno-analyzer-exposure-through-output-file`.
+
+.. option:: Wanalyzer-exposure-through-uninit-copy
+
+  This warning requires both :option:`-fanalyzer` and the use of a plugin
+  to specify a function that copies across a 'trust boundary'.  Use
+  :option:`-Wno-analyzer-exposure-through-uninit-copy` to disable it.
+
+  This diagnostic warns for 'infoleaks' - paths through the code in which
+  uninitialized values are copied across a security boundary
+  (such as code within an OS kernel that copies a partially-initialized
+  struct on the stack to user space).
+
+  See `CWE-200: Exposure of Sensitive Information to an Unauthorized Actor <https://cwe.mitre.org/data/definitions/200.html>`_.
 
 .. option:: -Wno-analyzer-fd-access-mode-mismatch
 
@@ -324,9 +338,11 @@ Options That Control Static Analysis
   :option:`-Wno-analyzer-out-of-bounds` to disable it.
 
   This diagnostic warns for path through the code in which a buffer is
-  definitely read or written out-of-bounds.  The diagnostic only applies
-  for cases where the analyzer is able to determine a constant offset and
-  for accesses past the end of a buffer, also a constant capacity.
+  definitely read or written out-of-bounds.  The diagnostic applies for
+  cases where the analyzer is able to determine a constant offset and for
+  accesses past the end of a buffer, also a constant capacity.  Further,
+  the diagnostic does limited checking for accesses past the end when the
+  offset as well as the capacity is symbolic.
 
   See `CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer <https://cwe.mitre.org/data/definitions/119.html>`_.
 

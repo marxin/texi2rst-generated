@@ -1202,7 +1202,8 @@ Here are several miscellaneous parameters.
   If defined, this macro is the name of a global variable containing
   target-specific format overrides for the :option:`-Wformat` option. The
   default is to have no target-specific format overrides. If defined,
-  ``TARGET_FORMAT_TYPES`` must be defined, too.
+  ``TARGET_FORMAT_TYPES`` and ``TARGET_OVERRIDES_FORMAT_ATTRIBUTES_COUNT``
+  must be defined, too.
 
 .. c:macro:: TARGET_OVERRIDES_FORMAT_ATTRIBUTES_COUNT
 
