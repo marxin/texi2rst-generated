@@ -156,7 +156,6 @@ in the following sections.
 
   See :ref:`warning-options`.
 
-<<<<<<< HEAD
   :option:`-fsyntax-only`  :option:`-fmax-errors`:samp:`={n}`  :option:`-Wpedantic` |gol|
   :option:`-pedantic-errors` |gol|
   :option:`-w`  :option:`-Wextra`  :option:`-Wall`  :option:`-Wabi`:samp:`={n}` |gol|
