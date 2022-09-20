@@ -63,7 +63,7 @@ add, subtract, multiply, divide; unary arithmetic operators;
 relational operators; equality operators; and conversions to and from
 integer and other floating types.  Use a suffix :samp:`w` or :samp:`W`
 in a literal constant of type ``__float80`` or type
-``__ibm128``.  Use a suffix :samp:`q` or :samp:`Q` for ``_float128``.
+``__ibm128``.  Use a suffix :samp:`q` or :samp:`Q` for ``__float128``.
 
 In order to use ``_Float128``, ``__float128``, and ``__ibm128``
 on PowerPC Linux systems, you must use the :option:`-mfloat128` option. It is
