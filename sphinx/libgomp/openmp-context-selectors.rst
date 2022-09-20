@@ -26,7 +26,3 @@ OpenMP Context Selectors
    * - ``nvptx``
      - ``gpu``
      - See ``-march=`` in :ref:`gcc:nvidia-ptx-options`
-
-.. -
-   The libgomp ABI
-   -
