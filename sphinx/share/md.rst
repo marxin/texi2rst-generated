@@ -1171,7 +1171,7 @@ Epiphany---:samp:`{config/epiphany/constraints.md}`
   in effect.
 
 ``Rsc``
-  The the register class of registers that can be used to hold a
+  The register class of registers that can be used to hold a
   sibcall call address.  I.e., a caller-saved register.
 
 ``Rct``
