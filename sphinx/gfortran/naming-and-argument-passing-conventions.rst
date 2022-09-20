@@ -173,7 +173,7 @@ The arguments are passed in the following order
 * The arguments in the order in which they appear in the Fortran
   declaration
 
-* The the present status for optional arguments with value attribute,
+* The present status for optional arguments with value attribute,
   which are internally passed by value
 
 * The character length and/or coarray token and offset for the first
