@@ -51,6 +51,10 @@ The implementation remark:
         using the C library ``printf`` functions. Note that the Fortran
         ``print`` / ``write`` statements are not supported, yet.
 
+* Compilation OpenMP code that contains ``requires reverse_offload``
+        requires at least ``-march=sm_35``, compiling for ``-march=sm_30``
+        is not supported.
+
 .. -
    The libgomp ABI
    -

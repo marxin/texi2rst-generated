@@ -1008,3 +1008,10 @@ These :samp:`-m` options are defined for the IBM RS/6000 and PowerPC:
 
   Generate (do not generate) unaligned vsx loads and stores for
   inline expansion of ``memcpy`` and ``memmove``.
+
+.. param:: rs6000-vect-unroll-limit=
+
+  The vectorizer will check with target information to determine whether it
+  would be beneficial to unroll the main vectorized loop and by how much.  This
+  parameter sets the upper bound of how much the vectorizer will unroll the main
+  loop.  The default value is four.

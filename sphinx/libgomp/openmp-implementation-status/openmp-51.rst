@@ -172,4 +172,10 @@ Other new OpenMP 5.1 features
    * - Pointer predetermined firstprivate getting initialized to address of matching mapped list item per 5.1, Sect. 2.21.7.2
      - N
      -
+   * - ``begin declare target`` directive
+     - N
+     -
+   * - For Fortran, diagnose placing declarative before/between ``USE``, ``IMPORT``, and ``IMPLICIT`` as invalid
+     - N
+     -
 

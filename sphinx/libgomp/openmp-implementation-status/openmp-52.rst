@@ -24,7 +24,7 @@ New features listed in Appendix B of the OpenMP specification
      -
    * - ``omp`` / ``ompx`` / ``omx`` sentinels and ``omp_`` / ``ompx_`` namespaces
      - N/A
-     - warning for ``omp/ompx`` sentinels``omp/ompx`` sentinels as C/C++ pragma and C++ attributes are warned for with ``-Wunknown-pragmas`` (implied by ``-Wall``) and ``-Wattributes`` (enabled by default), respectively; for Fortran free-source code, there is a warning enabled by default and for fixed-source code with ``-Wsurprising`` (enabled by ``-Wall``)
+     - warning for ``ompx/omx`` sentinelsThe ``ompx`` sentinel as C/C++ pragma and C++ attributes are warned for with ``-Wunknown-pragmas`` (implied by ``-Wall``) and ``-Wattributes`` (enabled by default), respectively; for Fortran free-source code, there is a warning enabled by default and, for fixed-source code, the ``omx`` sentinel is warned for with with ``-Wsurprising`` (enabled by ``-Wall``).  Unknown clauses are always rejected with an error.
    * - Clauses on ``end`` directive can be on directive
      - N
      -
