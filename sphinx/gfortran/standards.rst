@@ -61,9 +61,7 @@ Fortran 95 status
 The Fortran 95 standard specifies in Part 2 (ISO/IEC 1539-2:2000)
 varying length character strings.  While GNU Fortran currently does not
 support such strings directly, there exist two Fortran implementations
-for them, which work with GNU Fortran.  They can be found at
-https://www.fortran.com/iso_varying_string.f95 and at
-ftp://ftp.nag.co.uk/sc22wg5/ISO_VARYING_STRING/.
+for them, which work with GNU Fortran.
 
 Deferred-length character strings of Fortran 2003 supports part of
 the features of ``ISO_VARYING_STRING`` and should be considered as
