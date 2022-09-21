@@ -33,7 +33,7 @@ These additional options are available for Microsoft Windows targets:
 .. option:: -mnop-fun-dllimport
 
   This option is available for Cygwin and MinGW targets.  It
-  specifies that the :gcc-attr:`dllimport` attribute should be ignored.
+  specifies that the :microsoft-windows-fn-attr:`dllimport` attribute should be ignored.
 
 .. option:: -mthreads
 

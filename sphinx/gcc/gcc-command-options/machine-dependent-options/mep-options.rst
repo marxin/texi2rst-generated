@@ -97,7 +97,7 @@ MeP Options
 
 .. option:: -mio-volatile
 
-  Tells the compiler that any variable marked with the :gcc-attr:`io`
+  Tells the compiler that any variable marked with the :mep-var-attr:`io`
   attribute is to be considered volatile.
 
 .. option:: -ml

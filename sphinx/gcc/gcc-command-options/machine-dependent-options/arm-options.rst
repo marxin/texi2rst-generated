@@ -772,7 +772,7 @@ These :samp:`-m` options are defined for the ARM port:
 .. option:: -mabort-on-noreturn
 
   Generate a call to the function ``abort`` at the end of a
-  :gcc-attr:`noreturn` function.  It is executed if the function tries to
+  :fn-attr:`noreturn` function.  It is executed if the function tries to
   return.
 
 .. option:: -mlong-calls, -mno-long-calls
@@ -789,7 +789,7 @@ These :samp:`-m` options are defined for the ARM port:
   the scope of a ``#pragma no_long_calls`` directive, and functions whose
   definitions have already been compiled within the current compilation
   unit are not turned into long calls.  The exceptions to this rule are
-  that weak function definitions, functions with the :gcc-attr:`long_call`
+  that weak function definitions, functions with the :arm-fn-attr:`long_call`
   attribute or the ``section`` attribute, and functions that are within
   the scope of a ``#pragma long_calls`` directive are always
   turned into long calls.

@@ -200,7 +200,7 @@ These command-line options are defined for RX targets:
 
   The generic GCC command-line option :option:`-ffixed-`:samp:`{reg}`
   has special significance to the RX port when used with the
-  :gcc-attr:`interrupt` function attribute.  This attribute indicates a
+  :rx-fn-attr:`interrupt` function attribute.  This attribute indicates a
   function intended to process fast interrupts.  GCC ensures
   that it only uses the registers ``r10``, ``r11``, ``r12``
   and/or ``r13`` and only provided that the normal use of the

@@ -1619,7 +1619,7 @@ warnings, in some cases it may also cause false positives.
   Warn whenever a function parameter is assigned to, but otherwise unused
   (aside from its declaration).
 
-  To suppress this warning use the :gcc-attr:`unused` attribute
+  To suppress this warning use the :var-attr:`unused` attribute
   (see :ref:`variable-attributes`).
 
   This warning is also enabled by :option:`-Wunused` together with
@@ -1635,7 +1635,7 @@ warnings, in some cases it may also cause false positives.
   (aside from its declaration).
   This warning is enabled by :option:`-Wall`.
 
-  To suppress this warning use the :gcc-attr:`unused` attribute
+  To suppress this warning use the :var-attr:`unused` attribute
   (see :ref:`variable-attributes`).
 
   This warning is also enabled by :option:`-Wunused`, which is enabled
@@ -1660,7 +1660,7 @@ warnings, in some cases it may also cause false positives.
   Warn whenever a label is declared but not used.
   This warning is enabled by :option:`-Wall`.
 
-  To suppress this warning use the :gcc-attr:`unused` attribute
+  To suppress this warning use the :var-attr:`unused` attribute
   (see :ref:`variable-attributes`).
 
 .. option:: -Wno-unused-label
@@ -1684,7 +1684,7 @@ warnings, in some cases it may also cause false positives.
 
   Warn whenever a function parameter is unused aside from its declaration.
 
-  To suppress this warning use the :gcc-attr:`unused` attribute
+  To suppress this warning use the :var-attr:`unused` attribute
   (see :ref:`variable-attributes`).
 
 .. option:: -Wno-unused-parameter
@@ -1694,7 +1694,7 @@ warnings, in some cases it may also cause false positives.
 .. option:: -Wno-unused-result
 
   Do not warn if a caller of a function marked with attribute
-  :gcc-attr:`warn_unused_result` (see :ref:`function-attributes`) does not use
+  :fn-attr:`warn_unused_result` (see :ref:`function-attributes`) does not use
   its return value. The default is :option:`-Wunused-result`.
 
 .. option:: -Wunused-result
@@ -1707,7 +1707,7 @@ warnings, in some cases it may also cause false positives.
   declaration. This option implies :option:`-Wunused-const-variable`:samp:`=1` for C,
   but not for C++. This warning is enabled by :option:`-Wall`.
 
-  To suppress this warning use the :gcc-attr:`unused` attribute
+  To suppress this warning use the :var-attr:`unused` attribute
   (see :ref:`variable-attributes`).
 
 .. option:: -Wno-unused-variable
@@ -1721,7 +1721,7 @@ warnings, in some cases it may also cause false positives.
   for C, but not for C++. In C this declares variable storage, but in C++ this
   is not an error since const variables take the place of ``#define`` s.
 
-  To suppress this warning use the :gcc-attr:`unused` attribute
+  To suppress this warning use the :var-attr:`unused` attribute
   (see :ref:`variable-attributes`).
 
   ``-Wunused-const-variable=1``
@@ -1889,7 +1889,7 @@ warnings, in some cases it may also cause false positives.
   in fact be called at the place that would cause a problem.
 
   Some spurious warnings can be avoided if you declare all the functions
-  you use that never return as :gcc-attr:`noreturn`.  See :ref:`function-attributes`.
+  you use that never return as :fn-attr:`noreturn`.  See :ref:`function-attributes`.
 
   This warning is enabled by :option:`-Wall` or :option:`-Wextra`.
 
@@ -2200,7 +2200,7 @@ warnings, in some cases it may also cause false positives.
 
   In situations where a character array is intended to store a sequence
   of bytes with no terminating ``NUL`` such an array may be annotated
-  with attribute :gcc-attr:`nonstring` to avoid this warning.  Such arrays,
+  with attribute :var-attr:`nonstring` to avoid this warning.  Such arrays,
   however, are not suitable arguments to functions that expect
   ``NUL`` -terminated strings.  To help detect accidental misuses of
   such arrays GCC issues warnings unless it can prove that the use is
@@ -2218,9 +2218,9 @@ warnings, in some cases it may also cause false positives.
   .. option:: -Wsuggest-attribute=pure, -Wno-suggest-attribute=pure, -Wno-suggest-attribute=const, -Wno-suggest-attribute=noreturn, -Wno-missing-noreturn, -Wno-suggest-attribute=malloc
 
     Warn about functions that might be candidates for attributes
-    :gcc-attr:`pure`, :gcc-attr:`const` or :gcc-attr:`noreturn` or ``malloc``. The compiler
+    :fn-attr:`pure`, :fn-attr:`const` or :fn-attr:`noreturn` or ``malloc``. The compiler
     only warns for functions visible in other compilation units or (in the case of
-    :gcc-attr:`pure` and :gcc-attr:`const`) if it cannot prove that the function returns
+    :fn-attr:`pure` and :fn-attr:`const`) if it cannot prove that the function returns
     normally. A function returns normally if it doesn't contain an infinite loop or
     return abnormally by throwing, calling ``abort`` or trapping.  This analysis
     requires option :option:`-fipa-pure-const`, which is enabled by default at
@@ -2249,9 +2249,9 @@ warnings, in some cases it may also cause false positives.
 
   .. option:: -Wsuggest-attribute=cold
 
-    Warn about functions that might be candidates for :gcc-attr:`cold` attribute.  This
+    Warn about functions that might be candidates for :fn-attr:`cold` attribute.  This
     is based on static detection and generally only warns about functions which
-    always leads to a call to another :gcc-attr:`cold` function such as wrappers of
+    always leads to a call to another :fn-attr:`cold` function such as wrappers of
     C++ ``throw`` or fatal error reporting functions leading to ``abort``.
 
   .. option:: -Wno-suggest-attribute=cold
@@ -2501,9 +2501,9 @@ warnings, in some cases it may also cause false positives.
     restrictive than the target, rather than more restrictive.
 
     Attributes considered include ``alloc_align``, ``alloc_size``,
-    :gcc-attr:`cold`, :gcc-attr:`const`, :gcc-attr:`hot`, :gcc-attr:`leaf`, ``malloc``,
-    :gcc-attr:`nonnull`, :gcc-attr:`noreturn`, :gcc-attr:`nothrow`, :gcc-attr:`pure`,
-    :gcc-attr:`returns_nonnull`, and :gcc-attr:`returns_twice`.
+    :fn-attr:`cold`, :fn-attr:`const`, :fn-attr:`hot`, :fn-attr:`leaf`, :fn-attr:`malloc`,
+    :fn-attr:`nonnull`, :fn-attr:`noreturn`, :fn-attr:`nothrow`, :fn-attr:`pure`,
+    :fn-attr:`returns_nonnull`, and :fn-attr:`returns_twice`.
 
   :option:`-Wattribute-alias` is equivalent to :option:`-Wattribute-alias`:samp:`=1`.
   This is the default.  You can disable these warnings with either
@@ -4299,7 +4299,7 @@ warnings, in some cases it may also cause false positives.
 .. option:: -Wno-deprecated-declarations
 
   Do not warn about uses of functions (see :ref:`function-attributes`),
-  variables (see :ref:`variable-attributes`), and types (see :ref:`type-attributes`) marked as deprecated by using the :gcc-attr:`deprecated`
+  variables (see :ref:`variable-attributes`), and types (see :ref:`type-attributes`) marked as deprecated by using the ``deprecated``
   attribute.
 
 .. option:: -Wdeprecated-declarations
@@ -4399,7 +4399,7 @@ warnings, in some cases it may also cause false positives.
 
 .. option:: -Wnopacked-bitfield-compat
 
-  The 4.1, 4.2 and 4.3 series of GCC ignore the :gcc-attr:`packed` attribute
+  The 4.1, 4.2 and 4.3 series of GCC ignore the :var-attr:`packed` attribute
   on bit-fields of type ``char``.  This was fixed in GCC 4.4 but
   the change can lead to differences in the structure layout.  GCC
   informs you when the offset of such a field has changed in GCC 4.4.
@@ -4859,7 +4859,7 @@ warnings, in some cases it may also cause false positives.
     C and Objective-C only
 
   Suppress warnings when a positional initializer is used to initialize
-  a structure that has been marked with the :gcc-attr:`designated_init`
+  a structure that has been marked with the :type-attr:`designated_init`
   attribute.
 
 .. option:: -Wdesignated-init

@@ -118,8 +118,7 @@ These options are defined for AVR implementations:
 
   Assume that all data in static storage can be accessed by LDS / STS
   instructions.  This option has only an effect on reduced Tiny devices like
-  ATtiny40.  See also the :gcc-attr:`absdata`
-  :ref:`avr-variable-attributes`.
+  ATtiny40.  See also the :avr-var-attr:`absdata`.
 
 .. option:: -maccumulate-args
 
@@ -605,7 +604,7 @@ For even more AVR-specific built-in macros see
   description file, and is currently available for
   ``avrtiny`` and ``avrxmega3``.  Even more convenient,
   there is no need to use address spaces like ``__flash`` or
-  features like attribute :gcc-attr:`progmem` and ``pgm_read_*``.
+  features like attribute :avr-var-attr:`progmem` and ``pgm_read_*``.
 
 ``__WITH_AVRLIBC__``
   The compiler is configured to be used together with AVR-Libc.

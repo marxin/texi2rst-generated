@@ -608,12 +608,12 @@ program analysis purposes.
 
     This option enables instrumentation of calls, checking whether null values
     are not passed to arguments marked as requiring a non-null value by the
-    :gcc-attr:`nonnull` function attribute.
+    :fn-attr:`nonnull` function attribute.
 
   .. option:: -fsanitize=returns-nonnull-attribute
 
     This option enables instrumentation of return statements in functions
-    marked with :gcc-attr:`returns_nonnull` function attribute, to detect returning
+    marked with :fn-attr:`returns_nonnull` function attribute, to detect returning
     of null values from such functions.
 
   .. option:: -fsanitize=bool
@@ -788,7 +788,7 @@ program analysis purposes.
   ``branch`` and the second bit of ``__CET__`` is set to 1 for
   the ``return``.
 
-  You can also use the :gcc-attr:`nocf_check` attribute to identify
+  You can also use the :fn-attr:`nocf_check` attribute to identify
   which functions and calls should be skipped from instrumentation
   (see :ref:`function-attributes`).
 
@@ -841,7 +841,7 @@ program analysis purposes.
 .. option:: -fstack-protector-explicit
 
   Like :option:`-fstack-protector` but only protects those functions which
-  have the :gcc-attr:`stack_protect` attribute.
+  have the :fn-attr:`stack_protect` attribute.
 
 .. option:: -fstack-check
 
@@ -911,7 +911,7 @@ program analysis purposes.
   of 128KB.  Note that this may only work with the GNU linker.
 
   You can locally override stack limit checking by using the
-  :gcc-attr:`no_stack_limit` function attribute (see :ref:`function-attributes`).
+  :fn-attr:`no_stack_limit` function attribute (see :ref:`function-attributes`).
 
 .. option:: -fsplit-stack
 

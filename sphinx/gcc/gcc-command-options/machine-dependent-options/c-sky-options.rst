@@ -97,7 +97,7 @@ GCC supports these options when compiling for C-SKY V2 processors.
   Enable interrupt stack instructions; the default is off.
 
   The :option:`-mistack` option is required to handle the
-  :gcc-attr:`interrupt` and :gcc-attr:`isr` function attributes
+  :c-sky-fn-attr:`interrupt` and :c-sky-fn-attr:`isr` function attributes
   (see :ref:`c-sky-function-attributes`).
 
 .. option:: -mmp
