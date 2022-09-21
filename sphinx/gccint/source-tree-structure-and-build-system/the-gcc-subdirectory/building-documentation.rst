@@ -72,10 +72,11 @@ subdirectory (or use an existing one).
 See the documentation for `Sphinx`_ and `reStructuredText`_ on what you can do
 with them. In particular, the Sphinx `reStructuredText Primer`_ is a good place
 to get started with reStructuredText. There are also some `Sphinx specific
-markup constructs`_.
+markup constructs`_ and `Usefull RST cheatsheet`_.
 
 .. _reStructuredText Primer: http://www.sphinx-doc.org/en/stable/rest.html
 .. _Sphinx specific markup constructs: http://www.sphinx-doc.org/en/stable/markup/index.html
+.. _Usefull RST cheatsheet: https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst
 
 Specific guidelines for the GCC documentation
 ---------------------------------------------
@@ -129,11 +130,13 @@ Here are some specific guidelines for the GCC documentation:
   examples, etc.), use ``::`` for anything that doesn't really benefit
   from syntax highlighting, especially short snippets. Use
   ``.. code-block:: <language>`` for longer code blocks that benefit
-  from highlighting. For a short snippet of code embedded in the text, use \`\`.
+  from highlighting. For a short snippet of code embedded in the text, use ````code snippet````.
 
 * GCC defines the following GCC-specific directives:
 
-  * ``gcc-attr`` - GCC attributes that can be used for function, type, variable attributes
+  * ``fn-attr``, ``var-attr``, ``type-attr`` - GCC attributes that can be used for function, variable and type attributes;
+    target-specific attributes are also provided and they are defined in :file:`doc/gcc_sphinx.py` file
+
   * ``gcc-param`` - a GCC parameter directive, e.g. ``.. gcc-param: inline-unit-growth``
 
 .. _miscellaneous-docs:
