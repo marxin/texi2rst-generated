@@ -1,7 +1,7 @@
 ..
   Copyright 1988-2022 Free Software Foundation, Inc.
   This is part of the GCC manual.
-  For copying conditions, see the GPL license file
+  For copying conditions, see the copyright.rst file.
 
 .. index:: additional floating types, _Floatn data types, _Floatnx data types, __float80 data type, __float128 data type, __ibm128 data type, w floating point suffix, q floating point suffix, W floating point suffix, Q floating point suffix
 

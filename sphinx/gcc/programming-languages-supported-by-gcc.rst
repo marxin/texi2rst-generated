@@ -1,7 +1,7 @@
 ..
   Copyright 1988-2022 Free Software Foundation, Inc.
   This is part of the GCC manual.
-  For copying conditions, see the GPL license file
+  For copying conditions, see the copyright.rst file.
 
 .. index:: GCC, GNU Compiler Collection, GNU C Compiler, Ada, D, Fortran, Go, Objective-C, Objective-C++
 

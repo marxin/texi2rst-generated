@@ -1,7 +1,7 @@
 ..
   Copyright 1988-2022 Free Software Foundation, Inc.
   This is part of the GCC manual.
-  For copying conditions, see the GPL license file
+  For copying conditions, see the copyright.rst file.
 
 .. index:: GIMPLE_DEBUG, GIMPLE_DEBUG_BIND, GIMPLE_DEBUG_BEGIN_STMT, GIMPLE_DEBUG_INLINE_ENTRY
 

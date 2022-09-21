@@ -1,7 +1,7 @@
 ..
   Copyright 1988-2022 Free Software Foundation, Inc.
   This is part of the GCC manual.
-  For copying conditions, see the GPL license file
+  For copying conditions, see the copyright.rst file.
 
 .. index:: decimal floating types, _Decimal32 data type, _Decimal64 data type, _Decimal128 data type, df integer suffix, dd integer suffix, dl integer suffix, DF integer suffix, DD integer suffix, DL integer suffix
 

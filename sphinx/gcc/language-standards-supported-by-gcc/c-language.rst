@@ -1,7 +1,7 @@
 ..
   Copyright 1988-2022 Free Software Foundation, Inc.
   This is part of the GCC manual.
-  For copying conditions, see the GPL license file
+  For copying conditions, see the copyright.rst file.
 
 .. index:: C standard, C standards, ANSI C standard, ANSI C, ANSI C89, C89, ANSI X3.159-1989, X3.159-1989, ISO C standard, ISO C, ISO C90, ISO/IEC 9899, ISO 9899, C90, ISO C94, C94, ISO C95, C95, ISO C99, C99, ISO C9X, C9X, ISO C11, C11, ISO C1X, C1X, ISO C17, C17, ISO C2X, C2X, Technical Corrigenda, TC1, Technical Corrigendum 1, TC2, Technical Corrigendum 2, TC3, Technical Corrigendum 3, AMD1, freestanding implementation, freestanding environment, hosted implementation, hosted environment, __STDC_HOSTED__, std, ansi, pedantic, pedantic-errors
 

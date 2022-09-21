@@ -1,7 +1,7 @@
 ..
   Copyright 1988-2022 Free Software Foundation, Inc.
   This is part of the GCC manual.
-  For copying conditions, see the GPL license file
+  For copying conditions, see the copyright.rst file.
 
 .. index:: fixed-point types, _Fract data type, _Accum data type, _Sat data type, hr fixed-suffix, r fixed-suffix, lr fixed-suffix, llr fixed-suffix, uhr fixed-suffix, ur fixed-suffix, ulr fixed-suffix, ullr fixed-suffix, hk fixed-suffix, k fixed-suffix, lk fixed-suffix, llk fixed-suffix, uhk fixed-suffix, uk fixed-suffix, ulk fixed-suffix, ullk fixed-suffix, HR fixed-suffix, R fixed-suffix, LR fixed-suffix, LLR fixed-suffix, UHR fixed-suffix, UR fixed-suffix, ULR fixed-suffix, ULLR fixed-suffix, HK fixed-suffix, K fixed-suffix, LK fixed-suffix, LLK fixed-suffix, UHK fixed-suffix, UK fixed-suffix, ULK fixed-suffix, ULLK fixed-suffix
 
