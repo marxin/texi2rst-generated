@@ -687,7 +687,7 @@ it.
   any portion of the bit-field, or memory-mapped registers unrelated to
   the one being updated.
 
-  In some cases, such as when the :gcc-attr:`packed` attribute is applied to a 
+  In some cases, such as when the :var-attr:`packed` attribute is applied to a 
   structure field, it may not be possible to access the field with a single
   read or write that is correctly aligned for the target machine.  In this
   case GCC falls back to generating multiple accesses rather than code that 

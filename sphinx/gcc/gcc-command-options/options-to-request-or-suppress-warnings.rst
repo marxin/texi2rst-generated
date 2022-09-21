@@ -365,7 +365,7 @@ warnings, in some cases it may also cause false positives.
 
     The mangling was changed in :option:`-fabi-version`:samp:`=4`.
 
-  * ``__attribute ((const))`` and :gcc-attr:`noreturn` were mangled as type
+  * ``__attribute ((const))`` and :fn-attr:`noreturn` were mangled as type
     qualifiers, and ``decltype`` of a plain declaration was folded away.
 
     These mangling issues were fixed in :option:`-fabi-version`:samp:`=5`.
@@ -765,7 +765,7 @@ warnings, in some cases it may also cause false positives.
 .. option:: -Wnonnull
 
   Warn about passing a null pointer for arguments marked as
-  requiring a non-null value by the :gcc-attr:`nonnull` function attribute.
+  requiring a non-null value by the :fn-attr:`nonnull` function attribute.
 
   :option:`-Wnonnull` is included in :option:`-Wall` and :option:`-Wformat`.  It
   can be disabled with the :option:`-Wno-nonnull` option.
@@ -776,7 +776,7 @@ warnings, in some cases it may also cause false positives.
 
 .. option:: -Wnonnull-compare
 
-  Warn when comparing an argument marked with the :gcc-attr:`nonnull`
+  Warn when comparing an argument marked with the :fn-attr:`nonnull`
   function attribute against null inside the function.
 
   :option:`-Wnonnull-compare` is included in :option:`-Wall`.  It
@@ -1127,18 +1127,18 @@ warnings, in some cases it may also cause false positives.
   issued when the alias is more restrictive than the target, which could
   lead to incorrect code generation.
   Attributes considered include ``alloc_align``, ``alloc_size``,
-  :gcc-attr:`cold`, :gcc-attr:`const`, :gcc-attr:`hot`, :gcc-attr:`leaf`, ``malloc``,
-  :gcc-attr:`nonnull`, :gcc-attr:`noreturn`, :gcc-attr:`nothrow`, :gcc-attr:`pure`,
-  :gcc-attr:`returns_nonnull`, and :gcc-attr:`returns_twice`.
+  :fn-attr:`cold`, :fn-attr:`const`, :fn-attr:`hot`, :fn-attr:`leaf`, :fn-attr:`malloc`,
+  :fn-attr:`nonnull`, :fn-attr:`noreturn`, :fn-attr:`nothrow`, :fn-attr:`pure`,
+  :fn-attr:`returns_nonnull`, and :fn-attr:`returns_twice`.
 
   In C++, the warning is issued when an explicit specialization of a primary
   template declared with attribute ``alloc_align``, ``alloc_size``,
   ``assume_aligned``, ``format``, ``format_arg``, ``malloc``,
-  or :gcc-attr:`nonnull` is declared without it.  Attributes :gcc-attr:`deprecated`,
+  or :fn-attr:`nonnull` is declared without it.  Attributes :fn-attr:`deprecated`,
   ``error``, and ``warning`` suppress the warning.
   (see :ref:`function-attributes`).
 
-  You can use the :gcc-attr:`copy` attribute to apply the same
+  You can use the ``copy`` attribute to apply the same
   set of attributes to a declaration as that on another declaration without
   explicitly enumerating the attributes. This attribute can be applied
   to declarations of functions (see :ref:`common-function-attributes`),

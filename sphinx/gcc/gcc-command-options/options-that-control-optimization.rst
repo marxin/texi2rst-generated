@@ -319,11 +319,11 @@ optimizations to be performed is desired.
 .. option:: -fno-inline
 
   Do not expand any functions inline apart from those marked with
-  the :gcc-attr:`always_inline` attribute.  This is the default when not
+  the :fn-attr:`always_inline` attribute.  This is the default when not
   optimizing.
 
   Single functions can be exempted from inlining by marking them
-  with the :gcc-attr:`noinline` attribute.
+  with the :fn-attr:`noinline` attribute.
 
 .. option:: -finline
 
@@ -373,7 +373,7 @@ optimizations to be performed is desired.
 
 .. option:: -fearly-inlining
 
-  Inline functions marked by :gcc-attr:`always_inline` and functions whose body seems
+  Inline functions marked by :fn-attr:`always_inline` and functions whose body seems
   smaller than the function call overhead early before doing
   :option:`-fprofile-generate` instrumentation and real inlining pass.  Doing so
   makes profiling significantly cheaper and usually inlining faster on programs
@@ -422,7 +422,7 @@ optimizations to be performed is desired.
 .. option:: -fno-keep-inline-dllexport
 
   This is a more fine-grained version of :option:`-fkeep-inline-functions`,
-  which applies only to functions that are declared using the :gcc-attr:`dllexport`
+  which applies only to functions that are declared using the :microsoft-windows-fn-attr:`dllexport`
   attribute or declspec.  See :ref:`function-attributes`.
 
 .. option:: -fkeep-inline-dllexport
@@ -1207,7 +1207,7 @@ optimizations to be performed is desired.
 
   Perform interprocedural profile propagation.  The functions called only from
   cold functions are marked as cold. Also functions executed once (such as
-  :gcc-attr:`cold`, :gcc-attr:`noreturn`, static constructors or destructors) are
+  :fn-attr:`cold`, :fn-attr:`noreturn`, static constructors or destructors) are
   identified. Cold functions and loop less parts of functions executed once are
   then optimized for size.
   Enabled by default at :option:`-O1` and higher.
@@ -1333,7 +1333,7 @@ optimizations to be performed is desired.
 .. option:: -fisolate-erroneous-paths-attribute
 
   Detect paths that trigger erroneous or undefined behavior due to a null value
-  being used in a way forbidden by a :gcc-attr:`returns_nonnull` or :gcc-attr:`nonnull`
+  being used in a way forbidden by a :fn-attr:`returns_nonnull` or :fn-attr:`nonnull`
   attribute.  Isolate those paths from the main control flow and turn the
   statement with erroneous or undefined behavior into a trap.  This is not
   currently enabled, but may be enabled by :option:`-O2` in the future.
@@ -1699,7 +1699,7 @@ optimizations to be performed is desired.
   The default is :samp:`uninitialized`.
 
   You can control this behavior for a specific variable by using the variable
-  attribute :gcc-attr:`uninitialized` (see :ref:`variable-attributes`).
+  attribute :var-attr:`uninitialized` (see :ref:`variable-attributes`).
 
 .. option:: -fvect-cost-model={model}
 
@@ -1905,7 +1905,7 @@ optimizations to be performed is desired.
 
   This option isn't effective unless you either provide profile feedback
   (see :option:`-fprofile-arcs` for details) or manually annotate functions with 
-  :gcc-attr:`hot` or :gcc-attr:`cold` attributes (see :ref:`common-function-attributes`).
+  :fn-attr:`hot` or :fn-attr:`cold` attributes (see :ref:`common-function-attributes`).
 
   Enabled at levels :option:`-O2`, :option:`-O3`, :option:`-Os`.
 
@@ -2146,7 +2146,7 @@ optimizations to be performed is desired.
 
   Assume that the current compilation unit represents the whole program being
   compiled.  All public functions and variables with the exception of ``main``
-  and those merged by attribute :gcc-attr:`externally_visible` become static functions
+  and those merged by attribute :fn-attr:`externally_visible` become static functions
   and in effect are optimized more aggressively by interprocedural optimizers.
 
   This option should not be used in combination with :option:`-flto`.
