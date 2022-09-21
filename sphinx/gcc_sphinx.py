@@ -9,6 +9,8 @@ def setup(app):
                         indextemplate='pair: %s; function attribute')
     app.add_object_type('var-attr', 'var-attr', objname='variable attribute',
                         indextemplate='pair: %s; variable attribute')
+    app.add_object_type('type-attr', 'type-attr', objname='type attribute',
+                        indextemplate='pair: %s; type attribute')
     app.add_object_type('gcc-param', 'gcc-param', objname='GCC parameter',
                         indextemplate='pair: %s; parameter')
 
@@ -27,6 +29,8 @@ def setup(app):
                             indextemplate=f'pair: %s; {target_name} function attribute')
         app.add_object_type(f'{target}-var-attr', f'{target}-var-attr', objname=f'{target_name} variable attribute',
                             indextemplate=f'pair: %s; {target_name} variable attribute')
+        app.add_object_type(f'{target}-type-attr', f'{target}-type-attr', objname=f'{target_name} type attribute',
+                            indextemplate=f'pair: %s; {target_name} type attribute')
 
     return dict(
         version = __version__,

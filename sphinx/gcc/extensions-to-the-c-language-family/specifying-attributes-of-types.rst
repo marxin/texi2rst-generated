@@ -45,9 +45,9 @@ The following type attributes are supported on most targets.
 
 .. index:: aligned type attribute
 
-.. gcc-attr:: aligned, aligned (alignment)
+.. type-attr:: aligned, aligned (alignment)
 
-  The :gcc-attr:`aligned` attribute specifies a minimum alignment (in bytes) for
+  The :type-attr:`aligned` attribute specifies a minimum alignment (in bytes) for
   variables of the specified type.  When specified, :samp:`{alignment}` must be
   a power of 2.  Specifying no :samp:`{alignment}` argument implies the maximum
   alignment for the target, which is often, but by no means always, 8 or 16
@@ -71,7 +71,7 @@ The following type attributes are supported on most targets.
   the lowest common multiple of the alignments of all of the members of
   the ``struct`` or ``union`` in question.  This means that you *can*
   effectively adjust the alignment of a ``struct`` or ``union``
-  type by attaching an :gcc-attr:`aligned` attribute to any one of the members
+  type by attaching an :type-attr:`aligned` attribute to any one of the members
   of such a type, but the notation illustrated in the example above is a
   more obvious, intuitive, and readable way to request the compiler to
   adjust the alignment of an entire ``struct`` or ``union`` type.
@@ -87,7 +87,7 @@ The following type attributes are supported on most targets.
 
     struct __attribute__ ((aligned)) S { short f[3]; };
 
-  Whenever you leave out the alignment factor in an :gcc-attr:`aligned`
+  Whenever you leave out the alignment factor in an :type-attr:`aligned`
   attribute specification, the compiler automatically sets the alignment
   for the type to the largest alignment that is ever used for any data
   type on the target machine you are compiling for.  Doing this can often
@@ -114,7 +114,7 @@ The following type attributes are supported on most targets.
   pointer arithmetic operations is often more efficient for
   efficiently-aligned types than for other types.
 
-  Note that the effectiveness of :gcc-attr:`aligned` attributes may be limited
+  Note that the effectiveness of :type-attr:`aligned` attributes may be limited
   by inherent limitations in your linker.  On many systems, the linker is
   only able to arrange for variables to be aligned up to a certain maximum
   alignment.  (For some linkers, the maximum supported alignment may
@@ -123,15 +123,15 @@ The following type attributes are supported on most targets.
   in an ``__attribute__`` still only provides you with 8-byte
   alignment.  See your linker documentation for further information.
 
-  When used on a struct, or struct member, the :gcc-attr:`aligned` attribute can
-  only increase the alignment; in order to decrease it, the :gcc-attr:`packed`
+  When used on a struct, or struct member, the :type-attr:`aligned` attribute can
+  only increase the alignment; in order to decrease it, the :type-attr:`packed`
   attribute must be specified as well.  When used as part of a typedef, the
-  :gcc-attr:`aligned` attribute can both increase and decrease alignment, and
-  specifying the :gcc-attr:`packed` attribute generates a warning.
+  :type-attr:`aligned` attribute can both increase and decrease alignment, and
+  specifying the :type-attr:`packed` attribute generates a warning.
 
   .. index:: warn_if_not_aligned type attribute
 
-.. gcc-attr:: warn_if_not_aligned (alignment)
+.. type-attr:: warn_if_not_aligned (alignment)
 
   This attribute specifies a threshold for the structure field, measured
   in bytes.  If the structure field is aligned below the threshold, a
@@ -183,7 +183,7 @@ The following type attributes are supported on most targets.
 
 .. index:: alloc_size type attribute
 
-.. gcc-attr:: alloc_size (position), alloc_size (position-1, position-2)
+.. type-attr:: alloc_size (position), alloc_size (position-1, position-2)
 
   The ``alloc_size`` type attribute may be applied to the definition
   of a type of a function that returns a pointer and takes at least one
@@ -211,27 +211,27 @@ The following type attributes are supported on most targets.
 
 .. index:: copy type attribute
 
-.. gcc-attr:: copy, copy (expression)
+.. type-attr:: copy, copy (expression)
 
-  The :gcc-attr:`copy` attribute applies the set of attributes with which
+  The :type-attr:`copy` attribute applies the set of attributes with which
   the type of the :samp:`{expression}` has been declared to the declaration
   of the type to which the attribute is applied.  The attribute is
   designed for libraries that define aliases that are expected to
   specify the same set of attributes as the aliased symbols.
-  The :gcc-attr:`copy` attribute can be used with types, variables, or
+  The :type-attr:`copy` attribute can be used with types, variables, or
   functions.  However, the kind of symbol to which the attribute is
   applied (either varible or function) must match the kind of symbol
   to which the argument refers.
-  The :gcc-attr:`copy` attribute copies only syntactic and semantic attributes
+  The :type-attr:`copy` attribute copies only syntactic and semantic attributes
   but not attributes that affect a symbol's linkage or visibility such as
-  ``alias``, :gcc-attr:`visibility`, or :gcc-attr:`weak`.  The :gcc-attr:`deprecated`
+  ``alias``, :type-attr:`visibility`, or :type-attr:`weak`.  The :type-attr:`deprecated`
   attribute is also not copied.  See :ref:`common-function-attributes`.
   See :ref:`common-variable-attributes`.
 
   For example, suppose ``struct A`` below is defined in some third
   party library header to have the alignment requirement ``N`` and
   to force a warning whenever a variable of the type is not so aligned
-  due to attribute :gcc-attr:`packed`.  Specifying the :gcc-attr:`copy` attribute
+  due to attribute :type-attr:`packed`.  Specifying the :type-attr:`copy` attribute
   on the definition on the unrelated ``struct B`` has the effect of
   copying all relevant attributes from the type referenced by the pointer
   expression to ``struct B``.
@@ -244,9 +244,9 @@ The following type attributes are supported on most targets.
 
 .. index:: deprecated type attribute
 
-.. gcc-attr:: deprecated, deprecated (msg)
+.. type-attr:: deprecated, deprecated (msg)
 
-  The :gcc-attr:`deprecated` attribute results in a warning if the type
+  The :type-attr:`deprecated` attribute results in a warning if the type
   is used anywhere in the source file.  This is useful when identifying
   types that are expected to be removed in a future version of a program.
   If possible, the warning also includes the location of the declaration
@@ -274,7 +274,7 @@ The following type attributes are supported on most targets.
   escape sequences, and if the :option:`-fmessage-length` option is set
   to 0 (its default value) then any newline characters will be ignored.
 
-  The :gcc-attr:`deprecated` attribute can also be used for functions and
+  The :type-attr:`deprecated` attribute can also be used for functions and
   variables (see :ref:`function-attributes`, see :ref:`variable-attributes`.)
 
   The message attached to the attribute is affected by the setting of
@@ -282,19 +282,19 @@ The following type attributes are supported on most targets.
 
 .. index:: unavailable type attribute
 
-.. gcc-attr:: unavailable, unavailable (msg)
+.. type-attr:: unavailable, unavailable (msg)
 
-  The :gcc-attr:`unavailable` attribute behaves in the same manner as the
-  :gcc-attr:`deprecated` one, but emits an error rather than a warning.  It is
-  used to indicate that a (perhaps previously :gcc-attr:`deprecated`) type is
+  The :type-attr:`unavailable` attribute behaves in the same manner as the
+  :type-attr:`deprecated` one, but emits an error rather than a warning.  It is
+  used to indicate that a (perhaps previously :type-attr:`deprecated`) type is
   no longer usable.
 
-  The :gcc-attr:`unavailable` attribute can also be used for functions and
+  The :type-attr:`unavailable` attribute can also be used for functions and
   variables (see :ref:`function-attributes`, see :ref:`variable-attributes`.)
 
 .. index:: designated_init type attribute
 
-.. gcc-attr:: designated_init
+.. type-attr:: designated_init
 
   This attribute may only be applied to structure types.  It indicates
   that any initialization of an object of this type must use designated
@@ -308,7 +308,7 @@ The following type attributes are supported on most targets.
 
 .. index:: may_alias type attribute
 
-.. gcc-attr:: may_alias
+.. type-attr:: may_alias
 
   Accesses through pointers to types with this attribute are not subject
   to type-based alias analysis, but are instead assumed to be able to alias
@@ -350,7 +350,7 @@ The following type attributes are supported on most targets.
 
 .. index:: mode type attribute
 
-.. gcc-attr:: mode (mode)
+.. type-attr:: mode (mode)
 
   This attribute specifies the data type for the declaration---whichever
   type corresponds to the mode :samp:`{mode}`.  This in effect lets you
@@ -370,12 +370,12 @@ The following type attributes are supported on most targets.
   This attribute, attached to a ``struct``, ``union``, or C++ ``class``
   type definition, specifies that each of its members (other than zero-width
   bit-fields) is placed to minimize the memory required.  This is equivalent
-  to specifying the :gcc-attr:`packed` attribute on each of the members.
+  to specifying the :type-attr:`packed` attribute on each of the members.
 
-  When attached to an ``enum`` definition, the :gcc-attr:`packed` attribute
+  When attached to an ``enum`` definition, the :type-attr:`packed` attribute
   indicates that the smallest integral type should be used.
   Specifying the :option:`-fshort-enums` flag on the command line
-  is equivalent to specifying the :gcc-attr:`packed`
+  is equivalent to specifying the :type-attr:`packed`
   attribute on all ``enum`` definitions.
 
   In the following example ``struct my_packed_struct`` 's members are
@@ -398,14 +398,14 @@ The following type attributes are supported on most targets.
          struct my_unpacked_struct s;
       };
 
-  You may only specify the :gcc-attr:`packed` attribute on the definition
+  You may only specify the :type-attr:`packed` attribute on the definition
   of an ``enum``, ``struct``, ``union``, or ``class``, 
   not on a ``typedef`` that does not also define the enumerated type,
   structure, union, or class.
 
 .. index:: scalar_storage_order type attribute
 
-.. gcc-attr:: scalar_storage_order ("endianness")
+.. type-attr:: scalar_storage_order ("endianness")
 
   When attached to a ``union`` or a ``struct``, this attribute sets
   the storage order, aka endianness, of the scalar fields of the type, as
@@ -451,7 +451,7 @@ The following type attributes are supported on most targets.
 
 .. index:: transparent_union type attribute
 
-.. gcc-attr:: transparent_union
+.. type-attr:: transparent_union
 
   This attribute, attached to a ``union`` type definition, indicates
   that any function parameter having that union type causes calls to that
@@ -512,7 +512,7 @@ The following type attributes are supported on most targets.
 
 .. index:: unused type attribute
 
-.. gcc-attr:: unused
+.. type-attr:: unused
 
   When attached to a type (including a ``union`` or a ``struct``),
   this attribute means that variables of that type are meant to appear
@@ -524,7 +524,7 @@ The following type attributes are supported on most targets.
 
 .. index:: vector_size type attribute
 
-.. gcc-attr:: vector_size (bytes)
+.. type-attr:: vector_size (bytes)
 
   This attribute specifies the vector size for the type, measured in bytes.
   The type to which it applies is known as the :dfn:`base type`.  The :samp:`{bytes}`
@@ -560,7 +560,7 @@ The following type attributes are supported on most targets.
 
 .. index:: visibility type attribute
 
-.. gcc-attr:: visibility
+.. type-attr:: visibility
 
   In C++, attribute visibility (see :ref:`function-attributes`) can also be
   applied to class, struct, union and enum types.  Unlike other type
@@ -574,7 +574,7 @@ The following type attributes are supported on most targets.
   Otherwise the two shared objects are unable to use the same
   typeinfo node and exception handling will break.
 
-.. gcc-attr:: objc_root_class
+.. type-attr:: objc_root_class
 
   .. note::
 
@@ -610,7 +610,7 @@ loads and stores of data declared ``uncached``.
 ARM Type Attributes
 ^^^^^^^^^^^^^^^^^^^
 
-On those ARM targets that support :gcc-attr:`dllimport` (such as Symbian
+On those ARM targets that support :type-attr:`dllimport` (such as Symbian
 OS), you can use the ``notshared`` attribute to indicate that the
 virtual table and other similar data for a class should not be
 exported from a DLL.  For example:
@@ -652,9 +652,9 @@ MeP Type Attributes
 ^^^^^^^^^^^^^^^^^^^
 
 Many of the MeP variable attributes may be applied to types as well.
-Specifically, the :gcc-attr:`based`, :gcc-attr:`tiny`, :gcc-attr:`near`, and
-:gcc-attr:`far` attributes may be applied to either.  The :gcc-attr:`io` and
-:gcc-attr:`cb` attributes may not be applied to types.
+Specifically, the :type-attr:`based`, :type-attr:`tiny`, :type-attr:`near`, and
+:type-attr:`far` attributes may be applied to either.  The :type-attr:`io` and
+:type-attr:`cb` attributes may not be applied to types.
 
 .. _powerpc-type-attributes:
 
@@ -662,11 +662,11 @@ PowerPC Type Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Three attributes currently are defined for PowerPC configurations:
-``altivec``, :gcc-attr:`ms_struct` and ``gcc_struct``.
+``altivec``, :type-attr:`ms_struct` and ``gcc_struct``.
 
 .. index:: ms_struct type attribute, PowerPC, gcc_struct type attribute, PowerPC
 
-For full documentation of the :gcc-attr:`ms_struct` and ``gcc_struct``
+For full documentation of the :type-attr:`ms_struct` and ``gcc_struct``
 attributes please see the documentation in :ref:`x86-type-attributes`.
 
 .. index:: altivec type attribute, PowerPC
@@ -692,20 +692,20 @@ x86 Type Attributes
 ^^^^^^^^^^^^^^^^^^^
 
 Two attributes are currently defined for x86 configurations:
-:gcc-attr:`ms_struct` and ``gcc_struct``.
+:x86-type-attr:`ms_struct` and ``gcc_struct``.
 
 .. index:: ms_struct type attribute, x86, gcc_struct type attribute, x86
 
-.. gcc-attr:: ms_struct, gcc_struct
+.. x86-type-attr:: ms_struct, gcc_struct
 
-  If :gcc-attr:`packed` is used on a structure, or if bit-fields are used
+  If :type-attr:`packed` is used on a structure, or if bit-fields are used
   it may be that the Microsoft ABI packs them differently
   than GCC normally packs them.  Particularly when moving packed
   data between functions compiled with GCC and the native Microsoft compiler
   (either via function call or as data in a file), it may be necessary to access
   either format.
 
-  The :gcc-attr:`ms_struct` and ``gcc_struct`` attributes correspond
+  The :type-attr:`ms_struct` and ``gcc_struct`` attributes correspond
   to the :option:`-mms-bitfields` and :option:`-mno-ms-bitfields`
   command-line options, respectively;
   see :ref:`x86-options`, for details of how structure layout is affected.
