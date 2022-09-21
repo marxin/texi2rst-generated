@@ -20,7 +20,7 @@
 ISHFT --- Shift bits
 ********************
 
-.. function:: ISHFT
+.. function:: ISHFT()
 
   ``ISHFT`` returns a value corresponding to :samp:`{I}` with all of the
   bits shifted :samp:`{SHIFT}` places.  A value of :samp:`{SHIFT}` greater than

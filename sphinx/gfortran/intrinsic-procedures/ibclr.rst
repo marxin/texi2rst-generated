@@ -22,7 +22,7 @@
 IBCLR --- Clear bit
 *******************
 
-.. function:: IBCLR
+.. function:: IBCLR()
 
   ``IBCLR`` returns the value of :samp:`{I}` with the bit at position
   :samp:`{POS}` set to zero.
