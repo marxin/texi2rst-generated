@@ -314,7 +314,7 @@ accepts:
   GNU semantics for ``inline`` functions when in C99 mode.
   See :ref:`inline`.
   Using this option is roughly equivalent to adding the
-  :gcc-attr:`gnu_inline` function attribute to all inline functions
+  :fn-attr:`gnu_inline` function attribute to all inline functions
   (see :ref:`function-attributes`).
 
   The option :option:`-fno-gnu89-inline` explicitly tells GCC to use the

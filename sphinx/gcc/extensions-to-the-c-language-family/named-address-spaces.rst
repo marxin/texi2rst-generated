@@ -137,7 +137,7 @@ accesses to these data read from generic address space, i.e.
 from RAM,
 so that you need special accessors like ``pgm_read_byte``
 from `AVR-LibC <http://nongnu.org/avr-libc/user-manual/>`_
-together with attribute :gcc-attr:`progmem`.
+together with attribute :avr-var-attr:`progmem`.
 
 Limitations and caveats
 
@@ -170,7 +170,7 @@ Limitations and caveats
 
 * On the reduced Tiny devices like ATtiny40, no address spaces are supported.
   Just use vanilla C / C++ code without overhead as outlined above.
-  Attribute :gcc-attr:`progmem` is supported but works differently,
+  Attribute :avr-var-attr:`progmem` is supported but works differently,
   see :ref:`avr-variable-attributes`.
 
 .. index:: __far M32C Named Address Spaces

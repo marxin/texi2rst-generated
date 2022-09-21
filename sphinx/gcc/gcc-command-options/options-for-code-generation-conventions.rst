@@ -159,7 +159,7 @@ it.
   Consider that instructions that may throw exceptions but don't otherwise
   contribute to the execution of the program can be optimized away.
   This does not affect calls to functions except those with the
-  :gcc-attr:`pure` or :gcc-attr:`const` attributes.
+  :fn-attr:`pure` or :fn-attr:`const` attributes.
   This option is enabled by default for the Ada and C++ compilers, as permitted by
   the language specifications.
   Optimization passes that cause dead exceptions to be removed are enabled independently at different optimization levels.
@@ -460,7 +460,7 @@ it.
   Lazy binding requires use of the PLT; 
   with :option:`-fno-plt` all external symbols are resolved at load time.
 
-  Alternatively, the function attribute :gcc-attr:`noplt` can be used to avoid calls
+  Alternatively, the function attribute :fn-attr:`noplt` can be used to avoid calls
   through the PLT for specific external functions.
 
   In position-dependent code, a few targets also convert calls to

@@ -91,7 +91,7 @@ situations where only basic ``asm`` can be used:
   qualifiers.
 
 * Functions declared
-  with the :gcc-attr:`naked` attribute also require basic ``asm``
+  with the :fn-attr:`naked` attribute also require basic ``asm``
   (see :ref:`function-attributes`).
 
 Safely accessing C data and calling functions from basic ``asm`` is more 
@@ -256,7 +256,7 @@ programs.
 
 Note that extended ``asm`` statements must be inside a function. Only 
 basic ``asm`` may be outside functions (see :ref:`basic-asm`).
-Functions declared with the :gcc-attr:`naked` attribute also require basic 
+Functions declared with the :fn-attr:`naked` attribute also require basic 
 ``asm`` (see :ref:`function-attributes`).
 
 While the uses of ``asm`` are many and varied, it may help to think of an 
@@ -1150,7 +1150,7 @@ list of all C labels to which the assembler code may jump. GCC assumes that
 ``asm`` execution falls through to the next statement (if this is not the 
 case, consider using the ``__builtin_unreachable`` intrinsic after the 
 ``asm`` statement). Optimization of ``asm goto`` may be improved by 
-using the :gcc-attr:`hot` and :gcc-attr:`cold` label attributes (see :ref:`label-attributes`).
+using the :fn-attr:`hot` and :fn-attr:`cold` label attributes (see :ref:`label-attributes`).
 
 If the assembler code does modify anything, use the ``"memory"`` clobber 
 to force the 

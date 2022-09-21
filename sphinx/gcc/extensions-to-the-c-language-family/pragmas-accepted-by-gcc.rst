@@ -45,7 +45,7 @@ ARM Pragmas
 ^^^^^^^^^^^
 
 The ARM target defines pragmas for controlling the default addition of
-:gcc-attr:`long_call` and ``short_call`` attributes to functions.
+:arm-fn-attr:`long_call` and ``short_call`` attributes to functions.
 See :ref:`function-attributes`, for information about the effects of these
 attributes.
 
@@ -53,7 +53,7 @@ attributes.
 
   .. index:: pragma, long_calls
 
-  Set all subsequent functions to have the :gcc-attr:`long_call` attribute.
+  Set all subsequent functions to have the :arm-fn-attr:`long_call` attribute.
 
 ``no_long_calls``
 
@@ -65,7 +65,7 @@ attributes.
 
   .. index:: pragma, long_calls_off
 
-  Do not affect the :gcc-attr:`long_call` or ``short_call`` attributes of
+  Do not affect the :arm-fn-attr:`long_call` or ``short_call`` attributes of
   subsequent functions.
 
 .. _m32c-pragmas:
@@ -112,7 +112,7 @@ MeP Pragmas
 
   Overrides the command-line option ``-mio-volatile`` for the current
   file.  Note that for compatibility with future GCC releases, this
-  option should only be used once before any :gcc-attr:`io` variables in each
+  option should only be used once before any :mep-var-attr:`io` variables in each
   file.
 
 :samp:`GCC coprocessor available {registers}`
@@ -208,9 +208,9 @@ RS/6000 and PowerPC Pragmas
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The RS/6000 and PowerPC targets define one pragma for controlling
-whether or not the :gcc-attr:`longcall` attribute is added to function
+whether or not the :powerpc-fn-attr:`longcall` attribute is added to function
 declarations by default.  This pragma overrides the :option:`-mlongcall`
-option, but not the :gcc-attr:`longcall` and ``shortcall`` attributes.
+option, but not the :powerpc-fn-attr:`longcall` and ``shortcall`` attributes.
 See :ref:`rs-6000-and-powerpc-options`, for more information about when long
 calls are and are not necessary.
 
@@ -218,11 +218,11 @@ calls are and are not necessary.
 
   .. index:: pragma, longcall
 
-  Apply the :gcc-attr:`longcall` attribute to all subsequent function
+  Apply the :powerpc-fn-attr:`longcall` attribute to all subsequent function
   declarations.
 
 ``longcall (0)``
-  Do not apply the :gcc-attr:`longcall` attribute to subsequent function
+  Do not apply the :powerpc-fn-attr:`longcall` attribute to subsequent function
   declarations.
 
 .. Describe h8300 pragmas here.
@@ -271,7 +271,7 @@ Mac OS compilers.
   This pragma sets the alignment of fields in structures.  The values of
   :samp:`{alignment}` may be ``mac68k``, to emulate m68k alignment, or
   ``power``, to emulate PowerPC alignment.  Uses of this pragma nest
-  properly; to restore the previous setting, use :gcc-attr:`reset` for the
+  properly; to restore the previous setting, use ``reset`` for the
   :samp:`{alignment}`.
 
 :samp:`segment {tokens}...`
@@ -286,7 +286,7 @@ Mac OS compilers.
 
   This pragma declares variables to be possibly unused.  GCC does not
   produce warnings for the listed variables.  The effect is similar to
-  that of the :gcc-attr:`unused` attribute, except that this pragma may appear
+  that of the :var-attr:`unused` attribute, except that this pragma may appear
   anywhere within the variables' scopes.
 
 .. _solaris-pragmas:
@@ -303,7 +303,7 @@ The Solaris target supports ``#pragma redefine_extname``
   .. index:: pragma, align
 
   Increase the minimum alignment of each :samp:`{variable}` to :samp:`{alignment}`.
-  This is the same as GCC's :gcc-attr:`aligned` attribute see :ref:`variable-attributes`).  Macro expansion occurs on the arguments to this pragma
+  This is the same as GCC's :var-attr:`aligned` attribute see :ref:`variable-attributes`).  Macro expansion occurs on the arguments to this pragma
   when compiling C and Objective-C.  It does not currently occur when
   compiling C++, but this is a bug which may be fixed in a future
   release.
