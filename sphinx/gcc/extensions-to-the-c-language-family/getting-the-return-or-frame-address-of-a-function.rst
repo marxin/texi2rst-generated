@@ -20,7 +20,7 @@ function.
   of the caller of the current function, and so forth.  When inlining
   the expected behavior is that the function returns the address of
   the function that is returned to.  To work around this behavior use
-  the :gcc-attr:`noinline` function attribute.
+  the :fn-attr:`noinline` function attribute.
 
   The :samp:`{level}` argument must be a constant integer.
 

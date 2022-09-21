@@ -14,7 +14,7 @@ In GNU C and C++, you can use function attributes to specify certain
 function properties that may help the compiler optimize calls or
 check code more carefully for correctness.  For example, you
 can use attributes to specify that a function never returns
-(:gcc-attr:`noreturn`), returns a value depending only on the values of
+(:fn-attr:`noreturn`), returns a value depending only on the values of
 its arguments (``const``), or has ``printf`` -style arguments
 (``format``).
 
@@ -57,7 +57,7 @@ labels (see :ref:`label-attributes`),
 enumerators (see :ref:`enumerator-attributes`),
 statements (see :ref:`statement-attributes`),
 types (see :ref:`type-attributes`),
-and on field declarations (for :gcc-attr:`tainted_args`).
+and on field declarations (for :fn-attr:`tainted_args`).
 
 There is some overlap between the purposes of attributes and pragmas
 (see :ref:`pragmas`).  It has been

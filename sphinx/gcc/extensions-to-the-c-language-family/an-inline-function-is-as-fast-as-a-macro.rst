@@ -24,7 +24,7 @@ into their callers with the option :option:`-finline-functions`.
 
 GCC implements three different semantics of declaring a function
 inline.  One is available with :option:`-std`:samp:`=gnu89` or
-:option:`-fgnu89-inline` or when :gcc-attr:`gnu_inline` attribute is present
+:option:`-fgnu89-inline` or when :fn-attr:`gnu_inline` attribute is present
 on all inline declarations, another when
 :option:`-std`:samp:`=c99`,
 :option:`-std`:samp:`=gnu99` or an option for a later C version is used

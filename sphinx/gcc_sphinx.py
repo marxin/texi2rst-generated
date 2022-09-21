@@ -10,7 +10,9 @@ def setup(app):
     app.add_object_type('var-attr', 'var-attr', objname='variable attribute',
                         indextemplate='pair: %s; variable attribute')
     app.add_object_type('type-attr', 'type-attr', objname='type attribute',
-                        indextemplate='pair: %s; type attribute')
+                        indextemplate='pair: %s; variable attribute')
+    app.add_object_type('enum-param', 'enum-param', objname='Enumerator attribute',
+                        indextemplate='pair: %s; enumerator attribute')
     app.add_object_type('gcc-param', 'gcc-param', objname='GCC parameter',
                         indextemplate='pair: %s; parameter')
 
