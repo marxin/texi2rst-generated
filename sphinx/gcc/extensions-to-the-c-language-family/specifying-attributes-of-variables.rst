@@ -37,7 +37,7 @@ The following attributes are supported on most targets.
 
 .. index:: alias variable attribute
 
-.. gcc-attr:: alias ("target")
+.. var-attr:: alias ("target")
 
   The ``alias`` variable attribute causes the declaration to be emitted
   as an alias for another symbol known as an :dfn:`alias target`.  Except
@@ -64,9 +64,9 @@ The following attributes are supported on most targets.
 
   .. index:: aligned variable attribute
 
-.. gcc-attr:: aligned, aligned (alignment)
+.. var-attr:: aligned, aligned (alignment)
 
-  The :gcc-attr:`aligned` attribute specifies a minimum alignment for the variable
+  The :var-attr:`aligned` attribute specifies a minimum alignment for the variable
   or structure field, measured in bytes.  When specified, :samp:`{alignment}` must
   be an integer constant power of 2.  Specifying no :samp:`{alignment}` argument
   implies the maximum alignment for the target, which is often, but by no
@@ -118,13 +118,13 @@ The following attributes are supported on most targets.
   aligned this way.  Note that the value of ``__BIGGEST_ALIGNMENT__``
   may change depending on command-line options.
 
-  When used on a struct, or struct member, the :gcc-attr:`aligned` attribute can
-  only increase the alignment; in order to decrease it, the :gcc-attr:`packed`
+  When used on a struct, or struct member, the :var-attr:`aligned` attribute can
+  only increase the alignment; in order to decrease it, the :var-attr:`packed`
   attribute must be specified as well.  When used as part of a typedef, the
-  :gcc-attr:`aligned` attribute can both increase and decrease alignment, and
-  specifying the :gcc-attr:`packed` attribute generates a warning.
+  :var-attr:`aligned` attribute can both increase and decrease alignment, and
+  specifying the :var-attr:`packed` attribute generates a warning.
 
-  Note that the effectiveness of :gcc-attr:`aligned` attributes for static
+  Note that the effectiveness of :var-attr:`aligned` attributes for static
   variables may be limited by inherent limitations in the system linker
   and/or object file format.  On some systems, the linker is
   only able to arrange for variables to be aligned up to a certain maximum
@@ -137,12 +137,12 @@ The following attributes are supported on most targets.
   Stack variables are not affected by linker restrictions; GCC can properly
   align them on any target.
 
-  The :gcc-attr:`aligned` attribute can also be used for functions
+  The :var-attr:`aligned` attribute can also be used for functions
   (see :ref:`common-function-attributes`.)
 
   .. index:: warn_if_not_aligned variable attribute
 
-.. gcc-attr:: warn_if_not_aligned (alignment)
+.. var-attr:: warn_if_not_aligned (alignment)
 
   This attribute specifies a threshold for the structure field, measured
   in bytes.  If the structure field is aligned below the threshold, a
@@ -178,7 +178,7 @@ The following attributes are supported on most targets.
 
 .. index:: alloc_size variable attribute
 
-.. gcc-attr:: alloc_size (position), alloc_size (position-1, position-2)
+.. var-attr:: alloc_size (position), alloc_size (position-1, position-2)
 
   The ``alloc_size`` variable attribute may be applied to the declaration
   of a pointer to a function that returns a pointer and takes at least one
@@ -206,7 +206,7 @@ The following attributes are supported on most targets.
 
 .. index:: cleanup variable attribute
 
-.. gcc-attr:: cleanup (cleanup_function)
+.. var-attr:: cleanup (cleanup_function)
 
   The ``cleanup`` attribute runs a function when the variable goes
   out of scope.  This attribute can only be applied to auto function
@@ -235,27 +235,27 @@ The following attributes are supported on most targets.
 
 .. index:: copy variable attribute
 
-.. gcc-attr:: copy, copy (variable)
+.. var-attr:: copy, copy (variable)
 
-  The :gcc-attr:`copy` attribute applies the set of attributes with which
+  The :var-attr:`copy` attribute applies the set of attributes with which
   :samp:`{variable}` has been declared to the declaration of the variable
   to which the attribute is applied.  The attribute is designed for
   libraries that define aliases that are expected to specify the same
-  set of attributes as the aliased symbols.  The :gcc-attr:`copy` attribute
+  set of attributes as the aliased symbols.  The :var-attr:`copy` attribute
   can be used with variables, functions or types.  However, the kind
   of symbol to which the attribute is applied (either varible or
   function) must match the kind of symbol to which the argument refers.
-  The :gcc-attr:`copy` attribute copies only syntactic and semantic attributes
+  The :var-attr:`copy` attribute copies only syntactic and semantic attributes
   but not attributes that affect a symbol's linkage or visibility such as
-  ``alias``, :gcc-attr:`visibility`, or :gcc-attr:`weak`.  The :gcc-attr:`deprecated`
+  ``alias``, :var-attr:`visibility`, or :var-attr:`weak`.  The :var-attr:`deprecated`
   attribute is also not copied.  See :ref:`common-function-attributes`.
   See :ref:`common-type-attributes`.
 
 .. index:: deprecated variable attribute
 
-.. gcc-attr:: deprecated, deprecated (msg)
+.. var-attr:: deprecated, deprecated (msg)
 
-  The :gcc-attr:`deprecated` attribute results in a warning if the variable
+  The :var-attr:`deprecated` attribute results in a warning if the variable
   is used anywhere in the source file.  This is useful when identifying
   variables that are expected to be removed in a future version of a
   program.  The warning also includes the location of the declaration
@@ -273,7 +273,7 @@ The following attributes are supported on most targets.
   argument, which must be a string, is printed in the warning if
   present.
 
-  The :gcc-attr:`deprecated` attribute can also be used for functions and
+  The :var-attr:`deprecated` attribute can also be used for functions and
   types (see :ref:`common-function-attributes`,
   see :ref:`common-type-attributes`).
 
@@ -282,24 +282,24 @@ The following attributes are supported on most targets.
 
 .. index:: unavailable variable attribute
 
-.. gcc-attr:: unavailable, unavailable (msg)
+.. var-attr:: unavailable, unavailable (msg)
 
-  The :gcc-attr:`unavailable` attribute indicates that the variable so marked
+  The :var-attr:`unavailable` attribute indicates that the variable so marked
   is not available, if it is used anywhere in the source file.  It behaves
-  in the same manner as the :gcc-attr:`deprecated` attribute except that the
+  in the same manner as the :var-attr:`deprecated` attribute except that the
   compiler will emit an error rather than a warning.
 
-  It is expected that items marked as :gcc-attr:`deprecated` will eventually be
+  It is expected that items marked as :var-attr:`deprecated` will eventually be
   withdrawn from interfaces, and then become unavailable.  This attribute
   allows for marking them appropriately.
 
-  The :gcc-attr:`unavailable` attribute can also be used for functions and
+  The :var-attr:`unavailable` attribute can also be used for functions and
   types (see :ref:`common-function-attributes`,
   see :ref:`common-type-attributes`).
 
 .. index:: mode variable attribute
 
-.. gcc-attr:: mode (mode)
+.. var-attr:: mode (mode)
 
   This attribute specifies the data type for the declaration---whichever
   type corresponds to the mode :samp:`{mode}`.  This in effect lets you
@@ -314,9 +314,9 @@ The following attributes are supported on most targets.
 
 .. index:: nonstring variable attribute
 
-.. gcc-attr:: nonstring
+.. var-attr:: nonstring
 
-  The :gcc-attr:`nonstring` variable attribute specifies that an object or member
+  The :var-attr:`nonstring` variable attribute specifies that an object or member
   declaration with type array of ``char``, ``signed char``, or
   ``unsigned char``, or pointer to such a type is intended to store
   character arrays that do not necessarily contain a terminating ``NUL``.
@@ -351,11 +351,11 @@ The following attributes are supported on most targets.
 
 .. index:: packed variable attribute
 
-.. gcc-attr:: packed
+.. var-attr:: packed
 
-  The :gcc-attr:`packed` attribute specifies that a structure member should have
+  The :var-attr:`packed` attribute specifies that a structure member should have
   the smallest possible alignment---one bit for a bit-field and one byte
-  otherwise, unless a larger value is specified with the :gcc-attr:`aligned`
+  otherwise, unless a larger value is specified with the :var-attr:`aligned`
   attribute.  The attribute does not apply to non-member objects.
 
   For example in the structure below, the member array ``x`` is packed
@@ -372,14 +372,14 @@ The following attributes are supported on most targets.
   .. note::
 
     The 4.1, 4.2 and 4.3 series of GCC ignore the
-    :gcc-attr:`packed` attribute on bit-fields of type ``char``.  This has
+    :var-attr:`packed` attribute on bit-fields of type ``char``.  This has
     been fixed in GCC 4.4 but the change can lead to differences in the
     structure layout.  See the documentation of
     :option:`-Wpacked-bitfield-compat` for more information.
 
 .. index:: section variable attribute
 
-.. gcc-attr:: section ("section-name")
+.. var-attr:: section ("section-name")
 
   Normally, the compiler places the objects it generates in sections like
   ``data`` and ``bss``.  Sometimes, however, you need additional sections,
@@ -429,7 +429,7 @@ The following attributes are supported on most targets.
 
 .. index:: tls_model variable attribute
 
-.. gcc-attr:: tls_model ("tls_model")
+.. var-attr:: tls_model ("tls_model")
 
   The ``tls_model`` attribute sets thread-local storage model
   (see :ref:`thread-local`) of a particular ``__thread`` variable,
@@ -442,7 +442,7 @@ The following attributes are supported on most targets.
 
 .. index:: unused variable attribute
 
-.. gcc-attr:: unused
+.. var-attr:: unused
 
   This attribute, attached to a variable or structure field, means that
   the variable or field is meant to be possibly unused.  GCC does not
@@ -450,7 +450,7 @@ The following attributes are supported on most targets.
 
 .. index:: used variable attribute
 
-.. gcc-attr:: used
+.. var-attr:: used
 
   This attribute, attached to a variable with static storage, means that
   the variable must be emitted even if it appears that the variable is not
@@ -462,7 +462,7 @@ The following attributes are supported on most targets.
 
 .. index:: retain variable attribute
 
-.. gcc-attr:: retain
+.. var-attr:: retain
 
   For ELF targets that support the GNU or FreeBSD OSABIs, this attribute
   will save the variable from linker garbage collection.  To support
@@ -474,7 +474,7 @@ The following attributes are supported on most targets.
 
 .. index:: uninitialized variable attribute
 
-.. gcc-attr:: uninitialized
+.. var-attr:: uninitialized
 
   This attribute, attached to a variable with automatic storage, means that
   the variable should not be automatically initialized by the compiler when
@@ -492,7 +492,7 @@ The following attributes are supported on most targets.
 
 .. index:: vector_size variable attribute
 
-.. gcc-attr:: vector_size (bytes)
+.. var-attr:: vector_size (bytes)
 
   This attribute specifies the vector size for the type of the declared
   variable, measured in bytes.  The type to which it applies is known as
@@ -526,24 +526,24 @@ The following attributes are supported on most targets.
 
 .. index:: visibility variable attribute
 
-.. gcc-attr:: visibility ("visibility_type")
+.. var-attr:: visibility ("visibility_type")
 
   This attribute affects the linkage of the declaration to which it is attached.
-  The :gcc-attr:`visibility` attribute is described in
+  The :var-attr:`visibility` attribute is described in
   :ref:`common-function-attributes`.
 
 .. index:: weak variable attribute
 
-.. gcc-attr:: weak
+.. var-attr:: weak
 
-  The :gcc-attr:`weak` attribute is described in
+  The :var-attr:`weak` attribute is described in
   :ref:`common-function-attributes`.
 
 .. index:: noinit variable attribute
 
-.. gcc-attr:: noinit
+.. var-attr:: noinit
 
-  Any data with the :gcc-attr:`noinit` attribute will not be initialized by
+  Any data with the :var-attr:`noinit` attribute will not be initialized by
   the C runtime startup code, or the program loader.  Not initializing
   data in this way can reduce program startup times.
 
@@ -553,9 +553,9 @@ The following attributes are supported on most targets.
 
 .. index:: persistent variable attribute
 
-.. gcc-attr:: persistent
+.. var-attr:: persistent
 
-  Any data with the :gcc-attr:`persistent` attribute will not be initialized by
+  Any data with the :var-attr:`persistent` attribute will not be initialized by
   the C runtime startup code, but will be initialized by the program
   loader.  This enables the value of the variable to :samp:`persist`
   between processor resets.
@@ -567,7 +567,7 @@ The following attributes are supported on most targets.
 
 .. index:: objc_nullability variable attribute
 
-.. gcc-attr:: objc_nullability (nullability kind)
+.. var-attr:: objc_nullability (nullability kind)
 
   .. note::
 
@@ -604,9 +604,9 @@ ARC Variable Attributes
 
 .. index:: aux variable attribute, ARC
 
-.. gcc-attr:: aux
+.. arc-var-attr:: aux
 
-  The :gcc-attr:`aux` attribute is used to directly access the ARC's
+  The :var-attr:`aux` attribute is used to directly access the ARC's
   auxiliary register space from C.  The auxilirary register number is
   given via attribute argument.
 
@@ -617,10 +617,10 @@ AVR Variable Attributes
 
 .. index:: progmem variable attribute, AVR
 
-.. gcc-attr:: progmem
+.. avr-var-attr:: progmem
 
-  The :gcc-attr:`progmem` attribute is used on the AVR to place read-only
-  data in the non-volatile program memory (flash). The :gcc-attr:`progmem`
+  The :var-attr:`progmem` attribute is used on the AVR to place read-only
+  data in the non-volatile program memory (flash). The :var-attr:`progmem`
   attribute accomplishes this by putting respective variables into a
   section whose name starts with ``.progmem``.
 
@@ -628,9 +628,9 @@ AVR Variable Attributes
   but adds additional checking.
 
   * Ordinary AVR cores with 32 general purpose registers:
-    :gcc-attr:`progmem` affects the location
+    :var-attr:`progmem` affects the location
     of the data but not how this data is accessed.
-    In order to read data located with the :gcc-attr:`progmem` attribute
+    In order to read data located with the :var-attr:`progmem` attribute
     (inline) assembler must be used.
 
     .. code-block:: c++
@@ -654,7 +654,7 @@ AVR Variable Attributes
     an alternate way to locate and access data in flash memory.
 
   * AVR cores with flash memory visible in the RAM address range:
-    On such devices, there is no need for attribute :gcc-attr:`progmem` or
+    On such devices, there is no need for attribute :var-attr:`progmem` or
     :ref:`avr-named-address-spaces` qualifier at all.
     Just use standard C / C++.  The compiler will generate ``LD*``
     instructions.  As flash memory is visible in the RAM address range,
@@ -662,18 +662,18 @@ AVR Variable Attributes
     RAM, no special features are needed in order not to waste RAM for
     read-only data or to read from flash.  You might even get slightly better
     performance by
-    avoiding :gcc-attr:`progmem` and ``__flash``.  This applies to devices from
+    avoiding :var-attr:`progmem` and ``__flash``.  This applies to devices from
     families ``avrtiny`` and ``avrxmega3``, see :ref:`avr-options` for
     an overview.
 
   * Reduced AVR Tiny cores like ATtiny40:
     The compiler adds ``0x4000``
-    to the addresses of objects and declarations in :gcc-attr:`progmem` and locates
+    to the addresses of objects and declarations in :var-attr:`progmem` and locates
     the objects in flash memory, namely in section ``.progmem.data``.
     The offset is needed because the flash memory is visible in the RAM
     address space starting at address ``0x4000``.
 
-    Data in :gcc-attr:`progmem` can be accessed by means of ordinary C code,
+    Data in :var-attr:`progmem` can be accessed by means of ordinary C code,
     no special functions or macros are needed.
 
     .. code-block:: c++
@@ -686,14 +686,14 @@ AVR Variable Attributes
           return var[i];
       }
 
-    Please notice that on these devices, there is no need for :gcc-attr:`progmem`
+    Please notice that on these devices, there is no need for :var-attr:`progmem`
     at all.
 
 .. index:: io variable attribute, AVR
 
-.. gcc-attr:: io, io (addr)
+.. avr-var-attr:: io, io (addr)
 
-  Variables with the :gcc-attr:`io` attribute are used to address
+  Variables with the :var-attr:`io` attribute are used to address
   memory-mapped peripherals in the io address range.
   If an address is specified, the variable
   is assigned that address, and the value is interpreted as an
@@ -717,18 +717,18 @@ AVR Variable Attributes
 
 .. index:: io_low variable attribute, AVR
 
-.. gcc-attr:: io_low, io_low (addr)
+.. avr-var-attr:: io_low, io_low (addr)
 
-  This is like the :gcc-attr:`io` attribute, but additionally it informs the
+  This is like the :var-attr:`io` attribute, but additionally it informs the
   compiler that the object lies in the lower half of the I/O area,
   allowing the use of ``cbi``, ``sbi``, ``sbic`` and ``sbis``
   instructions.
 
 .. index:: address variable attribute, AVR
 
-.. gcc-attr:: address, address (addr)
+.. avr-var-attr:: address, address (addr)
 
-  Variables with the :gcc-attr:`address` attribute are used to address
+  Variables with the :var-attr:`address` attribute are used to address
   memory-mapped peripherals that may lie outside the io address range.
 
   .. code-block:: c++
@@ -737,9 +737,9 @@ AVR Variable Attributes
 
 .. index:: absdata variable attribute, AVR
 
-.. gcc-attr:: absdata
+.. avr-var-attr:: absdata
 
-  Variables in static storage and with the :gcc-attr:`absdata` attribute can
+  Variables in static storage and with the :var-attr:`absdata` attribute can
   be accessed by the ``LDS`` and ``STS`` instructions which take
   absolute addresses.
 
@@ -768,20 +768,20 @@ Three attributes are currently defined for the Blackfin.
 
 .. index:: l1_data variable attribute, Blackfin, l1_data_A variable attribute, Blackfin, l1_data_B variable attribute, Blackfin
 
-.. gcc-attr:: l1_data, l1_data_A, l1_data_B
+.. blackfin-var-attr:: l1_data, l1_data_A, l1_data_B
 
   Use these attributes on the Blackfin to place the variable into L1 Data SRAM.
-  Variables with :gcc-attr:`l1_data` attribute are put into the specific section
+  Variables with :var-attr:`l1_data` attribute are put into the specific section
   named ``.l1.data``. Those with ``l1_data_A`` attribute are put into
   the specific section named ``.l1.data.A``. Those with ``l1_data_B``
   attribute are put into the specific section named ``.l1.data.B``.
 
 .. index:: l2 variable attribute, Blackfin
 
-.. gcc-attr:: l2
+.. blackfin-var-attr:: l2
 
   Use this attribute on the Blackfin to place the variable into L2 SRAM.
-  Variables with :gcc-attr:`l2` attribute are put into the specific section
+  Variables with :var-attr:`l2` attribute are put into the specific section
   named ``.l2.data``.
 
 .. _h8-300-variable-attributes:
@@ -793,7 +793,7 @@ These variable attributes are available for H8/300 targets:
 
 .. index:: eightbit_data variable attribute, H8/300, eight-bit data on the H8/300, H8/300H, and H8S
 
-.. gcc-attr:: eightbit_data
+.. h8-300-var-attr:: eightbit_data
 
   Use this attribute on the H8/300, H8/300H, and H8S to indicate that the specified
   variable should be placed into the eight-bit data section.
@@ -806,7 +806,7 @@ These variable attributes are available for H8/300 targets:
 
 .. index:: tiny_data variable attribute, H8/300, tiny data section on the H8/300H and H8S
 
-.. gcc-attr:: tiny_data
+.. h8-300-var-attr:: tiny_data
 
   Use this attribute on the H8/300H and H8S to indicate that the specified
   variable should be placed into the tiny data section.
@@ -823,7 +823,7 @@ The IA-64 back end supports the following variable attribute:
 
 .. index:: model variable attribute, IA-64
 
-.. gcc-attr:: model (model-name)
+.. ia-64-var-attr:: model (model-name)
 
   On IA-64, use this attribute to set the addressability of an object.
   At present, the only supported identifier for :samp:`{model-name}` is
@@ -842,7 +842,7 @@ One attribute is currently defined for the LoongArch.
 
 .. index:: model variable attribute, LoongArch
 
-.. gcc-attr:: model("name")
+.. loongarch-var-attr:: model("name")
 
   Use this attribute on the LoongArch to use a different code model for
   addressing this variable, than the code model specified by the global
@@ -860,7 +860,7 @@ One attribute is currently defined for the M32R/D.
 
 .. index:: model-name variable attribute, M32R/D, variable addressability on the M32R/D
 
-.. gcc-attr:: model (model-name)
+.. m32r-d-var-attr:: model (model-name)
 
   Use this attribute on the M32R/D to set the addressability of an object.
   The identifier :samp:`{model-name}` is one of ``small``, ``medium``,
@@ -879,50 +879,50 @@ MeP Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 The MeP target has a number of addressing modes and busses.  The
-:gcc-attr:`near` space spans the standard memory space's first 16 megabytes
-(24 bits).  The :gcc-attr:`far` space spans the entire 32-bit memory space.
-The :gcc-attr:`based` space is a 128-byte region in the memory space that
-is addressed relative to the ``$tp`` register.  The :gcc-attr:`tiny`
+:var-attr:`near` space spans the standard memory space's first 16 megabytes
+(24 bits).  The :var-attr:`far` space spans the entire 32-bit memory space.
+The :var-attr:`based` space is a 128-byte region in the memory space that
+is addressed relative to the ``$tp`` register.  The :var-attr:`tiny`
 space is a 65536-byte region relative to the ``$gp`` register.  In
 addition to these memory regions, the MeP target has a separate 16-bit
-control bus which is specified with :gcc-attr:`cb` attributes.
+control bus which is specified with :var-attr:`cb` attributes.
 
 .. index:: based variable attribute, MeP
 
-.. gcc-attr:: based
+.. mep-var-attr:: based
 
-  Any variable with the :gcc-attr:`based` attribute is assigned to the
+  Any variable with the :var-attr:`based` attribute is assigned to the
   ``.based`` section, and is accessed with relative to the
   ``$tp`` register.
 
 .. index:: tiny variable attribute, MeP
 
-.. gcc-attr:: tiny
+.. mep-var-attr:: tiny
 
-  Likewise, the :gcc-attr:`tiny` attribute assigned variables to the
+  Likewise, the :var-attr:`tiny` attribute assigned variables to the
   ``.tiny`` section, relative to the ``$gp`` register.
 
 .. index:: near variable attribute, MeP
 
-.. gcc-attr:: near
+.. var-attr:: near
 
-  Variables with the :gcc-attr:`near` attribute are assumed to have addresses
+  Variables with the :var-attr:`near` attribute are assumed to have addresses
   that fit in a 24-bit addressing mode.  This is the default for large
   variables (``-mtiny=4`` is the default) but this attribute can
   override ``-mtiny=`` for small variables, or override ``-ml``.
 
 .. index:: far variable attribute, MeP
 
-.. gcc-attr:: far
+.. mep-var-attr:: far
 
-  Variables with the :gcc-attr:`far` attribute are addressed using a full
+  Variables with the :var-attr:`far` attribute are addressed using a full
   32-bit address.  Since this covers the entire memory space, this
   allows modules to make no assumptions about where variables might be
   stored.
 
-.. gcc-attr:: io, io (addr)
+.. mep-var-attr:: io, io (addr)
 
-  Variables with the :gcc-attr:`io` attribute are used to address
+  Variables with the :var-attr:`io` attribute are used to address
   memory-mapped peripherals.  If an address is specified, the variable
   is assigned that address, else it is not assigned an address (it is
   assumed some other module assigns an address).  Example:
@@ -933,9 +933,9 @@ control bus which is specified with :gcc-attr:`cb` attributes.
 
 .. index:: cb variable attribute, MeP
 
-.. gcc-attr:: cb, cb (addr)
+.. mep-var-attr:: cb, cb (addr)
 
-  Variables with the :gcc-attr:`cb` attribute are used to access the control
+  Variables with the :var-attr:`cb` attribute are used to access the control
   bus, using special instructions.  ``addr`` indicates the control bus
   address.  Example:
 
@@ -954,16 +954,16 @@ attributes available on all x86 targets.
 
 .. index:: dllimport variable attribute, dllexport variable attribute
 
-.. gcc-attr:: dllimport, dllexport
+.. microsoft-windows-var-attr:: dllimport, dllexport
 
-  The :gcc-attr:`dllimport` and :gcc-attr:`dllexport` attributes are described in
+  The :var-attr:`dllimport` and :var-attr:`dllexport` attributes are described in
   :ref:`microsoft-windows-function-attributes`.
 
 .. index:: selectany variable attribute
 
-.. gcc-attr:: selectany
+.. microsoft-windows-var-attr:: selectany
 
-  The :gcc-attr:`selectany` attribute causes an initialized global variable to
+  The :microsoft-windows-var-attr:`selectany` attribute causes an initialized global variable to
   have link-once semantics.  When multiple definitions of the variable are
   encountered by the linker, the first is selected and the remainder are
   discarded.  Following usage by the Microsoft compiler, the linker is told
@@ -977,19 +977,19 @@ attributes available on all x86 targets.
   but the calls to the constructor and destructor are protected by a
   link-once guard variable.
 
-  The :gcc-attr:`selectany` attribute is only available on Microsoft Windows
+  The :microsoft-windows-var-attr:`selectany` attribute is only available on Microsoft Windows
   targets.  You can use ``__declspec (selectany)`` as a synonym for
   ``__attribute__ ((selectany))`` for compatibility with other
   compilers.
 
 .. index:: shared variable attribute
 
-.. gcc-attr:: shared
+.. microsoft-windows-var-attr:: shared
 
   On Microsoft Windows, in addition to putting variable definitions in a named
   section, the section can also be shared among all running copies of an
   executable or DLL.  For example, this small program defines shared data
-  by putting it in a named section :gcc-attr:`shared` and marking the section
+  by putting it in a named section :microsoft-windows-var-attr:`shared` and marking the section
   shareable:
 
   .. code-block:: c++
@@ -1004,11 +1004,11 @@ attributes available on all x86 targets.
       return 0;
     }
 
-  You may only use the :gcc-attr:`shared` attribute along with ``section``
+  You may only use the :var-attr:`shared` attribute along with ``section``
   attribute with a fully-initialized global definition because of the way
   linkers work.  See ``section`` attribute for more information.
 
-  The :gcc-attr:`shared` attribute is only available on Microsoft Windows.
+  The :microsoft-windows-var-attr:`shared` attribute is only available on Microsoft Windows.
 
 .. _msp430-variable-attributes:
 
@@ -1017,14 +1017,14 @@ MSP430 Variable Attributes
 
 .. index:: upper variable attribute, MSP430, either variable attribute, MSP430
 
-.. gcc-attr:: upper, either
+.. msp430-var-attr:: upper, either
 
   These attributes are the same as the MSP430 function attributes of the
   same name (see :ref:`msp430-function-attributes`).  
 
 .. index:: lower variable attribute, MSP430
 
-.. gcc-attr:: lower
+.. msp430-var-attr:: lower
 
   This option behaves mostly the same as the MSP430 function attribute of the
   same name (see :ref:`msp430-function-attributes`), but it has some additional
@@ -1034,7 +1034,7 @@ MSP430 Variable Attributes
   the ``section`` attribute is applied to a variable, the compiler will
   generate 430X instructions to handle it.  This is because the compiler has
   to assume that the variable could get placed in the upper memory region
-  (above address 0xFFFF).  Marking the variable with the :gcc-attr:`lower` attribute
+  (above address 0xFFFF).  Marking the variable with the :var-attr:`lower` attribute
   informs the compiler that the variable will be placed in lower memory so it
   is safe to use 430 instructions to handle it.
 
@@ -1050,7 +1050,7 @@ These variable attributes are supported by the Nvidia PTX back end:
 
 .. index:: shared attribute, Nvidia PTX
 
-.. gcc-attr:: shared
+.. nvidia-ptx-var-attr:: shared
 
   Use this attribute to place a variable in the ``.shared`` memory space.
   This memory space is private to each cooperative thread array; only threads
@@ -1063,7 +1063,7 @@ PowerPC Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Three attributes currently are defined for PowerPC configurations:
-``altivec``, :gcc-attr:`ms_struct` and ``gcc_struct``.
+``altivec``, :var-attr:`ms_struct` and ``gcc_struct``.
 
 .. index:: ms_struct variable attribute, PowerPC, gcc_struct variable attribute, PowerPC
 
@@ -1095,21 +1095,21 @@ These variable attributes are supported by the V850 back end:
 
 .. index:: sda variable attribute, V850
 
-.. gcc-attr:: sda
+.. v850-var-attr:: sda
 
   Use this attribute to explicitly place a variable in the small data area,
   which can hold up to 64 kilobytes.
 
 .. index:: tda variable attribute, V850
 
-.. gcc-attr:: tda
+.. v850-var-attr:: tda
 
   Use this attribute to explicitly place a variable in the tiny data area,
   which can hold up to 256 bytes in total.
 
 .. index:: zda variable attribute, V850
 
-.. gcc-attr:: zda
+.. v850-var-attr:: zda
 
   Use this attribute to explicitly place a variable in the first 32 kilobytes
   of memory.
@@ -1120,20 +1120,20 @@ x86 Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Two attributes are currently defined for x86 configurations:
-:gcc-attr:`ms_struct` and ``gcc_struct``.
+:x86-var-attr:`ms_struct` and ``gcc_struct``.
 
 .. index:: ms_struct variable attribute, x86, gcc_struct variable attribute, x86
 
-.. gcc-attr:: ms_struct, gcc_struct
+.. x86-var-attr:: ms_struct, gcc_struct
 
-  If :gcc-attr:`packed` is used on a structure, or if bit-fields are used,
+  If :var-attr:`packed` is used on a structure, or if bit-fields are used,
   it may be that the Microsoft ABI lays out the structure differently
   than the way GCC normally does.  Particularly when moving packed
   data between functions compiled with GCC and the native Microsoft compiler
   (either via function call or as data in a file), it may be necessary to access
   either format.
 
-  The :gcc-attr:`ms_struct` and ``gcc_struct`` attributes correspond
+  The :var-attr:`ms_struct` and ``gcc_struct`` attributes correspond
   to the :option:`-mms-bitfields` and :option:`-mno-ms-bitfields`
   command-line options, respectively;
   see :ref:`x86-options`, for details of how structure layout is affected.
@@ -1146,13 +1146,13 @@ Xstormy16 Variable Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 One attribute is currently defined for xstormy16 configurations:
-:gcc-attr:`below100`.
+:xstormy16-var-attr:`below100`.
 
 .. index:: below100 variable attribute, Xstormy16
 
-.. gcc-attr:: below100
+.. xstormy16-var-attr:: below100
 
-  If a variable has the :gcc-attr:`below100` attribute (``BELOW100`` is
+  If a variable has the :xstormy16-var-attr:`below100` attribute (``BELOW100`` is
   allowed also), GCC places the variable in the first 0x100 bytes of
   memory and use special opcodes to access it.  Such variables are
   placed in either the ``.bss_below100`` section or the

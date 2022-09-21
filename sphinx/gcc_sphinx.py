@@ -7,12 +7,14 @@ def setup(app):
                         indextemplate='pair: %s; attribute')
     app.add_object_type('fn-attr', 'fn-attr', objname='function attribute',
                         indextemplate='pair: %s; function attribute')
+    app.add_object_type('var-attr', 'var-attr', objname='variable attribute',
+                        indextemplate='pair: %s; variable attribute')
     app.add_object_type('gcc-param', 'gcc-param', objname='GCC parameter',
                         indextemplate='pair: %s; parameter')
 
     targets = (('AArch64 ', 'aarch64'), ('AMD GCN ', 'amd-gcn'), ('ARC ', 'arc'), ('ARM ', 'arm'), ('AVR ', 'avr'),
             ('Blackfin ', 'blackfin'), ('BPF ', 'bpf'), ('C-SKY ', 'c-sky'),
-            ('Epiphany ', 'epiphany'), ('H8/300 ', 'h8-300'), ('IA-64 ', 'ia-64'), ('M32C ', 'm32c'),
+            ('Epiphany ', 'epiphany'), ('H8/300 ', 'h8-300'), ('IA-64 ', 'ia-64'), ('LoongArch', 'loongarch'), ('M32C ', 'm32c'),
             ('M32R/D ', 'm32r-d'), ('m68k ', 'm68k'), ('MCORE ', 'mcore'), ('MeP ', 'mep'),
             ('MicroBlaze ', 'microblaze'), ('Microsoft Windows ', 'microsoft-windows'), ('MIPS ', 'mips'),
             ('MSP430 ', 'msp430'), ('NDS32 ', 'nds32'), ('Nios II ', 'nios-ii'), ('Nvidia PTX ', 'nvidia-ptx'),
@@ -21,9 +23,10 @@ def setup(app):
             ('Xstormy16 ', 'xstormy16'))
 
     for target_name, target in targets:
-        aname = f'{target}-fn-attr'
-        app.add_object_type(aname, aname, objname=f'{target_name} function attribute',
-                            indextemplate=f'pair: %s; {target_name} attribute')
+        app.add_object_type(f'{target}-fn-attr', f'{target}-fn-attr', objname=f'{target_name} function attribute',
+                            indextemplate=f'pair: %s; {target_name} function attribute')
+        app.add_object_type(f'{target}-var-attr', f'{target}-var-attr', objname=f'{target_name} variable attribute',
+                            indextemplate=f'pair: %s; {target_name} variable attribute')
 
     return dict(
         version = __version__,
