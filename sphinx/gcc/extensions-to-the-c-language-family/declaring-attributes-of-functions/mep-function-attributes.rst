@@ -12,7 +12,7 @@ These function attributes are supported by the MeP back end:
 
 .. index:: disinterrupt function attribute, MeP
 
-.. gcc-attr:: disinterrupt
+.. mep-fn-attr:: disinterrupt
 
   On MeP targets, this attribute causes the compiler to emit
   instructions to disable interrupts for the duration of the given
@@ -20,7 +20,7 @@ These function attributes are supported by the MeP back end:
 
 .. index:: interrupt function attribute, MeP
 
-.. gcc-attr:: interrupt
+.. mep-fn-attr:: interrupt
 
   Use this attribute to indicate
   that the specified function is an interrupt handler.  The compiler generates
@@ -29,7 +29,7 @@ These function attributes are supported by the MeP back end:
 
 .. index:: near function attribute, MeP
 
-.. gcc-attr:: near
+.. mep-fn-attr:: near
 
   This attribute causes the compiler to assume the called
   function is close enough to use the normal calling convention,
@@ -37,7 +37,7 @@ These function attributes are supported by the MeP back end:
 
 .. index:: far function attribute, MeP
 
-.. gcc-attr:: far
+.. mep-fn-attr:: far
 
   On MeP targets this causes the compiler to use a calling convention
   that assumes the called function is too far away for the built-in
@@ -45,9 +45,9 @@ These function attributes are supported by the MeP back end:
 
 .. index:: vliw function attribute, MeP
 
-.. gcc-attr:: vliw
+.. mep-fn-attr:: vliw
 
-  The :gcc-attr:`vliw` attribute tells the compiler to emit
+  The :mep-fn-attr:`vliw` attribute tells the compiler to emit
   instructions in VLIW mode instead of core mode.  Note that this
   attribute is not allowed unless a VLIW coprocessor has been configured
   and enabled through command-line options.

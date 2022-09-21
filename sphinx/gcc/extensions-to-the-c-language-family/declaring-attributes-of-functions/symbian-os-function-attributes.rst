@@ -9,4 +9,4 @@ Symbian OS Function Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 See :ref:`microsoft-windows-function-attributes`, for discussion of the
-:gcc-attr:`dllexport` and :gcc-attr:`dllimport` attributes.
+:symbian-os-fn-attr:`dllexport` and :symbian-os-fn-attr:`dllimport` attributes.

@@ -12,7 +12,7 @@ These function attributes are supported by the NDS32 back end:
 
 .. index:: exception function attribute, exception handler functions, NDS32
 
-.. gcc-attr:: exception
+.. nds32-fn-attr:: exception
 
   Use this attribute on the NDS32 target to indicate that the specified function
   is an exception handler.  The compiler will generate corresponding sections
@@ -20,7 +20,7 @@ These function attributes are supported by the NDS32 back end:
 
 .. index:: interrupt function attribute, NDS32
 
-.. gcc-attr:: interrupt
+.. nds32-fn-attr:: interrupt
 
   On NDS32 target, this attribute indicates that the specified function
   is an interrupt handler.  The compiler generates corresponding sections
@@ -63,7 +63,7 @@ These function attributes are supported by the NDS32 back end:
 
 .. index:: naked function attribute, NDS32
 
-.. gcc-attr:: naked
+.. nds32-fn-attr:: naked
 
   This attribute allows the compiler to construct the
   requisite function declaration, while allowing the body of the
@@ -76,7 +76,7 @@ These function attributes are supported by the NDS32 back end:
 
 .. index:: reset function attribute, NDS32, reset handler functions
 
-.. gcc-attr:: reset
+.. nds32-fn-attr:: reset
 
   Use this attribute on the NDS32 target to indicate that the specified function
   is a reset handler.  The compiler will generate corresponding sections

@@ -12,7 +12,7 @@ These function attributes are supported by the m68k back end:
 
 .. index:: interrupt function attribute, m68k, interrupt_handler function attribute, m68k
 
-.. gcc-attr:: interrupt, interrupt_handler
+.. m68k-fn-attr:: interrupt, interrupt_handler
 
   Use this attribute to
   indicate that the specified function is an interrupt handler.  The compiler
@@ -21,7 +21,7 @@ These function attributes are supported by the m68k back end:
 
 .. index:: interrupt_thread function attribute, fido
 
-.. gcc-attr:: interrupt_thread
+.. m68k-fn-attr:: interrupt_thread
 
   Use this attribute on fido, a subarchitecture of the m68k, to indicate
   that the specified function is an interrupt handler that is designed

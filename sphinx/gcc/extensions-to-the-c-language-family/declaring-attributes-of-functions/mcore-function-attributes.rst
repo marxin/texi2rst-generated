@@ -12,7 +12,7 @@ These function attributes are supported by the MCORE back end:
 
 .. index:: naked function attribute, MCORE
 
-.. gcc-attr:: naked
+.. mcore-fn-attr:: naked
 
   This attribute allows the compiler to construct the
   requisite function declaration, while allowing the body of the

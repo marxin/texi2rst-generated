@@ -12,7 +12,7 @@ These function attributes are supported for ARM targets:
 
 .. index:: general-regs-only function attribute, ARM
 
-.. gcc-attr:: general-regs-only
+.. arm-fn-attr:: general-regs-only
 
   Indicates that no floating-point or Advanced SIMD registers should be
   used when generating code for this function.  If the function explicitly
@@ -22,7 +22,7 @@ These function attributes are supported for ARM targets:
 
 .. index:: interrupt function attribute, ARM
 
-.. gcc-attr:: interrupt
+.. arm-fn-attr:: interrupt
 
   Use this attribute to indicate
   that the specified function is an interrupt handler.  The compiler generates
@@ -44,20 +44,20 @@ These function attributes are supported for ARM targets:
 
 .. index:: isr function attribute, ARM
 
-.. gcc-attr:: isr
+.. arm-fn-attr:: isr
 
   Use this attribute on ARM to write Interrupt Service Routines. This is an
-  alias to the :gcc-attr:`interrupt` attribute above.
+  alias to the :arm-fn-attr:`interrupt` attribute above.
 
 .. index:: long_call function attribute, ARM, short_call function attribute, ARM, indirect calls, ARM
 
-.. gcc-attr:: long_call, short_call
+.. arm-fn-attr:: long_call, short_call
 
   These attributes specify how a particular function is called.
   These attributes override the
   :option:`-mlong-calls` (see :ref:`arm-options`)
   command-line switch and ``#pragma long_calls`` settings.  For ARM, the
-  :gcc-attr:`long_call` attribute indicates that the function might be far
+  :arm-fn-attr:`long_call` attribute indicates that the function might be far
   away from the call site and require a different (more expensive)
   calling sequence.   The ``short_call`` attribute always places
   the offset to the function from the call site into the :samp:`BL`
@@ -65,7 +65,7 @@ These function attributes are supported for ARM targets:
 
 .. index:: naked function attribute, ARM
 
-.. gcc-attr:: naked
+.. arm-fn-attr:: naked
 
   This attribute allows the compiler to construct the
   requisite function declaration, while allowing the body of the
@@ -78,9 +78,9 @@ These function attributes are supported for ARM targets:
 
 .. index:: pcs function attribute, ARM
 
-.. gcc-attr:: pcs
+.. arm-fn-attr:: pcs
 
-  The :gcc-attr:`pcs` attribute can be used to control the calling convention
+  The :arm-fn-attr:`pcs` attribute can be used to control the calling convention
   used for a function on ARM.  The attribute takes an argument that specifies
   the calling convention to use.
 
@@ -101,7 +101,7 @@ These function attributes are supported for ARM targets:
 
 .. index:: target function attribute
 
-.. gcc-attr:: target (options)
+.. arm-fn-attr:: target (options)
 
   As discussed in :ref:`common-function-attributes`, this attribute 
   allows specification of target-specific compilation options.

@@ -12,7 +12,7 @@ These function attributes are available for H8/300 targets:
 
 .. index:: function_vector function attribute, H8/300
 
-.. gcc-attr:: function_vector
+.. h8-300-fn-attr:: function_vector
 
   Use this attribute on the H8/300, H8/300H, and H8S to indicate 
   that the specified function should be called through the function vector.
@@ -23,7 +23,7 @@ These function attributes are available for H8/300 targets:
 
 .. index:: interrupt_handler function attribute, H8/300
 
-.. gcc-attr:: interrupt_handler
+.. h8-300-fn-attr:: interrupt_handler
 
   Use this attribute on the H8/300, H8/300H, and H8S to
   indicate that the specified function is an interrupt handler.  The compiler
@@ -32,7 +32,7 @@ These function attributes are available for H8/300 targets:
 
 .. index:: saveall function attribute, H8/300, save all registers on the H8/300, H8/300H, and H8S
 
-.. gcc-attr:: saveall
+.. h8-300-fn-attr:: saveall
 
   Use this attribute on the H8/300, H8/300H, and H8S to indicate that
   all registers except the stack pointer should be saved in the prologue

@@ -12,16 +12,16 @@ These function attributes are supported by the RX back end:
 
 .. index:: fast_interrupt function attribute, RX
 
-.. gcc-attr:: fast_interrupt
+.. rx-fn-attr:: fast_interrupt
 
   Use this attribute on the RX port to indicate that the specified
   function is a fast interrupt handler.  This is just like the
-  :gcc-attr:`interrupt` attribute, except that ``freit`` is used to return
+  :rx-fn-attr:`interrupt` attribute, except that ``freit`` is used to return
   instead of ``reit``.
 
 .. index:: interrupt function attribute, RX
 
-.. gcc-attr:: interrupt
+.. rx-fn-attr:: interrupt
 
   Use this attribute to indicate
   that the specified function is an interrupt handler.  The compiler generates
@@ -54,7 +54,7 @@ These function attributes are supported by the RX back end:
 
 .. index:: naked function attribute, RX
 
-.. gcc-attr:: naked
+.. rx-fn-attr:: naked
 
   This attribute allows the compiler to construct the
   requisite function declaration, while allowing the body of the
@@ -67,9 +67,9 @@ These function attributes are supported by the RX back end:
 
 .. index:: vector function attribute, RX
 
-.. gcc-attr:: vector
+.. rx-fn-attr:: vector
 
-  This RX attribute is similar to the :gcc-attr:`interrupt` attribute, including its
+  This RX attribute is similar to the :rx-fn-attr:`interrupt` attribute, including its
   parameters, but does not make the function an interrupt-handler type
   function (i.e. it retains the normal C function calling ABI).  See the
-  :gcc-attr:`interrupt` attribute for a description of its arguments.
+  :rx-fn-attr:`interrupt` attribute for a description of its arguments.

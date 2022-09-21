@@ -12,7 +12,7 @@ These function attributes are supported by the Epiphany back end:
 
 .. index:: disinterrupt function attribute, Epiphany
 
-.. gcc-attr:: disinterrupt
+.. epiphany-fn-attr:: disinterrupt
 
   This attribute causes the compiler to emit
   instructions to disable interrupts for the duration of the given
@@ -20,7 +20,7 @@ These function attributes are supported by the Epiphany back end:
 
 .. index:: forwarder_section function attribute, Epiphany
 
-.. gcc-attr:: forwarder_section
+.. epiphany-fn-attr:: forwarder_section
 
   This attribute modifies the behavior of an interrupt handler.
   The interrupt handler may be in external memory which cannot be
@@ -30,7 +30,7 @@ These function attributes are supported by the Epiphany back end:
 
 .. index:: interrupt function attribute, Epiphany
 
-.. gcc-attr:: interrupt
+.. epiphany-fn-attr:: interrupt
 
   Use this attribute to indicate
   that the specified function is an interrupt handler.  The compiler generates
@@ -44,7 +44,7 @@ These function attributes are supported by the Epiphany back end:
 
     void __attribute__ ((interrupt ("dma0, dma1"))) universal_dma_handler ();
 
-  Permissible values for these parameters are: :gcc-attr:`reset`,
+  Permissible values for these parameters are: :epiphany-fn-attr:`reset`,
   ``software_exception``, ``page_miss``,
   ``timer0``, ``timer1``, ``message``,
   ``dma0``, ``dma1``, ``wand`` and ``swi``.
@@ -55,7 +55,7 @@ These function attributes are supported by the Epiphany back end:
   entirely, in which case no interrupt vector table entry is provided.
 
   Note that interrupts are enabled inside the function
-  unless the :gcc-attr:`disinterrupt` attribute is also specified.
+  unless the :epiphany-fn-attr:`disinterrupt` attribute is also specified.
 
   The following examples are all valid uses of these attributes on
   Epiphany targets:
@@ -74,7 +74,7 @@ These function attributes are supported by the Epiphany back end:
 
 .. index:: long_call function attribute, Epiphany, short_call function attribute, Epiphany, indirect calls, Epiphany
 
-.. gcc-attr:: long_call, short_call
+.. epiphany-fn-attr:: long_call, short_call
 
   These attributes specify how a particular function is called.
   These attributes override the

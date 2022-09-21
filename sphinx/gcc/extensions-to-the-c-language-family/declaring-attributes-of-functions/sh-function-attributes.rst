@@ -12,7 +12,7 @@ These function attributes are supported on the SH family of processors:
 
 .. index:: function_vector function attribute, SH, calling functions through the function vector on SH2A
 
-.. gcc-attr:: function_vector
+.. sh-fn-attr:: function_vector
 
   On SH2A targets, this attribute declares a function to be called using the
   TBR relative addressing mode.  The argument to this attribute is the entry
@@ -32,7 +32,7 @@ These function attributes are supported on the SH family of processors:
 
 .. index:: interrupt_handler function attribute, SH
 
-.. gcc-attr:: interrupt_handler
+.. sh-fn-attr:: interrupt_handler
 
   Use this attribute to
   indicate that the specified function is an interrupt handler.  The compiler
@@ -41,26 +41,26 @@ These function attributes are supported on the SH family of processors:
 
 .. index:: nosave_low_regs function attribute, SH
 
-.. gcc-attr:: nosave_low_regs
+.. sh-fn-attr:: nosave_low_regs
 
-  Use this attribute on SH targets to indicate that an :gcc-attr:`interrupt_handler`
+  Use this attribute on SH targets to indicate that an :sh-fn-attr:`interrupt_handler`
   function should not save and restore registers R0..R7.  This can be used on SH3\*
   and SH4\* targets that have a second R0..R7 register bank for non-reentrant
   interrupt handlers.
 
 .. index:: renesas function attribute, SH
 
-.. gcc-attr:: renesas
+.. sh-fn-attr:: renesas
 
   On SH targets this attribute specifies that the function or struct follows the
   Renesas ABI.
 
 .. index:: resbank function attribute, SH
 
-.. gcc-attr:: resbank
+.. sh-fn-attr:: resbank
 
   On the SH2A target, this attribute enables the high-speed register
-  saving and restoration using a register bank for :gcc-attr:`interrupt_handler`
+  saving and restoration using a register bank for :sh-fn-attr:`interrupt_handler`
   routines.  Saving to the bank is performed automatically after the CPU
   accepts an interrupt that uses a register bank.
 
@@ -72,9 +72,9 @@ These function attributes are supported on the SH family of processors:
 
 .. index:: sp_switch function attribute, SH
 
-.. gcc-attr:: sp_switch
+.. sh-fn-attr:: sp_switch
 
-  Use this attribute on the SH to indicate an :gcc-attr:`interrupt_handler`
+  Use this attribute on the SH to indicate an :sh-fn-attr:`interrupt_handler`
   function should switch to an alternate stack.  It expects a string
   argument that names a global variable holding the address of the
   alternate stack.
@@ -87,15 +87,15 @@ These function attributes are supported on the SH family of processors:
 
 .. index:: trap_exit function attribute, SH
 
-.. gcc-attr:: trap_exit
+.. sh-fn-attr:: trap_exit
 
-  Use this attribute on the SH for an :gcc-attr:`interrupt_handler` to return using
+  Use this attribute on the SH for an :sh-fn-attr:`interrupt_handler` to return using
   ``trapa`` instead of ``rte``.  This attribute expects an integer
   argument specifying the trap number to be used.
 
 .. index:: trapa_handler function attribute, SH
 
-.. gcc-attr:: trapa_handler
+.. sh-fn-attr:: trapa_handler
 
-  On SH targets this function attribute is similar to :gcc-attr:`interrupt_handler`
+  On SH targets this function attribute is similar to :sh-fn-attr:`interrupt_handler`
   but it does not save and restore all registers.

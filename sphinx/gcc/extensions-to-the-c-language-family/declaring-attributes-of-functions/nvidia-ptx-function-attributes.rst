@@ -12,7 +12,7 @@ These function attributes are supported by the Nvidia PTX back end:
 
 .. index:: kernel attribute, Nvidia PTX
 
-.. gcc-attr:: kernel
+.. nvidia-ptx-fn-attr:: kernel
 
   This attribute indicates that the corresponding function should be compiled
   as a kernel function, which can be invoked from the host via the CUDA RT 

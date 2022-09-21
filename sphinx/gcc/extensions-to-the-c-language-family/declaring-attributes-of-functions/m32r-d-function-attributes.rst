@@ -12,7 +12,7 @@ These function attributes are supported by the M32R/D back end:
 
 .. index:: interrupt function attribute, M32R/D
 
-.. gcc-attr:: interrupt
+.. m32r-d-fn-attr:: interrupt
 
   Use this attribute to indicate
   that the specified function is an interrupt handler.  The compiler generates
@@ -21,7 +21,7 @@ These function attributes are supported by the M32R/D back end:
 
 .. index:: model function attribute, M32R/D, function addressability on the M32R/D
 
-.. gcc-attr:: model (model-name)
+.. m32r-d-fn-attr:: model (model-name)
 
   On the M32R/D, use this attribute to set the addressability of an
   object, and of the code generated for a function.  The identifier

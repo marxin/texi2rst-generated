@@ -15,7 +15,7 @@ per-function basis.
 
 .. index:: general-regs-only function attribute, AArch64
 
-.. gcc-attr:: general-regs-only
+.. aarch64-fn-attr:: general-regs-only
 
   Indicates that no floating-point or Advanced SIMD registers should be
   used when generating code for this function.  If the function explicitly
@@ -25,7 +25,7 @@ per-function basis.
 
 .. index:: fix-cortex-a53-835769 function attribute, AArch64
 
-.. gcc-attr:: fix-cortex-a53-835769
+.. aarch64-fn-attr:: fix-cortex-a53-835769
 
   Indicates that the workaround for the Cortex-A53 erratum 835769 should be
   applied to this function.  To explicitly disable the workaround for this
@@ -35,7 +35,7 @@ per-function basis.
 
 .. index:: cmodel= function attribute, AArch64
 
-.. gcc-attr:: cmodel=
+.. aarch64-fn-attr:: cmodel=
 
   Indicates that code should be generated for a particular code model for
   this function.  The behavior and permissible arguments are the same as
@@ -43,9 +43,9 @@ per-function basis.
 
 .. index:: strict-align function attribute, AArch64
 
-.. gcc-attr:: strict-align, no-strict-align
+.. aarch64-fn-attr:: strict-align, no-strict-align
 
-  :gcc-attr:`strict-align` indicates that the compiler should not assume that unaligned
+  :aarch64-fn-attr:`strict-align` indicates that the compiler should not assume that unaligned
   memory references are handled by the system.  To allow the compiler to assume
   that aligned memory references are handled by the system, the inverse attribute
   ``no-strict-align`` can be specified.  The behavior is same as for the
@@ -53,7 +53,7 @@ per-function basis.
 
 .. index:: omit-leaf-frame-pointer function attribute, AArch64
 
-.. gcc-attr:: omit-leaf-frame-pointer
+.. aarch64-fn-attr:: omit-leaf-frame-pointer
 
   Indicates that the frame pointer should be omitted for a leaf function call.
   To keep the frame pointer, the inverse attribute
@@ -63,7 +63,7 @@ per-function basis.
 
 .. index:: tls-dialect= function attribute, AArch64
 
-.. gcc-attr:: tls-dialect=
+.. aarch64-fn-attr:: tls-dialect=
 
   Specifies the TLS dialect to use for this function.  The behavior and
   permissible arguments are the same as for the command-line option
@@ -71,7 +71,7 @@ per-function basis.
 
 .. index:: arch= function attribute, AArch64
 
-.. gcc-attr:: arch=
+.. aarch64-fn-attr:: arch=
 
   Specifies the architecture version and architectural extensions to use
   for this function.  The behavior and permissible arguments are the same as
@@ -79,7 +79,7 @@ per-function basis.
 
 .. index:: tune= function attribute, AArch64
 
-.. gcc-attr:: tune=
+.. aarch64-fn-attr:: tune=
 
   Specifies the core for which to tune the performance of this function.
   The behavior and permissible arguments are the same as for the :option:`-mtune`:samp:`=`
@@ -87,7 +87,7 @@ per-function basis.
 
 .. index:: cpu= function attribute, AArch64
 
-.. gcc-attr:: cpu=
+.. aarch64-fn-attr:: cpu=
 
   Specifies the core for which to tune the performance of this function and also
   whose architectural features to use.  The behavior and valid arguments are the
@@ -95,17 +95,17 @@ per-function basis.
 
 .. index:: sign-return-address function attribute, AArch64
 
-.. gcc-attr:: sign-return-address
+.. aarch64-fn-attr:: sign-return-address
 
   Select the function scope on which return address signing will be applied.  The
   behavior and permissible arguments are the same as for the command-line option
   :option:`-msign-return-address` =.  The default value is ``none``.  This
-  attribute is deprecated.  The :gcc-attr:`branch-protection` attribute should
+  attribute is deprecated.  The :aarch64-fn-attr:`branch-protection` attribute should
   be used instead.
 
 .. index:: branch-protection function attribute, AArch64
 
-.. gcc-attr:: branch-protection
+.. aarch64-fn-attr:: branch-protection
 
   Select the function scope on which branch protection will be applied.  The
   behavior and permissible arguments are the same as for the command-line option
@@ -113,7 +113,7 @@ per-function basis.
 
 .. index:: outline-atomics function attribute, AArch64
 
-.. gcc-attr:: outline-atomics
+.. aarch64-fn-attr:: outline-atomics
 
   Enable or disable calls to out-of-line helpers to implement atomic operations.
   This corresponds to the behavior of the command line options
@@ -188,5 +188,5 @@ function compiled with :option:`-mstrict-align` is allowed.
 
 Note that CPU tuning options and attributes such as the :option:`-mcpu`,
 :option:`-mtune` do not inhibit inlining unless the CPU specified by the
-:option:`-mcpu` option or the :gcc-attr:`cpu=` attribute conflicts with the
+:option:`-mcpu` option or the :aarch64-fn-attr:`cpu=` attribute conflicts with the
 architectural feature rules specified above.

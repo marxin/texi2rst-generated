@@ -12,7 +12,7 @@ These function attributes are supported by the BPF back end:
 
 .. index:: kernel helper, function attribute, BPF
 
-.. gcc-attr:: kernel_helper
+.. bpf-fn-attr:: kernel_helper
 
   use this attribute to indicate the specified function declaration is a
   kernel helper.  The helper function is passed as an argument to the

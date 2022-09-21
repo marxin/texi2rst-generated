@@ -12,7 +12,7 @@ These function attributes are supported by the ARC back end:
 
 .. index:: interrupt function attribute, ARC
 
-.. gcc-attr:: interrupt
+.. arc-fn-attr:: interrupt
 
   Use this attribute to indicate
   that the specified function is an interrupt handler.  The compiler generates
@@ -32,14 +32,14 @@ These function attributes are supported by the ARC back end:
 
 .. index:: long_call function attribute, ARC, medium_call function attribute, ARC, short_call function attribute, ARC, indirect calls, ARC
 
-.. gcc-attr:: long_call, medium_call, short_call
+.. arc-fn-attr:: long_call, medium_call, short_call
 
   These attributes specify how a particular function is called.
   These attributes override the
   :option:`-mlong-calls` and :option:`-mmedium-calls` (see :ref:`arc-options`)
   command-line switches and ``#pragma long_calls`` settings.
 
-  For ARC, a function marked with the :gcc-attr:`long_call` attribute is
+  For ARC, a function marked with the :arc-fn-attr:`long_call` attribute is
   always called using register-indirect jump-and-link instructions,
   thereby enabling the called function to be placed anywhere within the
   32-bit address space.  A function marked with the ``medium_call``
@@ -52,7 +52,7 @@ These function attributes are supported by the ARC back end:
 
 .. index:: jli_always function attribute, ARC
 
-.. gcc-attr:: jli_always
+.. arc-fn-attr:: jli_always
 
   Forces a particular function to be called using ``jli``
   instruction.  The ``jli`` instruction makes use of a table stored
@@ -61,14 +61,14 @@ These function attributes are supported by the ARC back end:
 
 .. index:: jli_fixed function attribute, ARC
 
-.. gcc-attr:: jli_fixed
+.. arc-fn-attr:: jli_fixed
 
   Identical like the above one, but the location of the function in the
   ``jli`` table is known and given as an attribute parameter.
 
 .. index:: secure_call function attribute, ARC
 
-.. gcc-attr:: secure_call
+.. arc-fn-attr:: secure_call
 
   This attribute allows one to mark secure-code functions that are
   callable from normal mode.  The location of the secure call function
@@ -76,7 +76,7 @@ These function attributes are supported by the ARC back end:
 
 .. index:: naked function attribute, ARC
 
-.. gcc-attr:: naked
+.. arc-fn-attr:: naked
 
   This attribute allows the compiler to construct the requisite function
   declaration, while allowing the body of the function to be assembly

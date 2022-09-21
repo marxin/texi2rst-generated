@@ -12,7 +12,7 @@ These function attributes are supported by the C-SKY back end:
 
 .. index:: interrupt function attribute, C-SKY, isr function attribute, C-SKY
 
-.. gcc-attr:: interrupt, isr
+.. c-sky-fn-attr:: interrupt, isr
 
   Use these attributes to indicate that the specified function
   is an interrupt handler.
@@ -25,7 +25,7 @@ These function attributes are supported by the C-SKY back end:
 
 .. index:: naked function attribute, C-SKY
 
-.. gcc-attr:: naked
+.. c-sky-fn-attr:: naked
 
   This attribute allows the compiler to construct the
   requisite function declaration, while allowing the body of the

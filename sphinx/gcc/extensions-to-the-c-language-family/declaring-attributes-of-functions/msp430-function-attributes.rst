@@ -12,20 +12,20 @@ These function attributes are supported by the MSP430 back end:
 
 .. index:: critical function attribute, MSP430
 
-.. gcc-attr:: critical
+.. msp430-fn-attr:: critical
 
   Critical functions disable interrupts upon entry and restore the
   previous interrupt state upon exit.  Critical functions cannot also
-  have the :gcc-attr:`naked`, :gcc-attr:`reentrant` or :gcc-attr:`interrupt` attributes.
+  have the :msp430-fn-attr:`naked`, :msp430-fn-attr:`reentrant` or :msp430-fn-attr:`interrupt` attributes.
 
   The MSP430 hardware ensures that interrupts are disabled on entry to
-  :gcc-attr:`interrupt` functions, and restores the previous interrupt state
-  on exit. The :gcc-attr:`critical` attribute is therefore redundant on
-  :gcc-attr:`interrupt` functions.
+  :msp430-fn-attr:`interrupt` functions, and restores the previous interrupt state
+  on exit. The :msp430-fn-attr:`critical` attribute is therefore redundant on
+  :msp430-fn-attr:`interrupt` functions.
 
 .. index:: interrupt function attribute, MSP430
 
-.. gcc-attr:: interrupt
+.. msp430-fn-attr:: interrupt
 
   Use this attribute to indicate
   that the specified function is an interrupt handler.  The compiler generates
@@ -39,11 +39,11 @@ These function attributes are supported by the MSP430 back end:
   is treated as a symbolic name for the vector slot.  These names should
   match up with appropriate entries in the linker script.  By default
   the names ``watchdog`` for vector 26, ``nmi`` for vector 30 and
-  :gcc-attr:`reset` for vector 31 are recognized.
+  :msp430-fn-attr:`reset` for vector 31 are recognized.
 
 .. index:: naked function attribute, MSP430
 
-.. gcc-attr:: naked
+.. msp430-fn-attr:: naked
 
   This attribute allows the compiler to construct the
   requisite function declaration, while allowing the body of the
@@ -56,16 +56,16 @@ These function attributes are supported by the MSP430 back end:
 
 .. index:: reentrant function attribute, MSP430
 
-.. gcc-attr:: reentrant
+.. msp430-fn-attr:: reentrant
 
   Reentrant functions disable interrupts upon entry and enable them
-  upon exit.  Reentrant functions cannot also have the :gcc-attr:`naked`
-  or :gcc-attr:`critical` attributes.  They can have the :gcc-attr:`interrupt`
+  upon exit.  Reentrant functions cannot also have the :msp430-fn-attr:`naked`
+  or :msp430-fn-attr:`critical` attributes.  They can have the :msp430-fn-attr:`interrupt`
   attribute.
 
 .. index:: wakeup function attribute, MSP430
 
-.. gcc-attr:: wakeup
+.. msp430-fn-attr:: wakeup
 
   This attribute only applies to interrupt functions.  It is silently
   ignored if applied to a non-interrupt function.  A wakeup interrupt
@@ -74,7 +74,7 @@ These function attributes are supported by the MSP430 back end:
 
 .. index:: lower function attribute, MSP430, upper function attribute, MSP430, either function attribute, MSP430
 
-.. gcc-attr:: lower, upper, either
+.. msp430-fn-attr:: lower, upper, either
 
   On the MSP430 target these attributes can be used to specify whether
   the function or variable should be placed into low memory, high
@@ -87,16 +87,16 @@ These function attributes are supported by the MSP430 back end:
   a ``.upper`` prefix.  So, for example, as well as placing the
   ``.data`` section, the script also specifies the placement of a
   ``.lower.data`` and a ``.upper.data`` section.  The intention
-  is that :gcc-attr:`lower` sections are placed into a small but easier to
+  is that :msp430-fn-attr:`lower` sections are placed into a small but easier to
   access memory region and the upper sections are placed into a larger, but
   slower to access, region.
 
   The ``either`` attribute is special.  It tells the linker to place
-  the object into the corresponding :gcc-attr:`lower` section if there is
+  the object into the corresponding :msp430-fn-attr:`lower` section if there is
   room for it.  If there is insufficient room then the object is placed
-  into the corresponding :gcc-attr:`upper` section instead.  Note that the
+  into the corresponding :msp430-fn-attr:`upper` section instead.  Note that the
   placement algorithm is not very sophisticated.  It does not attempt to
-  find an optimal packing of the :gcc-attr:`lower` sections.  It just makes
+  find an optimal packing of the :msp430-fn-attr:`lower` sections.  It just makes
   one pass over the objects and does the best that it can.  Using the
   :option:`-ffunction-sections` and :option:`-fdata-sections` command-line
   options can help the packing, however, since they produce smaller,

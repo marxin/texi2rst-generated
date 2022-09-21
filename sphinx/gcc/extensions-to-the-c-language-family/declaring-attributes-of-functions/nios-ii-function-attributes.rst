@@ -12,7 +12,7 @@ These function attributes are supported by the Nios II back end:
 
 .. index:: target function attribute
 
-.. gcc-attr:: target (options)
+.. nios-ii-fn-attr:: target (options)
 
   As discussed in :ref:`common-function-attributes`, this attribute 
   allows specification of target-specific compilation options.

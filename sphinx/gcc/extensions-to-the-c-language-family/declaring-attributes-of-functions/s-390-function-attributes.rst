@@ -12,7 +12,7 @@ These function attributes are supported on the S/390:
 
 .. index:: hotpatch function attribute, S/390
 
-.. gcc-attr:: hotpatch (halfwords-before-function-label,halfwords-after-function-label)
+.. s-390-fn-attr:: hotpatch (halfwords-before-function-label,halfwords-after-function-label)
 
   On S/390 System z targets, you can use this function attribute to
   make GCC generate a 'hot-patching' function prologue.  If the
@@ -27,7 +27,7 @@ These function attributes are supported on the S/390:
 
 .. index:: target function attribute
 
-.. gcc-attr:: target (options)
+.. s-390-fn-attr:: target (options)
 
   As discussed in :ref:`common-function-attributes`, this attribute
   allows specification of target-specific compilation options.

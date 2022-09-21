@@ -12,7 +12,7 @@ These function attributes are supported by the RISC-V back end:
 
 .. index:: naked function attribute, RISC-V
 
-.. gcc-attr:: naked
+.. risc-v-fn-attr:: naked
 
   This attribute allows the compiler to construct the
   requisite function declaration, while allowing the body of the
@@ -25,7 +25,7 @@ These function attributes are supported by the RISC-V back end:
 
 .. index:: interrupt function attribute, RISC-V
 
-.. gcc-attr:: interrupt
+.. risc-v-fn-attr:: interrupt
 
   Use this attribute to indicate that the specified function is an interrupt
   handler.  The compiler generates function entry and exit sequences suitable

@@ -12,9 +12,9 @@ These function attributes are supported by the Visium back end:
 
 .. index:: interrupt function attribute, Visium
 
-.. gcc-attr:: interrupt, interrupt_handler
+.. visium-fn-attr:: interrupt, interrupt_handler
 
-.. gcc-attr:: interrupt
+.. visium-fn-attr:: interrupt
 
   Use this attribute to indicate
   that the specified function is an interrupt handler.  The compiler generates

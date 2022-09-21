@@ -12,15 +12,15 @@ The following attributes are supported on most targets.
 
 .. Keep this table alphabetized by attribute name.  Treat _ as space.
 
-.. gcc-attr:: access (access-mode, ref-index), access (access-mode, ref-index, size-index)
+.. fn-attr:: access (access-mode, ref-index), access (access-mode, ref-index, size-index)
 
-  The :gcc-attr:`access` attribute enables the detection of invalid or unsafe
+  The :fn-attr:`access` attribute enables the detection of invalid or unsafe
   accesses by functions to which they apply or their callers, as well as
   write-only accesses to objects that are never read from.  Such accesses
   may be diagnosed by warnings such as :option:`-Wstringop-overflow`,
   :option:`-Wuninitialized`, :option:`-Wunused`, and others.
 
-  The :gcc-attr:`access` attribute specifies that a function to whose by-reference
+  The :fn-attr:`access` attribute specifies that a function to whose by-reference
   arguments the attribute applies accesses the referenced object according to
   :samp:`{access-mode}`.  The :samp:`{access-mode}` argument is required and must be
   one of four names: ``read_only``, ``read_write``, ``write_only``,
@@ -29,7 +29,7 @@ The following attributes are supported on most targets.
   The required :samp:`{ref-index}` positional argument  denotes a function
   argument of pointer (or in C++, reference) type that is subject to
   the access.  The same pointer argument can be referenced by at most one
-  distinct :gcc-attr:`access` attribute.
+  distinct :fn-attr:`access` attribute.
 
   The optional :samp:`{size-index}` positional argument denotes a function
   argument of integer type that specifies the maximum size of the access.
@@ -94,14 +94,14 @@ The following attributes are supported on most targets.
   Note that the ``access`` attribute merely specifies how an object
   referenced by the pointer argument can be accessed; it does not imply that
   an access **will** happen.  Also, the ``access`` attribute does not
-  imply the attribute :gcc-attr:`nonnull` ; it may be appropriate to add both attributes
+  imply the attribute :fn-attr:`nonnull` ; it may be appropriate to add both attributes
   at the declaration of a function that unconditionally manipulates a buffer via
-  a pointer argument.  See the :gcc-attr:`nonnull` attribute for more information and
+  a pointer argument.  See the :fn-attr:`nonnull` attribute for more information and
   caveats.
 
 .. index:: alias function attribute
 
-.. gcc-attr:: alias ("target")
+.. fn-attr:: alias ("target")
 
   The ``alias`` attribute causes the declaration to be emitted as an alias
   for another symbol, which must have been previously declared with the same
@@ -123,9 +123,9 @@ The following attributes are supported on most targets.
 
 .. index:: aligned function attribute
 
-.. gcc-attr:: aligned, aligned (alignment)
+.. fn-attr:: aligned, aligned (alignment)
 
-  The :gcc-attr:`aligned` attribute specifies a minimum alignment for
+  The :fn-attr:`aligned` attribute specifies a minimum alignment for
   the first instruction of the function, measured in bytes.  When specified,
   :samp:`{alignment}` must be an integer constant power of 2.  Specifying no
   :samp:`{alignment}` argument implies the ideal alignment for the target.
@@ -141,7 +141,7 @@ The following attributes are supported on most targets.
   Using the attribute overrides the effect of the :option:`-falign-functions`
   (see :ref:`optimize-options`) option for this function.
 
-  Note that the effectiveness of :gcc-attr:`aligned` attributes may be
+  Note that the effectiveness of :fn-attr:`aligned` attributes may be
   limited by inherent limitations in the system linker 
   and/or object file format.  On some systems, the
   linker is only able to arrange for functions to be aligned up to a
@@ -149,12 +149,12 @@ The following attributes are supported on most targets.
   alignment may be very very small.)  See your linker documentation for
   further information.
 
-  The :gcc-attr:`aligned` attribute can also be used for variables and fields
+  The :fn-attr:`aligned` attribute can also be used for variables and fields
   (see :ref:`variable-attributes`.)
 
 .. index:: alloc_align function attribute
 
-.. gcc-attr:: alloc_align (position)
+.. fn-attr:: alloc_align (position)
 
   The ``alloc_align`` attribute may be applied to a function that
   returns a pointer and takes at least one argument of an integer or
@@ -179,7 +179,7 @@ The following attributes are supported on most targets.
 
 .. index:: alloc_size function attribute
 
-.. gcc-attr:: alloc_size (position), alloc_size (position-1, position-2)
+.. fn-attr:: alloc_size (position), alloc_size (position-1, position-2)
 
   The ``alloc_size`` attribute may be applied to a function that
   returns a pointer and takes at least one argument of an integer or
@@ -209,7 +209,7 @@ The following attributes are supported on most targets.
 
 .. index:: always_inline function attribute
 
-.. gcc-attr:: always_inline
+.. fn-attr:: always_inline
 
   Generally, functions are not inlined unless optimization is specified.
   For functions declared inline, this attribute inlines the function
@@ -221,7 +221,7 @@ The following attributes are supported on most targets.
 
 .. index:: artificial function attribute
 
-.. gcc-attr:: artificial
+.. fn-attr:: artificial
 
   This attribute is useful for small inline wrappers that if possible
   should appear during debugging as a unit.  Depending on the debug
@@ -231,7 +231,7 @@ The following attributes are supported on most targets.
 
 .. index:: assume_aligned function attribute
 
-.. gcc-attr:: assume_aligned (alignment), assume_aligned (alignment, offset)
+.. fn-attr:: assume_aligned (alignment), assume_aligned (alignment, offset)
 
   The ``assume_aligned`` attribute may be applied to a function that
   returns a pointer.  It indicates that the returned pointer is aligned
@@ -253,9 +253,9 @@ The following attributes are supported on most targets.
 
 .. index:: cold function attribute
 
-.. gcc-attr:: cold
+.. fn-attr:: cold
 
-  The :gcc-attr:`cold` attribute on functions is used to inform the compiler that
+  The :fn-attr:`cold` attribute on functions is used to inform the compiler that
   the function is unlikely to be executed.  The function is optimized for
   size rather than speed and on many targets it is placed into a special
   subsection of the text section so all cold functions appear close together,
@@ -270,7 +270,7 @@ The following attributes are supported on most targets.
 
 .. index:: const function attribute, functions that have no side effects
 
-.. gcc-attr:: const
+.. fn-attr:: const
 
   Calls to functions whose return value is not affected by changes to
   the observable state of the program and that have no observable effects
@@ -295,9 +295,9 @@ The following attributes are supported on most targets.
   functions declared with the attribute can safely read objects that do
   not change their return value, such as non-volatile constants.
 
-  The :gcc-attr:`const` attribute imposes greater restrictions on a function's
-  definition than the similar :gcc-attr:`pure` attribute.  Declaring the same
-  function with both the :gcc-attr:`const` and the :gcc-attr:`pure` attribute is
+  The :fn-attr:`const` attribute imposes greater restrictions on a function's
+  definition than the similar :fn-attr:`pure` attribute.  Declaring the same
+  function with both the :fn-attr:`const` and the :fn-attr:`pure` attribute is
   diagnosed.  Because a const function cannot have any observable side
   effects it does not make sense for it to return ``void``.  Declaring
   such a function is diagnosed.
@@ -314,9 +314,9 @@ The following attributes are supported on most targets.
 
 .. index:: constructor function attribute, destructor function attribute
 
-.. gcc-attr:: constructor, destructor, constructor (priority), destructor (priority)
+.. fn-attr:: constructor, destructor, constructor (priority), destructor (priority)
 
-  The :gcc-attr:`constructor` attribute causes the function to be called
+  The :fn-attr:`constructor` attribute causes the function to be called
   automatically before execution enters ``main ()``.  Similarly, the
   ``destructor`` attribute causes the function to be called
   automatically after ``main ()`` completes or ``exit ()`` is
@@ -336,37 +336,37 @@ The following attributes are supported on most targets.
   those specified for namespace-scope C++ objects (see :ref:`c++-attributes`).
   However, at present, the order in which constructors for C++ objects
   with static storage duration and functions decorated with attribute
-  :gcc-attr:`constructor` are invoked is unspecified. In mixed declarations,
+  :fn-attr:`constructor` are invoked is unspecified. In mixed declarations,
   attribute ``init_priority`` can be used to impose a specific ordering.
 
-  Using the argument forms of the :gcc-attr:`constructor` and ``destructor``
+  Using the argument forms of the :fn-attr:`constructor` and ``destructor``
   attributes on targets where the feature is not supported is rejected with
   an error.
 
 .. index:: copy function attribute
 
-.. gcc-attr:: copy, copy (function)
+.. fn-attr:: copy, copy (function)
 
-  The :gcc-attr:`copy` attribute applies the set of attributes with which
+  The :fn-attr:`copy` attribute applies the set of attributes with which
   :samp:`{function}` has been declared to the declaration of the function
   to which the attribute is applied.  The attribute is designed for
   libraries that define aliases or function resolvers that are expected
-  to specify the same set of attributes as their targets.  The :gcc-attr:`copy`
+  to specify the same set of attributes as their targets.  The :fn-attr:`copy`
   attribute can be used with functions, variables, or types.  However,
   the kind of symbol to which the attribute is applied (either function
   or variable) must match the kind of symbol to which the argument refers.
-  The :gcc-attr:`copy` attribute copies only syntactic and semantic attributes
+  The :fn-attr:`copy` attribute copies only syntactic and semantic attributes
   but not attributes that affect a symbol's linkage or visibility such as
-  ``alias``, :gcc-attr:`visibility`, or :gcc-attr:`weak`.  The :gcc-attr:`deprecated`
+  ``alias``, :fn-attr:`visibility`, or :fn-attr:`weak`.  The :fn-attr:`deprecated`
   and ``target_clones`` attribute are also not copied.
   See :ref:`common-type-attributes`.
   See :ref:`common-variable-attributes`.
 
   For example, the :samp:`{StrongAlias}` macro below makes use of the ``alias``
-  and :gcc-attr:`copy` attributes to define an alias named :samp:`{alloc}` for function
+  and :fn-attr:`copy` attributes to define an alias named :samp:`{alloc}` for function
   :samp:`{allocate}` declared with attributes :samp:`{alloc_size}`, :samp:`{malloc}`, and
   :samp:`{nothrow}`.  Thanks to the ``__typeof__`` operator the alias has
-  the same type as the target function.  As a result of the :gcc-attr:`copy`
+  the same type as the target function.  As a result of the :fn-attr:`copy`
   attribute the alias also shares the same attributes as the target.
 
   .. code-block:: c++
@@ -381,9 +381,9 @@ The following attributes are supported on most targets.
 
 .. index:: deprecated function attribute
 
-.. gcc-attr:: deprecated, deprecated (msg)
+.. fn-attr:: deprecated, deprecated (msg)
 
-  The :gcc-attr:`deprecated` attribute results in a warning if the function
+  The :fn-attr:`deprecated` attribute results in a warning if the function
   is used anywhere in the source file.  This is useful when identifying
   functions that are expected to be removed in a future version of a
   program.  The warning also includes the location of the declaration
@@ -401,7 +401,7 @@ The following attributes are supported on most targets.
   argument, which must be a string, is printed in the warning if
   present.
 
-  The :gcc-attr:`deprecated` attribute can also be used for variables and
+  The :fn-attr:`deprecated` attribute can also be used for variables and
   types (see :ref:`variable-attributes`, see :ref:`type-attributes`.)
 
   The message attached to the attribute is affected by the setting of
@@ -409,21 +409,21 @@ The following attributes are supported on most targets.
 
 .. index:: unavailable function attribute
 
-.. gcc-attr:: unavailable, unavailable (msg)
+.. fn-attr:: unavailable, unavailable (msg)
 
-  The :gcc-attr:`unavailable` attribute results in an error if the function
+  The :fn-attr:`unavailable` attribute results in an error if the function
   is used anywhere in the source file.  This is useful when identifying
   functions that have been removed from a particular variation of an
   interface.  Other than emitting an error rather than a warning, the
-  :gcc-attr:`unavailable` attribute behaves in the same manner as
-  :gcc-attr:`deprecated`.
+  :fn-attr:`unavailable` attribute behaves in the same manner as
+  :fn-attr:`deprecated`.
 
-  The :gcc-attr:`unavailable` attribute can also be used for variables and
+  The :fn-attr:`unavailable` attribute can also be used for variables and
   types (see :ref:`variable-attributes`, see :ref:`type-attributes`.)
 
 .. index:: error function attribute, warning function attribute
 
-.. gcc-attr:: error ("message"), warning ("message")
+.. fn-attr:: error ("message"), warning ("message")
 
   If the ``error`` or ``warning`` attribute 
   is used on a function declaration and a call to such a function
@@ -443,7 +443,7 @@ The following attributes are supported on most targets.
 
 .. index:: externally_visible function attribute
 
-.. gcc-attr:: externally_visible
+.. fn-attr:: externally_visible
 
   This attribute, attached to a global variable or function, nullifies
   the effect of the :option:`-fwhole-program` command-line option, so the
@@ -451,18 +451,18 @@ The following attributes are supported on most targets.
 
   If :option:`-fwhole-program` is used together with :option:`-flto` and 
   :command:`gold` is used as the linker plugin, 
-  :gcc-attr:`externally_visible` attributes are automatically added to functions 
+  :fn-attr:`externally_visible` attributes are automatically added to functions 
   (not variable yet due to a current :command:`gold` issue) 
   that are accessed outside of LTO objects according to resolution file
   produced by :command:`gold`.
   For other linkers that cannot generate resolution file,
-  explicit :gcc-attr:`externally_visible` attributes are still necessary.
+  explicit :fn-attr:`externally_visible` attributes are still necessary.
 
 .. index:: fd_arg function attribute
 
-.. gcc-attr:: fd_arg, fd_arg (N)
+.. fn-attr:: fd_arg, fd_arg (N)
 
-  The :gcc-attr:`fd_arg` attribute may be applied to a function that takes an open
+  The :fn-attr:`fd_arg` attribute may be applied to a function that takes an open
   file descriptor at referenced argument :samp:`{N}`.
 
   It indicates that the passed filedescriptor must not have been closed.
@@ -479,9 +479,9 @@ The following attributes are supported on most targets.
 
 .. index:: fd_arg_read function attribute
 
-.. gcc-attr:: fd_arg_read, fd_arg_read (N)
+.. fn-attr:: fd_arg_read, fd_arg_read (N)
 
-  The :gcc-attr:`fd_arg_read` is identical to :gcc-attr:`fd_arg`, but with the additional
+  The :fn-attr:`fd_arg_read` is identical to :fn-attr:`fd_arg`, but with the additional
   requirement that it might read from the file descriptor, and thus, the file
   descriptor must not have been opened as write-only.
 
@@ -491,20 +491,20 @@ The following attributes are supported on most targets.
 
 .. index:: fd_arg_write function attribute
 
-.. gcc-attr:: fd_arg_write, fd_arg_write (N)
+.. fn-attr:: fd_arg_write, fd_arg_write (N)
 
-  The :gcc-attr:`fd_arg_write` is identical to :gcc-attr:`fd_arg_read` except that the
+  The :fn-attr:`fd_arg_write` is identical to :fn-attr:`fd_arg_read` except that the
   analyzer may emit a :option:`-Wanalyzer-access-mode-mismatch` diagnostic if
   it detects a code path in which a function with this attribute is called on a
   file descriptor opened with ``O_RDONLY``.
 
 .. index:: flatten function attribute
 
-.. gcc-attr:: flatten
+.. fn-attr:: flatten
 
   Generally, inlining into a function is limited.  For a function marked with
   this attribute, every call inside this function is inlined, if possible.
-  Functions declared with attribute :gcc-attr:`noinline` and similar are not
+  Functions declared with attribute :fn-attr:`noinline` and similar are not
   inlined.  Whether the function itself is considered for inlining depends
   on its size and the current inlining parameters.
 
@@ -642,7 +642,7 @@ The following attributes are supported on most targets.
 
 .. index:: gnu_inline function attribute
 
-.. gcc-attr:: gnu_inline
+.. fn-attr:: gnu_inline
 
   This attribute should be used with a function that is also declared
   with the ``inline`` keyword.  It directs GCC to treat the function
@@ -681,9 +681,9 @@ The following attributes are supported on most targets.
 
 .. index:: hot function attribute
 
-.. gcc-attr:: hot
+.. fn-attr:: hot
 
-  The :gcc-attr:`hot` attribute on a function is used to inform the compiler that
+  The :fn-attr:`hot` attribute on a function is used to inform the compiler that
   the function is a hot spot of the compiled program.  The function is
   optimized more aggressively and on many targets it is placed into a special
   subsection of the text section so all hot functions appear close together,
@@ -694,7 +694,7 @@ The following attributes are supported on most targets.
 
 .. index:: ifunc function attribute, indirect functions, functions that are dynamically resolved
 
-.. gcc-attr:: ifunc ("resolver")
+.. fn-attr:: ifunc ("resolver")
 
   The ``ifunc`` attribute is used to mark a function as an indirect
   function using the STT_GNU_IFUNC symbol type extension to the ELF
@@ -782,7 +782,7 @@ The following attributes are supported on most targets.
   Indirect functions cannot be weak.  Binutils version 2.20.1 or higher
   and GNU C Library version 2.11.1 are required to use this feature.
 
-.. gcc-attr:: interrupt, interrupt_handler
+.. fn-attr:: interrupt, interrupt_handler
 
   Many GCC back ends support attributes to indicate that a function is
   an interrupt handler, which tells the compiler to generate function
@@ -792,7 +792,7 @@ The following attributes are supported on most targets.
 
 .. index:: leaf function attribute
 
-.. gcc-attr:: leaf
+.. fn-attr:: leaf
 
   Calls to external functions with this attribute must return to the
   current compilation unit only by return or by exception handling.  In
@@ -816,7 +816,7 @@ The following attributes are supported on most targets.
   defined in the current compilation unit and uses static variables.  There
   is no standard-compliant way to write such a signal handler, resolver
   function, or implementation function, and the best that you can do is to
-  remove the :gcc-attr:`leaf` attribute or mark all such static variables
+  remove the :fn-attr:`leaf` attribute or mark all such static variables
   ``volatile``.  Lastly, for ELF-based systems that support symbol
   interposition, care should be taken that functions defined in the
   current compilation unit do not unexpectedly interpose other symbols
@@ -831,7 +831,7 @@ The following attributes are supported on most targets.
 
 .. index:: malloc function attribute, functions that behave like malloc
 
-.. gcc-attr:: malloc, malloc (deallocator), malloc (deallocator, ptr-index)
+.. fn-attr:: malloc, malloc (deallocator), malloc (deallocator, ptr-index)
 
   Attribute ``malloc`` indicates that a function is ``malloc`` -like,
   i.e., that the pointer :samp:`{P}` returned by the function cannot alias any
@@ -937,7 +937,7 @@ The following attributes are supported on most targets.
 
 .. index:: no_icf function attribute
 
-.. gcc-attr:: no_icf
+.. fn-attr:: no_icf
 
   This function attribute prevents a functions from being merged with another
   semantically equivalent function.
@@ -953,17 +953,17 @@ The following attributes are supported on most targets.
 
 .. index:: no_profile_instrument_function function attribute
 
-.. gcc-attr:: no_profile_instrument_function
+.. fn-attr:: no_profile_instrument_function
 
-  The :gcc-attr:`no_profile_instrument_function` attribute on functions is used
+  The :fn-attr:`no_profile_instrument_function` attribute on functions is used
   to inform the compiler that it should not process any profile feedback based
   optimization code instrumentation.
 
 .. index:: no_reorder function attribute
 
-.. gcc-attr:: no_reorder
+.. fn-attr:: no_reorder
 
-  Do not reorder functions or variables marked :gcc-attr:`no_reorder`
+  Do not reorder functions or variables marked :fn-attr:`no_reorder`
   against each other or top level assembler statements the executable.
   The actual order in the program will depend on the linker command
   line. Static variables marked like this are also not removed.
@@ -973,7 +973,7 @@ The following attributes are supported on most targets.
 
 .. index:: no_sanitize function attribute
 
-.. gcc-attr:: no_sanitize ("sanitize_option")
+.. fn-attr:: no_sanitize ("sanitize_option")
 
   The ``no_sanitize`` attribute on functions is used
   to inform the compiler that it should not do sanitization of any option
@@ -989,36 +989,36 @@ The following attributes are supported on most targets.
 
 .. index:: no_sanitize_address function attribute
 
-.. gcc-attr:: no_sanitize_address, no_address_safety_analysis
+.. fn-attr:: no_sanitize_address, no_address_safety_analysis
 
-  The :gcc-attr:`no_sanitize_address` attribute on functions is used
+  The :fn-attr:`no_sanitize_address` attribute on functions is used
   to inform the compiler that it should not instrument memory accesses
   in the function when compiling with the :option:`-fsanitize`:samp:`=address` option.
   The ``no_address_safety_analysis`` is a deprecated alias of the
-  :gcc-attr:`no_sanitize_address` attribute, new code should use
-  :gcc-attr:`no_sanitize_address`.
+  :fn-attr:`no_sanitize_address` attribute, new code should use
+  :fn-attr:`no_sanitize_address`.
 
 .. index:: no_sanitize_thread function attribute
 
-.. gcc-attr:: no_sanitize_thread
+.. fn-attr:: no_sanitize_thread
 
-  The :gcc-attr:`no_sanitize_thread` attribute on functions is used
+  The :fn-attr:`no_sanitize_thread` attribute on functions is used
   to inform the compiler that it should not instrument memory accesses
   in the function when compiling with the :option:`-fsanitize`:samp:`=thread` option.
 
 .. index:: no_sanitize_undefined function attribute
 
-.. gcc-attr:: no_sanitize_undefined
+.. fn-attr:: no_sanitize_undefined
 
-  The :gcc-attr:`no_sanitize_undefined` attribute on functions is used
+  The :fn-attr:`no_sanitize_undefined` attribute on functions is used
   to inform the compiler that it should not check for undefined behavior
   in the function when compiling with the :option:`-fsanitize`:samp:`=undefined` option.
 
 .. index:: no_sanitize_coverage function attribute
 
-.. gcc-attr:: no_sanitize_coverage
+.. fn-attr:: no_sanitize_coverage
 
-  The :gcc-attr:`no_sanitize_coverage` attribute on functions is used
+  The :fn-attr:`no_sanitize_coverage` attribute on functions is used
   to inform the compiler that it should not do coverage-guided
   fuzzing code instrumentation (:option:`-fsanitize-coverage`).
 
@@ -1033,7 +1033,7 @@ The following attributes are supported on most targets.
 
 .. index:: no_stack_limit function attribute
 
-.. gcc-attr:: no_stack_limit
+.. fn-attr:: no_stack_limit
 
   This attribute locally overrides the :option:`-fstack-limit-register`
   and :option:`-fstack-limit-symbol` command-line options; it has the effect
@@ -1041,7 +1041,7 @@ The following attributes are supported on most targets.
 
 .. index:: noclone function attribute
 
-.. gcc-attr:: noclone
+.. fn-attr:: noclone
 
   This function attribute prevents a function from being considered for
   cloning---a mechanism that produces specialized copies of functions
@@ -1050,7 +1050,7 @@ The following attributes are supported on most targets.
 
 .. index:: noinline function attribute
 
-.. gcc-attr:: noinline
+.. fn-attr:: noinline
 
   This function attribute prevents a function from being considered for
   inlining.
@@ -1073,13 +1073,13 @@ The following attributes are supported on most targets.
 
 .. index:: noipa function attribute
 
-.. gcc-attr:: noipa
+.. fn-attr:: noipa
 
   Disable interprocedural optimizations between the function with this
   attribute and its callers, as if the body of the function is not available
   when optimizing callers and the callers are unavailable when optimizing
-  the body.  This attribute implies :gcc-attr:`noinline`, :gcc-attr:`noclone` and
-  :gcc-attr:`no_icf` attributes.    However, this attribute is not equivalent
+  the body.  This attribute implies :fn-attr:`noinline`, :fn-attr:`noclone` and
+  :fn-attr:`no_icf` attributes.    However, this attribute is not equivalent
   to a combination of other attributes, because its purpose is to suppress
   existing and future optimizations employing interprocedural analysis,
   including those that do not have an attribute suitable for disabling
@@ -1088,9 +1088,9 @@ The following attributes are supported on most targets.
 
 .. index:: nonnull function attribute, functions with non-null pointer arguments
 
-.. gcc-attr:: nonnull, nonnull (arg-index, ...)
+.. fn-attr:: nonnull, nonnull (arg-index, ...)
 
-  The :gcc-attr:`nonnull` attribute may be applied to a function that takes at
+  The :fn-attr:`nonnull` attribute may be applied to a function that takes at
   least one argument of a pointer type.  It indicates that the referenced
   arguments must be non-null pointers.  For instance, the declaration:
 
@@ -1133,7 +1133,7 @@ The following attributes are supported on most targets.
     currently not be disabled other than by removing the nonnull
     attribute.
 
-  If no :samp:`{arg-index}` is given to the :gcc-attr:`nonnull` attribute,
+  If no :samp:`{arg-index}` is given to the :fn-attr:`nonnull` attribute,
   all pointer arguments are marked as non-null.  To illustrate, the
   following declaration is equivalent to the previous example:
 
@@ -1145,9 +1145,9 @@ The following attributes are supported on most targets.
 
 .. index:: noplt function attribute
 
-.. gcc-attr:: noplt
+.. fn-attr:: noplt
 
-  The :gcc-attr:`noplt` attribute is the counterpart to option :option:`-fno-plt`.
+  The :fn-attr:`noplt` attribute is the counterpart to option :option:`-fno-plt`.
   Calls to functions marked with this attribute in position-independent code
   do not use the PLT.
 
@@ -1164,7 +1164,7 @@ The following attributes are supported on most targets.
       /* ... */
     }
 
-  The :gcc-attr:`noplt` attribute on function ``foo``
+  The :fn-attr:`noplt` attribute on function ``foo``
   tells the compiler to assume that
   the function ``foo`` is externally defined and that the call to
   ``foo`` must avoid the PLT
@@ -1175,12 +1175,12 @@ The following attributes are supported on most targets.
 
 .. index:: noreturn function attribute, functions that never return
 
-.. gcc-attr:: noreturn
+.. fn-attr:: noreturn
 
   A few standard library functions, such as ``abort`` and ``exit``,
   cannot return.  GCC knows this automatically.  Some programs define
   their own functions that never return.  You can declare them
-  :gcc-attr:`noreturn` to tell the compiler this fact.  For example,
+  :fn-attr:`noreturn` to tell the compiler this fact.  For example,
 
   .. code-block:: c++
 
@@ -1193,30 +1193,30 @@ The following attributes are supported on most targets.
       exit (1);
     }
 
-  The :gcc-attr:`noreturn` keyword tells the compiler to assume that
+  The :fn-attr:`noreturn` keyword tells the compiler to assume that
   ``fatal`` cannot return.  It can then optimize without regard to what
   would happen if ``fatal`` ever did return.  This makes slightly
   better code.  More importantly, it helps avoid spurious warnings of
   uninitialized variables.
 
-  The :gcc-attr:`noreturn` keyword does not affect the exceptional path when that
-  applies: a :gcc-attr:`noreturn` -marked function may still return to the caller
+  The :fn-attr:`noreturn` keyword does not affect the exceptional path when that
+  applies: a :fn-attr:`noreturn` -marked function may still return to the caller
   by throwing an exception or calling ``longjmp``.
 
   In order to preserve backtraces, GCC will never turn calls to
-  :gcc-attr:`noreturn` functions into tail calls.
+  :fn-attr:`noreturn` functions into tail calls.
 
   Do not assume that registers saved by the calling function are
-  restored before calling the :gcc-attr:`noreturn` function.
+  restored before calling the :fn-attr:`noreturn` function.
 
-  It does not make sense for a :gcc-attr:`noreturn` function to have a return
+  It does not make sense for a :fn-attr:`noreturn` function to have a return
   type other than ``void``.
 
 .. index:: nothrow function attribute
 
-.. gcc-attr:: nothrow
+.. fn-attr:: nothrow
 
-  The :gcc-attr:`nothrow` attribute is used to inform the compiler that a
+  The :fn-attr:`nothrow` attribute is used to inform the compiler that a
   function cannot throw an exception.  For example, most functions in
   the standard C library can be guaranteed not to throw an exception
   with the notable exceptions of ``qsort`` and ``bsearch`` that
@@ -1224,9 +1224,9 @@ The following attributes are supported on most targets.
 
 .. index:: optimize function attribute
 
-.. gcc-attr:: optimize (level, ...), optimize (string, ...)
+.. fn-attr:: optimize (level, ...), optimize (string, ...)
 
-.. gcc-attr:: optimize (string, ...)
+.. fn-attr:: optimize (string, ...)
 
   The ``optimize`` attribute is used to specify that a function is to
   be compiled with different optimization options than specified on the
@@ -1257,13 +1257,13 @@ The following attributes are supported on most targets.
 
 .. index:: patchable_function_entry function attribute, extra NOP instructions at the function entry point
 
-.. gcc-attr:: patchable_function_entry
+.. fn-attr:: patchable_function_entry
 
   In case the target's text segment can be made writable at run time by
   any means, padding the function entry with a number of NOPs can be
   used to provide a universal tool for instrumentation.
 
-  The :gcc-attr:`patchable_function_entry` function attribute can be used to
+  The :fn-attr:`patchable_function_entry` function attribute can be used to
   change the number of NOPs to any desired value.  The two-value syntax
   is the same as for the command-line switch
   :option:`-fpatchable-function-entry`:samp:`=N,M`, generating :samp:`{N}` NOPs, with
@@ -1279,17 +1279,17 @@ The following attributes are supported on most targets.
 
 .. index:: pure function attribute, functions that have no side effects
 
-.. gcc-attr:: pure
+.. fn-attr:: pure
 
   Calls to functions that have no observable effects on the state of
   the program other than to return a value may lend themselves to optimizations
   such as common subexpression elimination.  Declaring such functions with
-  the :gcc-attr:`pure` attribute allows GCC to avoid emitting some calls in repeated
+  the :fn-attr:`pure` attribute allows GCC to avoid emitting some calls in repeated
   invocations of the function with the same argument values.
 
-  The :gcc-attr:`pure` attribute prohibits a function from modifying the state
+  The :fn-attr:`pure` attribute prohibits a function from modifying the state
   of the program that is observable by means other than inspecting
-  the function's return value.  However, functions declared with the :gcc-attr:`pure`
+  the function's return value.  However, functions declared with the :fn-attr:`pure`
   attribute can safely read any non-volatile objects, and modify the value of
   objects in a way that does not affect their return value or the observable
   state of the program.
@@ -1317,20 +1317,20 @@ The following attributes are supported on most targets.
   consecutive calls (such as the standard C ``feof`` function in
   a multithreading environment).
 
-  The :gcc-attr:`pure` attribute imposes similar but looser restrictions on
-  a function's definition than the :gcc-attr:`const` attribute: :gcc-attr:`pure`
+  The :fn-attr:`pure` attribute imposes similar but looser restrictions on
+  a function's definition than the :fn-attr:`const` attribute: :fn-attr:`pure`
   allows the function to read any non-volatile memory, even if it changes
   in between successive invocations of the function.  Declaring the same
-  function with both the :gcc-attr:`pure` and the :gcc-attr:`const` attribute is
+  function with both the :fn-attr:`pure` and the :fn-attr:`const` attribute is
   diagnosed.  Because a pure function cannot have any observable side
   effects it does not make sense for such a function to return ``void``.
   Declaring such a function is diagnosed.
 
 .. index:: returns_nonnull function attribute
 
-.. gcc-attr:: returns_nonnull
+.. fn-attr:: returns_nonnull
 
-  The :gcc-attr:`returns_nonnull` attribute specifies that the function
+  The :fn-attr:`returns_nonnull` attribute specifies that the function
   return value should be a non-null pointer.  For instance, the declaration:
 
   .. code-block:: c++
@@ -1343,19 +1343,19 @@ The following attributes are supported on most targets.
 
 .. index:: returns_twice function attribute, functions that return more than once
 
-.. gcc-attr:: returns_twice
+.. fn-attr:: returns_twice
 
-  The :gcc-attr:`returns_twice` attribute tells the compiler that a function may
+  The :fn-attr:`returns_twice` attribute tells the compiler that a function may
   return more than one time.  The compiler ensures that all registers
   are dead before calling such a function and emits a warning about
   the variables that may be clobbered after the second return from the
   function.  Examples of such functions are ``setjmp`` and ``vfork``.
   The ``longjmp`` -like counterpart of such function, if any, might need
-  to be marked with the :gcc-attr:`noreturn` attribute.
+  to be marked with the :fn-attr:`noreturn` attribute.
 
 .. index:: section function attribute, functions in arbitrary sections
 
-.. gcc-attr:: section ("section-name")
+.. fn-attr:: section ("section-name")
 
   Normally, the compiler places the code it generates in the ``text`` section.
   Sometimes, however, you need additional sections, or you need certain
@@ -1376,7 +1376,7 @@ The following attributes are supported on most targets.
 
 .. index:: sentinel function attribute
 
-.. gcc-attr:: sentinel, sentinel (position)
+.. fn-attr:: sentinel, sentinel (position)
 
   This function attribute indicates that an argument in a call to the function
   is expected to be an explicit ``NULL``.  The attribute is only valid on
@@ -1406,7 +1406,7 @@ The following attributes are supported on most targets.
 
 .. index:: simd function attribute
 
-.. gcc-attr:: simd, simd("mask")
+.. fn-attr:: simd, simd("mask")
 
   This attribute enables creation of one or more function versions that
   can process multiple arguments using SIMD instructions from a
@@ -1428,7 +1428,7 @@ The following attributes are supported on most targets.
 
 .. index:: stack_protect function attribute
 
-.. gcc-attr:: stack_protect
+.. fn-attr:: stack_protect
 
   This attribute adds stack protection code to the function if 
   flags :option:`-fstack-protector`, :option:`-fstack-protector-strong`
@@ -1436,13 +1436,13 @@ The following attributes are supported on most targets.
 
 .. index:: no_stack_protector function attribute
 
-.. gcc-attr:: no_stack_protector
+.. fn-attr:: no_stack_protector
 
   This attribute prevents stack protection code for the function.
 
 .. index:: target function attribute
 
-.. gcc-attr:: target (string, ...)
+.. fn-attr:: target (string, ...)
 
   Multiple target back ends implement the ``target`` attribute
   to specify that a function is to
@@ -1487,7 +1487,7 @@ The following attributes are supported on most targets.
 
 .. index:: symver function attribute
 
-.. gcc-attr:: symver ("name2@nodename")
+.. fn-attr:: symver ("name2@nodename")
 
   On ELF targets this attribute creates a symbol version.  The :samp:`{name2}` part
   of the parameter is the actual name of the symbol by which it will be
@@ -1541,9 +1541,9 @@ The following attributes are supported on most targets.
 
 .. index:: tainted_args function attribute
 
-.. gcc-attr:: tainted_args
+.. fn-attr:: tainted_args
 
-  The :gcc-attr:`tainted_args` attribute is used to specify that a function is called
+  The :fn-attr:`tainted_args` attribute is used to specify that a function is called
   in a way that requires sanitization of its arguments, such as a system
   call in an operating system kernel.  Such a function can be considered part
   of the 'attack surface' of the program.  The attribute can be used both
@@ -1563,7 +1563,7 @@ The following attributes are supported on most targets.
 
 .. index:: target_clones function attribute
 
-.. gcc-attr:: target_clones (options)
+.. fn-attr:: target_clones (options)
 
   The ``target_clones`` attribute is used to specify that a function
   be cloned into multiple versions compiled with different target options
@@ -1589,11 +1589,11 @@ The following attributes are supported on most targets.
   from a ``target_clone`` caller will not lead to copying
   (target clone) of the called function.
   If you want to enforce such behaviour,
-  we recommend declaring the calling function with the :gcc-attr:`flatten` attribute?
+  we recommend declaring the calling function with the :fn-attr:`flatten` attribute?
 
 .. index:: unused function attribute
 
-.. gcc-attr:: unused
+.. fn-attr:: unused
 
   This attribute, attached to a function, means that the function is meant
   to be possibly unused.  GCC does not produce a warning for this
@@ -1601,7 +1601,7 @@ The following attributes are supported on most targets.
 
 .. index:: used function attribute
 
-.. gcc-attr:: used
+.. fn-attr:: used
 
   This attribute, attached to a function, means that code must be emitted
   for the function even if it appears that the function is not referenced.
@@ -1614,7 +1614,7 @@ The following attributes are supported on most targets.
 
 .. index:: retain function attribute
 
-.. gcc-attr:: retain
+.. fn-attr:: retain
 
   For ELF targets that support the GNU or FreeBSD OSABIs, this attribute
   will save the function from linker garbage collection.  To support
@@ -1626,7 +1626,7 @@ The following attributes are supported on most targets.
 
 .. index:: visibility function attribute
 
-.. gcc-attr:: visibility ("visibility_type")
+.. fn-attr:: visibility ("visibility_type")
 
   This attribute affects the linkage of the declaration to which it is attached.
   It can be applied to variables (see :ref:`common-variable-attributes`) and types
@@ -1730,9 +1730,9 @@ The following attributes are supported on most targets.
 
 .. index:: warn_unused_result function attribute
 
-.. gcc-attr:: warn_unused_result
+.. fn-attr:: warn_unused_result
 
-  The :gcc-attr:`warn_unused_result` attribute causes a warning to be emitted
+  The :fn-attr:`warn_unused_result` attribute causes a warning to be emitted
   if a caller of the function with this attribute does not use its
   return value.  This is useful for functions where not checking
   the result is either a security problem or always a bug, such as
@@ -1752,9 +1752,9 @@ The following attributes are supported on most targets.
 
 .. index:: weak function attribute
 
-.. gcc-attr:: weak
+.. fn-attr:: weak
 
-  The :gcc-attr:`weak` attribute causes a declaration of an external symbol
+  The :fn-attr:`weak` attribute causes a declaration of an external symbol
   to be emitted as a weak symbol rather than a global.  This is primarily
   useful in defining library functions that can be overridden in user code,
   though it can also be used with non-function declarations.  The overriding
@@ -1765,18 +1765,18 @@ The following attributes are supported on most targets.
 
 .. index:: weakref function attribute
 
-.. gcc-attr:: weakref, weakref ("target")
+.. fn-attr:: weakref, weakref ("target")
 
-  The :gcc-attr:`weakref` attribute marks a declaration as a weak reference.
+  The :fn-attr:`weakref` attribute marks a declaration as a weak reference.
   Without arguments, it should be accompanied by an ``alias`` attribute
   naming the target symbol.  Alternatively, :samp:`{target}` may be given as
-  an argument to :gcc-attr:`weakref` itself, naming the target definition of
+  an argument to :fn-attr:`weakref` itself, naming the target definition of
   the alias.  The :samp:`{target}` must have the same type as the declaration.
   In addition, if it designates a variable it must also have the same size
   and alignment as the declaration.  In either form of the declaration
-  :gcc-attr:`weakref` implicitly marks the declared symbol as :gcc-attr:`weak`.  Without
-  a :samp:`{target}` given as an argument to :gcc-attr:`weakref` or to ``alias``,
-  :gcc-attr:`weakref` is equivalent to :gcc-attr:`weak` (in that case the declaration
+  :fn-attr:`weakref` implicitly marks the declared symbol as :fn-attr:`weak`.  Without
+  a :samp:`{target}` given as an argument to :fn-attr:`weakref` or to ``alias``,
+  :fn-attr:`weakref` is equivalent to :fn-attr:`weak` (in that case the declaration
   may be ``extern``).
 
   .. code-block:: c++
@@ -1796,7 +1796,7 @@ The following attributes are supported on most targets.
 
   A weak reference is an alias that does not by itself require a
   definition to be given for the target symbol.  If the target symbol is
-  only referenced through weak references, then it becomes a :gcc-attr:`weak`
+  only referenced through weak references, then it becomes a :fn-attr:`weak`
   undefined symbol.  If it is directly referenced, however, then such
   strong references prevail, and a definition is required for the
   symbol, not necessarily in the same translation unit.
@@ -1806,12 +1806,12 @@ The following attributes are supported on most targets.
   declaring it as weak, compiling the two separate translation units and
   performing a link with relocatable output (i.e. ``ld -r``) on them.
 
-  A declaration to which :gcc-attr:`weakref` is attached and that is associated
+  A declaration to which :fn-attr:`weakref` is attached and that is associated
   with a named ``target`` must be ``static``.
 
 .. index:: zero_call_used_regs function attribute
 
-.. gcc-attr:: zero_call_used_regs ("choice")
+.. fn-attr:: zero_call_used_regs ("choice")
 
   The ``zero_call_used_regs`` attribute causes the compiler to zero
   a subset of all call-used registers ([#f1]_) at function return.

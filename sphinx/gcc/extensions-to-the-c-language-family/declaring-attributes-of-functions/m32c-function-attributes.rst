@@ -12,7 +12,7 @@ These function attributes are supported by the M32C back end:
 
 .. index:: bank_switch function attribute, M32C
 
-.. gcc-attr:: bank_switch
+.. m32c-fn-attr:: bank_switch
 
   When added to an interrupt handler with the M32C port, causes the
   prologue and epilogue to use bank switching to preserve the registers
@@ -20,18 +20,18 @@ These function attributes are supported by the M32C back end:
 
 .. index:: fast_interrupt function attribute, M32C
 
-.. gcc-attr:: fast_interrupt
+.. m32c-fn-attr:: fast_interrupt
 
   Use this attribute on the M32C port to indicate that the specified
   function is a fast interrupt handler.  This is just like the
-  :gcc-attr:`interrupt` attribute, except that ``freit`` is used to return
+  :m32c-fn-attr:`interrupt` attribute, except that ``freit`` is used to return
   instead of ``reit``.
 
 .. index:: function_vector function attribute, M16C/M32C
 
-.. gcc-attr:: function_vector
+.. m32c-fn-attr:: function_vector
 
-  On M16C/M32C targets, the :gcc-attr:`function_vector` attribute declares a
+  On M16C/M32C targets, the :m32c-fn-attr:`function_vector` attribute declares a
   special page subroutine call function. Use of this attribute reduces
   the code size by 2 bytes for each call generated to the
   subroutine. The argument to the attribute is the vector number entry
@@ -67,7 +67,7 @@ These function attributes are supported by the M32C back end:
 
 .. index:: interrupt function attribute, M32C
 
-.. gcc-attr:: interrupt
+.. m32c-fn-attr:: interrupt
 
   Use this attribute to indicate
   that the specified function is an interrupt handler.  The compiler generates
