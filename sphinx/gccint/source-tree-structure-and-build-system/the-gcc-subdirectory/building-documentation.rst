@@ -142,7 +142,7 @@ Here are some specific guidelines for the GCC documentation:
 .. _miscellaneous-docs:
 
 Miscellaneous Documentation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In addition to the formal documentation that is installed by GCC,
 there are several other text files in the :samp:`gcc` subdirectory
