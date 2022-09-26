@@ -133,7 +133,7 @@ Options That Control Static Analysis
 
   Default setting; overrides :option:`-Wno-analyzer-exposure-through-output-file`.
 
-.. option:: Wanalyzer-exposure-through-uninit-copy
+.. option:: -Wanalyzer-exposure-through-uninit-copy
 
   This warning requires both :option:`-fanalyzer` and the use of a plugin
   to specify a function that copies across a 'trust boundary'.  Use
@@ -145,6 +145,10 @@ Options That Control Static Analysis
   struct on the stack to user space).
 
   See `CWE-200: Exposure of Sensitive Information to an Unauthorized Actor <https://cwe.mitre.org/data/definitions/200.html>`_.
+
+.. option:: -Wno-analyzer-exposure-through-uninit-copy
+
+  Default setting; overrides :option:`-Wanalyzer-exposure-through-uninit-copy`.
 
 .. option:: -Wno-analyzer-fd-access-mode-mismatch
 

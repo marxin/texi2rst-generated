@@ -24,7 +24,9 @@ These options are defined for Nvidia PTX:
   Generate code for the specified PTX ISA target architecture
   (e.g. :samp:`sm_35`).  Valid architecture strings are :samp:`sm_30`,
   :samp:`sm_35`, :samp:`sm_53`, :samp:`sm_70`, :samp:`sm_75` and
-  :samp:`sm_80`.  The default target architecture is sm_30.
+  :samp:`sm_80`.
+  The default depends on how the compiler has been configured, see
+  :option:`--with-arch`.
 
   This option sets the value of the preprocessor macro
   ``__PTX_SM__`` ; for instance, for :samp:`sm_35`, it has the value

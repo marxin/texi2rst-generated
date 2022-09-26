@@ -1011,14 +1011,13 @@ PowerPC-specific attributes
   setting is Power9 or later.
 
 RISC-V specific attributes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ``rv32``
   Test system has an integer register width of 32 bits.
 
 ``rv64``
   Test system has an integer register width of 64 bits.
-
 
 Other hardware attributes
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1400,7 +1399,7 @@ Other attributes
 
 ``stack_size``
   Target has limited stack size.  The stack size limit can be obtained using the
-  STACK_SIZE macro defined by :ref:`stack_size_ao <stack_size_ao>`.
+  STACK_SIZE macro defined by :ref:`stack_size_ao`.
 
 ``static``
   Target supports :option:`-static`.

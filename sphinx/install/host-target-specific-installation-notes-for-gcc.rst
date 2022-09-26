@@ -817,6 +817,15 @@ the GCC sources.
 Use the :option:`--disable-sjlj-exceptions` and
 :option:`--enable-newlib-io-long-long` options when configuring.
 
+The :option:`--with-arch` option may be specified to override the
+default value for the :option:`-march` option, and to also build
+corresponding target libraries.
+The default is :option:`--with-arch`:samp:`=sm_30`.
+
+For example, if :option:`--with-arch`:samp:`=sm_70` is specified,
+:option:`-march`:samp:`=sm_30` and :option:`-march`:samp:`=sm_70` target libraries are
+built, and code generation defaults to :option:`-march`:samp:`=sm_70`.
+
 or1k-\*-elf
 ===========
 

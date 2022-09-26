@@ -363,12 +363,11 @@ information useful for debugging do not run at all, so that
   Produce compressed debug sections in DWARF format, if that is supported.
   If :samp:`{type}` is not given, the default type depends on the capabilities
   of the assembler and linker used.  :samp:`{type}` may be one of
-  :samp:`none` (don't compress debug sections), :samp:`zlib` (use zlib
-  compression in ELF gABI format), or :samp:`zlib-gnu` (use zlib
-  compression in traditional GNU format).  If the linker doesn't support
-  writing compressed debug sections, the option is rejected.  Otherwise,
-  if the assembler does not support them, :option:`-gz` is silently ignored
-  when producing object files.
+  :samp:`none` (don't compress debug sections), or :samp:`zlib` (use zlib
+  compression in ELF gABI format).  If the linker doesn't support writing
+  compressed debug sections, the option is rejected.  Otherwise, if the
+  assembler does not support them, :option:`-gz` is silently ignored when
+  producing object files.
 
 .. option:: -femit-struct-debug-baseonly
 
