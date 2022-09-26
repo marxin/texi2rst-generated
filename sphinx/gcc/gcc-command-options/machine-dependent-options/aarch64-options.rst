@@ -202,6 +202,15 @@ These options are defined for AArch64 implementations:
      * - :samp:`armv9-a`
        - Armv9-A
        - :samp:`armv8.5-a`, :samp:`+sve`, :samp:`+sve2`
+     * - :samp:`armv9.1-a`
+       - Armv9.1-A
+       - :samp:`armv9-a`, :samp:`+bf16`, :samp:`+i8mm`
+     * - :samp:`armv9.2-a`
+       - Armv9.2-A
+       - :samp:`armv9.1-a`, :samp:`+ls64`
+     * - :samp:`armv9.3-a`
+       - Armv9.3-A
+       - :samp:`armv9.2-a`, :samp:`+mops`
      * - :samp:`armv8-r`
        - Armv8-R
        - :samp:`armv8-r`
@@ -232,7 +241,7 @@ These options are defined for AArch64 implementations:
   :samp:`cortex-a78`, :samp:`cortex-a78ae`, :samp:`cortex-a78c`,
   :samp:`ares`, :samp:`exynos-m1`, :samp:`emag`, :samp:`falkor`,
   :samp:`neoverse-512tvb`, :samp:`neoverse-e1`, :samp:`neoverse-n1`,
-  :samp:`neoverse-n2`, :samp:`neoverse-v1`, :samp:`qdf24xx`,
+  :samp:`neoverse-n2`, :samp:`neoverse-v1`, :samp:`neoverse-v2`, :samp:`qdf24xx`,
   :samp:`saphira`, :samp:`phecda`, :samp:`xgene1`, :samp:`vulcan`,
   :samp:`octeontx`, :samp:`octeontx81`,  :samp:`octeontx83`,
   :samp:`octeontx2`, :samp:`octeontx2t98`, :samp:`octeontx2t96`
