@@ -36,7 +36,7 @@ These options are defined for the MSP430:
 
   In addition an MCU-specific linker script is added to the linker
   command line.  The script's name is the name of the MCU with
-  :samp:`.ld` appended.  Thus specifying :option:`-mmcu`:samp:`=xxx` on the :command:`gcc`
+  :samp:`.ld` appended.  Thus specifying :option:`-mmcu=xxx` on the :command:`gcc`
   command line defines the C preprocessor symbol ``__XXX__`` and
   cause the linker to search for a script called :samp:`xxx.ld`.
 
@@ -83,12 +83,12 @@ These options are defined for the MSP430:
 
   Specifies the ISA to use.  Accepted values are :samp:`msp430`,
   :samp:`msp430x` and :samp:`msp430xv2`.  This option is deprecated.  The
-  :option:`-mmcu` = option should be used to select the ISA.
+  :option:`-mmcu=` option should be used to select the ISA.
 
 .. option:: -msim
 
   Link to the simulator runtime libraries and linker script.  Overrides
-  any scripts that would be selected by the :option:`-mmcu` = option.
+  any scripts that would be selected by the :option:`-mmcu=` option.
 
 .. option:: -mlarge
 

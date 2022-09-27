@@ -37,7 +37,7 @@ and stick to it.
   standard.
 
   GCC allows the :samp:`$` character in identifiers as an extension for
-  most targets.  This is true regardless of the std = switch,
+  most targets.  This is true regardless of the std= switch,
   since this extension cannot conflict with standards-conforming
   programs.  When preprocessing assembler, however, dollars are not
   identifier characters by default.

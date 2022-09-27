@@ -39,7 +39,7 @@ per-function basis.
 
   Indicates that code should be generated for a particular code model for
   this function.  The behavior and permissible arguments are the same as
-  for the command line option :option:`-mcmodel` =.
+  for the command line option :option:`-mcmodel=`.
 
 .. index:: strict-align function attribute, AArch64
 
@@ -67,7 +67,7 @@ per-function basis.
 
   Specifies the TLS dialect to use for this function.  The behavior and
   permissible arguments are the same as for the command-line option
-  :option:`-mtls-dialect` =.
+  :option:`-mtls-dialect=`.
 
 .. index:: arch= function attribute, AArch64
 
@@ -75,14 +75,14 @@ per-function basis.
 
   Specifies the architecture version and architectural extensions to use
   for this function.  The behavior and permissible arguments are the same as
-  for the :option:`-march` = command-line option.
+  for the :option:`-march=` command-line option.
 
 .. index:: tune= function attribute, AArch64
 
 .. gcc-attr:: tune=
 
   Specifies the core for which to tune the performance of this function.
-  The behavior and permissible arguments are the same as for the :option:`-mtune` =
+  The behavior and permissible arguments are the same as for the :option:`-mtune=`
   command-line option.
 
 .. index:: cpu= function attribute, AArch64
@@ -91,7 +91,7 @@ per-function basis.
 
   Specifies the core for which to tune the performance of this function and also
   whose architectural features to use.  The behavior and valid arguments are the
-  same as for the :option:`-mcpu` = command-line option.
+  same as for the :option:`-mcpu=` command-line option.
 
 .. index:: sign-return-address function attribute, AArch64
 
@@ -99,7 +99,7 @@ per-function basis.
 
   Select the function scope on which return address signing will be applied.  The
   behavior and permissible arguments are the same as for the command-line option
-  :option:`-msign-return-address` =.  The default value is ``none``.  This
+  :option:`-msign-return-address=`.  The default value is ``none``.  This
   attribute is deprecated.  The :gcc-attr:`branch-protection` attribute should
   be used instead.
 
@@ -109,7 +109,7 @@ per-function basis.
 
   Select the function scope on which branch protection will be applied.  The
   behavior and permissible arguments are the same as for the command-line option
-  :option:`-mbranch-protection` =.  The default value is ``none``.
+  :option:`-mbranch-protection=`.  The default value is ``none``.
 
 .. index:: outline-atomics function attribute, AArch64
 
@@ -147,7 +147,7 @@ without having to specify a particular architecture version or core.  Example:
 
 In this example ``target("+crc+nocrypto")`` enables the ``crc``
 extension and disables the ``crypto`` extension for the function ``foo``
-without modifying an existing :option:`-march` = or :option:`-mcpu` option.
+without modifying an existing :option:`-march=` or :option:`-mcpu` option.
 
 Multiple target function attributes can be specified by separating them with
 a comma.  For example:
@@ -174,9 +174,9 @@ can affect function inlining rules:
 In particular, a caller function can inline a callee function only if the
 architectural features available to the callee are a subset of the features
 available to the caller.
-For example: A function ``foo`` compiled with :option:`-march`:samp:`=armv8-a+crc`,
+For example: A function ``foo`` compiled with :option:`-march=armv8-a+crc`,
 or tagged with the equivalent ``arch=armv8-a+crc`` attribute,
-can inline a function ``bar`` compiled with :option:`-march`:samp:`=armv8-a+nocrc`
+can inline a function ``bar`` compiled with :option:`-march=armv8-a+nocrc`
 because the all the architectural features that function ``bar`` requires
 are available to function ``foo``.  Conversely, function ``bar`` cannot
 inline function ``foo``.
@@ -186,8 +186,8 @@ function compiled without ``-mstrict-align`` is not allowed.
 However, inlining a function compiled without :option:`-mstrict-align` into a
 function compiled with :option:`-mstrict-align` is allowed.
 
-Note that CPU tuning options and attributes such as the :option:`-mcpu` =,
-:option:`-mtune` = do not inhibit inlining unless the CPU specified by the
-:option:`-mcpu` = option or the :gcc-attr:`cpu=` attribute conflicts with the
+Note that CPU tuning options and attributes such as the :option:`-mcpu=`,
+:option:`-mtune=` do not inhibit inlining unless the CPU specified by the
+:option:`-mcpu=` option or the :gcc-attr:`cpu=` attribute conflicts with the
 architectural feature rules specified above.
 

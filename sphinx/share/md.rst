@@ -1133,17 +1133,17 @@ the meanings of that architecture's constraints.
 
   ``Cm1``
     A signed 11-bit constant added to -1.
-    Can only match when the :option:`-m1reg-`:samp:`{reg}` option is active.
+    Can only match when the :option:`-m1reg-reg` option is active.
 
   ``Cl1``
     Left-shift of -1, i.e., a bit mask with a block of leading ones, the rest
     being a block of trailing zeroes.
-    Can only match when the :option:`-m1reg-`:samp:`{reg}` option is active.
+    Can only match when the :option:`-m1reg-reg` option is active.
 
   ``Cr1``
     Right-shift of -1, i.e., a bit mask with a trailing block of ones, the
     rest being zeroes.  Or to put it another way, one less than a power of two.
-    Can only match when the :option:`-m1reg-`:samp:`{reg}` option is active.
+    Can only match when the :option:`-m1reg-reg` option is active.
 
   ``Cal``
     Constant for arithmetic/logical operations.

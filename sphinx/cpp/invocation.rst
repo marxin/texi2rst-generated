@@ -31,8 +31,8 @@ Refer to the GCC manual for full documentation of other driver options.
 Synopsis
 ^^^^^^^^
 
-cpp [ :option:`-D`:samp:`{macro}` [= :samp:`{defn}` ]...] [ :option:`-U`:samp:`{macro}` ]
-    [ :option:`-I`:samp:`{dir}`...] [ :option:`-iquote`:samp:`{dir}`...]
+cpp [ :option:`-Dmacro` [= :samp:`{defn}` ]...] [ :option:`-Umacro` ]
+    [ :option:`-Idir`...] [ :option:`-iquotedir`...]
     [ :option:`-M` | :option:`-MM` ] [ :option:`-MG` ] [ :option:`-MF` :samp:`{filename}` ]
     [ :option:`-MP` ] [ :option:`-MQ` :samp:`{target}`...]
     [ :option:`-MT` :samp:`{target}`...]
@@ -55,7 +55,7 @@ Either :samp:`{infile}` or :samp:`{outfile}` may be :option:`-`, which as
 :samp:`{infile}` means to read from standard input and as :samp:`{outfile}`
 means to write to standard output.  If either file is omitted, it
 means the same as if :option:`-` had been specified for that file.
-You can also use the :option:`-o `:samp:`{outfile}` option to specify the 
+You can also use the :option:`-o outfile` option to specify the 
 output file.
 
 Unless otherwise noted, or the option ends in :samp:`=`, all options

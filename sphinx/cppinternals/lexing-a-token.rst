@@ -134,7 +134,7 @@ some sort.  Such cases use the function ``get_effective_char``, which
 returns the first character after any intervening escaped newlines.
 
 The lexer needs to keep track of the correct column position, including
-counting tabs as specified by the :option:`-ftabstop` = option.  This
+counting tabs as specified by the :option:`-ftabstop=` option.  This
 should be done even within C-style comments; they can appear in the
 middle of a line, and we want to report diagnostics in the correct
 position for text appearing after the end of the comment.

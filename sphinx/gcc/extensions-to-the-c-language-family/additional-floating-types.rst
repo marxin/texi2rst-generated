@@ -78,7 +78,7 @@ type is supported on all systems supporting IEEE binary32; the
 ``_Float64`` and ``_Float32x`` types are supported on all systems
 supporting IEEE binary64.  The ``_Float16`` type is supported on AArch64
 systems by default, on ARM systems when the IEEE format for 16-bit
-floating-point types is selected with :option:`-mfp16-format`:samp:`=ieee` and,
+floating-point types is selected with :option:`-mfp16-format=ieee` and,
 for both C and C++, on x86 systems with SSE2 enabled. GCC does not currently
 support ``_Float128x`` on any systems.
 

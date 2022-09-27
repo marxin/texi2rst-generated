@@ -64,7 +64,7 @@ Again, if the native compiler miscompiles the stage1 compiler, you may
 need to work around this by avoiding non-working parts of the stage1
 compiler.  Use ``STAGE1_TFLAGS`` to this end.
 
-If you used the flag :option:`--enable-languages`:samp:`=...` to restrict
+If you used the flag :option:`--enable-languages=...` to restrict
 the compilers to be built, only those you've actually enabled will be
 built.  This will of course only build those runtime libraries, for
 which the particular compiler has been built.  Please note,
@@ -91,7 +91,7 @@ to the build.  It can be set to a whitespace-separated list of names.
 For each such ``NAME``, top-level :samp:`config/ ``NAME``.mk` will
 be included by the top-level :samp:`Makefile`, bringing in any settings
 it contains.  The default ``BUILD_CONFIG`` can be set using the
-configure option :option:`--with-build-config` ``=NAME``....  Some
+configure option :option:`--with-build-config=NAME...`.  Some
 examples of supported build configurations are:
 
 bootstrap-O1

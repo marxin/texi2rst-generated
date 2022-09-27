@@ -16,7 +16,7 @@ Restricting Pointer Aliasing
 
 As with the C front end, G++ understands the C99 feature of restricted pointers,
 specified with the ``__restrict__``, or ``__restrict`` type
-qualifier.  Because you cannot compile C++ by specifying the :option:`-std`:samp:`=c99`
+qualifier.  Because you cannot compile C++ by specifying the :option:`-std=c99`
 language flag, ``restrict`` is not a keyword in C++.
 
 In addition to allowing restricted pointers, you can specify restricted

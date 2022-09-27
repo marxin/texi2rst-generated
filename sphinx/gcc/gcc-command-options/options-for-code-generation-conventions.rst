@@ -620,7 +620,7 @@ it.
   https://www.akkadia.org/drepper/)---however a superior
   solution made possible by this option to marking things hidden when
   the default is public is to make the default hidden and mark things
-  public.  This is the norm with DLLs on Windows and with :option:`-fvisibility`:samp:`=hidden`
+  public.  This is the norm with DLLs on Windows and with :option:`-fvisibility=hidden`
   and ``__attribute__ ((visibility("default")))`` instead of
   ``__declspec(dllexport)`` you get almost identical semantics with
   identical syntax.  This is a great boon to those working with
@@ -647,7 +647,7 @@ it.
   before including any such headers.
 
   ``extern`` declarations are not affected by :option:`-fvisibility`, so
-  a lot of code can be recompiled with :option:`-fvisibility`:samp:`=hidden` with
+  a lot of code can be recompiled with :option:`-fvisibility=hidden` with
   no modifications.  However, this means that calls to ``extern``
   functions with no explicit visibility use the PLT, so it is more
   effective to use ``__attribute ((visibility))`` and/or

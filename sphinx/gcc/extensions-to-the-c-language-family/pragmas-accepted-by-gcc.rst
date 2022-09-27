@@ -393,7 +393,7 @@ to be a small power of two and specifies the new alignment in bytes.
 
 * ``#pragma pack()`` sets the alignment to the one that was in
   effect when compilation started (see also command-line option
-  :option:`-fpack-struct[`:samp:`={n}` ] see :ref:`code-gen-options`).
+  :option:`-fpack-struct[=n]` see :ref:`code-gen-options`).
 
 * ``#pragma pack(push[,n])`` pushes the current alignment
   setting on an internal stack and then optionally sets the new alignment.
@@ -427,7 +427,7 @@ which lays out structures and unions subsequently defined as the documented
 
 * ``#pragma scalar_storage_order default`` goes back to the endianness
   that was in effect when compilation started (see also command-line option
-  :option:`-fsso-struct`:samp:`={endianness}` see :ref:`c-dialect-options`).
+  :option:`-fsso-struct=endianness` see :ref:`c-dialect-options`).
 
 .. _weak-pragmas:
 
@@ -511,7 +511,7 @@ macros are defined.
       foo(d);                       /* depends on command-line options */
 
 ``#pragma GCC diagnostic ignored_attributes``
-  Similarly to :option:`-Wno-attributes` =, this pragma allows users to suppress
+  Similarly to :option:`-Wno-attributes=`, this pragma allows users to suppress
   warnings about unknown scoped attributes (in C++11 and C2X).  For example,
   ``#pragma GCC diagnostic ignored_attributes "vendor::attr"`` disables
   warning about the following declaration:

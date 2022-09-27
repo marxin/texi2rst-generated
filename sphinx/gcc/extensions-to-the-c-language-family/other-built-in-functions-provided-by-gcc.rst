@@ -854,8 +854,8 @@ a particular case, a call to the library function is emitted.
 
 .. index:: std
 
-Outside strict ISO C mode (:option:`-ansi`, :option:`-std`:samp:`=c90`,
-:option:`-std`:samp:`=c99` or :option:`-std`:samp:`=c11`), the functions
+Outside strict ISO C mode (:option:`-ansi`, :option:`-std=c90`,
+:option:`-std=c99` or :option:`-std=c11`), the functions
 ``_exit``, ``alloca``, ``bcmp``, ``bzero``,
 ``dcgettext``, ``dgettext``, ``dremf``, ``dreml``,
 ``drem``, ``exp10f``, ``exp10l``, ``exp10``, ``ffsll``,
@@ -922,7 +922,7 @@ The ISO C99 functions
 ``tgamma``, ``truncf``, ``truncl``, ``trunc``,
 ``vfscanf``, ``vscanf``, ``vsnprintf`` and ``vsscanf``
 are handled as built-in functions
-except in strict ISO C90 mode (:option:`-ansi` or :option:`-std`:samp:`=c90`).
+except in strict ISO C90 mode (:option:`-ansi` or :option:`-std=c90`).
 
 There are also built-in versions of the ISO C99 functions
 ``acosf``, ``acosl``, ``asinf``, ``asinl``, ``atan2f``,
@@ -955,7 +955,7 @@ The ISO C94 functions
 ``iswspace``, ``iswupper``, ``iswxdigit``, ``towlower`` and
 ``towupper``
 are handled as built-in functions
-except in strict ISO C90 mode (:option:`-ansi` or :option:`-std`:samp:`=c90`).
+except in strict ISO C90 mode (:option:`-ansi` or :option:`-std=c90`).
 
 The ISO C90 functions
 ``abort``, ``abs``, ``acos``, ``asin``, ``atan2``,
@@ -975,7 +975,7 @@ The ISO C90 functions
 ``strpbrk``, ``strrchr``, ``strspn``, ``strstr``,
 ``tanh``, ``tan``, ``vfprintf``, ``vprintf`` and ``vsprintf``
 are all recognized as built-in functions unless
-:option:`-fno-builtin` is specified (or :option:`-fno-builtin-`:samp:`{function}`
+:option:`-fno-builtin` is specified (or :option:`-fno-builtin-function`
 is specified for an individual function).  All of these functions have
 corresponding versions prefixed with ``__builtin_``.
 

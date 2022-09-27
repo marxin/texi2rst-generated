@@ -323,7 +323,7 @@ Basic PowerPC Built-in Functions Available on ISA 2.05
 The basic built-in functions described in this section are
 available on the PowerPC family of processors starting with ISA 2.05
 or later.  Unless specific options are explicitly disabled on the
-command line, specifying option :option:`-mcpu`:samp:`=power6` has the effect of
+command line, specifying option :option:`-mcpu=power6` has the effect of
 enabling the :option:`-mpowerpc64`, :option:`-mpowerpc-gpopt`,
 :option:`-mpowerpc-gfxopt`, :option:`-mmfcrf`, :option:`-mpopcntb`,
 :option:`-mfprnd`, :option:`-mcmpb`, :option:`-mhard-dfp`, and
@@ -435,8 +435,8 @@ Basic PowerPC Built-in Functions Available on ISA 2.06
 The basic built-in functions described in this section are
 available on the PowerPC family of processors starting with ISA 2.05
 or later.  Unless specific options are explicitly disabled on the
-command line, specifying option :option:`-mcpu`:samp:`=power7` has the effect of
-enabling all the same options as for :option:`-mcpu`:samp:`=power6` in
+command line, specifying option :option:`-mcpu=power7` has the effect of
+enabling all the same options as for :option:`-mcpu=power6` in
 addition to the :option:`-maltivec`, :option:`-mpopcntd`, and
 :option:`-mvsx` options.
 
@@ -482,8 +482,8 @@ Basic PowerPC Built-in Functions Available on ISA 2.07
 The basic built-in functions described in this section are
 available on the PowerPC family of processors starting with ISA 2.07
 or later.  Unless specific options are explicitly disabled on the
-command line, specifying option :option:`-mcpu`:samp:`=power8` has the effect of
-enabling all the same options as for :option:`-mcpu`:samp:`=power7` in
+command line, specifying option :option:`-mcpu=power8` has the effect of
+enabling all the same options as for :option:`-mcpu=power7` in
 addition to the :option:`-mpower8-fusion`, :option:`-mpower8-vector`,
 :option:`-mcrypto`, :option:`-mhtm`, :option:`-mquad-memory`, and
 :option:`-mquad-memory-atomic` options.
@@ -498,12 +498,12 @@ Basic PowerPC Built-in Functions Available on ISA 3.0
 The basic built-in functions described in this section are
 available on the PowerPC family of processors starting with ISA 3.0
 or later.  Unless specific options are explicitly disabled on the
-command line, specifying option :option:`-mcpu`:samp:`=power9` has the effect of
-enabling all the same options as for :option:`-mcpu`:samp:`=power8` in
+command line, specifying option :option:`-mcpu=power9` has the effect of
+enabling all the same options as for :option:`-mcpu=power8` in
 addition to the :option:`-misel` option.
 
 The following built-in functions are available on Linux 64-bit systems
-that use the ISA 3.0 instruction set (:option:`-mcpu`:samp:`=power9`):
+that use the ISA 3.0 instruction set (:option:`-mcpu=power9`):
 
 ``__float128 __builtin_addf128_round_to_odd (__float128, __float128)``
   Perform a 128-bit IEEE floating point add using round to odd as the
@@ -658,11 +658,11 @@ Basic PowerPC Built-in Functions Available on ISA 3.1
 The basic built-in functions described in this section are
 available on the PowerPC family of processors starting with ISA 3.1.
 Unless specific options are explicitly disabled on the
-command line, specifying option :option:`-mcpu`:samp:`=power10` has the effect of
-enabling all the same options as for :option:`-mcpu`:samp:`=power9`.
+command line, specifying option :option:`-mcpu=power10` has the effect of
+enabling all the same options as for :option:`-mcpu=power9`.
 
 The following built-in functions are available on Linux 64-bit systems
-that use a future architecture instruction set (:option:`-mcpu`:samp:`=power10`):
+that use a future architecture instruction set (:option:`-mcpu=power10`):
 
 .. code-block:: c++
 

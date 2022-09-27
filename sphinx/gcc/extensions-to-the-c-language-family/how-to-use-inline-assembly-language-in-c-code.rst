@@ -1845,7 +1845,7 @@ If you want to recompile source files that do not actually use your global
 register variable so they do not use the specified register for any other 
 purpose, you need not actually add the global register declaration to 
 their source code. It suffices to specify the compiler option 
-:option:`-ffixed-`:samp:`{reg}` (see :ref:`code-gen-options`) to reserve the 
+:option:`-ffixed-reg` (see :ref:`code-gen-options`) to reserve the 
 register.
 
 Declaring the variable

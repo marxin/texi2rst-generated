@@ -31,9 +31,9 @@ Many of the intrinsic procedures take one or more optional arguments.
 This document follows the convention used in the Fortran 95 standard,
 and denotes such arguments by square brackets.
 
-GNU Fortran offers the :option:`-std` = command-line option,
+GNU Fortran offers the :option:`-std=` command-line option,
 which can be used to restrict the set of intrinsic procedures to a 
-given standard.  By default, :command:`gfortran` sets the :option:`-std`:samp:`=gnu`
+given standard.  By default, :command:`gfortran` sets the :option:`-std=gnu`
 option, and so all intrinsic procedures described here are accepted.  There
 is one caveat.  For a select group of intrinsic procedures, :command:`g77`
 implemented both a function and a subroutine.  Both classes 

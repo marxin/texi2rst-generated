@@ -69,7 +69,7 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
 .. option:: -mfp-trap-mode={trap-mode}
 
   This option controls what floating-point related traps are enabled.
-  Other Alpha compilers call this option :option:`-fptm `:samp:`{trap-mode}`.
+  Other Alpha compilers call this option :option:`-fptm trap-mode`.
   The trap mode can be set to one of four values:
 
   :samp:`n`
@@ -91,7 +91,7 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
 .. option:: -mfp-rounding-mode={rounding-mode}
 
   Selects the IEEE rounding mode.  Other Alpha compilers call this option
-  :option:`-fprm `:samp:`{rounding-mode}`.  The :samp:`{rounding-mode}` can be one
+  :option:`-fprm rounding-mode`.  The :samp:`{rounding-mode}` can be one
   of:
 
   :samp:`n`
@@ -140,8 +140,8 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
 .. option:: -mieee-conformant
 
   This option marks the generated code as IEEE conformant.  You must not
-  use this option unless you also specify :option:`-mtrap-precision`:samp:`=i` and either
-  :option:`-mfp-trap-mode`:samp:`=su` or :option:`-mfp-trap-mode`:samp:`=sui`.  Its only effect
+  use this option unless you also specify :option:`-mtrap-precision=i` and either
+  :option:`-mfp-trap-mode=su` or :option:`-mfp-trap-mode=sui`.  Its only effect
   is to emit the line :samp:`.eflag 48` in the function prologue of the
   generated assembly file.
 
@@ -163,7 +163,7 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
 
   Indicate whether GCC should generate code to use the optional BWX,
   CIX, FIX and MAX instruction sets.  The default is to use the instruction
-  sets supported by the CPU type specified via :option:`-mcpu` = option or that
+  sets supported by the CPU type specified via :option:`-mcpu=` option or that
   of the CPU on which GCC was built if none is specified.
 
 .. option:: -mfloat-vax, -mfloat-ieee
@@ -242,7 +242,7 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
 
     Native toolchains also support the value :samp:`native`,
   which selects the best architecture option for the host processor.
-  :option:`-mcpu`:samp:`=native` has no effect if GCC does not recognize
+  :option:`-mcpu=native` has no effect if GCC does not recognize
   the processor.
 
 .. option:: -mtune={cpu_type}
@@ -252,7 +252,7 @@ These :samp:`-m` options are defined for the DEC Alpha implementations:
 
   Native toolchains also support the value :samp:`native`,
   which selects the best architecture option for the host processor.
-  :option:`-mtune`:samp:`=native` has no effect if GCC does not recognize
+  :option:`-mtune=native` has no effect if GCC does not recognize
   the processor.
 
 .. option:: -mmemory-latency={time}

@@ -148,7 +148,7 @@ These command-line options are defined for RX targets:
   allocated first to satisfy the requirements of :option:`-mint-register`,
   then :option:`-mpid` and finally :option:`-msmall-data-limit`.  Thus it
   is possible for the small data area register to be ``r8`` if both
-  :option:`-mint-register`:samp:`=4` and :option:`-mpid` are specified on the
+  :option:`-mint-register=4` and :option:`-mpid` are specified on the
   command line.
 
   By default this feature is not enabled.  The default can be restored
@@ -188,13 +188,13 @@ These command-line options are defined for RX targets:
   instructions.  Note that :option:`-mno-jsr` does not mean to not use
   ``JSR`` but instead means that any type of branch may be used.
 
-*Note:* The generic GCC command-line option :option:`-ffixed-`:samp:`{reg}`
+*Note:* The generic GCC command-line option :option:`-ffixed-reg`
 has special significance to the RX port when used with the
 :gcc-attr:`interrupt` function attribute.  This attribute indicates a
 function intended to process fast interrupts.  GCC ensures
 that it only uses the registers ``r10``, ``r11``, ``r12``
 and/or ``r13`` and only provided that the normal use of the
 corresponding registers have been restricted via the
-:option:`-ffixed-`:samp:`{reg}` or :option:`-mint-register` command-line
+:option:`-ffixed-reg` or :option:`-mint-register` command-line
 options.
 

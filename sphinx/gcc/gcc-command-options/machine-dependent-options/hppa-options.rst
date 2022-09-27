@@ -26,7 +26,7 @@ These :samp:`-m` options are defined for the HPPA family of computers:
 
 .. option:: -mpa-risc-1-0, -mpa-risc-1-1, -mpa-risc-2-0
 
-  Synonyms for :option:`-march`:samp:`=1.0`, :option:`-march`:samp:`=1.1`, and :option:`-march`:samp:`=2.0` respectively.
+  Synonyms for :option:`-march=1.0`, :option:`-march=1.1`, and :option:`-march=2.0` respectively.
 
 .. option:: -mcaller-copies
 
@@ -200,10 +200,10 @@ These :samp:`-m` options are defined for the HPPA family of computers:
   :samp:`95` for HP-UX 10.10 though to 11.00, and :samp:`98` for HP-UX 11.11
   and later.
 
-  :option:`-munix`:samp:`=93` provides the same predefines as GCC 3.3 and 3.4.
-  :option:`-munix`:samp:`=95` provides additional predefines for ``XOPEN_UNIX``
+  :option:`-munix=93` provides the same predefines as GCC 3.3 and 3.4.
+  :option:`-munix=95` provides additional predefines for ``XOPEN_UNIX``
   and ``_XOPEN_SOURCE_EXTENDED``, and the startfile :samp:`unix95.o`.
-  :option:`-munix`:samp:`=98` provides additional predefines for ``_XOPEN_UNIX``,
+  :option:`-munix=98` provides additional predefines for ``_XOPEN_UNIX``,
   ``_XOPEN_SOURCE_EXTENDED``, ``_INCLUDE__STDC_A1_SOURCE`` and
   ``_INCLUDE_XOPEN_SOURCE_500``, and the startfile :samp:`unix98.o`.
 

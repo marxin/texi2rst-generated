@@ -15,7 +15,7 @@ The original ISO C++ standard was published as the ISO standard (ISO/IEC
 C++03, respectively. GCC implements the majority of C++98 (``export``
 is a notable exception) and most of the changes in C++03.  To select
 this standard in GCC, use one of the options :option:`-ansi`,
-:option:`-std`:samp:`=c++98`, or :option:`-std`:samp:`=c++03`; to obtain all the diagnostics
+:option:`-std=c++98`, or :option:`-std=c++03` ; to obtain all the diagnostics
 required by the standard, you should also specify :option:`-pedantic` (or
 :option:`-pedantic-errors` if you want them to be errors rather than
 warnings).
@@ -25,28 +25,28 @@ A revised ISO C++ standard was published in 2011 as ISO/IEC
 commonly referred to as C++0x.  C++11 contains several changes to the
 C++ language, all of which have been implemented in GCC. For details
 see https://gcc.gnu.org/projects/cxx-status.html#cxx11.
-To select this standard in GCC, use the option :option:`-std`:samp:`=c++11`.
+To select this standard in GCC, use the option :option:`-std=c++11`.
 
 Another revised ISO C++ standard was published in 2014 as ISO/IEC
 14882:2014, and is referred to as C++14; before its publication it was
 sometimes referred to as C++1y.  C++14 contains several further
 changes to the C++ language, all of which have been implemented in GCC.
 For details see https://gcc.gnu.org/projects/cxx-status.html#cxx14.
-To select this standard in GCC, use the option :option:`-std`:samp:`=c++14`.
+To select this standard in GCC, use the option :option:`-std=c++14`.
 
 The C++ language was further revised in 2017 and ISO/IEC 14882:2017 was
 published.  This is referred to as C++17, and before publication was
 often referred to as C++1z.  GCC supports all the changes in that
 specification.  For further details see
 https://gcc.gnu.org/projects/cxx-status.html#cxx17.  Use the option
-:option:`-std`:samp:`=c++17` to select this variant of C++.
+:option:`-std=c++17` to select this variant of C++.
 
 Another revised ISO C++ standard was published in 2020 as ISO/IEC
 14882:2020, and is referred to as C++20; before its publication it was
 sometimes referred to as C++2a.  GCC supports most of the changes in the
 new specification.  For further details see
 https://gcc.gnu.org/projects/cxx-status.html#cxx20.
-To select this standard in GCC, use the option :option:`-std`:samp:`=c++20`.
+To select this standard in GCC, use the option :option:`-std=c++20`.
 
 More information about the C++ standards is available on the ISO C++
 committee's web site at http://www.open-std.org/jtc1/sc22/wg21/.
@@ -61,12 +61,12 @@ that on rare occasions conflict with the C++ standard.  See :ref:`c++-dialect-op
 :option:`-std` options listed above disables these extensions where they
 they conflict with the C++ standard version selected.  You may also
 select an extended version of the C++ language explicitly with
-:option:`-std`:samp:`=gnu++98` (for C++98 with GNU extensions), or
-:option:`-std`:samp:`=gnu++11` (for C++11 with GNU extensions), or
-:option:`-std`:samp:`=gnu++14` (for C++14 with GNU extensions), or
-:option:`-std`:samp:`=gnu++17` (for C++17 with GNU extensions), or
-:option:`-std`:samp:`=gnu++20` (for C++20 with GNU extensions).
+:option:`-std=gnu++98` (for C++98 with GNU extensions), or
+:option:`-std=gnu++11` (for C++11 with GNU extensions), or
+:option:`-std=gnu++14` (for C++14 with GNU extensions), or
+:option:`-std=gnu++17` (for C++17 with GNU extensions), or
+:option:`-std=gnu++20` (for C++20 with GNU extensions).
 
 The default, if
-no C++ language dialect options are given, is :option:`-std`:samp:`=gnu++17`.
+no C++ language dialect options are given, is :option:`-std=gnu++17`.
 

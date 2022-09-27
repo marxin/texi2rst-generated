@@ -20,7 +20,7 @@ is being compiled:
 .. option:: -mbarrel-shifter
 
   Generate instructions supported by barrel shifter.  This is the default
-  unless :option:`-mcpu`:samp:`=ARC601` or :samp:`-mcpu=ARCEM` is in effect.
+  unless :option:`-mcpu=ARC601` or :samp:`-mcpu=ARCEM` is in effect.
 
 .. option:: -mjli-always
 
@@ -48,7 +48,7 @@ is being compiled:
   .. option:: arc700
 
     Compile for ARC700.  Aliases: :option:`-mA7`, :option:`-mARC700`.
-    This is the default when configured with :option:`--with-cpu`:samp:`=arc700`.
+    This is the default when configured with :option:`--with-cpu=arc700`.
 
   :samp:`arcem`
     Compile for ARC EM.
@@ -143,7 +143,7 @@ is being compiled:
 
   Generate extended arithmetic instructions.  Currently only
   ``divaw``, ``adds``, ``subs``, and ``sat16`` are
-  supported.  Only valid for :option:`-mcpu`:samp:`=ARC700`.
+  supported.  Only valid for :option:`-mcpu=ARC700`.
 
 .. option:: -mno-mpy
 
@@ -161,11 +161,11 @@ is being compiled:
 .. option:: -mmul64
 
   Generate ``mul64`` and ``mulu64`` instructions.  
-  Only valid for :option:`-mcpu`:samp:`=ARC600`.
+  Only valid for :option:`-mcpu=ARC600`.
 
 .. option:: -mnorm
 
-  Generate ``norm`` instructions.  This is the default if :option:`-mcpu`:samp:`=ARC700`
+  Generate ``norm`` instructions.  This is the default if :option:`-mcpu=ARC700`
   is in effect.
 
 .. option:: -mspfp, -mspfp-compact
@@ -181,7 +181,7 @@ is being compiled:
 .. option:: -msimd
 
   Enable generation of ARC SIMD instructions via target-specific
-  builtins.  Only valid for :option:`-mcpu`:samp:`=ARC700`.
+  builtins.  Only valid for :option:`-mcpu=ARC700`.
 
 .. option:: -msoft-float
 
@@ -659,7 +659,7 @@ The following options fine tune code generation:
 .. option:: -mtune={cpu}
 
   Set instruction scheduling parameters for :samp:`{cpu}`, overriding any implied
-  by :option:`-mcpu` =.
+  by :option:`-mcpu=`.
 
   Supported values for :samp:`{cpu}` are
 

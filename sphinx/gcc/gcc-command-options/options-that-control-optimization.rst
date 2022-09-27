@@ -41,7 +41,7 @@ many optimization passes.
 
 Depending on the target and how GCC was configured, a slightly different
 set of optimizations may be enabled at each :option:`-O` level than
-those listed here.  You can invoke GCC with :option:`-Q --help`:samp:`=optimizers`
+those listed here.  You can invoke GCC with :option:`-Q --help=optimizers`
 to find out the exact set of optimizations that are enabled at each level.
 See :ref:`overall-options`, for examples.
 
@@ -145,7 +145,7 @@ See :ref:`overall-options`, for examples.
   :option:`-foptimize-strlen` 
   :option:`-fpartial-inlining` 
   :option:`-fpeephole2` 
-  :option:`-freorder-blocks-algorithm`:samp:`=stc` 
+  :option:`-freorder-blocks-algorithm=stc` 
   :option:`-freorder-blocks-and-partition`  :option:`-freorder-functions` 
   :option:`-frerun-cse-after-loop`  
   :option:`-fschedule-insns`  :option:`-fschedule-insns2` 
@@ -159,7 +159,7 @@ See :ref:`overall-options`, for examples.
   :option:`-ftree-slp-vectorize` 
   :option:`-ftree-switch-conversion`  :option:`-ftree-tail-merge` 
   :option:`-ftree-vrp` 
-  :option:`-fvect-cost-model`:samp:`=very-cheap`
+  :option:`-fvect-cost-model=very-cheap`
   Please note the warning under :option:`-fgcse` about
   invoking :option:`-O2` on programs that use computed gotos.
 
@@ -181,7 +181,7 @@ See :ref:`overall-options`, for examples.
   :option:`-ftree-loop-distribution` 
   :option:`-ftree-partial-pre` 
   :option:`-funswitch-loops` 
-  :option:`-fvect-cost-model`:samp:`=dynamic` 
+  :option:`-fvect-cost-model=dynamic` 
   :option:`-fversion-loops-for-strides`
 
 .. option:: -O0
@@ -196,7 +196,7 @@ See :ref:`overall-options`, for examples.
 
   :option:`-falign-functions`  :option:`-falign-jumps` 
   :option:`-falign-labels`  :option:`-falign-loops` 
-  :option:`-fprefetch-loop-arrays`  :option:`-freorder-blocks-algorithm`:samp:`=stc`
+  :option:`-fprefetch-loop-arrays`  :option:`-freorder-blocks-algorithm=stc`
   It also enables :option:`-finline-functions`, causes the compiler to tune for
   code size rather than execution speed, and performs further optimizations
   designed to reduce code size.
@@ -277,15 +277,15 @@ optimizations to be performed is desired.
 
 .. option:: -ffp-contract={style}
 
-  :option:`-ffp-contract`:samp:`=off` disables floating-point expression contraction.
-  :option:`-ffp-contract`:samp:`=fast` enables floating-point expression contraction
+  :option:`-ffp-contract=off` disables floating-point expression contraction.
+  :option:`-ffp-contract=fast` enables floating-point expression contraction
   such as forming of fused multiply-add operations if the target has
   native support for them.
-  :option:`-ffp-contract`:samp:`=on` enables floating-point expression contraction
+  :option:`-ffp-contract=on` enables floating-point expression contraction
   if allowed by the language standard.  This is currently not implemented
-  and treated equal to :option:`-ffp-contract`:samp:`=off`.
+  and treated equal to :option:`-ffp-contract=off`.
 
-  The default is :option:`-ffp-contract`:samp:`=fast`.
+  The default is :option:`-ffp-contract=fast`.
 
 .. option:: -fomit-frame-pointer
 
@@ -396,8 +396,8 @@ optimizations to be performed is desired.
   can be inlined in number of pseudo instructions.
 
   Inlining is actually controlled by a number of parameters, which may be
-  specified individually by using :option:`--param `:samp:`{name}` = :samp:`{value}`.
-  The :option:`-finline-limit`:samp:`={n}` option sets some of these parameters
+  specified individually by using :option:`--param name=value`.
+  The :option:`-finline-limit=n` option sets some of these parameters
   as follows:
 
   ``max-inline-insns-single``
@@ -781,9 +781,9 @@ optimizations to be performed is desired.
   flag to disable this optimization.  To preserve stores before the
   constructor starts (e.g. because your operator new clears the object
   storage) but still treat the object as dead after the destructor, you
-  can use :option:`-flifetime-dse`:samp:`=1`.  The default behavior can be
-  explicitly selected with :option:`-flifetime-dse`:samp:`=2`.
-  :option:`-flifetime-dse`:samp:`=0` is equivalent to :option:`-fno-lifetime-dse`.
+  can use :option:`-flifetime-dse=1`.  The default behavior can be
+  explicitly selected with :option:`-flifetime-dse=2`.
+  :option:`-flifetime-dse=0` is equivalent to :option:`-fno-lifetime-dse`.
 
 .. option:: -flifetime-dse
 
@@ -947,10 +947,10 @@ optimizations to be performed is desired.
   Define how many insns (if any) can be moved prematurely from the queue
   of stalled insns into the ready list during the second scheduling pass.
   :option:`-fno-sched-stalled-insns` means that no insns are moved
-  prematurely, :option:`-fsched-stalled-insns`:samp:`=0` means there is no limit
+  prematurely, :option:`-fsched-stalled-insns=0` means there is no limit
   on how many queued insns can be moved prematurely.
   :option:`-fsched-stalled-insns` without a value is equivalent to
-  :option:`-fsched-stalled-insns`:samp:`=1`.
+  :option:`-fsched-stalled-insns=1`.
 
 .. option:: -fsched-stalled-insns-dep, -fsched-stalled-insns-dep={n}
 
@@ -959,9 +959,9 @@ optimizations to be performed is desired.
   of stalled insns.  This has an effect only during the second scheduling pass,
   and only if :option:`-fsched-stalled-insns` is used.
   :option:`-fno-sched-stalled-insns-dep` is equivalent to
-  :option:`-fsched-stalled-insns-dep`:samp:`=0`.
+  :option:`-fsched-stalled-insns-dep=0`.
   :option:`-fsched-stalled-insns-dep` without a value is equivalent to
-  :option:`-fsched-stalled-insns-dep`:samp:`=1`.
+  :option:`-fsched-stalled-insns-dep=1`.
 
 .. option:: -fsched2-use-superblocks
 
@@ -1232,7 +1232,7 @@ optimizations to be performed is desired.
   when externally visible function can be called with constant arguments.
   Because this optimization can create multiple copies of functions,
   it may significantly increase code size
-  (see :option:`--param ipa-cp-unit-growth`:samp:`={value}`).
+  (see :option:`--param ipa-cp-unit-growth=value`).
   This flag is enabled by default at :option:`-O3`.
   It is also enabled by :option:`-fprofile-use` and :option:`-fauto-profile`.
 
@@ -1291,7 +1291,7 @@ optimizations to be performed is desired.
     As a result, when patching a function, all its callers and its clones'
     callers are impacted, therefore need to be patched as well.
 
-    :option:`-flive-patching`:samp:`=inline-clone` disables the following optimization flags:
+    :option:`-flive-patching=inline-clone` disables the following optimization flags:
 
     :option:`-fwhole-program`  :option:`-fipa-pta`  :option:`-fipa-reference`  :option:`-fipa-ra` 
     :option:`-fipa-icf`  :option:`-fipa-icf-functions`  :option:`-fipa-icf-variables` 
@@ -1303,9 +1303,9 @@ optimizations to be performed is desired.
     As a result, when patching a static function, all its callers are impacted
     and so need to be patched as well.
 
-    In addition to all the flags that :option:`-flive-patching`:samp:`=inline-clone`
+    In addition to all the flags that :option:`-flive-patching=inline-clone`
     disables,
-    :option:`-flive-patching`:samp:`=inline-only-static` disables the following additional
+    :option:`-flive-patching=inline-only-static` disables the following additional
     optimization flags:
 
     :option:`-fipa-cp-clone`  :option:`-fipa-sra`  :option:`-fpartial-inlining`  :option:`-fipa-cp`
@@ -1980,14 +1980,14 @@ optimizations to be performed is desired.
 
   If :samp:`{m}` is not specified, it defaults to :samp:`{n}`.
 
-  Examples: :option:`-falign-functions`:samp:`=32` aligns functions to the next
-  32-byte boundary, :option:`-falign-functions`:samp:`=24` aligns to the next
+  Examples: :option:`-falign-functions=32` aligns functions to the next
+  32-byte boundary, :option:`-falign-functions=24` aligns to the next
   32-byte boundary only if this can be done by skipping 23 bytes or less,
-  :option:`-falign-functions`:samp:`=32:7` aligns to the next
+  :option:`-falign-functions=32:7` aligns to the next
   32-byte boundary only if this can be done by skipping 6 bytes or less.
 
   The second pair of :samp:`{n2}` : :samp:`{m2}` values allows you to specify
-  a secondary alignment: :option:`-falign-functions`:samp:`=64:7:32:3` aligns to
+  a secondary alignment: :option:`-falign-functions=64:7:32:3` aligns to
   the next 64-byte boundary if this can be done by skipping 6 bytes or less,
   otherwise aligns to the next 32-byte boundary if this can be done
   by skipping 2 bytes or less.
@@ -1996,7 +1996,7 @@ optimizations to be performed is desired.
   Some assemblers only support this flag when :samp:`{n}` is a power of two;
   in that case, it is rounded up.
 
-  :option:`-fno-align-functions` and :option:`-falign-functions`:samp:`=1` are
+  :option:`-fno-align-functions` and :option:`-falign-functions=1` are
   equivalent and mean that functions are not aligned.
 
   If :samp:`{n}` is not specified or is zero, use a machine-dependent default.
@@ -2015,7 +2015,7 @@ optimizations to be performed is desired.
   Align all branch targets to a power-of-two boundary.
 
   Parameters of this option are analogous to the :option:`-falign-functions` option.
-  :option:`-fno-align-labels` and :option:`-falign-labels`:samp:`=1` are
+  :option:`-fno-align-labels` and :option:`-falign-labels=1` are
   equivalent and mean that labels are not aligned.
 
   If :option:`-falign-loops` or :option:`-falign-jumps` are applicable and
@@ -2037,7 +2037,7 @@ optimizations to be performed is desired.
   is used instead.
 
   Parameters of this option are analogous to the :option:`-falign-functions` option.
-  :option:`-fno-align-loops` and :option:`-falign-loops`:samp:`=1` are
+  :option:`-fno-align-loops` and :option:`-falign-loops=1` are
   equivalent and mean that loops are not aligned.
   The maximum allowed :samp:`{n}` option value is 65536.
 
@@ -2055,7 +2055,7 @@ optimizations to be performed is desired.
   is used instead.
 
   Parameters of this option are analogous to the :option:`-falign-functions` option.
-  :option:`-fno-align-jumps` and :option:`-falign-jumps`:samp:`=1` are
+  :option:`-fno-align-jumps` and :option:`-falign-jumps=1` are
   equivalent and mean that loops are not aligned.
 
   If :samp:`{n}` is not specified or is zero, use a machine-dependent default.
@@ -2117,9 +2117,9 @@ optimizations to be performed is desired.
   optimization.  This also affects any such calls implicitly generated
   by the compiler.
 
-  This option has the same effect as :option:`-fsanitize`:samp:`=unreachable
+  This option has the same effect as :option:`-fsanitize=unreachable
   -fsanitize-trap=unreachable`, but does not affect the values of those
-  options.  If :option:`-fsanitize`:samp:`=unreachable` is enabled, that option
+  options.  If :option:`-fsanitize=unreachable` is enabled, that option
   takes priority over this one.
 
   This option is enabled by default at :option:`-O0` and :option:`-Og`.
@@ -2248,12 +2248,12 @@ optimizations to be performed is desired.
   The following options :option:`-fPIC`, :option:`-fpic`, :option:`-fpie` and
   :option:`-fPIE` are combined based on the following scheme:
 
-  :option:`:option:`-fPIC`` + :option:`:option:`-fpic`` = :option:`:option:`-fpic``
-  :option:`:option:`-fPIC`` + :option:`:option:`-fno-pic`` = :option:`:option:`-fno-pic``
-  :option:`:option:`-fpic/-fPIC`` + (no option) = (no option)
-  :option:`:option:`-fPIC`` + :option:`:option:`-fPIE`` = :option:`:option:`-fPIE``
-  :option:`:option:`-fpic`` + :option:`:option:`-fPIE`` = :option:`:option:`-fpie``
-  :option:`:option:`-fPIC/-fpic`` + :option:`:option:`-fpie`` = :option:`:option:`-fpie``
+  :option:`-fPIC` + :option:`-fpic` = :option:`-fpic`
+  :option:`-fPIC` + :option:`-fno-pic` = :option:`-fno-pic`
+  :option:`-fpic/-fPIC` + (no option) = (no option)
+  :option:`-fPIC` + :option:`-fPIE` = :option:`-fPIE`
+  :option:`-fpic` + :option:`-fPIE` = :option:`-fpie`
+  :option:`-fPIC/-fpic` + :option:`-fpie` = :option:`-fpie`
   Certain ABI-changing flags are required to match in all compilation units,
   and trying to override this at link time with a conflicting value
   is ignored.  This includes options such as :option:`-freg-struct-return`
@@ -2264,8 +2264,8 @@ optimizations to be performed is desired.
   are passed through to the link stage and merged conservatively for
   conflicting translation units.  Specifically
   :option:`-fno-strict-overflow`, :option:`-fwrapv` and :option:`-fno-trapv` take
-  precedence; and for example :option:`-ffp-contract`:samp:`=off` takes precedence
-  over :option:`-ffp-contract`:samp:`=fast`.  You can override them at link time.
+  precedence; and for example :option:`-ffp-contract=off` takes precedence
+  over :option:`-ffp-contract=fast`.  You can override them at link time.
 
   Diagnostic options such as :option:`-Wstringop-overflow` are passed
   through to the link stage and their setting matches that of the
@@ -2361,7 +2361,7 @@ optimizations to be performed is desired.
   environment variable :envvar:`MAKE` may be used to override the program
   used.
 
-  You can also specify :option:`-flto`:samp:`=jobserver` to use GNU make's
+  You can also specify :option:`-flto=jobserver` to use GNU make's
   job server mode to determine the number of parallel jobs. This
   is useful when the Makefile calling GCC is already executing in parallel.
   You must prepend a :samp:`+` to the command recipe in the parent Makefile
@@ -2369,7 +2369,7 @@ optimizations to be performed is desired.
   GNU make.  Even without the option value, GCC tries to automatically
   detect a running GNU make's job server.
 
-  Use :option:`-flto`:samp:`=auto` to use GNU make's job server, if available,
+  Use :option:`-flto=auto` to use GNU make's job server, if available,
   or otherwise fall back to autodetection of the number of CPU threads
   present in your system.
 
@@ -2495,7 +2495,7 @@ optimizations to be performed is desired.
   :option:`-finline-functions`  :option:`-fipa-cp`  :option:`-fipa-cp-clone`  :option:`-fipa-bit-cp` 
   :option:`-fpredictive-commoning`  :option:`-fsplit-loops`  :option:`-funswitch-loops` 
   :option:`-fgcse-after-reload`  :option:`-ftree-loop-vectorize`  :option:`-ftree-slp-vectorize` 
-  :option:`-fvect-cost-model`:samp:`=dynamic`  :option:`-ftree-loop-distribute-patterns` 
+  :option:`-fvect-cost-model=dynamic`  :option:`-ftree-loop-distribute-patterns` 
   :option:`-fprofile-reorder-functions`
   Before you can use this option, you must first generate profiling information.
   See :ref:`instrumentation-options`, for information about the
@@ -2503,7 +2503,7 @@ optimizations to be performed is desired.
 
   By default, GCC emits an error message if the feedback profiles do not
   match the source code.  This error can be turned into a warning by using
-  :option:`-Wno-error`:samp:`=coverage-mismatch`.  Note this may result in poorly
+  :option:`-Wno-error=coverage-mismatch`.  Note this may result in poorly
   optimized code.  Additionally, by default, GCC also emits a warning message if
   the feedback profiles do not exist (see :option:`-Wmissing-profile`).
 
@@ -2521,7 +2521,7 @@ optimizations to be performed is desired.
   :option:`-finline-functions`  :option:`-fipa-cp`  :option:`-fipa-cp-clone`  :option:`-fipa-bit-cp` 
   :option:`-fpredictive-commoning`  :option:`-fsplit-loops`  :option:`-funswitch-loops` 
   :option:`-fgcse-after-reload`  :option:`-ftree-loop-vectorize`  :option:`-ftree-slp-vectorize` 
-  :option:`-fvect-cost-model`:samp:`=dynamic`  :option:`-ftree-loop-distribute-patterns` 
+  :option:`-fvect-cost-model=dynamic`  :option:`-ftree-loop-distribute-patterns` 
   :option:`-fprofile-correction`
   :samp:`{path}` is the name of a file containing AutoFDO profile information.
   If omitted, it defaults to :samp:`fbdata.afdo` in the current directory.
@@ -2574,22 +2574,22 @@ correctness.  All must be specifically enabled.
   This option allows further control over excess precision on machines
   where floating-point operations occur in a format with more precision or
   range than the IEEE standard and interchange floating-point types.  By
-  default, :option:`-fexcess-precision`:samp:`=fast` is in effect; this means that
+  default, :option:`-fexcess-precision=fast` is in effect; this means that
   operations may be carried out in a wider precision than the types specified
   in the source if that would result in faster code, and it is unpredictable
   when rounding to the types specified in the source code takes place.
-  When compiling C, if :option:`-fexcess-precision`:samp:`=standard` is specified then
+  When compiling C, if :option:`-fexcess-precision=standard` is specified then
   excess precision follows the rules specified in ISO C99; in particular,
   both casts and assignments cause values to be rounded to their
   semantic types (whereas :option:`-ffloat-store` only affects
   assignments).  This option is enabled by default for C if a strict
-  conformance option such as :option:`-std`:samp:`=c99` is used.
-  :option:`-ffast-math` enables :option:`-fexcess-precision`:samp:`=fast` by default
+  conformance option such as :option:`-std=c99` is used.
+  :option:`-ffast-math` enables :option:`-fexcess-precision=fast` by default
   regardless of whether a strict conformance option is used.
 
-  :option:`-fexcess-precision`:samp:`=standard` is not implemented for languages
-  other than C.  On the x86, it has no effect if :option:`-mfpmath`:samp:`=sse`
-  or :option:`-mfpmath`:samp:`=sse+387` is specified; in the former case, IEEE
+  :option:`-fexcess-precision=standard` is not implemented for languages
+  other than C.  On the x86, it has no effect if :option:`-mfpmath=sse`
+  or :option:`-mfpmath=sse+387` is specified; in the former case, IEEE
   semantics apply without excess precision, and in the latter, rounding
   is unpredictable.
 
@@ -2598,7 +2598,7 @@ correctness.  All must be specifically enabled.
   Sets the options :option:`-fno-math-errno`, :option:`-funsafe-math-optimizations`,
   :option:`-ffinite-math-only`, :option:`-fno-rounding-math`,
   :option:`-fno-signaling-nans`, :option:`-fcx-limited-range` and
-  :option:`-fexcess-precision`:samp:`=fast`.
+  :option:`-fexcess-precision=fast`.
 
   This option causes the preprocessor macro ``__FAST_MATH__`` to be defined.
 
@@ -3066,7 +3066,7 @@ section includes experimental options that may produce broken code.
   without notice in future releases.
 
   In order to get minimal, maximal and default value of a parameter,
-  one can use :option:`--help`:samp:`=param -Q` options.
+  one can use :option:`--help=param -Q` options.
 
   In each case, the :samp:`{value}` is an integer.  The following choices
   of :samp:`{name}` are recognized for all targets:
@@ -4325,41 +4325,41 @@ section includes experimental options that may produce broken code.
 
     Enable buffer overflow detection for global objects.  This kind
     of protection is enabled by default if you are using
-    :option:`-fsanitize`:samp:`=address` option.
-    To disable global objects protection use :option:`--param asan-globals`:samp:`=0`.
+    :option:`-fsanitize=address` option.
+    To disable global objects protection use :option:`--param asan-globals=0`.
 
   .. gcc-param:: asan-stack
 
     Enable buffer overflow detection for stack objects.  This kind of
-    protection is enabled by default when using :option:`-fsanitize`:samp:`=address`.
-    To disable stack protection use :option:`--param asan-stack`:samp:`=0` option.
+    protection is enabled by default when using :option:`-fsanitize=address`.
+    To disable stack protection use :option:`--param asan-stack=0` option.
 
   .. gcc-param:: asan-instrument-reads
 
     Enable buffer overflow detection for memory reads.  This kind of
-    protection is enabled by default when using :option:`-fsanitize`:samp:`=address`.
+    protection is enabled by default when using :option:`-fsanitize=address`.
     To disable memory reads protection use
-    :option:`--param asan-instrument-reads`:samp:`=0`.
+    :option:`--param asan-instrument-reads=0`.
 
   .. gcc-param:: asan-instrument-writes
 
     Enable buffer overflow detection for memory writes.  This kind of
-    protection is enabled by default when using :option:`-fsanitize`:samp:`=address`.
+    protection is enabled by default when using :option:`-fsanitize=address`.
     To disable memory writes protection use
-    :option:`--param asan-instrument-writes`:samp:`=0` option.
+    :option:`--param asan-instrument-writes=0` option.
 
   .. gcc-param:: asan-memintrin
 
     Enable detection for built-in functions.  This kind of protection
-    is enabled by default when using :option:`-fsanitize`:samp:`=address`.
+    is enabled by default when using :option:`-fsanitize=address`.
     To disable built-in functions protection use
-    :option:`--param asan-memintrin`:samp:`=0`.
+    :option:`--param asan-memintrin=0`.
 
   .. gcc-param:: asan-use-after-return
 
     Enable detection of use-after-return.  This kind of protection
-    is enabled by default when using the :option:`-fsanitize`:samp:`=address` option.
-    To disable it use :option:`--param asan-use-after-return`:samp:`=0`.
+    is enabled by default when using the :option:`-fsanitize=address` option.
+    To disable it use :option:`--param asan-use-after-return=0`.
 
     Note: By default the check is disabled at run time.  To enable it,
     add ``detect_stack_use_after_return=1`` to the environment variable
@@ -4370,60 +4370,60 @@ section includes experimental options that may produce broken code.
     If number of memory accesses in function being instrumented
     is greater or equal to this number, use callbacks instead of inline checks.
     E.g. to disable inline code use
-    :option:`--param asan-instrumentation-with-call-threshold`:samp:`=0`.
+    :option:`--param asan-instrumentation-with-call-threshold=0`.
 
   .. gcc-param:: hwasan-instrument-stack
 
     Enable hwasan instrumentation of statically sized stack-allocated variables.
     This kind of instrumentation is enabled by default when using
-    :option:`-fsanitize`:samp:`=hwaddress` and disabled by default when using
-    :option:`-fsanitize`:samp:`=kernel-hwaddress`.
+    :option:`-fsanitize=hwaddress` and disabled by default when using
+    :option:`-fsanitize=kernel-hwaddress`.
     To disable stack instrumentation use
-    :option:`--param hwasan-instrument-stack`:samp:`=0`, and to enable it use
-    :option:`--param hwasan-instrument-stack`:samp:`=1`.
+    :option:`--param hwasan-instrument-stack=0`, and to enable it use
+    :option:`--param hwasan-instrument-stack=1`.
 
   .. gcc-param:: hwasan-random-frame-tag
 
     When using stack instrumentation, decide tags for stack variables using a
     deterministic sequence beginning at a random tag for each frame.  With this
     parameter unset tags are chosen using the same sequence but beginning from 1.
-    This is enabled by default for :option:`-fsanitize`:samp:`=hwaddress` and unavailable
-    for :option:`-fsanitize`:samp:`=kernel-hwaddress`.
-    To disable it use :option:`--param hwasan-random-frame-tag`:samp:`=0`.
+    This is enabled by default for :option:`-fsanitize=hwaddress` and unavailable
+    for :option:`-fsanitize=kernel-hwaddress`.
+    To disable it use :option:`--param hwasan-random-frame-tag=0`.
 
   .. gcc-param:: hwasan-instrument-allocas
 
     Enable hwasan instrumentation of dynamically sized stack-allocated variables.
     This kind of instrumentation is enabled by default when using
-    :option:`-fsanitize`:samp:`=hwaddress` and disabled by default when using
-    :option:`-fsanitize`:samp:`=kernel-hwaddress`.
+    :option:`-fsanitize=hwaddress` and disabled by default when using
+    :option:`-fsanitize=kernel-hwaddress`.
     To disable instrumentation of such variables use
-    :option:`--param hwasan-instrument-allocas`:samp:`=0`, and to enable it use
-    :option:`--param hwasan-instrument-allocas`:samp:`=1`.
+    :option:`--param hwasan-instrument-allocas=0`, and to enable it use
+    :option:`--param hwasan-instrument-allocas=1`.
 
   .. gcc-param:: hwasan-instrument-reads
 
     Enable hwasan checks on memory reads.  Instrumentation of reads is enabled by
-    default for both :option:`-fsanitize`:samp:`=hwaddress` and
-    :option:`-fsanitize`:samp:`=kernel-hwaddress`.
+    default for both :option:`-fsanitize=hwaddress` and
+    :option:`-fsanitize=kernel-hwaddress`.
     To disable checking memory reads use
-    :option:`--param hwasan-instrument-reads`:samp:`=0`.
+    :option:`--param hwasan-instrument-reads=0`.
 
   .. gcc-param:: hwasan-instrument-writes
 
     Enable hwasan checks on memory writes.  Instrumentation of writes is enabled by
-    default for both :option:`-fsanitize`:samp:`=hwaddress` and
-    :option:`-fsanitize`:samp:`=kernel-hwaddress`.
+    default for both :option:`-fsanitize=hwaddress` and
+    :option:`-fsanitize=kernel-hwaddress`.
     To disable checking memory writes use
-    :option:`--param hwasan-instrument-writes`:samp:`=0`.
+    :option:`--param hwasan-instrument-writes=0`.
 
   .. gcc-param:: hwasan-instrument-mem-intrinsics
 
     Enable hwasan instrumentation of builtin functions.  Instrumentation of these
-    builtin functions is enabled by default for both :option:`-fsanitize`:samp:`=hwaddress`
-    and :option:`-fsanitize`:samp:`=kernel-hwaddress`.
+    builtin functions is enabled by default for both :option:`-fsanitize=hwaddress`
+    and :option:`-fsanitize=kernel-hwaddress`.
     To disable instrumentation of builtin functions use
-    :option:`--param hwasan-instrument-mem-intrinsics`:samp:`=0`.
+    :option:`--param hwasan-instrument-mem-intrinsics=0`.
 
   .. gcc-param:: use-after-scope-direct-emission-threshold
 
@@ -4743,11 +4743,11 @@ section includes experimental options that may produce broken code.
   .. gcc-param:: openacc-kernels
 
     Specify mode of OpenACC 'kernels' constructs handling.
-    With :option:`--param`:samp:`=openacc-kernels=decompose`, OpenACC 'kernels'
+    With :option:`--param=openacc-kernels=decompose`, OpenACC 'kernels'
     constructs are decomposed into parts, a sequence of compute
     constructs, each then handled individually.
     This is work in progress.
-    With :option:`--param`:samp:`=openacc-kernels=parloops`, OpenACC 'kernels'
+    With :option:`--param=openacc-kernels=parloops`, OpenACC 'kernels'
     constructs are handled by the :samp:`parloops` pass, en bloc.
     This is the current default.
 
@@ -4756,9 +4756,9 @@ section includes experimental options that may produce broken code.
     Specify mode of OpenACC privatization diagnostics for
     :option:`-fopt-info-omp-note` and applicable
     :option:`-fdump-tree-*-details`.
-    With :option:`--param`:samp:`=openacc-privatization=quiet`, don't diagnose.
+    With :option:`--param=openacc-privatization=quiet`, don't diagnose.
     This is the current default.
-    With :option:`--param`:samp:`=openacc-privatization=noisy`, do diagnose.
+    With :option:`--param=openacc-privatization=noisy`, do diagnose.
 
     The following choices of :samp:`{name}` are available on AArch64 targets:
 

@@ -39,7 +39,7 @@ accepted by the compiler:
 .. option:: -fall-intrinsics
 
   This option causes all intrinsic procedures (including the GNU-specific
-  extensions) to be accepted.  This can be useful with :option:`-std` = to
+  extensions) to be accepted.  This can be useful with :option:`-std=` to
   force standard-compliance but get access to the full range of intrinsics
   available with :command:`gfortran`.  As a consequence, :option:`-Wintrinsics-std`
   will be ignored and no user-defined procedure with the same name as any
@@ -56,7 +56,7 @@ accepted by the compiler:
   warning, which can only be disabled by disabling all warnings via
   :option:`-w`.  Only a single occurrence per argument is flagged by this
   warning.  :option:`-fallow-argument-mismatch` is implied by
-  :option:`-std`:samp:`=legacy`.
+  :option:`-std=legacy`.
 
   Using this option is *strongly* discouraged.  It is possible to
   provide standard-conforming code which allows different types of

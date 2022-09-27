@@ -18,33 +18,33 @@ in the following sections.
   :option:`-dumpbase` :samp:`{dumpbase}`  :option:`-dumpbase-ext` :samp:`{auxdropsuf}` 
   :option:`-dumpdir` :samp:`{dumppfx}`  :option:`-x` :samp:`{language}`  
   :option:`-v`  :option:`-###`  :option:`--help` [= :samp:`{class}` [,...]]  :option:`--target-help`  :option:`--version` 
-  :option:`-pass-exit-codes`  :option:`-pipe`  :option:`-specs`:samp:`={file}`  :option:`-wrapper`  
-  @ :samp:`{file}`  :option:`-ffile-prefix-map`:samp:`={old}` = :samp:`{new}`  
-  :option:`-fplugin`:samp:`={file}`  :option:`-fplugin-arg-`:samp:`{name}` = :samp:`{arg}`  
-  :option:`-fdump-ada-spec`  [:option:`-slim` ]  :option:`-fada-spec-parent`:samp:`={unit}`  :option:`-fdump-go-spec`:samp:`={file}`
+  :option:`-pass-exit-codes`  :option:`-pipe`  :option:`-specs=file`  :option:`-wrapper`  
+  @ :samp:`{file}`  :option:`-ffile-prefix-map=old` = :samp:`{new}`  
+  :option:`-fplugin=file`  :option:`-fplugin-arg-name` = :samp:`{arg}`  
+  :option:`-fdump-ada-spec`  [:option:`-slim` ]  :option:`-fada-spec-parent=unit`  :option:`-fdump-go-spec=file`
 
 *C Language Options*
   See :ref:`c-dialect-options`.
 
-  :option:`-ansi`  :option:`-std`:samp:`={standard}`  :option:`-aux-info` :samp:`{filename}` 
+  :option:`-ansi`  :option:`-std=standard`  :option:`-aux-info` :samp:`{filename}` 
   :option:`-fallow-parameterless-variadic-functions`  :option:`-fno-asm`  
-  :option:`-fno-builtin`  :option:`-fno-builtin-`:samp:`{function}`  :option:`-fcond-mismatch` 
+  :option:`-fno-builtin`  :option:`-fno-builtin-function`  :option:`-fcond-mismatch` 
   :option:`-ffreestanding`  :option:`-fgimple`  :option:`-fgnu-tm`  :option:`-fgnu89-inline`  :option:`-fhosted` 
   :option:`-flax-vector-conversions`  :option:`-fms-extensions` 
-  :option:`-foffload`:samp:`={arg}`  :option:`-foffload-options`:samp:`={arg}` 
-  :option:`-fopenacc`  :option:`-fopenacc-dim`:samp:`={geom}` 
+  :option:`-foffload=arg`  :option:`-foffload-options=arg` 
+  :option:`-fopenacc`  :option:`-fopenacc-dim=geom` 
   :option:`-fopenmp`  :option:`-fopenmp-simd` 
-  :option:`-fpermitted-flt-eval-methods`:samp:`={standard}` 
+  :option:`-fpermitted-flt-eval-methods=standard` 
   :option:`-fplan9-extensions`  :option:`-fsigned-bitfields`  :option:`-funsigned-bitfields` 
-  :option:`-fsigned-char`  :option:`-funsigned-char`  :option:`-fsso-struct`:samp:`={endianness}`
+  :option:`-fsigned-char`  :option:`-funsigned-char`  :option:`-fsso-struct=endianness`
 
 *C++ Language Options*
   See :ref:`c++-dialect-options`.
 
-  :option:`-fabi-version`:samp:`={n}`  :option:`-fno-access-control` 
-  :option:`-faligned-new`:samp:`={n}`  :option:`-fargs-in-order`:samp:`={n}`  :option:`-fchar8_t`  :option:`-fcheck-new` 
-  :option:`-fconstexpr-depth`:samp:`={n}`  :option:`-fconstexpr-cache-depth`:samp:`={n}` 
-  :option:`-fconstexpr-loop-limit`:samp:`={n}`  :option:`-fconstexpr-ops-limit`:samp:`={n}` 
+  :option:`-fabi-version=n`  :option:`-fno-access-control` 
+  :option:`-faligned-new=n`  :option:`-fargs-in-order=n`  :option:`-fchar8_t`  :option:`-fcheck-new` 
+  :option:`-fconstexpr-depth=n`  :option:`-fconstexpr-cache-depth=n` 
+  :option:`-fconstexpr-loop-limit=n`  :option:`-fconstexpr-ops-limit=n` 
   :option:`-fno-elide-constructors` 
   :option:`-fno-enforce-eh-specs` 
   :option:`-fno-gnu-keywords` 
@@ -54,7 +54,7 @@ in the following sections.
   :option:`-fmodule-header` [= :samp:`{kind}` ] :option:`-fmodule-only` :option:`-fmodules-ts` 
   :option:`-fmodule-implicit-inline` 
   :option:`-fno-module-lazy` 
-  :option:`-fmodule-mapper`:samp:`={specification}` 
+  :option:`-fmodule-mapper=specification` 
   :option:`-fmodule-version-ignore` 
   :option:`-fms-extensions` 
   :option:`-fnew-inheriting-ctors` 
@@ -63,8 +63,8 @@ in the following sections.
   :option:`-fno-optional-diags`  :option:`-fpermissive` 
   :option:`-fno-pretty-templates` 
   :option:`-fno-rtti`  :option:`-fsized-deallocation` 
-  :option:`-ftemplate-backtrace-limit`:samp:`={n}` 
-  :option:`-ftemplate-depth`:samp:`={n}` 
+  :option:`-ftemplate-backtrace-limit=n` 
+  :option:`-ftemplate-depth=n` 
   :option:`-fno-threadsafe-statics`  :option:`-fuse-cxa-atexit` 
   :option:`-fno-weak`  :option:`-nostdinc++` 
   :option:`-fvisibility-inlines-hidden` 
@@ -73,8 +73,8 @@ in the following sections.
   :option:`-flang-info-include-translate` [= :samp:`{header}` ] 
   :option:`-flang-info-include-translate-not` 
   :option:`-flang-info-module-cmi` [= :samp:`{module}` ] 
-  :option:`-stdlib`:samp:`={libstdc++,libc++}` 
-  :option:`-Wabi-tag`  :option:`-Wcatch-value`  :option:`-Wcatch-value`:samp:`={n}` 
+  :option:`-stdlib=libstdc++,libc++` 
+  :option:`-Wabi-tag`  :option:`-Wcatch-value`  :option:`-Wcatch-value=n` 
   :option:`-Wno-class-conversion`  :option:`-Wclass-memaccess` 
   :option:`-Wcomma-subscript`  :option:`-Wconditionally-supported` 
   :option:`-Wno-conversion-null`  :option:`-Wctad-maybe-unsupported` 
@@ -89,7 +89,7 @@ in the following sections.
   :option:`-Wmismatched-new-delete` :option:`-Wmismatched-tags` 
   :option:`-Wmultiple-inheritance`  :option:`-Wnamespaces`  :option:`-Wnarrowing` 
   :option:`-Wnoexcept`  :option:`-Wnoexcept-type`  :option:`-Wnon-virtual-dtor` 
-  :option:`-Wpessimizing-move`  :option:`-Wno-placement-new`  :option:`-Wplacement-new`:samp:`={n}` 
+  :option:`-Wpessimizing-move`  :option:`-Wno-placement-new`  :option:`-Wplacement-new=n` 
   :option:`-Wrange-loop-construct` :option:`-Wredundant-move` :option:`-Wredundant-tags` 
   :option:`-Wreorder`  :option:`-Wregister` 
   :option:`-Wstrict-null-sentinel`  :option:`-Wno-subobject-linkage`  :option:`-Wtemplates` 
@@ -104,18 +104,18 @@ in the following sections.
 *Objective-C and Objective-C++ Language Options*
   See :ref:`objective-c-and-objective-c++-dialect-options`.
 
-  :option:`-fconstant-string-class`:samp:`={class-name}` 
+  :option:`-fconstant-string-class=class-name` 
   :option:`-fgnu-runtime`  :option:`-fnext-runtime` 
   :option:`-fno-nil-receivers` 
-  :option:`-fobjc-abi-version`:samp:`={n}` 
+  :option:`-fobjc-abi-version=n` 
   :option:`-fobjc-call-cxx-cdtors` 
   :option:`-fobjc-direct-dispatch` 
   :option:`-fobjc-exceptions` 
   :option:`-fobjc-gc` 
   :option:`-fobjc-nilcheck` 
-  :option:`-fobjc-std`:samp:`=objc1` 
+  :option:`-fobjc-std=objc1` 
   :option:`-fno-local-ivars` 
-  :option:`-fivar-visibility` =[public|protected|private|package] 
+  :option:`-fivar-visibility=` [public|protected|private|package] 
   :option:`-freplace-objc-classes` 
   :option:`-fzero-link` 
   :option:`-gen-decls` 
@@ -127,41 +127,41 @@ in the following sections.
 *Diagnostic Message Formatting Options*
   See :ref:`diagnostic-message-formatting-options`.
 
-  :option:`-fmessage-length`:samp:`={n}`  
+  :option:`-fmessage-length=n`  
   :option:`-fdiagnostics-plain-output` 
-  :option:`-fdiagnostics-show-location` =[once|every :option:`-line` ]  
-  :option:`-fdiagnostics-color` =[auto|never|always]  
-  :option:`-fdiagnostics-urls` =[auto|never|always]  
-  :option:`-fdiagnostics-format` =[text|sarif :option:`-stderr` |sarif :option:`-file` |json|json :option:`-stderr` |json :option:`-file` ]  
+  :option:`-fdiagnostics-show-location=` [once|every :option:`-line` ]  
+  :option:`-fdiagnostics-color=` [auto|never|always]  
+  :option:`-fdiagnostics-urls=` [auto|never|always]  
+  :option:`-fdiagnostics-format=` [text|sarif :option:`-stderr` |sarif :option:`-file` |json|json :option:`-stderr` |json :option:`-file` ]  
   :option:`-fno-diagnostics-show-option`  :option:`-fno-diagnostics-show-caret` 
   :option:`-fno-diagnostics-show-labels`  :option:`-fno-diagnostics-show-line-numbers` 
   :option:`-fno-diagnostics-show-cwe`  
   :option:`-fno-diagnostics-show-rule`  
-  :option:`-fdiagnostics-minimum-margin-width`:samp:`={width}` 
+  :option:`-fdiagnostics-minimum-margin-width=width` 
   :option:`-fdiagnostics-parseable-fixits`  :option:`-fdiagnostics-generate-patch` 
   :option:`-fdiagnostics-show-template-tree`  :option:`-fno-elide-type` 
-  :option:`-fdiagnostics-path-format` =[none|separate :option:`-events` |inline :option:`-events` ] 
+  :option:`-fdiagnostics-path-format=` [none|separate :option:`-events` |inline :option:`-events` ] 
   :option:`-fdiagnostics-show-path-depths` 
   :option:`-fno-show-column` 
-  :option:`-fdiagnostics-column-unit` =[display|byte] 
-  :option:`-fdiagnostics-column-origin`:samp:`={origin}` 
-  :option:`-fdiagnostics-escape-format` =[unicode|bytes]
+  :option:`-fdiagnostics-column-unit=` [display|byte] 
+  :option:`-fdiagnostics-column-origin=origin` 
+  :option:`-fdiagnostics-escape-format=` [unicode|bytes]
 
 *Warning Options*
   See :ref:`warning-options`.
 
-  :option:`-fsyntax-only`  :option:`-fmax-errors`:samp:`={n}`  :option:`-Wpedantic` 
+  :option:`-fsyntax-only`  :option:`-fmax-errors=n`  :option:`-Wpedantic` 
   :option:`-pedantic-errors` 
-  :option:`-w`  :option:`-Wextra`  :option:`-Wall`  :option:`-Wabi`:samp:`={n}` 
+  :option:`-w`  :option:`-Wextra`  :option:`-Wall`  :option:`-Wabi=n` 
   :option:`-Waddress`  :option:`-Wno-address-of-packed-member`  :option:`-Waggregate-return` 
-  :option:`-Walloc-size-larger-than`:samp:`={byte-size}`  :option:`-Walloc-zero` 
-  :option:`-Walloca`  :option:`-Walloca-larger-than`:samp:`={byte-size}` 
+  :option:`-Walloc-size-larger-than=byte-size`  :option:`-Walloc-zero` 
+  :option:`-Walloca`  :option:`-Walloca-larger-than=byte-size` 
   :option:`-Wno-aggressive-loop-optimizations` 
   :option:`-Warith-conversion` 
-  :option:`-Warray-bounds`  :option:`-Warray-bounds`:samp:`={n}`  :option:`-Warray-compare` 
-  :option:`-Wno-attributes`  :option:`-Wattribute-alias`:samp:`={n}` :option:`-Wno-attribute-alias` 
+  :option:`-Warray-bounds`  :option:`-Warray-bounds=n`  :option:`-Warray-compare` 
+  :option:`-Wno-attributes`  :option:`-Wattribute-alias=n` :option:`-Wno-attribute-alias` 
   :option:`-Wno-attribute-warning`  
-  :option:`-Wbidi-chars` =[none|unpaired|any|ucn] 
+  :option:`-Wbidi-chars=` [none|unpaired|any|ucn] 
   :option:`-Wbool-compare`  :option:`-Wbool-operation` 
   :option:`-Wno-builtin-declaration-mismatch` 
   :option:`-Wno-builtin-macro-redefined`  :option:`-Wc90-c99-compat`  :option:`-Wc99-c11-compat` 
@@ -170,11 +170,11 @@ in the following sections.
   :option:`-Wc++20-compat`   
   :option:`-Wno-c++11-extensions`  :option:`-Wno-c++14-extensions` :option:`-Wno-c++17-extensions`  
   :option:`-Wno-c++20-extensions`  :option:`-Wno-c++23-extensions`  
-  :option:`-Wcast-align`  :option:`-Wcast-align`:samp:`=strict`  :option:`-Wcast-function-type`  :option:`-Wcast-qual`  
+  :option:`-Wcast-align`  :option:`-Wcast-align=strict`  :option:`-Wcast-function-type`  :option:`-Wcast-qual`  
   :option:`-Wchar-subscripts` 
   :option:`-Wclobbered`  :option:`-Wcomment` 
   :option:`-Wconversion`  :option:`-Wno-coverage-mismatch`  :option:`-Wno-cpp` 
-  :option:`-Wdangling-else`  :option:`-Wdangling-pointer`  :option:`-Wdangling-pointer`:samp:`={n}`  
+  :option:`-Wdangling-else`  :option:`-Wdangling-pointer`  :option:`-Wdangling-pointer=n`  
   :option:`-Wdate-time` 
   :option:`-Wno-deprecated`  :option:`-Wno-deprecated-declarations`  :option:`-Wno-designated-init` 
   :option:`-Wdisabled-optimization` 
@@ -183,29 +183,29 @@ in the following sections.
   :option:`-Wduplicated-branches`  :option:`-Wduplicated-cond` 
   :option:`-Wempty-body`  :option:`-Wno-endif-labels`  :option:`-Wenum-compare`  :option:`-Wenum-conversion` 
   :option:`-Wenum-int-mismatch` 
-  :option:`-Werror`  :option:`-Werror`:samp:`=*`  :option:`-Wexpansion-to-defined`  :option:`-Wfatal-errors` 
-  :option:`-Wfloat-conversion`  :option:`-Wfloat-equal`  :option:`-Wformat`  :option:`-Wformat`:samp:`=2` 
+  :option:`-Werror`  :option:`-Werror=*`  :option:`-Wexpansion-to-defined`  :option:`-Wfatal-errors` 
+  :option:`-Wfloat-conversion`  :option:`-Wfloat-equal`  :option:`-Wformat`  :option:`-Wformat=2` 
   :option:`-Wno-format-contains-nul`  :option:`-Wno-format-extra-args`  
-  :option:`-Wformat-nonliteral`  :option:`-Wformat-overflow`:samp:`={n}` 
-  :option:`-Wformat-security`  :option:`-Wformat-signedness`  :option:`-Wformat-truncation`:samp:`={n}` 
+  :option:`-Wformat-nonliteral`  :option:`-Wformat-overflow=n` 
+  :option:`-Wformat-security`  :option:`-Wformat-signedness`  :option:`-Wformat-truncation=n` 
   :option:`-Wformat-y2k`  :option:`-Wframe-address` 
-  :option:`-Wframe-larger-than`:samp:`={byte-size}`  :option:`-Wno-free-nonheap-object` 
+  :option:`-Wframe-larger-than=byte-size`  :option:`-Wno-free-nonheap-object` 
   :option:`-Wno-if-not-aligned`  :option:`-Wno-ignored-attributes` 
   :option:`-Wignored-qualifiers`  :option:`-Wno-incompatible-pointer-types` 
-  :option:`-Wimplicit`  :option:`-Wimplicit-fallthrough`  :option:`-Wimplicit-fallthrough`:samp:`={n}` 
+  :option:`-Wimplicit`  :option:`-Wimplicit-fallthrough`  :option:`-Wimplicit-fallthrough=n` 
   :option:`-Wno-implicit-function-declaration`  :option:`-Wno-implicit-int` 
   :option:`-Winfinite-recursion` 
   :option:`-Winit-self`  :option:`-Winline`  :option:`-Wno-int-conversion`  :option:`-Wint-in-bool-context` 
   :option:`-Wno-int-to-pointer-cast`  :option:`-Wno-invalid-memory-model` 
   :option:`-Winvalid-pch`  :option:`-Winvalid-utf8`  :option:`-Wno-unicode`  :option:`-Wjump-misses-init`  
-  :option:`-Wlarger-than`:samp:`={byte-size}`  :option:`-Wlogical-not-parentheses`  :option:`-Wlogical-op`  
+  :option:`-Wlarger-than=byte-size`  :option:`-Wlogical-not-parentheses`  :option:`-Wlogical-op`  
   :option:`-Wlong-long`  :option:`-Wno-lto-type-mismatch` :option:`-Wmain`  :option:`-Wmaybe-uninitialized` 
   :option:`-Wmemset-elt-size`  :option:`-Wmemset-transposed-args` 
   :option:`-Wmisleading-indentation`  :option:`-Wmissing-attributes`  :option:`-Wmissing-braces` 
   :option:`-Wmissing-field-initializers`  :option:`-Wmissing-format-attribute` 
   :option:`-Wmissing-include-dirs`  :option:`-Wmissing-noreturn`  :option:`-Wno-missing-profile` 
   :option:`-Wno-multichar`  :option:`-Wmultistatement-macros`  :option:`-Wnonnull`  :option:`-Wnonnull-compare` 
-  :option:`-Wnormalized` =[none|id|nfc|nfkc] 
+  :option:`-Wnormalized=` [none|id|nfc|nfkc] 
   :option:`-Wnull-dereference`  :option:`-Wno-odr`  
   :option:`-Wopenacc-parallelism`  
   :option:`-Wopenmp-simd`  
@@ -216,20 +216,20 @@ in the following sections.
   :option:`-Wno-pragmas`  :option:`-Wno-prio-ctor-dtor`  :option:`-Wredundant-decls` 
   :option:`-Wrestrict`  :option:`-Wno-return-local-addr`  :option:`-Wreturn-type` 
   :option:`-Wno-scalar-storage-order`  :option:`-Wsequence-point` 
-  :option:`-Wshadow`  :option:`-Wshadow`:samp:`=global`  :option:`-Wshadow`:samp:`=local`  :option:`-Wshadow`:samp:`=compatible-local` 
+  :option:`-Wshadow`  :option:`-Wshadow=global`  :option:`-Wshadow=local`  :option:`-Wshadow=compatible-local` 
   :option:`-Wno-shadow-ivar` 
   :option:`-Wno-shift-count-negative`  :option:`-Wno-shift-count-overflow`  :option:`-Wshift-negative-value` 
-  :option:`-Wno-shift-overflow`  :option:`-Wshift-overflow`:samp:`={n}` 
+  :option:`-Wno-shift-overflow`  :option:`-Wshift-overflow=n` 
   :option:`-Wsign-compare`  :option:`-Wsign-conversion` 
   :option:`-Wno-sizeof-array-argument` 
   :option:`-Wsizeof-array-div` 
   :option:`-Wsizeof-pointer-div`  :option:`-Wsizeof-pointer-memaccess` 
-  :option:`-Wstack-protector`  :option:`-Wstack-usage`:samp:`={byte-size}`  :option:`-Wstrict-aliasing` 
-  :option:`-Wstrict-aliasing`:samp:`=n`  :option:`-Wstrict-overflow`  :option:`-Wstrict-overflow`:samp:`={n}` 
+  :option:`-Wstack-protector`  :option:`-Wstack-usage=byte-size`  :option:`-Wstrict-aliasing` 
+  :option:`-Wstrict-aliasing=n`  :option:`-Wstrict-overflow`  :option:`-Wstrict-overflow=n` 
   :option:`-Wstring-compare` 
   :option:`-Wno-stringop-overflow` :option:`-Wno-stringop-overread` 
   :option:`-Wno-stringop-truncation` 
-  :option:`-Wsuggest-attribute` =[pure|const|noreturn|format|malloc] 
+  :option:`-Wsuggest-attribute=` [pure|const|noreturn|format|malloc] 
   :option:`-Wswitch`  :option:`-Wno-switch-bool`  :option:`-Wswitch-default`  :option:`-Wswitch-enum` 
   :option:`-Wno-switch-outside-range`  :option:`-Wno-switch-unreachable`  :option:`-Wsync-nand` 
   :option:`-Wsystem-headers`  :option:`-Wtautological-compare`  :option:`-Wtrampolines`  :option:`-Wtrigraphs` 
@@ -237,14 +237,14 @@ in the following sections.
   :option:`-Wuninitialized`  :option:`-Wunknown-pragmas` 
   :option:`-Wunsuffixed-float-constants`  :option:`-Wunused` 
   :option:`-Wunused-but-set-parameter`  :option:`-Wunused-but-set-variable` 
-  :option:`-Wunused-const-variable`  :option:`-Wunused-const-variable`:samp:`={n}` 
+  :option:`-Wunused-const-variable`  :option:`-Wunused-const-variable=n` 
   :option:`-Wunused-function`  :option:`-Wunused-label`  :option:`-Wunused-local-typedefs` 
   :option:`-Wunused-macros` 
   :option:`-Wunused-parameter`  :option:`-Wno-unused-result` 
   :option:`-Wunused-value`  :option:`-Wunused-variable` 
   :option:`-Wno-varargs`  :option:`-Wvariadic-macros` 
   :option:`-Wvector-operation-performance` 
-  :option:`-Wvla`  :option:`-Wvla-larger-than`:samp:`={byte-size}`  :option:`-Wno-vla-larger-than` 
+  :option:`-Wvla`  :option:`-Wvla-larger-than=byte-size`  :option:`-Wno-vla-larger-than` 
   :option:`-Wvolatile-register-var`  :option:`-Wwrite-strings` 
   :option:`-Wxor-used-as-pow` 
   :option:`-Wzero-length-bounds`
@@ -252,7 +252,7 @@ in the following sections.
 *Static Analyzer Options*
   :option:`-fanalyzer` 
   :option:`-fanalyzer-call-summaries` 
-  :option:`-fanalyzer-checker`:samp:`={name}` 
+  :option:`-fanalyzer-checker=name` 
   :option:`-fno-analyzer-feasibility` 
   :option:`-fanalyzer-fine-grained` 
   :option:`-fno-analyzer-state-merge` 
@@ -261,7 +261,7 @@ in the following sections.
   :option:`-fno-analyzer-undo-inlining` 
   :option:`-fanalyzer-verbose-edges` 
   :option:`-fanalyzer-verbose-state-changes` 
-  :option:`-fanalyzer-verbosity`:samp:`={level}` 
+  :option:`-fanalyzer-verbosity=level` 
   :option:`-fdump-analyzer` 
   :option:`-fdump-analyzer-callgraph` 
   :option:`-fdump-analyzer-exploded-graph` 
@@ -326,8 +326,8 @@ in the following sections.
 *Debugging Options*
   See :ref:`debugging-options`.
 
-  :option:`-g`  :option:`-g`:samp:`{level}`  :option:`-gdwarf`  :option:`-gdwarf-`:samp:`{version}` 
-  :option:`-gbtf` :option:`-gctf`  :option:`-gctf`:samp:`{level}` 
+  :option:`-g`  :option:`-glevel`  :option:`-gdwarf`  :option:`-gdwarf-version` 
+  :option:`-gbtf` :option:`-gctf`  :option:`-gctflevel` 
   :option:`-ggdb`  :option:`-grecord-gcc-switches`  :option:`-gno-record-gcc-switches` 
   :option:`-gstrict-dwarf`  :option:`-gno-strict-dwarf` 
   :option:`-gas-loc-support`  :option:`-gno-as-loc-support` 
@@ -339,7 +339,7 @@ in the following sections.
   :option:`-ginline-points`  :option:`-gno-inline-points` 
   :option:`-gvms` :option:`-gz` [= :samp:`{type}` ] 
   :option:`-gsplit-dwarf`  :option:`-gdescribe-dies`  :option:`-gno-describe-dies` 
-  :option:`-fdebug-prefix-map`:samp:`={old}` = :samp:`{new}`  :option:`-fdebug-types-section` 
+  :option:`-fdebug-prefix-map=old` = :samp:`{new}`  :option:`-fdebug-types-section` 
   :option:`-fno-eliminate-unused-debug-types` 
   :option:`-femit-struct-debug-baseonly`  :option:`-femit-struct-debug-reduced` 
   :option:`-femit-struct-debug-detailed` [= :samp:`{spec-list}` ] 
@@ -351,12 +351,12 @@ in the following sections.
   See :ref:`optimize-options`.
 
   :option:`-faggressive-loop-optimizations` 
-  :option:`-falign-functions[`:samp:`={n}` [: :samp:`{m}` :[ :samp:`{n2}` [: :samp:`{m2}` ]]]] 
-  :option:`-falign-jumps[`:samp:`={n}` [: :samp:`{m}` :[ :samp:`{n2}` [: :samp:`{m2}` ]]]] 
-  :option:`-falign-labels[`:samp:`={n}` [: :samp:`{m}` :[ :samp:`{n2}` [: :samp:`{m2}` ]]]] 
-  :option:`-falign-loops[`:samp:`={n}` [: :samp:`{m}` :[ :samp:`{n2}` [: :samp:`{m2}` ]]]] 
+  :option:`-falign-functions[=n` [: :samp:`{m}` :[ :samp:`{n2}` [: :samp:`{m2}` ]]]] 
+  :option:`-falign-jumps[=n` [: :samp:`{m}` :[ :samp:`{n2}` [: :samp:`{m2}` ]]]] 
+  :option:`-falign-labels[=n` [: :samp:`{m}` :[ :samp:`{n2}` [: :samp:`{m2}` ]]]] 
+  :option:`-falign-loops[=n` [: :samp:`{m}` :[ :samp:`{n2}` [: :samp:`{m2}` ]]]] 
   :option:`-fno-allocation-dce` :option:`-fallow-store-data-races` 
-  :option:`-fassociative-math`  :option:`-fauto-profile`  :option:`-fauto-profile[`:samp:`={path}` ] 
+  :option:`-fassociative-math`  :option:`-fauto-profile`  :option:`-fauto-profile[=path` ] 
   :option:`-fauto-inc-dec`  :option:`-fbranch-probabilities` 
   :option:`-fcaller-saves` 
   :option:`-fcombine-stack-adjustments`  :option:`-fconserve-stack` 
@@ -367,19 +367,19 @@ in the following sections.
   :option:`-fdelete-null-pointer-checks`  :option:`-fdevirtualize`  :option:`-fdevirtualize-speculatively` 
   :option:`-fdevirtualize-at-ltrans`  :option:`-fdse` 
   :option:`-fearly-inlining`  :option:`-fipa-sra`  :option:`-fexpensive-optimizations`  :option:`-ffat-lto-objects` 
-  :option:`-ffast-math`  :option:`-ffinite-math-only`  :option:`-ffloat-store`  :option:`-fexcess-precision`:samp:`={style}` 
+  :option:`-ffast-math`  :option:`-ffinite-math-only`  :option:`-ffloat-store`  :option:`-fexcess-precision=style` 
   :option:`-ffinite-loops` 
-  :option:`-fforward-propagate`  :option:`-ffp-contract`:samp:`={style}`  :option:`-ffunction-sections` 
+  :option:`-fforward-propagate`  :option:`-ffp-contract=style`  :option:`-ffunction-sections` 
   :option:`-fgcse`  :option:`-fgcse-after-reload`  :option:`-fgcse-las`  :option:`-fgcse-lm`  :option:`-fgraphite-identity` 
   :option:`-fgcse-sm`  :option:`-fhoist-adjacent-loads`  :option:`-fif-conversion` 
   :option:`-fif-conversion2`  :option:`-findirect-inlining` 
-  :option:`-finline-functions`  :option:`-finline-functions-called-once`  :option:`-finline-limit`:samp:`={n}` 
+  :option:`-finline-functions`  :option:`-finline-functions-called-once`  :option:`-finline-limit=n` 
   :option:`-finline-small-functions` :option:`-fipa-modref` :option:`-fipa-cp`  :option:`-fipa-cp-clone` 
   :option:`-fipa-bit-cp`  :option:`-fipa-vrp`  :option:`-fipa-pta`  :option:`-fipa-profile`  :option:`-fipa-pure-const` 
   :option:`-fipa-reference`  :option:`-fipa-reference-addressable` 
-  :option:`-fipa-stack-alignment`  :option:`-fipa-icf`  :option:`-fira-algorithm`:samp:`={algorithm}` 
-  :option:`-flive-patching`:samp:`={level}` 
-  :option:`-fira-region`:samp:`={region}`  :option:`-fira-hoist-pressure` 
+  :option:`-fipa-stack-alignment`  :option:`-fipa-icf`  :option:`-fira-algorithm=algorithm` 
+  :option:`-flive-patching=level` 
+  :option:`-fira-region=region`  :option:`-fira-hoist-pressure` 
   :option:`-fira-loop-pressure`  :option:`-fno-ira-share-save-slots` 
   :option:`-fno-ira-share-spill-slots` 
   :option:`-fisolate-erroneous-paths-dereference`  :option:`-fisolate-erroneous-paths-attribute` 
@@ -388,7 +388,7 @@ in the following sections.
   :option:`-floop-block`  :option:`-floop-interchange`  :option:`-floop-strip-mine` 
   :option:`-floop-unroll-and-jam`  :option:`-floop-nest-optimize` 
   :option:`-floop-parallelize-all`  :option:`-flra-remat`  :option:`-flto`  :option:`-flto-compression-level` 
-  :option:`-flto-partition`:samp:`={alg}`  :option:`-fmerge-all-constants` 
+  :option:`-flto-partition=alg`  :option:`-fmerge-all-constants` 
   :option:`-fmerge-constants`  :option:`-fmodulo-sched`  :option:`-fmodulo-sched-allow-regmoves` 
   :option:`-fmove-loop-invariants`  :option:`-fmove-loop-stores`  :option:`-fno-branch-count-reg` 
   :option:`-fno-defer-pop`  :option:`-fno-fp-int-builtin-inexact`  :option:`-fno-function-cse` 
@@ -400,16 +400,16 @@ in the following sections.
   :option:`-fpartial-inlining`  :option:`-fpeel-loops`  :option:`-fpredictive-commoning` 
   :option:`-fprefetch-loop-arrays` 
   :option:`-fprofile-correction` 
-  :option:`-fprofile-use`  :option:`-fprofile-use`:samp:`={path}` :option:`-fprofile-partial-training` 
+  :option:`-fprofile-use`  :option:`-fprofile-use=path` :option:`-fprofile-partial-training` 
   :option:`-fprofile-values` :option:`-fprofile-reorder-functions` 
   :option:`-freciprocal-math`  :option:`-free`  :option:`-frename-registers`  :option:`-freorder-blocks` 
-  :option:`-freorder-blocks-algorithm`:samp:`={algorithm}` 
+  :option:`-freorder-blocks-algorithm=algorithm` 
   :option:`-freorder-blocks-and-partition`  :option:`-freorder-functions` 
   :option:`-frerun-cse-after-loop`  :option:`-freschedule-modulo-scheduled-loops` 
   :option:`-frounding-math`  :option:`-fsave-optimization-record` 
   :option:`-fsched2-use-superblocks`  :option:`-fsched-pressure` 
   :option:`-fsched-spec-load`  :option:`-fsched-spec-load-dangerous` 
-  :option:`-fsched-stalled-insns-dep[`:samp:`={n}` ]  :option:`-fsched-stalled-insns[`:samp:`={n}` ] 
+  :option:`-fsched-stalled-insns-dep[=n` ]  :option:`-fsched-stalled-insns[=n` ] 
   :option:`-fsched-group-heuristic`  :option:`-fsched-critical-path-heuristic` 
   :option:`-fsched-spec-insn-heuristic`  :option:`-fsched-rank-heuristic` 
   :option:`-fsched-last-insn-heuristic`  :option:`-fsched-dep-count-heuristic` 
@@ -431,7 +431,7 @@ in the following sections.
   :option:`-ftree-phiprop`  :option:`-ftree-loop-distribution`  :option:`-ftree-loop-distribute-patterns` 
   :option:`-ftree-loop-ivcanon`  :option:`-ftree-loop-linear`  :option:`-ftree-loop-optimize` 
   :option:`-ftree-loop-vectorize` 
-  :option:`-ftree-parallelize-loops`:samp:`={n}`  :option:`-ftree-pre`  :option:`-ftree-partial-pre`  :option:`-ftree-pta` 
+  :option:`-ftree-parallelize-loops=n`  :option:`-ftree-pre`  :option:`-ftree-partial-pre`  :option:`-ftree-pta` 
   :option:`-ftree-reassoc`  :option:`-ftree-scev-cprop`  :option:`-ftree-sink`  :option:`-ftree-slsr`  :option:`-ftree-sra` 
   :option:`-ftree-switch-conversion`  :option:`-ftree-tail-merge` 
   :option:`-ftree-ter`  :option:`-ftree-vectorize`  :option:`-ftree-vrp`  :option:`-ftrivial-auto-var-init` 
@@ -447,85 +447,85 @@ in the following sections.
 
   :option:`-p`  :option:`-pg`  :option:`-fprofile-arcs`  :option:`--coverage`  :option:`-ftest-coverage` 
   :option:`-fprofile-abs-path` 
-  :option:`-fprofile-dir`:samp:`={path}`  :option:`-fprofile-generate`  :option:`-fprofile-generate`:samp:`={path}` 
-  :option:`-fprofile-info-section`  :option:`-fprofile-info-section`:samp:`={name}` 
-  :option:`-fprofile-note`:samp:`={path}` :option:`-fprofile-prefix-path`:samp:`={path}` 
-  :option:`-fprofile-update`:samp:`={method}` :option:`-fprofile-filter-files`:samp:`={regex}` 
-  :option:`-fprofile-exclude-files`:samp:`={regex}` 
-  :option:`-fprofile-reproducible` =[multithreaded|parallel :option:`-runs` |serial] 
-  :option:`-fsanitize`:samp:`={style}`  :option:`-fsanitize-recover`  :option:`-fsanitize-recover`:samp:`={style}` 
-  :option:`-fsanitize-trap`   :option:`-fsanitize-trap`:samp:`={style}`  
-  :option:`-fasan-shadow-offset`:samp:`={number}`  :option:`-fsanitize-sections`:samp:`={s1}`, :samp:`{s2}`,... 
+  :option:`-fprofile-dir=path`  :option:`-fprofile-generate`  :option:`-fprofile-generate=path` 
+  :option:`-fprofile-info-section`  :option:`-fprofile-info-section=name` 
+  :option:`-fprofile-note=path` :option:`-fprofile-prefix-path=path` 
+  :option:`-fprofile-update=method` :option:`-fprofile-filter-files=regex` 
+  :option:`-fprofile-exclude-files=regex` 
+  :option:`-fprofile-reproducible=` [multithreaded|parallel :option:`-runs` |serial] 
+  :option:`-fsanitize=style`  :option:`-fsanitize-recover`  :option:`-fsanitize-recover=style` 
+  :option:`-fsanitize-trap`   :option:`-fsanitize-trap=style`  
+  :option:`-fasan-shadow-offset=number`  :option:`-fsanitize-sections=s1`, :samp:`{s2}`,... 
   :option:`-fsanitize-undefined-trap-on-error`  :option:`-fbounds-check` 
-  :option:`-fcf-protection` =[full|branch|return|none|check] 
+  :option:`-fcf-protection=` [full|branch|return|none|check] 
   :option:`-fharden-compares` :option:`-fharden-conditional-branches` 
   :option:`-fstack-protector`  :option:`-fstack-protector-all`  :option:`-fstack-protector-strong` 
   :option:`-fstack-protector-explicit`  :option:`-fstack-check` 
-  :option:`-fstack-limit-register`:samp:`={reg}`  :option:`-fstack-limit-symbol`:samp:`={sym}` 
+  :option:`-fstack-limit-register=reg`  :option:`-fstack-limit-symbol=sym` 
   :option:`-fno-stack-limit`  :option:`-fsplit-stack` 
-  :option:`-fvtable-verify` =[std|preinit|none] 
+  :option:`-fvtable-verify=` [std|preinit|none] 
   :option:`-fvtv-counts`  :option:`-fvtv-debug` 
   :option:`-finstrument-functions`  :option:`-finstrument-functions-once` 
-  :option:`-finstrument-functions-exclude-function-list`:samp:`={sym}`, :samp:`{sym}`,... 
-  :option:`-finstrument-functions-exclude-file-list`:samp:`={file}`, :samp:`{file}`,...
+  :option:`-finstrument-functions-exclude-function-list=sym`, :samp:`{sym}`,... 
+  :option:`-finstrument-functions-exclude-file-list=file`, :samp:`{file}`,...
   -fprofile-prefix-map= :samp:`{old}` = :samp:`{new}`
 
 *Preprocessor Options*
   See :ref:`preprocessor-options`.
 
-  :option:`-A`:samp:`{question}` = :samp:`{answer}` 
-  :option:`-A-`:samp:`{question}` [= :samp:`{answer}` ] 
-  :option:`-C`  :option:`-CC`  :option:`-D`:samp:`{macro}` [= :samp:`{defn}` ] 
+  :option:`-Aquestion` = :samp:`{answer}` 
+  :option:`-A-question` [= :samp:`{answer}` ] 
+  :option:`-C`  :option:`-CC`  :option:`-Dmacro` [= :samp:`{defn}` ] 
   :option:`-dD`  :option:`-dI`  :option:`-dM`  :option:`-dN`  :option:`-dU` 
   :option:`-fdebug-cpp`  :option:`-fdirectives-only`  :option:`-fdollars-in-identifiers`  
-  :option:`-fexec-charset`:samp:`={charset}`  :option:`-fextended-identifiers`  
-  :option:`-finput-charset`:samp:`={charset}`  :option:`-flarge-source-files`  
-  :option:`-fmacro-prefix-map`:samp:`={old}` = :samp:`{new}` :option:`-fmax-include-depth`:samp:`={depth}` 
+  :option:`-fexec-charset=charset`  :option:`-fextended-identifiers`  
+  :option:`-finput-charset=charset`  :option:`-flarge-source-files`  
+  :option:`-fmacro-prefix-map=old` = :samp:`{new}` :option:`-fmax-include-depth=depth` 
   :option:`-fno-canonical-system-headers`  :option:`-fpch-deps`  :option:`-fpch-preprocess`  
-  :option:`-fpreprocessed`  :option:`-ftabstop`:samp:`={width}`  :option:`-ftrack-macro-expansion`  
-  :option:`-fwide-exec-charset`:samp:`={charset}`  :option:`-fworking-directory` 
+  :option:`-fpreprocessed`  :option:`-ftabstop=width`  :option:`-ftrack-macro-expansion`  
+  :option:`-fwide-exec-charset=charset`  :option:`-fworking-directory` 
   :option:`-H`  :option:`-imacros` :samp:`{file}`  :option:`-include` :samp:`{file}` 
   :option:`-M`  :option:`-MD`  :option:`-MF`  :option:`-MG`  :option:`-MM`  :option:`-MMD`  :option:`-MP`  :option:`-MQ`  :option:`-MT` :option:`-Mno-modules` 
   :option:`-no-integrated-cpp`  :option:`-P`  :option:`-pthread`  :option:`-remap` 
   :option:`-traditional`  :option:`-traditional-cpp`  :option:`-trigraphs` 
-  :option:`-U`:samp:`{macro}`  :option:`-undef`  
-  :option:`-Wp,`:samp:`{option}`  :option:`-Xpreprocessor` :samp:`{option}`
+  :option:`-Umacro`  :option:`-undef`  
+  :option:`-Wp,option`  :option:`-Xpreprocessor` :samp:`{option}`
 
 *Assembler Options*
   See :ref:`assembler-options`.
 
-  :option:`-Wa,`:samp:`{option}`  :option:`-Xassembler` :samp:`{option}`
+  :option:`-Wa,option`  :option:`-Xassembler` :samp:`{option}`
 
 *Linker Options*
   See :ref:`link-options`.
 
-  :samp:`{object-file-name}`  :option:`-fuse-ld`:samp:`={linker}`  :option:`-l`:samp:`{library}` 
+  :samp:`{object-file-name}`  :option:`-fuse-ld=linker`  :option:`-llibrary` 
   :option:`-nostartfiles`  :option:`-nodefaultlibs`  :option:`-nolibc`  :option:`-nostdlib`  :option:`-nostdlib++` 
-  :option:`-e` :samp:`{entry}`  :option:`--entry`:samp:`={entry}` 
+  :option:`-e` :samp:`{entry}`  :option:`--entry=entry` 
   :option:`-pie`  :option:`-pthread`  :option:`-r`  :option:`-rdynamic` 
   :option:`-s`  :option:`-static`  :option:`-static-pie`  :option:`-static-libgcc`  :option:`-static-libstdc++` 
   :option:`-static-libasan`  :option:`-static-libtsan`  :option:`-static-liblsan`  :option:`-static-libubsan` 
   :option:`-shared`  :option:`-shared-libgcc`  :option:`-symbolic` 
-  :option:`-T` :samp:`{script}`  :option:`-Wl,`:samp:`{option}`  :option:`-Xlinker` :samp:`{option}` 
+  :option:`-T` :samp:`{script}`  :option:`-Wl,option`  :option:`-Xlinker` :samp:`{option}` 
   :option:`-u` :samp:`{symbol}`  :option:`-z` :samp:`{keyword}`
 
 *Directory Options*
   See :ref:`directory-options`.
 
-  :option:`-B`:samp:`{prefix}`  :option:`-I`:samp:`{dir}`  :option:`-I-` 
+  :option:`-Bprefix`  :option:`-Idir`  :option:`-I-` 
   :option:`-idirafter` :samp:`{dir}` 
   :option:`-imacros` :samp:`{file}`  :option:`-imultilib` :samp:`{dir}` 
-  :option:`-iplugindir`:samp:`={dir}`  :option:`-iprefix` :samp:`{file}` 
+  :option:`-iplugindir=dir`  :option:`-iprefix` :samp:`{file}` 
   :option:`-iquote` :samp:`{dir}`  :option:`-isysroot` :samp:`{dir}`  :option:`-isystem` :samp:`{dir}` 
   :option:`-iwithprefix` :samp:`{dir}`  :option:`-iwithprefixbefore` :samp:`{dir}`  
-  :option:`-L`:samp:`{dir}`  :option:`-no-canonical-prefixes`  :option:`--no-sysroot-suffix` 
-  :option:`-nostdinc`  :option:`-nostdinc++`  :option:`--sysroot`:samp:`={dir}`
+  :option:`-Ldir`  :option:`-no-canonical-prefixes`  :option:`--no-sysroot-suffix` 
+  :option:`-nostdinc`  :option:`-nostdinc++`  :option:`--sysroot=dir`
 
 *Code Generation Options*
   See :ref:`code-gen-options`.
 
-  :option:`-fcall-saved-`:samp:`{reg}`  :option:`-fcall-used-`:samp:`{reg}` 
-  :option:`-ffixed-`:samp:`{reg}`  :option:`-fexceptions` 
+  :option:`-fcall-saved-reg`  :option:`-fcall-used-reg` 
+  :option:`-ffixed-reg`  :option:`-fexceptions` 
   :option:`-fnon-call-exceptions`  :option:`-fdelete-dead-exceptions`  :option:`-funwind-tables` 
   :option:`-fasynchronous-unwind-tables` 
   :option:`-fno-gnu-unique` 
@@ -534,57 +534,57 @@ in the following sections.
   :option:`-fno-jump-tables` :option:`-fno-bit-tests` 
   :option:`-frecord-gcc-switches` 
   :option:`-freg-struct-return`  :option:`-fshort-enums`  :option:`-fshort-wchar` 
-  :option:`-fverbose-asm`  :option:`-fpack-struct[`:samp:`={n}` ]  
-  :option:`-fleading-underscore`  :option:`-ftls-model`:samp:`={model}` 
-  :option:`-fstack-reuse`:samp:`={reuse_level}` 
+  :option:`-fverbose-asm`  :option:`-fpack-struct[=n` ]  
+  :option:`-fleading-underscore`  :option:`-ftls-model=model` 
+  :option:`-fstack-reuse=reuse_level` 
   :option:`-ftrampolines`  :option:`-ftrapv`  :option:`-fwrapv` 
-  :option:`-fvisibility` =[default|internal|hidden|protected] 
+  :option:`-fvisibility=` [default|internal|hidden|protected] 
   :option:`-fstrict-volatile-bitfields`  :option:`-fsync-libcalls`
 
 *Developer Options*
   See :ref:`developer-options`.
 
-  :option:`-d`:samp:`{letters}`  :option:`-dumpspecs`  :option:`-dumpmachine`  :option:`-dumpversion` 
+  :option:`-dletters`  :option:`-dumpspecs`  :option:`-dumpmachine`  :option:`-dumpversion` 
   :option:`-dumpfullversion`  :option:`-fcallgraph-info` [=su,da]
-  :option:`-fchecking`  :option:`-fchecking`:samp:`={n}`
-  :option:`-fdbg-cnt-list`   :option:`-fdbg-cnt`:samp:`={counter-value-list}` 
-  :option:`-fdisable-ipa-`:samp:`{pass_name}` 
-  :option:`-fdisable-rtl-`:samp:`{pass_name}` 
-  :option:`-fdisable-rtl-`:samp:`{pass-name}` = :samp:`{range-list}` 
-  :option:`-fdisable-tree-`:samp:`{pass_name}` 
-  :option:`-fdisable-tree-`:samp:`{pass-name}` = :samp:`{range-list}` 
+  :option:`-fchecking`  :option:`-fchecking=n`
+  :option:`-fdbg-cnt-list`   :option:`-fdbg-cnt=counter-value-list` 
+  :option:`-fdisable-ipa-pass_name` 
+  :option:`-fdisable-rtl-pass_name` 
+  :option:`-fdisable-rtl-pass-name` = :samp:`{range-list}` 
+  :option:`-fdisable-tree-pass_name` 
+  :option:`-fdisable-tree-pass-name` = :samp:`{range-list}` 
   :option:`-fdump-debug`  :option:`-fdump-earlydebug` 
   :option:`-fdump-noaddr`  :option:`-fdump-unnumbered`  :option:`-fdump-unnumbered-links` 
   :option:`-fdump-final-insns` [= :samp:`{file}` ] 
   :option:`-fdump-ipa-all`  :option:`-fdump-ipa-cgraph`  :option:`-fdump-ipa-inline` 
   :option:`-fdump-lang-all` 
-  :option:`-fdump-lang-`:samp:`{switch}` 
-  :option:`-fdump-lang-`:samp:`{switch}` - :samp:`{options}` 
-  :option:`-fdump-lang-`:samp:`{switch}` - :samp:`{options}` = :samp:`{filename}` 
+  :option:`-fdump-lang-switch` 
+  :option:`-fdump-lang-switch` - :samp:`{options}` 
+  :option:`-fdump-lang-switch` - :samp:`{options}` = :samp:`{filename}` 
   :option:`-fdump-passes` 
-  :option:`-fdump-rtl-`:samp:`{pass}`  :option:`-fdump-rtl-`:samp:`{pass}` = :samp:`{filename}` 
+  :option:`-fdump-rtl-pass`  :option:`-fdump-rtl-pass` = :samp:`{filename}` 
   :option:`-fdump-statistics` 
   :option:`-fdump-tree-all` 
-  :option:`-fdump-tree-`:samp:`{switch}` 
-  :option:`-fdump-tree-`:samp:`{switch}` - :samp:`{options}` 
-  :option:`-fdump-tree-`:samp:`{switch}` - :samp:`{options}` = :samp:`{filename}` 
+  :option:`-fdump-tree-switch` 
+  :option:`-fdump-tree-switch` - :samp:`{options}` 
+  :option:`-fdump-tree-switch` - :samp:`{options}` = :samp:`{filename}` 
   :option:`-fcompare-debug` [= :samp:`{opts}` ]  :option:`-fcompare-debug-second` 
-  :option:`-fenable-`:samp:`{kind}` - :samp:`{pass}` 
-  :option:`-fenable-`:samp:`{kind}` - :samp:`{pass}` = :samp:`{range-list}` 
-  :option:`-fira-verbose`:samp:`={n}` 
+  :option:`-fenable-kind` - :samp:`{pass}` 
+  :option:`-fenable-kind` - :samp:`{pass}` = :samp:`{range-list}` 
+  :option:`-fira-verbose=n` 
   :option:`-flto-report`  :option:`-flto-report-wpa`  :option:`-fmem-report-wpa` 
   :option:`-fmem-report`  :option:`-fpre-ipa-mem-report`  :option:`-fpost-ipa-mem-report` 
-  :option:`-fopt-info`  :option:`-fopt-info-`:samp:`{options}` [= :samp:`{file}` ] 
+  :option:`-fopt-info`  :option:`-fopt-info-options` [= :samp:`{file}` ] 
   :option:`-fprofile-report` 
-  :option:`-frandom-seed`:samp:`={string}`  :option:`-fsched-verbose`:samp:`={n}` 
+  :option:`-frandom-seed=string`  :option:`-fsched-verbose=n` 
   :option:`-fsel-sched-verbose`  :option:`-fsel-sched-dump-cfg`  :option:`-fsel-sched-pipelining-verbose` 
   :option:`-fstats`  :option:`-fstack-usage`  :option:`-ftime-report`  :option:`-ftime-report-details` 
   :option:`-fvar-tracking-assignments-toggle`  :option:`-gtoggle` 
-  :option:`-print-file-name`:samp:`={library}`  :option:`-print-libgcc-file-name` 
+  :option:`-print-file-name=library`  :option:`-print-libgcc-file-name` 
   :option:`-print-multi-directory`  :option:`-print-multi-lib`  :option:`-print-multi-os-directory` 
-  :option:`-print-prog-name`:samp:`={program}`  :option:`-print-search-dirs`  :option:`-Q` 
+  :option:`-print-prog-name=program`  :option:`-print-search-dirs`  :option:`-Q` 
   :option:`-print-sysroot`  :option:`-print-sysroot-headers-suffix` 
-  :option:`-save-temps`  :option:`-save-temps`:samp:`=cwd`  :option:`-save-temps`:samp:`=obj`  :option:`-time` [= :samp:`{file}` ]
+  :option:`-save-temps`  :option:`-save-temps=cwd`  :option:`-save-temps=obj`  :option:`-time` [= :samp:`{file}` ]
 
 *Machine-Dependent Options*
   See :ref:`submodel-options`.
@@ -601,24 +601,24 @@ in the following sections.
 
   .. program:: AArch64
 
-  :option:`-mabi`:samp:`={name}`  :option:`-mbig-endian`  :option:`-mlittle-endian` 
+  :option:`-mabi=name`  :option:`-mbig-endian`  :option:`-mlittle-endian` 
   :option:`-mgeneral-regs-only` 
-  :option:`-mcmodel`:samp:`=tiny`  :option:`-mcmodel`:samp:`=small`  :option:`-mcmodel`:samp:`=large` 
+  :option:`-mcmodel=tiny`  :option:`-mcmodel=small`  :option:`-mcmodel=large` 
   :option:`-mstrict-align`  :option:`-mno-strict-align` 
   :option:`-momit-leaf-frame-pointer` 
-  :option:`-mtls-dialect`:samp:`=desc`  :option:`-mtls-dialect`:samp:`=traditional` 
-  :option:`-mtls-size`:samp:`={size}` 
+  :option:`-mtls-dialect=desc`  :option:`-mtls-dialect=traditional` 
+  :option:`-mtls-size=size` 
   :option:`-mfix-cortex-a53-835769`  :option:`-mfix-cortex-a53-843419` 
   :option:`-mlow-precision-recip-sqrt`  :option:`-mlow-precision-sqrt`  :option:`-mlow-precision-div` 
   :option:`-mpc-relative-literal-loads` 
-  :option:`-msign-return-address`:samp:`={scope}` 
-  :option:`-mbranch-protection`:samp:`={none}` | :samp:`{standard}` | :samp:`{pac-ret}` [+ :samp:`{leaf}`
+  :option:`-msign-return-address=scope` 
+  :option:`-mbranch-protection=none` | :samp:`{standard}` | :samp:`{pac-ret}` [+ :samp:`{leaf}`
   + :samp:`{b-key}` ]| :samp:`{bti}` 
-  :option:`-mharden-sls`:samp:`={opts}` 
-  :option:`-march`:samp:`={name}`  :option:`-mcpu`:samp:`={name}`  :option:`-mtune`:samp:`={name}`  
-  :option:`-moverride`:samp:`={string}`  :option:`-mverbose-cost-dump` 
-  :option:`-mstack-protector-guard`:samp:`={guard}` :option:`-mstack-protector-guard-reg`:samp:`={sysreg}` 
-  :option:`-mstack-protector-guard-offset`:samp:`={offset}` :option:`-mtrack-speculation` 
+  :option:`-mharden-sls=opts` 
+  :option:`-march=name`  :option:`-mcpu=name`  :option:`-mtune=name`  
+  :option:`-moverride=string`  :option:`-mverbose-cost-dump` 
+  :option:`-mstack-protector-guard=guard` :option:`-mstack-protector-guard-reg=sysreg` 
+  :option:`-mstack-protector-guard-offset=offset` :option:`-mtrack-speculation` 
   :option:`-moutline-atomics` 
 
   *Adapteva Epiphany Options*
@@ -626,69 +626,69 @@ in the following sections.
   .. program:: Adapteva Epiphany
 
   :option:`-mhalf-reg-file`  :option:`-mprefer-short-insn-regs` 
-  :option:`-mbranch-cost`:samp:`={num}`  :option:`-mcmove`  :option:`-mnops`:samp:`={num}`  :option:`-msoft-cmpsf` 
-  :option:`-msplit-lohi`  :option:`-mpost-inc`  :option:`-mpost-modify`  :option:`-mstack-offset`:samp:`={num}` 
+  :option:`-mbranch-cost=num`  :option:`-mcmove`  :option:`-mnops=num`  :option:`-msoft-cmpsf` 
+  :option:`-msplit-lohi`  :option:`-mpost-inc`  :option:`-mpost-modify`  :option:`-mstack-offset=num` 
   :option:`-mround-nearest`  :option:`-mlong-calls`  :option:`-mshort-calls`  :option:`-msmall16` 
-  :option:`-mfp-mode`:samp:`={mode}`  :option:`-mvect-double`  :option:`-max-vect-align`:samp:`={num}` 
-  :option:`-msplit-vecmove-early`  :option:`-m1reg-`:samp:`{reg}`
+  :option:`-mfp-mode=mode`  :option:`-mvect-double`  :option:`-max-vect-align=num` 
+  :option:`-msplit-vecmove-early`  :option:`-m1reg-reg`
 
   *AMD GCN Options*
 
   .. program:: AMD GCN
 
-  :option:`-march`:samp:`={gpu}` :option:`-mtune`:samp:`={gpu}` :option:`-mstack-size`:samp:`={bytes}`
+  :option:`-march=gpu` :option:`-mtune=gpu` :option:`-mstack-size=bytes`
 
   *ARC Options*
 
   .. program:: ARC
 
   :option:`-mbarrel-shifter`  :option:`-mjli-always` 
-  :option:`-mcpu`:samp:`={cpu}`  :option:`-mA6`  :option:`-mARC600`  :option:`-mA7`  :option:`-mARC700` 
+  :option:`-mcpu=cpu`  :option:`-mA6`  :option:`-mARC600`  :option:`-mA7`  :option:`-mARC700` 
   :option:`-mdpfp`  :option:`-mdpfp-compact`  :option:`-mdpfp-fast`  :option:`-mno-dpfp-lrsr` 
   :option:`-mea`  :option:`-mno-mpy`  :option:`-mmul32x16`  :option:`-mmul64`  :option:`-matomic` 
   :option:`-mnorm`  :option:`-mspfp`  :option:`-mspfp-compact`  :option:`-mspfp-fast`  :option:`-msimd`  :option:`-msoft-float`  :option:`-mswap` 
   :option:`-mcrc`  :option:`-mdsp-packa`  :option:`-mdvbf`  :option:`-mlock`  :option:`-mmac-d16`  :option:`-mmac-24`  :option:`-mrtsc`  :option:`-mswape` 
   :option:`-mtelephony`  :option:`-mxy`  :option:`-misize`  :option:`-mannotate-align`  :option:`-marclinux`  :option:`-marclinux_prof` 
   :option:`-mlong-calls`  :option:`-mmedium-calls`  :option:`-msdata`  :option:`-mirq-ctrl-saved` 
-  :option:`-mrgf-banked-regs`  :option:`-mlpc-width`:samp:`={width}`  :option:`-G` :samp:`{num}` 
-  :option:`-mvolatile-cache`  :option:`-mtp-regno`:samp:`={regno}` 
+  :option:`-mrgf-banked-regs`  :option:`-mlpc-width=width`  :option:`-G` :samp:`{num}` 
+  :option:`-mvolatile-cache`  :option:`-mtp-regno=regno` 
   :option:`-malign-call`  :option:`-mauto-modify-reg`  :option:`-mbbit-peephole`  :option:`-mno-brcc` 
   :option:`-mcase-vector-pcrel`  :option:`-mcompact-casesi`  :option:`-mno-cond-exec`  :option:`-mearly-cbranchsi` 
   :option:`-mexpand-adddi`  :option:`-mindexed-loads`  :option:`-mlra`  :option:`-mlra-priority-none` 
   :option:`-mlra-priority-compact` :option:`-mlra-priority-noncompact`  :option:`-mmillicode` 
-  :option:`-mmixed-code`  :option:`-mq-class`  :option:`-mRcq`  :option:`-mRcw`  :option:`-msize-level`:samp:`={level}` 
-  :option:`-mtune`:samp:`={cpu}`  :option:`-mmultcost`:samp:`={num}`  :option:`-mcode-density-frame` 
-  :option:`-munalign-prob-threshold`:samp:`={probability}`  :option:`-mmpy-option`:samp:`={multo}` 
-  :option:`-mdiv-rem`  :option:`-mcode-density`  :option:`-mll64`  :option:`-mfpu`:samp:`={fpu}`  :option:`-mrf16`  :option:`-mbranch-index`
+  :option:`-mmixed-code`  :option:`-mq-class`  :option:`-mRcq`  :option:`-mRcw`  :option:`-msize-level=level` 
+  :option:`-mtune=cpu`  :option:`-mmultcost=num`  :option:`-mcode-density-frame` 
+  :option:`-munalign-prob-threshold=probability`  :option:`-mmpy-option=multo` 
+  :option:`-mdiv-rem`  :option:`-mcode-density`  :option:`-mll64`  :option:`-mfpu=fpu`  :option:`-mrf16`  :option:`-mbranch-index`
 
   *ARM Options*
 
   .. program:: ARM
 
   :option:`-mapcs-frame`  :option:`-mno-apcs-frame` 
-  :option:`-mabi`:samp:`={name}` 
+  :option:`-mabi=name` 
   :option:`-mapcs-stack-check`  :option:`-mno-apcs-stack-check` 
   :option:`-mapcs-reentrant`  :option:`-mno-apcs-reentrant` 
   :option:`-mgeneral-regs-only` 
   :option:`-msched-prolog`  :option:`-mno-sched-prolog` 
   :option:`-mlittle-endian`  :option:`-mbig-endian` 
   :option:`-mbe8`  :option:`-mbe32` 
-  :option:`-mfloat-abi`:samp:`={name}` 
-  :option:`-mfp16-format`:samp:`={name}`
+  :option:`-mfloat-abi=name` 
+  :option:`-mfp16-format=name`
   :option:`-mthumb-interwork`  :option:`-mno-thumb-interwork` 
-  :option:`-mcpu`:samp:`={name}`  :option:`-march`:samp:`={name}`  :option:`-mfpu`:samp:`={name}`  
-  :option:`-mtune`:samp:`={name}`  :option:`-mprint-tune-info` 
-  :option:`-mstructure-size-boundary`:samp:`={n}` 
+  :option:`-mcpu=name`  :option:`-march=name`  :option:`-mfpu=name`  
+  :option:`-mtune=name`  :option:`-mprint-tune-info` 
+  :option:`-mstructure-size-boundary=n` 
   :option:`-mabort-on-noreturn` 
   :option:`-mlong-calls`  :option:`-mno-long-calls` 
   :option:`-msingle-pic-base`  :option:`-mno-single-pic-base` 
-  :option:`-mpic-register`:samp:`={reg}` 
+  :option:`-mpic-register=reg` 
   :option:`-mnop-fun-dllimport` 
   :option:`-mpoke-function-name` 
   :option:`-mthumb`  :option:`-marm`  :option:`-mflip-thumb` 
   :option:`-mtpcs-frame`  :option:`-mtpcs-leaf-frame` 
   :option:`-mcaller-super-interworking`  :option:`-mcallee-super-interworking` 
-  :option:`-mtp`:samp:`={name}`  :option:`-mtls-dialect`:samp:`={dialect}` 
+  :option:`-mtp=name`  :option:`-mtls-dialect=dialect` 
   :option:`-mword-relocations` 
   :option:`-mfix-cortex-m3-ldrd` 
   :option:`-mfix-cortex-a57-aes-1742098` 
@@ -702,18 +702,18 @@ in the following sections.
   :option:`-mpure-code` 
   :option:`-mcmse` 
   :option:`-mfix-cmse-cve-2021-35465` 
-  :option:`-mstack-protector-guard`:samp:`={guard}` :option:`-mstack-protector-guard-offset`:samp:`={offset}` 
+  :option:`-mstack-protector-guard=guard` :option:`-mstack-protector-guard-offset=offset` 
   :option:`-mfdpic`
 
   *AVR Options*
 
   .. program:: AVR
 
-  :option:`-mmcu`:samp:`={mcu}`  :option:`-mabsdata`  :option:`-maccumulate-args` 
-  :option:`-mbranch-cost`:samp:`={cost}` 
+  :option:`-mmcu=mcu`  :option:`-mabsdata`  :option:`-maccumulate-args` 
+  :option:`-mbranch-cost=cost` 
   :option:`-mcall-prologues`  :option:`-mgas-isr-prologues`  :option:`-mint8` 
-  :option:`-mdouble`:samp:`={bits}` :option:`-mlong-double`:samp:`={bits}` 
-  :option:`-mn_flash`:samp:`={size}`  :option:`-mno-interrupts` 
+  :option:`-mdouble=bits` :option:`-mlong-double=bits` 
+  :option:`-mn_flash=size`  :option:`-mno-interrupts` 
   :option:`-mmain-is-OS_task`  :option:`-mrelax`  :option:`-mrmw`  :option:`-mstrict-X`  :option:`-mtiny-stack` 
   :option:`-mfract-convert-truncate` 
   :option:`-mshort-calls`  :option:`-nodevicelib`  :option:`-nodevicespecs` 
@@ -723,11 +723,11 @@ in the following sections.
 
   .. program:: Blackfin
 
-  :option:`-mcpu`:samp:`={cpu}` [- :samp:`{sirevision}` ] 
+  :option:`-mcpu=cpu` [- :samp:`{sirevision}` ] 
   :option:`-msim`  :option:`-momit-leaf-frame-pointer`  :option:`-mno-omit-leaf-frame-pointer` 
   :option:`-mspecld-anomaly`  :option:`-mno-specld-anomaly`  :option:`-mcsync-anomaly`  :option:`-mno-csync-anomaly` 
   :option:`-mlow-64k`  :option:`-mno-low64k`  :option:`-mstack-check-l1`  :option:`-mid-shared-library` 
-  :option:`-mno-id-shared-library`  :option:`-mshared-library-id`:samp:`={n}` 
+  :option:`-mno-id-shared-library`  :option:`-mshared-library-id=n` 
   :option:`-mleaf-id-shared-library`  :option:`-mno-leaf-id-shared-library` 
   :option:`-msep-data`  :option:`-mno-sep-data`  :option:`-mlong-calls`  :option:`-mno-long-calls` 
   :option:`-mfast-fp`  :option:`-minline-plt`  :option:`-mmulticore`  :option:`-mcorea`  :option:`-mcoreb`  :option:`-msdram` 
@@ -737,15 +737,15 @@ in the following sections.
 
   .. program:: C6X
 
-  :option:`-mbig-endian`  :option:`-mlittle-endian`  :option:`-march`:samp:`={cpu}` 
-  :option:`-msim`  :option:`-msdata`:samp:`={sdata-type}`
+  :option:`-mbig-endian`  :option:`-mlittle-endian`  :option:`-march=cpu` 
+  :option:`-msim`  :option:`-msdata=sdata-type`
 
   *CRIS Options*
 
   .. program:: CRIS
 
-  :option:`-mcpu`:samp:`={cpu}`  :option:`-march`:samp:`={cpu}`
-  :option:`-mtune`:samp:`={cpu}` :option:`-mmax-stack-frame`:samp:`={n}` 
+  :option:`-mcpu=cpu`  :option:`-march=cpu`
+  :option:`-mtune=cpu` :option:`-mmax-stack-frame=n` 
   :option:`-metrax4`  :option:`-metrax100`  :option:`-mpdebug`  :option:`-mcc-init`  :option:`-mno-side-effects` 
   :option:`-mstack-align`  :option:`-mdata-align`  :option:`-mconst-align` 
   :option:`-m32-bit`  :option:`-m16-bit`  :option:`-m8-bit`  :option:`-mno-prologue-epilogue` 
@@ -756,15 +756,15 @@ in the following sections.
 
   .. program:: C-SKY
 
-  :option:`-march`:samp:`={arch}`  :option:`-mcpu`:samp:`={cpu}` 
+  :option:`-march=arch`  :option:`-mcpu=cpu` 
   :option:`-mbig-endian`  :option:`-EB`  :option:`-mlittle-endian`  :option:`-EL` 
-  :option:`-mhard-float`  :option:`-msoft-float`  :option:`-mfpu`:samp:`={fpu}`  :option:`-mdouble-float`  :option:`-mfdivdu` 
-  :option:`-mfloat-abi`:samp:`={name}` 
+  :option:`-mhard-float`  :option:`-msoft-float`  :option:`-mfpu=fpu`  :option:`-mdouble-float`  :option:`-mfdivdu` 
+  :option:`-mfloat-abi=name` 
   :option:`-melrw`  :option:`-mistack`  :option:`-mmp`  :option:`-mcp`  :option:`-mcache`  :option:`-msecurity`  :option:`-mtrust` 
   :option:`-mdsp`  :option:`-medsp`  :option:`-mvdsp` 
   :option:`-mdiv`  :option:`-msmart`  :option:`-mhigh-registers`  :option:`-manchor` 
   :option:`-mpushpop`  :option:`-mmultiple-stld`  :option:`-mconstpool`  :option:`-mstack-size`  :option:`-mccrt` 
-  :option:`-mbranch-cost`:samp:`={n}`  :option:`-mcse-cc`  :option:`-msched-prolog` :option:`-msim`
+  :option:`-mbranch-cost=n`  :option:`-mcse-cc`  :option:`-msched-prolog` :option:`-msim`
 
   *Darwin Options*
 
@@ -793,7 +793,7 @@ in the following sections.
   :option:`-single_module`  :option:`-static`  :option:`-sub_library`  :option:`-sub_umbrella` 
   :option:`-twolevel_namespace`  :option:`-umbrella`  :option:`-undefined` 
   :option:`-unexported_symbols_list`  :option:`-weak_reference_mismatches` 
-  :option:`-whatsloaded`  :option:`-F`  :option:`-gused`  :option:`-gfull`  :option:`-mmacosx-version-min`:samp:`={version}` 
+  :option:`-whatsloaded`  :option:`-F`  :option:`-gused`  :option:`-gfull`  :option:`-mmacosx-version-min=version` 
   :option:`-mkernel`  :option:`-mone-byte-bool`
 
   *DEC Alpha Options*
@@ -802,22 +802,22 @@ in the following sections.
 
   :option:`-mno-fp-regs`  :option:`-msoft-float` 
   :option:`-mieee`  :option:`-mieee-with-inexact`  :option:`-mieee-conformant` 
-  :option:`-mfp-trap-mode`:samp:`={mode}`  :option:`-mfp-rounding-mode`:samp:`={mode}` 
-  :option:`-mtrap-precision`:samp:`={mode}`  :option:`-mbuild-constants` 
-  :option:`-mcpu`:samp:`={cpu-type}`  :option:`-mtune`:samp:`={cpu-type}` 
+  :option:`-mfp-trap-mode=mode`  :option:`-mfp-rounding-mode=mode` 
+  :option:`-mtrap-precision=mode`  :option:`-mbuild-constants` 
+  :option:`-mcpu=cpu-type`  :option:`-mtune=cpu-type` 
   :option:`-mbwx`  :option:`-mmax`  :option:`-mfix`  :option:`-mcix` 
   :option:`-mfloat-vax`  :option:`-mfloat-ieee` 
   :option:`-mexplicit-relocs`  :option:`-msmall-data`  :option:`-mlarge-data` 
   :option:`-msmall-text`  :option:`-mlarge-text` 
-  :option:`-mmemory-latency`:samp:`={time}`
+  :option:`-mmemory-latency=time`
 
   *eBPF Options*
 
   .. program:: eBPF
 
-  :option:`-mbig-endian` :option:`-mlittle-endian` :option:`-mkernel`:samp:`={version}`
-  :option:`-mframe-limit`:samp:`={bytes}` :option:`-mxbpf` :option:`-mco-re` :option:`-mno-co-re`
-  :option:`-mjmpext` :option:`-mjmp32` :option:`-malu32` :option:`-mcpu`:samp:`={version}`
+  :option:`-mbig-endian` :option:`-mlittle-endian` :option:`-mkernel=version`
+  :option:`-mframe-limit=bytes` :option:`-mxbpf` :option:`-mco-re` :option:`-mno-co-re`
+  :option:`-mjmpext` :option:`-mjmp32` :option:`-malu32` :option:`-mcpu=version`
 
   *FR30 Options*
 
@@ -850,7 +850,7 @@ in the following sections.
   :option:`-mmulti-cond-exec`  :option:`-mno-multi-cond-exec`  :option:`-mnested-cond-exec` 
   :option:`-mno-nested-cond-exec`  :option:`-mtomcat-stats` 
   :option:`-mTLS`  :option:`-mtls` 
-  :option:`-mcpu`:samp:`={cpu}`
+  :option:`-mcpu=cpu`
 
   *GNU/Linux Options*
 
@@ -869,10 +869,10 @@ in the following sections.
 
   .. program:: HPPA
 
-  :option:`-march`:samp:`={architecture-type}` 
+  :option:`-march=architecture-type` 
   :option:`-mcaller-copies`  :option:`-mdisable-fpregs`  :option:`-mdisable-indexing` 
   :option:`-mfast-indirect-calls`  :option:`-mgas`  :option:`-mgnu-ld`   :option:`-mhp-ld` 
-  :option:`-mfixed-range`:samp:`={register-range}` 
+  :option:`-mfixed-range=register-range` 
   :option:`-mjump-in-delay`  :option:`-mlinker-opt`  :option:`-mlong-calls` 
   :option:`-mlong-load-store`  :option:`-mno-disable-fpregs` 
   :option:`-mno-disable-indexing`  :option:`-mno-fast-indirect-calls`  :option:`-mno-gas` 
@@ -880,8 +880,8 @@ in the following sections.
   :option:`-mno-portable-runtime`  :option:`-mno-soft-float` 
   :option:`-mno-space-regs`  :option:`-msoft-float`  :option:`-mpa-risc-1-0` 
   :option:`-mpa-risc-1-1`  :option:`-mpa-risc-2-0`  :option:`-mportable-runtime` 
-  :option:`-mschedule`:samp:`={cpu-type}`  :option:`-mspace-regs`  :option:`-msio`  :option:`-mwsio` 
-  :option:`-munix`:samp:`={unix-std}`  :option:`-nolibdld`  :option:`-static`  :option:`-threads`
+  :option:`-mschedule=cpu-type`  :option:`-mspace-regs`  :option:`-msio`  :option:`-mwsio` 
+  :option:`-munix=unix-std`  :option:`-nolibdld`  :option:`-static`  :option:`-threads`
 
   *IA-64 Options*
 
@@ -899,15 +899,15 @@ in the following sections.
   :option:`-minline-sqrt-min-latency`  :option:`-minline-sqrt-max-throughput` 
   :option:`-mno-inline-sqrt` 
   :option:`-mdwarf2-asm`  :option:`-mearly-stop-bits` 
-  :option:`-mfixed-range`:samp:`={register-range}`  :option:`-mtls-size`:samp:`={tls-size}` 
-  :option:`-mtune`:samp:`={cpu-type}`  :option:`-milp32`  :option:`-mlp64` 
+  :option:`-mfixed-range=register-range`  :option:`-mtls-size=tls-size` 
+  :option:`-mtune=cpu-type`  :option:`-milp32`  :option:`-mlp64` 
   :option:`-msched-br-data-spec`  :option:`-msched-ar-data-spec`  :option:`-msched-control-spec` 
   :option:`-msched-br-in-data-spec`  :option:`-msched-ar-in-data-spec`  :option:`-msched-in-control-spec` 
   :option:`-msched-spec-ldc`  :option:`-msched-spec-control-ldc` 
   :option:`-msched-prefer-non-data-spec-insns`  :option:`-msched-prefer-non-control-spec-insns` 
   :option:`-msched-stop-bits-after-every-cycle`  :option:`-msched-count-spec-in-critical-path` 
   :option:`-msel-sched-dont-check-control-spec`  :option:`-msched-fp-mem-deps-zero-cost` 
-  :option:`-msched-max-memory-insns-hard-limit`  :option:`-msched-max-memory-insns`:samp:`={max-insns}`
+  :option:`-msched-max-memory-insns-hard-limit`  :option:`-msched-max-memory-insns=max-insns`
 
   *LM32 Options*
 
@@ -920,16 +920,16 @@ in the following sections.
 
   .. program:: LoongArch
 
-  :option:`-march`:samp:`={cpu-type}`  :option:`-mtune`:samp:`={cpu-type}` :option:`-mabi`:samp:`={base-abi-type}` 
-  :option:`-mfpu`:samp:`={fpu-type}` :option:`-msoft-float` :option:`-msingle-float` :option:`-mdouble-float` 
-  :option:`-mbranch-cost`:samp:`={n}`  :option:`-mcheck-zero-division` :option:`-mno-check-zero-division` 
+  :option:`-march=cpu-type`  :option:`-mtune=cpu-type` :option:`-mabi=base-abi-type` 
+  :option:`-mfpu=fpu-type` :option:`-msoft-float` :option:`-msingle-float` :option:`-mdouble-float` 
+  :option:`-mbranch-cost=n`  :option:`-mcheck-zero-division` :option:`-mno-check-zero-division` 
   :option:`-mcond-move-int`  :option:`-mno-cond-move-int` 
   :option:`-mcond-move-float`  :option:`-mno-cond-move-float` 
   :option:`-memcpy`  :option:`-mno-memcpy` :option:`-mstrict-align` :option:`-mno-strict-align` 
-  :option:`-mmax-inline-memcpy-size`:samp:`={n}` 
+  :option:`-mmax-inline-memcpy-size=n` 
   :option:`-mexplicit-relocs` :option:`-mno-explicit-relocs` 
   :option:`-mdirect-extern-access` :option:`-mno-direct-extern-access` 
-  :option:`-mcmodel`:samp:`={code-model}`
+  :option:`-mcmodel=code-model`
 
   *M32R/D Options*
 
@@ -938,32 +938,32 @@ in the following sections.
   :option:`-m32r2`  :option:`-m32rx`  :option:`-m32r` 
   :option:`-mdebug` 
   :option:`-malign-loops`  :option:`-mno-align-loops` 
-  :option:`-missue-rate`:samp:`={number}` 
-  :option:`-mbranch-cost`:samp:`={number}` 
-  :option:`-mmodel`:samp:`={code-size-model-type}` 
-  :option:`-msdata`:samp:`={sdata-type}` 
-  :option:`-mno-flush-func`  :option:`-mflush-func`:samp:`={name}` 
-  :option:`-mno-flush-trap`  :option:`-mflush-trap`:samp:`={number}` 
+  :option:`-missue-rate=number` 
+  :option:`-mbranch-cost=number` 
+  :option:`-mmodel=code-size-model-type` 
+  :option:`-msdata=sdata-type` 
+  :option:`-mno-flush-func`  :option:`-mflush-func=name` 
+  :option:`-mno-flush-trap`  :option:`-mflush-trap=number` 
   :option:`-G` :samp:`{num}`
 
   *M32C Options*
 
   .. program:: M32C
 
-  :option:`-mcpu`:samp:`={cpu}`  :option:`-msim`  :option:`-memregs`:samp:`={number}`
+  :option:`-mcpu=cpu`  :option:`-msim`  :option:`-memregs=number`
 
   *M680x0 Options*
 
   .. program:: M680x0
 
-  :option:`-march`:samp:`={arch}`  :option:`-mcpu`:samp:`={cpu}`  :option:`-mtune`:samp:`={tune}` 
+  :option:`-march=arch`  :option:`-mcpu=cpu`  :option:`-mtune=tune` 
   :option:`-m68000`  :option:`-m68020`  :option:`-m68020-40`  :option:`-m68020-60`  :option:`-m68030`  :option:`-m68040` 
   :option:`-m68060`  :option:`-mcpu32`  :option:`-m5200`  :option:`-m5206e`  :option:`-m528x`  :option:`-m5307`  :option:`-m5407` 
   :option:`-mcfv4e`  :option:`-mbitfield`  :option:`-mno-bitfield`  :option:`-mc68000`  :option:`-mc68020` 
   :option:`-mnobitfield`  :option:`-mrtd`  :option:`-mno-rtd`  :option:`-mdiv`  :option:`-mno-div`  :option:`-mshort` 
   :option:`-mno-short`  :option:`-mhard-float`  :option:`-m68881`  :option:`-msoft-float`  :option:`-mpcrel` 
   :option:`-malign-int`  :option:`-mstrict-align`  :option:`-msep-data`  :option:`-mno-sep-data` 
-  :option:`-mshared-library-id`:samp:`=n`  :option:`-mid-shared-library`  :option:`-mno-id-shared-library` 
+  :option:`-mshared-library-id=n`  :option:`-mid-shared-library`  :option:`-mno-id-shared-library` 
   :option:`-mxgot`  :option:`-mno-xgot`  :option:`-mlong-jump-table-offsets`
 
   *MCore Options*
@@ -980,39 +980,39 @@ in the following sections.
 
   .. program:: MeP
 
-  :option:`-mabsdiff`  :option:`-mall-opts`  :option:`-maverage`  :option:`-mbased`:samp:`={n}`  :option:`-mbitops` 
-  :option:`-mc`:samp:`={n}`  :option:`-mclip`  :option:`-mconfig`:samp:`={name}`  :option:`-mcop`  :option:`-mcop32`  :option:`-mcop64`  :option:`-mivc2` 
+  :option:`-mabsdiff`  :option:`-mall-opts`  :option:`-maverage`  :option:`-mbased=n`  :option:`-mbitops` 
+  :option:`-mc=n`  :option:`-mclip`  :option:`-mconfig=name`  :option:`-mcop`  :option:`-mcop32`  :option:`-mcop64`  :option:`-mivc2` 
   :option:`-mdc`  :option:`-mdiv`  :option:`-meb`  :option:`-mel`  :option:`-mio-volatile`  :option:`-ml`  :option:`-mleadz`  :option:`-mm`  :option:`-mminmax` 
   :option:`-mmult`  :option:`-mno-opts`  :option:`-mrepeat`  :option:`-ms`  :option:`-msatur`  :option:`-msdram`  :option:`-msim`  :option:`-msimnovec`  :option:`-mtf` 
-  :option:`-mtiny`:samp:`={n}`
+  :option:`-mtiny=n`
 
   *MicroBlaze Options*
 
   .. program:: MicroBlaze
 
-  :option:`-msoft-float`  :option:`-mhard-float`  :option:`-msmall-divides`  :option:`-mcpu`:samp:`={cpu}` 
+  :option:`-msoft-float`  :option:`-mhard-float`  :option:`-msmall-divides`  :option:`-mcpu=cpu` 
   :option:`-mmemcpy`  :option:`-mxl-soft-mul`  :option:`-mxl-soft-div`  :option:`-mxl-barrel-shift` 
   :option:`-mxl-pattern-compare`  :option:`-mxl-stack-check`  :option:`-mxl-gp-opt`  :option:`-mno-clearbss` 
   :option:`-mxl-multiply-high`  :option:`-mxl-float-convert`  :option:`-mxl-float-sqrt` 
-  :option:`-mbig-endian`  :option:`-mlittle-endian`  :option:`-mxl-reorder`  :option:`-mxl-mode-`:samp:`{app-model}` 
+  :option:`-mbig-endian`  :option:`-mlittle-endian`  :option:`-mxl-reorder`  :option:`-mxl-mode-app-model` 
   :option:`-mpic-data-is-text-relative`
 
   *MIPS Options*
 
   .. program:: MIPS
 
-  :option:`-EL`  :option:`-EB`  :option:`-march`:samp:`={arch}`  :option:`-mtune`:samp:`={arch}` 
+  :option:`-EL`  :option:`-EB`  :option:`-march=arch`  :option:`-mtune=arch` 
   :option:`-mips1`  :option:`-mips2`  :option:`-mips3`  :option:`-mips4`  :option:`-mips32`  :option:`-mips32r2`  :option:`-mips32r3`  :option:`-mips32r5` 
   :option:`-mips32r6`  :option:`-mips64`  :option:`-mips64r2`  :option:`-mips64r3`  :option:`-mips64r5`  :option:`-mips64r6` 
   :option:`-mips16`  :option:`-mno-mips16`  :option:`-mflip-mips16` 
   :option:`-minterlink-compressed`  :option:`-mno-interlink-compressed` 
   :option:`-minterlink-mips16`  :option:`-mno-interlink-mips16` 
-  :option:`-mabi`:samp:`={abi}`  :option:`-mabicalls`  :option:`-mno-abicalls` 
+  :option:`-mabi=abi`  :option:`-mabicalls`  :option:`-mno-abicalls` 
   :option:`-mshared`  :option:`-mno-shared`  :option:`-mplt`  :option:`-mno-plt`  :option:`-mxgot`  :option:`-mno-xgot` 
   :option:`-mgp32`  :option:`-mgp64`  :option:`-mfp32`  :option:`-mfpxx`  :option:`-mfp64`  :option:`-mhard-float`  :option:`-msoft-float` 
   :option:`-mno-float`  :option:`-msingle-float`  :option:`-mdouble-float` 
   :option:`-modd-spreg`  :option:`-mno-odd-spreg` 
-  :option:`-mabs`:samp:`={mode}`  :option:`-mnan`:samp:`={encoding}` 
+  :option:`-mabs=mode`  :option:`-mnan=encoding` 
   :option:`-mdsp`  :option:`-mno-dsp`  :option:`-mdspr2`  :option:`-mno-dspr2` 
   :option:`-mmcu`  :option:`-mmno-mcu` 
   :option:`-meva`  :option:`-mno-eva` 
@@ -1025,16 +1025,16 @@ in the following sections.
   :option:`-mloongson-mmi`  :option:`-mno-loongson-mmi` 
   :option:`-mloongson-ext`  :option:`-mno-loongson-ext` 
   :option:`-mloongson-ext2`  :option:`-mno-loongson-ext2` 
-  :option:`-mfpu`:samp:`={fpu-type}` 
+  :option:`-mfpu=fpu-type` 
   :option:`-msmartmips`  :option:`-mno-smartmips` 
   :option:`-mpaired-single`  :option:`-mno-paired-single`  :option:`-mdmx`  :option:`-mno-mdmx` 
   :option:`-mips3d`  :option:`-mno-mips3d`  :option:`-mmt`  :option:`-mno-mt`  :option:`-mllsc`  :option:`-mno-llsc` 
   :option:`-mlong64`  :option:`-mlong32`  :option:`-msym32`  :option:`-mno-sym32` 
-  :option:`-G`:samp:`{num}`  :option:`-mlocal-sdata`  :option:`-mno-local-sdata` 
+  :option:`-Gnum`  :option:`-mlocal-sdata`  :option:`-mno-local-sdata` 
   :option:`-mextern-sdata`  :option:`-mno-extern-sdata`  :option:`-mgpopt`  :option:`-mno-gopt` 
   :option:`-membedded-data`  :option:`-mno-embedded-data` 
   :option:`-muninit-const-in-rodata`  :option:`-mno-uninit-const-in-rodata` 
-  :option:`-mcode-readable`:samp:`={setting}` 
+  :option:`-mcode-readable=setting` 
   :option:`-msplit-addresses`  :option:`-mno-split-addresses` 
   :option:`-mexplicit-relocs`  :option:`-mno-explicit-relocs` 
   :option:`-mcheck-zero-division`  :option:`-mno-check-zero-division` 
@@ -1049,9 +1049,9 @@ in the following sections.
   :option:`-mfix-r10000`  :option:`-mno-fix-r10000`  :option:`-mfix-rm7000`  :option:`-mno-fix-rm7000` 
   :option:`-mfix-vr4120`  :option:`-mno-fix-vr4120` 
   :option:`-mfix-vr4130`  :option:`-mno-fix-vr4130`  :option:`-mfix-sb1`  :option:`-mno-fix-sb1` 
-  :option:`-mflush-func`:samp:`={func}`  :option:`-mno-flush-func` 
-  :option:`-mbranch-cost`:samp:`={num}`  :option:`-mbranch-likely`  :option:`-mno-branch-likely` 
-  :option:`-mcompact-branches`:samp:`={policy}` 
+  :option:`-mflush-func=func`  :option:`-mno-flush-func` 
+  :option:`-mbranch-cost=num`  :option:`-mbranch-likely`  :option:`-mno-branch-likely` 
+  :option:`-mcompact-branches=policy` 
   :option:`-mfp-exceptions`  :option:`-mno-fp-exceptions` 
   :option:`-mvr4130-align`  :option:`-mno-vr4130-align`  :option:`-msynci`  :option:`-mno-synci` 
   :option:`-mlxc1-sxc1`  :option:`-mno-lxc1-sxc1`  :option:`-mmadd4`  :option:`-mno-madd4` 
@@ -1062,8 +1062,8 @@ in the following sections.
 
   .. program:: MMIX
 
-  :option:`-mlibfuncs`  :option:`-mno-libfuncs`  :option:`-mepsilon`  :option:`-mno-epsilon`  :option:`-mabi`:samp:`=gnu` 
-  :option:`-mabi`:samp:`=mmixware`  :option:`-mzero-extend`  :option:`-mknuthdiv`  :option:`-mtoplevel-symbols` 
+  :option:`-mlibfuncs`  :option:`-mno-libfuncs`  :option:`-mepsilon`  :option:`-mno-epsilon`  :option:`-mabi=gnu` 
+  :option:`-mabi=mmixware`  :option:`-mzero-extend`  :option:`-mknuthdiv`  :option:`-mtoplevel-symbols` 
   :option:`-melf`  :option:`-mbranch-predict`  :option:`-mno-branch-predict`  :option:`-mbase-addresses` 
   :option:`-mno-base-addresses`  :option:`-msingle-exit`  :option:`-mno-single-exit`
 
@@ -1073,7 +1073,7 @@ in the following sections.
 
   :option:`-mmult-bug`  :option:`-mno-mult-bug` 
   :option:`-mno-am33`  :option:`-mam33`  :option:`-mam33-2`  :option:`-mam34` 
-  :option:`-mtune`:samp:`={cpu-type}` 
+  :option:`-mtune=cpu-type` 
   :option:`-mreturn-pointer-on-d0` 
   :option:`-mno-crt0`  :option:`-mrelax`  :option:`-mliw`  :option:`-msetlb`
 
@@ -1087,11 +1087,11 @@ in the following sections.
 
   .. program:: MSP430
 
-  :option:`-msim`  :option:`-masm-hex`  :option:`-mmcu` =  :option:`-mcpu` =  :option:`-mlarge`  :option:`-msmall`  :option:`-mrelax` 
+  :option:`-msim`  :option:`-masm-hex`  :option:`-mmcu=`  :option:`-mcpu=`  :option:`-mlarge`  :option:`-msmall`  :option:`-mrelax` 
   :option:`-mwarn-mcu` 
-  :option:`-mcode-region` =  :option:`-mdata-region` = 
-  :option:`-msilicon-errata` =  :option:`-msilicon-errata-warn` = 
-  :option:`-mhwmult` =  :option:`-minrt`  :option:`-mtiny-printf`  :option:`-mmax-inline-shift` =
+  :option:`-mcode-region=`  :option:`-mdata-region=` 
+  :option:`-msilicon-errata=`  :option:`-msilicon-errata-warn=` 
+  :option:`-mhwmult=`  :option:`-minrt`  :option:`-mtiny-printf`  :option:`-mmax-inline-shift=`
 
   *NDS32 Options*
 
@@ -1105,27 +1105,27 @@ in the following sections.
   :option:`-mext-string`  :option:`-mno-ext-string` 
   :option:`-mv3push`  :option:`-mno-v3push` 
   :option:`-m16bit`  :option:`-mno-16bit` 
-  :option:`-misr-vector-size`:samp:`={num}` 
-  :option:`-mcache-block-size`:samp:`={num}` 
-  :option:`-march`:samp:`={arch}` 
-  :option:`-mcmodel`:samp:`={code-model}` 
+  :option:`-misr-vector-size=num` 
+  :option:`-mcache-block-size=num` 
+  :option:`-march=arch` 
+  :option:`-mcmodel=code-model` 
   :option:`-mctor-dtor`  :option:`-mrelax`
 
   *Nios II Options*
 
   .. program:: Nios II
 
-  :option:`-G` :samp:`{num}`  :option:`-mgpopt`:samp:`={option}`  :option:`-mgpopt`  :option:`-mno-gpopt` 
-  :option:`-mgprel-sec`:samp:`={regexp}`  :option:`-mr0rel-sec`:samp:`={regexp}` 
+  :option:`-G` :samp:`{num}`  :option:`-mgpopt=option`  :option:`-mgpopt`  :option:`-mno-gpopt` 
+  :option:`-mgprel-sec=regexp`  :option:`-mr0rel-sec=regexp` 
   :option:`-mel`  :option:`-meb` 
   :option:`-mno-bypass-cache`  :option:`-mbypass-cache` 
   :option:`-mno-cache-volatile`  :option:`-mcache-volatile` 
   :option:`-mno-fast-sw-div`  :option:`-mfast-sw-div` 
   :option:`-mhw-mul`  :option:`-mno-hw-mul`  :option:`-mhw-mulx`  :option:`-mno-hw-mulx`  :option:`-mno-hw-div`  :option:`-mhw-div` 
-  :option:`-mcustom-`:samp:`{insn}` = :samp:`{N}`  :option:`-mno-custom-`:samp:`{insn}` 
-  :option:`-mcustom-fpu-cfg`:samp:`={name}` 
-  :option:`-mhal`  :option:`-msmallc`  :option:`-msys-crt0`:samp:`={name}`  :option:`-msys-lib`:samp:`={name}` 
-  :option:`-march`:samp:`={arch}`  :option:`-mbmx`  :option:`-mno-bmx`  :option:`-mcdx`  :option:`-mno-cdx`
+  :option:`-mcustom-insn` = :samp:`{N}`  :option:`-mno-custom-insn` 
+  :option:`-mcustom-fpu-cfg=name` 
+  :option:`-mhal`  :option:`-msmallc`  :option:`-msys-crt0=name`  :option:`-msys-lib=name` 
+  :option:`-march=arch`  :option:`-mbmx`  :option:`-mno-bmx`  :option:`-mcdx`  :option:`-mno-cdx`
 
   *Nvidia PTX Options*
 
@@ -1137,11 +1137,11 @@ in the following sections.
 
   .. program:: OpenRISC
 
-  :option:`-mboard`:samp:`={name}`  :option:`-mnewlib`  :option:`-mhard-mul`  :option:`-mhard-div` 
+  :option:`-mboard=name`  :option:`-mnewlib`  :option:`-mhard-mul`  :option:`-mhard-div` 
   :option:`-msoft-mul`  :option:`-msoft-div` 
   :option:`-msoft-float`  :option:`-mhard-float`  :option:`-mdouble-float` :option:`-munordered-float` 
   :option:`-mcmov`  :option:`-mror`  :option:`-mrori`  :option:`-msext`  :option:`-msfimm`  :option:`-mshftimm` 
-  :option:`-mcmodel`:samp:`={code-model}`
+  :option:`-mcmodel=code-model`
 
   *PDP-11 Options*
 
@@ -1155,7 +1155,7 @@ in the following sections.
 
   .. program:: picoChip
 
-  :option:`-mae`:samp:`={ae_type}`  :option:`-mvliw-lookahead`:samp:`={N}` 
+  :option:`-mae=ae_type`  :option:`-mvliw-lookahead=N` 
   :option:`-msymbol-as-address`  :option:`-mno-inefficient-warnings`
 
   *PowerPC Options*
@@ -1168,50 +1168,50 @@ in the following sections.
 
   .. program:: PRU
 
-  :option:`-mmcu`:samp:`={mcu}`  :option:`-minrt`  :option:`-mno-relax`  :option:`-mloop` 
-  :option:`-mabi`:samp:`={variant}` 
+  :option:`-mmcu=mcu`  :option:`-minrt`  :option:`-mno-relax`  :option:`-mloop` 
+  :option:`-mabi=variant` 
 
   *RISC-V Options*
 
   .. program:: RISC-V
 
-  :option:`-mbranch-cost`:samp:`={N-instruction}` 
+  :option:`-mbranch-cost=N-instruction` 
   :option:`-mplt`  :option:`-mno-plt` 
-  :option:`-mabi`:samp:`={ABI-string}` 
+  :option:`-mabi=ABI-string` 
   :option:`-mfdiv`  :option:`-mno-fdiv` 
   :option:`-mdiv`  :option:`-mno-div` 
-  :option:`-misa-spec`:samp:`={ISA-spec-string}` 
-  :option:`-march`:samp:`={ISA-string}` 
-  :option:`-mtune`:samp:`={processor-string}` 
-  :option:`-mpreferred-stack-boundary`:samp:`={num}` 
-  :option:`-msmall-data-limit`:samp:`={N-bytes}` 
+  :option:`-misa-spec=ISA-spec-string` 
+  :option:`-march=ISA-string` 
+  :option:`-mtune=processor-string` 
+  :option:`-mpreferred-stack-boundary=num` 
+  :option:`-msmall-data-limit=N-bytes` 
   :option:`-msave-restore`  :option:`-mno-save-restore` 
   :option:`-mshorten-memrefs`  :option:`-mno-shorten-memrefs` 
   :option:`-mstrict-align`  :option:`-mno-strict-align` 
-  :option:`-mcmodel`:samp:`=medlow`  :option:`-mcmodel`:samp:`=medany` 
+  :option:`-mcmodel=medlow`  :option:`-mcmodel=medany` 
   :option:`-mexplicit-relocs`  :option:`-mno-explicit-relocs` 
   :option:`-mrelax`  :option:`-mno-relax` 
   :option:`-mriscv-attribute`  :option:`-mno-riscv-attribute` 
-  :option:`-malign-data`:samp:`={type}` 
+  :option:`-malign-data=type` 
   :option:`-mbig-endian`  :option:`-mlittle-endian` 
-  :option:`-mstack-protector-guard`:samp:`={guard}`  :option:`-mstack-protector-guard-reg`:samp:`={reg}` 
-  :option:`-mstack-protector-guard-offset`:samp:`={offset}`
+  :option:`-mstack-protector-guard=guard`  :option:`-mstack-protector-guard-reg=reg` 
+  :option:`-mstack-protector-guard-offset=offset`
 
   *RL78 Options*
 
   .. program:: RL78
 
-  :option:`-msim`  :option:`-mmul`:samp:`=none`  :option:`-mmul`:samp:`=g13`  :option:`-mmul`:samp:`=g14`  :option:`-mallregs` 
-  :option:`-mcpu`:samp:`=g10`  :option:`-mcpu`:samp:`=g13`  :option:`-mcpu`:samp:`=g14`  :option:`-mg10`  :option:`-mg13`  :option:`-mg14` 
+  :option:`-msim`  :option:`-mmul=none`  :option:`-mmul=g13`  :option:`-mmul=g14`  :option:`-mallregs` 
+  :option:`-mcpu=g10`  :option:`-mcpu=g13`  :option:`-mcpu=g14`  :option:`-mg10`  :option:`-mg13`  :option:`-mg14` 
   :option:`-m64bit-doubles`  :option:`-m32bit-doubles`  :option:`-msave-mduc-in-interrupts`
 
   *RS/6000 and PowerPC Options*
 
   .. program:: RS/6000 and PowerPC
 
-  :option:`-mcpu`:samp:`={cpu-type}` 
-  :option:`-mtune`:samp:`={cpu-type}` 
-  :option:`-mcmodel`:samp:`={code-model}` 
+  :option:`-mcpu=cpu-type` 
+  :option:`-mtune=cpu-type` 
+  :option:`-mcmodel=code-model` 
   :option:`-mpowerpc64` 
   :option:`-maltivec`  :option:`-mno-altivec` 
   :option:`-mpowerpc-gpopt`  :option:`-mno-powerpc-gpopt` 
@@ -1230,31 +1230,31 @@ in the following sections.
   :option:`-mno-relocatable`  :option:`-mrelocatable-lib`  :option:`-mno-relocatable-lib` 
   :option:`-mtoc`  :option:`-mno-toc`  :option:`-mlittle`  :option:`-mlittle-endian`  :option:`-mbig`  :option:`-mbig-endian` 
   :option:`-mdynamic-no-pic`  :option:`-mswdiv`  :option:`-msingle-pic-base` 
-  :option:`-mprioritize-restricted-insns`:samp:`={priority}` 
-  :option:`-msched-costly-dep`:samp:`={dependence_type}` 
-  :option:`-minsert-sched-nops`:samp:`={scheme}` 
+  :option:`-mprioritize-restricted-insns=priority` 
+  :option:`-msched-costly-dep=dependence_type` 
+  :option:`-minsert-sched-nops=scheme` 
   :option:`-mcall-aixdesc`  :option:`-mcall-eabi`  :option:`-mcall-freebsd`  
   :option:`-mcall-linux`  :option:`-mcall-netbsd`  :option:`-mcall-openbsd`  
   :option:`-mcall-sysv`  :option:`-mcall-sysv-eabi`  :option:`-mcall-sysv-noeabi` 
-  :option:`-mtraceback`:samp:`={traceback_type}` 
+  :option:`-mtraceback=traceback_type` 
   :option:`-maix-struct-return`  :option:`-msvr4-struct-return` 
-  :option:`-mabi`:samp:`={abi-type}`  :option:`-msecure-plt`  :option:`-mbss-plt` 
+  :option:`-mabi=abi-type`  :option:`-msecure-plt`  :option:`-mbss-plt` 
   :option:`-mlongcall`  :option:`-mno-longcall`  :option:`-mpltseq`  :option:`-mno-pltseq`  
-  :option:`-mblock-move-inline-limit`:samp:`={num}` 
-  :option:`-mblock-compare-inline-limit`:samp:`={num}` 
-  :option:`-mblock-compare-inline-loop-limit`:samp:`={num}` 
+  :option:`-mblock-move-inline-limit=num` 
+  :option:`-mblock-compare-inline-limit=num` 
+  :option:`-mblock-compare-inline-loop-limit=num` 
   :option:`-mno-block-ops-unaligned-vsx` 
-  :option:`-mstring-compare-inline-limit`:samp:`={num}` 
+  :option:`-mstring-compare-inline-limit=num` 
   :option:`-misel`  :option:`-mno-isel` 
   :option:`-mvrsave`  :option:`-mno-vrsave` 
   :option:`-mmulhw`  :option:`-mno-mulhw` 
   :option:`-mdlmzb`  :option:`-mno-dlmzb` 
   :option:`-mprototype`  :option:`-mno-prototype` 
   :option:`-msim`  :option:`-mmvme`  :option:`-mads`  :option:`-myellowknife`  :option:`-memb`  :option:`-msdata` 
-  :option:`-msdata`:samp:`={opt}`  :option:`-mreadonly-in-sdata`  :option:`-mvxworks`  :option:`-G` :samp:`{num}` 
-  :option:`-mrecip`  :option:`-mrecip`:samp:`={opt}`  :option:`-mno-recip`  :option:`-mrecip-precision` 
+  :option:`-msdata=opt`  :option:`-mreadonly-in-sdata`  :option:`-mvxworks`  :option:`-G` :samp:`{num}` 
+  :option:`-mrecip`  :option:`-mrecip=opt`  :option:`-mno-recip`  :option:`-mrecip-precision` 
   :option:`-mno-recip-precision` 
-  :option:`-mveclibabi`:samp:`={type}`  :option:`-mfriz`  :option:`-mno-friz` 
+  :option:`-mveclibabi=type`  :option:`-mfriz`  :option:`-mno-friz` 
   :option:`-mpointers-to-nested-functions`  :option:`-mno-pointers-to-nested-functions` 
   :option:`-msave-toc-indirect`  :option:`-mno-save-toc-indirect` 
   :option:`-mpower8-fusion`  :option:`-mno-mpower8-fusion`  :option:`-mpower8-vector`  :option:`-mno-power8-vector` 
@@ -1264,8 +1264,8 @@ in the following sections.
   :option:`-mcompat-align-parm`  :option:`-mno-compat-align-parm` 
   :option:`-mfloat128`  :option:`-mno-float128`  :option:`-mfloat128-hardware`  :option:`-mno-float128-hardware` 
   :option:`-mgnu-attribute`  :option:`-mno-gnu-attribute` 
-  :option:`-mstack-protector-guard`:samp:`={guard}` :option:`-mstack-protector-guard-reg`:samp:`={reg}` 
-  :option:`-mstack-protector-guard-offset`:samp:`={offset}` :option:`-mprefixed` :option:`-mno-prefixed` 
+  :option:`-mstack-protector-guard=guard` :option:`-mstack-protector-guard-reg=reg` 
+  :option:`-mstack-protector-guard-offset=offset` :option:`-mprefixed` :option:`-mno-prefixed` 
   :option:`-mpcrel` :option:`-mno-pcrel` :option:`-mmma` :option:`-mno-mmma` :option:`-mrop-protect` :option:`-mno-rop-protect` 
   :option:`-mprivileged` :option:`-mno-privileged`
 
@@ -1274,14 +1274,14 @@ in the following sections.
   .. program:: RX
 
   :option:`-m64bit-doubles`  :option:`-m32bit-doubles`  :option:`-fpu`  :option:`-nofpu`
-  :option:`-mcpu` =
+  :option:`-mcpu=`
   :option:`-mbig-endian-data`  :option:`-mlittle-endian-data` 
   :option:`-msmall-data` 
   :option:`-msim`  :option:`-mno-sim`
   :option:`-mas100-syntax`  :option:`-mno-as100-syntax`
   :option:`-mrelax`
-  :option:`-mmax-constant-size` =
-  :option:`-mint-register` =
+  :option:`-mmax-constant-size=`
+  :option:`-mint-register=`
   :option:`-mpid`
   :option:`-mallow-string-insns`  :option:`-mno-allow-string-insns`
   :option:`-mjsr`
@@ -1292,7 +1292,7 @@ in the following sections.
 
   .. program:: S/390 and zSeries
 
-  :option:`-mtune`:samp:`={cpu-type}`  :option:`-march`:samp:`={cpu-type}` 
+  :option:`-mtune=cpu-type`  :option:`-march=cpu-type` 
   :option:`-mhard-float`  :option:`-msoft-float`  :option:`-mhard-dfp`  :option:`-mno-hard-dfp` 
   :option:`-mlong-double-64`  :option:`-mlong-double-128` 
   :option:`-mbackchain`  :option:`-mno-backchain`  :option:`-mpacked-stack`  :option:`-mno-packed-stack` 
@@ -1302,7 +1302,7 @@ in the following sections.
   :option:`-mtpf-trace`  :option:`-mno-tpf-trace`  :option:`-mtpf-trace-skip`  :option:`-mno-tpf-trace-skip` 
   :option:`-mfused-madd`  :option:`-mno-fused-madd` 
   :option:`-mwarn-framesize`  :option:`-mwarn-dynamicstack`  :option:`-mstack-size`  :option:`-mstack-guard` 
-  :option:`-mhotpatch`:samp:`={halfwords}`, :samp:`{halfwords}`
+  :option:`-mhotpatch=halfwords`, :samp:`{halfwords}`
 
   *Score Options*
 
@@ -1326,11 +1326,11 @@ in the following sections.
   :option:`-mb`  :option:`-ml`  :option:`-mdalign`  :option:`-mrelax` 
   :option:`-mbigtable`  :option:`-mfmovd`  :option:`-mrenesas`  :option:`-mno-renesas`  :option:`-mnomacsave` 
   :option:`-mieee`  :option:`-mno-ieee`  :option:`-mbitops`  :option:`-misize`  :option:`-minline-ic_invalidate`  :option:`-mpadstruct` 
-  :option:`-mprefergot`  :option:`-musermode`  :option:`-multcost`:samp:`={number}`  :option:`-mdiv`:samp:`={strategy}` 
-  :option:`-mdivsi3_libfunc`:samp:`={name}`  :option:`-mfixed-range`:samp:`={register-range}` 
+  :option:`-mprefergot`  :option:`-musermode`  :option:`-multcost=number`  :option:`-mdiv=strategy` 
+  :option:`-mdivsi3_libfunc=name`  :option:`-mfixed-range=register-range` 
   :option:`-maccumulate-outgoing-args` 
-  :option:`-matomic-model`:samp:`={atomic-model}` 
-  :option:`-mbranch-cost`:samp:`={num}`  :option:`-mzdcbranch`  :option:`-mno-zdcbranch` 
+  :option:`-matomic-model=atomic-model` 
+  :option:`-mbranch-cost=num`  :option:`-mzdcbranch`  :option:`-mno-zdcbranch` 
   :option:`-mcbranch-force-delay-slot` 
   :option:`-mfused-madd`  :option:`-mno-fused-madd`  :option:`-mfsca`  :option:`-mno-fsca`  :option:`-mfsrra`  :option:`-mno-fsrra` 
   :option:`-mpretend-cmove`  :option:`-mtas`
@@ -1346,10 +1346,10 @@ in the following sections.
 
   .. program:: SPARC
 
-  :option:`-mcpu`:samp:`={cpu-type}` 
-  :option:`-mtune`:samp:`={cpu-type}` 
-  :option:`-mcmodel`:samp:`={code-model}` 
-  :option:`-mmemory-model`:samp:`={mem-model}` 
+  :option:`-mcpu=cpu-type` 
+  :option:`-mtune=cpu-type` 
+  :option:`-mcmodel=code-model` 
+  :option:`-mmemory-model=mem-model` 
   :option:`-m32`  :option:`-m64`  :option:`-mapp-regs`  :option:`-mno-app-regs` 
   :option:`-mfaster-structs`  :option:`-mno-faster-structs`  :option:`-mflat`  :option:`-mno-flat` 
   :option:`-mfpu`  :option:`-mno-fpu`  :option:`-mhard-float`  :option:`-msoft-float` 
@@ -1370,7 +1370,7 @@ in the following sections.
 
   .. program:: System V
 
-  :option:`-Qy`  :option:`-Qn`  :option:`-YP,`:samp:`{paths}`  :option:`-Ym,`:samp:`{dir}`
+  :option:`-Qy`  :option:`-Qn`  :option:`-YP,paths`  :option:`-Ym,dir`
 
   *V850 Options*
 
@@ -1378,7 +1378,7 @@ in the following sections.
 
   :option:`-mlong-calls`  :option:`-mno-long-calls`  :option:`-mep`  :option:`-mno-ep` 
   :option:`-mprolog-function`  :option:`-mno-prolog-function`  :option:`-mspace` 
-  :option:`-mtda`:samp:`={n}`  :option:`-msda`:samp:`={n}`  :option:`-mzda`:samp:`={n}` 
+  :option:`-mtda=n`  :option:`-msda=n`  :option:`-mzda=n` 
   :option:`-mapp-regs`  :option:`-mno-app-regs` 
   :option:`-mdisable-callt`  :option:`-mno-disable-callt` 
   :option:`-mv850e2v3`  :option:`-mv850e2`  :option:`-mv850e1`  :option:`-mv850es` 
@@ -1403,14 +1403,14 @@ in the following sections.
   .. program:: Visium
 
   :option:`-mdebug`  :option:`-msim`  :option:`-mfpu`  :option:`-mno-fpu`  :option:`-mhard-float`  :option:`-msoft-float` 
-  :option:`-mcpu`:samp:`={cpu-type}`  :option:`-mtune`:samp:`={cpu-type}`  :option:`-msv-mode`  :option:`-muser-mode`
+  :option:`-mcpu=cpu-type`  :option:`-mtune=cpu-type`  :option:`-msv-mode`  :option:`-muser-mode`
 
   *VMS Options*
 
   .. program:: VMS
 
-  :option:`-mvms-return-codes`  :option:`-mdebug-main`:samp:`={prefix}`  :option:`-mmalloc64` 
-  :option:`-mpointer-size`:samp:`={size}`
+  :option:`-mvms-return-codes`  :option:`-mdebug-main=prefix`  :option:`-mmalloc64` 
+  :option:`-mpointer-size=size`
 
   *VxWorks Options*
 
@@ -1423,18 +1423,18 @@ in the following sections.
 
   .. program:: x86
 
-  :option:`-mtune`:samp:`={cpu-type}`  :option:`-march`:samp:`={cpu-type}` 
-  :option:`-mtune-ctrl`:samp:`={feature-list}`  :option:`-mdump-tune-features`  :option:`-mno-default` 
-  :option:`-mfpmath`:samp:`={unit}` 
-  :option:`-masm`:samp:`={dialect}`  :option:`-mno-fancy-math-387` 
+  :option:`-mtune=cpu-type`  :option:`-march=cpu-type` 
+  :option:`-mtune-ctrl=feature-list`  :option:`-mdump-tune-features`  :option:`-mno-default` 
+  :option:`-mfpmath=unit` 
+  :option:`-masm=dialect`  :option:`-mno-fancy-math-387` 
   :option:`-mno-fp-ret-in-387`  :option:`-m80387`  :option:`-mhard-float`  :option:`-msoft-float` 
   :option:`-mno-wide-multiply`  :option:`-mrtd`  :option:`-malign-double` 
-  :option:`-mpreferred-stack-boundary`:samp:`={num}` 
-  :option:`-mincoming-stack-boundary`:samp:`={num}` 
+  :option:`-mpreferred-stack-boundary=num` 
+  :option:`-mincoming-stack-boundary=num` 
   :option:`-mcld`  :option:`-mcx16`  :option:`-msahf`  :option:`-mmovbe`  :option:`-mcrc32` :option:`-mmwait` 
-  :option:`-mrecip`  :option:`-mrecip`:samp:`={opt}` 
-  :option:`-mvzeroupper`  :option:`-mprefer-avx128`  :option:`-mprefer-vector-width`:samp:`={opt}` 
-  :option:`-mmove-max`:samp:`={bits}` :option:`-mstore-max`:samp:`={bits}` 
+  :option:`-mrecip`  :option:`-mrecip=opt` 
+  :option:`-mvzeroupper`  :option:`-mprefer-avx128`  :option:`-mprefer-vector-width=opt` 
+  :option:`-mmove-max=bits` :option:`-mstore-max=bits` 
   :option:`-mmmx`  :option:`-msse`  :option:`-msse2`  :option:`-msse3`  :option:`-mssse3`  :option:`-msse4.1`  :option:`-msse4.2`  :option:`-msse4`  :option:`-mavx` 
   :option:`-mavx2`  :option:`-mavx512f`  :option:`-mavx512pf`  :option:`-mavx512er`  :option:`-mavx512cd`  :option:`-mavx512vl` 
   :option:`-mavx512bw`  :option:`-mavx512dq`  :option:`-mavx512ifma`  :option:`-mavx512vbmi`  :option:`-msha`  :option:`-maes` 
@@ -1451,27 +1451,27 @@ in the following sections.
   :option:`-mamx-tile`  :option:`-mamx-int8`  :option:`-mamx-bf16` :option:`-muintr` :option:`-mhreset` :option:`-mavxvnni`
   :option:`-mavx512fp16` 
   :option:`-mcldemote`  :option:`-mms-bitfields`  :option:`-mno-align-stringops`  :option:`-minline-all-stringops` 
-  :option:`-minline-stringops-dynamically`  :option:`-mstringop-strategy`:samp:`={alg}` 
+  :option:`-minline-stringops-dynamically`  :option:`-mstringop-strategy=alg` 
   :option:`-mkl` :option:`-mwidekl` 
-  :option:`-mmemcpy-strategy`:samp:`={strategy}`  :option:`-mmemset-strategy`:samp:`={strategy}` 
+  :option:`-mmemcpy-strategy=strategy`  :option:`-mmemset-strategy=strategy` 
   :option:`-mpush-args`  :option:`-maccumulate-outgoing-args`  :option:`-m128bit-long-double` 
   :option:`-m96bit-long-double`  :option:`-mlong-double-64`  :option:`-mlong-double-80`  :option:`-mlong-double-128` 
-  :option:`-mregparm`:samp:`={num}`  :option:`-msseregparm` 
-  :option:`-mveclibabi`:samp:`={type}`  :option:`-mvect8-ret-in-mem` 
+  :option:`-mregparm=num`  :option:`-msseregparm` 
+  :option:`-mveclibabi=type`  :option:`-mvect8-ret-in-mem` 
   :option:`-mpc32`  :option:`-mpc64`  :option:`-mpc80`  :option:`-mstackrealign` 
   :option:`-momit-leaf-frame-pointer`  :option:`-mno-red-zone`  :option:`-mno-tls-direct-seg-refs` 
-  :option:`-mcmodel`:samp:`={code-model}`  :option:`-mabi`:samp:`={name}`  :option:`-maddress-mode`:samp:`={mode}` 
-  :option:`-m32`  :option:`-m64`  :option:`-mx32`  :option:`-m16`  :option:`-miamcu`  :option:`-mlarge-data-threshold`:samp:`={num}` 
+  :option:`-mcmodel=code-model`  :option:`-mabi=name`  :option:`-maddress-mode=mode` 
+  :option:`-m32`  :option:`-m64`  :option:`-mx32`  :option:`-m16`  :option:`-miamcu`  :option:`-mlarge-data-threshold=num` 
   :option:`-msse2avx`  :option:`-mfentry`  :option:`-mrecord-mcount`  :option:`-mnop-mcount`  :option:`-m8bit-idiv` 
-  :option:`-minstrument-return`:samp:`={type}` :option:`-mfentry-name`:samp:`={name}` :option:`-mfentry-section`:samp:`={name}` 
+  :option:`-minstrument-return=type` :option:`-mfentry-name=name` :option:`-mfentry-section=name` 
   :option:`-mavx256-split-unaligned-load`  :option:`-mavx256-split-unaligned-store` 
-  :option:`-malign-data`:samp:`={type}`  :option:`-mstack-protector-guard`:samp:`={guard}` 
-  :option:`-mstack-protector-guard-reg`:samp:`={reg}` 
-  :option:`-mstack-protector-guard-offset`:samp:`={offset}` 
-  :option:`-mstack-protector-guard-symbol`:samp:`={symbol}` 
+  :option:`-malign-data=type`  :option:`-mstack-protector-guard=guard` 
+  :option:`-mstack-protector-guard-reg=reg` 
+  :option:`-mstack-protector-guard-offset=offset` 
+  :option:`-mstack-protector-guard-symbol=symbol` 
   :option:`-mgeneral-regs-only`  :option:`-mcall-ms2sysv-xlogues` :option:`-mrelax-cmpxchg-loop` 
-  :option:`-mindirect-branch`:samp:`={choice}`  :option:`-mfunction-return`:samp:`={choice}` 
-  :option:`-mindirect-branch-register` :option:`-mharden-sls`:samp:`={choice}` 
+  :option:`-mindirect-branch=choice`  :option:`-mfunction-return=choice` 
+  :option:`-mindirect-branch-register` :option:`-mharden-sls=choice` 
   :option:`-mindirect-branch-cs-prefix` :option:`-mneeded` :option:`-mno-direct-extern-access`
 
   *x86 Windows Options*
@@ -1500,8 +1500,8 @@ in the following sections.
   :option:`-mauto-litpools`  :option:`-mno-auto-litpools` 
   :option:`-mtarget-align`  :option:`-mno-target-align` 
   :option:`-mlongcalls`  :option:`-mno-longcalls` 
-  :option:`-mabi`:samp:`={abi-type}` 
-  :option:`-mextra-l32r-costs`:samp:`={cycles}`
+  :option:`-mabi=abi-type` 
+  :option:`-mextra-l32r-costs=cycles`
 
   *zSeries Options*
   See S/390 and zSeries Options.

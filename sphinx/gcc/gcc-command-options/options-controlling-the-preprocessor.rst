@@ -31,7 +31,7 @@ Options to control preprocessor diagnostics are listed in
 
 .. option:: -Wp,option
 
-  You can use :option:`-Wp,`:samp:`{option}` to bypass the compiler driver
+  You can use :option:`-Wp,option` to bypass the compiler driver
   and pass :samp:`{option}` directly through to the preprocessor.  If
   :samp:`{option}` contains commas, it is split into multiple options at the
   commas.  However, many options are modified, translated or interpreted

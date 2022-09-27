@@ -50,7 +50,7 @@ the :gcc-attr:`unused` attribute for method arguments, the
 ``@package`` keyword for instance variables and the ``@optional`` and
 ``@required`` keywords in protocols.  You can disable all these
 Objective-C 2.0 language extensions with the option
-:option:`-fobjc-std`:samp:`=objc1`, which causes the compiler to recognize the
+:option:`-fobjc-std=objc1`, which causes the compiler to recognize the
 same Objective-C language syntax recognized by GCC 4.0, and to produce
 an error if one of the new features is used.
 
