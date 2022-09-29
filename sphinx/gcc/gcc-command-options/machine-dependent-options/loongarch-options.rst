@@ -17,19 +17,19 @@ These command-line options are defined for LoongArch targets:
 .. option:: -march={cpu-type}
 
   Generate instructions for the machine type :samp:`{cpu-type}`.  In contrast to
-  :option:`-mtune`:samp:`={cpu-type}`, which merely tunes the generated code
-  for the specified :samp:`{cpu-type}`, :option:`-march`:samp:`={cpu-type}` allows GCC
+  :option:`-mtune=cpu-type`, which merely tunes the generated code
+  for the specified :samp:`{cpu-type}`, :option:`-march=cpu-type` allows GCC
   to generate code that may not run at all on processors other than the one
-  indicated.  Specifying :option:`-march`:samp:`={cpu-type}` implies
-  :option:`-mtune`:samp:`={cpu-type}`, except where noted otherwise.
+  indicated.  Specifying :option:`-march=cpu-type` implies
+  :option:`-mtune=cpu-type`, except where noted otherwise.
 
   The choices for :samp:`{cpu-type}` are:
 
   :samp:`native`
     This selects the CPU to generate code for at compilation time by determining
-    the processor type of the compiling machine.  Using :option:`-march`:samp:`=native`
+    the processor type of the compiling machine.  Using :option:`-march=native`
     enables all instruction subsets supported by the local machine (hence
-    the result might not run on different machines).  Using :option:`-mtune`:samp:`=native`
+    the result might not run on different machines).  Using :option:`-mtune=native`
     produces code optimized for the local machine under the constraints
     of the selected instruction set.
 
@@ -82,19 +82,19 @@ These command-line options are defined for LoongArch targets:
 
 .. option:: -msoft-float
 
-  Force :option:`-mfpu`:samp:`=none` and prevents the use of floating-point
+  Force :option:`-mfpu=none` and prevents the use of floating-point
   registers for parameter passing.  This option may change the target
   ABI.
 
 .. option:: -msingle-float
 
-  Force :option:`-mfpu`:samp:`=32` and allow the use of 32-bit floating-point
+  Force :option:`-mfpu=32` and allow the use of 32-bit floating-point
   registers for parameter passing.  This option may change the target
   ABI.
 
 .. option:: -mdouble-float
 
-  Force :option:`-mfpu`:samp:`=64` and allow the use of 32/64-bit floating-point
+  Force :option:`-mfpu=64` and allow the use of 32/64-bit floating-point
   registers for parameter passing.  This option may change the target
   ABI.
 
@@ -161,7 +161,7 @@ These command-line options are defined for LoongArch targets:
 
   :samp:`extreme`
     This mode does not limit the size of the code segment and data segment.
-    The :option:`-mcmodel`:samp:`=extreme` option is incompatible with :option:`-fplt` and
+    The :option:`-mcmodel=extreme` option is incompatible with :option:`-fplt` and
     :option:`-mno-explicit-relocs`.
 
   The default code model is ``normal``.

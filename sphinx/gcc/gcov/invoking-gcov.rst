@@ -324,7 +324,7 @@ allow gcov to properly show their :samp:`{execution_count}`.
 Some lines of information at the start have :samp:`{line_number}` of zero.
 These preamble lines are of the form
 
-:option:`-:0:`:samp:`{tag}` : :samp:`{value}`
+:option:`-:0:tag` : :samp:`{value}`
 The ordering and number of these preamble lines will be augmented as
 :command:`gcov` development progresses --- do not rely on them remaining
 unchanged.  Use :samp:`{tag}` to locate a particular preamble line.

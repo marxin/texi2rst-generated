@@ -243,8 +243,8 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
   The location and the names of auxiliary and dump outputs can be adjusted
   by the options :option:`-dumpbase`, :option:`-dumpbase-ext`,
-  :option:`-dumpdir`, :option:`-save-temps`:samp:`=cwd`, and
-  :option:`-save-temps`:samp:`=obj`.
+  :option:`-dumpdir`, :option:`-save-temps=cwd`, and
+  :option:`-save-temps=obj`.
 
 .. option:: -dumpbase {dumpbase}
 
@@ -281,7 +281,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
   If :samp:`{dumpbase}` is explicitly specified with any directory component,
   any :samp:`{dumppfx}` specification (e.g. :option:`-dumpdir` or
-  :option:`-save-temps`:samp:`=*`) is ignored, and instead of appending to it,
+  :option:`-save-temps=*`) is ignored, and instead of appending to it,
   :samp:`{dumpbase}` fully overrides it:
 
   .. code-block:: shell
@@ -291,7 +291,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
   creates auxiliary and dump outputs named :samp:`alt/foo.*`, disregarding
   :samp:`dir/` in :option:`-o`, the :samp:`./` prefix implied by
-  :option:`-save-temps`:samp:`=cwd`, and :samp:`pfx-` in :option:`-dumpdir`.
+  :option:`-save-temps=cwd`, and :samp:`pfx-` in :option:`-dumpdir`.
 
   When :option:`-dumpbase` is specified in a command that compiles multiple
   inputs, or that compiles and then links, it may be combined with
@@ -396,7 +396,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
   It defaults to the location of the output file, unless the output
   file is a special file like ``/dev/null``. Options
-  :option:`-save-temps`:samp:`=cwd` and :option:`-save-temps`:samp:`=obj` override this
+  :option:`-save-temps=cwd` and :option:`-save-temps=obj` override this
   default, just like an explicit :option:`-dumpdir` option.  In case
   multiple such options are given, the last one prevails:
 
@@ -405,8 +405,8 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
     gcc -dumpdir pfx- -c foo.c -save-temps=obj ...
 
   outputs :samp:`foo.o`, with auxiliary outputs named :samp:`foo.*` because
-  :option:`-save-temps`:samp:`=*` overrides the :samp:`{dumppfx}` given by the earlier
-  :option:`-dumpdir` option.  It does not matter that :samp:`=obj` is the
+  :option:`-save-temps=*` overrides the :samp:`{dumppfx}` given by the earlier
+  :option:`-dumpdir` option.  It does not matter that =obj is the
   default for :option:`-save-temps`, nor that the output directory is
   implicitly the current directory.  Dump outputs are named
   :samp:`foo.c.*`.
@@ -460,7 +460,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   above if it does not share the base name with the single input file
   name.  This has been covered in single-input linking cases above, but
   not with an explicit :option:`-dumpdir` that inhibits the combination,
-  even if overridden by :option:`-save-temps`:samp:`=*`:
+  even if overridden by :option:`-save-temps=*` :
 
   .. code-block:: shell
 
@@ -468,12 +468,12 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
   Auxiliary outputs are named :samp:`foo.*`, and dump outputs
   :samp:`foo.c.*`, in the current working directory as ultimately requested
-  by :option:`-save-temps`:samp:`=cwd`.
+  by :option:`-save-temps=cwd`.
 
   Summing it all up for an intuitive though slightly imprecise data flow:
   the primary output name is broken into a directory part and a basename
   part; :samp:`{dumppfx}` is set to the former, unless overridden by
-  :option:`-dumpdir` or :option:`-save-temps`:samp:`=*`, and :samp:`{dumpbase}` is set
+  :option:`-dumpdir` or :option:`-save-temps=*`, and :samp:`{dumpbase}` is set
   to the latter, unless overriden by :option:`-dumpbase`.  If there are
   multiple inputs or linking, this :samp:`{dumpbase}` may be combined with
   :samp:`{dumppfx}` and taken from each input file.  Auxiliary output names
@@ -541,7 +541,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
     Display target-specific options.  Unlike the
     :option:`--target-help` option however, target-specific options of the
     linker and assembler are not displayed.  This is because those
-    tools do not currently support the extended :option:`--help` = syntax.
+    tools do not currently support the extended :option:`--help=` syntax.
 
   params
     Display the values recognized by the :option:`--param`
@@ -573,16 +573,14 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   Thus for example to display all the undocumented target-specific
   switches supported by the compiler, use:
 
-  :option:`--help`:samp:`=target,undocumented`
-
+  :option:`--help=target,undocumented`
   The sense of a qualifier can be inverted by prefixing it with the
   :samp:`^` character, so for example to display all binary warning
   options (i.e., ones that are either on or off and that do not take an
   argument) that have a description, use:
 
-  :option:`--help`:samp:`=warnings,^joined,^undocumented`
-
-  The argument to :option:`--help`:samp:`=` should not consist solely of inverted
+  :option:`--help=warnings,^joined,^undocumented`
+  The argument to :option:`--help=` should not consist solely of inverted
   qualifiers.
 
   Combining several classes is possible, although this usually
@@ -591,20 +589,19 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   :samp:`{target}`.  For example, to display all the target-specific
   optimization options, use:
 
-  :option:`--help`:samp:`=target,optimizers`
-
-  The :option:`--help` = option can be repeated on the command line.  Each
+  :option:`--help=target,optimizers`
+  The :option:`--help=` option can be repeated on the command line.  Each
   successive use displays its requested class of options, skipping
   those that have already been displayed.  If :option:`--help` is also
   specified anywhere on the command line then this takes precedence
-  over any :option:`--help`:samp:`=` option.
+  over any :option:`--help=` option.
 
   If the :option:`-Q` option appears on the command line before the
-  :option:`--help`:samp:`=` option, then the descriptive text displayed by
-  :option:`--help`:samp:`=` is changed.  Instead of describing the displayed
+  :option:`--help=` option, then the descriptive text displayed by
+  :option:`--help=` is changed.  Instead of describing the displayed
   options, an indication is given as to whether the option is enabled,
   disabled or set to a specific value (assuming that the compiler
-  knows this at the point where the :option:`--help` = option is used).
+  knows this at the point where the :option:`--help=` option is used).
 
   Here is a truncated example from the ARM port of :command:`gcc`:
 
@@ -620,8 +617,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   options, so for example it is possible to find out which optimizations
   are enabled at :option:`-O2` by using:
 
-  :option:`-Q` :option:`-O2` :option:`--help`:samp:`=optimizers`
-
+  :option:`-Q` :option:`-O2` :option:`--help=optimizers`
   Alternatively you can discover which binary optimizations are enabled
   by :option:`-O3` by using:
 
@@ -657,7 +653,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   file, in order to override the defaults which the :command:`gcc` driver
   program uses when determining what switches to pass to :command:`cc1`,
   :command:`cc1plus`, :command:`as`, :command:`ld`, etc.  More than one
-  :option:`-specs`:samp:`={file}` can be specified on the command line, and they
+  :option:`-specs=file` can be specified on the command line, and they
   are processed in order, from left to right.  See :ref:`spec-files`, for
   information about the format of the :samp:`{file}`.
 
@@ -692,7 +688,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
   shared object to be dlopen'd by the compiler.  The base name of
   the shared object file is used to identify the plugin for the
   purposes of argument parsing (See
-  :option:`-fplugin-arg-`:samp:`{name}` - :samp:`{key}` = :samp:`{value}` below).
+  :option:`-fplugin-arg-name-key=value` below).
   Each plugin should define the callback functions specified in the
   Plugins API.
 
@@ -708,7 +704,7 @@ one of the options :option:`-c`, :option:`-S`, or :option:`-E` to say where
 
 .. option:: -fada-spec-parent={unit}
 
-  In conjunction with :option:`-fdump-ada-spec` [-slim] above, generate
+  In conjunction with :option:`-fdump-ada-spec[-slim]` above, generate
   Ada specs as child units of parent :samp:`{unit}`.
 
 .. option:: -fdump-go-spec={file}

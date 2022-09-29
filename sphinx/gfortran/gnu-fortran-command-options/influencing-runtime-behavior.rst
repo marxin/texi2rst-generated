@@ -22,14 +22,14 @@ These options affect the runtime behavior of programs compiled with GNU Fortran.
   big-endian representation for unformatted files; :samp:`little-endian`, use
   little-endian representation for unformatted files.
 
-  On POWER systems which suppport :option:`-mabi`:samp:`=ieeelongdouble`,
+  On POWER systems which suppport :option:`-mabi=ieeelongdouble`,
   there are additional options, which can be combined with others with
   commas.  Those are
 
-  * :option:`-fconvert`:samp:`=r16_ieee` Use IEEE 128-bit format for
+  * :option:`-fconvert=r16_ieee` Use IEEE 128-bit format for
     ``REAL(KIND=16)``.
 
-  * :option:`-fconvert`:samp:`=r16_ibm` Use IBM long double format for
+  * :option:`-fconvert=r16_ibm` Use IBM long double format for
     ``REAL(KIND=16)``.
 
   This option has an effect only when used in the main program.
@@ -45,7 +45,7 @@ These options affect the runtime behavior of programs compiled with GNU Fortran.
   This is different from previous versions of :command:`gfortran`,
   which specified a default record marker length of 8 on most
   systems.  If you want to read or write files compatible
-  with earlier versions of :command:`gfortran`, use :option:`-frecord-marker`:samp:`=8`.
+  with earlier versions of :command:`gfortran`, use :option:`-frecord-marker=8`.
 
 .. index:: fmax-subrecord-length=length
 

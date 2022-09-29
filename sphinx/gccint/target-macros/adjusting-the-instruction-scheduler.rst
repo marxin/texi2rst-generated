@@ -42,7 +42,7 @@ them: try the first ones in this list first.
   than others, so that fewer insns can follow them in the same cycle.
   :samp:`{file}` is either a null pointer, or a stdio stream to write any
   debug output to.  :samp:`{verbose}` is the verbose level provided by
-  :option:`-fsched-verbose-`:samp:`{n}`.  :samp:`{insn}` is the instruction that
+  :option:`-fsched-verbose-n`.  :samp:`{insn}` is the instruction that
   was scheduled.
 
 .. hook-end
@@ -87,7 +87,7 @@ them: try the first ones in this list first.
   combine two small instructions together on :samp:`VLIW` machines).
   :samp:`{file}` is either a null pointer, or a stdio stream to write any
   debug output to.  :samp:`{verbose}` is the verbose level provided by
-  :option:`-fsched-verbose-`:samp:`{n}`.  :samp:`{ready}` is a pointer to the ready
+  :option:`-fsched-verbose-n`.  :samp:`{ready}` is a pointer to the ready
   list of instructions that are ready to be scheduled.  :samp:`{n_readyp}` is
   a pointer to the number of elements in the ready list.  The scheduler
   reads the ready list in reverse order, starting with
@@ -156,7 +156,7 @@ them: try the first ones in this list first.
   This hook is executed by the scheduler at the beginning of each block of
   instructions that are to be scheduled.  :samp:`{file}` is either a null
   pointer, or a stdio stream to write any debug output to.  :samp:`{verbose}`
-  is the verbose level provided by :option:`-fsched-verbose-`:samp:`{n}`.
+  is the verbose level provided by :option:`-fsched-verbose-n`.
   :samp:`{max_ready}` is the maximum number of insns in the current scheduling
   region that can be live at the same time.  This can be used to allocate
   scratch space if it is needed, e.g. by :samp:`TARGET_SCHED_REORDER`.
@@ -172,7 +172,7 @@ them: try the first ones in this list first.
   cleanup of any actions done by the other scheduling hooks.  :samp:`{file}`
   is either a null pointer, or a stdio stream to write any debug output
   to.  :samp:`{verbose}` is the verbose level provided by
-  :option:`-fsched-verbose-`:samp:`{n}`.
+  :option:`-fsched-verbose-n`.
 
 .. hook-end
 
@@ -182,7 +182,7 @@ them: try the first ones in this list first.
 
   This hook is executed by the scheduler after function level initializations.
   :samp:`{file}` is either a null pointer, or a stdio stream to write any debug output to.
-  :samp:`{verbose}` is the verbose level provided by :option:`-fsched-verbose-`:samp:`{n}`.
+  :samp:`{verbose}` is the verbose level provided by :option:`-fsched-verbose-n`.
   :samp:`{old_max_uid}` is the maximum insn uid when scheduling begins.
 
 .. hook-end
@@ -193,7 +193,7 @@ them: try the first ones in this list first.
 
   This is the cleanup hook corresponding to ``TARGET_SCHED_INIT_GLOBAL``.
   :samp:`{file}` is either a null pointer, or a stdio stream to write any debug output to.
-  :samp:`{verbose}` is the verbose level provided by :option:`-fsched-verbose-`:samp:`{n}`.
+  :samp:`{verbose}` is the verbose level provided by :option:`-fsched-verbose-n`.
 
 .. hook-end
 

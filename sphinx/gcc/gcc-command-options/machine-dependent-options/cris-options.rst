@@ -26,7 +26,7 @@ These options are defined specifically for the CRIS ports.
   Tune to :samp:`{architecture-type}` everything applicable about the generated
   code, except for the ABI and the set of available instructions.  The
   choices for :samp:`{architecture-type}` are the same as for
-  :option:`-march`:samp:`={architecture-type}`.
+  :option:`-march=architecture-type`.
 
 .. option:: -mmax-stack-frame={n}
 
@@ -35,7 +35,7 @@ These options are defined specifically for the CRIS ports.
 .. option:: -metrax4, -metrax100
 
   The options :option:`-metrax4` and :option:`-metrax100` are synonyms for
-  :option:`-march`:samp:`=v3` and :option:`-march`:samp:`=v8` respectively.
+  :option:`-march=v3` and :option:`-march=v8` respectively.
 
 .. option:: -mmul-bug-workaround, -mno-mul-bug-workaround
 

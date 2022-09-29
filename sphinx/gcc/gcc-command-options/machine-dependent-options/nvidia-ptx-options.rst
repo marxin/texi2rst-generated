@@ -34,14 +34,14 @@ These options are defined for Nvidia PTX:
 
 .. option:: -misa={architecture-string}
 
-  Alias of :option:`-march` =.
+  Alias of :option:`-march=`.
 
 .. option:: -march-map={architecture-string}
 
-  Select the closest available :option:`-march` = value that is not more
-  capable.  For instance, for :option:`-march-map`:samp:`=sm_50` select
-  :option:`-march`:samp:`=sm_35`, and for :option:`-march-map`:samp:`=sm_53` select
-  :option:`-march`:samp:`=sm_53`.
+  Select the closest available :option:`-march=` value that is not more
+  capable.  For instance, for :option:`-march-map=sm_50` select
+  :option:`-march=sm_35`, and for :option:`-march-map=sm_53` select
+  :option:`-march=sm_53`.
 
 .. option:: -mptx={version-string}
 
@@ -49,7 +49,7 @@ These options are defined for Nvidia PTX:
   Valid version strings include :samp:`3.1`, :samp:`6.0`, :samp:`6.3`, and
   :samp:`7.0`.  The default PTX ISA version is 6.0, unless a higher
   version is required for specified PTX ISA target architecture via
-  option :option:`-march` =.
+  option :option:`-march=`.
 
   This option sets the values of the preprocessor macros
   ``__PTX_ISA_VERSION_MAJOR__`` and ``__PTX_ISA_VERSION_MINOR__`` ;

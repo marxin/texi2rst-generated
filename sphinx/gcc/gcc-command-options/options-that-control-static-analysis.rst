@@ -478,7 +478,7 @@ Options That Control Static Analysis
 .. option:: -Wno-analyzer-tainted-allocation-size
 
   This warning requires both :option:`-fanalyzer` and
-  :option:`-fanalyzer-checker`:samp:`=taint` to enable it;
+  :option:`-fanalyzer-checker=taint` to enable it;
   use :option:`-Wno-analyzer-tainted-allocation-size` to disable it.
 
   This diagnostic warns for paths through the code in which a value
@@ -496,7 +496,7 @@ Options That Control Static Analysis
 .. option:: -Wno-analyzer-tainted-array-index
 
   This warning requires both :option:`-fanalyzer` and
-  :option:`-fanalyzer-checker`:samp:`=taint` to enable it;
+  :option:`-fanalyzer-checker=taint` to enable it;
   use :option:`-Wno-analyzer-tainted-array-index` to disable it.
 
   This diagnostic warns for paths through the code in which a value
@@ -513,7 +513,7 @@ Options That Control Static Analysis
 .. option:: -Wno-analyzer-tainted-divisor
 
   This warning requires both :option:`-fanalyzer` and
-  :option:`-fanalyzer-checker`:samp:`=taint` to enable it;
+  :option:`-fanalyzer-checker=taint` to enable it;
   use :option:`-Wno-analyzer-tainted-divisor` to disable it.
 
   This diagnostic warns for paths through the code in which a value
@@ -530,7 +530,7 @@ Options That Control Static Analysis
 .. option:: -Wno-analyzer-tainted-offset
 
   This warning requires both :option:`-fanalyzer` and
-  :option:`-fanalyzer-checker`:samp:`=taint` to enable it;
+  :option:`-fanalyzer-checker=taint` to enable it;
   use :option:`-Wno-analyzer-tainted-offset` to disable it.
 
   This diagnostic warns for paths through the code in which a value
@@ -547,7 +547,7 @@ Options That Control Static Analysis
 .. option:: -Wno-analyzer-tainted-size
 
   This warning requires both :option:`-fanalyzer` and
-  :option:`-fanalyzer-checker`:samp:`=taint` to enable it;
+  :option:`-fanalyzer-checker=taint` to enable it;
   use :option:`-Wno-analyzer-tainted-size` to disable it.
 
   This diagnostic warns for paths through the code in which a value
@@ -821,7 +821,7 @@ The following options control the analyzer.
 
   .. note::
 
-    Currently, :option:`-fanalyzer-checker`:samp:`=taint` disables the
+    Currently, :option:`-fanalyzer-checker=taint` disables the
     following warnings from :option:`-fanalyzer` :
 
     :option:`-Wanalyzer-double-fclose` |gol|

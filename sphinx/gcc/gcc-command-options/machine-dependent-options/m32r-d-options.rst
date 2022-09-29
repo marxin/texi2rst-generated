@@ -81,7 +81,7 @@ These :option:`-m` options are defined for Renesas M32R/D architectures:
   The :option:`-msdata` option must be set to one of :samp:`sdata` or :samp:`use`
   for this option to have any effect.
 
-  All modules should be compiled with the same :option:`-G` :samp:`{num}` value.
+  All modules should be compiled with the same :option:`-G num` value.
   Compiling with different values of :samp:`{num}` may or may not work; if it
   doesn't the linker gives an error message---incorrect code is not
   generated.

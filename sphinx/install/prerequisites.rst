@@ -70,7 +70,7 @@ Tools/packages necessary for building GCC
 
   Note that :command:`configure` does not test whether the GNAT installation works
   and has a sufficiently recent version; if too old a GNAT version is
-  installed and :option:`--enable-languages`:samp:`=ada` is used, the build will fail.
+  installed and :option:`--enable-languages=ada` is used, the build will fail.
 
   :envvar:`ADA_INCLUDE_PATH` and :envvar:`ADA_OBJECT_PATH` environment variables
   must not be set when building the Ada compiler, the Ada tools, or the
@@ -98,7 +98,7 @@ Tools/packages necessary for building GCC
   and has a sufficiently recent version.  Though the implementation of the D
   front end does not make use of any GDC-specific extensions, or novel features
   of the D language, if too old a GDC version is installed and
-  :option:`--enable-languages`:samp:`=d` is used, the build will fail.
+  :option:`--enable-languages=d` is used, the build will fail.
 
   On some targets, :samp:`libphobos` isn't enabled by default, but compiles
   and works if :option:`--enable-libphobos` is used.  Specifics are

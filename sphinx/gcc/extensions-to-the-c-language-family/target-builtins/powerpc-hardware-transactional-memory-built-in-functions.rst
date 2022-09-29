@@ -19,7 +19,7 @@ PowerPC HTM Low Level Built-in Functions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following low level built-in functions are available with
-:option:`-mhtm` or :option:`-mcpu`:samp:`=CPU` where CPU is 'power8' or later.
+:option:`-mhtm` or :option:`-mcpu=CPU` where CPU is 'power8' or later.
 They all generate the machine instruction that is part of the name.
 
 The HTM builtins (with the exception of ``__builtin_tbegin``) return
@@ -162,7 +162,7 @@ PowerPC HTM High Level Inline Functions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following high level HTM interface is made available by including
-``<htmxlintrin.h>`` and using :option:`-mhtm` or :option:`-mcpu`:samp:`=CPU`
+``<htmxlintrin.h>`` and using :option:`-mhtm` or :option:`-mcpu=CPU`
 where CPU is 'power8' or later.  This interface is common between PowerPC
 and S/390, allowing users to write one HTM source implementation that
 can be compiled and executed on either system.

@@ -36,7 +36,7 @@ the modes are the same as for the ``CONVERT`` specifier:
 
 * ``BIG_ENDIAN`` Use the big-endian format for unformatted files.
 
-For POWER systems which support :option:`-mabi`:samp:`=ieeelongdouble`,
+For POWER systems which support :option:`-mabi=ieeelongdouble`,
 there are additional options, which can be combined with the
 others with commas. Those are
 

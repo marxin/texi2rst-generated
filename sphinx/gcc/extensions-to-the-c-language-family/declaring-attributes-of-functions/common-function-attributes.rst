@@ -993,7 +993,7 @@ The following attributes are supported on most targets.
 
   The :fn-attr:`no_sanitize_address` attribute on functions is used
   to inform the compiler that it should not instrument memory accesses
-  in the function when compiling with the :option:`-fsanitize`:samp:`=address` option.
+  in the function when compiling with the :option:`-fsanitize=address` option.
   The ``no_address_safety_analysis`` is a deprecated alias of the
   :fn-attr:`no_sanitize_address` attribute, new code should use
   :fn-attr:`no_sanitize_address`.
@@ -1004,7 +1004,7 @@ The following attributes are supported on most targets.
 
   The :fn-attr:`no_sanitize_thread` attribute on functions is used
   to inform the compiler that it should not instrument memory accesses
-  in the function when compiling with the :option:`-fsanitize`:samp:`=thread` option.
+  in the function when compiling with the :option:`-fsanitize=thread` option.
 
 .. index:: no_sanitize_undefined function attribute
 
@@ -1012,7 +1012,7 @@ The following attributes are supported on most targets.
 
   The :fn-attr:`no_sanitize_undefined` attribute on functions is used
   to inform the compiler that it should not check for undefined behavior
-  in the function when compiling with the :option:`-fsanitize`:samp:`=undefined` option.
+  in the function when compiling with the :option:`-fsanitize=undefined` option.
 
 .. index:: no_sanitize_coverage function attribute
 
@@ -1266,13 +1266,13 @@ The following attributes are supported on most targets.
   The :fn-attr:`patchable_function_entry` function attribute can be used to
   change the number of NOPs to any desired value.  The two-value syntax
   is the same as for the command-line switch
-  :option:`-fpatchable-function-entry`:samp:`=N,M`, generating :samp:`{N}` NOPs, with
+  :option:`-fpatchable-function-entry=N,M`, generating :samp:`{N}` NOPs, with
   the function entry point before the :samp:`{M}` th NOP instruction.
   :samp:`{M}` defaults to 0 if omitted e.g. function entry point is before
   the first NOP.
 
   If patchable function entries are enabled globally using the command-line
-  option :option:`-fpatchable-function-entry`:samp:`=N,M`, then you must disable
+  option :option:`-fpatchable-function-entry=N,M`, then you must disable
   instrumentation on all functions that are part of the instrumentation
   framework with the attribute ``patchable_function_entry (0)``
   to prevent recursion.
@@ -1463,8 +1463,8 @@ The following attributes are supported on most targets.
   ``target("sse4.1,arch=core2")`` attribute and another with
   ``target("sse4a,arch=amdfam10")``.  This is equivalent to
   compiling the first function with :option:`-msse4.1` and
-  :option:`-march`:samp:`=core2` options, and the second function with
-  :option:`-msse4a` and :option:`-march`:samp:`=amdfam10` options.  It is up to you
+  :option:`-march=core2` options, and the second function with
+  :option:`-msse4a` and :option:`-march=amdfam10` options.  It is up to you
   to make sure that a function is only invoked on a machine that
   supports the particular ISA it is compiled for (for example by using
   ``cpuid`` on x86 to determine what feature bits and architecture
@@ -1553,7 +1553,7 @@ The following attributes are supported on most targets.
   arguments.
 
   The analyzer will pay particular attention to such functions when both
-  :option:`-fanalyzer` and :option:`-fanalyzer-checker`:samp:`=taint` are supplied,
+  :option:`-fanalyzer` and :option:`-fanalyzer-checker=taint` are supplied,
   potentially issuing warnings guarded by
   :option:`-Wanalyzer-tainted-allocation-size`,
   :option:`-Wanalyzer-tainted-array-index`,
@@ -1576,7 +1576,7 @@ The following attributes are supported on most targets.
 
   On a PowerPC, you can compile a function with
   ``target_clones("cpu=power9,default")``.  GCC will create two
-  function clones, one compiled with :option:`-mcpu`:samp:`=power9` and another
+  function clones, one compiled with :option:`-mcpu=power9` and another
   with the default options.  GCC must be configured to use GLIBC 2.23 or
   newer in order to use the ``target_clones`` attribute.
 

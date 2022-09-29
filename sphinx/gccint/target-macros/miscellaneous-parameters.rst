@@ -1600,7 +1600,7 @@ Here are several miscellaneous parameters.
   .. hook-start:TARGET_MEMTAG_CAN_TAG_ADDRESSES
 
   True if the backend architecture naturally supports ignoring some region
-  of pointers.  This feature means that :option:`-fsanitize`:samp:`=hwaddress` can
+  of pointers.  This feature means that :option:`-fsanitize=hwaddress` can
   work.
 
   At preset, this feature does not support address spaces.  It also requires
@@ -1701,7 +1701,7 @@ Here are several miscellaneous parameters.
   counters incremented by profiling and code-coverage events.  The default
   value is 64, if the type size of long long is greater than 32, otherwise the
   default value is 32.  A 64-bit type is recommended to avoid overflows of the
-  counters.  If the :option:`-fprofile-update`:samp:`=atomic` is used, then the
+  counters.  If the :option:`-fprofile-update=atomic` is used, then the
   counters are incremented using atomic operations.  Targets not supporting
   64-bit atomic operations may override the default value and request a 32-bit
   type.
@@ -1713,6 +1713,6 @@ Here are several miscellaneous parameters.
   .. hook-start:TARGET_HAVE_SHADOW_CALL_STACK
 
   This value is true if the target platform supports
-  :option:`-fsanitize`:samp:`=shadow-call-stack`.  The default value is false.
+  :option:`-fsanitize=shadow-call-stack`.  The default value is false.
 
 .. hook-end

@@ -26,7 +26,7 @@ In addition to the many :command:`gcc` options controlling code generation,
   .. index:: -Hd
 
   Same as :option:`-H`, but writes interface files to directory :samp:`{dir}`.
-  This option can be used with :option:`-Hf `:samp:`{file}` to independently set the
+  This option can be used with :option:`-Hf file` to independently set the
   output file and directory path.
 
 .. option:: -Hf file
@@ -34,7 +34,7 @@ In addition to the many :command:`gcc` options controlling code generation,
   .. index:: -Hf
 
   Same as :option:`-H` but writes interface files to :samp:`{file}`.  This option can
-  be used with :option:`-Hd` :samp:`{dir}` to independently set the output file and
+  be used with :option:`-Hd dir` to independently set the output file and
   directory path.
 
 .. option:: -M
@@ -95,7 +95,7 @@ In addition to the many :command:`gcc` options controlling code generation,
 
   .. index:: -MD
 
-  This option is equivalent to :option:`-M -MF` :samp:`{file}`.  The driver
+  This option is equivalent to :option:`-M -MF file`.  The driver
   determines :samp:`{file}` by removing any directory components and suffix
   from the input file, and then adding a :samp:`.deps` suffix.
 
@@ -135,7 +135,7 @@ In addition to the many :command:`gcc` options controlling code generation,
   .. index:: -fdoc-dir
 
   Same as :option:`-fdoc`, but writes documentation to directory :samp:`{dir}`.
-  This option can be used with :option:`-fdoc-file`:samp:`={file}` to
+  This option can be used with :option:`-fdoc-file=file` to
   independently set the output file and directory path.
 
 .. option:: -fdoc-file=file
@@ -143,7 +143,7 @@ In addition to the many :command:`gcc` options controlling code generation,
   .. index:: -fdoc-file
 
   Same as :option:`-fdoc`, but writes documentation to :samp:`{file}`.  This
-  option can be used with :option:`-fdoc-dir`:samp:`={dir}` to independently
+  option can be used with :option:`-fdoc-dir=dir` to independently
   set the output file and directory path.
 
 .. option:: -fdoc-inc=file
@@ -159,8 +159,8 @@ In addition to the many :command:`gcc` options controlling code generation,
   For D source files, generate corresponding C++ declarations in :samp:`{file}`.
 
 .. option:: -fdump-c++-spec-verbose
-
-  In conjunction with :option:`-fdump-c++-spec` = above, add comments for ignored
+  
+  In conjunction with :option:`-fdump-c++-spec=` above, add comments for ignored
   declarations in the generated C++ header.
 
 .. option:: -fsave-mixins={file}

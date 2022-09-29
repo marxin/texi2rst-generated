@@ -110,9 +110,9 @@
     is to use exactly the same options when generating and using the
     precompiled header.  The following are known to be safe:
 
-    :option:`-fmessage-length` =  :option:`-fpreprocessed`  :option:`-fsched-interblock` |gol|
+    :option:`-fmessage-length=`  :option:`-fpreprocessed`  :option:`-fsched-interblock` |gol|
     :option:`-fsched-spec`  :option:`-fsched-spec-load`  :option:`-fsched-spec-load-dangerous` |gol|
-    :option:`-fsched-verbose`:samp:`={number}`  :option:`-fschedule-insns`  :option:`-fvisibility` |gol|
+    :option:`-fsched-verbose=number`  :option:`-fschedule-insns`  :option:`-fvisibility=` |gol|
     :option:`-pedantic-errors`
 
   * Address space layout randomization (ASLR) can lead to not binary identical

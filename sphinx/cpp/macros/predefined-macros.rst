@@ -134,7 +134,7 @@ with ``__FILE__`` and ``__LINE__``, though.
   ``201710L`` signifies the 2017 revision of the C standard (which is
   otherwise identical to the 2011 version apart from correction of
   defects).  An unspecified value larger than ``201710L`` is used for
-  the experimental :option:`-std`:samp:`=c2x` and :option:`-std`:samp:`=gnu2x` modes.
+  the experimental :option:`-std=c2x` and :option:`-std=gnu2x` modes.
 
   This macro is not defined if the :option:`-traditional-cpp` option is
   used, nor when compiling C++ or Objective-C.
@@ -158,8 +158,8 @@ with ``__FILE__`` and ``__LINE__``, though.
   ``201703L`` for the 2017 C++ standard,
   ``202002L`` for the 2020 C++ standard,
   or an unspecified value strictly larger than ``202002L`` for the
-  experimental languages enabled by :option:`-std`:samp:`=c++23` and
-  :option:`-std`:samp:`=gnu++23`.
+  experimental languages enabled by :option:`-std=c++23` and
+  :option:`-std=gnu++23`.
 
 .. c:macro:: __OBJC__
 
@@ -598,8 +598,8 @@ double underscores.
 .. c:macro:: __GXX_EXPERIMENTAL_CXX0X__
 
   This macro is defined when compiling a C++ source file with C++11 features
-  enabled, i.e., for all C++ language dialects except :option:`-std`:samp:`=c++98`
-  and :option:`-std`:samp:`=gnu++98`. This macro is obsolete, but can be used to
+  enabled, i.e., for all C++ language dialects except :option:`-std=c++98`
+  and :option:`-std=gnu++98`. This macro is obsolete, but can be used to
   detect experimental C++0x features in very old versions of GCC. Since
   GCC 4.7.0 the ``__cplusplus`` macro is defined correctly, so most
   code should test ``__cplusplus >= 201103L`` instead of using this
@@ -650,14 +650,12 @@ double underscores.
   This macro is defined, with value 4, when :option:`-fstack-protector-explicit` is
   in use.
 
-.. c:macro:: __SANITIZE_ADDRESS__
+``__SANITIZE_ADDRESS__``
+  This macro is defined, with value 1, when :option:`-fsanitize=address`
+  or :option:`-fsanitize=kernel-address` are in use.
 
-  This macro is defined, with value 1, when :option:`-fsanitize`:samp:`=address`
-  or :option:`-fsanitize`:samp:`=kernel-address` are in use.
-
-.. c:macro:: __SANITIZE_THREAD__
-
-  This macro is defined, with value 1, when :option:`-fsanitize`:samp:`=thread` is in use.
+``__SANITIZE_THREAD__``
+  This macro is defined, with value 1, when :option:`-fsanitize=thread` is in use.
 
 .. c:macro:: __TIMESTAMP__
 

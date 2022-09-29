@@ -18,8 +18,8 @@ accepts:
 
 .. option:: -ansi
 
-  In C mode, this is equivalent to :option:`-std`:samp:`=c90`. In C++ mode, it is
-  equivalent to :option:`-std`:samp:`=c++98`.
+  In C mode, this is equivalent to :option:`-std=c90`. In C++ mode, it is
+  equivalent to :option:`-std=c++98`.
 
   This turns off certain features of GCC that are incompatible with ISO
   C90 (when compiling C code), or of standard C++ (when compiling C++ code),
@@ -63,7 +63,7 @@ accepts:
   :samp:`gnu90` or :samp:`gnu++98`.  When a base standard is specified, the
   compiler accepts all programs following that standard plus those
   using GNU extensions that do not contradict it.  For example,
-  :option:`-std`:samp:`=c90` turns off certain features of GCC that are
+  :option:`-std=c90` turns off certain features of GCC that are
   incompatible with ISO C90, such as the ``asm`` and ``typeof``
   keywords, but not other GNU extensions that do not have a meaning in
   ISO C90, such as omitting the middle term of a ``?:``
@@ -73,8 +73,8 @@ accepts:
   strict-conforming programs may be rejected.  The particular standard
   is used by :option:`-Wpedantic` to identify which features are GNU
   extensions given that version of the standard. For example
-  :option:`-std`:samp:`=gnu90 -Wpedantic` warns about C++ style :samp:`//`
-  comments, while :option:`-std`:samp:`=gnu99 -Wpedantic` does not.
+  :option:`-std=gnu90 -Wpedantic` warns about C++ style :samp:`//`
+  comments, while :option:`-std=gnu99 -Wpedantic` does not.
 
   A value for this option must be provided; possible values are
 
@@ -104,7 +104,7 @@ accepts:
     ISO C17, the 2017 revision of the ISO C standard
     (published in 2018).  This standard is
     same as C11 except for corrections of defects (all of which are also
-    applied with :option:`-std`:samp:`=c11`) and a new value of
+    applied with :option:`-std=c11`) and a new value of
     ``__STDC_VERSION__``, and so is supported to the same extent as C11.
 
   :samp:`c2x`
@@ -134,14 +134,14 @@ accepts:
     additional defect reports. Same as :option:`-ansi` for C++ code.
 
   :samp:`gnu++98` :samp:`gnu++03`
-    GNU dialect of :option:`-std`:samp:`=c++98`.
+    GNU dialect of :option:`-std=c++98`.
 
   :samp:`c++11` :samp:`c++0x`
     The 2011 ISO C++ standard plus amendments.
     The name :samp:`c++0x` is deprecated.
 
   :samp:`gnu++11` :samp:`gnu++0x`
-    GNU dialect of :option:`-std`:samp:`=c++11`.
+    GNU dialect of :option:`-std=c++11`.
     The name :samp:`gnu++0x` is deprecated.
 
   :samp:`c++14` :samp:`c++1y`
@@ -149,7 +149,7 @@ accepts:
     The name :samp:`c++1y` is deprecated.
 
   :samp:`gnu++14` :samp:`gnu++1y`
-    GNU dialect of :option:`-std`:samp:`=c++14`.
+    GNU dialect of :option:`-std=c++14`.
     The name :samp:`gnu++1y` is deprecated.
 
   :samp:`c++17` :samp:`c++1z`
@@ -157,7 +157,7 @@ accepts:
     The name :samp:`c++1z` is deprecated.
 
   :samp:`gnu++17` :samp:`gnu++1z`
-    GNU dialect of :option:`-std`:samp:`=c++17`.
+    GNU dialect of :option:`-std=c++17`.
     This is the default for C++ code.
     The name :samp:`gnu++1z` is deprecated.
 
@@ -168,7 +168,7 @@ accepts:
     The name :samp:`c++2a` is deprecated.
 
   :samp:`gnu++20` :samp:`gnu++2a`
-    GNU dialect of :option:`-std`:samp:`=c++20`.
+    GNU dialect of :option:`-std=c++20`.
     Support is experimental, and could change in incompatible ways in
     future releases.
     The name :samp:`gnu++2a` is deprecated.
@@ -179,7 +179,7 @@ accepts:
     change in incompatible ways in future releases.
 
   :samp:`gnu++2b` :samp:`gnu++23`
-    GNU dialect of :option:`-std`:samp:`=c++2b`.  Support is highly experimental,
+    GNU dialect of :option:`-std=c++2b`.  Support is highly experimental,
     and will almost certainly change in incompatible ways in future
     releases.
 
@@ -217,7 +217,7 @@ accepts:
   In C++, ``inline`` is a standard keyword and is not affected by
   this switch.  You may want to use the :option:`-fno-gnu-keywords` flag
   instead, which disables ``typeof`` but not ``asm`` and
-  ``inline``.  In C99 mode (:option:`-std`:samp:`=c99` or :option:`-std`:samp:`=gnu99`),
+  ``inline``.  In C99 mode (:option:`-std=c99` or :option:`-std=gnu99`),
   this switch only affects the ``asm`` and ``typeof`` keywords,
   since ``inline`` is a standard keyword in ISO C99.
 
@@ -250,12 +250,12 @@ accepts:
   ``printf`` when ``printf`` is built in and ``strlen`` is
   known not to modify global memory.
 
-  With the :option:`-fno-builtin-`:samp:`{function}` option
+  With the :option:`-fno-builtin-function` option
   only the built-in function :samp:`{function}` is
   disabled.  :samp:`{function}` must not begin with :samp:`__builtin_`.  If a
   function is named that is not built-in in this version of GCC, this
   option is ignored.  There is no corresponding
-  :option:`-fbuiltin-`:samp:`{function}` option; if you wish to enable
+  :option:`-fbuiltin-function` option; if you wish to enable
   built-in functions selectively when using :option:`-fno-builtin` or
   :option:`-ffreestanding`, you may define macros such as:
 
@@ -320,8 +320,8 @@ accepts:
   The option :option:`-fno-gnu89-inline` explicitly tells GCC to use the
   C99 semantics for ``inline`` when in C99 or gnu99 mode (i.e., it
   specifies the default behavior).
-  This option is not supported in :option:`-std`:samp:`=c90` or
-  :option:`-std`:samp:`=gnu90` mode.
+  This option is not supported in :option:`-std=c90` or
+  :option:`-std=gnu90` mode.
 
   The preprocessor macros ``__GNUC_GNU_INLINE__`` and
   ``__GNUC_STDC_INLINE__`` may be used to check which semantics are
@@ -368,10 +368,10 @@ accepts:
 .. option:: -foffload=disable
 
   Specify for which OpenMP and OpenACC offload targets code should be generated.
-  The default behavior, equivalent to :option:`-foffload`:samp:`=default`, is to generate
-  code for all supported offload targets.  The :option:`-foffload`:samp:`=disable` form
+  The default behavior, equivalent to :option:`-foffload=default`, is to generate
+  code for all supported offload targets.  The :option:`-foffload=disable` form
   generates code only for the host fallback, while
-  :option:`-foffload`:samp:`={target-list}` generates code only for the specified
+  :option:`-foffload=target-list` generates code only for the specified
   comma-separated list of offload targets.
 
   Offload targets are specified in GCC's internal target-triplet format. You can
@@ -382,18 +382,18 @@ accepts:
 
 .. option:: -foffload-options={options}
 
-  With :option:`-foffload-options`:samp:`={options}`, GCC passes the specified
+  With :option:`-foffload-options=options`, GCC passes the specified
   :samp:`{options}` to the compilers for all enabled offloading targets.  You can
   specify options that apply only to a specific target or targets by using
-  the :option:`-foffload-options`:samp:`={target-list}` = :samp:`{options}` form.  The
+  the :option:`-foffload-options=target-list=options` form.  The
   :samp:`{target-list}` is a comma-separated list in the same format as for the
-  :option:`-foffload` = option.
+  :option:`-foffload=` option.
 
   Typical command lines are
 
-  :option:`-foffload-options`:samp:`=-lgfortran` :option:`-foffload-options`:samp:`=-lm` |gol|
-  :option:`-foffload-options`:samp:`="-lgfortran` :option:`-lm"` :option:`-foffload-options`:samp:`=nvptx-none=-latomic` |gol|
-  :option:`-foffload-options`:samp:`=amdgcn-amdhsa=-march=gfx906` :option:`-foffload-options`:samp:`=-lm`
+  :option:`-foffload-options=-lgfortran` :option:`-foffload-options=-lm`
+  :option:`-foffload-options="-lgfortran-lm` :option:`-lm"` :option:`-foffload-options=nvptx-none=-latomic`
+  :option:`-foffload-options=amdgcn-amdhsa=-march=gfx906` :option:`-foffload-options=-lm`
 
 .. index:: OpenACC accelerator programming
 
@@ -452,10 +452,10 @@ accepts:
 
   :samp:`{style}` is either ``c11`` or ``ts-18661-3`` as appropriate.
 
-  The default when in a standards compliant mode (:option:`-std`:samp:`=c11` or similar)
-  is :option:`-fpermitted-flt-eval-methods`:samp:`=c11`.  The default when in a GNU
-  dialect (:option:`-std`:samp:`=gnu11` or similar) is
-  :option:`-fpermitted-flt-eval-methods`:samp:`=ts-18661-3`.
+  The default when in a standards compliant mode (:option:`-std=c11` or similar)
+  is :option:`-fpermitted-flt-eval-methods=c11`.  The default when in a GNU
+  dialect (:option:`-std=gnu11` or similar) is
+  :option:`-fpermitted-flt-eval-methods=ts-18661-3`.
 
 .. option:: -fplan9-extensions
 

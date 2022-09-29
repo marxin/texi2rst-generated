@@ -270,14 +270,14 @@ program analysis purposes.
 .. option:: -fprofile-prefix-path={path}
 
   This option can be used in combination with
-  :option:`-fprofile-generate`:samp:`={profile_dir}` and
-  :option:`-fprofile-use`:samp:`={profile_dir}` to inform GCC where is the base
+  :option:`-fprofile-generate=profile_dir` and
+  :option:`-fprofile-use=profile_dir` to inform GCC where is the base
   directory of built source tree.  By default :samp:`{profile_dir}` will contain
   files with mangled absolute paths of all object files in the built project.
   This is not desirable when directory used to build the instrumented binary
   differs from the directory used to build the binary optimized with profile
   feedback because the profile data will not be found during the optimized build.
-  In such setups :option:`-fprofile-prefix-path`:samp:`={path}` with :samp:`{path}`
+  In such setups :option:`-fprofile-prefix-path=path` with :samp:`{path}`
   pointing to the base directory of the build can be used to strip the irrelevant
   part of the path and keep all file names relative to the main build directory.
 
@@ -312,7 +312,7 @@ program analysis purposes.
   Instrument only functions from files whose name matches
   any of the regular expressions (separated by semi-colons).
 
-  For example, :option:`-fprofile-filter-files`:samp:`=main\\.c;module.*\\.c` will instrument
+  For example, :option:`-fprofile-filter-files=main\\.c;module.*\\.c` will instrument
   only :samp:`main.c` and all C files starting with 'module'.
 
 .. option:: -fprofile-exclude-files={regex}
@@ -320,7 +320,7 @@ program analysis purposes.
   Instrument only functions from files whose name does not match
   any of the regular expressions (separated by semi-colons).
 
-  For example, :option:`-fprofile-exclude-files`:samp:`=/usr/.*` will prevent instrumentation
+  For example, :option:`-fprofile-exclude-files=/usr/.*` will prevent instrumentation
   of all files that are located in the :samp:`/usr/` folder.
 
 .. option:: -fprofile-reproducible=[multithreaded|parallel-runs|serial]
@@ -330,7 +330,7 @@ program analysis purposes.
   with same outcome which is useful, for example, for distribution
   packages.
 
-  With :option:`-fprofile-reproducible`:samp:`=serial` the profile gathered by
+  With :option:`-fprofile-reproducible=serial` the profile gathered by
   :option:`-fprofile-generate` is reproducible provided the trained program
   behaves the same at each invocation of the train run, it is not
   multi-threaded and profile data streaming is always done in the same
@@ -345,7 +345,7 @@ program analysis purposes.
   :option:`-l` can be used to dump gathered data and verify that they are
   indeed reproducible.
 
-  With :option:`-fprofile-reproducible`:samp:`=parallel-runs` collected profile
+  With :option:`-fprofile-reproducible=parallel-runs` collected profile
   stays reproducible regardless the order of streaming of the data into
   gcda files.  This setting makes it possible to run multiple instances of
   instrumented program in parallel (such as with ``make -j``). This
@@ -364,9 +364,9 @@ program analysis purposes.
   the available options are shown at startup of the instrumented program.  See
   https://github.com/google/sanitizers/wiki/AddressSanitizerFlags#run-time-flags
   for a list of supported options.
-  The option cannot be combined with :option:`-fsanitize`:samp:`=thread` or
-  :option:`-fsanitize`:samp:`=hwaddress`.  Note that the only target
-  :option:`-fsanitize`:samp:`=hwaddress` is currently supported on is AArch64.
+  The option cannot be combined with :option:`-fsanitize=thread` or
+  :option:`-fsanitize=hwaddress`.  Note that the only target
+  :option:`-fsanitize=hwaddress` is currently supported on is AArch64.
 
 .. option:: -fsanitize=kernel-address
 
@@ -386,21 +386,21 @@ program analysis purposes.
   for more details.  The run-time behavior can be influenced using the
   :envvar:`HWASAN_OPTIONS` environment variable.  When set to ``help=1``,
   the available options are shown at startup of the instrumented program.
-  The option cannot be combined with :option:`-fsanitize`:samp:`=thread` or
-  :option:`-fsanitize`:samp:`=address`, and is currently only available on AArch64.
+  The option cannot be combined with :option:`-fsanitize=thread` or
+  :option:`-fsanitize=address`, and is currently only available on AArch64.
 
 .. option:: -fsanitize=kernel-hwaddress
 
   Enable Hardware-assisted AddressSanitizer for compilation of the Linux kernel.
-  Similar to :option:`-fsanitize`:samp:`=kernel-address` but using an alternate
-  instrumentation method, and similar to :option:`-fsanitize`:samp:`=hwaddress` but with
+  Similar to :option:`-fsanitize=kernel-address` but using an alternate
+  instrumentation method, and similar to :option:`-fsanitize=hwaddress` but with
   instrumentation differences necessary for compiling the Linux kernel.
   These differences are to avoid hwasan library initialization calls and to
   account for the stack pointer having a different value in its top byte.
 
   .. note::
 
-    This option has different defaults to the :option:`-fsanitize`:samp:`=hwaddress`.
+    This option has different defaults to the :option:`-fsanitize=hwaddress`.
     Instrumenting the stack and alloca calls are not on by default but are still
     possible by specifying the command-line options
     :option:`--param` :gcc-param:`hwasan-instrument-stack`:samp:`=1` and
@@ -410,30 +410,24 @@ program analysis purposes.
 .. option:: -fsanitize=pointer-compare
 
   Instrument comparison operation (<, <=, >, >=) with pointer operands.
-  The option must be combined with either :option:`-fsanitize`:samp:`=kernel-address` or
-  :option:`-fsanitize`:samp:`=address`
-  The option cannot be combined with :option:`-fsanitize`:samp:`=thread`.
-
-  .. note::
-
-    By default the check is disabled at run time.  To enable it,
-    add ``detect_invalid_pointer_pairs=2`` to the environment variable
-    :envvar:`ASAN_OPTIONS`. Using ``detect_invalid_pointer_pairs=1`` detects
-    invalid operation only when both pointers are non-null.
+  The option must be combined with either :option:`-fsanitize=kernel-address` or
+  :option:`-fsanitize=address`
+  The option cannot be combined with :option:`-fsanitize=thread`.
+  Note: By default the check is disabled at run time.  To enable it,
+  add ``detect_invalid_pointer_pairs=2`` to the environment variable
+  :envvar:`ASAN_OPTIONS`. Using ``detect_invalid_pointer_pairs=1`` detects
+  invalid operation only when both pointers are non-null.
 
 .. option:: -fsanitize=pointer-subtract
 
   Instrument subtraction with pointer operands.
-  The option must be combined with either :option:`-fsanitize`:samp:`=kernel-address` or
-  :option:`-fsanitize`:samp:`=address`
-  The option cannot be combined with :option:`-fsanitize`:samp:`=thread`.
-
-  .. note::
-
-    By default the check is disabled at run time.  To enable it,
-    add ``detect_invalid_pointer_pairs=2`` to the environment variable
-    :envvar:`ASAN_OPTIONS`. Using ``detect_invalid_pointer_pairs=1`` detects
-    invalid operation only when both pointers are non-null.
+  The option must be combined with either :option:`-fsanitize=kernel-address` or
+  :option:`-fsanitize=address`
+  The option cannot be combined with :option:`-fsanitize=thread`.
+  Note: By default the check is disabled at run time.  To enable it,
+  add ``detect_invalid_pointer_pairs=2`` to the environment variable
+  :envvar:`ASAN_OPTIONS`. Using ``detect_invalid_pointer_pairs=1`` detects
+  invalid operation only when both pointers are non-null.
 
 .. option:: -fsanitize=shadow-call-stack
 
@@ -474,8 +468,8 @@ program analysis purposes.
   environment variable; see
   https://github.com/google/sanitizers/wiki/ThreadSanitizerFlags for a list of
   supported options.
-  The option cannot be combined with :option:`-fsanitize`:samp:`=address`,
-  :option:`-fsanitize`:samp:`=leak`.
+  The option cannot be combined with :option:`-fsanitize=address`,
+  :option:`-fsanitize=leak`.
 
   Note that sanitized atomic builtins cannot throw exceptions when
   operating on invalid memory addresses with non-call exceptions
@@ -490,7 +484,7 @@ program analysis purposes.
   https://github.com/google/sanitizers/wiki/AddressSanitizerLeakSanitizer for more
   details.  The run-time behavior can be influenced using the
   :envvar:`LSAN_OPTIONS` environment variable.
-  The option cannot be combined with :option:`-fsanitize`:samp:`=thread`.
+  The option cannot be combined with :option:`-fsanitize=thread`.
 
 .. option:: -fsanitize=undefined
 
@@ -504,8 +498,8 @@ program analysis purposes.
     This option enables checking that the result of a shift operation is
     not undefined.  Note that what exactly is considered undefined differs
     slightly between C and C++, as well as between ISO C90 and C99, etc.
-    This option has two suboptions, :option:`-fsanitize`:samp:`=shift-base` and
-    :option:`-fsanitize`:samp:`=shift-exponent`.
+    This option has two suboptions, :option:`-fsanitize=shift-base` and
+    :option:`-fsanitize=shift-exponent`.
 
   .. option:: -fsanitize=shift-exponent
 
@@ -592,16 +586,16 @@ program analysis purposes.
   .. option:: -fsanitize=float-divide-by-zero
 
     Detect floating-point division by zero.  Unlike other similar options,
-    :option:`-fsanitize`:samp:`=float-divide-by-zero` is not enabled by
-    :option:`-fsanitize`:samp:`=undefined`, since floating-point division by zero can
+    :option:`-fsanitize=float-divide-by-zero` is not enabled by
+    :option:`-fsanitize=undefined`, since floating-point division by zero can
     be a legitimate way of obtaining infinities and NaNs.
 
   .. option:: -fsanitize=float-cast-overflow
 
     This option enables floating-point type to integer conversion checking.
     We check that the result of the conversion does not overflow.
-    Unlike other similar options, :option:`-fsanitize`:samp:`=float-cast-overflow` is
-    not enabled by :option:`-fsanitize`:samp:`=undefined`.
+    Unlike other similar options, :option:`-fsanitize=float-cast-overflow` is
+    not enabled by :option:`-fsanitize=undefined`.
     This option does not work well with ``FE_INVALID`` exceptions enabled.
 
   .. option:: -fsanitize=nonnull-attribute
@@ -647,13 +641,13 @@ program analysis purposes.
     by this option.
 
   While :option:`-ftrapv` causes traps for signed overflows to be emitted,
-  :option:`-fsanitize`:samp:`=undefined` gives a diagnostic message.
+  :option:`-fsanitize=undefined` gives a diagnostic message.
   This currently works only for the C family of languages.
 
 .. option:: -fno-sanitize=all
 
   This option disables all previously enabled sanitizers.
-  :option:`-fsanitize`:samp:`=all` is not allowed, as some sanitizers cannot be used
+  :option:`-fsanitize=all` is not allowed, as some sanitizers cannot be used
   together.
 
 .. option:: -fasan-shadow-offset={number}
@@ -669,25 +663,25 @@ program analysis purposes.
 
 .. option:: -fsanitize-recover[={opts}]
 
-  :option:`-fsanitize-recover` = controls error recovery mode for sanitizers
+  :option:`-fsanitize-recover=` controls error recovery mode for sanitizers
   mentioned in comma-separated list of :samp:`{opts}`.  Enabling this option
   for a sanitizer component causes it to attempt to continue
   running the program as if no error happened.  This means multiple
   runtime errors can be reported in a single program run, and the exit
   code of the program may indicate success even when errors
-  have been reported.  The :option:`-fno-sanitize-recover` = option
+  have been reported.  The :option:`-fno-sanitize-recover=` option
   can be used to alter
   this behavior: only the first detected error is reported
   and program then exits with a non-zero exit code.
 
-  Currently this feature only works for :option:`-fsanitize`:samp:`=undefined` (and its suboptions
-  except for :option:`-fsanitize`:samp:`=unreachable` and :option:`-fsanitize`:samp:`=return`),
-  :option:`-fsanitize`:samp:`=float-cast-overflow`, :option:`-fsanitize`:samp:`=float-divide-by-zero`,
-  :option:`-fsanitize`:samp:`=bounds-strict`,
-  :option:`-fsanitize`:samp:`=kernel-address` and :option:`-fsanitize`:samp:`=address`.
+  Currently this feature only works for :option:`-fsanitize=undefined` (and its suboptions
+  except for :option:`-fsanitize=unreachable` and :option:`-fsanitize=return`),
+  :option:`-fsanitize=float-cast-overflow`, :option:`-fsanitize=float-divide-by-zero`,
+  :option:`-fsanitize=bounds-strict`,
+  :option:`-fsanitize=kernel-address` and :option:`-fsanitize=address`.
   For these sanitizers error recovery is turned on by default,
-  except :option:`-fsanitize`:samp:`=address`, for which this feature is experimental.
-  :option:`-fsanitize-recover`:samp:`=all` and :option:`-fno-sanitize-recover`:samp:`=all` is also
+  except :option:`-fsanitize=address`, for which this feature is experimental.
+  :option:`-fsanitize-recover=all` and :option:`-fno-sanitize-recover=all` is also
   accepted, the former enables recovery for all sanitizers that support it,
   the latter disables recovery for all sanitizers that support it.
 
@@ -712,34 +706,34 @@ program analysis purposes.
 
 .. option:: -fsanitize-trap[={opts}]
 
-  The :option:`-fsanitize-trap` = option instructs the compiler to
+  The :option:`-fsanitize-trap=` option instructs the compiler to
   report for sanitizers mentioned in comma-separated list of :samp:`{opts}`
   undefined behavior using ``__builtin_trap`` rather than a ``libubsan``
   library routine.  If this option is enabled for certain sanitizer,
-  it takes precedence over the :option:`-fsanitizer-recover` = for that
+  it takes precedence over the :option:`-fsanitizer-recover=` for that
   sanitizer, ``__builtin_trap`` will be emitted and be fatal regardless
-  of whether recovery is enabled or disabled using :option:`-fsanitize-recover` =.
+  of whether recovery is enabled or disabled using :option:`-fsanitize-recover=`.
 
   The advantage of this is that the ``libubsan`` library is not needed
   and is not linked in, so this is usable even in freestanding environments.
 
-  Currently this feature works with :option:`-fsanitize`:samp:`=undefined` (and its suboptions
-  except for :option:`-fsanitize`:samp:`=vptr`), :option:`-fsanitize`:samp:`=float-cast-overflow`,
-  :option:`-fsanitize`:samp:`=float-divide-by-zero` and
-  :option:`-fsanitize`:samp:`=bounds-strict`.  ``-fsanitize-trap=all`` can be also
+  Currently this feature works with :option:`-fsanitize=undefined` (and its suboptions
+  except for :option:`-fsanitize=vptr`), :option:`-fsanitize=float-cast-overflow`,
+  :option:`-fsanitize=float-divide-by-zero` and
+  :option:`-fsanitize=bounds-strict`.  ``-fsanitize-trap=all`` can be also
   specified, which enables it for ``undefined`` suboptions,
-  :option:`-fsanitize`:samp:`=float-cast-overflow`,
-  :option:`-fsanitize`:samp:`=float-divide-by-zero` and
-  :option:`-fsanitize`:samp:`=bounds-strict`.
+  :option:`-fsanitize=float-cast-overflow`,
+  :option:`-fsanitize=float-divide-by-zero` and
+  :option:`-fsanitize=bounds-strict`.
   If ``-fsanitize-trap=undefined`` or ``-fsanitize-trap=all`` is used
   and ``-fsanitize=vptr`` is enabled on the command line, the
   instrumentation is silently ignored as the instrumentation always needs
-  ``libubsan`` support, :option:`-fsanitize-trap`:samp:`=vptr` is not allowed.
+  ``libubsan`` support, :option:`-fsanitize-trap=vptr` is not allowed.
 
 .. option:: -fsanitize-undefined-trap-on-error
 
   The :option:`-fsanitize-undefined-trap-on-error` option is deprecated
-  equivalent of :option:`-fsanitize-trap`:samp:`=all`.
+  equivalent of :option:`-fsanitize-trap=all`.
 
 .. option:: -fsanitize-coverage=trace-pc
 
@@ -894,7 +888,7 @@ program analysis purposes.
   those targets :option:`-fstack-clash-protection` will protect dynamic stack
   allocations.  :option:`-fstack-clash-protection` may also provide limited
   protection for static stack allocations if the target supports
-  :option:`-fstack-check`:samp:`=specific`.
+  :option:`-fstack-check=specific`.
 
 .. option:: -fstack-limit-register={reg}
 
@@ -906,8 +900,8 @@ program analysis purposes.
 
   For instance, if the stack starts at absolute address :samp:`0x80000000`
   and grows downwards, you can use the flags
-  :option:`-fstack-limit-symbol`:samp:`=__stack_limit` and
-  :option:`-Wl,--defsym,__stack_limit`:samp:`=0x7ffe0000` to enforce a stack limit
+  :option:`-fstack-limit-symbol=__stack_limit` and
+  :option:`-Wl,--defsym,__stack_limit=0x7ffe0000` to enforce a stack limit
   of 128KB.  Note that this may only work with the GNU linker.
 
   You can locally override stack limit checking by using the
@@ -935,7 +929,7 @@ program analysis purposes.
 .. option:: -fvtable-verify=[std|preinit|none]
 
   This option is only available when compiling C++ code.
-  It turns on (or off, if using :option:`-fvtable-verify`:samp:`=none`) the security
+  It turns on (or off, if using :option:`-fvtable-verify=none`) the security
   feature that verifies at run time, for every virtual call, that
   the vtable pointer through which the call is made is valid for the type of
   the object, and has not been corrupted or overwritten.  If an invalid vtable
@@ -947,9 +941,9 @@ program analysis purposes.
   The options :samp:`std` and :samp:`preinit`
   control the timing of when these data structures are built.  In both cases the
   data structures are built before execution reaches ``main``.  Using
-  :option:`-fvtable-verify`:samp:`=std` causes the data structures to be built after
+  :option:`-fvtable-verify=std` causes the data structures to be built after
   shared libraries have been loaded and initialized.
-  :option:`-fvtable-verify`:samp:`=preinit` causes them to be built before shared
+  :option:`-fvtable-verify=preinit` causes them to be built before shared
   libraries have been loaded and initialized.
 
   If this option appears multiple times in the command line with different
@@ -958,8 +952,8 @@ program analysis purposes.
 
 .. option:: -fvtv-debug
 
-  When used in conjunction with :option:`-fvtable-verify`:samp:`=std` or 
-  :option:`-fvtable-verify`:samp:`=preinit`, causes debug versions of the 
+  When used in conjunction with :option:`-fvtable-verify=std` or 
+  :option:`-fvtable-verify=preinit`, causes debug versions of the 
   runtime functions for the vtable verification feature to be called.  
   This flag also causes the compiler to log information about which 
   vtable pointers it finds for each class.
@@ -974,7 +968,7 @@ program analysis purposes.
 .. option:: -fvtv-counts
 
   This is a debugging flag.  When used in conjunction with
-  :option:`-fvtable-verify`:samp:`=std` or :option:`-fvtable-verify`:samp:`=preinit`, this
+  :option:`-fvtable-verify=std` or :option:`-fvtable-verify=preinit`, this
   causes the compiler to keep track of the total number of virtual calls
   it encounters and the number of verifications it inserts.  It also
   counts the number of calls to certain run-time library functions
@@ -1056,13 +1050,13 @@ program analysis purposes.
 
   For example:
 
-  :option:`-finstrument-functions-exclude-file-list`:samp:`=/bits/stl,include/sys`
+  :option:`-finstrument-functions-exclude-file-list=/bits/stl,include/sys`
   excludes any inline function defined in files whose pathnames
   contain :samp:`/bits/stl` or :samp:`include/sys`.
 
   If, for some reason, you want to include letter :samp:`,` in one of
   :samp:`{sym}`, write :samp:`\\,`. For example,
-  :option:`-finstrument-functions-exclude-file-list`:samp:`='\\,\\,tmp'`
+  :option:`-finstrument-functions-exclude-file-list='\\,\\,tmp'`
   (note the single quote surrounding the option).
 
 .. option:: -finstrument-functions-exclude-function-list={sym},{sym},...
@@ -1098,7 +1092,7 @@ program analysis purposes.
 
   Note that the value of ``__attribute__ ((patchable_function_entry
   (N,M)))`` takes precedence over command-line option
-  :option:`-fpatchable-function-entry`:samp:`=N,M`.  This can be used to increase
+  :option:`-fpatchable-function-entry=N,M`.  This can be used to increase
   the area size or to remove it completely on a single function.
   If ``N=0``, no pad location is recorded.
 

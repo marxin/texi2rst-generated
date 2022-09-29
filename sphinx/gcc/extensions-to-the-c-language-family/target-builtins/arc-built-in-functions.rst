@@ -67,7 +67,7 @@ described in each case.
 
 .. function:: int __builtin_arc_divaw (int a, int b)
 
-  Only available if either :option:`-mcpu`:samp:`=ARC700` or :option:`-meA` is set.
+  Only available if either :option:`-mcpu=ARC700` or :option:`-meA` is set.
   Generates:
 
   .. code-block:: c++
@@ -124,7 +124,7 @@ described in each case.
 .. function:: int __builtin_arc_norm (int src)
 
   Only valid if the :samp:`norm` instruction is available through the
-  :option:`-mnorm` option or by default with :option:`-mcpu`:samp:`=ARC700`.
+  :option:`-mnorm` option or by default with :option:`-mcpu=ARC700`.
   Generates:
 
   .. code-block:: c++
@@ -137,7 +137,7 @@ described in each case.
 .. function:: short int __builtin_arc_normw (short int src)
 
   Only valid if the :samp:`normw` instruction is available through the
-  :option:`-mnorm` option or by default with :option:`-mcpu`:samp:`=ARC700`.
+  :option:`-mnorm` option or by default with :option:`-mcpu=ARC700`.
   Generates:
 
   .. code-block:: c++
@@ -194,7 +194,7 @@ described in each case.
 
 .. function:: void __builtin_arc_sync (void)
 
-  Only available with :option:`-mcpu`:samp:`=ARC700`.  Generates:
+  Only available with :option:`-mcpu=ARC700`.  Generates:
 
   .. code-block:: c++
 
@@ -202,7 +202,7 @@ described in each case.
 
 .. function:: void __builtin_arc_trap_s (unsigned int c)
 
-  Only available with :option:`-mcpu`:samp:`=ARC700`.  Generates:
+  Only available with :option:`-mcpu=ARC700`.  Generates:
 
   .. code-block:: c++
 
@@ -210,7 +210,7 @@ described in each case.
 
 .. function:: void __builtin_arc_unimp_s (void)
 
-  Only available with :option:`-mcpu`:samp:`=ARC700`.  Generates:
+  Only available with :option:`-mcpu=ARC700`.  Generates:
 
   .. code-block:: c++
 

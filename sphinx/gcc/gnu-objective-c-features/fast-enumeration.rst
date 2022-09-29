@@ -88,7 +88,7 @@ this is completely equivalent to:
 
 but can save some typing.
 
-Note that the option :option:`-std`:samp:`=c99` is not required to allow this
+Note that the option :option:`-std=c99` is not required to allow this
 syntax in Objective-C.
 
 .. ================================

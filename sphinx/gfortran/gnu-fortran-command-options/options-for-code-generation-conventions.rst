@@ -206,7 +206,7 @@ it.
     lengths are equal for character array constructors without an explicit
     typespec.
 
-    Some checks require that :option:`-fcheck`:samp:`=bounds` is set for
+    Some checks require that :option:`-fcheck=bounds` is set for
     the compilation of the main program.
 
     Note: In the future this may also include other forms of checking, e.g.,
@@ -245,7 +245,7 @@ it.
 
   .. Note: This option is also referred in gcc's manpage
 
-  Deprecated alias for :option:`-fcheck`:samp:`=bounds`.
+  Deprecated alias for :option:`-fcheck=bounds`.
 
 .. index:: tail-call-workaround
 
@@ -258,9 +258,9 @@ it.
 
   To provide a workaround for existing binary packages, this option
   disables tail call optimization for gfortran procedures with character
-  arguments.  With :option:`-ftail-call-workaround`:samp:`=2` tail call optimization
+  arguments.  With :option:`-ftail-call-workaround=2` tail call optimization
   is disabled in all gfortran procedures with character arguments,
-  with :option:`-ftail-call-workaround`:samp:`=1` or equivalent
+  with :option:`-ftail-call-workaround=1` or equivalent
   :option:`-ftail-call-workaround` only in gfortran procedures with character
   arguments that call implicitly prototyped procedures.
 
@@ -276,7 +276,7 @@ it.
   of gfortran.
 
   The negative form, :option:`-fno-tail-call-workaround` or equivalent
-  :option:`-ftail-call-workaround`:samp:`=0`, can be used to disable this option.
+  :option:`-ftail-call-workaround=0`, can be used to disable this option.
 
   Default is currently :option:`-ftail-call-workaround`, this will change
   in future releases.
@@ -285,7 +285,7 @@ it.
 
 .. option:: -fcheck-array-temporaries
 
-  Deprecated alias for :option:`-fcheck`:samp:`=array-temps`.
+  Deprecated alias for :option:`-fcheck=array-temps`.
 
 .. index:: fmax-array-constructor
 
@@ -446,7 +446,7 @@ it.
 
   Allow indirect recursion by forcing all local arrays to be allocated
   on the stack. This flag cannot be used together with
-  :option:`-fmax-stack-var-size` = or :option:`-fno-automatic`.
+  :option:`-fmax-stack-var-size=` or :option:`-fno-automatic`.
 
 .. index:: finit-local-zero, finit-derived, finit-integer, finit-real, finit-logical, finit-character
 
@@ -462,11 +462,11 @@ it.
   variables to zero, ``LOGICAL`` variables to false, and
   ``CHARACTER`` variables to a string of null bytes.  Finer-grained
   initialization options are provided by the
-  :option:`-finit-integer`:samp:`={n}`,
-  :option:`-finit-real`:samp:`={<zero|inf|-inf|nan|snan>}` (which also initializes
+  :option:`-finit-integer=n`,
+  :option:`-finit-real=<zero|inf|-inf|nan|snan>` (which also initializes
   the real and imaginary parts of local ``COMPLEX`` variables),
-  :option:`-finit-logical`:samp:`={<true|false>}`, and
-  :option:`-finit-character`:samp:`={n}` (where :samp:`{n}` is an ASCII character
+  :option:`-finit-logical=<true|false>`, and
+  :option:`-finit-character=n` (where :samp:`{n}` is an ASCII character
   value) options.
 
   With :option:`-finit-derived`, components of derived type variables will be
@@ -484,9 +484,9 @@ it.
 
   (These limitations may be removed in future releases).
 
-  Note that the :option:`-finit-real`:samp:`=nan` option initializes ``REAL``
+  Note that the :option:`-finit-real=nan` option initializes ``REAL``
   and ``COMPLEX`` variables with a quiet NaN. For a signalling NaN
-  use :option:`-finit-real`:samp:`=snan`; note, however, that compile-time
+  use :option:`-finit-real=snan` ; note, however, that compile-time
   optimizations may convert them into quiet NaN and that trapping
   needs to be enabled (e.g. via :option:`-ffpe-trap`).
 
@@ -530,7 +530,7 @@ it.
 
   An allocatable left-hand side of an intrinsic assignment is automatically
   (re)allocated if it is either unallocated or has a different shape. The
-  option is enabled by default except when :option:`-std`:samp:`=f95` is given. See
+  option is enabled by default except when :option:`-std=f95` is given. See
   also :option:`-Wrealloc-lhs`.
 
 .. index:: faggressive-function-elimination, Elimination of functions with identical argument lists

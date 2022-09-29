@@ -57,8 +57,8 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
 
   As a consequence, if you have a group of mutually-exclusive
   options, their ``Negative`` properties should form a circular chain.
-  For example, if options :option:`-`:samp:`{a}`, :option:`-`:samp:`{b}` and
-  :option:`-`:samp:`{c}` are mutually exclusive, their respective ``Negative``
+  For example, if options :option:`-a`, :option:`-b` and
+  :option:`-c` are mutually exclusive, their respective ``Negative``
   properties should be :samp:`Negative({b})`, :samp:`Negative({c})`
   and :samp:`Negative({a})`.
 
@@ -124,7 +124,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
   ``MB`` and ``MiB`` for megabyte and mebibyte, ``GB`` and ``GiB``
   for gigabyte and gigibyte, and so on.  ``ByteSize`` should be used for
   with options that take a very large argument representing a size in bytes,
-  such as :option:`-Wlarger-than` =.
+  such as :option:`-Wlarger-than=`.
 
 ``ToLower``
   The option's argument should be converted to lowercase as part of
@@ -238,17 +238,17 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
   for later processing.
 
 :samp:`Alias({opt})` :samp:`Alias({opt}, {arg})` :samp:`Alias({opt}, {posarg}, {negarg})`
-  The option is an alias for :option:`-`:samp:`{opt}` (or the negative form
+  The option is an alias for :option:`-opt` (or the negative form
   of that option, depending on ``NegativeAlias``).  In the first form,
   any argument passed to the alias is considered to be passed to
-  :option:`-`:samp:`{opt}`, and :option:`-`:samp:`{opt}` is considered to be
+  :option:`-opt`, and :option:`-opt` is considered to be
   negated if the alias is used in negated form.  In the second form, the
   alias may not be negated or have an argument, and :samp:`{posarg}` is
-  considered to be passed as an argument to :option:`-`:samp:`{opt}`.  In the
+  considered to be passed as an argument to :option:`-opt`.  In the
   third form, the alias may not have an argument, if the alias is used
   in the positive form then :samp:`{posarg}` is considered to be passed to
-  :option:`-`:samp:`{opt}`, and if the alias is used in the negative form
-  then :samp:`{negarg}` is considered to be passed to :option:`-`:samp:`{opt}`.
+  :option:`-opt`, and if the alias is used in the negative form
+  then :samp:`{negarg}` is considered to be passed to :option:`-opt`.
 
   Aliases should not specify ``Var`` or ``Mask`` or
   ``UInteger``.  Aliases should normally specify the same languages
@@ -264,8 +264,8 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
 
 ``NegativeAlias``
   For an option marked with ``Alias(opt)``, the option is
-  considered to be an alias for the positive form of :option:`-`:samp:`{opt}`
-  if negated and for the negative form of :option:`-`:samp:`{opt}` if not
+  considered to be an alias for the positive form of :option:`-opt`
+  if negated and for the negative form of :option:`-opt` if not
   negated.  ``NegativeAlias`` may not be used with the forms of
   ``Alias`` taking more than one argument.
 
@@ -340,7 +340,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
 
 :samp:`EnabledBy({opt})` :samp:`EnabledBy({opt} || {opt2})` :samp:`EnabledBy({opt} && {opt2})`
   If not explicitly set, the option is set to the value of
-  :option:`-`:samp:`{opt}` ; multiple options can be given, separated by
+  :option:`-opt` ; multiple options can be given, separated by
   ``||``.  The third form using ``&&`` specifies that the option is
   only set if both :samp:`{opt}` and :samp:`{opt2}` are set. The options :samp:`{opt}`
   and :samp:`{opt2}` must have the ``Common`` property; otherwise, use
@@ -348,7 +348,7 @@ be wrapped in curly braces within the parentheses to demarcate it, e.g.:
 
 :samp:`LangEnabledBy({language}, {opt})` :samp:`LangEnabledBy({language}, {opt}, {posarg}, {negarg})`
   When compiling for the given language, the option is set to the value
-  of :option:`-`:samp:`{opt}`, if not explicitly set. :samp:`{opt}` can be also a list
+  of :option:`-opt`, if not explicitly set. :samp:`{opt}` can be also a list
   of ``||`` separated options. In the second form, if
   :samp:`{opt}` is used in the positive form then :samp:`{posarg}` is considered
   to be passed to the option, and if :samp:`{opt}` is used in the negative

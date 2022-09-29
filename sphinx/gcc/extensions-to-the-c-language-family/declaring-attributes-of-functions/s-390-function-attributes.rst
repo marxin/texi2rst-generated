@@ -16,7 +16,7 @@ These function attributes are supported on the S/390:
 
   On S/390 System z targets, you can use this function attribute to
   make GCC generate a 'hot-patching' function prologue.  If the
-  :option:`-mhotpatch` = command-line option is used at the same time,
+  :option:`-mhotpatch=` command-line option is used at the same time,
   the ``hotpatch`` attribute takes precedence.  The first of the
   two arguments specifies the number of halfwords to be added before
   the function label.  A second argument can be used to specify the

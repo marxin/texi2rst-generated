@@ -228,7 +228,7 @@ These options are defined for AVR implementations:
   This option is used internally by the compiler to select and
   build multilibs for architectures ``avr2`` and ``avr25``.
   These architectures mix devices with and without ``SPH``.
-  For any setting other than :option:`-mmcu`:samp:`=avr2` or :option:`-mmcu`:samp:`=avr25`
+  For any setting other than :option:`-mmcu=avr2` or :option:`-mmcu=avr25`
   the compiler driver adds or removes this option from the compiler
   proper's command line, because the compiler then knows if the device
   or architecture has an 8-bit stack pointer and thus no ``SPH``
@@ -267,17 +267,17 @@ These options are defined for AVR implementations:
 
 .. option:: -nodevicespecs
 
-  Don't add :option:`-specs`:samp:`=device-specs/specs-{mcu}` to the compiler driver's
+  Don't add :option:`-specs=device-specs/specs-mcu` to the compiler driver's
   command line.  The user takes responsibility for supplying the sub-processes
   like compiler proper, assembler and linker with appropriate command line
   options.  This means that the user has to supply her private device specs
-  file by means of :option:`-specs`:samp:`={path-to-specs-file}`.  There is no
-  more need for option :option:`-mmcu`:samp:`={mcu}`.
+  file by means of :option:`-specs=path-to-specs-file`.  There is no
+  more need for option :option:`-mmcu=mcu`.
 
   This option can also serve as a replacement for the older way of
-  specifying custom device-specs files that needed :option:`-B` :samp:`{some-path}` to point to a directory
+  specifying custom device-specs files that needed :option:`-B some-path` to point to a directory
   which contains a folder named ``device-specs`` which contains a specs file named
-  ``specs-mcu``, where :samp:`{mcu}` was specified by :option:`-mmcu`:samp:`={mcu}`.
+  ``specs-mcu``, where :samp:`{mcu}` was specified by :option:`-mmcu=mcu`.
 
 .. option:: -Waddr-space-convert
 
@@ -423,7 +423,7 @@ the compiler and are subject to some limitations:
         return func_4();
     }
 
-  and the application be linked with :option:`-Wl,--defsym,func_4`:samp:`=0x4`.
+  and the application be linked with :option:`-Wl,--defsym,func_4=0x4`.
   Alternatively, ``func_4`` can be defined in the linker script.
 
 .. index:: RAMPD, RAMPX, RAMPY, RAMPZ
@@ -466,14 +466,14 @@ AVR Built-in Macros
 GCC defines several built-in macros so that the user code can test
 for the presence or absence of features.  Almost any of the following
 built-in macros are deduced from device capabilities and thus
-triggered by the :option:`-mmcu` = command-line option.
+triggered by the :option:`-mmcu=` command-line option.
 
 For even more AVR-specific built-in macros see
 :ref:`avr-named-address-spaces` and :ref:`avr-built-in-functions`.
 
 ``__AVR_ARCH__``
   Build-in macro that resolves to a decimal number that identifies the
-  architecture and depends on the :option:`-mmcu`:samp:`={mcu}` option.
+  architecture and depends on the :option:`-mmcu=mcu` option.
   Possible values are:
 
   ``2``, ``25``, ``3``, ``31``, ``35``,
@@ -492,27 +492,27 @@ For even more AVR-specific built-in macros see
   ``avrxmega2``, ``avrxmega3``, ``avrxmega4``,
   ``avrxmega5``, ``avrxmega6``, ``avrxmega7``, respectively.
   If :samp:`{mcu}` specifies a device, this built-in macro is set
-  accordingly. For example, with :option:`-mmcu`:samp:`=atmega8` the macro is
+  accordingly. For example, with :option:`-mmcu=atmega8` the macro is
   defined to ``4``.
 
 :samp:`__AVR_{Device}__`
-  Setting :option:`-mmcu`:samp:`={device}` defines this built-in macro which reflects
-  the device's name. For example, :option:`-mmcu`:samp:`=atmega8` defines the
-  built-in macro ``__AVR_ATmega8__``, :option:`-mmcu`:samp:`=attiny261a` defines
+  Setting :option:`-mmcu=device` defines this built-in macro which reflects
+  the device's name. For example, :option:`-mmcu=atmega8` defines the
+  built-in macro ``__AVR_ATmega8__``, :option:`-mmcu=attiny261a` defines
   ``__AVR_ATtiny261A__``, etc.
 
   The built-in macros' names follow
   the scheme ``__AVR_Device__`` where :samp:`{Device}` is
   the device name as from the AVR user manual. The difference between
   :samp:`{Device}` in the built-in macro and :samp:`{device}` in
-  :option:`-mmcu`:samp:`={device}` is that the latter is always lowercase.
+  :option:`-mmcu=device` is that the latter is always lowercase.
 
   If :samp:`{device}` is not a device but only a core architecture like
   :samp:`avr51`, this macro is not defined.
 
 ``__AVR_DEVICE_NAME__``
-  Setting :option:`-mmcu`:samp:`={device}` defines this built-in macro to
-  the device's name. For example, with :option:`-mmcu`:samp:`=atmega8` the macro
+  Setting :option:`-mmcu=device` defines this built-in macro to
+  the device's name. For example, with :option:`-mmcu=atmega8` the macro
   is defined to ``atmega8``.
 
   If :samp:`{device}` is not a device but only a core architecture like
@@ -562,8 +562,8 @@ For even more AVR-specific built-in macros see
 ``__AVR_HAVE_SPH__`` ``__AVR_SP8__``
   The device has the SPH (high part of stack pointer) special function
   register or has an 8-bit stack pointer, respectively.
-  The definition of these macros is affected by :option:`-mmcu` = and
-  in the cases of :option:`-mmcu`:samp:`=avr2` and :option:`-mmcu`:samp:`=avr25` also
+  The definition of these macros is affected by :option:`-mmcu=` and
+  in the cases of :option:`-mmcu=avr2` and :option:`-mmcu=avr25` also
   by :option:`-msp8`.
 
 ``__AVR_HAVE_RAMPD__`` ``__AVR_HAVE_RAMPX__`` ``__AVR_HAVE_RAMPY__`` ``__AVR_HAVE_RAMPZ__``
@@ -611,14 +611,14 @@ For even more AVR-specific built-in macros see
   See the :option:`--with-avrlibc` configure option.
 
 ``__HAVE_DOUBLE_MULTILIB__``
-  Defined if :option:`-mdouble` = acts as a multilib option.
+  Defined if :option:`-mdouble=` acts as a multilib option.
 
 ``__HAVE_DOUBLE32__`` ``__HAVE_DOUBLE64__``
   Defined if the compiler supports 32-bit double resp. 64-bit double.
-  The actual layout is specified by option :option:`-mdouble` =.
+  The actual layout is specified by option :option:`-mdouble=`.
 
 ``__DEFAULT_DOUBLE__``
-  The size in bits of ``double`` if :option:`-mdouble` = is not set.
+  The size in bits of ``double`` if :option:`-mdouble=` is not set.
   To test the layout of ``double`` in a program, use the built-in
   macro ``__SIZEOF_DOUBLE__``.
 

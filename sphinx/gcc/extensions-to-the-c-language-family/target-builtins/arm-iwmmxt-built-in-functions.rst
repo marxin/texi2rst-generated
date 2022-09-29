@@ -9,7 +9,7 @@ ARM iWMMXt Built-in Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 These built-in functions are available for the ARM family of
-processors when the :option:`-mcpu`:samp:`=iwmmxt` switch is used:
+processors when the :option:`-mcpu=iwmmxt` switch is used:
 
 .. code-block:: c++
 

@@ -433,7 +433,7 @@ The following attributes are supported on most targets.
 
   The ``tls_model`` attribute sets thread-local storage model
   (see :ref:`thread-local`) of a particular ``__thread`` variable,
-  overriding :option:`-ftls-model`:samp:`=` command-line switch on a per-variable
+  overriding :option:`-ftls-model=` command-line switch on a per-variable
   basis.
   The :samp:`{tls_model}` argument should be one of ``global-dynamic``,
   ``local-dynamic``, ``initial-exec`` or ``local-exec``.
@@ -1030,7 +1030,7 @@ MSP430 Variable Attributes
   same name (see :ref:`msp430-function-attributes`), but it has some additional
   functionality.
 
-  If :option:`-mdata-region` ={ ``upper,either,none`` } has been passed, or
+  If :option:`-mdata-region=` { ``upper,either,none`` } has been passed, or
   the ``section`` attribute is applied to a variable, the compiler will
   generate 430X instructions to handle it.  This is because the compiler has
   to assume that the variable could get placed in the upper memory region

@@ -185,7 +185,7 @@ Blackfin Options
   Build a standalone application for multicore Blackfin processors. 
   This option causes proper start files and link scripts supporting 
   multicore to be used, and defines the macro ``__BFIN_MULTICORE``. 
-  It can only be used with :option:`-mcpu`:samp:`{=bf561-[{sirevision}]`.
+  It can only be used with :option:`-mcpu=bf561[-sirevision]`. 
 
   This option can be used with :option:`-mcorea` or :option:`-mcoreb`, which
   selects the one-application-per-core programming model.  Without

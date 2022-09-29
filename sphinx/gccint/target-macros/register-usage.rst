@@ -58,8 +58,8 @@ Registers have various characteristics.
   The table initialized from this macro, and the table initialized by
   the following one, may be overridden at run time either automatically,
   by the actions of the macro ``CONDITIONAL_REGISTER_USAGE``, or by
-  the user with the command options :option:`-ffixed-`:samp:`{reg}`,
-  :option:`-fcall-used-`:samp:`{reg}` and :option:`-fcall-saved-`:samp:`{reg}`.
+  the user with the command options :option:`-ffixed-reg`,
+  :option:`-fcall-used-reg` and :option:`-fcall-saved-reg`.
 
 .. c:macro:: CALL_USED_REGISTERS
 
@@ -170,8 +170,8 @@ Registers have various characteristics.
   ``reg_class_contents``, and ``reg_names`` have been initialized
   from ``FIXED_REGISTERS``, ``CALL_USED_REGISTERS``,
   ``REG_CLASS_CONTENTS``, and ``REGISTER_NAMES``, respectively.
-  ``global_regs`` has been cleared, and any :option:`-ffixed-`:samp:`{reg}`,
-  :option:`-fcall-used-`:samp:`{reg}` and :option:`-fcall-saved-`:samp:`{reg}`
+  ``global_regs`` has been cleared, and any :option:`-ffixed-reg`,
+  :option:`-fcall-used-reg` and :option:`-fcall-saved-reg`
   command options have been applied.
 
   .. index:: disabling certain registers, controlling register usage

@@ -20,7 +20,7 @@ There are three system names that the build knows about: the machine you
 are building on (:dfn:`build`), the machine that you are building for
 (:dfn:`host`), and the machine that GCC will produce code for
 (:dfn:`target`).  When you configure GCC, you specify these with
-:option:`--build`, :option:`--host`, and :option:`--target`.
+:option:`--build=`, :option:`--host=`, and :option:`--target=`.
 
 Specifying the host without specifying the build should be avoided, as
 :command:`configure` may (and once did) assume that the host you specify
@@ -44,7 +44,7 @@ If build and host are the same, the GCC you are building will also be
 used to build the target libraries (like ``libstdc++``).  If build and host
 are different, you must have already built and installed a cross
 compiler that will be used to build the target libraries (if you
-configured with :option:`--target`:samp:`=foo-bar`, this compiler will be called
+configured with :option:`--target=foo-bar`, this compiler will be called
 :command:`foo-bar-gcc`).
 
 In the case of target libraries, the machine you're building for is the

@@ -121,8 +121,8 @@ information useful for debugging do not run at all, so that
   the last such option is the one that is effective.
 
   :option:`-gdwarf` does not accept a concatenated debug level, to avoid
-  confusion with :option:`-gdwarf-`:samp:`{level}`.
-  Instead use an additional :option:`-g`:samp:`{level}` option to change the
+  confusion with :option:`-gdwarf-level`.
+  Instead use an additional :option:`-glevel` option to change the
   debug level for DWARF.
 
 .. option:: -fno-eliminate-unused-debug-symbols
@@ -254,13 +254,13 @@ information useful for debugging do not run at all, so that
 .. option:: -gstrict-dwarf
 
   Disallow using extensions of later DWARF standard version than selected
-  with :option:`-gdwarf-`:samp:`{version}`.  On most targets using non-conflicting
+  with :option:`-gdwarf-version`.  On most targets using non-conflicting
   DWARF extensions from later standard versions is allowed.
 
 .. option:: -gno-strict-dwarf
 
   Allow using extensions of later DWARF standard version than selected with
-  :option:`-gdwarf-`:samp:`{version}`.
+  :option:`-gdwarf-version`.
 
 .. option:: -gas-loc-support
 
@@ -332,7 +332,7 @@ information useful for debugging do not run at all, so that
 
   There is a proposed representation for view numbers that is not backward
   compatible with the location list format introduced in DWARF 5, that can
-  be enabled with :option:`-gvariable-location-views`:samp:`=incompat5`.  This
+  be enabled with :option:`-gvariable-location-views=incompat5`.  This
   option may be removed in the future, is only provided as a reference
   implementation of the proposed representation.  Debug information
   consumers are not expected to support this extended format, and they
@@ -441,7 +441,7 @@ information useful for debugging do not run at all, so that
 
   You may need to experiment to determine the best settings for your application.
 
-  The default is :option:`-femit-struct-debug-detailed`:samp:`=all`.
+  The default is :option:`-femit-struct-debug-detailed=all`.
 
   This option works only with DWARF debug output.
 

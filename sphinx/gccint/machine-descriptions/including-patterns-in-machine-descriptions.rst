@@ -55,7 +55,7 @@ is permitted but is not encouraged.
 RTL Generation Tool Options for Directory Search
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The :option:`-I`:samp:`{dir}` option specifies directories to search for machine descriptions.
+The :option:`-Idir` option specifies directories to search for machine descriptions.
 For example:
 
 .. code-block:: c++

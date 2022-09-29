@@ -128,7 +128,7 @@ These function attributes are supported for ARM targets:
     .. index:: target("fpu=") function attribute, ARM
 
     Specifies the fpu for which to tune the performance of this function.
-    The behavior and permissible arguments are the same as for the :option:`-mfpu` =
+    The behavior and permissible arguments are the same as for the :option:`-mfpu=`
     command-line option.
 
   :samp:`arch=`
@@ -137,7 +137,7 @@ These function attributes are supported for ARM targets:
 
     Specifies the architecture version and architectural extensions to use
     for this function.  The behavior and permissible arguments are the same as
-    for the :option:`-march` = command-line option.
+    for the :option:`-march=` command-line option.
 
     The above target attributes can be specified as follows:
 
@@ -165,4 +165,5 @@ These function attributes are supported for ARM targets:
 
     In this example ``target("+crc+nocrypto")`` enables the ``crc``
     extension and disables the ``crypto`` extension for the function ``foo``
-    without modifying an existing :option:`-march` = or :option:`-mcpu` option.
+    without modifying an existing :option:`-march=` or :option:`-mcpu` option.
+

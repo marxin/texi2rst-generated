@@ -155,7 +155,7 @@ See :ref:`gccint:driver`.
 
   :samp:`fixits-v2`
     As ``fixits-v1``, but columns are expressed as display columns,
-    as per :option:`-fdiagnostics-column-unit`:samp:`=display`.
+    as per :option:`-fdiagnostics-column-unit=display`.
 
 Some additional environment variables affect the behavior of the
 preprocessor.

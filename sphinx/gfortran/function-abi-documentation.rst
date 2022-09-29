@@ -22,7 +22,7 @@ _gfortran_caf_init --- Initialiation function
 .. function:: void _gfortran_caf_init (int *argc, char ***argv) 
 
   This function is called at startup of the program before the Fortran main
-  program, if the latter has been compiled with :option:`-fcoarray`:samp:`=lib`.
+  program, if the latter has been compiled with :option:`-fcoarray=lib`.
   It takes as arguments the command-line arguments of the program.  It is
   permitted to pass two ``NULL`` pointers as argument; if non- ``NULL``,
   the library is permitted to modify the arguments.
@@ -54,7 +54,7 @@ _gfortran_caf_finish --- Finalization function
 .. function:: void _gfortran_caf_finish (void) 
 
   This function is called at the end of the Fortran main program, if it has
-  been compiled with the :option:`-fcoarray`:samp:`=lib` option.
+  been compiled with the :option:`-fcoarray=lib` option.
 
   .. note::
 

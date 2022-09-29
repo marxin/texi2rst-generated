@@ -55,7 +55,7 @@ Either :samp:`{infile}` or :samp:`{outfile}` may be :option:`-`, which as
 :samp:`{infile}` means to read from standard input and as :samp:`{outfile}`
 means to write to standard output.  If either file is omitted, it
 means the same as if :option:`-` had been specified for that file.
-You can also use the :option:`-o` :samp:`{outfile}` option to specify the 
+You can also use the :option:`-o outfile` option to specify the 
 output file.
 
 Unless otherwise noted, or the option ends in :samp:`=`, all options

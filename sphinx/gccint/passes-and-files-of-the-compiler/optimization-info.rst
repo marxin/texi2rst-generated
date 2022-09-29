@@ -105,7 +105,7 @@ redirecting ``stderr``.
 
 ``pstream``
   This stream is for pass-specific dump output. For example,
-  :option:`-fdump-tree-vect`:samp:`=foo.v` dumps tree vectorization pass output
+  :option:`-fdump-tree-vect=foo.v` dumps tree vectorization pass output
   into the given file name :samp:`foo.v`. If the file name is not provided,
   the default file name is based on the source file and pass number. Note
   that one could also use special file names ``stdout`` and

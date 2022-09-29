@@ -15,7 +15,7 @@ Invoking gccgo
 
   gccgo [ :option:`-c` | :option:`-S` ]
         [ :option:`-g` ] [ :option:`-pg` ] [ :option:`-O`:samp:`{level}` ]
-        [ :option:`-I`:samp:`{dir}`...] [ :option:`-L`:samp:`{dir}`...]
+        [ :option:`-I dir...` ] [ :option:`-L dir...` ]
         [ :option:`-o` :samp:`{outfile}` ] :samp:`{infile}`...
 
 Description

@@ -23,7 +23,7 @@ just emit warnings.
 The gimple representation can be seen using :option:`-fdump-ipa-analyzer`.
 
 TipIf the analyzer ICEs before this is written out, one workaround is to use
-:option:`--param`:samp:`=analyzer-bb-explosion-factor=0` to force the analyzer
+:option:`--param=analyzer-bb-explosion-factor=0` to force the analyzer
 to bail out after analyzing the first basic block.
 
 First, we build a ``supergraph`` which combines the callgraph and all

@@ -57,8 +57,8 @@ These are the options defined for the Altera Nios II processor.
     linker script to allocate them within the addressable range of the
     global pointer.
 
-  :option:`-mgpopt` is equivalent to :option:`-mgpopt`:samp:`=local`, and
-  :option:`-mno-gpopt` is equivalent to :option:`-mgpopt`:samp:`=none`.
+  :option:`-mgpopt` is equivalent to :option:`-mgpopt=local`, and
+  :option:`-mno-gpopt` is equivalent to :option:`-mgpopt=none`.
 
   The default is :option:`-mgpopt` except when :option:`-fpic` or
   :option:`-fPIC` is specified to generate position-independent code.
@@ -137,16 +137,16 @@ These are the options defined for the Altera Nios II processor.
 
   Enable or disable generation of Nios II R2 BMX (bit manipulation) and
   CDX (code density) instructions.  Enabling these instructions also
-  requires :option:`-march`:samp:`=r2`.  Since these instructions are optional
+  requires :option:`-march=r2`.  Since these instructions are optional
   extensions to the R2 architecture, the default is not to emit them.
 
 .. index:: mcustom-insn, mno-custom-insn
 
 .. option:: -mcustom-insn={N}
 
-  Each :option:`-mcustom-`:samp:`{insn}` = :samp:`{N}` option enables use of a
+  Each :option:`-mcustom-insn=N` option enables use of a
   custom instruction with encoding :samp:`{N}` when generating code that uses 
-  :samp:`{insn}`.  For example, :option:`-mcustom-fadds`:samp:`=253` generates custom
+  :samp:`{insn}`.  For example, :option:`-mcustom-fadds=253` generates custom
   instruction 253 for single-precision floating-point add operations instead
   of the default behavior of using a library call.
 
@@ -263,63 +263,63 @@ These are the options defined for the Altera Nios II processor.
 .. option:: -mcustom-fpu-cfg={name}
 
   This option enables a predefined, named set of custom instruction encodings
-  (see :option:`-mcustom-`:samp:`{insn}` above).  
+  (see :option:`-mcustom-insn` above).  
   Currently, the following sets are defined:
 
-  :option:`-mcustom-fpu-cfg`:samp:`=60-1` is equivalent to:
+  :option:`-mcustom-fpu-cfg=60-1` is equivalent to:
 
-  :option:`-mcustom-fmuls`:samp:`=252` |gol|
-  :option:`-mcustom-fadds`:samp:`=253` |gol|
-  :option:`-mcustom-fsubs`:samp:`=254` |gol|
+  :option:`-mcustom-fmuls=252` |gol|
+  :option:`-mcustom-fadds=253` |gol|
+  :option:`-mcustom-fsubs=254` |gol|
   :option:`-fsingle-precision-constant`
 
-  :option:`-mcustom-fpu-cfg`:samp:`=60-2` is equivalent to:
+  :option:`-mcustom-fpu-cfg=60-2` is equivalent to:
 
-  :option:`-mcustom-fmuls`:samp:`=252` 
-  :option:`-mcustom-fadds`:samp:`=253` |gol|
-  :option:`-mcustom-fsubs`:samp:`=254` |gol|
-  :option:`-mcustom-fdivs`:samp:`=255` |gol|
-  :option:`-fsingle-precision-constant` |gol|
-
-  :option:`-mcustom-fpu-cfg`:samp:`=72-3` is equivalent to:
-
-  :option:`-mcustom-floatus`:samp:`=243` |gol|
-  :option:`-mcustom-fixsi`:samp:`=244` |gol|
-  :option:`-mcustom-floatis`:samp:`=245` |gol|
-  :option:`-mcustom-fcmpgts`:samp:`=246` |gol|
-  :option:`-mcustom-fcmples`:samp:`=249` |gol|
-  :option:`-mcustom-fcmpeqs`:samp:`=250` |gol|
-  :option:`-mcustom-fcmpnes`:samp:`=251` |gol|
-  :option:`-mcustom-fmuls`:samp:`=252` |gol|
-  :option:`-mcustom-fadds`:samp:`=253` |gol|
-  :option:`-mcustom-fsubs`:samp:`=254` |gol|
-  :option:`-mcustom-fdivs`:samp:`=255` |gol|
+  :option:`-mcustom-fmuls=252` |gol|
+  :option:`-mcustom-fadds=253` |gol|
+  :option:`-mcustom-fsubs=254` |gol|
+  :option:`-mcustom-fdivs=255` |gol|
   :option:`-fsingle-precision-constant`
 
-  :option:`-mcustom-fpu-cfg`:samp:`=fph2` is equivalent to:
+  :option:`-mcustom-fpu-cfg=72-3` is equivalent to:
 
-  :option:`-mcustom-fabss`:samp:`=224` |gol|
-  :option:`-mcustom-fnegs`:samp:`=225` |gol|
-  :option:`-mcustom-fcmpnes`:samp:`=226` |gol|
-  :option:`-mcustom-fcmpeqs`:samp:`=227` |gol|
-  :option:`-mcustom-fcmpges`:samp:`=228` |gol|
-  :option:`-mcustom-fcmpgts`:samp:`=229` |gol|
-  :option:`-mcustom-fcmples`:samp:`=230` |gol|
-  :option:`-mcustom-fcmplts`:samp:`=231` |gol|
-  :option:`-mcustom-fmaxs`:samp:`=232` |gol|
-  :option:`-mcustom-fmins`:samp:`=233` |gol|
-  :option:`-mcustom-round`:samp:`=248` |gol|
-  :option:`-mcustom-fixsi`:samp:`=249` |gol|
-  :option:`-mcustom-floatis`:samp:`=250` |gol|
-  :option:`-mcustom-fsqrts`:samp:`=251` |gol|
-  :option:`-mcustom-fmuls`:samp:`=252` |gol|
-  :option:`-mcustom-fadds`:samp:`=253` |gol|
-  :option:`-mcustom-fsubs`:samp:`=254` |gol|
-  :option:`-mcustom-fdivs`:samp:`=255` 
+  :option:`-mcustom-floatus=243` |gol|
+  :option:`-mcustom-fixsi=244` |gol|
+  :option:`-mcustom-floatis=245` |gol|
+  :option:`-mcustom-fcmpgts=246` |gol|
+  :option:`-mcustom-fcmples=249` |gol|
+  :option:`-mcustom-fcmpeqs=250` |gol|
+  :option:`-mcustom-fcmpnes=251` |gol|
+  :option:`-mcustom-fmuls=252` |gol|
+  :option:`-mcustom-fadds=253` |gol|
+  :option:`-mcustom-fsubs=254` |gol|
+  :option:`-mcustom-fdivs=255` |gol|
+  :option:`-fsingle-precision-constant`
+
+  :option:`-mcustom-fpu-cfg=fph2` is equivalent to:
+
+  :option:`-mcustom-fabss=224` |gol|
+  :option:`-mcustom-fnegs=225` |gol|
+  :option:`-mcustom-fcmpnes=226` |gol|
+  :option:`-mcustom-fcmpeqs=227` |gol|
+  :option:`-mcustom-fcmpges=228` |gol|
+  :option:`-mcustom-fcmpgts=229` |gol|
+  :option:`-mcustom-fcmples=230` |gol|
+  :option:`-mcustom-fcmplts=231` |gol|
+  :option:`-mcustom-fmaxs=232` |gol|
+  :option:`-mcustom-fmins=233` |gol|
+  :option:`-mcustom-round=248` |gol|
+  :option:`-mcustom-fixsi=249` |gol|
+  :option:`-mcustom-floatis=250` |gol|
+  :option:`-mcustom-fsqrts=251` |gol|
+  :option:`-mcustom-fmuls=252` |gol|
+  :option:`-mcustom-fadds=253` |gol|
+  :option:`-mcustom-fsubs=254` |gol|
+  :option:`-mcustom-fdivs=255` 
 
   Custom instruction assignments given by individual
-  :option:`-mcustom-`:samp:`{insn}` = options override those given by
-  :option:`-mcustom-fpu-cfg` =, regardless of the
+  :option:`-mcustom-insn=` options override those given by
+  :option:`-mcustom-fpu-cfg=`, regardless of the
   order of the options on the command line.
 
   Note that you can gain more local control over selection of a FPU
@@ -329,9 +329,9 @@ These are the options defined for the Altera Nios II processor.
 
   The name :samp:`{fph2}` is an abbreviation for *Nios II Floating Point
   Hardware 2 Component*.  Please note that the custom instructions enabled by
-  :option:`-mcustom-fmins`:samp:`=233` and :option:`-mcustom-fmaxs`:samp:`=234` are only generated
+  :option:`-mcustom-fmins=233` and :option:`-mcustom-fmaxs=234` are only generated
   if :option:`-ffinite-math-only` is specified.  The custom instruction enabled by
-  :option:`-mcustom-round`:samp:`=248` is only generated if :option:`-fno-math-errno` is
+  :option:`-mcustom-round=248` is only generated if :option:`-fno-math-errno` is
   specified.  In contrast to the other configurations,
   :option:`-fsingle-precision-constant` is not set.
 
@@ -342,7 +342,7 @@ ELF (bare-metal) target:
 
   Link with HAL BSP.  This suppresses linking with the GCC-provided C runtime
   startup and termination code, and is typically used in conjunction with
-  :option:`-msys-crt0` = to specify the location of the alternate startup code
+  :option:`-msys-crt0=` to specify the location of the alternate startup code
   provided by the HAL BSP.
 
 .. option:: -msmallc

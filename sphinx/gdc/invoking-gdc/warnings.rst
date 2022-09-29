@@ -37,7 +37,7 @@ specified, they do not prevent compilation of the program.
   whose bound can be larger than :samp:`{n}` bytes.
   :option:`-Wno-alloca-larger-than` disables
   :option:`-Walloca-larger-than` warning and is equivalent to
-  :option:`-Walloca-larger-than`:samp:`={SIZE_MAX}` or larger.
+  :option:`-Walloca-larger-than=SIZE_MAX` or larger.
 
 .. option:: -Wcast-result
 

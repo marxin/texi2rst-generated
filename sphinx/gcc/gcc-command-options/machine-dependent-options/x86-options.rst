@@ -17,19 +17,19 @@ These :samp:`-m` options are defined for the x86 family of computers.
 .. option:: -march={cpu-type}
 
   Generate instructions for the machine type :samp:`{cpu-type}`.  In contrast to
-  :option:`-mtune`:samp:`={cpu-type}`, which merely tunes the generated code 
-  for the specified :samp:`{cpu-type}`, :option:`-march`:samp:`={cpu-type}` allows GCC
+  :option:`-mtune=cpu-type`, which merely tunes the generated code 
+  for the specified :samp:`{cpu-type}`, :option:`-march=cpu-type` allows GCC
   to generate code that may not run at all on processors other than the one
-  indicated.  Specifying :option:`-march`:samp:`={cpu-type}` implies 
-  :option:`-mtune`:samp:`={cpu-type}`, except where noted otherwise.
+  indicated.  Specifying :option:`-march=cpu-type` implies 
+  :option:`-mtune=cpu-type`, except where noted otherwise.
 
   The choices for :samp:`{cpu-type}` are:
 
   :samp:`native`
     This selects the CPU to generate code for at compilation time by determining
-    the processor type of the compiling machine.  Using :option:`-march`:samp:`=native`
+    the processor type of the compiling machine.  Using :option:`-march=native`
     enables all instruction subsets supported by the local machine (hence
-    the result might not run on different machines).  Using :option:`-mtune`:samp:`=native`
+    the result might not run on different machines).  Using :option:`-mtune=native`
     produces code optimized for the local machine under the constraints
     of the selected instruction set.  
 
@@ -45,7 +45,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
     Since these :samp:`{cpu-type}` values do not have a corresponding
     :option:`-mtune` setting, using :option:`-march` with these values enables
     generic tuning.  Specific tuning can be enabled using the
-    :option:`-mtune`:samp:`={other-cpu-type}` option with an appropriate
+    :option:`-mtune=other-cpu-type` option with an appropriate
     :samp:`{other-cpu-type}` value.
 
   :samp:`i386`
@@ -425,9 +425,9 @@ These :samp:`-m` options are defined for the x86 family of computers.
   While picking a specific :samp:`{cpu-type}` schedules things appropriately
   for that particular chip, the compiler does not generate any code that
   cannot run on the default machine type unless you use a
-  :option:`-march`:samp:`={cpu-type}` option.
+  :option:`-march=cpu-type` option.
   For example, if GCC is configured for i686-pc-linux-gnu
-  then :option:`-mtune`:samp:`=pentium4` generates code that is tuned for Pentium 4
+  then :option:`-mtune=pentium4` generates code that is tuned for Pentium 4
   but still runs on i686 machines.
 
   The choices for :samp:`{cpu-type}` are the same as for :option:`-march`.
@@ -437,7 +437,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
     Produce code optimized for the most common IA32/AMD64/EM64T processors.
     If you know the CPU on which your code will run, then you should use
     the corresponding :option:`-mtune` or :option:`-march` option instead of
-    :option:`-mtune`:samp:`=generic`.  But, if you do not know exactly what CPU users
+    :option:`-mtune=generic`.  But, if you do not know exactly what CPU users
     of your application will have, then you should use this option.
 
     As new processors are deployed in the marketplace, the behavior of this
@@ -446,7 +446,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
     the processors
     that are most common at the time that version of GCC is released.
 
-    There is no :option:`-march`:samp:`=generic` option because :option:`-march`
+    There is no :option:`-march=generic` option because :option:`-march`
     indicates the instruction set the compiler can use, and there is no
     generic instruction set applicable to all processors.  In contrast,
     :option:`-mtune` indicates the processor (or, in this case, collection of
@@ -456,7 +456,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
     Produce code optimized for the most current Intel processors, which are
     Haswell and Silvermont for this version of GCC.  If you know the CPU
     on which your code will run, then you should use the corresponding
-    :option:`-mtune` or :option:`-march` option instead of :option:`-mtune`:samp:`=intel`.
+    :option:`-mtune` or :option:`-march` option instead of :option:`-mtune=intel`.
     But, if you want your application performs better on both Haswell and
     Silvermont, then you should use this option.
 
@@ -466,7 +466,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
     the most current Intel processors at the time that version of GCC is
     released.
 
-    There is no :option:`-march`:samp:`=intel` option because :option:`-march` indicates
+    There is no :option:`-march=intel` option because :option:`-march` indicates
     the instruction set the compiler can use, and there is no common
     instruction set applicable to all processors.  In contrast,
     :option:`-mtune` indicates the processor (or, in this case, collection of
@@ -500,7 +500,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
     only in Pentium 4 and AMD x86-64 chips, supports double-precision
     arithmetic too.
 
-    For the x86-32 compiler, you must use :option:`-march`:samp:`={cpu-type}`, :option:`-msse`
+    For the x86-32 compiler, you must use :option:`-march=cpu-type`, :option:`-msse`
     or :option:`-msse2` switches to enable SSE extensions and make this option
     effective.  For the x86-64 compiler, these extensions are enabled by default.
 
@@ -659,7 +659,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
 .. option:: -mlarge-data-threshold={threshold}
 
-  When :option:`-mcmodel`:samp:`=medium` is specified, data objects larger than
+  When :option:`-mcmodel=medium` is specified, data objects larger than
   :samp:`{threshold}` are placed in the large data section.  This value must be the
   same across all objects linked into the binary, and defaults to 65535.
 
@@ -764,7 +764,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   .. warning::
 
     When generating code for the x86-64 architecture with
-    SSE extensions disabled, :option:`-mpreferred-stack-boundary`:samp:`=3` can be
+    SSE extensions disabled, :option:`-mpreferred-stack-boundary=3` can be
     used to keep the stack boundary aligned to 8 byte boundary.  Since
     x86-64 ABI require 16 byte stack alignment, this is ABI incompatible and
     intended to be used in controlled environment where stack space is
@@ -775,7 +775,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
     variable arguments are handled incorrectly for 16 byte aligned
     objects (including x87 long double and __int128), leading to wrong
     results.  You must build all modules with
-    :option:`-mpreferred-stack-boundary`:samp:`=3`, including any libraries.  This
+    :option:`-mpreferred-stack-boundary=3`, including any libraries.  This
     includes the system libraries and startup modules.
 
 .. option:: -mincoming-stack-boundary={num}
@@ -801,7 +801,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   This extra alignment does consume extra stack space, and generally
   increases code size.  Code that is sensitive to stack space usage, such
   as embedded systems and operating system kernels, may want to reduce the
-  preferred alignment to :option:`-mpreferred-stack-boundary`:samp:`=2`.
+  preferred alignment to :option:`-mpreferred-stack-boundary=2`.
 
 .. option:: -mmmx, -msse, -msse2, -msse3, -mssse3, -msse4, -msse4a, -msse4.1, -msse4.2, -mavx, -mavx2, -mavx512f, -mavx512pf, -mavx512er, -mavx512cd, -mavx512vl, -mavx512bw, -mavx512dq, -mavx512ifma, -mavx512vbmi, -msha, -maes, -mpclmul, -mclflushopt, -mclwb, -mfsgsbase, -mptwrite, -mrdrnd, -mf16c, -mfma, -mpconfig, -mwbnoinvd, -mfma4, -mprfchw, -mrdpid, -mprefetchwt1, -mrdseed, -msgx, -mxop, -mlwp, -m3dnow, -m3dnowa, -mpopcnt, -mabm, -madx, -mbmi, -mbmi2, -mlzcnt, -mfxsr, -mxsave, -mxsaveopt, -mxsavec, -mxsaves, -mrtm, -mhle, -mtbm, -mmwaitx, -mclzero, -mpku, -mavx512vbmi2, -mavx512bf16, -mavx512fp16, -mgfni, -mvaes, -mwaitpkg, -mvpclmulqdq, -mavx512bitalg, -mmovdiri, -mmovdir64b, -menqcmd, -muintr, -mtsxldtrk, -mavx512vpopcntdq, -mavx512vp2intersect, -mavx5124fmaps, -mavx512vnni, -mavxvnni, -mavx5124vnniw, -mcldemote, -mserialize, -mamx-tile, -mamx-int8, -mamx-bf16, -mhreset, -mkl, -mwidekl
 
@@ -823,14 +823,14 @@ These :samp:`-m` options are defined for the x86 family of computers.
   disabled by these switches.
 
   To generate SSE/SSE2 instructions automatically from floating-point
-  code (as opposed to 387 instructions), see :option:`-mfpmath`:samp:`=sse`.
+  code (as opposed to 387 instructions), see :option:`-mfpmath=sse`.
 
   GCC depresses SSEx instructions when :option:`-mavx` is used. Instead, it
   generates new AVX instructions or AVX equivalence for all SSEx instructions
   when needed.
 
   These options enable GCC to use these extended instructions in
-  generated code, even without :option:`-mfpmath`:samp:`=sse`.  Applications that
+  generated code, even without :option:`-mfpmath=sse`.  Applications that
   perform run-time CPU detection must compile separate files for each
   supported architecture, using the appropriate flags.  In particular,
   the file containing the CPU detection code should be compiled without
@@ -840,7 +840,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
   This option instructs GCC to dump the names of the x86 performance 
   tuning features and default settings. The names can be used in 
-  :option:`-mtune-ctrl`:samp:`={feature-list}`.
+  :option:`-mtune-ctrl=feature-list`.
 
 .. index:: mtune-ctrl=feature-list
 
@@ -850,14 +850,14 @@ These :samp:`-m` options are defined for the x86 family of computers.
   :samp:`{feature-list}` is a comma separated list of :samp:`{feature}` names. See also
   :option:`-mdump-tune-features`. When specified, the :samp:`{feature}` is turned
   on if it is not preceded with :samp:`^`, otherwise, it is turned off. 
-  :option:`-mtune-ctrl`:samp:`={feature-list}` is intended to be used by GCC
+  :option:`-mtune-ctrl=feature-list` is intended to be used by GCC
   developers. Using it may lead to code paths not covered by testing and can
   potentially result in compiler ICEs or runtime errors.
 
 .. option:: -mno-default
 
   This option instructs GCC to turn off all tunable features. See also 
-  :option:`-mtune-ctrl`:samp:`={feature-list}` and :option:`-mdump-tune-features`.
+  :option:`-mtune-ctrl=feature-list` and :option:`-mdump-tune-features`.
 
 .. option:: -mcld
 
@@ -1007,7 +1007,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
   :samp:`vec-sqrt`
     Enable the approximation for vectorized square root.
 
-  So, for example, :option:`-mrecip`:samp:`=all,!sqrt` enables
+  So, for example, :option:`-mrecip=all,!sqrt` enables
   all of the reciprocal approximations, except for square root.
 
 .. option:: -mveclibabi={type}
@@ -1030,12 +1030,12 @@ These :samp:`-m` options are defined for the x86 family of computers.
   ``vmlsAtan4``, ``vmlsAtanh4``, ``vmlsCbrt4``, ``vmlsSinh4``,
   ``vmlsSin4``, ``vmlsAsinh4``, ``vmlsAsin4``, ``vmlsCosh4``,
   ``vmlsCos4``, ``vmlsAcosh4`` and ``vmlsAcos4`` for corresponding
-  function type when :option:`-mveclibabi`:samp:`=svml` is used, and ``__vrd2_sin``,
+  function type when :option:`-mveclibabi=svml` is used, and ``__vrd2_sin``,
   ``__vrd2_cos``, ``__vrd2_exp``, ``__vrd2_log``, ``__vrd2_log2``,
   ``__vrd2_log10``, ``__vrs4_sinf``, ``__vrs4_cosf``,
   ``__vrs4_expf``, ``__vrs4_logf``, ``__vrs4_log2f``,
   ``__vrs4_log10f`` and ``__vrs4_powf`` for the corresponding function type
-  when :option:`-mveclibabi`:samp:`=acml` is used.  
+  when :option:`-mveclibabi=acml` is used.  
 
 .. option:: -mabi={name}
 
@@ -1057,7 +1057,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
   Insert ENDBR instruction at function entry only via the :x86-fn-attr:`cf_check`
   function attribute. This is useful when used with the option
-  :option:`-fcf-protection`:samp:`=branch` to control ENDBR insertion at the
+  :option:`-fcf-protection=branch` to control ENDBR insertion at the
   function entry.
 
 .. option:: -mcet-switch
@@ -1297,7 +1297,7 @@ These :samp:`-m` options are defined for the x86 family of computers.
 
 .. option:: -mmemset-strategy={strategy}
 
-  The option is similar to :option:`-mmemcpy-strategy` = except that it is to control
+  The option is similar to :option:`-mmemcpy-strategy=` except that it is to control
   ``__builtin_memset`` expansion.
 
 .. option:: -momit-leaf-frame-pointer
@@ -1400,8 +1400,8 @@ These :samp:`-m` options are defined for the x86 family of computers.
   :option:`-fstack-protector` or :option:`-fstack-protector-all` is specified.
 
   With the latter choice the options
-  :option:`-mstack-protector-guard-reg`:samp:`={reg}` and
-  :option:`-mstack-protector-guard-offset`:samp:`={offset}` furthermore specify
+  :option:`-mstack-protector-guard-reg=reg` and
+  :option:`-mstack-protector-guard-offset=offset` furthermore specify
   which segment register (``%fs`` or ``%gs``) to use as base register
   for reading the canary, and from what offset from that base register.
   The default for those is as specified in the relevant ABI.
@@ -1430,13 +1430,13 @@ These :samp:`-m` options are defined for the x86 family of computers.
   You can control this behavior for a specific function by using the
   function attribute ``indirect_branch``.  See :ref:`function-attributes`.
 
-  Note that :option:`-mcmodel`:samp:`=large` is incompatible with
-  :option:`-mindirect-branch`:samp:`=thunk` and
-  :option:`-mindirect-branch`:samp:`=thunk-extern` since the thunk function may
+  Note that :option:`-mcmodel=large` is incompatible with
+  :option:`-mindirect-branch=thunk` and
+  :option:`-mindirect-branch=thunk-extern` since the thunk function may
   not be reachable in the large code model.
 
-  Note that :option:`-mindirect-branch`:samp:`=thunk-extern` is compatible with
-  :option:`-fcf-protection`:samp:`=branch` since the external thunk can be made
+  Note that :option:`-mindirect-branch=thunk-extern` is compatible with
+  :option:`-fcf-protection=branch` since the external thunk can be made
   to enable control-flow check.
 
 .. option:: -mfunction-return={choice}
@@ -1450,13 +1450,13 @@ These :samp:`-m` options are defined for the x86 family of computers.
   using the function attribute ``function_return``.
   See :ref:`function-attributes`.
 
-  Note that :option:`-mindirect-return`:samp:`=thunk-extern` is compatible with
-  :option:`-fcf-protection`:samp:`=branch` since the external thunk can be made
+  Note that :option:`-mindirect-return=thunk-extern` is compatible with
+  :option:`-fcf-protection=branch` since the external thunk can be made
   to enable control-flow check.
 
-  Note that :option:`-mcmodel`:samp:`=large` is incompatible with
-  :option:`-mfunction-return`:samp:`=thunk` and
-  :option:`-mfunction-return`:samp:`=thunk-extern` since the thunk function may
+  Note that :option:`-mcmodel=large` is incompatible with
+  :option:`-mfunction-return=thunk` and
+  :option:`-mfunction-return=thunk-extern` since the thunk function may
   not be reachable in the large code model.
 
 .. option:: -mindirect-branch-register
