@@ -663,7 +663,7 @@ in the following sections.
   :option:`-mcrc`  :option:`-mdsp-packa`  :option:`-mdvbf`  :option:`-mlock`  :option:`-mmac-d16`  :option:`-mmac-24`  :option:`-mrtsc`  :option:`-mswape` |gol|
   :option:`-mtelephony`  :option:`-mxy`  :option:`-misize`  :option:`-mannotate-align`  :option:`-marclinux`  :option:`-marclinux_prof` |gol|
   :option:`-mlong-calls`  :option:`-mmedium-calls`  :option:`-msdata`  :option:`-mirq-ctrl-saved` |gol|
-  :option:`-mrgf-banked-regs`  :option:`-mlpc-width=width`  :option:`-G` :samp:`{num}` |gol|
+  :option:`-mrgf-banked-regs`  :option:`-mlpc-width=width`  :option:`-G num` |gol|
   :option:`-mvolatile-cache`  :option:`-mtp-regno=regno` |gol|
   :option:`-malign-call`  :option:`-mauto-modify-reg`  :option:`-mbbit-peephole`  :option:`-mno-brcc` |gol|
   :option:`-mcase-vector-pcrel`  :option:`-mcompact-casesi`  :option:`-mno-cond-exec`  :option:`-mearly-cbranchsi` |gol|
