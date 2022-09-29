@@ -65,7 +65,7 @@ rst_prolog = r'''
                \\
 '''
 
-needs_sphinx = '5.1'
+needs_sphinx = '5.3'
 
 rst_epilog = '''
 .. |gcc_version| replace:: %s
