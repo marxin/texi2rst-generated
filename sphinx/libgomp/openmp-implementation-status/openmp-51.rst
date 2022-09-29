@@ -44,8 +44,8 @@ New features listed in Appendix B of the OpenMP specification
      - Y
      -
    * - ``assume`` directive
-     - N
-     -
+     - P
+     - Only C/C++
    * - ``nothing`` directive
      - Y
      -
@@ -170,9 +170,6 @@ Other new OpenMP 5.1 features
      - N
      -
    * - Pointer predetermined firstprivate getting initialized to address of matching mapped list item per 5.1, Sect. 2.21.7.2
-     - N
-     -
-   * - ``begin declare target`` directive
      - N
      -
    * - For Fortran, diagnose placing declarative before/between ``USE``, ``IMPORT``, and ``IMPLICIT`` as invalid
