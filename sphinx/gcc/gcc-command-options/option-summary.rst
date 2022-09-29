@@ -20,9 +20,9 @@ in the following sections.
   :option:`-dumpdir` :samp:`{dumppfx}`  :option:`-x` :samp:`{language}`  |gol|
   :option:`-v`  :option:`-###`  :option:`--help`:samp:`[={class}[,...]]`  :option:`--target-help`  :option:`--version` |gol|
   :option:`-pass-exit-codes`  :option:`-pipe`  :option:`-specs=file`  :option:`-wrapper`  |gol|
-  :samp:`@{file}`  :option:`-ffile-prefix-map=old` = :samp:`{new}`  |gol|
-  :option:`-fplugin=file`  :option:`-fplugin-arg-name` = :samp:`{arg}`  |gol|
-  :option:`-fdump-ada-spec`  [:option:`-slim` ]  :option:`-fada-spec-parent=unit`  :option:`-fdump-go-spec=file`
+  :samp:`@{file}`  :option:`-ffile-prefix-map=old=new`  |gol|
+  :option:`-fplugin=file`  :option:`-fplugin-arg-name=arg`  |gol|
+  :option:`-fdump-ada-spec[-slim]` :option:`-fada-spec-parent=unit`  :option:`-fdump-go-spec=file`
 
 *C Language Options*
 
@@ -135,8 +135,8 @@ in the following sections.
   :option:`-fmessage-length=n`  |gol|
   :option:`-fdiagnostics-plain-output` |gol|
   :option:`-fdiagnostics-show-location=[once|every-line]` |gol|
-  :option:`-fdiagnostics-color=[auto|never|always]`|gol|
-  :option:`-fdiagnostics-urls=[auto|never|always]`  |gol|
+  :option:`-fdiagnostics-color=[auto|never|always]` |gol|
+  :option:`-fdiagnostics-urls=[auto|never|always]` |gol|
   :option:`-fdiagnostics-format=[text|sarif-stderr|sarif-file|json|json-stderr|json-file]`  |gol|
   :option:`-fno-diagnostics-show-option`  :option:`-fno-diagnostics-show-caret` |gol|
   :option:`-fno-diagnostics-show-labels`  :option:`-fno-diagnostics-show-line-numbers` |gol|
@@ -256,6 +256,7 @@ in the following sections.
   :option:`-Wzero-length-bounds`
 
 *Static Analyzer Options*
+
   :option:`-fanalyzer` |gol|
   :option:`-fanalyzer-call-summaries` |gol|
   :option:`-fanalyzer-checker=name` |gol|
@@ -360,12 +361,12 @@ in the following sections.
   See :ref:`optimize-options`.
 
   :option:`-faggressive-loop-optimizations` |gol|
-  :option:`-falign-functions[={n}[{m}:[{n2}[:{m2}]]]]`|gol|
-  :option:`-falign-jumps[={n}[{m}:[{n2}[:{m2}]]]]` |gol|
-  :option:`-falign-labels[={n}[{m}:[{n2}[:{m2}]]]]` |gol|
-  :option:`-falign-loops[={n}[{m}:[{n2}[:{m2}]]]]` |gol|
+  :option:`-falign-functions[=n[m:[n2[:m2]]]]` |gol|
+  :option:`-falign-jumps[=n[m:[n2[:m2]]]]` |gol|
+  :option:`-falign-labels[=n[m:[n2[:m2]]]]` |gol|
+  :option:`-falign-loops[=n[m:[n2[:m2]]]]` |gol|
   :option:`-fno-allocation-dce` :option:`-fallow-store-data-races` |gol|
-  :option:`-fassociative-math`  :option:`-fauto-profile`  :option:`-fauto-profile[=path` ] |gol|
+  :option:`-fassociative-math`  :option:`-fauto-profile`  :option:`-fauto-profile[=path]` |gol|
   :option:`-fauto-inc-dec`  :option:`-fbranch-probabilities` |gol|
   :option:`-fcaller-saves` |gol|
   :option:`-fcombine-stack-adjustments`  :option:`-fconserve-stack` |gol|
@@ -428,7 +429,7 @@ in the following sections.
   :option:`-fsel-sched-pipelining`  :option:`-fsel-sched-pipelining-outer-loops` |gol|
   :option:`-fsemantic-interposition`  :option:`-fshrink-wrap`  :option:`-fshrink-wrap-separate` |gol|
   :option:`-fsignaling-nans` |gol|
-  :option:`-fsingle-precision-constant`  :option:`-fsplit-ivs-in-unroller`  :option:`-fsplit-loops`|gol|
+  :option:`-fsingle-precision-constant`  :option:`-fsplit-ivs-in-unroller`  :option:`-fsplit-loops` |gol|
   :option:`-fsplit-paths` |gol|
   :option:`-fsplit-wide-types`  :option:`-fsplit-wide-types-early`  :option:`-fssa-backprop`  :option:`-fssa-phiopt` |gol|
   :option:`-fstdarg-opt`  :option:`-fstore-merging`  :option:`-fstrict-aliasing` :option:`-fipa-strict-aliasing` |gol|
@@ -448,7 +449,7 @@ in the following sections.
   :option:`-funroll-loops` :option:`-funsafe-math-optimizations`  :option:`-funswitch-loops` |gol|
   :option:`-fipa-ra`  :option:`-fvariable-expansion-in-unroller`  :option:`-fvect-cost-model`  :option:`-fvpt` |gol|
   :option:`-fweb`  :option:`-fwhole-program`  :option:`-fwpa`  :option:`-fuse-linker-plugin` :option:`-fzero-call-used-regs` |gol|
-  :option:`--param` :samp:`{name}` = :samp:`{value}`|gol|
+  :option:`--param` :samp:`{name}={value}` |gol|
   :option:`-O`  :option:`-O0`  :option:`-O1`  :option:`-O2`  :option:`-O3`  :option:`-Os`  :option:`-Ofast`  :option:`-Og`  :option:`-Oz`
 
 *Program Instrumentation Options*
@@ -478,14 +479,14 @@ in the following sections.
   :option:`-finstrument-functions`  :option:`-finstrument-functions-once` |gol|
   :option:`-finstrument-functions-exclude-function-list=sym,sym,...` |gol|
   :option:`-finstrument-functions-exclude-file-list=file,file,...` |gol|
-  :option:`fprofile-prefix-map=old=new`
+  :option:`-fprofile-prefix-map=old=new`
 
 *Preprocessor Options*
 
   See :ref:`preprocessor-options`.
 
-  :option:`-Aquestion` = :samp:`{answer}` |gol|
-  :option:`-A-question[=answer]`|gol|
+  :option:`-Aquestion=answer` |gol|
+  :option:`-A-question[=answer]` |gol|
   :option:`-C`  :option:`-CC`  :option:`-Dmacro[=defn]` |gol|
   :option:`-dD`  :option:`-dI`  :option:`-dM`  :option:`-dN`  :option:`-dU` |gol|
   :option:`-fdebug-cpp`  :option:`-fdirectives-only`  :option:`-fdollars-in-identifiers`  |gol|
@@ -562,31 +563,31 @@ in the following sections.
 
   :option:`-dletters`  :option:`-dumpspecs`  :option:`-dumpmachine`  :option:`-dumpversion` |gol|
   :option:`-dumpfullversion`  :option:`-fcallgraph-info[=su,da]` |gol|
-  :option:`-fchecking`  :option:`-fchecking=n`|gol|
+  :option:`-fchecking`  :option:`-fchecking=n` |gol|
   :option:`-fdbg-cnt-list`   :option:`-fdbg-cnt=counter-value-list` |gol|
   :option:`-fdisable-ipa-pass_name` |gol|
   :option:`-fdisable-rtl-pass_name` |gol|
-  :option:`-fdisable-rtl-pass-name` = :samp:`{range-list}` |gol|
+  :option:`-fdisable-rtl-pass-name=range-list` |gol|
   :option:`-fdisable-tree-pass_name` |gol|
-  :option:`-fdisable-tree-pass-name` = :samp:`{range-list}` |gol|
+  :option:`-fdisable-tree-pass-name=range-list` |gol|
   :option:`-fdump-debug`  :option:`-fdump-earlydebug` |gol|
   :option:`-fdump-noaddr`  :option:`-fdump-unnumbered`  :option:`-fdump-unnumbered-links` |gol|
   :option:`-fdump-final-insns[=file]` |gol|
   :option:`-fdump-ipa-all`  :option:`-fdump-ipa-cgraph`  :option:`-fdump-ipa-inline` |gol|
   :option:`-fdump-lang-all` |gol|
   :option:`-fdump-lang-switch` |gol|
-  :option:`-fdump-lang-switch` - :samp:`{options}` |gol|
-  :option:`-fdump-lang-switch` - :samp:`{options}` = :samp:`{filename}` |gol|
+  :option:`-fdump-lang-switch`:samp:`-{options}` |gol|
+  :option:`-fdump-lang-switch`:samp:`-{options}={filename}` |gol|
   :option:`-fdump-passes` |gol|
-  :option:`-fdump-rtl-pass`  :option:`-fdump-rtl-pass` = :samp:`{filename}` |gol|
+  :option:`-fdump-rtl-pass`  :option:`-fdump-rtl-pass=filename` |gol|
   :option:`-fdump-statistics` |gol|
   :option:`-fdump-tree-all` |gol|
   :option:`-fdump-tree-switch` |gol|
-  :option:`-fdump-tree-switch` - :samp:`{options}` |gol|
-  :option:`-fdump-tree-switch` - :samp:`{options}` = :samp:`{filename}` |gol|
+  :option:`-fdump-tree-switch`:samp:`-{options}` |gol|
+  :option:`-fdump-tree-switch`:samp:`-{options}={filename}` |gol|
   :option:`-fcompare-debug[=opts]`  :option:`-fcompare-debug-second` |gol|
-  :option:`-fenable-kind` - :samp:`{pass}` |gol|
-  :option:`-fenable-kind` - :samp:`{pass}` = :samp:`{range-list}` |gol|
+  :option:`-fenable-kind`:samp:`-{pass}` |gol|
+  :option:`-fenable-kind`:samp:`-{pass}={range-list}` |gol|
   :option:`-fira-verbose=n` |gol|
   :option:`-flto-report`  :option:`-flto-report-wpa`  :option:`-fmem-report-wpa` |gol|
   :option:`-fmem-report`  :option:`-fpre-ipa-mem-report`  :option:`-fpost-ipa-mem-report` |gol|
@@ -686,7 +687,7 @@ in the following sections.
   :option:`-mlittle-endian`  :option:`-mbig-endian` |gol|
   :option:`-mbe8`  :option:`-mbe32` |gol|
   :option:`-mfloat-abi=name` |gol|
-  :option:`-mfp16-format=name`|gol|
+  :option:`-mfp16-format=name` |gol|
   :option:`-mthumb-interwork`  :option:`-mno-thumb-interwork` |gol|
   :option:`-mcpu=name`  :option:`-march=name`  :option:`-mfpu=name`  |gol|
   :option:`-mtune=name`  :option:`-mprint-tune-info` |gol|
@@ -756,7 +757,7 @@ in the following sections.
 
   .. program:: CRIS
 
-  :option:`-mcpu=cpu`  :option:`-march=cpu`|gol|
+  :option:`-mcpu=cpu`  :option:`-march=cpu` |gol|
   :option:`-mtune=cpu` :option:`-mmax-stack-frame=n` |gol|
   :option:`-metrax4`  :option:`-metrax100`  :option:`-mpdebug`  :option:`-mcc-init`  :option:`-mno-side-effects` |gol|
   :option:`-mstack-align`  :option:`-mdata-align`  :option:`-mconst-align` |gol|
@@ -827,7 +828,7 @@ in the following sections.
 
   .. program:: eBPF
 
-  :option:`-mbig-endian` :option:`-mlittle-endian` :option:`-mkernel=version`|gol|
+  :option:`-mbig-endian` :option:`-mlittle-endian` :option:`-mkernel=version` |gol|
   :option:`-mframe-limit=bytes` :option:`-mxbpf` :option:`-mco-re` :option:`-mno-co-re`|gol|
   :option:`-mjmpext` :option:`-mjmp32` :option:`-malu32` :option:`-mcpu=version`
 
@@ -1283,19 +1284,19 @@ in the following sections.
 
   .. program:: RX
 
-  :option:`-m64bit-doubles`  :option:`-m32bit-doubles`  :option:`-fpu`  :option:`-nofpu`|gol|
-  :option:`-mcpu=`|gol|
+  :option:`-m64bit-doubles`  :option:`-m32bit-doubles`  :option:`-fpu`  :option:`-nofpu` |gol|
+  :option:`-mcpu=` |gol|
   :option:`-mbig-endian-data`  :option:`-mlittle-endian-data` |gol|
   :option:`-msmall-data` |gol|
-  :option:`-msim`  :option:`-mno-sim`|gol|
-  :option:`-mas100-syntax`  :option:`-mno-as100-syntax`|gol|
-  :option:`-mrelax`|gol|
-  :option:`-mmax-constant-size=`|gol|
-  :option:`-mint-register=`|gol|
-  :option:`-mpid`|gol|
-  :option:`-mallow-string-insns`  :option:`-mno-allow-string-insns`|gol|
-  :option:`-mjsr`|gol|
-  :option:`-mno-warn-multiple-fast-interrupts`|gol|
+  :option:`-msim`  :option:`-mno-sim` |gol|
+  :option:`-mas100-syntax`  :option:`-mno-as100-syntax` |gol|
+  :option:`-mrelax` |gol|
+  :option:`-mmax-constant-size=` |gol|
+  :option:`-mint-register=` |gol|
+  :option:`-mpid` |gol|
+  :option:`-mallow-string-insns`  :option:`-mno-allow-string-insns` |gol|
+  :option:`-mjsr` |gol|
+  :option:`-mno-warn-multiple-fast-interrupts` |gol|
   :option:`-msave-acc-in-interrupts`
 
   *S/390 and zSeries Options*
@@ -1457,8 +1458,8 @@ in the following sections.
   :option:`-mavx512vbmi2` :option:`-mavx512bf16` :option:`-menqcmd` |gol|
   :option:`-mvpclmulqdq`  :option:`-mavx512bitalg`  :option:`-mmovdiri`  :option:`-mmovdir64b`  :option:`-mavx512vpopcntdq` |gol|
   :option:`-mavx5124fmaps`  :option:`-mavx512vnni`  :option:`-mavx5124vnniw`  :option:`-mprfchw`  :option:`-mrdpid` |gol|
-  :option:`-mrdseed`  :option:`-msgx` :option:`-mavx512vp2intersect` :option:`-mserialize` :option:`-mtsxldtrk`|gol|
-  :option:`-mamx-tile`  :option:`-mamx-int8`  :option:`-mamx-bf16` :option:`-muintr` :option:`-mhreset` :option:`-mavxvnni`|gol|
+  :option:`-mrdseed`  :option:`-msgx` :option:`-mavx512vp2intersect` :option:`-mserialize` :option:`-mtsxldtrk` |gol|
+  :option:`-mamx-tile`  :option:`-mamx-int8`  :option:`-mamx-bf16` :option:`-muintr` :option:`-mhreset` :option:`-mavxvnni` |gol|
   :option:`-mavx512fp16` |gol|
   :option:`-mcldemote`  :option:`-mms-bitfields`  :option:`-mno-align-stringops`  :option:`-minline-all-stringops` |gol|
   :option:`-minline-stringops-dynamically`  :option:`-mstringop-strategy=alg` |gol|
