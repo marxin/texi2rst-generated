@@ -29,7 +29,7 @@ These are the :samp:`-m` options defined for the S/390 and zSeries architecture.
   specified, functions in :samp:`libgcc.a` are used to perform
   decimal-floating-point operations.  When :option:`-mhard-dfp` is
   specified, the compiler generates decimal-floating-point hardware
-  instructions.  This is the default for :option:`-march`:samp:`=z9-ec` or higher.
+  instructions.  This is the default for :option:`-march=z9-ec` or higher.
 
 .. option:: -mlong-double-64, -mlong-double-128
 
@@ -115,7 +115,7 @@ These are the :samp:`-m` options defined for the S/390 and zSeries architecture.
   instructions available with the transactional execution facility
   introduced with the IBM zEnterprise EC12 machine generation
   :ref:`s-390-system-z-built-in-functions`.
-  :option:`-mhtm` is enabled by default when using :option:`-march`:samp:`=zEC12`.
+  :option:`-mhtm` is enabled by default when using :option:`-march=zEC12`.
 
 .. option:: -mvx, -mno-vx
 
@@ -126,7 +126,7 @@ These are the :samp:`-m` options defined for the S/390 and zSeries architecture.
   alignment and calling conventions.  In case vector type values are
   being used in an ABI-relevant context a GAS :samp:`.gnu_attribute`
   command will be added to mark the resulting binary with the ABI used.
-  :option:`-mvx` is enabled by default when using :option:`-march`:samp:`=z13`.
+  :option:`-mvx` is enabled by default when using :option:`-march=z13`.
 
 .. option:: -mzvector, -mno-zvector
 
@@ -136,7 +136,7 @@ These are the :samp:`-m` options defined for the S/390 and zSeries architecture.
   This option adds support for :samp:`vector` to be used as a keyword to
   define vector type variables and arguments.  :samp:`vector` is only
   available when GNU extensions are enabled.  It will not be expanded
-  when requesting strict standard compliance e.g. with :option:`-std`:samp:`=c99`.
+  when requesting strict standard compliance e.g. with :option:`-std=c99`.
   In addition to the GCC low-level builtins :option:`-mzvector` enables
   a set of builtins added for compatibility with AltiVec-style
   implementations like Power and Cell.  In order to make use of these
@@ -165,11 +165,11 @@ These are the :samp:`-m` options defined for the S/390 and zSeries architecture.
   :samp:`z14`/:samp:`arch12`, :samp:`z15`/:samp:`arch13`,
   :samp:`z16`/:samp:`arch14`, and :samp:`native`.
 
-  The default is :option:`-march`:samp:`=z900`.
+  The default is :option:`-march=z900`.
 
   Specifying :samp:`native` as cpu type can be used to select the best
   architecture option for the host processor.
-  :option:`-march`:samp:`=native` has no effect if GCC does not recognize the
+  :option:`-march=native` has no effect if GCC does not recognize the
   processor.
 
 .. option:: -mtune={cpu-type}

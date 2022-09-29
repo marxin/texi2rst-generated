@@ -896,14 +896,14 @@ These function attributes are supported by the x86 back end:
 
   The :gcc-attr:`nocf_check` attribute on a function is used to inform the
   compiler that the function's prologue should not be instrumented when
-  compiled with the :option:`-fcf-protection`:samp:`=branch` option.  The
+  compiled with the :option:`-fcf-protection=branch` option.  The
   compiler assumes that the function's address is a valid target for a
   control-flow transfer.
 
   The :gcc-attr:`nocf_check` attribute on a type of pointer to function is
   used to inform the compiler that a call through the pointer should
   not be instrumented when compiled with the
-  :option:`-fcf-protection`:samp:`=branch` option.  The compiler assumes
+  :option:`-fcf-protection=branch` option.  The compiler assumes
   that the function's address from the pointer is a valid target for
   a control-flow transfer.  A direct function call through a function
   name is assumed to be a safe call thus direct calls are not
@@ -955,7 +955,7 @@ These function attributes are supported by the x86 back end:
 
   The :gcc-attr:`cf_check` attribute on a function is used to inform the
   compiler that ENDBR instruction should be placed at the function
-  entry when :option:`-fcf-protection`:samp:`=branch` is enabled.
+  entry when :option:`-fcf-protection=branch` is enabled.
 
 .. index:: indirect_return function attribute, x86
 

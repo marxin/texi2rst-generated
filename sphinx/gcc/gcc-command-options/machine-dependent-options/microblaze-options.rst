@@ -110,8 +110,8 @@ MicroBlaze Options
     MicroBlaze vectors. This option may be useful for applications running
     within a monitoring application. This model uses :samp:`crt3.o` as a startup file.
 
-    Option :option:`-xl-mode-`:samp:`{app-model}` is a deprecated alias for
-  :option:`-mxl-mode-`:samp:`{app-model}`.
+    Option :option:`-xl-mode-app-model` is a deprecated alias for
+  :option:`-mxl-mode-app-model`.
 
 .. option:: -mpic-data-is-text-relative
 

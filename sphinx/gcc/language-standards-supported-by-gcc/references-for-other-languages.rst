@@ -15,12 +15,12 @@ of standards supported by GNU Fortran.
 Synopsis
 ^^^^^^^^
 
-gcc [ :option:`-c` | :option:`-S` | :option:`-E` ] [ :option:`-std`:samp:`={standard}` ]
-    [ :option:`-g` ] [ :option:`-pg` ] [ :option:`-O`:samp:`{level}` ]
-    [ :option:`-W`:samp:`{warn}`...] [ :option:`-Wpedantic` ]
-    [ :option:`-I`:samp:`{dir}`...] [ :option:`-L`:samp:`{dir}`...]
-    [ :option:`-D`:samp:`{macro}` [= :samp:`{defn}` ]...] [ :option:`-U`:samp:`{macro}` ]
-    [ :option:`-f`:samp:`{option}`...] [ :option:`-m`:samp:`{machine-option}`...]
+gcc [ :option:`-c` | :option:`-S` | :option:`-E` ] [ :option:`-std=standard` ]
+    [ :option:`-g` ] [ :option:`-pg` ] [ :option:`-Olevel` ]
+    [ :option:`-Wwarn`...] [ :option:`-Wpedantic` ]
+    [ :option:`-Idir`...] [ :option:`-Ldir`...]
+    [ :option:`-Dmacro` [= :samp:`{defn}` ]...] [ :option:`-Umacro` ]
+    [ :option:`-foption`...] [ :option:`-mmachine-option`...]
     [ :option:`-o` :samp:`{outfile}` ] [@ :samp:`{file}` ] :samp:`{infile}`...
 
 Only the most useful options are listed here; see below for the

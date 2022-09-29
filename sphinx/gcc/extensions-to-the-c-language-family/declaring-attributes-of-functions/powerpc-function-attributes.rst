@@ -44,7 +44,7 @@ These function attributes are supported by the PowerPC back end:
 
     Generate code that uses (does not use) AltiVec instructions.  In
     32-bit code, you cannot enable AltiVec instructions unless
-    :option:`-mabi`:samp:`=altivec` is used on the command line.
+    :option:`-mabi=altivec` is used on the command line.
 
   :samp:`cmpb` :samp:`no-cmpb`
 
@@ -172,7 +172,7 @@ These function attributes are supported by the PowerPC back end:
     instructions, and also enable the use of built-in functions that allow
     more direct access to the VSX instruction set.  In 32-bit code, you
     cannot enable VSX or AltiVec instructions unless
-    :option:`-mabi`:samp:`=altivec` is used on the command line.
+    :option:`-mabi=altivec` is used on the command line.
 
   :samp:`friz` :samp:`no-friz`
 
@@ -212,7 +212,7 @@ These function attributes are supported by the PowerPC back end:
     Specify the architecture to generate code for when compiling the
     function.  If you select the ``target("cpu=power7")`` attribute when
     generating 32-bit code, VSX and AltiVec instructions are not generated
-    unless you use the :option:`-mabi`:samp:`=altivec` option on the command line.
+    unless you use the :option:`-mabi=altivec` option on the command line.
 
   :samp:`tune={TUNE}`
 

@@ -376,7 +376,7 @@ Use ``auto_diagnostic_group`` when issuing multiple related
 diagnostics (seen in various examples on this page).  This informs the
 diagnostic subsystem that all diagnostics issued within the lifetime
 of the ``auto_diagnostic_group`` are related.  For example,
-:option:`-fdiagnostics-format`:samp:`=json` will treat the first diagnostic
+:option:`-fdiagnostics-format=json` will treat the first diagnostic
 emitted within the group as a top-level diagnostic, and all subsequent
 diagnostics within the group as its children.
 

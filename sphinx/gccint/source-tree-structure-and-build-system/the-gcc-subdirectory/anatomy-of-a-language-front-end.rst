@@ -17,7 +17,7 @@ A front end for a language in GCC has the following parts:
   :samp:`gcc/doc/install.texi`.
 
 * A mention of the name under which the language's runtime library is
-  recognized by :option:`--enable-shared`:samp:`={package}` in the
+  recognized by :option:`--enable-shared=package` in the
   documentation of that option in :samp:`gcc/doc/install.texi`.
 
 * A mention of any special prerequisites for building the front end in
@@ -36,7 +36,7 @@ A front end for a language in GCC has the following parts:
   link to such information in the front end's own manual.
 
 * Details of source file suffixes for that language and :option:`-x
-  `:samp:`{lang}` options supported, in :samp:`gcc/doc/invoke.texi`.
+  lang` options supported, in :samp:`gcc/doc/invoke.texi`.
 
 * Entries in ``default_compilers`` in :samp:`gcc.cc` for source file
   suffixes for that language.

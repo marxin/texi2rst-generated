@@ -20,7 +20,7 @@
   by :dfn:`spec strings`.  In most cases there is one spec string for each
   program that GCC can invoke, but a few programs have multiple spec
   strings to control their behavior.  The spec strings built into GCC can
-  be overridden by using the :option:`-specs` = command-line switch to specify
+  be overridden by using the :option:`-specs=` command-line switch to specify
   a spec file.
 
   :dfn:`Spec files` are plain-text files that are used to construct spec
@@ -487,7 +487,7 @@
 
         %:version-compare(>= 10.3 mmacosx-version-min= -lmx)
 
-      The above example would add :option:`-lmx` if :option:`-mmacosx-version-min`:samp:`=10.3.9` was
+      The above example would add :option:`-lmx` if :option:`-mmacosx-version-min=10.3.9` was
       passed.
 
     ``include``
@@ -504,7 +504,7 @@
       finds any :option:`-l` options and any non-options ending in :samp:`.a` (which it
       assumes are the names of linker input library archive files) and returns a
       result containing all the found arguments each prepended by
-      :option:`-plugin-opt`:samp:`=-pass-through=` and joined by spaces.  This list is
+      :option:`-plugin-opt=-pass-through=` and joined by spaces.  This list is
       intended to be passed to the LTO linker plugin.
 
       .. code-block:: c++
@@ -529,7 +529,7 @@
       The ``gt`` spec function takes two or more arguments.  It returns ``""`` (the
       empty string) if the second-to-last argument is greater than the last argument, and NULL
       otherwise.  The following example inserts the ``link_gomp`` spec if the last
-      :option:`-ftree-parallelize-loops` = option given on the command line is greater than 1:
+      :option:`-ftree-parallelize-loops=` option given on the command line is greater than 1:
 
       .. code-block:: c++
 
@@ -598,9 +598,9 @@
 
       %{mcu=*:--script=%*/memory.ld}
 
-    when matching an option like :option:`-mcu`:samp:`=newchip` produces:
+    when matching an option like :option:`-mcu=newchip` produces:
 
-    :option:`--script`:samp:`=newchip/memory.ld`
+    :option:`--script=newchip/memory.ld`
 
   ``%{.S:X}``
     Substitutes ``X``, if processing a file with suffix ``S``.
@@ -654,7 +654,7 @@
   of the character following it, thus allowing literal matching of a
   character that is otherwise specially treated.  For example,
   :samp:`%{std=iso9899\\:1999:X}` substitutes ``X`` if the
-  :option:`-std`:samp:`=iso9899:1999` option is given.
+  :option:`-std=iso9899:1999` option is given.
 
   The conditional text ``X`` in a :samp:`%{S:X}` or similar
   construct may contain other nested :samp:`%` constructs or spaces, or

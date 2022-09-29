@@ -96,7 +96,7 @@ These options affect the runtime behavior of programs compiled with
 
   Turn on compilation of conditional ``debug`` code into the program.
   The :option:`-fdebug` option itself sets the debug level to ``1``,
-  while :option:`-fdebug` = enables ``debug`` code that are identified
+  while :option:`-fdebug=` enables ``debug`` code that are identified
   by any of the following values:
 
   :samp:`level`

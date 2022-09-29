@@ -26,13 +26,13 @@ lto-dump
      [ :option:`-size-sort` ]
      [ :option:`-reverse-sort` ]
      [ :option:`-no-sort` ]
-     [ :option:`-symbol` =]
+     [ :option:`-symbol=` ]
      [ :option:`-objects` ]
      [ :option:`-type-stats` ]
      [ :option:`-tree-stats` ]
      [ :option:`-gimple-stats` ]
-     [ :option:`-dump-level` =]
-     [ :option:`-dump-body` =]
+     [ :option:`-dump-level=` ]
+     [ :option:`-dump-body=` ]
      [ :option:`-help` ] :samp:`{lto-dump}`
 
 Options

@@ -73,8 +73,8 @@ These command-line options are defined for RISC-V targets:
   ``20191213``
     Produce code conforming to version 20191213.
 
-    The default is :option:`-misa-spec`:samp:`=20191213` unless GCC has been configured
-  with :option:`--with-isa-spec` = specifying a different default version.
+    The default is :option:`-misa-spec=20191213` unless GCC has been configured
+  with :option:`--with-isa-spec=` specifying a different default version.
 
 .. option:: -march={ISA-string}
 
@@ -82,9 +82,9 @@ These command-line options are defined for RISC-V targets:
   lower-case.  Examples include :samp:`rv64i`, :samp:`rv32g`, :samp:`rv32e`, and
   :samp:`rv32imaf`.
 
-  When :option:`-march` = is not specified, use the setting from :option:`-mcpu`.
+  When :option:`-march=` is not specified, use the setting from :option:`-mcpu`.
 
-  If both :option:`-march` and :option:`-mcpu` = are not specified, the default for
+  If both :option:`-march` and :option:`-mcpu=` are not specified, the default for
   this argument is system dependent, users who want a specific architecture
   extensions should specify one explicitly.
 
@@ -102,14 +102,14 @@ These command-line options are defined for RISC-V targets:
   Optimize the output for the given processor, specified by microarchitecture or
   particular CPU name.  Permissible values for this option are: :samp:`rocket`,
   :samp:`sifive-3-series`, :samp:`sifive-5-series`, :samp:`sifive-7-series`,
-  :samp:`thead-c906`, :samp:`size`, and all valid options for :option:`-mcpu` =.
+  :samp:`thead-c906`, :samp:`size`, and all valid options for :option:`-mcpu=`.
 
-  When :option:`-mtune` = is not specified, use the setting from :option:`-mcpu`,
+  When :option:`-mtune=` is not specified, use the setting from :option:`-mcpu`,
   the default is :samp:`rocket` if both are not specified.
 
   The :samp:`size` choice is not intended for use by end-users.  This is used
   when :option:`-Os` is specified.  It overrides the instruction cost info
-  provided by :option:`-mtune` =, but does not override the pipeline info.  This
+  provided by :option:`-mtune=`, but does not override the pipeline info.  This
   helps reduce code size while still giving good performance.
 
 .. option:: -mpreferred-stack-boundary={num}
@@ -205,8 +205,8 @@ These command-line options are defined for RISC-V targets:
   canary in the TLS block.
 
   With the latter choice the options
-  :option:`-mstack-protector-guard-reg`:samp:`={reg}` and
-  :option:`-mstack-protector-guard-offset`:samp:`={offset}` furthermore specify
+  :option:`-mstack-protector-guard-reg=reg` and
+  :option:`-mstack-protector-guard-offset=offset` furthermore specify
   which register to use as base register for reading the canary,
   and from what offset from that base register. There is no default
   register or offset as this is entirely for use within the Linux

@@ -486,7 +486,7 @@ Options That Control Static Analysis
 .. option:: -Wno-analyzer-tainted-allocation-size
 
   This warning requires both :option:`-fanalyzer` and
-  :option:`-fanalyzer-checker`:samp:`=taint` to enable it;
+  :option:`-fanalyzer-checker=taint` to enable it;
   use :option:`-Wno-analyzer-tainted-allocation-size` to disable it.
 
   This diagnostic warns for paths through the code in which a value
@@ -504,7 +504,7 @@ Options That Control Static Analysis
 .. option:: -Wno-analyzer-tainted-array-index
 
   This warning requires both :option:`-fanalyzer` and
-  :option:`-fanalyzer-checker`:samp:`=taint` to enable it;
+  :option:`-fanalyzer-checker=taint` to enable it;
   use :option:`-Wno-analyzer-tainted-array-index` to disable it.
 
   This diagnostic warns for paths through the code in which a value
@@ -521,7 +521,7 @@ Options That Control Static Analysis
 .. option:: -Wno-analyzer-tainted-divisor
 
   This warning requires both :option:`-fanalyzer` and
-  :option:`-fanalyzer-checker`:samp:`=taint` to enable it;
+  :option:`-fanalyzer-checker=taint` to enable it;
   use :option:`-Wno-analyzer-tainted-divisor` to disable it.
 
   This diagnostic warns for paths through the code in which a value
@@ -538,7 +538,7 @@ Options That Control Static Analysis
 .. option:: -Wno-analyzer-tainted-offset
 
   This warning requires both :option:`-fanalyzer` and
-  :option:`-fanalyzer-checker`:samp:`=taint` to enable it;
+  :option:`-fanalyzer-checker=taint` to enable it;
   use :option:`-Wno-analyzer-tainted-offset` to disable it.
 
   This diagnostic warns for paths through the code in which a value
@@ -555,7 +555,7 @@ Options That Control Static Analysis
 .. option:: -Wno-analyzer-tainted-size
 
   This warning requires both :option:`-fanalyzer` and
-  :option:`-fanalyzer-checker`:samp:`=taint` to enable it;
+  :option:`-fanalyzer-checker=taint` to enable it;
   use :option:`-Wno-analyzer-tainted-size` to disable it.
 
   This diagnostic warns for paths through the code in which a value
@@ -832,10 +832,10 @@ In addition, various functions with an ``__analyzer_`` prefix have
 special meaning to the analyzer, described in the GCC Internals manual.
 
 Pertinent parameters for controlling the exploration are:
-:option:`--param analyzer-bb-explosion-factor`:samp:`={value}`,
-:option:`--param analyzer-max-enodes-per-program-point`:samp:`={value}`,
-:option:`--param analyzer-max-recursion-depth`:samp:`={value}`, and
-:option:`--param analyzer-min-snodes-for-call-summary`:samp:`={value}`.
+:option:`--param analyzer-bb-explosion-factor=value`,
+:option:`--param analyzer-max-enodes-per-program-point=value`,
+:option:`--param analyzer-max-recursion-depth=value`, and
+:option:`--param analyzer-min-snodes-for-call-summary=value`.
 
 The following options control the analyzer.
 
@@ -847,7 +847,7 @@ The following options control the analyzer.
 
   If enabled, call summaries are only used for functions with more than one
   call site, and that are sufficiently complicated (as per
-  :option:`--param analyzer-min-snodes-for-call-summary`:samp:`={value}`).
+  :option:`--param analyzer-min-snodes-for-call-summary=value`).
 
 .. option:: -fno-analyzer-call-summaries
 
@@ -862,7 +862,7 @@ The following options control the analyzer.
   :option:`-Wanalyzer-tainted-array-index`, and this option is required
   to enable them.
 
-  *Note:* currently, :option:`-fanalyzer-checker`:samp:`=taint` disables the
+  *Note:* currently, :option:`-fanalyzer-checker=taint` disables the
   following warnings from :option:`-fanalyzer` :
 
   :option:`-Wanalyzer-double-fclose` 

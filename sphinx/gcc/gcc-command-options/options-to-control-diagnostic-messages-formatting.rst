@@ -43,9 +43,9 @@ honor these options.
 
   :option:`-fno-diagnostics-show-caret` 
   :option:`-fno-diagnostics-show-line-numbers` 
-  :option:`-fdiagnostics-color`:samp:`=never` 
-  :option:`-fdiagnostics-urls`:samp:`=never` 
-  :option:`-fdiagnostics-path-format`:samp:`=separate-events`
+  :option:`-fdiagnostics-color=never` 
+  :option:`-fdiagnostics-urls=never` 
+  :option:`-fdiagnostics-path-format=separate-events`
   In the future, if GCC changes the default appearance of its diagnostics, the
   corresponding option to disable the new behavior will be added to this list.
 
@@ -78,8 +78,8 @@ honor these options.
   :samp:`auto` makes GCC use color only when the standard error is a terminal,
   and when not executing in an emacs shell.
   The forms :option:`-fdiagnostics-color` and :option:`-fno-diagnostics-color` are
-  aliases for :option:`-fdiagnostics-color`:samp:`=always` and
-  :option:`-fdiagnostics-color`:samp:`=never`, respectively.
+  aliases for :option:`-fdiagnostics-color=always` and
+  :option:`-fdiagnostics-color=never`, respectively.
 
   The colors are defined by the environment variable :envvar:`GCC_COLORS`.
   Its value is a colon-separated list of capabilities and Select Graphic
@@ -142,7 +142,7 @@ honor these options.
     .. index:: path GCC_COLORS capability
 
     SGR substring for colorizing paths of control-flow events as printed
-    via :option:`-fdiagnostics-path-format` =, such as the identifiers of
+    via :option:`-fdiagnostics-path-format=`, such as the identifiers of
     individual events and lines indicating interprocedural calls and returns.
 
   ``range1=``
@@ -253,14 +253,14 @@ honor these options.
   It can be any of the above :samp:`{WHEN}` options.
 
   GCC can also be configured (via the
-  :option:`--with-diagnostics-urls`:samp:`=auto-if-env` configure-time option)
+  :option:`--with-diagnostics-urls=auto-if-env` configure-time option)
   so that the default is affected by environment variables.
   Under such a configuration, GCC defaults to using :samp:`auto`
   if either :envvar:`GCC_URLS` or :envvar:`TERM_URLS` environment variables are
   present and non-empty in the environment of the compiler, or :samp:`never`
   if neither are.
 
-  However, even with :option:`-fdiagnostics-urls`:samp:`=always` the behavior is
+  However, even with :option:`-fdiagnostics-urls=always` the behavior is
   dependent on those environment variables:
   If :envvar:`GCC_URLS` is set to empty or :samp:`no`, do not embed URLs in
   diagnostics.  If set to :samp:`st`, URLs use ST escape sequences.
@@ -276,7 +276,7 @@ honor these options.
   to misbehave, i.e. print garbage on the screen.
   That list is currently xfce4-terminal, certain known to be buggy
   gnome-terminal versions, the linux console, and mingw.
-  This check can be skipped with the :option:`-fdiagnostics-urls`:samp:`=always`.
+  This check can be skipped with the :option:`-fdiagnostics-urls=always`.
 
 .. option:: -fno-diagnostics-show-option
 
@@ -294,7 +294,7 @@ honor these options.
   By default, each diagnostic emitted includes the original source line
   and a caret :samp:`^` indicating the column.  This option suppresses this
   information.  The source line is truncated to :samp:`{n}` characters, if
-  the :option:`-fmessage-length`:samp:`=n` option is given.  When the output is done
+  the :option:`-fmessage-length=n` option is given.  When the output is done
   to the terminal, the width is limited to the width given by the
   :envvar:`COLUMNS` environment variable or, if not set, to the terminal width.
 
@@ -559,8 +559,8 @@ honor these options.
   associated with a diagnostic.
 
   If this is option is provided then the stack depth will be printed for
-  each run of events within :option:`-fdiagnostics-path-format`:samp:`=inline-events`.
-  If provided with :option:`-fdiagnostics-path-format`:samp:`=separate-events`, then
+  each run of events within :option:`-fdiagnostics-path-format=inline-events`.
+  If provided with :option:`-fdiagnostics-path-format=separate-events`, then
   the stack depth and function declaration will be appended when printing
   each event.
 
@@ -865,7 +865,7 @@ honor these options.
   within the stack.
 
   For example, the intraprocedural example shown for
-  :option:`-fdiagnostics-path-format` = might have this JSON for its path:
+  :option:`-fdiagnostics-path-format=` might have this JSON for its path:
 
   .. code-block:: c++
 

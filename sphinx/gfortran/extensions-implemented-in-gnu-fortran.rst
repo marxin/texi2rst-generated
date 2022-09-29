@@ -15,14 +15,14 @@ This chapter contains information on their syntax and meaning.  There
 are currently two categories of GNU Fortran extensions, those that
 provide functionality beyond that provided by any standard, and those
 that are supported by GNU Fortran purely for backward compatibility
-with legacy compilers.  By default, :option:`-std`:samp:`=gnu` allows the
+with legacy compilers.  By default, :option:`-std=gnu` allows the
 compiler to accept both types of extensions, but to warn about the use
-of the latter.  Specifying either :option:`-std`:samp:`=f95`,
-:option:`-std`:samp:`=f2003`, :option:`-std`:samp:`=f2008`, or :option:`-std`:samp:`=f2018`
-disables both types of extensions, and :option:`-std`:samp:`=legacy` allows
+of the latter.  Specifying either :option:`-std=f95`,
+:option:`-std=f2003`, :option:`-std=f2008`, or :option:`-std=f2018`
+disables both types of extensions, and :option:`-std=legacy` allows
 both without warning.  The special compile flag :option:`-fdec` enables
 additional compatibility extensions along with those enabled by
-:option:`-std`:samp:`=legacy`.
+:option:`-std=legacy`.
 
 .. toctree::
   :maxdepth: 2
@@ -193,7 +193,7 @@ To aid this dialog, when input is from stdin, errors send their
 messages to stderr and execution continues, even if ``IOSTAT`` is set.
 
 ``PRINT`` namelist is permitted.  This causes an error if
-:option:`-std`:samp:`=f95` is used.
+:option:`-std=f95` is used.
 
 .. code-block:: fortran
 
@@ -204,7 +204,7 @@ messages to stderr and execution continues, even if ``IOSTAT`` is set.
   END PROGRAM test_print
 
 Expanded namelist reads are permitted.  This causes an error if
-:option:`-std`:samp:`=f95` is used.  In the following example, the first element
+:option:`-std=f95` is used.  In the following example, the first element
 of the array will be given the value 0.00 and the two succeeding
 elements will be given the values 1.00 and 2.00.
 
@@ -259,7 +259,7 @@ Missing period in FORMAT specifications
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To support legacy codes, GNU Fortran allows missing periods in format
-specifications if and only if :option:`-std`:samp:`=legacy` is given on the
+specifications if and only if :option:`-std=legacy` is given on the
 command line.  This is considered non-conforming code and is
 discouraged.
 
@@ -660,7 +660,7 @@ Valid values for ``CONVERT`` on most systems are:
 * ``CONVERT='BIG_ENDIAN'`` Use the big-endian representation for
   unformatted files.
 
-On POWER systems which support :option:`-mabi`:samp:`=ieeelongdouble`,
+On POWER systems which support :option:`-mabi=ieeelongdouble`,
 there are additional options, which can be combined with the others
 with commas. Those are
 
@@ -1368,7 +1368,7 @@ the following two examples are equivalent:
 Normally ``%LOC`` is allowed only in parameter lists.  However the intrinsic
 function ``LOC`` does the same thing, and is usable as the right-hand-side of
 assignments. For compatibility, GNU Fortran supports the use of ``%LOC`` as
-an alias for the builtin ``LOC`` with :option:`-std`:samp:`=legacy`.  With this
+an alias for the builtin ``LOC`` with :option:`-std=legacy`.  With this
 feature enabled the following two examples are equivalent:
 
 .. code-block:: fortran
@@ -1580,9 +1580,9 @@ Legacy PARAMETER statements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For compatibility, GNU Fortran supports legacy PARAMETER statements without
-parentheses with :option:`-std`:samp:`=legacy`.  A warning is emitted if used with
-:option:`-std`:samp:`=gnu`, and an error is acknowledged with a real Fortran standard
-flag (:option:`-std`:samp:`=f95`, etc...).  These statements take the following form:
+parentheses with :option:`-std=legacy`.  A warning is emitted if used with
+:option:`-std=gnu`, and an error is acknowledged with a real Fortran standard
+flag (:option:`-std=f95`, etc...).  These statements take the following form:
 
 .. code-block:: fortran
 

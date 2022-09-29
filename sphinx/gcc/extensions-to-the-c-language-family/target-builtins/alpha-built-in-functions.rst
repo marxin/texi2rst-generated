@@ -46,7 +46,7 @@ all generate the machine instruction that is part of the name.
   long __builtin_alpha_zapnot (long, long);
 
 The following built-in functions are always with :option:`-mmax`
-or :option:`-mcpu`:samp:`={cpu}` where :samp:`{cpu}` is ``pca56`` or
+or :option:`-mcpu=cpu` where :samp:`{cpu}` is ``pca56`` or
 later.  They all generate the machine instruction that is part
 of the name.
 
@@ -67,7 +67,7 @@ of the name.
   long __builtin_alpha_perr (long, long);
 
 The following built-in functions are always with :option:`-mcix`
-or :option:`-mcpu`:samp:`={cpu}` where :samp:`{cpu}` is ``ev67`` or
+or :option:`-mcpu=cpu` where :samp:`{cpu}` is ``ev67`` or
 later.  They all generate the machine instruction that is part
 of the name.
 

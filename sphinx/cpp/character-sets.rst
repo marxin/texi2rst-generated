@@ -20,7 +20,7 @@ character set.  It must be isomorphic with ISO 10646, also known as
 Unicode.  CPP uses the UTF-8 encoding of Unicode.
 
 The character sets of the input files are specified using the
-:option:`-finput-charset` = option.
+:option:`-finput-charset=` option.
 
 All preprocessing work (the subject of the rest of this manual) is
 carried out in the source character set.  If you request textual
@@ -50,6 +50,6 @@ characters.
 In identifiers, characters outside the ASCII range can be specified
 with the :samp:`\\u` and :samp:`\\U` escapes or used directly in the input
 encoding.  If strict ISO C90 conformance is specified with an option
-such as :option:`-std`:samp:`=c90`, or :option:`-fno-extended-identifiers` is
+such as :option:`-std=c90`, or :option:`-fno-extended-identifiers` is
 used, then those constructs are not permitted in identifiers.
 

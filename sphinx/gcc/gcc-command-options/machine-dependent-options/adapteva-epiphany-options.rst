@@ -62,7 +62,7 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
   This option can be useful if you want to evaluate if a different stack
   offset would give you better code, but to actually use a different stack
   offset to build working programs, it is recommended to configure the
-  toolchain with the appropriate :option:`--with-stack-offset`:samp:`={num}` option.
+  toolchain with the appropriate :option:`--with-stack-offset=num` option.
 
 .. option:: -mno-round-nearest
 
@@ -125,7 +125,7 @@ These :samp:`-m` options are defined for Adapteva Epiphany:
     This is the mode used to perform integer calculations in the FPU, e.g.
     integer multiply, or integer multiply-and-accumulate.
 
-    The default is :option:`-mfp-mode`:samp:`=caller`
+    The default is :option:`-mfp-mode=caller`
 
 .. option:: -mno-split-lohi, -mno-postinc, -mno-postmodify, -msplit-lohi, -mpostinc, -mpostmodify
 

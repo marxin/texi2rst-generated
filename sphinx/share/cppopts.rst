@@ -21,11 +21,11 @@
   its argument list with surrounding parentheses before the equals sign
   (if any).  Parentheses are meaningful to most shells, so you should
   quote the option.  With :command:`sh` and :command:`csh`,
-  :option:`-D'`:samp:`{name}` (:samp:`{args...}`)= :samp:`{definition}` ' works.
+  :option:`-D'name(args...)=definition'` works.
 
   :option:`-D` and :option:`-U` options are processed in the order they
-  are given on the command line.  All :option:`-imacros `:samp:`{file}` and
-  :option:`-include `:samp:`{file}` options are processed after all
+  are given on the command line.  All :option:`-imacros file` and
+  :option:`-include file` options are processed after all
   :option:`-D` and :option:`-U` options.
 
 .. option:: -U {name}
@@ -182,7 +182,7 @@
 
 .. option:: -MD
 
-  :option:`-MD` is equivalent to :option:`-M -MF `:samp:`{file}`, except that
+  :option:`-MD` is equivalent to :option:`-M -MF file`, except that
   :option:`-E` is not implied.  The driver determines :samp:`{file}` based on
   whether an :option:`-o` option is given.  If it is, the driver uses its
   argument but with a suffix of :samp:`.d`, otherwise it takes the name
@@ -350,7 +350,7 @@
 
   Make an assertion with the predicate :samp:`{predicate}` and answer
   :samp:`{answer}`.  This form is preferred to the older form :option:`-A
-  `:samp:`{predicate}` (:samp:`{answer}`), which is still supported, because
+  predicate(answer)`, which is still supported, because
   it does not use shell special characters.
   See :ref:`obsolete-features`.
 

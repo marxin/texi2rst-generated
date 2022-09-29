@@ -50,7 +50,7 @@ known missing pieces are:
   affected by how you partition header files into header units.
 
   Modular compilation is *not* enabled with just the
-:option:`-std`:samp:`=c++20` option.  You must explicitly enable it with the
+:option:`-std=c++20` option.  You must explicitly enable it with the
 :option:`-fmodules-ts` option.  It is independent of the language
 version selected, although in pre-C++20 versions, it is of course an
 extension.
@@ -141,7 +141,7 @@ used to build CMIs on demand.  *Mapper functionality is in its
 infancy and is intended for experimentation with build system
 interactions.*
 
-You can specify a mapper with the :option:`-fmodule-mapper`:samp:`={val}`
+You can specify a mapper with the :option:`-fmodule-mapper=val`
 option or :envvar:`CXX_MODULE_MAPPER` environment variable.  The value may
 have one of the following forms:
 
@@ -151,7 +151,7 @@ have one of the following forms:
   corresponds to multiple IPV6 addresses, these are tried in turn, until
   one is successful.  If your host lacks IPv6, this form is
   non-functional.  If you must use IPv4 use
-  :option:`-fmodule-mapper`:samp:`='|ncat {ipv4host}`:samp:`{port}` '.
+  :option:`-fmodule-mapper='|ncat ipv4hostport'`.
 
 :samp:`={socket}{[}?{ident}{]}`
   A local domain socket.  If your host lacks local domain sockets, this
@@ -302,7 +302,7 @@ functionality.  Generally blocks are read when name lookup or template
 instantiation occurs.  To inhibit this, the :option:`-fno-module-lazy`
 option may be used.
 
-The :option:`--param lazy-modules`:samp:`={n}` parameter controls the limit
+The :option:`--param lazy-modules=n` parameter controls the limit
 on the number of concurrently open module files during lazy loading.
 Should more modules be imported, an LRU algorithm is used to determine
 which files to close---until that file is needed again.  This limit

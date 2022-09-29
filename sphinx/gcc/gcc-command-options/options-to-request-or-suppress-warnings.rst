@@ -53,21 +53,21 @@ warnings but control the kinds of diagnostics produced by GCC.
 .. option:: -Werror=
 
   Make the specified warning into an error.  The specifier for a warning
-  is appended; for example :option:`-Werror`:samp:`=switch` turns the warnings
+  is appended; for example :option:`-Werror=switch` turns the warnings
   controlled by :option:`-Wswitch` into errors.  This switch takes a
   negative form, to be used to negate :option:`-Werror` for specific
-  warnings; for example :option:`-Wno-error`:samp:`=switch` makes
+  warnings; for example :option:`-Wno-error=switch` makes
   :option:`-Wswitch` warnings not be errors, even when :option:`-Werror`
   is in effect.
 
   The warning message for each controllable warning includes the
   option that controls the warning.  That option can then be used with
-  :option:`-Werror` = and :option:`-Wno-error` = as described above.
+  :option:`-Werror=` and :option:`-Wno-error=` as described above.
   (Printing of the option in the warning message can be disabled using the
   :option:`-fno-diagnostics-show-option` flag.)
 
-  Note that specifying :option:`-Werror`:samp:`={foo}` automatically implies
-  :option:`-W`:samp:`{foo}`.  However, :option:`-Wno-error`:samp:`={foo}` does not
+  Note that specifying :option:`-Werror=foo` automatically implies
+  :option:`-Wfoo`.  However, :option:`-Wno-error=foo` does not
   imply anything.
 
 .. option:: -Wno-error=
@@ -173,7 +173,7 @@ warnings, in some cases it may also cause false positives.
   requires a diagnostic, in some cases where there is undefined behavior
   at compile-time and in some other cases that do not prevent compilation
   of programs that are valid according to the standard. This is not
-  equivalent to :option:`-Werror`:samp:`=pedantic`, since there are errors enabled
+  equivalent to :option:`-Werror=pedantic`, since there are errors enabled
   by this option and not enabled by the latter and vice versa.
 
 .. option:: -Wall
@@ -186,16 +186,16 @@ warnings, in some cases it may also cause false positives.
   :option:`-Wall` turns on the following warning flags:
 
   :option:`-Waddress`   
-  :option:`-Warray-bounds`:samp:`=1` (only with :option:`:option:`-O2`` )  
+  :option:`-Warray-bounds=1` (only with :option:`-O2` )  
   :option:`-Warray-compare` 
-  :option:`-Warray-parameter`:samp:`=2` (C and Objective :option:`-C` only) 
+  :option:`-Warray-parameter=2` (C and Objective :option:`-C` only) 
   :option:`-Wbool-compare`  
   :option:`-Wbool-operation`  
   :option:`-Wc++11-compat`  :option:`-Wc++14-compat`  
   :option:`-Wcatch-value` (C++ and Objective :option:`-C++` only)  
   :option:`-Wchar-subscripts`  
   :option:`-Wcomment`  
-  :option:`-Wdangling-pointer`:samp:`=2`  
+  :option:`-Wdangling-pointer=2`  
   :option:`-Wduplicate-decl-specifier` (C and Objective :option:`-C` only) 
   :option:`-Wenum-compare` (in C/ObjC; this is on by default in C++) 
   :option:`-Wenum-int-mismatch` (C and Objective :option:`-C` only) 
@@ -208,7 +208,7 @@ warnings, in some cases it may also cause false positives.
   :option:`-Wimplicit-function-declaration` (C and Objective :option:`-C` only) 
   :option:`-Winit-self` (only for C++) 
   :option:`-Wlogical-not-parentheses` 
-  :option:`-Wmain` (only for C/ObjC and unless :option:`:option:`-ffreestanding`` )  
+  :option:`-Wmain` (only for C/ObjC and unless :option:`-ffreestanding` )  
   :option:`-Wmaybe-uninitialized` 
   :option:`-Wmemset-elt-size` 
   :option:`-Wmemset-transposed-args` 
@@ -236,7 +236,7 @@ warnings, in some cases it may also cause false positives.
   :option:`-Wsizeof-pointer-div` 
   :option:`-Wsizeof-pointer-memaccess` 
   :option:`-Wstrict-aliasing`  
-  :option:`-Wstrict-overflow`:samp:`=1`  
+  :option:`-Wstrict-overflow=1`  
   :option:`-Wswitch`  
   :option:`-Wtautological-compare`  
   :option:`-Wtrigraphs`  
@@ -246,7 +246,7 @@ warnings, in some cases it may also cause false positives.
   :option:`-Wunused-label`     
   :option:`-Wunused-value`     
   :option:`-Wunused-variable`  
-  :option:`-Wuse-after-free`:samp:`=3`  
+  :option:`-Wuse-after-free=3`  
   :option:`-Wvla-parameter` (C and Objective :option:`-C` only) 
   :option:`-Wvolatile-register-var`  
   :option:`-Wzero-length-bounds`
@@ -274,7 +274,7 @@ warnings, in some cases it may also cause false positives.
   :option:`-Wempty-body`  
   :option:`-Wenum-conversion` (C only) 
   :option:`-Wignored-qualifiers` 
-  :option:`-Wimplicit-fallthrough`:samp:`=3` 
+  :option:`-Wimplicit-fallthrough=3` 
   :option:`-Wmissing-field-initializers`  
   :option:`-Wmissing-parameter-type` (C only)  
   :option:`-Wold-style-declaration` (C only)  
@@ -285,8 +285,8 @@ warnings, in some cases it may also cause false positives.
   :option:`-Wtype-limits`  
   :option:`-Wuninitialized`  
   :option:`-Wshift-negative-value` (in C++11 to C++17 and in C99 and newer)  
-  :option:`-Wunused-parameter` (only with :option:`:option:`-Wunused`` or :option:`:option:`-Wall`` ) 
-  :option:`-Wunused-but-set-parameter` (only with :option:`:option:`-Wunused`` or :option:`:option:`-Wall`` )
+  :option:`-Wunused-parameter` (only with :option:`-Wunused` or :option:`-Wall` ) 
+  :option:`-Wunused-but-set-parameter` (only with :option:`-Wunused` or :option:`-Wall` )
   The option :option:`-Wextra` also prints warning messages for the
   following cases:
 
@@ -325,12 +325,12 @@ warnings, in some cases it may also cause false positives.
   problems if there is a check added later in a release series for an
   ABI issue discovered since the initial release.  :option:`-Wabi` warns
   about more things if an older ABI version is selected (with
-  :option:`-fabi-version`:samp:`={n}`).
+  :option:`-fabi-version=n`).
 
   :option:`-Wabi` can also be used with an explicit version number to
   warn about C++ ABI compatibility with a particular :option:`-fabi-version`
-  level, e.g. :option:`-Wabi`:samp:`=2` to warn about changes relative to
-  :option:`-fabi-version`:samp:`=2`.
+  level, e.g. :option:`-Wabi=2` to warn about changes relative to
+  :option:`-fabi-version=2`.
 
   If an explicit version number is provided and
   :option:`-fabi-compat-version` is not specified, the version number
@@ -349,7 +349,7 @@ warnings, in some cases it may also cause false positives.
   concerned about the fact that code generated by G++ may not be binary
   compatible with code generated by other compilers.
 
-  Known incompatibilities in :option:`-fabi-version`:samp:`=2` (which was the
+  Known incompatibilities in :option:`-fabi-version=2` (which was the
   default from GCC 3.4 to 4.9) include:
 
   * A template with a non-type template parameter of reference type was
@@ -361,18 +361,18 @@ warnings, in some cases it may also cause false positives.
       template <int &> struct S {};
       void n (S<N>) {2}
 
-    This was fixed in :option:`-fabi-version`:samp:`=3`.
+    This was fixed in :option:`-fabi-version=3`.
 
   * SIMD vector types declared using ``__attribute ((vector_size))`` were
     mangled in a non-standard way that does not allow for overloading of
     functions taking vectors of different sizes.
 
-    The mangling was changed in :option:`-fabi-version`:samp:`=4`.
+    The mangling was changed in :option:`-fabi-version=4`.
 
   * ``__attribute ((const))`` and :gcc-attr:`noreturn` were mangled as type
     qualifiers, and ``decltype`` of a plain declaration was folded away.
 
-    These mangling issues were fixed in :option:`-fabi-version`:samp:`=5`.
+    These mangling issues were fixed in :option:`-fabi-version=5`.
 
   * Scoped enumerators passed as arguments to a variadic function are
     promoted like unscoped enumerators, causing ``va_arg`` to complain.
@@ -383,32 +383,32 @@ warnings, in some cases it may also cause false positives.
     ``const_cast``, ``static_cast``, prefix increment/decrement, and
     a class scope function used as a template argument.
 
-    These issues were corrected in :option:`-fabi-version`:samp:`=6`.
+    These issues were corrected in :option:`-fabi-version=6`.
 
   * Lambdas in default argument scope were mangled incorrectly, and the
     ABI changed the mangling of ``nullptr_t``.
 
-    These issues were corrected in :option:`-fabi-version`:samp:`=7`.
+    These issues were corrected in :option:`-fabi-version=7`.
 
   * When mangling a function type with function-cv-qualifiers, the
     un-qualified function type was incorrectly treated as a substitution
     candidate.
 
-    This was fixed in :option:`-fabi-version`:samp:`=8`, the default for GCC 5.1.
+    This was fixed in :option:`-fabi-version=8`, the default for GCC 5.1.
 
   * ``decltype(nullptr)`` incorrectly had an alignment of 1, leading to
     unaligned accesses.  Note that this did not affect the ABI of a
     function with a ``nullptr_t`` parameter, as parameters have a
     minimum alignment.
 
-    This was fixed in :option:`-fabi-version`:samp:`=9`, the default for GCC 5.2.
+    This was fixed in :option:`-fabi-version=9`, the default for GCC 5.2.
 
   * Target-specific attributes that affect the identity of a type, such as
     ia32 calling conventions on a function type (stdcall, regparm, etc.),
     did not affect the mangled name, leading to name collisions when
     function pointers were used as template arguments.
 
-    This was fixed in :option:`-fabi-version`:samp:`=10`, the default for GCC 6.1.
+    This was fixed in :option:`-fabi-version=10`, the default for GCC 6.1.
 
   This option also enables warnings about psABI-related changes.
   The known psABI changes at this point include:
@@ -450,7 +450,7 @@ warnings, in some cases it may also cause false positives.
   to match the source file and GCC cannot use the profile feedback
   information.  By default, this warning is enabled and is treated as an
   error.  :option:`-Wno-coverage-mismatch` can be used to disable the
-  warning or :option:`-Wno-error`:samp:`=coverage-mismatch` can be used to
+  warning or :option:`-Wno-error=coverage-mismatch` can be used to
   disable the error.  Disabling the error for this warning can result in
   poorly optimized code and is useful only in the
   case of very minor changes such as bug fixes to an existing code-base.
@@ -468,7 +468,7 @@ warnings, in some cases it may also cause false positives.
 
   By default, this warning is enabled and is treated as an
   error.  :option:`-Wno-coverage-invalid-line-number` can be used to disable the
-  warning or :option:`-Wno-error`:samp:`=coverage-invalid-line-number` can be used to
+  warning or :option:`-Wno-error=coverage-invalid-line-number` can be used to
   disable the error.
 
 .. option:: -Wcoverage-invalid-line-number
@@ -558,8 +558,8 @@ warnings, in some cases it may also cause false positives.
 
   .. option:: -Wformat=1
 
-    Option :option:`-Wformat` is equivalent to :option:`-Wformat`:samp:`=1`, and
-    :option:`-Wno-format` is equivalent to :option:`-Wformat`:samp:`=0`.  Since
+    Option :option:`-Wformat` is equivalent to :option:`-Wformat=1`, and
+    :option:`-Wno-format` is equivalent to :option:`-Wformat=0`.  Since
     :option:`-Wformat` also checks for null format arguments for several
     functions, :option:`-Wformat` also implies :option:`-Wnonnull`.  Some
     aspects of this level of format checking can be disabled by the
@@ -886,9 +886,9 @@ warnings, in some cases it may also cause false positives.
 
 .. option:: -Wimplicit-fallthrough
 
-  :option:`-Wimplicit-fallthrough` is the same as :option:`-Wimplicit-fallthrough`:samp:`=3`
+  :option:`-Wimplicit-fallthrough` is the same as :option:`-Wimplicit-fallthrough=3`
   and :option:`-Wno-implicit-fallthrough` is the same as
-  :option:`-Wimplicit-fallthrough`:samp:`=0`.
+  :option:`-Wimplicit-fallthrough=0`.
 
 .. option:: -Wno-implicit-fallthrough
 
@@ -914,7 +914,7 @@ warnings, in some cases it may also cause false positives.
 
   This warning does not warn when the last statement of a case cannot
   fall through, e.g. when there is a return statement or a call to function
-  declared with the noreturn attribute.  :option:`-Wimplicit-fallthrough` =
+  declared with the noreturn attribute.  :option:`-Wimplicit-fallthrough=`
   also takes into account control flow statements, such as ifs, and only
   warns when appropriate.  E.g.
 
@@ -958,15 +958,15 @@ warnings, in some cases it may also cause false positives.
   match the given regular expressions listed below.  The option argument :samp:`{n}`
   specifies what kind of comments are accepted:
 
-  * :option:`-Wimplicit-fallthrough`:samp:`=0` disables the warning altogether.
+  * :option:`-Wimplicit-fallthrough=0` disables the warning altogether.
 
-  * :option:`-Wimplicit-fallthrough`:samp:`=1` matches ``.*`` regular
+  * :option:`-Wimplicit-fallthrough=1` matches ``.*`` regular
     expression, any comment is used as fallthrough comment.
 
-  * :option:`-Wimplicit-fallthrough`:samp:`=2` case insensitively matches
+  * :option:`-Wimplicit-fallthrough=2` case insensitively matches
     ``.*falls?[ \t-]*thr(ough|u).*`` regular expression.
 
-  * :option:`-Wimplicit-fallthrough`:samp:`=3` case sensitively matches one of the
+  * :option:`-Wimplicit-fallthrough=3` case sensitively matches one of the
     following regular expressions:
 
     * ``-fallthrough``
@@ -984,7 +984,7 @@ warnings, in some cases it may also cause false positives.
     * ``[ \t.!]*([Ee]lse,? |[Ii]ntentional(ly)? )?
       fall(s | |-)?thr(ough|u)[ \t.!]*(-[^\n\r]*)?``
 
-  * :option:`-Wimplicit-fallthrough`:samp:`=4` case sensitively matches one of the
+  * :option:`-Wimplicit-fallthrough=4` case sensitively matches one of the
     following regular expressions:
 
     * ``-fallthrough``
@@ -995,7 +995,7 @@ warnings, in some cases it may also cause false positives.
 
     * ``[ \t]*FALLTHR(OUGH|U)[ \t]*``
 
-  * :option:`-Wimplicit-fallthrough`:samp:`=5` doesn't recognize any comments as
+  * :option:`-Wimplicit-fallthrough=5` doesn't recognize any comments as
     fallthrough comments, only attributes disable the warning.
 
   The comment needs to be followed after optional whitespace and other comments
@@ -1013,7 +1013,7 @@ warnings, in some cases it may also cause false positives.
         ...
       }
 
-  The :option:`-Wimplicit-fallthrough`:samp:`=3` warning is enabled by :option:`-Wextra`.
+  The :option:`-Wimplicit-fallthrough=3` warning is enabled by :option:`-Wextra`.
 
 .. option:: -Wno-if-not-aligned
 
@@ -1097,7 +1097,7 @@ warnings, in some cases it may also cause false positives.
         bar ();  /* Gotcha: this is not guarded by the "if".  */
 
   In the case of mixed tabs and spaces, the warning uses the
-  :option:`-ftabstop` = option to determine if the statements line up
+  :option:`-ftabstop=` option to determine if the statements line up
   (defaulting to 8).
 
   The warning is not issued for code involving multiline preprocessor logic
@@ -1130,7 +1130,7 @@ warnings, in some cases it may also cause false positives.
   the warning is issued for declarations of aliases that use attributes
   to specify less restrictive requirements than those of their targets.
   This typically represents a potential optimization opportunity.
-  By contrast, the :option:`-Wattribute-alias`:samp:`=2` option controls warnings
+  By contrast, the :option:`-Wattribute-alias=2` option controls warnings
   issued when the alias is more restrictive than the target, which could
   lead to incorrect code generation.
   Attributes considered include ``alloc_align``, ``alloc_size``,
@@ -1711,7 +1711,7 @@ warnings, in some cases it may also cause false positives.
 .. option:: -Wunused-variable
 
   Warn whenever a local or static variable is unused aside from its
-  declaration. This option implies :option:`-Wunused-const-variable`:samp:`=1` for C,
+  declaration. This option implies :option:`-Wunused-const-variable=1` for C,
   but not for C++. This warning is enabled by :option:`-Wall`.
 
   To suppress this warning use the :gcc-attr:`unused` attribute
@@ -1724,7 +1724,7 @@ warnings, in some cases it may also cause false positives.
 .. option:: -Wunused-const-variable, -Wunused-const-variable={n}
 
   Warn whenever a constant static variable is unused aside from its declaration.
-  :option:`-Wunused-const-variable`:samp:`=1` is enabled by :option:`-Wunused-variable`
+  :option:`-Wunused-const-variable=1` is enabled by :option:`-Wunused-variable`
   for C, but not for C++. In C this declares variable storage, but in C++ this
   is not an error since const variables take the place of ``#define`` s.
 
@@ -1951,7 +1951,7 @@ warnings, in some cases it may also cause false positives.
   compiler is using for optimization.  The warning does not catch all
   cases, but does attempt to catch the more common pitfalls.  It is
   included in :option:`-Wall`.
-  It is equivalent to :option:`-Wstrict-aliasing`:samp:`=3`
+  It is equivalent to :option:`-Wstrict-aliasing=3`
 
 .. option:: -Wno-strict-aliasing
 
@@ -1965,7 +1965,7 @@ warnings, in some cases it may also cause false positives.
   Higher levels correspond to higher accuracy (fewer false positives).
   Higher levels also correspond to more effort, similar to the way :option:`-O` 
   works.
-  :option:`-Wstrict-aliasing` is equivalent to :option:`-Wstrict-aliasing`:samp:`=3`.
+  :option:`-Wstrict-aliasing` is equivalent to :option:`-Wstrict-aliasing=3`.
 
   Level 1: Most aggressive, quick, least accurate.
   Possibly useful when higher levels
@@ -2022,7 +2022,7 @@ warnings, in some cases it may also cause false positives.
     simplified when signed integer overflow is undefined, because
     ``abs (INT_MIN)`` overflows to ``INT_MIN``, which is less than
     zero.  :option:`-Wstrict-overflow` (with no level) is the same as
-    :option:`-Wstrict-overflow`:samp:`=2`.
+    :option:`-Wstrict-overflow=2`.
 
   ``-Wstrict-overflow=3``
     Also warn about other cases where a comparison is simplified.  For
@@ -2109,11 +2109,11 @@ warnings, in some cases it may also cause false positives.
       return strcpy (buf, str);   // warning here
     }
 
-  Option :option:`-Wstringop-overflow`:samp:`=2` is enabled by default.
+  Option :option:`-Wstringop-overflow=2` is enabled by default.
 
   .. option:: -Wstringop-overflow, -Wstringop-overflow=1
 
-    The :option:`-Wstringop-overflow`:samp:`=1` option uses type-zero Object Size Checking
+    The :option:`-Wstringop-overflow=1` option uses type-zero Object Size Checking
     to determine the sizes of destination objects.  At this setting the option
     does not warn for writes past the end of subobjects of larger objects accessed
     by pointers unless the size of the largest surrounding object is known.  When
@@ -2127,7 +2127,7 @@ warnings, in some cases it may also cause false positives.
     Default setting; overrides :option:`-Wstringop-overflow`.
 
   ``-Wstringop-overflow=2``
-    The :option:`-Wstringop-overflow`:samp:`=2` option uses type-one Object Size Checking
+    The :option:`-Wstringop-overflow=2` option uses type-one Object Size Checking
     to determine the sizes of destination objects.  At this setting the option
     warns about overflows when writing to members of the largest complete
     objects whose exact size is known.  However, it does not warn for excessive
@@ -2136,18 +2136,18 @@ warnings, in some cases it may also cause false positives.
     the default setting of the option.
 
   ``-Wstringop-overflow=3``
-    The :option:`-Wstringop-overflow`:samp:`=3` option uses type-two Object Size Checking
+    The :option:`-Wstringop-overflow=3` option uses type-two Object Size Checking
     to determine the sizes of destination objects.  At this setting the option
     warns about overflowing the smallest object or data member.  This is the
     most restrictive setting of the option that may result in warnings for safe
     code.
 
   ``-Wstringop-overflow=4``
-    The :option:`-Wstringop-overflow`:samp:`=4` option uses type-three Object Size Checking
+    The :option:`-Wstringop-overflow=4` option uses type-three Object Size Checking
     to determine the sizes of destination objects.  At this setting the option
     warns about overflowing any data members, and when the destination is
     one of several objects it uses the size of the largest of them to decide
-    whether to issue a warning.  Similarly to :option:`-Wstringop-overflow`:samp:`=3` this
+    whether to issue a warning.  Similarly to :option:`-Wstringop-overflow=3` this
     setting of the option may result in warnings for benign code.
 
 .. option:: -Wno-stringop-overflow
@@ -2295,7 +2295,7 @@ warnings, in some cases it may also cause false positives.
   that attempt to allocate objects larger than the specified number of bytes,
   or where the result of the size computation in an integer type with infinite
   precision would exceed the value of :samp:`PTRDIFF_MAX` on the target.
-  :option:`-Walloc-size-larger-than`:samp:`=PTRDIFF_MAX` is enabled by default.
+  :option:`-Walloc-size-larger-than=PTRDIFF_MAX` is enabled by default.
   Warnings controlled by the option can be disabled either by specifying
   :samp:`{byte-size}` of :samp:`SIZE_MAX` or more or by
   :option:`-Wno-alloc-size-larger-than`.
@@ -2303,8 +2303,8 @@ warnings, in some cases it may also cause false positives.
 
 .. option:: -Wno-alloc-size-larger-than
 
-  Disable :option:`-Walloc-size-larger-than` = warnings.  The option is
-  equivalent to :option:`-Walloc-size-larger-than`:samp:`=SIZE_MAX` or
+  Disable :option:`-Walloc-size-larger-than=` warnings.  The option is
+  equivalent to :option:`-Walloc-size-larger-than=SIZE_MAX` or
   larger.
 
 .. option:: -Walloca
@@ -2376,16 +2376,16 @@ warnings, in some cases it may also cause false positives.
 
   This option also warns when ``alloca`` is used in a loop.
 
-  :option:`-Walloca-larger-than`:samp:`=PTRDIFF_MAX` is enabled by default
+  :option:`-Walloca-larger-than=PTRDIFF_MAX` is enabled by default
   but is usually only effective  when :option:`-ftree-vrp` is active (default
   for :option:`-O2` and above).
 
-  See also :option:`-Wvla-larger-than`:samp:`=byte-size`.
+  See also :option:`-Wvla-larger-than=byte-size`.
 
 .. option:: -Wno-alloca-larger-than
 
-  Disable :option:`-Walloca-larger-than` = warnings.  The option is
-  equivalent to :option:`-Walloca-larger-than`:samp:`=SIZE_MAX` or larger.
+  Disable :option:`-Walloca-larger-than=` warnings.  The option is
+  equivalent to :option:`-Walloca-larger-than=SIZE_MAX` or larger.
 
 .. option:: -Warith-conversion
 
@@ -2488,7 +2488,7 @@ warnings, in some cases it may also cause false positives.
     void g (int[]);     // no warning
     void g (int[8]);    // warning (inconsistent array bound)
 
-  :option:`-Warray-parameter`:samp:`=2` is included in :option:`-Wall`.  The
+  :option:`-Warray-parameter=2` is included in :option:`-Wall`.  The
   :option:`-Wvla-parameter` option triggers warnings for similar inconsistencies
   involving Variable Length Array arguments.
 
@@ -2522,9 +2522,9 @@ warnings, in some cases it may also cause false positives.
     :gcc-attr:`nonnull`, :gcc-attr:`noreturn`, :gcc-attr:`nothrow`, :gcc-attr:`pure`,
     :gcc-attr:`returns_nonnull`, and :gcc-attr:`returns_twice`.
 
-    :option:`-Wattribute-alias` is equivalent to :option:`-Wattribute-alias`:samp:`=1`.
+    :option:`-Wattribute-alias` is equivalent to :option:`-Wattribute-alias=1`.
   This is the default.  You can disable these warnings with either
-  :option:`-Wno-attribute-alias` or :option:`-Wattribute-alias`:samp:`=0`.
+  :option:`-Wno-attribute-alias` or :option:`-Wattribute-alias=0`.
 
 .. option:: -Wattribute-alias
 
@@ -2540,16 +2540,16 @@ warnings, in some cases it may also cause false positives.
   of code is not commented out, whereas it in fact is.
 
   There are three levels of warning supported by GCC.  The default is
-  :option:`-Wbidi-chars`:samp:`=unpaired`, which warns about improperly terminated
-  bidi contexts.  :option:`-Wbidi-chars`:samp:`=none` turns the warning off.
-  :option:`-Wbidi-chars`:samp:`=any` warns about any use of bidirectional control
+  :option:`-Wbidi-chars=unpaired`, which warns about improperly terminated
+  bidi contexts.  :option:`-Wbidi-chars=none` turns the warning off.
+  :option:`-Wbidi-chars=any` warns about any use of bidirectional control
   characters.
 
   By default, this warning does not warn about UCNs.  It is, however, possible
-  to turn on such checking by using :option:`-Wbidi-chars`:samp:`=unpaired,ucn` or
-  :option:`-Wbidi-chars`:samp:`=any,ucn`.  Using :option:`-Wbidi-chars`:samp:`=ucn` is valid,
-  and is equivalent to :option:`-Wbidi-chars`:samp:`=unpaired,ucn`, if no previous
-  :option:`-Wbidi-chars`:samp:`=any` was specified.
+  to turn on such checking by using :option:`-Wbidi-chars=unpaired,ucn` or
+  :option:`-Wbidi-chars=any,ucn`.  Using :option:`-Wbidi-chars=ucn` is valid,
+  and is equivalent to :option:`-Wbidi-chars=unpaired,ucn`, if no previous
+  :option:`-Wbidi-chars=any` was specified.
 
 .. option:: -Wbool-compare
 
@@ -2921,10 +2921,10 @@ warnings, in some cases it may also cause false positives.
   that in C++, the compiler warns if a local variable shadows an
   explicit typedef, but not if it shadows a struct/class/enum.
   If this warning is enabled, it includes also all instances of
-  local shadowing.  This means that :option:`-Wno-shadow`:samp:`=local`
-  and :option:`-Wno-shadow`:samp:`=compatible-local` are ignored when
+  local shadowing.  This means that :option:`-Wno-shadow=local`
+  and :option:`-Wno-shadow=compatible-local` are ignored when
   :option:`-Wshadow` is used.
-  Same as :option:`-Wshadow`:samp:`=global`.
+  Same as :option:`-Wshadow=global`.
 
 .. option:: -Wno-shadow
 
@@ -2958,7 +2958,7 @@ warnings, in some cases it may also cause false positives.
   whose type is compatible with that of the shadowing variable.  In C++,
   type compatibility here means the type of the shadowing variable can be
   converted to that of the shadowed variable.  The creation of this flag
-  (in addition to :option:`-Wshadow`:samp:`=local`) is based on the idea that when
+  (in addition to :option:`-Wshadow=local`) is based on the idea that when
   a local variable shadows another one of incompatible type, it is most
   likely intentional, not a bug or typo, as shown in the following example:
 
@@ -2974,22 +2974,22 @@ warnings, in some cases it may also cause false positives.
     }
 
   Since the two variable ``i`` in the example above have incompatible types,
-  enabling only :option:`-Wshadow`:samp:`=compatible-local` does not emit a warning.
+  enabling only :option:`-Wshadow=compatible-local` does not emit a warning.
   Because their types are incompatible, if a programmer accidentally uses one
   in place of the other, type checking is expected to catch that and emit an
-  error or warning.  Use of this flag instead of :option:`-Wshadow`:samp:`=local` can
+  error or warning.  Use of this flag instead of :option:`-Wshadow=local` can
   possibly reduce the number of warnings triggered by intentional shadowing.
   Note that this also means that shadowing ``const char *i`` by
   ``char *i`` does not emit a warning.
 
-  This warning is also enabled by :option:`-Wshadow`:samp:`=local`.
+  This warning is also enabled by :option:`-Wshadow=local`.
 
 .. index:: Wlarger-than-byte-size
 
 .. option:: -Wlarger-than={byte-size}
 
   Warn whenever an object is defined whose size exceeds :samp:`{byte-size}`.
-  :option:`-Wlarger-than`:samp:`=PTRDIFF_MAX` is enabled by default.
+  :option:`-Wlarger-than=PTRDIFF_MAX` is enabled by default.
   Warnings controlled by the option can be disabled either by specifying
   :samp:`{byte-size}` of :samp:`SIZE_MAX` or more or by :option:`-Wno-larger-than`.
 
@@ -3000,8 +3000,8 @@ warnings, in some cases it may also cause false positives.
 
 .. option:: -Wno-larger-than
 
-  Disable :option:`-Wlarger-than` = warnings.  The option is equivalent
-  to :option:`-Wlarger-than`:samp:`=SIZE_MAX` or larger.
+  Disable :option:`-Wlarger-than=` warnings.  The option is equivalent
+  to :option:`-Wlarger-than=SIZE_MAX` or larger.
 
 .. option:: -Wframe-larger-than={byte-size}
 
@@ -3013,15 +3013,15 @@ warnings, in some cases it may also cause false positives.
   via ``alloca``, variable-length arrays, or related constructs
   is not included by the compiler when determining
   whether or not to issue a warning.
-  :option:`-Wframe-larger-than`:samp:`=PTRDIFF_MAX` is enabled by default.
+  :option:`-Wframe-larger-than=PTRDIFF_MAX` is enabled by default.
   Warnings controlled by the option can be disabled either by specifying
   :samp:`{byte-size}` of :samp:`SIZE_MAX` or more or by
   :option:`-Wno-frame-larger-than`.
 
 .. option:: -Wno-frame-larger-than
 
-  Disable :option:`-Wframe-larger-than` = warnings.  The option is equivalent
-  to :option:`-Wframe-larger-than`:samp:`=SIZE_MAX` or larger.
+  Disable :option:`-Wframe-larger-than=` warnings.  The option is equivalent
+  to :option:`-Wframe-larger-than=SIZE_MAX` or larger.
 
 .. option:: -Wfree-nonheap-object
 
@@ -3075,15 +3075,15 @@ warnings, in some cases it may also cause false positives.
 
         warning: stack usage might be unbounded
 
-  :option:`-Wstack-usage`:samp:`=PTRDIFF_MAX` is enabled by default.
+  :option:`-Wstack-usage=PTRDIFF_MAX` is enabled by default.
   Warnings controlled by the option can be disabled either by specifying
   :samp:`{byte-size}` of :samp:`SIZE_MAX` or more or by
   :option:`-Wno-stack-usage`.
 
 .. option:: -Wno-stack-usage
 
-  Disable :option:`-Wstack-usage` = warnings.  The option is equivalent
-  to :option:`-Wstack-usage`:samp:`=SIZE_MAX` or larger.
+  Disable :option:`-Wstack-usage=` warnings.  The option is equivalent
+  to :option:`-Wstack-usage=SIZE_MAX` or larger.
 
 .. option:: -Wunsafe-loop-optimizations
 
@@ -3606,7 +3606,7 @@ warnings, in some cases it may also cause false positives.
         ...
       }
 
-    :option:`-Wdangling-pointer`:samp:`=2` is included in :option:`-Wall`.
+    :option:`-Wdangling-pointer=2` is included in :option:`-Wall`.
 
 .. option:: -Wno-dangling-pointer
 
@@ -3982,9 +3982,9 @@ warnings, in some cases it may also cause false positives.
   etc.  This does not stop errors for incorrect use of supported
   attributes.
 
-  Additionally, using :option:`-Wno-attributes` =, it is possible to suppress
+  Additionally, using :option:`-Wno-attributes=`, it is possible to suppress
   warnings about unknown scoped attributes (in C++11 and C2X).  For example,
-  :option:`-Wno-attributes`:samp:`=vendor::attr` disables warning about the following
+  :option:`-Wno-attributes=vendor::attr` disables warning about the following
   declaration:
 
   .. code-block:: c++
@@ -3992,7 +3992,7 @@ warnings, in some cases it may also cause false positives.
     [[vendor::attr]] void f();
 
   It is also possible to disable warning about all attributes in a namespace
-  using :option:`-Wno-attributes`:samp:`=vendor::` which prevents warning about both
+  using :option:`-Wno-attributes=vendor::` which prevents warning about both
   of these declarations:
 
   .. code-block:: c++
@@ -4000,7 +4000,7 @@ warnings, in some cases it may also cause false positives.
     [[vendor::safe]] void f();
     [[vendor::unsafe]] void f2();
 
-  Note that :option:`-Wno-attributes` = does not imply :option:`-Wno-attributes`.
+  Note that :option:`-Wno-attributes=` does not imply :option:`-Wno-attributes`.
 
 .. option:: -Wattributes
 
@@ -4271,7 +4271,7 @@ warnings, in some cases it may also cause false positives.
   have not been normalized; this option controls that warning.
 
   There are four levels of warning supported by GCC.  The default is
-  :option:`-Wnormalized`:samp:`=nfc`, which warns about any identifier that is
+  :option:`-Wnormalized=nfc`, which warns about any identifier that is
   not in the ISO 10646 'C' normalized form, :dfn:`NFC`.  NFC is the
   recommended form for most uses.  It is equivalent to
   :option:`-Wnormalized`.
@@ -4280,12 +4280,12 @@ warnings, in some cases it may also cause false positives.
   ISO C and ISO C++ that, when turned into NFC, are not allowed in 
   identifiers.  That is, there's no way to use these symbols in portable
   ISO C or C++ and have all your identifiers in NFC.
-  :option:`-Wnormalized`:samp:`=id` suppresses the warning for these characters.
+  :option:`-Wnormalized=id` suppresses the warning for these characters.
   It is hoped that future versions of the standards involved will correct
   this, which is why this option is not the default.
 
   You can switch the warning off for all characters by writing
-  :option:`-Wnormalized`:samp:`=none` or :option:`-Wno-normalized`.  You should
+  :option:`-Wnormalized=none` or :option:`-Wno-normalized`.  You should
   only do this if you are using some other normalization scheme (like
   'D'), because otherwise you can easily create bugs that are
   literally impossible to see.
@@ -4297,7 +4297,7 @@ warnings, in some cases it may also cause false positives.
   placed in a superscript.  ISO 10646 defines the :dfn:`NFKC`
   normalization scheme to convert all these into a standard form as
   well, and GCC warns if your code is not in NFKC if you use
-  :option:`-Wnormalized`:samp:`=nfkc`.  This warning is comparable to warning
+  :option:`-Wnormalized=nfkc`.  This warning is comparable to warning
   about every identifier that contains the letter O because it might be
   confused with the digit 0, and so is not the default, but may be
   useful as a local coding convention if the programming environment 
@@ -4308,7 +4308,7 @@ warnings, in some cases it may also cause false positives.
   Do not warn about usage of functions (see :ref:`function-attributes`)
   declared with ``warning`` attribute.  By default, this warning is
   enabled.  :option:`-Wno-attribute-warning` can be used to disable the
-  warning or :option:`-Wno-error`:samp:`=attribute-warning` can be used to
+  warning or :option:`-Wno-error=attribute-warning` can be used to
   disable the error when compiled with :option:`-Werror` flag.
 
 .. option:: -Wattribute-warning
@@ -4363,7 +4363,7 @@ warnings, in some cases it may also cause false positives.
 .. option:: -Wopenmp-simd
 
   Warn if the vectorizer cost model overrides the OpenMP
-  simd directive set by user.  The :option:`-fsimd-cost-model`:samp:`=unlimited`
+  simd directive set by user.  The :option:`-fsimd-cost-model=unlimited`
   option can be used to relax the cost model.
 
 .. option:: -Wno-openmp-simd
@@ -4629,7 +4629,7 @@ warnings, in some cases it may also cause false positives.
 .. option:: -Winvalid-utf8
 
   Warn if an invalid UTF-8 character is found.
-  This warning is on by default for C++23 if :option:`-finput-charset`:samp:`=UTF-8`
+  This warning is on by default for C++23 if :option:`-finput-charset=UTF-8`
   is used and turned into error with :option:`-pedantic-errors`.
 
 .. option:: -Wno-invalid-utf8
@@ -4705,23 +4705,23 @@ warnings, in some cases it may also cause false positives.
   If this option is used, the compiler warns for declarations of
   variable-length arrays whose size is either unbounded, or bounded
   by an argument that allows the array size to exceed :samp:`{byte-size}`
-  bytes.  This is similar to how :option:`-Walloca-larger-than`:samp:`={byte-size}`
+  bytes.  This is similar to how :option:`-Walloca-larger-than=byte-size`
   works, but with variable-length arrays.
 
   Note that GCC may optimize small variable-length arrays of a known
   value into plain arrays, so this warning may not get triggered for
   such arrays.
 
-  :option:`-Wvla-larger-than`:samp:`=PTRDIFF_MAX` is enabled by default but
+  :option:`-Wvla-larger-than=PTRDIFF_MAX` is enabled by default but
   is typically only effective when :option:`-ftree-vrp` is active (default
   for :option:`-O2` and above).
 
-  See also :option:`-Walloca-larger-than`:samp:`={byte-size}`.
+  See also :option:`-Walloca-larger-than=byte-size`.
 
 .. option:: -Wno-vla-larger-than
 
-  Disable :option:`-Wvla-larger-than` = warnings.  The option is equivalent
-  to :option:`-Wvla-larger-than`:samp:`=SIZE_MAX` or larger.
+  Disable :option:`-Wvla-larger-than=` warnings.  The option is equivalent
+  to :option:`-Wvla-larger-than=SIZE_MAX` or larger.
 
 .. option:: -Wvla-parameter
 

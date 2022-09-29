@@ -50,8 +50,8 @@ are ``poly_int`` s and where :samp:`{c1}` and :samp:`{c2}` are scalars:
 :samp:`{p1}` += :samp:`{p2}`
 :samp:`{p1}` += :samp:`{c2}`
 
-:samp:`{p1}` :option:`-` = :samp:`{p2}`
-:samp:`{p1}` :option:`-` = :samp:`{c2}`
+:samp:`{p1}` :option:`-=` :samp:`{p2}`
+:samp:`{p1}` :option:`-=` :samp:`{c2}`
 
 :samp:`{p1}` \*= :samp:`{c2}`
 :samp:`{p1}` <<= :samp:`{c2}`

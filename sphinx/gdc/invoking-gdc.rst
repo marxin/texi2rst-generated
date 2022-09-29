@@ -12,9 +12,9 @@ Synopsis
 ^^^^^^^^
 
 gdc [ :option:`-c` | :option:`-S` ] [ :option:`-g` ] [ :option:`-pg` ]
-    [ :option:`-O`:samp:`{level}` ] [ :option:`-W`:samp:`{warn}`...]
-    [ :option:`-I`:samp:`{dir}`...] [ :option:`-L`:samp:`{dir}`...]
-    [ :option:`-f`:samp:`{option}`...] [ :option:`-m`:samp:`{machine-option}`...]
+    [ :option:`-Olevel` ] [ :option:`-Wwarn`...]
+    [ :option:`-Idir`...] [ :option:`-Ldir`...]
+    [ :option:`-foption`...] [ :option:`-mmachine-option`...]
     [ :option:`-o` :samp:`{outfile}` ] [@ :samp:`{file}` ] :samp:`{infile}`...
 
 Only the most useful options are listed here; see below for the

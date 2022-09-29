@@ -15,7 +15,7 @@ MIPS SIMD Architecture (MSA) Support
 
 GCC provides intrinsics to access the SIMD instructions provided by the
 MSA MIPS SIMD Architecture.  The interface is made available by including
-``<msa.h>`` and using :option:`-mmsa -mhard-float -mfp64 -mnan`:samp:`=2008`.
+``<msa.h>`` and using :option:`-mmsa -mhard-float -mfp64 -mnan=2008`.
 For each ``__builtin_msa_*``, there is a shortened name of the intrinsic,
 ``__msa_*``.
 
