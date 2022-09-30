@@ -5,6 +5,7 @@ sys.path.append('..')
 
 from baseconf import *
 
+name = 'gcc'
 project = 'Using the GNU Compiler Collection'
 copyright = '1988-2022 Free Software Foundation, Inc.'
 authors = 'Richard M. Stallman and the GCC Developer Community'
@@ -13,7 +14,7 @@ authors = 'Richard M. Stallman and the GCC Developer Community'
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 latex_documents = [
-  ('index', 'gcc.tex', project, authors, 'manual'),
+  ('index', f'{name}.tex', project, authors, 'manual'),
 ]
 
 # One entry per manual page. List of tuples
@@ -30,7 +31,8 @@ man_pages = [
 ]
 
 texinfo_documents = [
-  ('index', 'gcc', project, authors, None, None, None, True)
+  ('index', name, project, authors, None, None, None, True)
 ]
 
-tags.add('gcc')
+tags.add(name)
+set_common(name)

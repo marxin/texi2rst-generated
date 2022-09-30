@@ -113,7 +113,6 @@ html_theme = 'furo'
 # documentation.
 html_theme_options = {
     'navigation_with_keys': True,
-    'source_edit_link': '_sources/{filename}.txt',
 }
 
 html_logo = '../logo.svg'
@@ -186,3 +185,8 @@ for manual in ['cpp', 'cppinternals', 'gfortran', 'gcc', 'gccgo', 'gccint', 'gdc
                'gfc-internals', 'gnat-style', 'gnat_rm', 'gnat_ugn', 'install',
                'libgccjit', 'libgomp', 'libiberty', 'libitm', 'libquadmath']:
     intersphinx_mapping[manual] = (f'https://splichal.eu/scripts/sphinx/{manual}/_build/html/', None)
+
+# Set common settings where we need NAME of the documentation
+def set_common(name):
+    html_theme_options['source_edit_link'] = f'https://splichal.eu/scripts/sphinx/{name}' \
+                                               '/_build/html/_sources/{filename}.txt'
