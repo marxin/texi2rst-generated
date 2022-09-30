@@ -113,6 +113,7 @@ html_theme = 'furo'
 # documentation.
 html_theme_options = {
     'navigation_with_keys': True,
+    'source_edit_link': '_sources/{filename}.txt',
 }
 
 html_logo = '../logo.svg'
