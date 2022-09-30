@@ -5,6 +5,7 @@ sys.path.append('..')
 
 from baseconf import *
 
+name = 'gccint'
 project = 'GNU Compiler Collection Internals'
 copyright = '1988-2022 Free Software Foundation, Inc.'
 authors = 'Richard M. Stallman and the GCC Developer Community'
@@ -13,11 +14,12 @@ authors = 'Richard M. Stallman and the GCC Developer Community'
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 latex_documents = [
-  ('index', 'gccint.tex', project, authors, 'manual'),
+  ('index', f'{name}}.tex', project, authors, 'manual'),
 ]
 
 texinfo_documents = [
-  ('index', 'gccint', project, authors, None, None, None, True)
+  ('index', name, project, authors, None, None, None, True)
 ]
 
-tags.add('gccint')
+tags.add(name)
+set_common(name)

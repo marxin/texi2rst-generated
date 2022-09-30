@@ -5,6 +5,7 @@ sys.path.append('..')
 
 from baseconf import *
 
+name = 'cppinternals'
 project = 'Cpplib Internals'
 copyright = '2000-2022 Free Software Foundation, Inc.'
 authors = 'Neil Booth'
@@ -13,11 +14,12 @@ authors = 'Neil Booth'
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 latex_documents = [
-  ('index', 'cppinternals.tex', project, authors, 'manual'),
+  ('index', f'{name}.tex', project, authors, 'manual'),
 ]
 
 texinfo_documents = [
-  ('index', 'cppinternals', project, authors, None, None, None, True)
+  ('index', name, project, authors, None, None, None, True)
 ]
 
-tags.add('cppinternals')
+tags.add(name)
+set_common(name)

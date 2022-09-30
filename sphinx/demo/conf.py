@@ -5,6 +5,7 @@ sys.path.append('..')
 
 from baseconf import *
 
+name = 'demo'
 project = 'Demo project'
 copyright = '2001-2022 Free Software Foundation, Inc.'
 authors = 'Martin Liska'
@@ -13,15 +14,16 @@ authors = 'Martin Liska'
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 latex_documents = [
-  ('index', 'demo.tex', project, authors, 'manual'),
+  ('index', f'{name}.tex', project, authors, 'manual'),
 ]
 
 texinfo_documents = [
-  ('index', 'demo', project, authors, None, None, None, True)
+  ('index', name, project, authors, None, None, None, True)
 ]
 
 man_pages = [
-    ('demo2', 'demo', 'Demo man page', [authors], 1),
+    ('demo2', name, 'Demo man page', [authors], 1),
 ]
 
-tags.add('demo')
+tags.add(name)
+set_common(name)

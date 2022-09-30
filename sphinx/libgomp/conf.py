@@ -5,6 +5,7 @@ sys.path.append('..')
 
 from baseconf import *
 
+name = 'libgomp'
 project = 'GNU Offloading and Multi Processing Runtime Library'
 copyright = '2006-2022 Free Software Foundation, Inc.'
 authors = 'GCC Developer Community'
@@ -13,11 +14,12 @@ authors = 'GCC Developer Community'
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 latex_documents = [
-  ('index', 'libgomp.tex', project, authors, 'manual'),
+  ('index', f'{name}.tex', project, authors, 'manual'),
 ]
 
 texinfo_documents = [
-  ('index', 'libgomp', project, authors, None, None, None, True)
+  ('index', name, project, authors, None, None, None, True)
 ]
 
-tags.add('libgomp')
+tags.add(name)
+set_common(name)

@@ -5,6 +5,7 @@ sys.path.append('..')
 
 from baseconf import *
 
+name = 'gdc'
 project = 'The GNU D Compiler'
 copyright = '2006-2022 Free Software Foundation, Inc.'
 authors = 'David Friedman, Iain Buclaw'
@@ -13,17 +14,18 @@ authors = 'David Friedman, Iain Buclaw'
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 latex_documents = [
-  ('index', 'gdc.tex', project, authors, 'manual'),
+  ('index', f'{name}.tex', project, authors, 'manual'),
 ]
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('invoking-gdc', 'gdc', project, [authors], 1),
+    ('invoking-gdc', name, project, [authors], 1),
 ]
 
 texinfo_documents = [
-  ('index', 'gdc', project, authors, None, None, None, True)
+  ('index', name, project, authors, None, None, None, True)
 ]
 
-tags.add('gdc')
+tags.add(name)
+set_common(name)

@@ -5,6 +5,7 @@ sys.path.append('..')
 
 from baseconf import *
 
+name = 'gfc-internals'
 project = 'GNU Fortran Internals'
 copyright = '2007-2022 Free Software Foundation, Inc.'
 authors = 'The gfortran team'
@@ -13,14 +14,15 @@ authors = 'The gfortran team'
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 latex_documents = [
-  ('index', 'gfc-internals.tex', project, authors, 'manual'),
+  ('index', f'{name}.tex', project, authors, 'manual'),
 ]
 
 texinfo_documents = [
-  ('index', 'gfc-internals', project, authors, None, None, None, True)
+  ('index', name, project, authors, None, None, None, True)
 ]
 
-tags.add('gfc-internals')
-
+tags.add(name)
 if gcc_DEVPHASE == 'experimental':
     tags.add('development')
+
+set_common(name)

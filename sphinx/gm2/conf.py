@@ -5,6 +5,7 @@ sys.path.append('..')
 
 from baseconf import *
 
+name = 'gm2'
 project = 'The GNU Modula-2 Compiler'
 copyright = '2022 Free Software Foundation, Inc.'
 authors = 'Gaius Mulley'
@@ -13,11 +14,12 @@ authors = 'Gaius Mulley'
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 latex_documents = [
-  ('index', 'gm2.tex', project, authors, 'manual'),
+  ('index', f'{name}.tex', project, authors, 'manual'),
 ]
 
 texinfo_documents = [
-  ('index', 'gm2', project, authors, None, None, None, True)
+  ('index', name, project, authors, None, None, None, True)
 ]
 
-tags.add('gm2')
+tags.add(name)
+set_common(name)

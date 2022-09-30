@@ -5,6 +5,7 @@ sys.path.append('..')
 
 from baseconf import *
 
+name = 'gfortran'
 project = 'Using GNU Fortran'
 copyright = '1999-2022 Free Software Foundation, Inc.'
 authors = 'The gfortran team'
@@ -13,20 +14,21 @@ authors = 'The gfortran team'
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 latex_documents = [
-  ('index', 'gfortran.tex', project, authors, 'manual'),
+  ('index', f'{name}.tex', project, authors, 'manual'),
 ]
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('gnu-fortran-command-options', 'gfortran', 'GNU Fortran compiler', [authors], 1),
+    ('gnu-fortran-command-options', name, 'GNU Fortran compiler', [authors], 1),
 ]
 
 texinfo_documents = [
-  ('index', 'gfortran', project, authors, None, None, None, True)
+  ('index', name, project, authors, None, None, None, True)
 ]
 
-tags.add('gfortran')
-
+tags.add(name)
 if gcc_DEVPHASE == 'experimental':
     tags.add('development')
+
+set_common(name)
