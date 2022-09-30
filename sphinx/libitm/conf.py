@@ -14,7 +14,7 @@ authors = 'GCC Developer Community'
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 latex_documents = [
-  ('index', f'{name}}.tex', project, authors, 'manual'),
+  ('index', f'{name}.tex', project, authors, 'manual'),
 ]
 
 texinfo_documents = [
