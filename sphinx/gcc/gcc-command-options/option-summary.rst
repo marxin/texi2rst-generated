@@ -466,7 +466,7 @@ in the following sections.
   :option:`-fprofile-reproducible=[multithreaded|parallel-runs|serial]`  |gol|
   :option:`-fsanitize=style`  :option:`-fsanitize-recover`  :option:`-fsanitize-recover=style` |gol|
   :option:`-fsanitize-trap`   :option:`-fsanitize-trap=style`  |gol|
-  :option:`-fasan-shadow-offset=number`  :option:`-fsanitize-sections=s1`, :samp:`{s2}`,... |gol|
+  :option:`-fasan-shadow-offset=number`  :option:`-fsanitize-sections=s1,s2,...` |gol|
   :option:`-fsanitize-undefined-trap-on-error`  :option:`-fbounds-check` |gol|
   :option:`-fcf-protection=[full|branch|return|none|check]` |gol|
   :option:`-fharden-compares` :option:`-fharden-conditional-branches` |gol|
@@ -492,7 +492,7 @@ in the following sections.
   :option:`-fdebug-cpp`  :option:`-fdirectives-only`  :option:`-fdollars-in-identifiers`  |gol|
   :option:`-fexec-charset=charset`  :option:`-fextended-identifiers`  |gol|
   :option:`-finput-charset=charset`  :option:`-flarge-source-files`  |gol|
-  :option:`-fmacro-prefix-map=old` = :samp:`{new}` :option:`-fmax-include-depth=depth` |gol|
+  :option:`-fmacro-prefix-map=old=new` :option:`-fmax-include-depth=depth` |gol|
   :option:`-fno-canonical-system-headers`  :option:`-fpch-deps`  :option:`-fpch-preprocess`  |gol|
   :option:`-fpreprocessed`  :option:`-ftabstop=width`  :option:`-ftrack-macro-expansion`  |gol|
   :option:`-fwide-exec-charset=charset`  :option:`-fworking-directory` |gol|
@@ -829,7 +829,7 @@ in the following sections.
   .. program:: eBPF
 
   :option:`-mbig-endian` :option:`-mlittle-endian` :option:`-mkernel=version` |gol|
-  :option:`-mframe-limit=bytes` :option:`-mxbpf` :option:`-mco-re` :option:`-mno-co-re`|gol|
+  :option:`-mframe-limit=bytes` :option:`-mxbpf` :option:`-mco-re` :option:`-mno-co-re` |gol|
   :option:`-mjmpext` :option:`-mjmp32` :option:`-malu32` :option:`-mcpu=version`
 
   *FR30 Options*
@@ -1135,7 +1135,7 @@ in the following sections.
   :option:`-mno-cache-volatile`  :option:`-mcache-volatile` |gol|
   :option:`-mno-fast-sw-div`  :option:`-mfast-sw-div` |gol|
   :option:`-mhw-mul`  :option:`-mno-hw-mul`  :option:`-mhw-mulx`  :option:`-mno-hw-mulx`  :option:`-mno-hw-div`  :option:`-mhw-div` |gol|
-  :option:`-mcustom-insn` = :samp:`{N}`  :option:`-mno-custom-insn` |gol|
+  :option:`-mcustom-insn=N`  :option:`-mno-custom-insn` |gol|
   :option:`-mcustom-fpu-cfg=name` |gol|
   :option:`-mhal`  :option:`-msmallc`  :option:`-msys-crt0=name`  :option:`-msys-lib=name` |gol|
   :option:`-march=arch`  :option:`-mbmx`  :option:`-mno-bmx`  :option:`-mcdx`  :option:`-mno-cdx`
@@ -1313,7 +1313,7 @@ in the following sections.
   :option:`-mtpf-trace`  :option:`-mno-tpf-trace`  :option:`-mtpf-trace-skip`  :option:`-mno-tpf-trace-skip` |gol|
   :option:`-mfused-madd`  :option:`-mno-fused-madd` |gol|
   :option:`-mwarn-framesize`  :option:`-mwarn-dynamicstack`  :option:`-mstack-size`  :option:`-mstack-guard` |gol|
-  :option:`-mhotpatch=halfwords`, :samp:`{halfwords}`
+  :option:`-mhotpatch=halfwords,halfwords`
 
   *Score Options*
 
