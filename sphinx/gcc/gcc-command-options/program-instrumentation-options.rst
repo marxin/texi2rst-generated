@@ -1097,6 +1097,10 @@ program analysis purposes.
   If ``N=0``, no pad location is recorded.
 
   The NOP instructions are inserted at---and maybe before, depending on
-  :samp:`{M}` ---the function entry address, even before the prologue.
+  :samp:`{M}` ---the function entry address, even before the prologue.  On
+  PowerPC with the ELFv2 ABI, for a function with dual entry points,
+  the local entry point is this function entry address.
 
-  The maximum value of :samp:`{N}` and :samp:`{M}` is 65535.
+  The maximum value of :samp:`{N}` and :samp:`{M}` is 65535.  On PowerPC with the
+  ELFv2 ABI, for a function with dual entry points, the supported values
+  for :samp:`{M}` are 0, 2, 6 and 14.

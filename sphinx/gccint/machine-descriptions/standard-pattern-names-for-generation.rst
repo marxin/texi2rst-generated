@@ -381,14 +381,23 @@ vec_seriesm
 
 while_ultmn
   Set operand 0 to a mask that is true while incrementing operand 1
-  gives a value that is less than operand 2.  Operand 0 has mode :samp:`{n}`
-  and operands 1 and 2 are scalar integers of mode :samp:`{m}`.
-  The operation is equivalent to:
+  gives a value that is less than operand 2, for a vector length up to operand 3.
+  Operand 0 has mode :samp:`{n}` and operands 1 and 2 are scalar integers of mode
+  :samp:`{m}`.  Operand 3 should be omitted when :samp:`{n}` is a vector mode, and
+  a ``CONST_INT`` otherwise.  The operation for vector modes is equivalent to:
 
   .. code-block:: c++
 
     operand0[0] = operand1 < operand2;
     for (i = 1; i < GET_MODE_NUNITS (n); i++)
+      operand0[i] = operand0[i - 1] && (operand1 + i < operand2);
+
+  And for non-vector modes the operation is equivalent to:
+
+  .. code-block:: c++
+
+    operand0[0] = operand1 < operand2;
+    for (i = 1; i < operand3; i++)
       operand0[i] = operand0[i - 1] && (operand1 + i < operand2);
 
   .. index:: check_raw_ptrsm instruction pattern

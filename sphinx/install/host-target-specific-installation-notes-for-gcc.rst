@@ -73,14 +73,14 @@ amdgcn-\*-amdhsa
 
 AMD GCN GPU target.
 
-Instead of GNU Binutils, you will need to install LLVM 6, or later, and copy
+Instead of GNU Binutils, you will need to install LLVM 13.0.1, or later, and copy
 :samp:`bin/llvm-mc` to :samp:`amdgcn-amdhsa/bin/as`,
 :samp:`bin/lld` to :samp:`amdgcn-amdhsa/bin/ld`,
 :samp:`bin/llvm-nm` to :samp:`amdgcn-amdhsa/bin/nm`, and
 :samp:`bin/llvm-ar` to both :samp:`bin/amdgcn-amdhsa-ar` and
 :samp:`bin/amdgcn-amdhsa-ranlib`.
 
-Use Newlib (2019-01-16, or newer).
+Use Newlib (3.2.0, or newer).
 
 To run the binaries, install the HSA Runtime from the
 `ROCm Platform <https://rocm.github.io>`_, and use
@@ -808,8 +808,7 @@ Instead of GNU binutils, you will need to install
 Tell GCC where to find it:
 :option:`--with-build-time-tools=[install-nvptx-tools]/nvptx-none/bin`.
 
-You will need newlib 3.0 git revision
-cd31fbb2aea25f94d7ecedc9db16dfc87ab0c316 or later.  It can be
+You will need newlib 3.1.0 or later.  It can be
 automatically built together with GCC.  For this, add a symbolic link
 to nvptx-newlib's :samp:`newlib` directory to the directory containing
 the GCC sources.

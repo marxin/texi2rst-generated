@@ -1427,6 +1427,9 @@ Other attributes
 ``vector_alignment_reachable_for_64bit``
   Vector alignment is reachable for types of 64 bits or less.
 
+``vma_equals_lma``
+  Target generates executable with VMA equal to LMA for .data section.
+
 ``wchar_t_char16_t_compatible``
   Target supports ``wchar_t`` that is compatible with ``char16_t``.
 
