@@ -138,7 +138,7 @@ See :ref:`run-time-target`.
   ``EXCESS_PRECISION_TYPE_FLOAT16``, and
   ``EXCESS_PRECISION_TYPE_FAST``, the target should return the
   explicit excess precision that should be added depending on the
-  value set for :option:`-fexcess-precision=[standard|fast]`.
+  value set for :option:`-fexcess-precision=[standard|fast|16]`.
   Note that unpredictable explicit excess precision does not make sense,
   so a target should never return ``FLT_EVAL_METHOD_UNPREDICTABLE``
   when :samp:`{type}` is ``EXCESS_PRECISION_TYPE_STANDARD``,

@@ -165,7 +165,7 @@ Other new OpenMP 5.1 features
      - Y
      -
    * - Support ``begin/end declare target`` syntax in C/C++
-     - N
+     - Y
      -
    * - Pointer predetermined firstprivate getting initialized to address of matching mapped list item per 5.1, Sect. 2.21.7.2
      - N

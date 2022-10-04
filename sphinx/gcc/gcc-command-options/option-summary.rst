@@ -1196,6 +1196,9 @@ in the following sections.
   :option:`-mbig-endian`  :option:`-mlittle-endian` 
   :option:`-mstack-protector-guard=guard`  :option:`-mstack-protector-guard-reg=reg` 
   :option:`-mstack-protector-guard-offset=offset`
+  -mcsr-check -mno-csr-check
+
+  .. program:: -mcsr-check -mno-csr-check
 
   *RL78 Options*
 

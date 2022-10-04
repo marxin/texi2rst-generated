@@ -180,6 +180,10 @@ These command-line options are defined for RISC-V targets:
   Emit (do not emit) RISC-V attribute to record extra information into ELF
   objects.  This feature requires at least binutils 2.32.
 
+.. option:: -mcsr-check, -mno-csr-check
+
+  Enables or disables the CSR checking.
+
 .. option:: -malign-data={type}
 
   Control how GCC aligns variables and constants of array, structure, or union
