@@ -80,7 +80,7 @@ Listing:
 
 .. program:: make
 
-.. option:: --verbose
+.. option:: --verbose, -v
 
 Use verbose mode.
 
@@ -88,7 +88,7 @@ Use verbose mode.
 
 Use :option:`--verbose` mode.
 
-This works: :option:`--verbose <make --verbose>`
+This works: :option:`--verbose <make --verbose>` and :option:`--verbose <make -v>`.
 
 .. function:: enum gimple_code gimple_code (gimple g)
 
