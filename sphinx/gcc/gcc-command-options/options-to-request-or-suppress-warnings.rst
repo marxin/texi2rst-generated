@@ -2099,7 +2099,7 @@ warnings, in some cases it may also cause false positives.
   Option :option:`-Wstringop-overflow=2` is enabled by default.
 
   ``-Wstringop-overflow=1``
-    The :option:`-Wstringop-overflow`=1` option uses type-zero Object Size Checking
+    The :option:`-Wstringop-overflow=1` option uses type-zero Object Size Checking
     to determine the sizes of destination objects.  At this setting the option
     does not warn for writes past the end of subobjects of larger objects accessed
     by pointers unless the size of the largest surrounding object is known.  When

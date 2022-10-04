@@ -158,6 +158,7 @@ See :ref:`overall-options`, for examples.
   :option:`-ftree-switch-conversion`  :option:`-ftree-tail-merge` |gol|
   :option:`-ftree-vrp` |gol|
   :option:`-fvect-cost-model=very-cheap`
+
   Please note the warning under :option:`-fgcse` about
   invoking :option:`-O2` on programs that use computed gotos.
 
@@ -169,7 +170,7 @@ See :ref:`overall-options`, for examples.
   .. Please keep the following list alphabetized!
 
   :option:`-fgcse-after-reload` |gol|
-  :option:`-fipa-cp-clone`|gol|
+  :option:`-fipa-cp-clone` |gol|
   :option:`-floop-interchange` |gol|
   :option:`-floop-unroll-and-jam` |gol|
   :option:`-fpeel-loops` |gol|
