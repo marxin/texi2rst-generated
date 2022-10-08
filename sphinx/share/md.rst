@@ -2148,9 +2148,6 @@ the meanings of that architecture's constraints.
   ``wB``
     Signed 5-bit constant integer that can be loaded into an Altivec register.
 
-  ``wD``
-    Int constant that is the element number of the 64-bit scalar in a vector.
-
   ``wE``
     Vector constant that can be loaded with the XXSPLTIB instruction.
 

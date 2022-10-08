@@ -36,7 +36,8 @@ in the following sections.
   :option:`-fopenmp`  :option:`-fopenmp-simd` 
   :option:`-fpermitted-flt-eval-methods=standard` 
   :option:`-fplan9-extensions`  :option:`-fsigned-bitfields`  :option:`-funsigned-bitfields` 
-  :option:`-fsigned-char`  :option:`-funsigned-char`  :option:`-fsso-struct=endianness`
+  :option:`-fsigned-char`  :option:`-funsigned-char` :option:`-fstrict-flex-arrays[=n` ] 
+  :option:`-fsso-struct=endianness`
 
 *C++ Language Options*
   See :ref:`c++-dialect-options`.

@@ -16,20 +16,6 @@ available for functions (see :ref:`function-attributes`), variables
 (see :ref:`variable-attributes`), labels (see :ref:`label-attributes`), enumerators
 (see :ref:`enumerator-attributes`), and for types (see :ref:`type-attributes`).
 
-This example uses the ``fallthrough`` statement attribute to indicate that
-the :option:`-Wimplicit-fallthrough` warning should not be emitted:
-
-.. code-block:: c++
-
-  switch (cond)
-    {
-    case 1:
-      bar (1);
-      __attribute__((fallthrough));
-    case 2:
-      ...
-    }
-
 ``fallthrough``
 
   .. index:: fallthrough statement attribute
@@ -44,4 +30,43 @@ the :option:`-Wimplicit-fallthrough` warning should not be emitted:
   be used in a switch statement (the compiler will issue an error
   otherwise), after a preceding statement and before a logically
   succeeding case label, or user-defined label.
+
+  This example uses the ``fallthrough`` statement attribute to indicate that
+  the :option:`-Wimplicit-fallthrough` warning should not be emitted:
+
+  .. code-block:: c++
+
+    switch (cond)
+      {
+      case 1:
+        bar (1);
+        __attribute__((fallthrough));
+      case 2:
+        ...
+      }
+
+``assume``
+
+  .. index:: assume statement attribute
+
+  The ``assume`` attribute with a null statement serves as portable
+  assumption.  It should have a single argument, a conditional expression,
+  which is not evaluated.  If the argument would evaluate to true
+  at the point where it appears, it has no effect, otherwise there
+  is undefined behavior.  This is a GNU variant of the ISO C++23
+  standard ``assume`` attribute, but it can be used in any version of
+  both C and C++.
+
+  .. code-block:: c++
+
+    int
+    foo (int x, int y)
+    {
+      __attribute__((assume(x == 42)));
+      __attribute__((assume(++y == 43)));
+      return x + y;
+    }
+
+  ``y`` is not actually incremented and the compiler can but does not
+  have to optimize it to just ``return 42 + 42;``.
 

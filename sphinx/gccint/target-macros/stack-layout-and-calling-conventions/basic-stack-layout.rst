@@ -196,6 +196,12 @@ Here is the basic stack layout.
   someone decided it was a good idea to use that register number to
   terminate the stack backtrace.  New ports should avoid this.
 
+.. c:macro:: DWARF_VERSION_DEFAULT
+
+  A C expression whose value is the default dwarf standard version we'll honor
+  and advertise when generating dwarf debug information, in absence of
+  an explicit :option:`-gdwarf-version` option on the command line.
+
 .. function:: void TARGET_DWARF_HANDLE_FRAME_UNSPEC (const char *label, rtx pattern, int index)
 
   .. hook-start:TARGET_DWARF_HANDLE_FRAME_UNSPEC

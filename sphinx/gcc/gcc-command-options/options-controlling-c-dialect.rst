@@ -225,7 +225,10 @@ accepts:
   instead, which disables ``typeof`` but not ``asm`` and
   ``inline``.  In C99 mode (:option:`-std=c99` or :option:`-std=gnu99`),
   this switch only affects the ``asm`` and ``typeof`` keywords,
-  since ``inline`` is a standard keyword in ISO C99.
+  since ``inline`` is a standard keyword in ISO C99.  In C2X mode
+  (:option:`-std=c2x` or :option:`-std=gnu2x`), this switch only affects
+  the ``asm`` keyword, since ``typeof`` is a standard keyword in
+  ISO C2X.
 
 .. option:: -fasm
 
@@ -433,7 +436,8 @@ accepts:
 
 .. option:: -fopenmp
 
-  Enable handling of OpenMP directives ``#pragma omp`` in C/C++ and
+  Enable handling of OpenMP directives ``#pragma omp`` in C/C++,
+  ``[[omp::directive(...)]]`` and ``[[omp::sequence(...)]]`` in C++ and
   ``!$omp`` in Fortran.  When :option:`-fopenmp` is specified, the
   compiler generates parallel code according to the OpenMP Application
   Program Interface v4.5 https://www.openmp.org.  This option
@@ -447,9 +451,12 @@ accepts:
 
 .. option:: -fopenmp-simd
 
-  Enable handling of OpenMP's SIMD directives with ``#pragma omp``
-  in C/C++ and ``!$omp`` in Fortran. Other OpenMP directives
-  are ignored.
+  Enable handling of OpenMP's :gcc-attr:`simd`, ``declare simd``,
+  ``declare reduction``, ``assume``, ``ordered``, ``scan``,
+  ``loop`` directives and combined or composite directives with
+  :gcc-attr:`simd` as constituent with ``#pragma omp`` in C/C++,
+  ``[[omp::directive(...)]]`` and ``[[omp::sequence(...)]]`` in C++
+  and ``!$omp`` in Fortran.  Other OpenMP directives are ignored.
 
 .. option:: -fpermitted-flt-eval-methods={style}
 
@@ -516,6 +523,36 @@ accepts:
   The type ``char`` is always a distinct type from each of
   ``signed char`` or ``unsigned char``, even though its behavior
   is always just like one of those two.
+
+.. option:: -fstrict-flex-arrays
+
+  Control when to treat the trailing array of a structure as a flexible array
+  member for the purpose of accessing the elements of such an array.
+  The positive form is equivalent to :option:`-fstrict-flex-arrays=3`, which is the
+  strictest.  A trailing array is treated as a flexible array member only when it
+  is declared as a flexible array member per C99 standard onwards.
+  The negative form is equivalent to :option:`-fstrict-flex-arrays=0`, which is the
+  least strict.  All trailing arrays of structures are treated as flexible array
+  members.
+
+.. option:: -fno-strict-flex-arrays
+
+  Default setting; overrides :option:`-fstrict-flex-arrays`.
+
+.. index:: fstrict-flex-arrays=level
+
+.. option:: -fstrict-flex-arrays={level}
+
+  Control when to treat the trailing array of a structure as a flexible array
+  member for the purpose of accessing the elements of such an array.  The value
+  of :samp:`{level}` controls the level of strictness.
+
+  The possible values of :samp:`{level}` are the same as for the
+  ``strict_flex_array`` attribute (see :ref:`variable-attributes`).
+
+  You can control this behavior for a specific trailing array field of a
+  structure by using the variable attribute ``strict_flex_array`` attribute
+  (see :ref:`variable-attributes`).
 
 .. option:: -fsso-struct={endianness}
 
