@@ -176,6 +176,34 @@ The following attributes are supported on most targets.
   The ``warn_if_not_aligned`` attribute can also be used for types
   (see :ref:`common-type-attributes`.)
 
+  .. index:: strict_flex_array variable attribute
+
+.. gcc-attr:: strict_flex_array (level)
+
+  The ``strict_flex_array`` attribute should be attached to the trailing
+  array field of a structure.  It controls when to treat the trailing array
+  field of a structure as a flexible array member for the purposes of accessing
+  the elements of such an array.
+  :samp:`{level}` must be an integer betwen 0 to 3.
+
+  :samp:`{level}` =0 is the least strict level, all trailing arrays of structures
+  are treated as flexible array members. :samp:`{level}` =3 is the strictest level,
+  only when the trailing array is declared as a flexible array member per C99
+  standard onwards (:samp:`[]`), it is treated as a flexible array member.
+
+  There are two more levels in between 0 and 3, which are provided to support
+  older codes that use GCC zero-length array extension (:samp:`[0]`) or one-element
+  array as flexible array members (:samp:`[1]`):
+  When :samp:`{level}` is 1, the trailing array is treated as a flexible array member
+  when it is declared as either :samp:`[]`, :samp:`[0]`, or :samp:`[1]`;
+  When :samp:`{level}` is 2, the trailing array is treated as a flexible array member
+  when it is declared as either :samp:`[]`, or :samp:`[0]`.
+
+  This attribute can be used with or without the :option:`-fstrict-flex-arrays`.
+  When both the attribute and the option present at the same time, the level of
+  the strictness for the specific trailing array field is determined by the
+  attribute.
+
 .. index:: alloc_size variable attribute
 
 .. var-attr:: alloc_size (position), alloc_size (position-1, position-2)

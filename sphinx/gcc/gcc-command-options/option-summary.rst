@@ -38,7 +38,8 @@ in the following sections.
   :option:`-fopenmp`  :option:`-fopenmp-simd` |gol|
   :option:`-fpermitted-flt-eval-methods=standard` |gol|
   :option:`-fplan9-extensions`  :option:`-fsigned-bitfields`  :option:`-funsigned-bitfields` |gol|
-  :option:`-fsigned-char`  :option:`-funsigned-char`  :option:`-fsso-struct=endianness`
+  :option:`-fsigned-char`  :option:`-funsigned-char` :option:`-fstrict-flex-arrays[=n]` |gol| 
+  :option:`-fsso-struct=endianness`
 
 *C++ Language Options*
 

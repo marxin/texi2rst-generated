@@ -112,6 +112,12 @@ This is for use when debugging, and may be of use in DejaGnu tests.
 will emit a warning with text "TRUE", FALSE" or "UNKNOWN" based on the
 truthfulness of the argument.  This is useful for writing DejaGnu tests.
 
+.. code-block:: c++
+
+  __analyzer_get_unknown_ptr ();
+
+will obtain an unknown ``void *``.
+
 Other Debugging Techniques
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 

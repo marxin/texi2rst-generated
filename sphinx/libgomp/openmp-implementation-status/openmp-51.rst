@@ -44,8 +44,8 @@ New features listed in Appendix B of the OpenMP specification
      - Y
      -
    * - ``assume`` directive
-     - P
-     - Only C/C++
+     - Y
+     -
    * - ``nothing`` directive
      - Y
      -
