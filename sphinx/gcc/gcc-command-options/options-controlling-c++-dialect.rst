@@ -101,6 +101,9 @@ Here is a list of options that are *only* for compiling C++ programs:
   that inherit from aggregate classes with default member initializers
   in C++14 and up.
 
+  Version 18, which first appeard in G++ 13, fixes manglings of lambdas
+  that have additional context.
+
   See also :option:`-Wabi`.
 
 .. option:: -fabi-compat-version={n}

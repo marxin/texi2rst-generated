@@ -622,15 +622,11 @@ The following options fine tune code generation:
 
 .. option:: -mRcq
 
-  Enable :samp:`Rcq` constraint handling.  
-  Most short code generation depends on this.
-  This is the default.
+  Does nothing.  Preserved for backward compatibility.
 
 .. option:: -mRcw
 
-  Enable :samp:`Rcw` constraint handling.  
-  Most ccfsm condexec mostly depends on this.
-  This is the default.
+  Does nothing.  Preserved for backward compatibility.
 
 .. option:: -msize-level={level}
 
