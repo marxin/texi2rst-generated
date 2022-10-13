@@ -160,6 +160,8 @@ latex_elements = {
 ''',
 }
 
+latex_table_style = 'colorrows'
+
 texinfo_cross_references = False
 
 texinfo_elements = { 'preamble': """
