@@ -24,7 +24,7 @@ New features listed in Appendix B of the OpenMP specification
      -
    * - ``omp`` / ``ompx`` / ``omx`` sentinels and ``omp_`` / ``ompx_`` namespaces
      - N/A
-     - warning for ``ompx/omx`` sentinelsThe ``ompx`` sentinel as C/C++ pragma and C++ attributes are warned for with ``-Wunknown-pragmas`` (implied by ``-Wall``) and ``-Wattributes`` (enabled by default), respectively; for Fortran free-source code, there is a warning enabled by default and, for fixed-source code, the ``omx`` sentinel is warned for with with ``-Wsurprising`` (enabled by ``-Wall``).  Unknown clauses are always rejected with an error.
+     - warning for ``ompx/omx`` sentinels [#f1]_
    * - Clauses on ``end`` directive can be on directive
      - N
      -
@@ -100,6 +100,8 @@ New features listed in Appendix B of the OpenMP specification
    * - ``omp_cur_iteration`` keyword
      - Y
      -
+
+.. [#f1] The ``ompx`` sentinel as C/C++ pragma and C++ attributes are warned for with ``-Wunknown-pragmas`` (implied by ``-Wall``) and ``-Wattributes`` (enabled by default), respectively; for Fortran free-source code, there is a warning enabled by default and, for fixed-source code, the ``omx`` sentinel is warned for with with ``-Wsurprising`` (enabled by ``-Wall``).  Unknown clauses are always rejected with an error.
 
 Other new OpenMP 5.2 features
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
