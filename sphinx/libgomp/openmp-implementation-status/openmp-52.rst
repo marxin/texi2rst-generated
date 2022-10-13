@@ -18,8 +18,8 @@ New features listed in Appendix B of the OpenMP specification
      - Status
      - Comments
 
-   * - ``omp_in_explicit_task`` routine and *implicit-task-var* ICV
-     - N
+   * - ``omp_in_explicit_task`` routine and *explicit-task-var* ICV
+     - Y
      -
    * - ``omp`` / ``ompx`` / ``omx`` sentinels and ``omp_`` / ``ompx_`` namespaces
      - N/A
@@ -57,7 +57,7 @@ New features listed in Appendix B of the OpenMP specification
    * - New ``allocators`` directive for Fortran
      - N
      -
-   * - Deprecation of ``allocator`` directive for Fortran allocatables/pointers
+   * - Deprecation of ``allocate`` directive for Fortran allocatables/pointers
      - N
      -
    * - Optional paired ``end`` directive with ``dispatch``
