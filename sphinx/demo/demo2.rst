@@ -1,5 +1,5 @@
 Multiple
-====
+========
 
 Arithmetic functions
 ^^^^^^^^^^^^^^^^^^^^
