@@ -701,7 +701,7 @@ AVR Variable Attributes
     The offset is needed because the flash memory is visible in the RAM
     address space starting at address ``0x4000``.
 
-    Data in :var-attr:`progmem` can be accessed by means of ordinary C code,
+    Data in :var-attr:`progmem` can be accessed by means of ordinary C |nbsp| code,
     no special functions or macros are needed.
 
     .. code-block:: c++

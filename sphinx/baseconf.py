@@ -64,6 +64,8 @@ rst_prolog = r'''
 .. |gol| raw:: latex
 
                \\
+.. |nbsp| unicode:: 0xA0
+  :trim:
 '''
 
 needs_sphinx = '5.3'
