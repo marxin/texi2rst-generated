@@ -52,7 +52,7 @@
   :samp:`{mcu}=` ``atmega128``, ``atmega128a``, ``atmega128rfa1``, ``atmega128rfr2``, ``atmega1280``, ``atmega1281``, ``atmega1284``, ``atmega1284p``, ``atmega1284rfr2``, ``at90can128``, ``at90usb1286``, ``at90usb1287``.
 
 ``avr6``
-  "Enhanced" devices with 3-byte PC, i.e.@: with more than 128 |nbsp| KiB of program memory.
+  "Enhanced" devices with 3-byte PC, i.e.: with more than 128 |nbsp| KiB of program memory.
 
   :samp:`{mcu}=` ``atmega256rfr2``, ``atmega2560``, ``atmega2561``, ``atmega2564rfr2``.
 
