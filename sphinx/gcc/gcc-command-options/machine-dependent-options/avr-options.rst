@@ -18,7 +18,7 @@ These options are defined for AVR implementations:
 
   Specify Atmel AVR instruction set architectures (ISA) or MCU type.
 
-  The default for this option is :samp:`avr2`.
+  The default for this option is |nbsp| :samp:`avr2`.
 
   GCC supports the following AVR devices and ISAs:
 
@@ -30,89 +30,89 @@ These options are defined for AVR implementations:
      Please do not edit manually.
 
   ``avr2``
-    'Classic' devices with up to 8 KiB of program memory.
+    'Classic' devices with up to 8 |nbsp| KiB of program memory.
 
-    :samp:`{mcu}` = ``attiny22``, ``attiny26``, ``at90s2313``, ``at90s2323``, ``at90s2333``, ``at90s2343``, ``at90s4414``, ``at90s4433``, ``at90s4434``, ``at90c8534``, ``at90s8515``, ``at90s8535``.
+    :samp:`{mcu}` |nbsp| = ``attiny22``, ``attiny26``, ``at90s2313``, ``at90s2323``, ``at90s2333``, ``at90s2343``, ``at90s4414``, ``at90s4433``, ``at90s4434``, ``at90c8534``, ``at90s8515``, ``at90s8535``.
 
   ``avr25``
-    'Classic' devices with up to 8 KiB of program memory and with the ``MOVW`` instruction.
+    'Classic' devices with up to 8 |nbsp| KiB of program memory and with the ``MOVW`` instruction.
 
-    :samp:`{mcu}` = ``attiny13``, ``attiny13a``, ``attiny24``, ``attiny24a``, ``attiny25``, ``attiny261``, ``attiny261a``, ``attiny2313``, ``attiny2313a``, ``attiny43u``, ``attiny44``, ``attiny44a``, ``attiny45``, ``attiny48``, ``attiny441``, ``attiny461``, ``attiny461a``, ``attiny4313``, ``attiny84``, ``attiny84a``, ``attiny85``, ``attiny87``, ``attiny88``, ``attiny828``, ``attiny841``, ``attiny861``, ``attiny861a``, ``ata5272``, ``ata6616c``, ``at86rf401``.
+    :samp:`{mcu}` |nbsp| = ``attiny13``, ``attiny13a``, ``attiny24``, ``attiny24a``, ``attiny25``, ``attiny261``, ``attiny261a``, ``attiny2313``, ``attiny2313a``, ``attiny43u``, ``attiny44``, ``attiny44a``, ``attiny45``, ``attiny48``, ``attiny441``, ``attiny461``, ``attiny461a``, ``attiny4313``, ``attiny84``, ``attiny84a``, ``attiny85``, ``attiny87``, ``attiny88``, ``attiny828``, ``attiny841``, ``attiny861``, ``attiny861a``, ``ata5272``, ``ata6616c``, ``at86rf401``.
 
   ``avr3``
-    'Classic' devices with 16 KiB up to 64 KiB of program memory.
+    'Classic' devices with 16 |nbsp| KiB up to 64 |nbsp| KiB of program memory.
 
-    :samp:`{mcu}` = ``at76c711``, ``at43usb355``.
+    :samp:`{mcu}` |nbsp| = ``at76c711``, ``at43usb355``.
 
   ``avr31``
-    'Classic' devices with 128 KiB of program memory.
+    'Classic' devices with 128 |nbsp| KiB of program memory.
 
-    :samp:`{mcu}` = ``atmega103``, ``at43usb320``.
+    :samp:`{mcu}` |nbsp| = ``atmega103``, ``at43usb320``.
 
   ``avr35``
-    'Classic' devices with 16 KiB up to 64 KiB of program memory and with the ``MOVW`` instruction.
+    'Classic' devices with 16 |nbsp| KiB up to 64 |nbsp| KiB of program memory and with the ``MOVW`` instruction.
 
-    :samp:`{mcu}` = ``attiny167``, ``attiny1634``, ``atmega8u2``, ``atmega16u2``, ``atmega32u2``, ``ata5505``, ``ata6617c``, ``ata664251``, ``at90usb82``, ``at90usb162``.
+    :samp:`{mcu}` |nbsp| = ``attiny167``, ``attiny1634``, ``atmega8u2``, ``atmega16u2``, ``atmega32u2``, ``ata5505``, ``ata6617c``, ``ata664251``, ``at90usb82``, ``at90usb162``.
 
   ``avr4``
-    'Enhanced' devices with up to 8 KiB of program memory.
+    'Enhanced' devices with up to 8 |nbsp| KiB of program memory.
 
-    :samp:`{mcu}` = ``atmega48``, ``atmega48a``, ``atmega48p``, ``atmega48pa``, ``atmega48pb``, ``atmega8``, ``atmega8a``, ``atmega8hva``, ``atmega88``, ``atmega88a``, ``atmega88p``, ``atmega88pa``, ``atmega88pb``, ``atmega8515``, ``atmega8535``, ``ata6285``, ``ata6286``, ``ata6289``, ``ata6612c``, ``at90pwm1``, ``at90pwm2``, ``at90pwm2b``, ``at90pwm3``, ``at90pwm3b``, ``at90pwm81``.
+    :samp:`{mcu}` |nbsp| = ``atmega48``, ``atmega48a``, ``atmega48p``, ``atmega48pa``, ``atmega48pb``, ``atmega8``, ``atmega8a``, ``atmega8hva``, ``atmega88``, ``atmega88a``, ``atmega88p``, ``atmega88pa``, ``atmega88pb``, ``atmega8515``, ``atmega8535``, ``ata6285``, ``ata6286``, ``ata6289``, ``ata6612c``, ``at90pwm1``, ``at90pwm2``, ``at90pwm2b``, ``at90pwm3``, ``at90pwm3b``, ``at90pwm81``.
 
   ``avr5``
-    'Enhanced' devices with 16 KiB up to 64 KiB of program memory.
+    'Enhanced' devices with 16 |nbsp| KiB up to 64 |nbsp| KiB of program memory.
 
-    :samp:`{mcu}` = ``atmega16``, ``atmega16a``, ``atmega16hva``, ``atmega16hva2``, ``atmega16hvb``, ``atmega16hvbrevb``, ``atmega16m1``, ``atmega16u4``, ``atmega161``, ``atmega162``, ``atmega163``, ``atmega164a``, ``atmega164p``, ``atmega164pa``, ``atmega165``, ``atmega165a``, ``atmega165p``, ``atmega165pa``, ``atmega168``, ``atmega168a``, ``atmega168p``, ``atmega168pa``, ``atmega168pb``, ``atmega169``, ``atmega169a``, ``atmega169p``, ``atmega169pa``, ``atmega32``, ``atmega32a``, ``atmega32c1``, ``atmega32hvb``, ``atmega32hvbrevb``, ``atmega32m1``, ``atmega32u4``, ``atmega32u6``, ``atmega323``, ``atmega324a``, ``atmega324p``, ``atmega324pa``, ``atmega324pb``, ``atmega325``, ``atmega325a``, ``atmega325p``, ``atmega325pa``, ``atmega328``, ``atmega328p``, ``atmega328pb``, ``atmega329``, ``atmega329a``, ``atmega329p``, ``atmega329pa``, ``atmega3250``, ``atmega3250a``, ``atmega3250p``, ``atmega3250pa``, ``atmega3290``, ``atmega3290a``, ``atmega3290p``, ``atmega3290pa``, ``atmega406``, ``atmega64``, ``atmega64a``, ``atmega64c1``, ``atmega64hve``, ``atmega64hve2``, ``atmega64m1``, ``atmega64rfr2``, ``atmega640``, ``atmega644``, ``atmega644a``, ``atmega644p``, ``atmega644pa``, ``atmega644rfr2``, ``atmega645``, ``atmega645a``, ``atmega645p``, ``atmega649``, ``atmega649a``, ``atmega649p``, ``atmega6450``, ``atmega6450a``, ``atmega6450p``, ``atmega6490``, ``atmega6490a``, ``atmega6490p``, ``ata5795``, ``ata5790``, ``ata5790n``, ``ata5791``, ``ata6613c``, ``ata6614q``, ``ata5782``, ``ata5831``, ``ata8210``, ``ata8510``, ``ata5702m322``, ``at90pwm161``, ``at90pwm216``, ``at90pwm316``, ``at90can32``, ``at90can64``, ``at90scr100``, ``at90usb646``, ``at90usb647``, ``at94k``, ``m3000``.
+    :samp:`{mcu}` |nbsp| = ``atmega16``, ``atmega16a``, ``atmega16hva``, ``atmega16hva2``, ``atmega16hvb``, ``atmega16hvbrevb``, ``atmega16m1``, ``atmega16u4``, ``atmega161``, ``atmega162``, ``atmega163``, ``atmega164a``, ``atmega164p``, ``atmega164pa``, ``atmega165``, ``atmega165a``, ``atmega165p``, ``atmega165pa``, ``atmega168``, ``atmega168a``, ``atmega168p``, ``atmega168pa``, ``atmega168pb``, ``atmega169``, ``atmega169a``, ``atmega169p``, ``atmega169pa``, ``atmega32``, ``atmega32a``, ``atmega32c1``, ``atmega32hvb``, ``atmega32hvbrevb``, ``atmega32m1``, ``atmega32u4``, ``atmega32u6``, ``atmega323``, ``atmega324a``, ``atmega324p``, ``atmega324pa``, ``atmega324pb``, ``atmega325``, ``atmega325a``, ``atmega325p``, ``atmega325pa``, ``atmega328``, ``atmega328p``, ``atmega328pb``, ``atmega329``, ``atmega329a``, ``atmega329p``, ``atmega329pa``, ``atmega3250``, ``atmega3250a``, ``atmega3250p``, ``atmega3250pa``, ``atmega3290``, ``atmega3290a``, ``atmega3290p``, ``atmega3290pa``, ``atmega406``, ``atmega64``, ``atmega64a``, ``atmega64c1``, ``atmega64hve``, ``atmega64hve2``, ``atmega64m1``, ``atmega64rfr2``, ``atmega640``, ``atmega644``, ``atmega644a``, ``atmega644p``, ``atmega644pa``, ``atmega644rfr2``, ``atmega645``, ``atmega645a``, ``atmega645p``, ``atmega649``, ``atmega649a``, ``atmega649p``, ``atmega6450``, ``atmega6450a``, ``atmega6450p``, ``atmega6490``, ``atmega6490a``, ``atmega6490p``, ``ata5795``, ``ata5790``, ``ata5790n``, ``ata5791``, ``ata6613c``, ``ata6614q``, ``ata5782``, ``ata5831``, ``ata8210``, ``ata8510``, ``ata5702m322``, ``at90pwm161``, ``at90pwm216``, ``at90pwm316``, ``at90can32``, ``at90can64``, ``at90scr100``, ``at90usb646``, ``at90usb647``, ``at94k``, ``m3000``.
 
   ``avr51``
-    'Enhanced' devices with 128 KiB of program memory.
+    'Enhanced' devices with 128 |nbsp| KiB of program memory.
 
-    :samp:`{mcu}` = ``atmega128``, ``atmega128a``, ``atmega128rfa1``, ``atmega128rfr2``, ``atmega1280``, ``atmega1281``, ``atmega1284``, ``atmega1284p``, ``atmega1284rfr2``, ``at90can128``, ``at90usb1286``, ``at90usb1287``.
+    :samp:`{mcu}` |nbsp| = ``atmega128``, ``atmega128a``, ``atmega128rfa1``, ``atmega128rfr2``, ``atmega1280``, ``atmega1281``, ``atmega1284``, ``atmega1284p``, ``atmega1284rfr2``, ``at90can128``, ``at90usb1286``, ``at90usb1287``.
 
   ``avr6``
-    'Enhanced' devices with 3-byte PC, i.e. with more than 128 KiB of program memory.
+    'Enhanced' devices with 3-byte PC, i.e. with more than 128 |nbsp| KiB of program memory.
 
-    :samp:`{mcu}` = ``atmega256rfr2``, ``atmega2560``, ``atmega2561``, ``atmega2564rfr2``.
+    :samp:`{mcu}` |nbsp| = ``atmega256rfr2``, ``atmega2560``, ``atmega2561``, ``atmega2564rfr2``.
 
   ``avrxmega2``
-    'XMEGA' devices with more than 8 KiB and up to 64 KiB of program memory.
+    'XMEGA' devices with more than 8 |nbsp| KiB and up to 64 |nbsp| KiB of program memory.
 
-    :samp:`{mcu}` = ``atxmega8e5``, ``atxmega16a4``, ``atxmega16a4u``, ``atxmega16c4``, ``atxmega16d4``, ``atxmega16e5``, ``atxmega32a4``, ``atxmega32a4u``, ``atxmega32c3``, ``atxmega32c4``, ``atxmega32d3``, ``atxmega32d4``, ``atxmega32e5``, ``avr64da28``, ``avr64da32``, ``avr64da48``, ``avr64da64``, ``avr64db28``, ``avr64db32``, ``avr64db48``, ``avr64db64``.
+    :samp:`{mcu}` |nbsp| = ``atxmega8e5``, ``atxmega16a4``, ``atxmega16a4u``, ``atxmega16c4``, ``atxmega16d4``, ``atxmega16e5``, ``atxmega32a4``, ``atxmega32a4u``, ``atxmega32c3``, ``atxmega32c4``, ``atxmega32d3``, ``atxmega32d4``, ``atxmega32e5``, ``avr64da28``, ``avr64da32``, ``avr64da48``, ``avr64da64``, ``avr64db28``, ``avr64db32``, ``avr64db48``, ``avr64db64``.
 
   ``avrxmega3``
-    'XMEGA' devices with up to 64 KiB of combined program memory and RAM, and with program memory visible in the RAM address space.
+    'XMEGA' devices with up to 64 |nbsp| KiB of combined program memory and RAM, and with program memory visible in the RAM address space.
 
-    :samp:`{mcu}` = ``attiny202``, ``attiny204``, ``attiny212``, ``attiny214``, ``attiny402``, ``attiny404``, ``attiny406``, ``attiny412``, ``attiny414``, ``attiny416``, ``attiny417``, ``attiny804``, ``attiny806``, ``attiny807``, ``attiny814``, ``attiny816``, ``attiny817``, ``attiny1604``, ``attiny1606``, ``attiny1607``, ``attiny1614``, ``attiny1616``, ``attiny1617``, ``attiny3214``, ``attiny3216``, ``attiny3217``, ``atmega808``, ``atmega809``, ``atmega1608``, ``atmega1609``, ``atmega3208``, ``atmega3209``, ``atmega4808``, ``atmega4809``, ``avr32da28``, ``avr32da32``, ``avr32da48``, ``avr32db28``, ``avr32db32``, ``avr32db48``.
+    :samp:`{mcu}` |nbsp| = ``attiny202``, ``attiny204``, ``attiny212``, ``attiny214``, ``attiny402``, ``attiny404``, ``attiny406``, ``attiny412``, ``attiny414``, ``attiny416``, ``attiny417``, ``attiny804``, ``attiny806``, ``attiny807``, ``attiny814``, ``attiny816``, ``attiny817``, ``attiny1604``, ``attiny1606``, ``attiny1607``, ``attiny1614``, ``attiny1616``, ``attiny1617``, ``attiny3214``, ``attiny3216``, ``attiny3217``, ``atmega808``, ``atmega809``, ``atmega1608``, ``atmega1609``, ``atmega3208``, ``atmega3209``, ``atmega4808``, ``atmega4809``, ``avr32da28``, ``avr32da32``, ``avr32da48``, ``avr32db28``, ``avr32db32``, ``avr32db48``.
 
   ``avrxmega4``
-    'XMEGA' devices with more than 64 KiB and up to 128 KiB of program memory.
+    'XMEGA' devices with more than 64 |nbsp| KiB and up to 128 |nbsp| KiB of program memory.
 
-    :samp:`{mcu}` = ``atxmega64a3``, ``atxmega64a3u``, ``atxmega64a4u``, ``atxmega64b1``, ``atxmega64b3``, ``atxmega64c3``, ``atxmega64d3``, ``atxmega64d4``, ``avr128da28``, ``avr128da32``, ``avr128da48``, ``avr128da64``, ``avr128db28``, ``avr128db32``, ``avr128db48``, ``avr128db64``.
+    :samp:`{mcu}` |nbsp| = ``atxmega64a3``, ``atxmega64a3u``, ``atxmega64a4u``, ``atxmega64b1``, ``atxmega64b3``, ``atxmega64c3``, ``atxmega64d3``, ``atxmega64d4``, ``avr128da28``, ``avr128da32``, ``avr128da48``, ``avr128da64``, ``avr128db28``, ``avr128db32``, ``avr128db48``, ``avr128db64``.
 
   ``avrxmega5``
-    'XMEGA' devices with more than 64 KiB and up to 128 KiB of program memory and more than 64 KiB of RAM.
+    'XMEGA' devices with more than 64 |nbsp| KiB and up to 128 |nbsp| KiB of program memory and more than 64 |nbsp| KiB of RAM.
 
-    :samp:`{mcu}` = ``atxmega64a1``, ``atxmega64a1u``.
+    :samp:`{mcu}` |nbsp| = ``atxmega64a1``, ``atxmega64a1u``.
 
   ``avrxmega6``
-    'XMEGA' devices with more than 128 KiB of program memory.
+    'XMEGA' devices with more than 128 |nbsp| KiB of program memory.
 
-    :samp:`{mcu}` = ``atxmega128a3``, ``atxmega128a3u``, ``atxmega128b1``, ``atxmega128b3``, ``atxmega128c3``, ``atxmega128d3``, ``atxmega128d4``, ``atxmega192a3``, ``atxmega192a3u``, ``atxmega192c3``, ``atxmega192d3``, ``atxmega256a3``, ``atxmega256a3b``, ``atxmega256a3bu``, ``atxmega256a3u``, ``atxmega256c3``, ``atxmega256d3``, ``atxmega384c3``, ``atxmega384d3``.
+    :samp:`{mcu}` |nbsp| = ``atxmega128a3``, ``atxmega128a3u``, ``atxmega128b1``, ``atxmega128b3``, ``atxmega128c3``, ``atxmega128d3``, ``atxmega128d4``, ``atxmega192a3``, ``atxmega192a3u``, ``atxmega192c3``, ``atxmega192d3``, ``atxmega256a3``, ``atxmega256a3b``, ``atxmega256a3bu``, ``atxmega256a3u``, ``atxmega256c3``, ``atxmega256d3``, ``atxmega384c3``, ``atxmega384d3``.
 
   ``avrxmega7``
-    'XMEGA' devices with more than 128 KiB of program memory and more than 64 KiB of RAM.
+    'XMEGA' devices with more than 128 |nbsp| KiB of program memory and more than 64 |nbsp| KiB of RAM.
 
-    :samp:`{mcu}` = ``atxmega128a1``, ``atxmega128a1u``, ``atxmega128a4u``.
+    :samp:`{mcu}` |nbsp| = ``atxmega128a1``, ``atxmega128a1u``, ``atxmega128a4u``.
 
   ``avrtiny``
-    'TINY' Tiny core devices with 512 B up to 4 KiB of program memory.
+    'TINY' Tiny core devices with 512 |nbsp| B up to 4 |nbsp| KiB of program memory.
 
-    :samp:`{mcu}` = ``attiny4``, ``attiny5``, ``attiny9``, ``attiny10``, ``attiny20``, ``attiny40``.
+    :samp:`{mcu}` |nbsp| = ``attiny4``, ``attiny5``, ``attiny9``, ``attiny10``, ``attiny20``, ``attiny40``.
 
   ``avr1``
     This ISA is implemented by the minimal AVR core and supported for assembler only.
 
-    :samp:`{mcu}` = ``attiny11``, ``attiny12``, ``attiny15``, ``attiny28``, ``at90s1200``.
+    :samp:`{mcu}` |nbsp| = ``attiny11``, ``attiny12``, ``attiny15``, ``attiny28``, ``at90s1200``.
 
 .. option:: -mabsdata
 
@@ -184,7 +184,7 @@ These options are defined for AVR implementations:
 .. option:: -mn-flash={num}
 
   Assume that the flash memory has a size of 
-  :samp:`{num}` times 64 KiB.
+  :samp:`{num}` times 64 |nbsp| KiB.
 
 .. option:: -mno-interrupts
 
@@ -256,7 +256,7 @@ These options are defined for AVR implementations:
 
 .. option:: -mtiny-stack
 
-  Only change the lower 8 bits of the stack pointer.
+  Only change the lower 8 |nbsp| bits of the stack pointer.
 
 .. option:: -mfract-convert-truncate
 
@@ -303,12 +303,12 @@ These options are defined for AVR implementations:
 EIND and Devices with More Than 128 Ki Bytes of Flash
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Pointers in the implementation are 16 bits wide.
+Pointers in the implementation are 16 |nbsp| bits wide.
 The address of a function or label is represented as word address so
 that indirect jumps and calls can target any code address in the
-range of 64 Ki words.
+range of 64 |nbsp| Ki words.
 
-In order to facilitate indirect jump on devices with more than 128 Ki
+In order to facilitate indirect jump on devices with more than 128 |nbsp| Ki
 bytes of program memory space, there is a special function register called
 ``EIND`` that serves as most significant part of the target address
 when ``EICALL`` or ``EIJMP`` instructions are used.
@@ -438,9 +438,9 @@ the compiler and are subject to some limitations:
 Handling of the RAMPD, RAMPX, RAMPY and RAMPZ Special Function Registers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Some AVR devices support memories larger than the 64 KiB range
+Some AVR devices support memories larger than the 64 |nbsp| KiB range
 that can be accessed with 16-bit pointers.  To access memory locations
-outside this 64 KiB range, the content of a ``RAMP``
+outside this 64 |nbsp| KiB range, the content of a ``RAMP``
 register is used as high part of the address:
 The ``X``, ``Y``, ``Z`` address register is concatenated
 with the ``RAMPX``, ``RAMPY``, ``RAMPZ`` special function
@@ -454,7 +454,7 @@ register, respectively, to get a wide address. Similarly,
   generic or ``__flash`` is used, then ``RAMPZ`` is set
   as needed before the operation.
 
-* If the device supports RAM larger than 64 KiB and the compiler
+* If the device supports RAM larger than 64 |nbsp| KiB and the compiler
   needs to change ``RAMPZ`` to accomplish an operation, ``RAMPZ``
   is reset to zero after the operation.
 
@@ -462,7 +462,7 @@ register, respectively, to get a wide address. Similarly,
   prologue/epilogue saves/restores that SFR and initializes it with
   zero in case the ISR code might (implicitly) use it.
 
-* RAM larger than 64 KiB is not supported by GCC for AVR targets.
+* RAM larger than 64 |nbsp| KiB is not supported by GCC for AVR targets.
   If you use inline assembler to read from locations outside the
   16-bit address range and change one of the ``RAMP`` registers,
   you must reset it to zero after the access.
@@ -548,18 +548,18 @@ For even more AVR-specific built-in macros see
 
 ``__AVR_HAVE_JMP_CALL__``
   The device has the ``JMP`` and ``CALL`` instructions.
-  This is the case for devices with more than 8 KiB of program
+  This is the case for devices with more than 8 |nbsp| KiB of program
   memory.
 
 ``__AVR_HAVE_EIJMP_EICALL__`` ``__AVR_3_BYTE_PC__``
   The device has the ``EIJMP`` and ``EICALL`` instructions.
-  This is the case for devices with more than 128 KiB of program memory.
+  This is the case for devices with more than 128 |nbsp| KiB of program memory.
   This also means that the program counter
-  (PC) is 3 bytes wide.
+  (PC) is 3 |nbsp| bytes wide.
 
 ``__AVR_2_BYTE_PC__``
-  The program counter (PC) is 2 bytes wide. This is the case for devices
-  with up to 128 KiB of program memory.
+  The program counter (PC) is 2 |nbsp| bytes wide. This is the case for devices
+  with up to 128 |nbsp| KiB of program memory.
 
 ``__AVR_HAVE_8BIT_SP__`` ``__AVR_HAVE_16BIT_SP__``
   The stack pointer (SP) register is treated as 8-bit respectively
@@ -596,7 +596,7 @@ For even more AVR-specific built-in macros see
   address as if addressed by an instruction to access RAM like ``LD``
   or ``STS``. This offset depends on the device architecture and has
   to be subtracted from the RAM address in order to get the
-  respective I/O address.
+  respective I/O |nbsp| address.
 
 ``__AVR_SHORT_CALLS__``
   The :option:`-mshort-calls` command line option is set.

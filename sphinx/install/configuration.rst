@@ -1911,7 +1911,7 @@ The following options only apply to building cross compilers.
 .. option:: --with-avrlibc
 
   Only supported for the AVR target. Specifies that :samp:`AVR-Libc` is
-  being used as the target C  library.  This causes float support
+  being used as the target C |nbsp|  library.  This causes float support
   functions like ``__addsf3`` to be omitted from :samp:`libgcc.a` on
   the assumption that it will be provided by :samp:`libm.a`.  For more
   technical details, cf. `PR54461 <https://gcc.gnu.org/PR54461>`_.
@@ -1921,7 +1921,7 @@ The following options only apply to building cross compilers.
 
 .. option:: --with-double={32|64|32,64|64,32}
 
-  Only supported for the AVR target since version 10.
+  Only supported for the AVR target since version |nbsp| 10.
   Specify the default layout available for the C/C++ :samp:`double`
   and :samp:`long double` type, respectively. The following rules apply:
 
@@ -1947,11 +1947,11 @@ The following options only apply to building cross compilers.
   rejected because the first option specifies the availability of
   multilibs for :samp:`double`, whereas the second option implies
   that :samp:`long double` --- and hence also :samp:`double` --- is always
-  32 bits wide.
+  32 |nbsp| bits wide.
 
 .. option:: --with-double-comparison={tristate|bool|libf7}
 
-  Only supported for the AVR target since version 10.
+  Only supported for the AVR target since version |nbsp| 10.
   Specify what result format is returned by library functions that
   compare 64-bit floating point values (``DFmode``).
   The GCC default is :samp:`tristate`.  If the floating point
@@ -1959,7 +1959,7 @@ The following options only apply to building cross compilers.
 
 .. option:: --with-libf7={libgcc|math|math-symbols|no}
 
-  Only supported for the AVR target since version 10.
+  Only supported for the AVR target since version |nbsp| 10.
   Specify to which degree code from LibF7 is included in libgcc.
   LibF7 is an ad-hoc, AVR-specific, 64-bit floating point emulation
   written in C and (inline) assembly. :samp:`libgcc` adds support

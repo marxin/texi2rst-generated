@@ -671,7 +671,7 @@ AVR Variable Attributes
   This attribute works similar to the ``section`` attribute
   but adds additional checking.
 
-  \*  Ordinary AVR cores with 32 general purpose registers:
+  \* |nbsp|  Ordinary AVR cores with 32 general purpose registers:
     :gcc-attr:`progmem` affects the location
     of the data but not how this data is accessed.
     In order to read data located with the :gcc-attr:`progmem` attribute
@@ -697,7 +697,7 @@ AVR Variable Attributes
     See also the :ref:`avr-named-address-spaces` section for
     an alternate way to locate and access data in flash memory.
 
-  \*  AVR cores with flash memory visible in the RAM address range:
+  \* |nbsp|  AVR cores with flash memory visible in the RAM address range:
     On such devices, there is no need for attribute :gcc-attr:`progmem` or
     :ref:`avr-named-address-spaces` qualifier at all.
     Just use standard C / C++.  The compiler will generate ``LD*``
@@ -710,14 +710,14 @@ AVR Variable Attributes
     families ``avrtiny`` and ``avrxmega3``, see :ref:`avr-options` for
     an overview.
 
-  \* Reduced AVR Tiny cores like ATtiny40:
+  \* |nbsp| Reduced AVR Tiny cores like ATtiny40:
     The compiler adds ``0x4000``
     to the addresses of objects and declarations in :gcc-attr:`progmem` and locates
     the objects in flash memory, namely in section ``.progmem.data``.
     The offset is needed because the flash memory is visible in the RAM
     address space starting at address ``0x4000``.
 
-    Data in :gcc-attr:`progmem` can be accessed by means of ordinary C code,
+    Data in :gcc-attr:`progmem` can be accessed by means of ordinary C |nbsp| code,
     no special functions or macros are needed.
 
     .. code-block:: c++
