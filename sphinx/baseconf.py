@@ -50,6 +50,7 @@ gcc_REVISION = __read_file('REVISION')
 
 VERSION_PACKAGE = os.getenv('VERSION_PACKAGE', '(GCC)')
 BUGURL = os.getenv('BUGURL', 'https://gcc.gnu.org/bugs/')
+MONOCHROMATIC = os.getenv('MONOCHROMATIC')
 
 # The short X.Y version.
 version = gcc_BASEVER
@@ -160,6 +161,13 @@ latex_elements = {
 ''',
 }
 
+if MONOCHROMATIC:
+    latex_elements['sphinxsetup'] = r'''
+TitleColor={black},
+InnerLinkColor={darkgray},
+OuterLinkColor={darkgray},
+'''
+
 latex_table_style = ['colorrows']
 
 texinfo_cross_references = False
@@ -171,7 +179,7 @@ texinfo_elements = { 'preamble': """
 }
 
 # Use default as RTD theme uses default as well
-pygments_style = 'default'
+pygments_style = 'bw' if MONOCHROMATIC else 'default'
 
 option_emphasise_placeholders = True
 
