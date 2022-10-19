@@ -149,10 +149,10 @@ together with attribute :gcc-attr:`progmem`.
 
 Limitations and caveats
 
-* Reading across the 64 KiB section boundary of
+* Reading across the 64 |nbsp| KiB section boundary of
   the ``__flash`` or ``__flashN`` address spaces
   shows undefined behavior. The only address space that
-  supports reading across the 64 KiB flash segment boundaries is
+  supports reading across the 64 |nbsp| KiB flash segment boundaries is
   ``__memx``.
 
 * If you use one of the ``__flashN`` address spaces
@@ -188,7 +188,7 @@ M32C Named Address Spaces
 
 On the M32C target, with the R8C and M16C CPU variants, variables
 qualified with ``__far`` are accessed using 32-bit addresses in
-order to access memory beyond the first 64 Ki bytes.  If
+order to access memory beyond the first 64 |nbsp| Ki bytes.  If
 ``__far`` is used with the M32CM or M32C CPU variants, it has no
 effect.
 
@@ -219,7 +219,7 @@ RL78 Named Address Spaces
 On the RL78 target, variables qualified with ``__far`` are accessed
 with 32-bit pointers (20-bit addresses) rather than the default 16-bit
 addresses.  Non-far variables are assumed to appear in the topmost
-64 KiB of the address space.
+64 |nbsp| KiB of the address space.
 
 .. index:: x86 named address spaces
 
