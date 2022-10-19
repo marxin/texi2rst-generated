@@ -27,8 +27,12 @@ texinfo_documents = [
   ('index', name, project, authors, None, None, None, True)
 ]
 
+epub_basename = name
+
 tags.add(name)
 if gcc_DEVPHASE == 'experimental':
+epub_basename = name
+
     tags.add('development')
 
 set_common(name)

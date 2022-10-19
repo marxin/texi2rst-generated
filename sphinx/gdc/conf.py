@@ -27,5 +27,7 @@ texinfo_documents = [
   ('index', name, project, authors, None, None, None, True)
 ]
 
+epub_basename = name
+
 tags.add(name)
 set_common(name)

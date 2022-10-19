@@ -25,5 +25,7 @@ man_pages = [
     ('demo2', name, 'Demo man page', [authors], 1),
 ]
 
+epub_basename = name
+
 tags.add(name)
 set_common(name)
