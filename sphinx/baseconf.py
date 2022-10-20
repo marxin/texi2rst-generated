@@ -166,8 +166,8 @@ latex_elements = {
 if MONOCHROMATIC:
     latex_elements['sphinxsetup'] = r'''
 TitleColor={black},
-InnerLinkColor={darkgray},
-OuterLinkColor={darkgray},
+InnerLinkColor={rgb}{0.0, 0.2, 0.6},
+OuterLinkColor={rgb}{0.0, 0.2, 0.6},
 '''
 
 latex_table_style = ['colorrows']
