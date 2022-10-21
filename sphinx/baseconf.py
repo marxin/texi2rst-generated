@@ -150,8 +150,6 @@ latex_engine = 'xelatex'
 
 latex_logo = '../logo.pdf'
 
-latex_use_xindy = False
-
 latex_elements = {
     'pointsize': '11pt',
     'fontpkg': r'''
