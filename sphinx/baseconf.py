@@ -149,7 +149,6 @@ latex_engine = 'xelatex'
 
 latex_logo = '../logo.pdf'
 
-# TODO: Remove once xindy works in an openSUSE container
 latex_use_xindy = False
 
 latex_elements = {
