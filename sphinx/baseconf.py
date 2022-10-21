@@ -26,6 +26,7 @@ sys.setrecursionlimit(2000)
 folder = os.path.dirname(os.path.realpath(__file__))
 gcc_srcdir = os.path.join(folder, './objdir')
 
+
 def __read_file(name):
     path = os.path.join(gcc_srcdir, name)
     if os.path.exists(path):
@@ -125,7 +126,7 @@ html_favicon = '../favicon.ico'
 html_last_updated_fmt = ''
 
 html_context = {
-    'commit': __get_git_revision ()
+    'commit': __get_git_revision()
 }
 
 html_static_path = [
@@ -173,7 +174,7 @@ latex_table_style = ['colorrows']
 
 texinfo_cross_references = False
 
-texinfo_elements = { 'preamble': """
+texinfo_elements = {'preamble': """
 @definfoenclose strong,*,*
 @definfoenclose emph,','
 """
@@ -190,12 +191,15 @@ linkcheck_ignore = [
     'https://github.com/.*#.*'
 ]
 
+USER_LEVEL_DOCS = ('install', 'gcc', 'gfortran', 'cpp', 'gnat_rm', 'gnat_ugn',
+                   'gccgo', 'libgomp', 'libquadmath', 'libgccjit')
+INTERNAL_DOCS = ('gccint', 'cppinternals', 'gfc-internals', 'gnat-style')
+
 # Cross manual reference mapping
 intersphinx_mapping = {}
-for manual in ['cpp', 'cppinternals', 'gfortran', 'gcc', 'gccgo', 'gccint', 'gdc',
-               'gfc-internals', 'gnat-style', 'gnat_rm', 'gnat_ugn', 'install',
-               'libgccjit', 'libgomp', 'libiberty', 'libitm', 'libquadmath']:
+for manual in USER_LEVEL_DOCS + INTERNAL_DOCS:
     intersphinx_mapping[manual] = (f'https://splichal.eu/scripts/sphinx/{manual}/_build/html/', None)
+
 
 # Set common settings where we need NAME of the documentation
 def set_common(name):
