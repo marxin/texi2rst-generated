@@ -38,7 +38,7 @@ or ``virtualenv``, depending on how your distribution packaged Python 3.
 .. code-block:: shell-session
 
   $ virtualenv /tmp/venv
-  $ /tmp/venv/bin/activate
+  $ source /tmp/venv/bin/activate
   $ pip install -r requirements.txt
 
 Note the :file:`requirements.txt` file is placed in :rst:dir:`gcc/doc` folder and contains the following packages:
