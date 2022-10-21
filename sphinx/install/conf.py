@@ -6,7 +6,7 @@ sys.path.append('..')
 from baseconf import *
 
 name = 'install'
-project = 'GCC Installation Instruction'
+project = 'GCC Installation Instructions'
 copyright = '1988-2022 Free Software Foundation, Inc.'
 authors = 'GCC Developer Community'
 
