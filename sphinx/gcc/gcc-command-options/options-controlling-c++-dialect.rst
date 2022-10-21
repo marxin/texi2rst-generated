@@ -2051,7 +2051,18 @@ In addition, these warning options have meanings only for C++ programs:
 
     C++ and Objective-C++ only
 
-  Warn when an expression is casted to its own type.
+  Warn when an expression is cast to its own type.  This warning does not
+  occur when a class object is converted to a non-reference type as that
+  is a way to create a temporary:
+
+  .. code-block:: c++
+
+    struct S { };
+    void g (S&&);
+    void f (S&& arg)
+    {
+      g (S(arg)); // make arg prvalue so that it can bind to S&&
+    }
 
 .. option:: -Wno-useless-cast
 

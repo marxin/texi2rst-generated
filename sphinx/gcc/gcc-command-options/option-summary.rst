@@ -1453,7 +1453,7 @@ in the following sections.
   :option:`-mavx5124fmaps`  :option:`-mavx512vnni`  :option:`-mavx5124vnniw`  :option:`-mprfchw`  :option:`-mrdpid` 
   :option:`-mrdseed`  :option:`-msgx` :option:`-mavx512vp2intersect` :option:`-mserialize` :option:`-mtsxldtrk`
   :option:`-mamx-tile`  :option:`-mamx-int8`  :option:`-mamx-bf16` :option:`-muintr` :option:`-mhreset` :option:`-mavxvnni`
-  :option:`-mavx512fp16` 
+  :option:`-mavx512fp16` :option:`-mavxifma` :option:`-mavxvnniint8` 
   :option:`-mcldemote`  :option:`-mms-bitfields`  :option:`-mno-align-stringops`  :option:`-minline-all-stringops` 
   :option:`-minline-stringops-dynamically`  :option:`-mstringop-strategy=alg` 
   :option:`-mkl` :option:`-mwidekl` 

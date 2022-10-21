@@ -105,7 +105,26 @@ The available options are:
   Note that the ``length`` option is only meant for use with arrays of
   non-atomic objects, that is, objects that contain pointers pointing to
   other GTY-managed objects.  For other GC-allocated arrays and strings
-  you should use ``atomic``.
+  you should use ``atomic`` or ``string_length``.
+
+  .. index:: string_length
+
+:samp:`string_length ("{expression}")`
+  In order to simplify production of PCH, a structure member that is a plain
+  array of bytes (an optionally ``const`` and/or ``unsigned`` ``char
+  *``) is treated specially by the infrastructure. Even if such an array has not
+  been allocated in GC-controlled memory, it will still be written properly into
+  a PCH.  The machinery responsible for this needs to know the length of the
+  data; by default, the length is determined by calling ``strlen`` on the
+  pointer.  The ``string_length`` option specifies an alternate way to
+  determine the length, such as by inspecting another struct member:
+
+  .. code-block:: c++
+
+    struct GTY(()) non_terminated_string {
+      size_t sz;
+      const char * GTY((string_length ("%h.sz"))) data;
+    };
 
   .. index:: skip
 

@@ -766,6 +766,18 @@ These function attributes are supported by the x86 back end:
 
     Enable/disable the generation of the AVXVNNI instructions.
 
+  :samp:`avxifma` :samp:`no-avxifma`
+
+    .. index:: target("avxifma") function attribute, x86
+
+    Enable/disable the generation of the AVXIFMA instructions.
+
+  :samp:`avxvnniint8` :samp:`no-avxvnniint8`
+
+    .. index:: target("avxvnniint8") function attribute, x86
+
+    Enable/disable the generation of the AVXVNNIINT8 instructions.
+
   :samp:`cld` :samp:`no-cld`
 
     .. index:: target("cld") function attribute, x86
