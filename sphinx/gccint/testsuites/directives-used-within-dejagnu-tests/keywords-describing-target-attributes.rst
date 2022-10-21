@@ -1051,6 +1051,12 @@ Other hardware attributes
 ``avx512vp2intersect``
   Target supports the execution of ``avx512vp2intersect`` instructions.
 
+``avxifma``
+  Target supports the execution of ``avxifma`` instructions.
+
+``avxvnniint8``
+  Target supports the execution of ``avxvnniint8`` instructions.
+
 ``amx_tile``
   Target supports the execution of ``amx-tile`` instructions.
 

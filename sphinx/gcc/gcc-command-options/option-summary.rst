@@ -1464,7 +1464,7 @@ in the following sections.
   :option:`-mavx5124fmaps`  :option:`-mavx512vnni`  :option:`-mavx5124vnniw`  :option:`-mprfchw`  :option:`-mrdpid` |gol|
   :option:`-mrdseed`  :option:`-msgx` :option:`-mavx512vp2intersect` :option:`-mserialize` :option:`-mtsxldtrk` |gol|
   :option:`-mamx-tile`  :option:`-mamx-int8`  :option:`-mamx-bf16` :option:`-muintr` :option:`-mhreset` :option:`-mavxvnni` |gol|
-  :option:`-mavx512fp16` |gol|
+  :option:`-mavx512fp16` :option:`-mavxifma` :option:`-mavxvnniint8` |gol|
   :option:`-mcldemote`  :option:`-mms-bitfields`  :option:`-mno-align-stringops`  :option:`-minline-all-stringops` |gol|
   :option:`-minline-stringops-dynamically`  :option:`-mstringop-strategy=alg` |gol|
   :option:`-mkl` :option:`-mwidekl` |gol|

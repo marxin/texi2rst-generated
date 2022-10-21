@@ -259,6 +259,9 @@ check the target platform type.
   :samp:`znver3`
     AMD Family 19h Zen version 3.
 
+  :samp:`znver4`
+    AMD Family 19h Zen version 4.
+
   :samp:`x86-64`
     Baseline x86-64 microarchitecture level (as defined in x86-64 psABI).
 
