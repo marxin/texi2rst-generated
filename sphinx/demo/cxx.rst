@@ -42,7 +42,7 @@ not reflect the final standard.
 C++23 Language Features
 -----------------------
 
-.. list-table::
+.. flat-table::
    :widths: 30 15 15 25
    :header-rows: 1
 
@@ -358,7 +358,7 @@ the ISO C++ committee proposal that describes the feature, while the
 "Available in GCC?" column indicates the first version of GCC that
 contains an implementation of this feature (if it has been implemented).
 
-.. list-table::
+.. flat-table::
    :widths: 30 15 15 25
    :header-rows: 1
 
@@ -417,73 +417,59 @@ contains an implementation of this feature (if it has been implemented).
       - 
    - 
 
-      - Concepts
+      - :rspan:`11` Concepts
       - `P0734R0 <https://wg21.link/p0734r0>`__
       - `10 <../gcc-10/changes.html#cxx>`__
-      - \__cpp_concepts >= 201907
+      - :rspan:`3` \__cpp_concepts >= 201907
    - 
 
-      - 
       - `P0857R0 <https://wg21.link/p0857r0>`__
       - 
-      - 
    - 
 
-      - 
       - `P1084R2 <https://wg21.link/p1084r2>`__
       - 
-      - 
    - 
 
-      - 
       - `P1141R2 <https://wg21.link/p1141r2>`__
       - 
-      - 
    - 
 
-      - 
       - `P0848R3 <https://wg21.link/p0848r3>`__
       - 
       - \__cpp_concepts >= 202002
    - 
 
-      - 
       - `P1616R1 <https://wg21.link/p1616r1>`__
       - 
       - \__cpp_concepts >= 201907
    - 
 
-      - 
       - `P1452R2 <https://wg21.link/p1452r2>`__
       - 
       - 
    - 
 
-      - 
       - `P1972R0 <https://wg21.link/p1972r0>`__
       - 
       - 
    - 
 
-      - 
       - `P1980R0 <https://wg21.link/p1980r0>`__
       - 
       - 
    - 
 
-      - 
       - `P2092R0 <https://wg21.link/p2092r0>`__
       - 
       - 
    - 
 
-      - 
       - `P2103R0 <https://wg21.link/p2103r0>`__
       - 
       - 
    - 
 
-      - 
       - `P2113R0 <https://wg21.link/p2113r0>`__
       - `10.2 <../gcc-10/changes.html#cxx>`__ (no reversed operator
          handling)
@@ -992,7 +978,7 @@ the ISO C++ committee proposal that describes the feature, while the
 "Available in GCC?" column indicates the first version of GCC that
 contains an implementation of this feature (if it has been implemented).
 
-.. list-table::
+.. flat-table::
    :widths: 30 15 15 25
    :header-rows: 1
 
@@ -1260,7 +1246,7 @@ toward future inclusion in a C++ standard, GCC's support is
 compatibility with implementations of features that do not reflect the
 final standard.
 
-.. list-table::
+.. flat-table::
    :header-rows: 1
 
    - 
@@ -1319,7 +1305,7 @@ committee proposal that describes the feature, while the "Available in
 GCC?" column indicates the first version of GCC that contains an
 implementation of this feature.
 
-.. list-table::
+.. flat-table::
    :widths: 30 15 15 25
    :header-rows: 1
 
@@ -1409,7 +1395,7 @@ This feature was briefly part of the C++14 working paper, but was not
 part of the published standard; as a result, it has been removed from
 the compiler.
 
-.. list-table::
+.. flat-table::
    :widths: 30 15 15 25
    :header-rows: 1
 
@@ -1450,7 +1436,7 @@ see:
 -  `GCC 4.7 C++11 Status <../gcc-4.7/cxx0x_status.html>`__
 -  `GCC 4.8 C++11 Status <../gcc-4.8/cxx0x_status.html>`__
 
-.. list-table::
+.. flat-table::
    :widths: 30 15 15 25
    :header-rows: 1
 

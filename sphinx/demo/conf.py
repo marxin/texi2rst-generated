@@ -29,3 +29,6 @@ epub_basename = name
 
 tags.add(name)
 set_common(name)
+
+extensions.append('linuxdoc.rstFlatTable')
+extensions.append('sphinx_design')
