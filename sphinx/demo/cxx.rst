@@ -43,7 +43,7 @@ C++23 Language Features
 -----------------------
 
 .. list-table::
-   :widths: 18 18 18 18
+   :widths: 30 15 15 25
    :header-rows: 1
 
    - 
@@ -359,7 +359,7 @@ the ISO C++ committee proposal that describes the feature, while the
 contains an implementation of this feature (if it has been implemented).
 
 .. list-table::
-   :widths: 18 18 18 18
+   :widths: 30 15 15 25
    :header-rows: 1
 
    - 
@@ -993,7 +993,7 @@ the ISO C++ committee proposal that describes the feature, while the
 contains an implementation of this feature (if it has been implemented).
 
 .. list-table::
-   :widths: 18 18 18 18
+   :widths: 30 15 15 25
    :header-rows: 1
 
    - 
@@ -1320,7 +1320,7 @@ GCC?" column indicates the first version of GCC that contains an
 implementation of this feature.
 
 .. list-table::
-   :widths: 18 18 18 18
+   :widths: 30 15 15 25
    :header-rows: 1
 
    - 
@@ -1410,7 +1410,7 @@ part of the published standard; as a result, it has been removed from
 the compiler.
 
 .. list-table::
-   :widths: 18 18 18 18
+   :widths: 30 15 15 25
    :header-rows: 1
 
    - 
@@ -1451,7 +1451,7 @@ see:
 -  `GCC 4.8 C++11 Status <../gcc-4.8/cxx0x_status.html>`__
 
 .. list-table::
-   :widths: 18 18 18 18
+   :widths: 30 15 15 25
    :header-rows: 1
 
    - 
