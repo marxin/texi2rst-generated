@@ -7,5 +7,6 @@ Demo documentation
   demo
   demo2
   demo3
+  cxx
 
 :ref:`genindex`
