@@ -945,6 +945,27 @@ corresponding :option:`--without` option.
   ``breaks``
     Division by zero checks use the break instruction.
 
+.. option:: --with-compact-branches=policy
+
+  Specify how the compiler should generate branch instructions.
+  This option is only supported on the MIPS target.
+  The possibilities for :samp:`{type}` are:
+
+  ``optimal``
+    Cause a delay slot branch to be used if one is available in the
+    current ISA and the delay slot is successfully filled. If the delay slot
+    is not filled, a compact branch will be chosen if one is available.
+
+  ``never``
+    Ensures that compact branch instructions will never be generated.
+
+  ``always``
+    Ensures that a compact branch instruction will be generated if available.
+    If a compact branch instruction is not available,
+    a delay slot form of the branch will be used instead.
+    This option is supported from MIPS Release 6 onwards.
+    For pre-R6/microMIPS/MIPS16, this option is just same as never/optimal.
+
   .. If you make -with-llsc the default for additional targets,
      update the -with-llsc description in the MIPS section below.
 

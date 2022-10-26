@@ -739,6 +739,7 @@ of the following functions for working with file descriptors:
 * ``close``
 * ``creat``
 * ``dup``, ``dup2`` and ``dup3``
+* ``pipe`` and ``pipe2``
 * ``read``
 * ``write``
 
