@@ -1,6 +1,10 @@
 C++ Standards Support in GCC
 ============================
 
+.. warning::
+
+   The page was automatically converted by pandoc tool!
+
 GCC supports different dialects of C++, corresponding to the multiple
 published ISO standards. Which standard it implements can be selected
 using the ``-std=`` command-line option.
