@@ -56,19 +56,19 @@ C++23 Language Features
 
       - Literal Suffix for (signed) size_t
       - `P0330R8 <https://wg21.link/p0330r8>`__
-      - `11 <../gcc-11/changes.html#cxx>`__
+      - :bdg-link-success:`11 <https://gcc.gnu.org>`
       - \__cpp_size_t_suffix >= 202006L
    - 
 
       - Make () more optional for lambdas
       - `P1102R2 <https://wg21.link/p1102r2>`__
-      - `11 <../gcc-11/changes.html#cxx>`__
+      - :bdg-link-success:`11 <https://gcc.gnu.org>`
       - 
    - 
 
       - DR: Declarations and where to find them
       - `P1787R6 <https://wg21.link/p1787r6>`__
-      - `No <https://gcc.gnu.org/PR98939>`__
+      - :bdg-link-danger:`No <https://gcc.gnu.org>`
       - 
    - 
 
