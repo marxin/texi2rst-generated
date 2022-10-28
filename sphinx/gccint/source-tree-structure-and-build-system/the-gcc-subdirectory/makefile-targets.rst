@@ -137,6 +137,16 @@ Other targets available from the top level include:
   is running properly, since it should produce the same object files
   regardless of how it itself was compiled.
 
+:samp:`distclean-stage{N} ({N} = 1...4, profile, feedback)`
+  Wipe stage :samp:`{N}` and all the following ones.
+
+  For example,
+  :samp:`make distclean-stage3` wipes stage 3 and all the following ones,
+  so that another :command:`make` then rebuilds them from scratch.
+  This can be useful if you're doing changes where
+  'bubbling' the changes as described above is not sufficient,
+  but a full :command:`make restrap` isn't necessary either.
+
 ``profiledbootstrap``
   Builds a compiler with profiling feedback information.  In this case,
   the second and third stages are named :samp:`profile` and :samp:`feedback`,

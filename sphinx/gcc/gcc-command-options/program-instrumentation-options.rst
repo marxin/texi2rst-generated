@@ -650,6 +650,10 @@ program analysis purposes.
     or ``__builtin_clz`` invokes undefined behavior and is diagnosed
     by this option.
 
+  Note the enabled sanitizer options tend to increase a false-positive rate
+  of selected warnings, most notably :option:`-Wmaybe-uninitialized`.
+  And thus we recommend to disable :option:`-Werror`.
+
   While :option:`-ftrapv` causes traps for signed overflows to be emitted,
   :option:`-fsanitize=undefined` gives a diagnostic message.
   This currently works only for the C family of languages.

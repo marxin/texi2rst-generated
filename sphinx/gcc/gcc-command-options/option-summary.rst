@@ -79,7 +79,8 @@ in the following sections.
   :option:`-Wno-class-conversion`  :option:`-Wclass-memaccess` 
   :option:`-Wcomma-subscript`  :option:`-Wconditionally-supported` 
   :option:`-Wno-conversion-null`  :option:`-Wctad-maybe-unsupported` 
-  :option:`-Wctor-dtor-privacy`  :option:`-Wno-delete-incomplete` 
+  :option:`-Wctor-dtor-privacy`  :option:`-Wdangling-reference` 
+  :option:`-Wno-delete-incomplete` 
   :option:`-Wdelete-non-virtual-dtor`  :option:`-Wno-deprecated-array-compare` 
   :option:`-Wdeprecated-copy` :option:`-Wdeprecated-copy-dtor` 
   :option:`-Wno-deprecated-enum-enum-conversion` :option:`-Wno-deprecated-enum-float-conversion` 

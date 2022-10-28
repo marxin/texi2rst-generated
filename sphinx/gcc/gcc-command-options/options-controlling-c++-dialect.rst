@@ -810,6 +810,61 @@ In addition, these warning options have meanings only for C++ programs:
 
   Default setting; overrides :option:`-Wctor-dtor-privacy`.
 
+.. option:: -Wdangling-reference
+
+  .. note::
+
+    C++ and Objective-C++ only
+
+  Warn when a reference is bound to a temporary whose lifetime has ended.
+  For example:
+
+  .. code-block:: c++
+
+    int n = 1;
+    const int& r = std::max(n - 1, n + 1); // r is dangling
+
+  In the example above, two temporaries are created, one for each
+  argument, and a reference to one of the temporaries is returned.
+  However, both temporaries are destroyed at the end of the full
+  expression, so the reference ``r`` is dangling.  This warning
+  also detects dangling references in member initializer lists:
+
+  .. code-block:: c++
+
+    const int& f(const int& i) { return i; }
+    struct S {
+      const int &r; // r is dangling
+      S() : r(f(10)) { }
+    };
+
+  Member functions are checked as well, but only their object argument:
+
+  .. code-block:: c++
+
+    struct S {
+       const S& self () { return *this; }
+    };
+    const S& s = S().self(); // s is dangling
+
+  Certain functions are safe in this respect, for example ``std::use_facet`` :
+  they take and return a reference, but they don't return one of its arguments,
+  which can fool the warning.  Such functions can be excluded from the warning
+  by wrapping them in a ``#pragma`` :
+
+  .. code-block:: c++
+
+    #pragma GCC diagnostic push
+    #pragma GCC diagnostic ignored "-Wdangling-reference"
+    const T& foo (const T&) { ... }
+    #pragma GCC diagnostic pop
+
+  This warning is enabled by :option:`-Wall`.
+
+.. option:: -Wno-dangling-reference
+
+  Default setting; overrides :option:`-Wdangling-reference`.
+
 .. option:: -Wdelete-non-virtual-dtor
 
   .. note::
