@@ -82,7 +82,8 @@ in the following sections.
   :option:`-Wno-class-conversion`  :option:`-Wclass-memaccess` |gol|
   :option:`-Wcomma-subscript`  :option:`-Wconditionally-supported` |gol|
   :option:`-Wno-conversion-null`  :option:`-Wctad-maybe-unsupported` |gol|
-  :option:`-Wctor-dtor-privacy`  :option:`-Wno-delete-incomplete` |gol|
+  :option:`-Wctor-dtor-privacy`  :option:`-Wdangling-reference` |gol|
+  :option:`-Wno-delete-incomplete` |gol|
   :option:`-Wdelete-non-virtual-dtor`  :option:`-Wno-deprecated-array-compare` |gol|
   :option:`-Wdeprecated-copy` :option:`-Wdeprecated-copy-dtor` |gol|
   :option:`-Wno-deprecated-enum-enum-conversion` :option:`-Wno-deprecated-enum-float-conversion` |gol|
