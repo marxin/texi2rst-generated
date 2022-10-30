@@ -86,6 +86,7 @@ rst_epilog = '''
 extensions = [
     'gcc_sphinx',
     'sphinx.ext.intersphinx',
+    'sphinx.ext.extlinks',
     'sphinx_copybutton'
 ]
 
@@ -198,6 +199,8 @@ intersphinx_mapping = {}
 for manual in USER_LEVEL_DOCS + INTERNAL_DOCS:
     intersphinx_mapping[manual] = (f'https://splichal.eu/scripts/sphinx/{manual}/_build/html/', None)
 
+# Custom references
+extlinks = {'PR': ('https://gcc.gnu.org/PR%s', 'PR%s')}
 
 # Set common settings where we need NAME of the documentation
 def set_common(name):

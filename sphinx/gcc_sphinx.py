@@ -1,15 +1,6 @@
 # GCC Sphinx customization
 
-from docutils import nodes
-
 __version__ = '1.0'
-
-
-def pr_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
-    url = f'https://gcc.gnu.org/PR{text}'
-    text = f'PR{text}'
-    node = nodes.reference(rawtext, text, refuri=url, **options)
-    return [node], []
 
 
 def setup(app):
@@ -45,8 +36,6 @@ def setup(app):
                             indextemplate=f'pair: %s; {target_name} variable attribute')
         app.add_object_type(f'{target}-type-attr', f'{target}-type-attr', objname=f'{target_name} type attribute',
                             indextemplate=f'pair: %s; {target_name} type attribute')
-
-    app.add_role('pr', pr_role)
 
     return dict(
         version=__version__,
