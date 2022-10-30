@@ -40,6 +40,7 @@ I'm a demo documentation page.
 
    Suggest it.
 
+   .. todo:: Improve wording!
 
 .. option:: -Wall
 

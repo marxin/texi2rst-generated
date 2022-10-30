@@ -87,6 +87,7 @@ extensions = [
     'gcc_sphinx',
     'sphinx.ext.intersphinx',
     'sphinx.ext.extlinks',
+    'sphinx.ext.todo',
     'sphinx_copybutton'
 ]
 
@@ -213,6 +214,7 @@ extlinks_detect_hardcoded_links = True
 def set_common(name, module):
     module['tags'].add(name)
     if gcc_DEVPHASE == 'experimental':
+        module['todo_include_todos'] = True
         module['tags'].add('development')
 
     html_theme_options['source_edit_link'] = f'https://splichal.eu/scripts/sphinx/{name}' \

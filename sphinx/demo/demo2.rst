@@ -106,7 +106,12 @@ This works: :option:`--verbose <make --verbose>` and :option:`--verbose <make -v
 
    Normal option values.
 
+   .. todo:: FIX this page properly
+
 Formatting
 ==========
 
 just a test to reference a :pr:`12345`.
+
+
+.. todolist::
