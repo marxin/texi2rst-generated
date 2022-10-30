@@ -21,6 +21,4 @@ texinfo_documents = [
   ('index', name, project, authors, None, None, None, True)
 ]
 
-epub_basename = name
-
 set_common(name, globals())

@@ -11,8 +11,8 @@ Building Documentation
 The main GCC documentation uses `Sphinx`_ to generate pretty documentation
 from `reStructuredText`_ format.
 These are input for Manual pages format (:command:`make man`),
-Info format (:command:`make info`), HTML format (:command:`make html`),
-PDF format (:command:`make pdf`) and EPUB format (:command:`make epub`).
+Info format (:command:`make info`), HTML format (:command:`make html`)
+and PDF format (:command:`make pdf`).
 
 .. _Sphinx: http://www.sphinx-doc.org/
 .. _reStructuredText: http://docutils.sourceforge.net/rst.html

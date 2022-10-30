@@ -25,8 +25,6 @@ man_pages = [
     ('demo2', name, 'Demo man page', [authors], 1),
 ]
 
-epub_basename = name
-
 set_common(name, globals())
 
 extensions.append('linuxdoc.rstFlatTable')
