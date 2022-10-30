@@ -12,8 +12,8 @@ C++ Modules
 
 Modules are a C++20 language feature.  As the name suggests, they
 provides a modular compilation system, intending to provide both
-faster builds and better library isolation.  The 'Merging Modules'
-paper https://wg21.link/p1103, provides the easiest to read set
+faster builds and better library isolation.  The :P:`1103 <Merging Modules>`,
+provides the easiest to read set
 of changes to the standard, although it does not capture later
 changes.
 
@@ -37,8 +37,8 @@ known missing pieces are:
   emitted.
 
 *Translation-Unit local referencing rules*
-  Papers p1815 (https://wg21.link/p1815) and p2003
-  (https://wg21.link/p2003) add limitations on which entities an
+  Papers :P:`1815` and :P:`2003`
+  add limitations on which entities an
   exported region may reference (for instance, the entities an exported
   template definition may reference).  These are not fully implemented.
 
@@ -221,12 +221,12 @@ to canonicalize these filenames beyond that done by the preprocessor's
 include search algorithm, as in general it is ambiguous when symbolic
 links are present.
 
-The mapper protocol was published as 'A Module Mapper'
-https://wg21.link/p1184.  The implementation is provided by
+The mapper protocol was published as :P:`A Module Mapper <1184>`.
+The implementation is provided by
 :command:`libcody`, https://github.com/urnathan/libcody,
 which specifies the canonical protocol definition.  A proof of concept
 server implementation embedded in :command:`make` was described in
-'Make Me A Module', https://wg21.link/p1602.
+:P:`Make Me A Module <1602>`.
 
 .. index:: C++ Module Preprocessing
 
