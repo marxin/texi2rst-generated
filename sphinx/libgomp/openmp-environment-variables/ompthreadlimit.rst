@@ -19,4 +19,4 @@ See also:
   :ref:`OMP_NUM_THREADS`, :ref:`omp_get_thread_limit`
 
 Reference:
-  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.10
+  :openmp:`4.5`, Section 4.10

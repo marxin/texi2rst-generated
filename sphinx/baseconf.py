@@ -200,7 +200,10 @@ for manual in USER_LEVEL_DOCS + INTERNAL_DOCS:
     intersphinx_mapping[manual] = (f'https://splichal.eu/scripts/sphinx/{manual}/_build/html/', None)
 
 # Custom references
-extlinks = {'PR': ('https://gcc.gnu.org/PR%s', 'PR%s')}
+extlinks = {
+    'PR': ('https://gcc.gnu.org/PR%s', 'PR%s'),
+    'openmp': ('https://openmp.org/specifications/#%s', 'OpenMP specification v%s')
+}
 
 # Set common settings where we need NAME of the documentation
 def set_common(name):
