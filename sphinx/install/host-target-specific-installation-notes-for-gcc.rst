@@ -398,7 +398,7 @@ i?86-\*-linux\*
 ===============
 
 As of GCC 3.3, binutils 2.13.1 or later is required for this platform.
-See `bug 10877 <https://gcc.gnu.org/PR10877>`_ for more information.
+See :pr:`10877` for more information.
 
 If you receive Signal 11 errors when building on GNU/Linux, then it is
 possible you have a hardware problem.  Further information on this can be

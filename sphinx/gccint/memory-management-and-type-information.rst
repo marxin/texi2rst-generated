@@ -68,7 +68,7 @@ These don't need to be marked.
 However, in combination with GTY, avoid using typedefs such as
 ``typedef int_hash<...> name;``
 for these generate infinite-recursion code.
-See `PR103157 <https://gcc.gnu.org/PR103157>`_.
+See :pr:`103157`.
 Instead, you may use
 ``struct name : int_hash<...> {};``,
 for example.
