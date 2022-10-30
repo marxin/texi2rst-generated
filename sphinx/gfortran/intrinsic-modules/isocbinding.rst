@@ -21,9 +21,6 @@ ISO_C_BINDING
 * C_FUNLOCC_LOC
 * C_SIZEOF
 
-.. TODO: Vertical spacing between C_FUNLOC and C_LOC wrong in PDF,
-   don't really know why.
-
 The ``ISO_C_BINDING`` module provides the following named constants of
 type default integer, which can be used as KIND type parameters.
 

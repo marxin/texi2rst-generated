@@ -10,4 +10,4 @@
 Guidelines for Options
 **********************
 
-.. TODO
+.. todo:: write part

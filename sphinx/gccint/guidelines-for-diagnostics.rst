@@ -142,7 +142,7 @@ user's source code.  Examples include:
 * an 'opened' syntactic construct (such as an open-parenthesis) is not
   closed
 
-  .. TODO: more examples?
+.. todo:: more examples?
 
 In each case, the diagnostic should indicate **both** pertinent
 locations (so that the user can easily see the problem and how to fix it).
@@ -311,7 +311,7 @@ would lead to:
         |     ~~~ ~~~~~~~~~~~~~~~^~~~~~~~~
   demo.c:1:24: note: attribute 'noinline' is only applicable to functions
 
-.. TODO labelling of ranges
+..todo:: labelling of ranges
 
 Coding Conventions
 ^^^^^^^^^^^^^^^^^^

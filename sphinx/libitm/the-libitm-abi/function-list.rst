@@ -54,8 +54,9 @@ the compiler because it thinks that some kind of global synchronization
 (e.g., serial mode) might perform better? The specification suggests that the
 latter might be the case, but the former seems to be more useful.
 
-The ``readOnly`` bit (``0x4000``) is new. **TODO** Lexical or dynamic
-scope?
+The ``readOnly`` bit (``0x4000``) is new.
+
+.. todo:: Lexical or dynamic scope?
 
 ``hasNoRetry`` is not supported. If this bit is not set, but
 ``hasNoAbort`` is set, the library can assume that transaction
@@ -230,13 +231,13 @@ register/deregister clone tables:
 Registered tables must be writable by the TM runtime, and must be live
 throughout the life-time of the TM runtime.
 
-**TODO** The intention was always to drop the registration functions
-entirely, and create a new ELF Phdr describing the linker-sorted table.  Much
-like what currently happens for ``PT_GNU_EH_FRAME``.
-This work kept getting bogged down in how to represent the :samp:`{N}` different
-code generation variants.  We clearly needed at least two---SW and HW
-transactional clones---but there was always a suggestion of more variants for
-different TM assumptions/invariants.
+.. todo:: The intention was always to drop the registration functions
+  entirely, and create a new ELF Phdr describing the linker-sorted table.  Much
+  like what currently happens for ``PT_GNU_EH_FRAME``.
+  This work kept getting bogged down in how to represent the :samp:`{N}` different
+  code generation variants.  We clearly needed at least two---SW and HW
+  transactional clones---but there was always a suggestion of more variants for
+  different TM assumptions/invariants.
 
 The compiler can then use two TM runtime functions to perform indirect calls in
 transactions:

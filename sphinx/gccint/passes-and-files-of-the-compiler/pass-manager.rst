@@ -37,6 +37,6 @@ by a space from the part that is used for the dump file / option name.
 E.g. When the pass name is "ud dce", the name used for dump file/options
 is "dce".
 
-TODO: describe the global variables set up by the pass manager,
-and a brief description of how a new pass should use it.
-I need to look at what info RTL passes use first…
+.. todo:: describe the global variables set up by the pass manager,
+  and a brief description of how a new pass should use it.
+  I need to look at what info RTL passes use first…

@@ -36,18 +36,18 @@ BUG: Gimplification must occur before nested function lowering,
 and nested function lowering must be done by the front end before
 passing the data off to cgraph.
 
-TODO: Cgraph should control nested function lowering.  It would
-only be invoked when it is certain that the outer-most function
-is used.
+.. todo:: Cgraph should control nested function lowering.  It would
+  only be invoked when it is certain that the outer-most function
+  is used.
 
-TODO: Cgraph needs a gimplify_function callback.  It should be
-invoked when (1) it is certain that the function is used, (2)
-warning flags specified by the user require some amount of
-compilation in order to honor, (3) the language indicates that
-semantic analysis is not complete until gimplification occurs.
-Hum... this sounds overly complicated.  Perhaps we should just
-have the front end gimplify always; in most cases it's only one
-function call.
+.. todo:: Cgraph needs a gimplify_function callback.  It should be
+  invoked when (1) it is certain that the function is used, (2)
+  warning flags specified by the user require some amount of
+  compilation in order to honor, (3) the language indicates that
+  semantic analysis is not complete until gimplification occurs.
+  Hum... this sounds overly complicated.  Perhaps we should just
+  have the front end gimplify always; in most cases it's only one
+  function call.
 
 The front end needs to pass all function definitions and top level
 declarations off to the middle-end so that they can be compiled and
@@ -68,13 +68,13 @@ data declaration, and each data definition should be passed to
 be passed to ``rest_of_type_compilation``.  Each function definition
 should be passed to ``cgraph_finalize_function``.
 
-TODO: I know rest_of_compilation currently has all sorts of
-RTL generation semantics.  I plan to move all code generation
-bits (both Tree and RTL) to compile_function.  Should we hide
-cgraph from the front ends and move back to rest_of_compilation
-as the official interface?  Possibly we should rename all three
-interfaces such that the names match in some meaningful way and
-that is more descriptive than "rest_of".
+.. todo:: I know rest_of_compilation currently has all sorts of
+  RTL generation semantics.  I plan to move all code generation
+  bits (both Tree and RTL) to compile_function.  Should we hide
+  cgraph from the front ends and move back to rest_of_compilation
+  as the official interface?  Possibly we should rename all three
+  interfaces such that the names match in some meaningful way and
+  that is more descriptive than "rest_of".
 
 The middle-end will, at its option, emit the function and data
 definitions immediately or queue them for later processing.
