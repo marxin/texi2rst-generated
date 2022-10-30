@@ -109,4 +109,4 @@ This works: :option:`--verbose <make --verbose>` and :option:`--verbose <make -v
 Formatting
 ==========
 
-just a test
+just a test to reference a :pr:`12345`.

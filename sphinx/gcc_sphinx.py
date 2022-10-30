@@ -1,6 +1,16 @@
 # GCC Sphinx customization
 
+from docutils import nodes
+
 __version__ = '1.0'
+
+
+def pr_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
+    url = f'https://gcc.gnu.org/PR{text}'
+    text = f'PR{text}'
+    node = nodes.reference(rawtext, text, refuri=url, **options)
+    return [node], []
+
 
 def setup(app):
     app.add_object_type('gcc-attr', 'gcc-attr', objname='GCC attribute',
@@ -19,14 +29,14 @@ def setup(app):
                         indextemplate='pair: %s; parameter')
 
     targets = (('AArch64 ', 'aarch64'), ('AMD GCN ', 'amd-gcn'), ('ARC ', 'arc'), ('ARM ', 'arm'), ('AVR ', 'avr'),
-            ('Blackfin ', 'blackfin'), ('BPF ', 'bpf'), ('C-SKY ', 'c-sky'),
-            ('Epiphany ', 'epiphany'), ('H8/300 ', 'h8-300'), ('IA-64 ', 'ia-64'), ('LoongArch', 'loongarch'), ('M32C ', 'm32c'),
-            ('M32R/D ', 'm32r-d'), ('m68k ', 'm68k'), ('MCORE ', 'mcore'), ('MeP ', 'mep'),
-            ('MicroBlaze ', 'microblaze'), ('Microsoft Windows ', 'microsoft-windows'), ('MIPS ', 'mips'),
-            ('MSP430 ', 'msp430'), ('NDS32 ', 'nds32'), ('Nios II ', 'nios-ii'), ('Nvidia PTX ', 'nvidia-ptx'),
-            ('PowerPC ', 'powerpc'), ('RISC-V ', 'risc-v'), ('RL78 ', 'rl78'), ('RX ', 'rx'), ('S/390 ', 's-390'),
-            ('SH ', 'sh'), ('Symbian OS ', 'symbian-os'), ('V850 ', 'v850'), ('Visium ', 'visium'), ('x86 ', 'x86'),
-            ('Xstormy16 ', 'xstormy16'))
+               ('Blackfin ', 'blackfin'), ('BPF ', 'bpf'), ('C-SKY ', 'c-sky'),
+               ('Epiphany ', 'epiphany'), ('H8/300 ', 'h8-300'), ('IA-64 ', 'ia-64'), ('LoongArch', 'loongarch'), ('M32C ', 'm32c'),
+               ('M32R/D ', 'm32r-d'), ('m68k ', 'm68k'), ('MCORE ', 'mcore'), ('MeP ', 'mep'),
+               ('MicroBlaze ', 'microblaze'), ('Microsoft Windows ', 'microsoft-windows'), ('MIPS ', 'mips'),
+               ('MSP430 ', 'msp430'), ('NDS32 ', 'nds32'), ('Nios II ', 'nios-ii'), ('Nvidia PTX ', 'nvidia-ptx'),
+               ('PowerPC ', 'powerpc'), ('RISC-V ', 'risc-v'), ('RL78 ', 'rl78'), ('RX ', 'rx'), ('S/390 ', 's-390'),
+               ('SH ', 'sh'), ('Symbian OS ', 'symbian-os'), ('V850 ', 'v850'), ('Visium ', 'visium'), ('x86 ', 'x86'),
+               ('Xstormy16 ', 'xstormy16'))
 
     for target_name, target in targets:
         app.add_object_type(f'{target}-fn-attr', f'{target}-fn-attr', objname=f'{target_name} function attribute',
@@ -36,8 +46,10 @@ def setup(app):
         app.add_object_type(f'{target}-type-attr', f'{target}-type-attr', objname=f'{target_name} type attribute',
                             indextemplate=f'pair: %s; {target_name} type attribute')
 
+    app.add_role('pr', pr_role)
+
     return dict(
-        version = __version__,
-        parallel_read_safe = True,
-        parallel_write_safe = True
+        version=__version__,
+        parallel_read_safe=True,
+        parallel_write_safe=True
     )
