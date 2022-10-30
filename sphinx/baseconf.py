@@ -201,6 +201,7 @@ for manual in USER_LEVEL_DOCS + INTERNAL_DOCS:
 
 # Custom references
 extlinks = {
+    'P': ('https://wg21.link/p%s', 'P%s'),
     'PR': ('https://gcc.gnu.org/PR%s', 'PR%s'),
     'openmp': ('https://openmp.org/specifications/#%s', 'OpenMP specification v%s'),
     'openacc': ('https://openacc.org/specification#%s', 'OpenACC specification v%s'),

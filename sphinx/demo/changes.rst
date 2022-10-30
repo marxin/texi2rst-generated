@@ -82,8 +82,7 @@ C
 -  New warnings:
 
    -  ``-Wenum-int-mismatch`` warns about mismatches between an
-      enumerated type and an integer type
-      (`PR105131 <https://gcc.gnu.org/PR105131>`__)
+      enumerated type and an integer type (:PR:`105131`)
 
 .. _cxx:
 
@@ -92,8 +91,8 @@ C++
 
 -  Several C++23 features have been implemented:
 
-   -  `P2324R1 <https://wg21.link/p2324>`__, Labels at the end of
-      compound statements (`PR103539 <https://gcc.gnu.org/PR103539>`__)
+   -  :P:`2324R1`, Labels at the end of
+      compound statements (:PR:`103539`)
    -  `P2255R2 <https://wg21.link/p2255>`__, A type trait to detect
       reference binding to temporary
       (`PR104477 <https://gcc.gnu.org/PR104477>`__)
