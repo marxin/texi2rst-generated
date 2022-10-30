@@ -37,4 +37,4 @@ See also:
   :ref:`OMP_SCHEDULE`
 
 Reference:
-  `:openmp:`4.5`, Section 3.2.12.
+  :openmp:`4.5`, Section 3.2.12.

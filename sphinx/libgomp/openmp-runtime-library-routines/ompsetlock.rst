@@ -32,4 +32,4 @@ See also:
   :ref:`omp_init_lock`, :ref:`omp_test_lock`, :ref:`omp_unset_lock`
 
 Reference:
-  `:openmp:`4.5`, Section 3.3.4.
+  :openmp:`4.5`, Section 3.3.4.

@@ -21,4 +21,4 @@ Description:
   dependent.
 
 Reference:
-  `:openmp:`4.5`, Section 4.7
+  :openmp:`4.5`, Section 4.7

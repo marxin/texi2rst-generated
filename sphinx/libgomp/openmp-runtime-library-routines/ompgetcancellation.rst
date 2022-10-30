@@ -30,4 +30,4 @@ See also:
   :ref:`OMP_CANCELLATION`
 
 Reference:
-  `:openmp:`4.5`, Section 3.2.9.
+  :openmp:`4.5`, Section 3.2.9.

@@ -28,4 +28,4 @@ See also:
   :ref:`omp_set_num_threads`, :ref:`omp_set_dynamic`, :ref:`omp_get_thread_limit`
 
 Reference:
-  `:openmp:`4.5`, Section 3.2.3.
+  :openmp:`4.5`, Section 3.2.3.

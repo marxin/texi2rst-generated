@@ -34,4 +34,4 @@ See also:
   :ref:`omp_set_schedule`, :ref:`OMP_SCHEDULE`
 
 Reference:
-  `:openmp:`4.5`, Section 3.2.13.
+  :openmp:`4.5`, Section 3.2.13.

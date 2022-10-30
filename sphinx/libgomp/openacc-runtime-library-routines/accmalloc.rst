@@ -19,5 +19,5 @@ C/C++:
        - ``d_void* acc_malloc(size_t len);``
 
 Reference:
-  `OpenACC specification v2.6 <https://www.openacc.org>`_, section
+  :openacc:`2.6`, section
   3.2.18.

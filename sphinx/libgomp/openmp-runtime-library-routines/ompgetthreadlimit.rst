@@ -27,4 +27,4 @@ See also:
   :ref:`omp_get_max_threads`, :ref:`OMP_THREAD_LIMIT`
 
 Reference:
-  `:openmp:`4.5`, Section 3.2.14.
+  :openmp:`4.5`, Section 3.2.14.

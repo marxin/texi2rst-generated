@@ -12,5 +12,5 @@ See also:
   :ref:`acc_register_library`, :ref:`openacc-profiling-interface`
 
 Reference:
-  `OpenACC specification v2.6 <https://www.openacc.org>`_, section
+  :openacc:`2.6`, section
   4.3.

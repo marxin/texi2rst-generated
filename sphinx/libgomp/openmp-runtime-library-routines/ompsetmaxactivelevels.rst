@@ -32,4 +32,4 @@ See also:
   :ref:`omp_get_supported_active_levels`
 
 Reference:
-  `:openmp:`4.5`, Section 3.2.15.
+  :openmp:`4.5`, Section 3.2.15.

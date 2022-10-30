@@ -26,4 +26,4 @@ Fortran:
        - ``logical function omp_in_parallel()``
 
 Reference:
-  `:openmp:`4.5`, Section 3.2.6.
+  :openmp:`4.5`, Section 3.2.6.

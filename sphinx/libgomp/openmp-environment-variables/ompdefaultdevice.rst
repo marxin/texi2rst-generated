@@ -21,4 +21,4 @@ See also:
   :ref:`omp_get_default_device`, :ref:`omp_set_default_device`,
 
 Reference:
-  `:openmp:`4.5`, Section 4.13
+  :openmp:`4.5`, Section 4.13

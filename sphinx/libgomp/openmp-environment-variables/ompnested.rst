@@ -25,4 +25,4 @@ See also:
   :ref:`omp_set_max_active_levels`, :ref:`omp_set_nested`
 
 Reference:
-  `:openmp:`4.5`, Section 4.6
+  :openmp:`4.5`, Section 4.6

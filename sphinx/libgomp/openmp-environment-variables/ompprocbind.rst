@@ -31,4 +31,4 @@ See also:
   :ref:`OMP_NESTED`, :ref:`OMP_PLACES`
 
 Reference:
-  `:openmp:`4.5`, Section 4.4
+  :openmp:`4.5`, Section 4.4

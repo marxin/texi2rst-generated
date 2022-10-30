@@ -28,4 +28,4 @@ See also:
   :ref:`omp_get_wtime`
 
 Reference:
-  `:openmp:`4.5`, Section 3.4.2.
+  :openmp:`4.5`, Section 3.4.2.

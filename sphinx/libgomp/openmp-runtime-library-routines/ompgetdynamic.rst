@@ -34,4 +34,4 @@ See also:
   :ref:`omp_set_dynamic`, :ref:`OMP_DYNAMIC`
 
 Reference:
-  `:openmp:`4.5`, Section 3.2.8.
+  :openmp:`4.5`, Section 3.2.8.

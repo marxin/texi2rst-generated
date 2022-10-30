@@ -21,5 +21,5 @@ C/C++:
        - ``acc_attach_async(h_void **ptr, int async);``
 
 Reference:
-  `OpenACC specification v2.6 <https://www.openacc.org>`_, section
+  :openacc:`2.6`, section
   3.2.34.

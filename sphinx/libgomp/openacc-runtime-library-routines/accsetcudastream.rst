@@ -24,5 +24,5 @@ C/C++:
        - ``int acc_set_cuda_stream(int async, void *stream);``
 
 Reference:
-  `OpenACC specification v2.6 <https://www.openacc.org>`_, section
+  :openacc:`2.6`, section
   A.2.1.4.

@@ -19,5 +19,5 @@ C/C++:
        - ``void *acc_get_current_cuda_context(void);``
 
 Reference:
-  `OpenACC specification v2.6 <https://www.openacc.org>`_, section
+  :openacc:`2.6`, section
   A.2.1.2.

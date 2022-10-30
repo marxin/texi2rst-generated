@@ -26,4 +26,4 @@ Fortran:
        - ``logical function omp_is_initial_device()``
 
 Reference:
-  `:openmp:`4.5`, Section 3.2.34.
+  :openmp:`4.5`, Section 3.2.34.

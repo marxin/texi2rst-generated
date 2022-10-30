@@ -30,4 +30,4 @@ See also:
   :ref:`omp_init_lock`
 
 Reference:
-  `:openmp:`4.5`, Section 3.3.3.
+  :openmp:`4.5`, Section 3.3.3.

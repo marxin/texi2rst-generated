@@ -29,4 +29,4 @@ See also:
   :ref:`omp_get_num_devices`
 
 Reference:
-  `:openmp:`4.5`, Section 3.2.35.
+  :openmp:`4.5`, Section 3.2.35.

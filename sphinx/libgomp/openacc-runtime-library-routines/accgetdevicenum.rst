@@ -30,5 +30,5 @@ Fortran:
        - ``integer acc_get_device_num``
 
 Reference:
-  `OpenACC specification v2.6 <https://www.openacc.org>`_, section
+  :openacc:`2.6`, section
   3.2.5.

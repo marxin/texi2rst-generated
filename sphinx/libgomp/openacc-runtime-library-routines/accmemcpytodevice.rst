@@ -20,5 +20,5 @@ C/C++:
        - ``acc_memcpy_to_device(d_void *dest, h_void *src, size_t bytes);``
 
 Reference:
-  `OpenACC specification v2.6 <https://www.openacc.org>`_, section
+  :openacc:`2.6`, section
   3.2.31.

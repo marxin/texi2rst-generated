@@ -26,4 +26,4 @@ Fortran:
        - ``integer function omp_get_max_task_priority()``
 
 Reference:
-  `:openmp:`4.5`, Section 3.2.29.
+  :openmp:`4.5`, Section 3.2.29.

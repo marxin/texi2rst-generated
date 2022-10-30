@@ -26,4 +26,4 @@ Fortran:
        - ``logical function omp_in_final()``
 
 Reference:
-  `:openmp:`4.5`, Section 3.2.21.
+  :openmp:`4.5`, Section 3.2.21.

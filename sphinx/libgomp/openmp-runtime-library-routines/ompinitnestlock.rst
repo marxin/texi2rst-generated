@@ -30,4 +30,4 @@ See also:
   :ref:`omp_destroy_nest_lock`
 
 Reference:
-  `:openmp:`4.5`, Section 3.3.1.
+  :openmp:`4.5`, Section 3.3.1.

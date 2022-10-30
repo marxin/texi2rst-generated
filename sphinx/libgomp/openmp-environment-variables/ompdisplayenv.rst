@@ -18,4 +18,4 @@ Description:
   this information will not be shown.
 
 Reference:
-  `:openmp:`4.5`, Section 4.12
+  :openmp:`4.5`, Section 4.12

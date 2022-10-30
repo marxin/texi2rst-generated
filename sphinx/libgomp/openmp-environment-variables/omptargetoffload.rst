@@ -24,4 +24,4 @@ Description:
   If undefined, then the program will behave as if ``DEFAULT`` was set.
 
 Reference:
-  `:openmp:`5.0`, Section 6.17
+  :openmp:`5.0`, Section 6.17

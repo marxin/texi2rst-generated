@@ -32,4 +32,4 @@ See also:
   :ref:`OMP_TEAMS_THREAD_LIMIT`, :ref:`omp_get_teams_thread_limit`, :ref:`omp_get_thread_limit`
 
 Reference:
-  `:openmp:`5.1`, Section 3.4.5.
+  :openmp:`5.1`, Section 3.4.5.

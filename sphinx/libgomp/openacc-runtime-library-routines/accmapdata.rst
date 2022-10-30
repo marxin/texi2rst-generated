@@ -20,5 +20,5 @@ C/C++:
        - ``acc_map_data(h_void *h, d_void *d, size_t len);``
 
 Reference:
-  `OpenACC specification v2.6 <https://www.openacc.org>`_, section
+  :openacc:`2.6`, section
   3.2.26.

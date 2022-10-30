@@ -37,4 +37,4 @@ See also:
   :ref:`OMP_MAX_ACTIVE_LEVELS`, :ref:`OMP_NESTED`
 
 Reference:
-  `:openmp:`4.5`, Section 3.2.10.
+  :openmp:`4.5`, Section 3.2.10.

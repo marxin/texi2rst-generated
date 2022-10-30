@@ -51,4 +51,4 @@ See also:
   :ref:`OMP_DISPLAY_ENV`
 
 Reference:
-  `:openmp:`4.5`, Section 4.5
+  :openmp:`4.5`, Section 4.5

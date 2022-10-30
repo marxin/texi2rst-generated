@@ -33,4 +33,4 @@ See also:
   :ref:`omp_set_nest_lock`
 
 Reference:
-  `:openmp:`4.5`, Section 3.3.5.
+  :openmp:`4.5`, Section 3.3.5.

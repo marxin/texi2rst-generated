@@ -33,4 +33,4 @@ See also:
   :ref:`omp_get_num_threads`, :ref:`omp_get_level`, :ref:`omp_get_ancestor_thread_num`
 
 Reference:
-  `:openmp:`4.5`, Section 3.2.19.
+  :openmp:`4.5`, Section 3.2.19.

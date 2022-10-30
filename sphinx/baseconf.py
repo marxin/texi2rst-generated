@@ -202,7 +202,8 @@ for manual in USER_LEVEL_DOCS + INTERNAL_DOCS:
 # Custom references
 extlinks = {
     'PR': ('https://gcc.gnu.org/PR%s', 'PR%s'),
-    'openmp': ('https://openmp.org/specifications/#%s', 'OpenMP specification v%s')
+    'openmp': ('https://openmp.org/specifications/#%s', 'OpenMP specification v%s'),
+    'openacc': ('https://openacc.org/specification#%s', 'OpenACC specification v%s'),
 }
 
 # Set common settings where we need NAME of the documentation

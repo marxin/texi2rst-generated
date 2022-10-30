@@ -24,4 +24,4 @@ Fortran:
        - ``integer function omp_get_num_procs()``
 
 Reference:
-  `:openmp:`4.5`, Section 3.2.5.
+  :openmp:`4.5`, Section 3.2.5.

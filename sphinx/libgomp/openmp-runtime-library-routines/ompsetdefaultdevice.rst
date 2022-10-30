@@ -30,4 +30,4 @@ See also:
   :ref:`OMP_DEFAULT_DEVICE`, :ref:`omp_get_default_device`
 
 Reference:
-  `:openmp:`4.5`, Section 3.2.29.
+  :openmp:`4.5`, Section 3.2.29.

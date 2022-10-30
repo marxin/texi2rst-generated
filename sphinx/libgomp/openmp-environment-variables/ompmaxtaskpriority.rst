@@ -22,4 +22,4 @@ See also:
   :ref:`omp_get_max_task_priority`
 
 Reference:
-  `:openmp:`4.5`, Section 4.14
+  :openmp:`4.5`, Section 4.14

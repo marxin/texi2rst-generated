@@ -21,5 +21,5 @@ See also:
   :ref:`openacc-profiling-interface`
 
 Reference:
-  `OpenACC specification v2.6 <https://www.openacc.org>`_, section
+  :openacc:`2.6`, section
   5.3.

@@ -21,4 +21,4 @@ See also:
   :ref:`GOMP_SPINCOUNT`
 
 Reference:
-  `:openmp:`4.5`, Section 4.8
+  :openmp:`4.5`, Section 4.8

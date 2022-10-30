@@ -28,4 +28,4 @@ See also:
   :ref:`omp_get_level`, :ref:`omp_get_max_active_levels`, :ref:`omp_set_max_active_levels`
 
 Reference:
-  `:openmp:`4.5`, Section 3.2.20.
+  :openmp:`4.5`, Section 3.2.20.

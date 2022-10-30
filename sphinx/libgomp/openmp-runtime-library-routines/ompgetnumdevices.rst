@@ -24,4 +24,4 @@ Fortran:
        - ``integer function omp_get_num_devices()``
 
 Reference:
-  `:openmp:`4.5`, Section 3.2.31.
+  :openmp:`4.5`, Section 3.2.31.
