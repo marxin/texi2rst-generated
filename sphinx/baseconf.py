@@ -206,6 +206,8 @@ extlinks = {
     'openacc': ('https://openacc.org/specification#%s', 'OpenACC specification v%s'),
 }
 
+extlinks_detect_hardcoded_links = True
+
 # Set common settings where we need NAME of the documentation
 def set_common(name):
     html_theme_options['source_edit_link'] = f'https://splichal.eu/scripts/sphinx/{name}' \
