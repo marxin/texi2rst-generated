@@ -28,4 +28,4 @@ See also:
   :ref:`omp_set_num_teams`, :ref:`omp_get_num_teams`
 
 Reference:
-  `OpenMP specification v5.1 <https://www.openmp.org>`_, Section 3.4.4.
+  `:openmp:`5.1`, Section 3.4.4.

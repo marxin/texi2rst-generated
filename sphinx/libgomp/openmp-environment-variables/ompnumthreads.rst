@@ -21,4 +21,4 @@ See also:
   :ref:`omp_set_num_threads`, :ref:`OMP_NESTED`
 
 Reference:
-  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.2
+  `:openmp:`4.5`, Section 4.2

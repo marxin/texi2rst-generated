@@ -30,4 +30,4 @@ See also:
   :ref:`omp_get_initial_device`
 
 Reference:
-  `OpenMP specification v5.0 <https://www.openmp.org>`_, Section 3.2.37.
+  `:openmp:`5.0`, Section 3.2.37.

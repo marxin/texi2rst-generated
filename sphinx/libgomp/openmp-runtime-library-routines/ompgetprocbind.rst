@@ -31,4 +31,4 @@ See also:
   :ref:`OMP_PROC_BIND`, :ref:`OMP_PLACES`, :ref:`GOMP_CPU_AFFINITY`,
 
 Reference:
-  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.22.
+  `:openmp:`4.5`, Section 3.2.22.

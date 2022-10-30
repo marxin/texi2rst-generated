@@ -33,4 +33,4 @@ See also:
   :ref:`omp_set_lock`, :ref:`omp_test_lock`
 
 Reference:
-  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.3.5.
+  `:openmp:`4.5`, Section 3.3.5.

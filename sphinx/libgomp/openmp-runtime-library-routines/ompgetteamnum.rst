@@ -24,4 +24,4 @@ Fortran:
        - ``integer function omp_get_team_num()``
 
 Reference:
-  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.33.
+  `:openmp:`4.5`, Section 3.2.33.

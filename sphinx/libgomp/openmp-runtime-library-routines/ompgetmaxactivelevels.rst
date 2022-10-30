@@ -27,4 +27,4 @@ See also:
   :ref:`omp_set_max_active_levels`, :ref:`omp_get_active_level`
 
 Reference:
-  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.16.
+  `:openmp:`4.5`, Section 3.2.16.

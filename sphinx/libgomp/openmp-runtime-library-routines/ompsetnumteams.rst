@@ -31,4 +31,4 @@ See also:
   :ref:`OMP_NUM_TEAMS`, :ref:`omp_get_num_teams`, :ref:`omp_get_max_teams`
 
 Reference:
-  `OpenMP specification v5.1 <https://www.openmp.org>`_, Section 3.4.3.
+  `:openmp:`5.1`, Section 3.4.3.

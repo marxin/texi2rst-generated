@@ -30,4 +30,4 @@ See also:
   :ref:`omp_get_wtick`
 
 Reference:
-  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.4.1.
+  `:openmp:`4.5`, Section 3.4.1.

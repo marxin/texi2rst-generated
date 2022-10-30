@@ -21,4 +21,4 @@ See also:
   :ref:`OMP_THREAD_LIMIT`, :ref:`omp_set_teams_thread_limit`
 
 Reference:
-  `OpenMP specification v5.1 <https://www.openmp.org>`_, Section 6.24
+  `:openmp:`5.1`, Section 6.24

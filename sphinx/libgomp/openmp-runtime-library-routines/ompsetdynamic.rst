@@ -32,4 +32,4 @@ See also:
   :ref:`OMP_DYNAMIC`, :ref:`omp_get_dynamic`
 
 Reference:
-  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.7.
+  `:openmp:`4.5`, Section 3.2.7.

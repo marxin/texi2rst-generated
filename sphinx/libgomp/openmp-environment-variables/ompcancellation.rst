@@ -18,4 +18,4 @@ See also:
   :ref:`omp_get_cancellation`
 
 Reference:
-  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 4.11
+  `:openmp:`4.5`, Section 4.11

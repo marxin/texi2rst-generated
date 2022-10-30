@@ -35,4 +35,4 @@ See also:
   :ref:`omp_get_max_threads`, :ref:`omp_set_num_threads`, :ref:`OMP_NUM_THREADS`
 
 Reference:
-  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.2.
+  `:openmp:`4.5`, Section 3.2.2.

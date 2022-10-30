@@ -28,4 +28,4 @@ See also:
   :ref:`omp_get_active_level`
 
 Reference:
-  `OpenMP specification v4.5 <https://www.openmp.org>`_, Section 3.2.17.
+  `:openmp:`4.5`, Section 3.2.17.

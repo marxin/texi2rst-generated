@@ -33,4 +33,4 @@ Fortran:
        - ``integer (kind=omp_event_handle_kind) :: event``
 
 Reference:
-  `OpenMP specification v5.0 <https://www.openmp.org>`_, Section 3.5.1.
+  `:openmp:`5.0`, Section 3.5.1.
