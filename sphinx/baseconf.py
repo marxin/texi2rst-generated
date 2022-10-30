@@ -210,6 +210,10 @@ extlinks = {
 extlinks_detect_hardcoded_links = True
 
 # Set common settings where we need NAME of the documentation
-def set_common(name):
+def set_common(name, module):
+    module['tags'].add(name)
+    if gcc_DEVPHASE == 'experimental':
+        module['tags'].add('development')
+
     html_theme_options['source_edit_link'] = f'https://splichal.eu/scripts/sphinx/{name}' \
                                                '/_build/html/_sources/{filename}.txt'

@@ -23,8 +23,4 @@ texinfo_documents = [
 
 epub_basename = name
 
-tags.add(name)
-if gcc_DEVPHASE == 'experimental':
-    tags.add('development')
-
-set_common(name)
+set_common(name, globals())

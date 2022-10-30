@@ -23,5 +23,4 @@ texinfo_documents = [
 
 epub_basename = name
 
-tags.add(name)
-set_common(name)
+set_common(name, globals())

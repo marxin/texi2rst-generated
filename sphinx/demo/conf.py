@@ -27,8 +27,7 @@ man_pages = [
 
 epub_basename = name
 
-tags.add(name)
-set_common(name)
+set_common(name, globals())
 
 extensions.append('linuxdoc.rstFlatTable')
 extensions.append('sphinx_design')
