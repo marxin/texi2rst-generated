@@ -14,7 +14,7 @@ of binary tokens directly to the compiler's parser.  However, it can
 also be used in the more conventional standalone mode, where it produces
 textual output.
 
-.. FIXME: Document the library interface.
+.. todo:: Document the library interface.
 
 .. index:: output format
 

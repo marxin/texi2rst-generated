@@ -488,7 +488,7 @@ The following macros and functions can be used on a ``FUNCTION_DECL`` :
   instantiates needed templates in all translation units which require them,
   and then relies on the linker to remove duplicate instantiations.
 
-  FIXME: This macro is not yet implemented.
+  .. todo:: This macro is not yet implemented.
 
 .. envvar:: DECL_FUNCTION_MEMBER_P
 

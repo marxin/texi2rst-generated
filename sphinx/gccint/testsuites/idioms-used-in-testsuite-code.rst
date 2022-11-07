@@ -81,4 +81,4 @@ All testcases must be portable.  Target-specific testcases must have
 appropriate code to avoid causing failures on unsupported systems;
 unfortunately, the mechanisms for this differ by directory.
 
-FIXME: discuss non-C testsuites here.
+.. todo:: discuss non-C testsuites here

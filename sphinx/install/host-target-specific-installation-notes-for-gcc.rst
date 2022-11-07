@@ -429,7 +429,7 @@ To use GNU :command:`as`, configure with the options
 to configure with :option:`--without-gnu-ld --with-ld=/usr/ccs/bin/ld` to
 guarantee use of Solaris :command:`ld`.
 
-.. FIXME: why -without-gnu-ld -with-ld?
+.. todo:: why -without-gnu-ld -with-ld?
 
 ia64-\*-linux
 =============
@@ -1009,7 +1009,7 @@ combination GNU :command:`as` + Solaris :command:`ld` should reasonably work,
 the reverse combination Solaris :command:`as` + GNU :command:`ld` may fail to
 build or cause memory corruption at runtime in some cases for C++ programs.
 
-.. FIXME: still?
+.. todo:: still?
 
 GNU :command:`ld` usually works as well.  Again, the current
 version (2.34) is known to work, but generally lacks platform specific

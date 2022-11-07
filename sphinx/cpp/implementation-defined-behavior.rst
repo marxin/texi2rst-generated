@@ -15,7 +15,7 @@ describes as :dfn:`implementation-defined`.  This term means that the
 implementation is free to do what it likes, but must document its choice
 and stick to it.
 
-.. FIXME: Check the C++ standard for more implementation-defined stuff.
+.. todo:: Check the C++ standard for more implementation-defined stuff.
 
 * The mapping of physical source file multi-byte characters to the
   execution character set.

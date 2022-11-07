@@ -42,11 +42,14 @@ A front end for a language in GCC has the following parts:
   suffixes for that language.
 
 * Preferably testsuites, which may be under :samp:`gcc/testsuite` or
-  runtime library directories.  FIXME: document somewhere how to write
-  testsuite harnesses.
+  runtime library directories.
+  
+  .. todo:: document somewhere how to write testsuite harnesses
 
 * Probably a runtime library for the language, outside the :samp:`gcc`
-  directory.  FIXME: document this further.
+  directory.
+  
+  .. todo:: document this further
 
 * Details of the directories of any runtime libraries in
   :samp:`gcc/doc/sourcebuild.texi`.
@@ -207,7 +210,8 @@ standard rule in :samp:`gcc/Makefile.in` to the variable
 ``lang_checks``.
 
 ``all.cross`` ``start.encap`` ``rest.encap``
-  FIXME: exactly what goes in each of these targets?
+
+  .. todo:: exactly what goes in each of these targets?
 
 ``tags``
   Build an :command:`etags` :samp:`TAGS` file in the language subdirectory

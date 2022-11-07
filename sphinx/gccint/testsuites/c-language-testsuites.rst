@@ -47,7 +47,7 @@ GCC contains the following C language testsuites, in the
   the compiler with optimization.
 
 :samp:`gcc.dg/special`
-  FIXME: describe this.
+  .. todo:: describe this
 
 :samp:`gcc.c-torture`
   This contains particular code fragments which have historically broken easily.
@@ -58,7 +58,7 @@ GCC contains the following C language testsuites, in the
   it hasn't been done yet.
 
 :samp:`gcc.c-torture/compat`
-  FIXME: describe this.
+  .. todo:: describe this
 
   This directory should probably not be used for new tests.
 
@@ -70,8 +70,9 @@ GCC contains the following C language testsuites, in the
   you wish to test for the presence or absence of compiler warnings.
   While special options can be set, and tests disabled on specific
   platforms, by the use of :samp:`.x` files, mostly these test cases
-  should not contain platform dependencies.  FIXME: discuss how defines
-  such as ``STACK_SIZE`` are used.
+  should not contain platform dependencies.
+  
+  .. todo:: discuss how defines such as ``STACK_SIZE`` are used
 
 :samp:`gcc.c-torture/execute`
   This testsuite contains test cases that should compile, link and run;
@@ -81,7 +82,7 @@ GCC contains the following C language testsuites, in the
   This contains tests which are specific to IEEE floating point.
 
 :samp:`gcc.c-torture/unsorted`
-  FIXME: describe this.
+  .. todo:: describe this
 
   This directory should probably not be used for new tests.
 
@@ -108,5 +109,5 @@ GCC contains the following C language testsuites, in the
   :samp:`dg-*.c`
     Test the testsuite itself using :samp:`gcc.test-framework/test-framework.exp`.
 
-FIXME: merge in :samp:`testsuite/README.gcc` and discuss the format of
-test cases and magic comments more.
+.. todo:: merge in :samp:`testsuite/README.gcc` and discuss the format of
+  test cases and magic comments more.

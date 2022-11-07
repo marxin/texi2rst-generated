@@ -90,11 +90,9 @@ call to a procedure has the same effect.) For ``TYPE(C_PTR)`` and
 procedure pointers, the pointer itself is passed such that it can be
 modified without affecting the caller.
 
-.. FIXME: Document how VALUE is handled for CHARACTER, TYPE,
-
-.. CLASS and arrays, i.e. whether the copy-in is done in the caller
-
-.. or in the callee.
+.. todo:: Document how VALUE is handled for CHARACTER, TYPE,
+  CLASS and arrays, i.e. whether the copy-in is done in the caller
+  or in the callee.
 
 For Boolean (``LOGICAL``) arguments, please note that GCC expects
 only the integer value 0 and 1.  If a GNU Fortran ``LOGICAL``

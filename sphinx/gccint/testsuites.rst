@@ -11,7 +11,9 @@ Testsuites
 GCC contains several testsuites to help maintain compiler quality.
 Most of the runtime libraries and language front ends in GCC have
 testsuites.  Currently only the C language testsuites are documented
-here; FIXME: document the others.
+here;
+
+.. todo:: document the others
 
 .. toctree::
   :maxdepth: 2

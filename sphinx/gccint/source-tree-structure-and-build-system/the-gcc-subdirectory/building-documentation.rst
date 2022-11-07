@@ -200,8 +200,9 @@ there are several other text files in the :samp:`gcc` subdirectory
 with miscellaneous documentation:
 
 :samp:`ABOUT-GCC-NLS`
-  Notes on GCC's Native Language Support.  FIXME: this should be part of
-  this manual rather than a separate file.
+  Notes on GCC's Native Language Support.
+  
+  .. todo:: this should be part of this manual rather than a separate file
 
 :samp:`ABOUT-NLS`
   Notes on the Free Translation Project.
@@ -216,17 +217,19 @@ with miscellaneous documentation:
   Change log files for various parts of GCC.
 
 :samp:`LANGUAGES`
-  Details of a few changes to the GCC front-end interface.  FIXME: the
-  information in this file should be part of general documentation of
-  the front-end interface in this manual.
+  Details of a few changes to the GCC front-end interface.
+  
+  .. todo:: the information in this file should be part of general documentation of
+    the front-end interface in this manual.
 
 :samp:`ONEWS`
   Information about new features in old versions of GCC.  (For recent
   versions, the information is on the GCC web site.)
 
 :samp:`README.Portability`
-  Information about portability issues when writing code in GCC.  FIXME:
-  why isn't this part of this manual or of the GCC Coding Conventions?
+  Information about portability issues when writing code in GCC.
+  
+  .. todo:: why isn't this part of this manual or of the GCC Coding Conventions?
 
-  FIXME: document such files in subdirectories, at least :samp:`config`,
-  :samp:`c`, :samp:`cp`, :samp:`objc`, :samp:`testsuite`.
+  .. todo:: document such files in subdirectories, at least :samp:`config`,
+    :samp:`c`, :samp:`cp`, :samp:`objc`, :samp:`testsuite`.

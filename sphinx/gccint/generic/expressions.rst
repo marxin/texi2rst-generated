@@ -81,8 +81,8 @@ kinds of expressions:
 
 .. envvar:: REAL_CST
 
-  FIXME: Talk about how to obtain representations of this constant, do
-  comparisons, and so forth.
+  .. todo:: Talk about how to obtain representations of this constant, do
+    comparisons, and so forth.
 
 .. envvar:: FIXED_CST
 
@@ -191,8 +191,8 @@ kinds of expressions:
   non-wide string constants are distinguished only by the ``TREE_TYPE``
   of the ``STRING_CST``.
 
-  FIXME: The formats of string constants are not well-defined when the
-  target system bytes are not the same width as host system bytes.
+  .. todo:: The formats of string constants are not well-defined when the
+    target system bytes are not the same width as host system bytes.
 
 .. envvar:: POLY_INT_CST
 
@@ -365,8 +365,8 @@ Unary and Binary Expressions
   floating-point value.  The single operand will have integral type, while
   the complete expression will have a floating-point type.
 
-  FIXME: How is the operand supposed to be rounded?  Is this dependent on
-  :option:`-mieee` ?
+  .. todo:: How is the operand supposed to be rounded?  Is this dependent on
+    :option:`-mieee` ?
 
 .. envvar:: COMPLEX_EXPR
 

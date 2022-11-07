@@ -61,9 +61,11 @@ A back end for a target architecture in GCC has the following parts:
   special notes if there are none.
 
 * Possibly other support outside the :samp:`gcc` directory for runtime
-  libraries.  FIXME: reference docs for this.  The ``libstdc++`` porting
+  libraries.  The ``libstdc++`` porting
   manual needs to be installed as info for this to work, or to be a
   chapter of this manual.
+
+  .. todo:: reference docs for this
 
 The :samp:`{machine}.h` header is included very early in GCC's
 standard sequence of header files, while :samp:`{machine}-protos.h`

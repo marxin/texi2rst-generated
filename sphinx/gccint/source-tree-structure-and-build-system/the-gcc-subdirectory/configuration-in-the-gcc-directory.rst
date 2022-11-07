@@ -63,8 +63,8 @@ which GCC will generate code for.  This is usually needed.
 Each file has a list of the shell variables it sets, with descriptions, at the
 top of the file.
 
-FIXME: document the contents of these files, and what variables should
-be set to control build, host and target configuration.
+.. todo:: document the contents of these files, and what variables should
+  be set to control build, host and target configuration.
 
 .. _configuration-files:
 

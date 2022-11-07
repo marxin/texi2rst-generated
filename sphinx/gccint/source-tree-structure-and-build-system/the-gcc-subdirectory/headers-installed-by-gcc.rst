@@ -14,7 +14,8 @@ necessary to make them work with GCC, and will install some headers
 required of freestanding implementations.  These headers are installed
 in :samp:`{libsubdir}/include`.  Headers for non-C runtime
 libraries are also installed by GCC; these are not documented here.
-(FIXME: document them somewhere.)
+
+.. todo:: document them somewhere
 
 Several of the headers GCC installs are in the :samp:`ginclude`
 directory.  These headers, :samp:`iso646.h`,
