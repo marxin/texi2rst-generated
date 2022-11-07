@@ -5,9 +5,9 @@
 
   :ref:`genindex`
 
-.. only:: development
+  .. only:: development
 
-  TODO
-  ====
+    TODO
+    ----
 
-  .. todolist::
+    .. todolist::
