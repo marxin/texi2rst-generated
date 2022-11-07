@@ -926,7 +926,7 @@ corresponding :option:`--without` option.
     Use the 754-2008 encoding, as with the :option:`-mnan=2008` command-line
     option.
 
-    To use this configuration option you must have an assembler version
+  To use this configuration option you must have an assembler version
   installed that supports the :option:`-mnan=` command-line option too.
   In the absence of this configuration option the default convention is
   the legacy encoding, as when neither of the :option:`-mnan=2008` and
