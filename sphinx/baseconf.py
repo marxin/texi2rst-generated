@@ -183,12 +183,6 @@ latex_table_style = ['colorrows']
 
 texinfo_cross_references = False
 
-texinfo_elements = {'preamble': """
-@definfoenclose strong,*,*
-@definfoenclose emph,','
-"""
-}
-
 # Use default as RTD theme uses default as well
 pygments_style = 'bw' if MONOCHROMATIC else 'default'
 
