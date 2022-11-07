@@ -136,6 +136,10 @@ Here are some specific guidelines for the GCC documentation:
   ``.. code-block:: <language>`` for longer code blocks that benefit
   from highlighting. For a short snippet of code embedded in the text, use ````code snippet````.
 
+* For parts of documentation that needs to be written or enhanced, use ``.. todo::`` directive
+  (part of the official ``sphinx.ext.todo`` extension). In development mode, all items
+  are listed at the very end of the documentation for easier navigation.
+
 GCC-specific directives
 -----------------------
 
@@ -169,6 +173,22 @@ list of target-specific attributes, please take a look at the extension definiti
    * - ``gcc-param``
      - GCC parameter directive, (e.g. ``.. gcc-param: inline-unit-growth``)
 
+Apart from the directives, we also define various inline roles:
+
+.. list-table::
+   :header-rows: 1
+
+   * - Role
+     - Description
+
+   * - ``:P:`$num```
+     - Link to WG21 - The C++ Standards Committee (e.g. ``:P:`2003```)
+   * - ``:PR:`$num```
+     - Link to GCC bugzilla entry
+   * - ``:openmp:`$version```
+     - Link to OpenMP documentation version ``$version`` (e.g. ``:openmp:`4.5```)
+   * - ``:openacc:`$version```
+     - Link to OpenACC documentation version ``$version``
 
 .. _miscellaneous-docs:
 
