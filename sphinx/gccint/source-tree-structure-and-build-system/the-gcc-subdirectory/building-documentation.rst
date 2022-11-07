@@ -140,8 +140,8 @@ Here are some specific guidelines for the GCC documentation:
   (part of the official ``sphinx.ext.todo`` extension). In development mode, all items
   are listed at the very end of the documentation for easier navigation.
 
-GCC-specific directives
------------------------
+GCC-specific directives and roles
+---------------------------------
 
 GCC uses its own extension (:file:`gcc_sphinx.py`) that defined various directives. For the complete
 list of target-specific attributes, please take a look at the extension definition:
