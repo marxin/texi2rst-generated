@@ -313,9 +313,10 @@
 .. option:: -fwide-exec-charset={charset}
 
   Set the wide execution character set, used for wide string and
-  character constants.  The default is UTF-32 or UTF-16, whichever
-  corresponds to the width of ``wchar_t``.  As with
-  :option:`-fexec-charset`, :samp:`{charset}` can be any encoding supported
+  character constants.  The default is one of UTF-32BE, UTF-32LE, UTF-16BE,
+  or UTF-16LE, whichever corresponds to the width of ``wchar_t`` and the
+  big-endian or little-endian byte order being used for code generation.  As
+  with :option:`-fexec-charset`, :samp:`{charset}` can be any encoding supported
   by the system's ``iconv`` library routine; however, you will have
   problems with encodings that do not fit exactly in ``wchar_t``.
 

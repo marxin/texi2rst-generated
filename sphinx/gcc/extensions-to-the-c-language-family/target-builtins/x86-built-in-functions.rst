@@ -187,6 +187,9 @@ check the target platform type.
   :samp:`rocketlake`
     Intel Core i7 Rocketlake CPU.
 
+  :samp:`graniterapids`
+    Intel Core i7 graniterapids CPU.
+
   :samp:`bonnell`
     Intel Atom Bonnell CPU.
 
@@ -201,6 +204,12 @@ check the target platform type.
 
   :samp:`tremont`
     Intel Atom Tremont CPU.
+
+  :samp:`sierraforest`
+    Intel Atom Sierra Forest CPU.
+
+  :samp:`grandridge`
+    Intel Atom Grand Ridge CPU.
 
   :samp:`knl`
     Intel Knights Landing CPU.

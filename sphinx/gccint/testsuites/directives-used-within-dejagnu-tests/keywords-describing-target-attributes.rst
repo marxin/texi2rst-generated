@@ -1054,6 +1054,9 @@ Other hardware attributes
 ``avxifma``
   Target supports the execution of ``avxifma`` instructions.
 
+``avxneconvert``
+  Target supports the execution of ``avxneconvert`` instructions.
+
 ``avxvnniint8``
   Target supports the execution of ``avxvnniint8`` instructions.
 
@@ -1066,8 +1069,14 @@ Other hardware attributes
 ``amx_bf16``
   Target supports the execution of ``amx-bf16`` instructions.
 
+``amx_fp16``
+  Target supports the execution of ``amx-fp16`` instructions.
+
 ``cell_hw``
   Test system can execute AltiVec and Cell PPU instructions.
+
+``cmpccxadd``
+  Target supports the execution of ``cmpccxadd`` instructions.
 
 ``coldfire_fpu``
   Target uses a ColdFire FPU.
@@ -1086,6 +1095,12 @@ Other hardware attributes
 
 ``pie_copyreloc``
   The x86-64 target linker supports PIE with copy reloc.
+
+``prefetchi``
+  Target supports the execution of ``prefetchi`` instructions.
+
+``raoint``
+  Target supports the execution of ``raoint`` instructions.
 
 ``rdrand``
   Target supports x86 ``rdrand`` instruction.

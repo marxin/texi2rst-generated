@@ -57,14 +57,18 @@ D ABI parameters
   .. hook-start:TARGET_D_MINFO_SECTION
 
   Contains the name of the section in which module info references should be
-  placed.  This section is expected to be bracketed by two symbols to indicate
-  the start and end address of the section, so that the runtime library can
-  collect all modules for each loaded shared library and executable.  The
-  default value of ``NULL`` disables the use of sections altogether.
+  placed.  By default, the compiler puts all module info symbols in the
+  ``"minfo"`` section.  Define this macro to override the string if a
+  different section name should be used.  This section is expected to be
+  bracketed by two symbols ``TARGET_D_MINFO_SECTION_START`` and 
+  ``TARGET_D_MINFO_SECTION_END`` to indicate the start and end address of
+  the section, so that the runtime library can collect all modules for each
+  loaded shared library and executable.  Setting the value to ``NULL``
+  disables the use of sections for storing module info altogether.
 
 .. hook-end
 
-.. c:var:: const char * TARGET_D_MINFO_START_NAME
+.. c:var:: const char * TARGET_D_MINFO_SECTION_START
 
   .. hook-start:TARGET_D_MINFO_START_NAME
 
@@ -74,7 +78,7 @@ D ABI parameters
 
 .. hook-end
 
-.. c:var:: const char * TARGET_D_MINFO_END_NAME
+.. c:var:: const char * TARGET_D_MINFO_SECTION_END
 
   .. hook-start:TARGET_D_MINFO_END_NAME
 

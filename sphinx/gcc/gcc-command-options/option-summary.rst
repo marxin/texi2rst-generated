@@ -29,7 +29,7 @@ in the following sections.
   See :ref:`c-dialect-options`.
 
   :option:`-ansi`  :option:`-std=standard`  :option:`-aux-info` :samp:`{filename}` |gol|
-  :option:`-fallow-parameterless-variadic-functions`  :option:`-fno-asm`  |gol|
+  :option:`-fno-asm`  |gol|
   :option:`-fno-builtin`  :option:`-fno-builtin-function`  :option:`-fcond-mismatch` |gol|
   :option:`-ffreestanding`  :option:`-fgimple`  :option:`-fgnu-tm`  :option:`-fgnu89-inline`  :option:`-fhosted` |gol|
   :option:`-flax-vector-conversions`  :option:`-fms-extensions` |gol|
@@ -38,7 +38,7 @@ in the following sections.
   :option:`-fopenmp`  :option:`-fopenmp-simd` |gol|
   :option:`-fpermitted-flt-eval-methods=standard` |gol|
   :option:`-fplan9-extensions`  :option:`-fsigned-bitfields`  :option:`-funsigned-bitfields` |gol|
-  :option:`-fsigned-char`  :option:`-funsigned-char` :option:`-fstrict-flex-arrays[=n]` |gol| 
+  :option:`-fsigned-char`  :option:`-funsigned-char` :option:`-fstrict-flex-arrays[=n]` |gol|
   :option:`-fsso-struct=endianness`
 
 *C++ Language Options*
@@ -594,7 +594,7 @@ in the following sections.
   :option:`-flto-report`  :option:`-flto-report-wpa`  :option:`-fmem-report-wpa` |gol|
   :option:`-fmem-report`  :option:`-fpre-ipa-mem-report`  :option:`-fpost-ipa-mem-report` |gol|
   :option:`-fopt-info`  :option:`-fopt-info-options[=file]` |gol|
-  :option:`-fprofile-report` |gol|
+  :option:`-fmultiflags`  :option:`-fprofile-report` |gol|
   :option:`-frandom-seed=string`  :option:`-fsched-verbose=n` |gol|
   :option:`-fsel-sched-verbose`  :option:`-fsel-sched-dump-cfg`  :option:`-fsel-sched-pipelining-verbose` |gol|
   :option:`-fstats`  :option:`-fstack-usage`  :option:`-ftime-report`  :option:`-ftime-report-details` |gol|
@@ -1439,6 +1439,7 @@ in the following sections.
 
   .. program:: x86
 
+<<<<<<< HEAD
   :option:`-mtune=cpu-type`  :option:`-march=cpu-type` |gol|
   :option:`-mtune-ctrl=feature-list`  :option:`-mdump-tune-features`  :option:`-mno-default` |gol|
   :option:`-mfpmath=unit` |gol|
@@ -1488,6 +1489,58 @@ in the following sections.
   :option:`-mgeneral-regs-only`  :option:`-mcall-ms2sysv-xlogues` :option:`-mrelax-cmpxchg-loop` |gol|
   :option:`-mindirect-branch=choice`  :option:`-mfunction-return=choice` |gol|
   :option:`-mindirect-branch-register` :option:`-mharden-sls=choice` |gol|
+=======
+  :option:`-mtune=cpu-type`  :option:`-march=cpu-type` 
+  :option:`-mtune-ctrl=feature-list`  :option:`-mdump-tune-features`  :option:`-mno-default` 
+  :option:`-mfpmath=unit` 
+  :option:`-masm=dialect`  :option:`-mno-fancy-math-387` 
+  :option:`-mno-fp-ret-in-387`  :option:`-m80387`  :option:`-mhard-float`  :option:`-msoft-float` 
+  :option:`-mno-wide-multiply`  :option:`-mrtd`  :option:`-malign-double` 
+  :option:`-mpreferred-stack-boundary=num` 
+  :option:`-mincoming-stack-boundary=num` 
+  :option:`-mcld`  :option:`-mcx16`  :option:`-msahf`  :option:`-mmovbe`  :option:`-mcrc32` :option:`-mmwait` 
+  :option:`-mrecip`  :option:`-mrecip=opt` 
+  :option:`-mvzeroupper`  :option:`-mprefer-avx128`  :option:`-mprefer-vector-width=opt` 
+  :option:`-mmove-max=bits` :option:`-mstore-max=bits` 
+  :option:`-mmmx`  :option:`-msse`  :option:`-msse2`  :option:`-msse3`  :option:`-mssse3`  :option:`-msse4.1`  :option:`-msse4.2`  :option:`-msse4`  :option:`-mavx` 
+  :option:`-mavx2`  :option:`-mavx512f`  :option:`-mavx512pf`  :option:`-mavx512er`  :option:`-mavx512cd`  :option:`-mavx512vl` 
+  :option:`-mavx512bw`  :option:`-mavx512dq`  :option:`-mavx512ifma`  :option:`-mavx512vbmi`  :option:`-msha`  :option:`-maes` 
+  :option:`-mpclmul`  :option:`-mfsgsbase`  :option:`-mrdrnd`  :option:`-mf16c`  :option:`-mfma`  :option:`-mpconfig`  :option:`-mwbnoinvd`  
+  :option:`-mptwrite`  :option:`-mprefetchwt1`  :option:`-mclflushopt`  :option:`-mclwb`  :option:`-mxsavec`  :option:`-mxsaves` 
+  :option:`-msse4a`  :option:`-m3dnow`  :option:`-m3dnowa`  :option:`-mpopcnt`  :option:`-mabm`  :option:`-mbmi`  :option:`-mtbm`  :option:`-mfma4`  :option:`-mxop` 
+  :option:`-madx`  :option:`-mlzcnt`  :option:`-mbmi2`  :option:`-mfxsr`  :option:`-mxsave`  :option:`-mxsaveopt`  :option:`-mrtm`  :option:`-mhle`  :option:`-mlwp` 
+  :option:`-mmwaitx`  :option:`-mclzero`  :option:`-mpku`  :option:`-mthreads`  :option:`-mgfni`  :option:`-mvaes`  :option:`-mwaitpkg` 
+  :option:`-mshstk` :option:`-mmanual-endbr` :option:`-mcet-switch` :option:`-mforce-indirect-call` 
+  :option:`-mavx512vbmi2` :option:`-mavx512bf16` :option:`-menqcmd` 
+  :option:`-mvpclmulqdq`  :option:`-mavx512bitalg`  :option:`-mmovdiri`  :option:`-mmovdir64b`  :option:`-mavx512vpopcntdq` 
+  :option:`-mavx5124fmaps`  :option:`-mavx512vnni`  :option:`-mavx5124vnniw`  :option:`-mprfchw`  :option:`-mrdpid` 
+  :option:`-mrdseed`  :option:`-msgx` :option:`-mavx512vp2intersect` :option:`-mserialize` :option:`-mtsxldtrk`
+  :option:`-mamx-tile`  :option:`-mamx-int8`  :option:`-mamx-bf16` :option:`-muintr` :option:`-mhreset` :option:`-mavxvnni`
+  :option:`-mavx512fp16` :option:`-mavxifma` :option:`-mavxvnniint8` :option:`-mavxneconvert` :option:`-mcmpccxadd` :option:`-mamx-fp16` 
+  :option:`-mprefetchi` :option:`-mraoint` :option:`-mprefer-remote-atomic`
+  :option:`-mcldemote`  :option:`-mms-bitfields`  :option:`-mno-align-stringops`  :option:`-minline-all-stringops` 
+  :option:`-minline-stringops-dynamically`  :option:`-mstringop-strategy=alg` 
+  :option:`-mkl` :option:`-mwidekl` 
+  :option:`-mmemcpy-strategy=strategy`  :option:`-mmemset-strategy=strategy` 
+  :option:`-mpush-args`  :option:`-maccumulate-outgoing-args`  :option:`-m128bit-long-double` 
+  :option:`-m96bit-long-double`  :option:`-mlong-double-64`  :option:`-mlong-double-80`  :option:`-mlong-double-128` 
+  :option:`-mregparm=num`  :option:`-msseregparm` 
+  :option:`-mveclibabi=type`  :option:`-mvect8-ret-in-mem` 
+  :option:`-mpc32`  :option:`-mpc64`  :option:`-mpc80`  :option:`-mstackrealign` 
+  :option:`-momit-leaf-frame-pointer`  :option:`-mno-red-zone`  :option:`-mno-tls-direct-seg-refs` 
+  :option:`-mcmodel=code-model`  :option:`-mabi=name`  :option:`-maddress-mode=mode` 
+  :option:`-m32`  :option:`-m64`  :option:`-mx32`  :option:`-m16`  :option:`-miamcu`  :option:`-mlarge-data-threshold=num` 
+  :option:`-msse2avx`  :option:`-mfentry`  :option:`-mrecord-mcount`  :option:`-mnop-mcount`  :option:`-m8bit-idiv` 
+  :option:`-minstrument-return=type` :option:`-mfentry-name=name` :option:`-mfentry-section=name` 
+  :option:`-mavx256-split-unaligned-load`  :option:`-mavx256-split-unaligned-store` 
+  :option:`-malign-data=type`  :option:`-mstack-protector-guard=guard` 
+  :option:`-mstack-protector-guard-reg=reg` 
+  :option:`-mstack-protector-guard-offset=offset` 
+  :option:`-mstack-protector-guard-symbol=symbol` 
+  :option:`-mgeneral-regs-only`  :option:`-mcall-ms2sysv-xlogues` :option:`-mrelax-cmpxchg-loop` 
+  :option:`-mindirect-branch=choice`  :option:`-mfunction-return=choice` 
+  :option:`-mindirect-branch-register` :option:`-mharden-sls=choice` 
+>>>>>>> raw
   :option:`-mindirect-branch-cs-prefix` :option:`-mneeded` :option:`-mno-direct-extern-access`
 
   *x86 Windows Options*

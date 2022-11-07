@@ -1762,7 +1762,7 @@ corresponding :option:`--without` option.
   .. code-block:: bash
 
     % srcdir/configure \
-        --enable-offload-targets=x86_64-intelmicemul-linux-gnu=/path/to/x86_64/compiler,nvptx-none
+        --enable-offload-targets=amdgcn-amdhsa,nvptx-none
 
 .. option:: --enable-offload-defaulted
 
