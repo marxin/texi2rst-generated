@@ -70,7 +70,7 @@ D ABI parameters
 
 .. c:var:: const char * TARGET_D_MINFO_SECTION_START
 
-  .. hook-start:TARGET_D_MINFO_START_NAME
+  .. hook-start:TARGET_D_MINFO_SECTION_START
 
   If ``TARGET_D_MINFO_SECTION`` is defined, then this must also be defined
   as the name of the symbol indicating the start address of the module info
@@ -80,7 +80,7 @@ D ABI parameters
 
 .. c:var:: const char * TARGET_D_MINFO_SECTION_END
 
-  .. hook-start:TARGET_D_MINFO_END_NAME
+  .. hook-start:TARGET_D_MINFO_SECTION_END
 
   If ``TARGET_D_MINFO_SECTION`` is defined, then this must also be defined
   as the name of the symbol indicating the end address of the module info
