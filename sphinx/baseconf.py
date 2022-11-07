@@ -44,6 +44,13 @@ def __get_git_revision():
         return None
 
 
+def __get_builder_name():
+    if '-b' in sys.argv:
+        return sys.argv[sys.argv.index('-b') + 1]
+    else:
+        return None
+
+
 gcc_BASEVER = __read_file('BASE-VER')
 gcc_DEVPHASE = __read_file('DEV-PHASE')
 gcc_DATESTAMP = __read_file('DATESTAMP')
@@ -88,8 +95,10 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.extlinks',
     'sphinx.ext.todo',
-    'sphinx_copybutton'
 ]
+
+if __get_builder_name() == 'html':
+    extensions.append('sphinx_copybutton')
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
