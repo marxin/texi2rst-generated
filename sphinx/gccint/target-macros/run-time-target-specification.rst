@@ -221,6 +221,8 @@ any target-specific headers.
 
 .. function:: const char * TARGET_COMPUTE_MULTILIB (const struct switchstr *switches, int n_switches, const char *multilib_dir, const char *multilib_defaults, const char *multilib_select, const char *multilib_matches, const char *multilib_exclusions, const char *multilib_reuse)
 
+  .. hook-start:TARGET_COMPUTE_MULTILIB
+
   Some targets like RISC-V might have complicated multilib reuse rules which
   are hard to implement with the current multilib scheme.  This hook allows
   targets to override the result from the built-in multilib mechanism.
@@ -234,6 +236,8 @@ any target-specific headers.
   are corresponding to :samp:`{MULTILIB_MATCHES}`, :samp:`{MULTILIB_EXCLUSIONS}`,
   and :samp:`{MULTILIB_REUSE}`.
   The default definition does nothing but return :samp:`{multilib_dir}` directly.
+
+.. hook-end
 
 .. c:macro:: SWITCHABLE_TARGET
 
