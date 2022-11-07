@@ -136,12 +136,39 @@ Here are some specific guidelines for the GCC documentation:
   ``.. code-block:: <language>`` for longer code blocks that benefit
   from highlighting. For a short snippet of code embedded in the text, use ````code snippet````.
 
-* GCC defines the following GCC-specific directives:
+GCC-specific directives
+-----------------------
 
-  * ``fn-attr``, ``var-attr``, ``type-attr`` - GCC attributes that can be used for function, variable and type attributes;
-    target-specific attributes are also provided and they are defined in :file:`doc/gcc_sphinx.py` file
+GCC uses its own extension (:file:`gcc_sphinx.py`) that defined various directives. For the complete
+list of target-specific attributes, please take a look at the extension definition:
 
-  * ``gcc-param`` - a GCC parameter directive, e.g. ``.. gcc-param: inline-unit-growth``
+.. list-table::
+   :header-rows: 1
+
+   * - Directive
+     - Description
+
+   * - ``gcc-attr``
+     - Generic GCC attribute
+   * - ``fn-attr``
+     - Function attribute
+   * - ``var-attr``
+     - Variable attribute
+   * - ``type-attr``
+     - Type attribute
+   * - ``enum-attr``
+     - Enumeral attribute
+   * - ``label-attr``
+     - Label attribute
+   * - ``$target-fn-attr``
+     - Target-specific function attribute (e.g. ``.. x86-fn-attr:: interrupt``)
+   * - ``$target-var-attr``
+     - Target-specific variable attribute
+   * - ``$target-type-attr``
+     - Target-specific type attribute
+   * - ``gcc-param``
+     - GCC parameter directive, (e.g. ``.. gcc-param: inline-unit-growth``)
+
 
 .. _miscellaneous-docs:
 
