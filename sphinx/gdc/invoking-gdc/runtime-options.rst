@@ -235,6 +235,10 @@ These options affect the runtime behavior of programs compiled with
     Implements new lookup rules that check the current scope for ``alias this``
     before searching in upper scopes.
 
+  :samp:`fiximmutableconv`
+    Disallows unsound immutable conversions that were formerly incorrectly
+    permitted.
+
   :samp:`in`
     Implements ``in`` parameters to mean ``scope const [ref]`` and accepts
     rvalues.
@@ -253,9 +257,8 @@ These options affect the runtime behavior of programs compiled with
   :samp:`rvaluerefparam`
     Implements rvalue arguments to ``ref`` parameters.
 
-  :samp:`shortenedmethods`
-    Implements use of ``=>`` for methods and top-level functions in addition to
-    lambdas.
+  :samp:`systemvariables`
+    Disables access to variables marked ``@system`` from ``@safe`` code.
 
 ``-frelease``
 

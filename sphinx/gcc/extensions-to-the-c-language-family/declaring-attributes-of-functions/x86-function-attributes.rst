@@ -778,6 +778,36 @@ These function attributes are supported by the x86 back end:
 
     Enable/disable the generation of the AVXVNNIINT8 instructions.
 
+  :samp:`avxneconvert` :samp:`no-avxneconvert`
+
+    .. index:: target("avxneconvert") function attribute, x86
+
+    Enable/disable the generation of the AVXNECONVERT instructions.
+
+  :samp:`cmpccxadd` :samp:`no-cmpccxadd`
+
+    .. index:: target("cmpccxadd") function attribute, x86
+
+    Enable/disable the generation of the CMPccXADD instructions.
+
+  :samp:`amx-fp16` :samp:`no-amx-fp16`
+
+    .. index:: target("amx-fp16") function attribute, x86
+
+    Enable/disable the generation of the AMX-FP16 instructions.
+
+  :samp:`prefetchi` :samp:`no-prefetchi`
+
+    .. index:: target("prefetchi") function attribute, x86
+
+    Enable/disable the generation of the PREFETCHI instructions.
+
+  :samp:`raoint` :samp:`no-raoint`
+
+    .. index:: target("raoint") function attribute, x86
+
+    Enable/disable the generation of the RAOINT instructions.
+
   :samp:`cld` :samp:`no-cld`
 
     .. index:: target("cld") function attribute, x86

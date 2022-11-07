@@ -103,7 +103,9 @@ These machine description macros help implement varargs:
   The argument :samp:`{args_so_far}` points to the ``CUMULATIVE_ARGS`` data
   structure, containing the values that are obtained after processing the
   named arguments.  The argument :samp:`{arg}` describes the last of these named
-  arguments.
+  arguments.  The argument :samp:`{arg}` should not be used if the function type
+  satisfies ``TYPE_NO_NAMED_ARGS_STDARG_P``, since in that case there are
+  no named arguments and all arguments are accessed with ``va_arg``.
 
   The target hook should do two things: first, push onto the stack all the
   argument registers *not* used for the named arguments, and second,

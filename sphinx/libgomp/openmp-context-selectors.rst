@@ -17,7 +17,7 @@ OpenMP Context Selectors
      - ``kind``
      - ``isa``
 
-   * - ``intel_mic``, ``x86``, ``x86_64``, ``i386``, ``i486``, ``i586``, ``i686``, ``ia32``
+   * - ``x86``, ``x86_64``, ``i386``, ``i486``, ``i586``, ``i686``, ``ia32``
      - ``host``
      - See ``-m...`` flags in 'x86 Options' (without ``-m``)
    * - ``amdgcn``, ``gcn``

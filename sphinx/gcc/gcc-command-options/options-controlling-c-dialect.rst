@@ -205,14 +205,6 @@ accepts:
   arguments followed by their declarations is also provided, inside
   comments, after the declaration.
 
-.. option:: -fallow-parameterless-variadic-functions
-
-  Accept variadic functions without named parameters.
-
-  Although it is possible to define such a function, this is not very
-  useful as it is not possible to read the arguments.  This is only
-  supported for C as this construct is allowed by C++.
-
 .. option:: -fno-asm
 
   Do not recognize ``asm``, ``inline`` or ``typeof`` as a

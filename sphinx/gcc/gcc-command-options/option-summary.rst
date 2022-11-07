@@ -27,7 +27,7 @@ in the following sections.
   See :ref:`c-dialect-options`.
 
   :option:`-ansi`  :option:`-std=standard`  :option:`-aux-info` :samp:`{filename}` 
-  :option:`-fallow-parameterless-variadic-functions`  :option:`-fno-asm`  
+  :option:`-fno-asm`  
   :option:`-fno-builtin`  :option:`-fno-builtin-function`  :option:`-fcond-mismatch` 
   :option:`-ffreestanding`  :option:`-fgimple`  :option:`-fgnu-tm`  :option:`-fgnu89-inline`  :option:`-fhosted` 
   :option:`-flax-vector-conversions`  :option:`-fms-extensions` 
@@ -577,7 +577,7 @@ in the following sections.
   :option:`-flto-report`  :option:`-flto-report-wpa`  :option:`-fmem-report-wpa` 
   :option:`-fmem-report`  :option:`-fpre-ipa-mem-report`  :option:`-fpost-ipa-mem-report` 
   :option:`-fopt-info`  :option:`-fopt-info-options` [= :samp:`{file}` ] 
-  :option:`-fprofile-report` 
+  :option:`-fmultiflags`  :option:`-fprofile-report` 
   :option:`-frandom-seed=string`  :option:`-fsched-verbose=n` 
   :option:`-fsel-sched-verbose`  :option:`-fsel-sched-dump-cfg`  :option:`-fsel-sched-pipelining-verbose` 
   :option:`-fstats`  :option:`-fstack-usage`  :option:`-ftime-report`  :option:`-ftime-report-details` 
@@ -1454,7 +1454,8 @@ in the following sections.
   :option:`-mavx5124fmaps`  :option:`-mavx512vnni`  :option:`-mavx5124vnniw`  :option:`-mprfchw`  :option:`-mrdpid` 
   :option:`-mrdseed`  :option:`-msgx` :option:`-mavx512vp2intersect` :option:`-mserialize` :option:`-mtsxldtrk`
   :option:`-mamx-tile`  :option:`-mamx-int8`  :option:`-mamx-bf16` :option:`-muintr` :option:`-mhreset` :option:`-mavxvnni`
-  :option:`-mavx512fp16` :option:`-mavxifma` :option:`-mavxvnniint8` 
+  :option:`-mavx512fp16` :option:`-mavxifma` :option:`-mavxvnniint8` :option:`-mavxneconvert` :option:`-mcmpccxadd` :option:`-mamx-fp16` 
+  :option:`-mprefetchi` :option:`-mraoint` :option:`-mprefer-remote-atomic`
   :option:`-mcldemote`  :option:`-mms-bitfields`  :option:`-mno-align-stringops`  :option:`-minline-all-stringops` 
   :option:`-minline-stringops-dynamically`  :option:`-mstringop-strategy=alg` 
   :option:`-mkl` :option:`-mwidekl` 

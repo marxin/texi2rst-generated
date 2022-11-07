@@ -100,9 +100,6 @@ subdirectories that contain parts of GCC and its runtime libraries:
 :samp:`libobjc`
   The Objective-C and Objective-C++ runtime library.
 
-:samp:`liboffloadmic`
-  A library to allow OpenMP to Intel MIC targets.
-
 :samp:`libphobos`
   The D standard and runtime library.  The bulk of this library is mirrored
   from the `master D repositories <https://github.com/dlang>`_.

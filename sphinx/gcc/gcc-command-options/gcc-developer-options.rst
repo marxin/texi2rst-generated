@@ -994,6 +994,33 @@ The files are created in the directory of the output file.
   Makes the compiler print some statistics about permanent memory
   allocation before or after interprocedural optimization.
 
+.. option:: -fmultiflags
+
+  This option enables multilib-aware ``TFLAGS`` to be used to build
+  target libraries with options different from those the compiler is
+  configured to use by default, through the use of specs (See :ref:`spec-files`) set up by compiler internals, by the target, or by builders at
+  configure time.
+
+  Like ``TFLAGS``, this allows the target libraries to be built for
+  portable baseline environments, while the compiler defaults to more
+  demanding ones.  That's useful because users can easily override the
+  defaults the compiler is configured to use to build their own programs,
+  if the defaults are not ideal for their target environment, whereas
+  rebuilding the runtime libraries is usually not as easy or desirable.
+
+  Unlike ``TFLAGS``, the use of specs enables different flags to be
+  selected for different multilibs.  The way to accomplish that is to
+  build with :samp:`make TFLAGS=-fmultiflags`, after configuring
+  :samp:`--with-specs=%{fmultiflags:...}`.
+
+  This option is discarded by the driver once it's done processing driver
+  self spec.
+
+  It is also useful to check that ``TFLAGS`` are being used to build
+  all target libraries, by configuring a non-bootstrap compiler
+  :samp:`--with-specs='%{!fmultiflags:%emissing TFLAGS}'` and building
+  the compiler and target libraries.
+
 .. option:: -fprofile-report
 
   Makes the compiler print some statistics about consistency of the
