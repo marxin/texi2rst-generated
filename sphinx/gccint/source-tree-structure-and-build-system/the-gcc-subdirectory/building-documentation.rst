@@ -34,7 +34,6 @@ with your distributions. In order to do so, it is recommended to install
 Sphinx inside a virtual environment, using ``virtualenv-3``
 or ``virtualenv``, depending on how your distribution packaged Python 3.
 
-
 .. code-block:: shell-session
 
   $ virtualenv /tmp/venv
@@ -54,6 +53,11 @@ and will be used by the build system:
   $ configure --with-sphinx-build=/tmp/venv/bin/sphinx-build
 
 If you want to build the PDF documentation, you will need ``python3-Sphinx-latex`` sub-package.
+
+.. note::
+
+   When building **manual** and **info** pages (built by default), the only dependency
+   is Sphinx package and one can ignore other dependencies mentioned in :file:`requirements.txt`.
 
 Writing Documentation
 =====================
