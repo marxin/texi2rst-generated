@@ -120,10 +120,10 @@ per-method-group locks, then TM methods need to avoid those deadlocks:
   sense to introduce further complexity in the serial lock? For gl-\*, we can
   really only avoid an abort if we do -wb and -vbv.
 
+.. _serial-lock-impl:
+
 Serial lock implementation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. _serial-lock-impl:
 
 The serial lock implementation is optimized towards assuming that serial
 transactions are infrequent and not the common case. However, the performance
@@ -218,10 +218,10 @@ transactions know that they should wake up the privatizer.
   instead of doing blocking. Also, it would be good if only the last transaction
   that the privatizer waits for would do the wake-up.
 
+.. _progress-guarantees:
+
 Progress guarantees
 ^^^^^^^^^^^^^^^^^^^
-
-.. _progress-guarantees:
 
 Transactions that do not make progress when using the current TM method will
 eventually try to execute in serial mode. Thus, the serial lock's progress
