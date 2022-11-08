@@ -189,6 +189,18 @@ Apart from the directives, we also define various inline roles:
      - Link to OpenMP documentation version ``$version`` (e.g. ``:openmp:`4.5```)
    * - ``:openacc:`$version```
      - Link to OpenACC documentation version ``$version``
+   * - ``|gcc_version|``
+     - Version of the documentation (e.g. |gcc_version|, taken from :file:`BASE-VER`)
+   * - ``|needs_sphinx|``
+     - Minimal required Sphinx version (e.g. |needs_sphinx|, taken from :file:`baseconf.py`)
+   * - ``|bugurl|``
+     - URL to bugzilla instance (e.g. |bugurl|)
+   * - ``|package_version|``
+     - Package version (e.g. |package_version|)
+   * - ``|gol|``
+     - Line break used for PDF version
+   * - ``|nbsp|``
+     - Non-breaking space character
 
 .. _miscellaneous-docs:
 
