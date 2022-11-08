@@ -181,6 +181,9 @@ OuterLinkColor={rgb}{0.0, 0.2, 0.6},
 
 latex_table_style = ['colorrows']
 
+# makeindex is much common on older systems
+latex_use_xindy = False
+
 texinfo_cross_references = False
 
 # Use default as RTD theme uses default as well
