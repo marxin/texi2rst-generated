@@ -49,7 +49,7 @@ known missing pieces are:
   which the module machinery must merge---compiler resource usage can be
   affected by how you partition header files into header units.
 
-  Modular compilation is *not* enabled with just the
+Modular compilation is *not* enabled with just the
 :option:`-std=c++20` option.  You must explicitly enable it with the
 :option:`-fmodules-ts` option.  It is independent of the language
 version selected, although in pre-C++20 versions, it is of course an
