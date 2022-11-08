@@ -198,8 +198,8 @@ linkcheck_ignore = [
 ]
 
 USER_LEVEL_DOCS = ('install', 'gcc', 'gfortran', 'cpp', 'gnat_rm', 'gnat_ugn',
-                   'gccgo', 'libgomp', 'libquadmath', 'libgccjit')
-INTERNAL_DOCS = ('gccint', 'cppinternals', 'gfc-internals', 'gnat-style')
+                   'gccgo', 'gdc', 'libgomp', 'libquadmath', 'libitm', 'libgccjit')
+INTERNAL_DOCS = ('gccint', 'cppinternals', 'gfc-internals', 'gnat-style', 'libibery')
 
 # Cross manual reference mapping
 intersphinx_mapping = {}
