@@ -108,6 +108,10 @@ This works: :option:`--verbose <make --verbose>` and :option:`--verbose <make -v
 
    .. todo:: FIX this page properly
 
+.. function:: std::string _accjit::object::get_debug_string::foo::bar::looooooooong::xxxxxxxxxxxxxxxxxxxxxx::yyyy () const
+
+   Test long name.
+
 Formatting
 ==========
 
